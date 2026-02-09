@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Media Report - Enero 2026</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tipografías -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Barra de progreso de lectura -->
+    <div class="reading-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-pattern"></div>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-left">
+                    <h1 class="header-title">Global Media Report</h1>
+                    <p class="header-date">Enero 2026</p>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Partículas animadas -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" id="breadcrumbs">
+        <div class="breadcrumbs-container">
+            <a href="#" class="breadcrumb-item active">
+                <i class="fas fa-home"></i> Inicio
+            </a>
+        </div>
+    </nav>
+
+    <!-- Dashboard Resumen -->
+    <section class="dashboard">
+        <div class="dashboard-container">
+            <div class="dashboard-card" data-stat="total">
+                <div class="dashboard-icon-wrapper">
+                    <i class="fas fa-newspaper dashboard-icon"></i>
+                </div>
+                <div class="dashboard-info">
+                    <h3 class="dashboard-number" id="totalNews" data-target="0">0</h3>
+                    <p class="dashboard-label">Noticias totales</p>
+                    <div class="mini-chart">
+                        <div class="chart-bar" style="height: 60%"></div>
+                        <div class="chart-bar" style="height: 80%"></div>
+                        <div class="chart-bar" style="height: 100%"></div>
+                        <div class="chart-bar" style="height: 75%"></div>
+                        <div class="chart-bar" style="height: 90%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-card" data-stat="international">
+                <div class="dashboard-icon-wrapper">
+                    <i class="fas fa-globe dashboard-icon"></i>
+                </div>
+                <div class="dashboard-info">
+                    <h3 class="dashboard-number" id="internationalNews" data-target="0">0</h3>
+                    <p class="dashboard-label">Internacionales</p>
+                    <div class="mini-chart">
+                        <div class="chart-bar" style="height: 70%"></div>
+                        <div class="chart-bar" style="height: 85%"></div>
+                        <div class="chart-bar" style="height: 95%"></div>
+                        <div class="chart-bar" style="height: 80%"></div>
+                        <div class="chart-bar" style="height: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-card" data-stat="national">
+                <div class="dashboard-icon-wrapper">
+                    <i class="fas fa-map-marker-alt dashboard-icon"></i>
+                </div>
+                <div class="dashboard-info">
+                    <h3 class="dashboard-number" id="nationalNews" data-target="0">0</h3>
+                    <p class="dashboard-label">Nacionales</p>
+                    <div class="mini-chart">
+                        <div class="chart-bar" style="height: 65%"></div>
+                        <div class="chart-bar" style="height: 75%"></div>
+                        <div class="chart-bar" style="height: 85%"></div>
+                        <div class="chart-bar" style="height: 90%"></div>
+                        <div class="chart-bar" style="height: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-card" data-stat="categories">
+                <div class="dashboard-icon-wrapper">
+                    <i class="fas fa-tags dashboard-icon"></i>
+                </div>
+                <div class="dashboard-info">
+                    <h3 class="dashboard-number" id="categoriesCount" data-target="4">0</h3>
+                    <p class="dashboard-label">Categorías</p>
+                    <div class="mini-chart">
+                        <div class="chart-bar" style="height: 100%"></div>
+                        <div class="chart-bar" style="height: 100%"></div>
+                        <div class="chart-bar" style="height: 100%"></div>
+                        <div class="chart-bar" style="height: 100%"></div>
+                        <div class="chart-bar" style="height: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Índice Rápido -->
+    <section class="quick-index">
+        <div class="quick-index-container">
+            <h2 class="quick-index-title">
+                <i class="fas fa-bolt"></i> Acceso Rápido
+            </h2>
+            <div class="category-chips">
+                <a href="#grupo-global" class="category-chip" data-count="3">
+                    <i class="fas fa-building"></i>
+                    <span class="chip-text">Grupo Global Exchange</span>
+                    <span class="chip-badge">3</span>
+                </a>
+                <a href="#sector-cambiario" class="category-chip" data-count="3">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span class="chip-text">Sector Cambiario</span>
+                    <span class="chip-badge">3</span>
+                </a>
+                <a href="#sector-aeroportuario" class="category-chip" data-count="3">
+                    <i class="fas fa-plane"></i>
+                    <span class="chip-text">Aeroportuario y Turístico</span>
+                    <span class="chip-badge">3</span>
+                </a>
+                <a href="#medios-efectivo" class="category-chip" data-count="4">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span class="chip-text">Medios de Pago: Efectivo</span>
+                    <span class="chip-badge">3</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros y Búsqueda -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <div class="filters-header">
+                <h3 class="filters-title"><i class="fas fa-filter"></i> Filtrar contenido</h3>
+                <button class="reset-btn" id="resetFilters">
+                    <i class="fas fa-redo"></i> Resetear
+                </button>
+            </div>
+            
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label class="filter-label">Por categoría:</label>
+                    <div class="filters">
+                        <button class="filter-btn active" data-category="all">
+                            <i class="fas fa-th"></i> Todas
+                        </button>
+                        <button class="filter-btn" data-category="grupo-global">
+                            <i class="fas fa-building"></i> Grupo Global Exchange
+                        </button>
+                        <button class="filter-btn" data-category="sector-cambiario">
+                            <i class="fas fa-exchange-alt"></i> Sector Cambiario
+                        </button>
+                        <button class="filter-btn" data-category="sector-aeroportuario">
+                            <i class="fas fa-plane"></i> Aeroportuario y Turístico
+                        </button>
+                        <button class="filter-btn" data-category="medios-efectivo">
+                            <i class="fas fa-money-bill-wave"></i> Medios de Pago: Efectivo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Por alcance:</label>
+                    <div class="filters filters-small">
+                        <button class="scope-btn active" data-scope="all">Todos</button>
+                        <button class="scope-btn" data-scope="Nacional">Nacional</button>
+                        <button class="scope-btn" data-scope="Internacional">Internacional</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar por título, medio o contenido...">
+                <span class="search-results" id="searchResults"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor Principal -->
+    <main class="main-container">
+
+        <!-- GRUPO GLOBAL EXCHANGE -->
+        <section id="grupo-global" class="category-section" data-category="grupo-global">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-building"></i>
+                    Grupo Global Exchange
+                </h2>
+                <span class="category-count">3 noticias</span>
+            </div>
+            
+            <!-- Noticia 1 -->
+            <article class="news-card" data-scope="Nacional" data-url="https://www.lagacetadesalamanca.es/salamanca/global-exchange-inicia-operaciones-heathrow-supera-500-20260126171259-nt.html">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-nacional">
+                                <i class="fas fa-map-marker-alt"></i> Nacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 26 Ene 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Global Exchange inicia operaciones en Heathrow y supera las 500 oficinas en su red mundial</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comenzó operaciones en Heathrow el 26 de enero de 2026, el aeropuerto más transitado de Europa con 83,9 millones de pasajeros anuales</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Despliegue de 23 oficinas de cambio en las 4 terminales, 78 cajeros automáticos y más de 40 dispensadores cash-to-cash</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Equipo de 180 profesionales contratados para las operaciones</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El contrato pone fin a 39 años de presencia exclusiva de Travelex en el aeropuerto</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Con esta apertura, Global Exchange supera las 515 oficinas en 31 países y 90 aeropuertos internacionales</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> Este contrato representa el hito más importante en la historia de Global Exchange, consolidando su posición como líder mundial del sector al operar en 4 de los 5 aeropuertos más transitados de Europa: Heathrow, Estambul, París CDG y Madrid-Barajas.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-newspaper source-icon"></i>
+                            <span>La Gaceta de Salamanca</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Heathrow</span>
+                            <span class="tag">Expansión</span>
+                            <span class="tag">Liderazgo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Airport" alt="Global Exchange en Heathrow" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Noticia 2 -->
+            <article class="news-card" data-scope="Internacional" data-url="https://mediacentre.heathrow.com/pressrelease/detail/23952">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-internacional">
+                                <i class="fas fa-globe"></i> Internacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 26 Ene 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Heathrow announces Global Exchange to become new currency exchange provider</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Global Exchange selected to operate currency exchange services at Europe's busiest airport</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>The deal includes 23 in-terminal locations, 78 ATMs, and over 40 cash-to-cash dispensers</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Digital-first approach with state-of-the-art technology highlighted in winning proposal</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Operations began January 2026, replacing Travelex after 39 years</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> El comunicado oficial de Heathrow destaca el enfoque digital de Global Exchange y su compromiso con la experiencia del cliente como factores clave en la adjudicación del contrato.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-file-alt source-icon"></i>
+                            <span>Heathrow Media Centre</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Official</span>
+                            <span class="tag">Partnership</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Official" alt="Heathrow announcement" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Noticia 3 -->
+            <article class="news-card" data-scope="Nacional" data-url="https://www.eleconomista.es/transportes-turismo/noticias/13551342/09/25/global-exchange-alcanza-el-liderazgo-mundial-en-cambio-de-divisas.html">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-nacional">
+                                <i class="fas fa-map-marker-alt"></i> Nacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> Sep 2025
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Global Exchange alcanza el liderazgo mundial en cambio de divisas tras llegar a 30 países y 84 aeropuertos internacionales</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Facturación de 275,2 millones de euros en 2024, crecimiento del 281% respecto a 2015</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Apertura en 6 nuevos países durante 2025: Malasia, Nueva Zelanda, Perú, Rumanía, Japón y Arabia Saudí</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>92 nuevas oficinas inauguradas durante el año</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Plantilla de 2.900 empleados, un 80% más que en 2020</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>En 2026 la compañía celebra su 30 aniversario</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> La expansión en Asia-Pacífico se acelera con nuevas operaciones en Auckland (8 oficinas), Kuala Lumpur y aeropuertos de Malasia (6 oficinas). México sigue siendo el epicentro de la actividad en América con 50 centros de trabajo y 72 oficinas.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-newspaper source-icon"></i>
+                            <span>El Economista</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Liderazgo</span>
+                            <span class="tag">Expansión global</span>
+                            <span class="tag">Asia-Pacífico</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Global+Leadership" alt="Liderazgo mundial" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECTOR CAMBIARIO -->
+        <section id="sector-cambiario" class="category-section" data-category="sector-cambiario">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-exchange-alt"></i>
+                    Sector Cambiario - Competidores
+                </h2>
+                <span class="category-count">3 noticias</span>
+            </div>
+
+            <!-- Travelex -->
+            <article class="news-card" data-scope="Internacional" data-url="https://www.travelex-corporate.com/media-centre/">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-internacional">
+                                <i class="fas fa-globe"></i> Internacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Travelex pierde Heathrow pero mantiene posiciones en Frankfurt y Ámsterdam</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pérdida del contrato de Heathrow tras 39 años de presencia exclusiva</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mantiene Frankfurt (contrato renovado 6 años, 13 tiendas y 25 ATMs)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Conserva Ámsterdam Schiphol (renovado 5 años, 11 tiendas y 50 ATMs)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ingresos FY2024: £520,1 millones (-3% interanual)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Nuevo CEO Philip Bowcock nombrado en julio 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> La pérdida de Heathrow representa un golpe estratégico significativo para Travelex, aunque la compañía diversifica hacia tarjetas prepago con +54% en transacciones de recarga y lanzó el programa de fidelización Travelex Plus con 20.000 miembros.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-file-alt source-icon"></i>
+                            <span>Travelex Corporate</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Travelex</span>
+                            <span class="tag">Competencia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Travelex" alt="Travelex" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Wise -->
+            <article class="news-card" data-scope="Internacional" data-url="https://wise.com/gb/blog/annual-report-2025">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-internacional">
+                                <i class="fas fa-globe"></i> Internacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2025
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Wise Full Year 2025 Earnings: Strong Growth Continues</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ingresos: 1.650 millones de libras (+17% interanual)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clientes activos: 15,6 millones de usuarios</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Volumen transfronterizo: 145.200 millones de libras</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Margen EBITDA subyacente: 21%, superando objetivo del 13-16%</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ingresos no transfronterizos ya representan el 41% del total</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Propuesta de dual listing en NYSE para Q2 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> Wise mantiene crecimiento de doble dígito con expansión de productos más allá de las transferencias. La tarjeta Wise alcanzó £15.000 millones en gasto con +28% de crecimiento en ingresos.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-chart-line source-icon"></i>
+                            <span>Wise Investor Relations</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Wise</span>
+                            <span class="tag">Fintech</span>
+                            <span class="tag">Resultados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Wise+Growth" alt="Wise earnings" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Revolut -->
+            <article class="news-card" data-scope="Nacional" data-url="https://www.eleconomista.es/banca-finanzas/noticias/13717866/01/26/revolut-alcanza-los-seis-millones-de-clientes-en-espana.html">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-nacional">
+                                <i class="fas fa-map-marker-alt"></i> Nacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> Ene 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Revolut alcanza los 6 millones de clientes en España y supera a Sabadell e ING</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>6 millones de usuarios en España (13% de penetración de mercado)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>España es el cuarto banco por número de clientes, superando a ING y Sabadell</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Valoración de la compañía: 75.000 millones de dólares (+67% en 2025)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lanzamiento de red propia de cajeros: 50 unidades en Madrid y Barcelona</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Plan de expansión a 200 cajeros en 2026 (Valencia, Málaga incluidas)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ATMs permiten retiros sin comisión y dispensación instantánea de tarjetas</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> Revolut representa la mayor amenaza competitiva digital en España. Su red de ATMs propios compite directamente con el negocio tradicional de cambio de divisas, ofreciendo tipos de cambio interbancarios. España fue elegida como mercado piloto mundial porque el 60% de pagos en punto de venta siguen siendo en efectivo.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-newspaper source-icon"></i>
+                            <span>El Economista</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Revolut</span>
+                            <span class="tag">Fintech</span>
+                            <span class="tag">ATMs</span>
+                            <span class="tag">Amenaza</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Spain" alt="Revolut España" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECTOR AEROPORTUARIO Y TURÍSTICO -->
+        <section id="sector-aeroportuario" class="category-section" data-category="sector-aeroportuario">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-plane"></i>
+                    Sector Aeroportuario y Turístico
+                </h2>
+                <span class="category-count">3 noticias</span>
+            </div>
+
+            <!-- AENA -->
+            <article class="news-card" data-scope="Nacional" data-url="https://www.aena.es/en/press/aena-group-airports-exceed-384.8-million-passengers-in-2025.html">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-nacional">
+                                <i class="fas fa-map-marker-alt"></i> Nacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2025
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Los aeropuertos del Grupo AENA gestionaron 384,8 millones de pasajeros en 2025</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Récord histórico: 321,6 millones de pasajeros en aeropuertos españoles (+3,9%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Grupo AENA global (incluyendo Brasil y Londres Luton): 384,8 millones (+4,2%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>23 aeropuertos españoles batieron sus máximos históricos</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Valencia: 11,8M pasajeros (+9,6%), mayor crecimiento porcentual</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Alicante-Elche: 20,0M pasajeros (+8,5%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Madrid-Barajas: 68,2M pasajeros (+3,0%)</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> El crecimiento sostenido del tráfico aéreo en España garantiza volumen de clientes para servicios de cambio de divisa. Los aeropuertos mediterráneos muestran el mayor dinamismo, con Valencia y Alicante liderando el crecimiento.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-building source-icon"></i>
+                            <span>AENA</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">AENA</span>
+                            <span class="tag">Aeropuertos</span>
+                            <span class="tag">Tráfico</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=AENA+Record" alt="AENA récord pasajeros" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Turismo España -->
+            <article class="news-card" data-scope="Nacional" data-url="https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/hereu-adelanta-previsiones-gasto-turistas-internacionales.aspx">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-nacional">
+                                <i class="fas fa-map-marker-alt"></i> Nacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2025
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">España bate récord de turismo: 97 millones de visitantes y 135.000 millones de gasto</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>97 millones de turistas internacionales en 2025 (+3,5%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Gasto turístico récord: 135.000 millones de euros (+6,8%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Gasto medio por turista: aproximadamente 1.400 euros por viaje</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reino Unido lidera como mercado emisor: 18,2 millones de turistas (+3,9%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Turismo estadounidense con fuerte crecimiento del gasto (+11,6%)</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> El crecimiento del gasto turístico casi duplica el de llegadas, indicando un turismo de mayor valor. El mercado británico y estadounidense, con mayor necesidad de cambio GBP/USD, representan oportunidades estratégicas para el sector.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-landmark source-icon"></i>
+                            <span>Ministerio de Industria y Turismo</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Turismo</span>
+                            <span class="tag">España</span>
+                            <span class="tag">Récord</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Tourism+Record" alt="Récord turismo" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ACI World -->
+            <article class="news-card" data-scope="Internacional" data-url="https://www.aci-europe.org/economic-forecasts.html">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-internacional">
+                                <i class="fas fa-globe"></i> Internacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">ACI World: Global air travel to exceed 10 billion passengers in 2026</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Previsión global: 10.200 millones de pasajeros en 2026 (+3,9%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tráfico internacional crece más del doble que el doméstico (+5,3% vs +2,4%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Europa: crecimiento estimado del +3,6%</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>European Travel Commission proyecta +6,8% en llegadas internacionales a Europa</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Recuperación del turismo de larga distancia desde Asia-Pacífico</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> Las previsiones de ACI confirman la tendencia alcista del tráfico aéreo global, con el segmento internacional mostrando mayor dinamismo que el doméstico, lo que beneficia directamente al sector de cambio de divisas.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-chart-bar source-icon"></i>
+                            <span>ACI Europe</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">ACI</span>
+                            <span class="tag">Previsiones</span>
+                            <span class="tag">Global</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=ACI+Forecast" alt="ACI World forecast" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- MEDIOS DE PAGO: EFECTIVO -->
+        <section id="medios-efectivo" class="category-section" data-category="medios-efectivo">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-money-bill-wave"></i>
+                    Medios de Pago: Efectivo
+                </h2>
+                <span class="category-count">3 noticias</span>
+            </div>
+
+            <!-- BCE Efectivo -->
+            <article class="news-card" data-scope="Internacional" data-url="https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2024.en.html">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-internacional">
+                                <i class="fas fa-globe"></i> Internacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2024
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">BCE: El efectivo sigue siendo el método de pago más utilizado en tiendas de la eurozona</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>52% de las transacciones en punto de venta de la eurozona se pagan en efectivo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El 62% de consumidores considera importante poder pagar en efectivo (+2 puntos desde 2022)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>En 14 de los 20 países de la eurozona, el efectivo sigue siendo el método predominante</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Jóvenes de 18-27 años muestran mayor propensión a acumular efectivo como reserva</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Motivaciones: preocupaciones sobre ciberamenazas, privacidad y desconfianza en sistemas digitales</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> El estudio SPACE 2024 del BCE confirma la resiliencia del efectivo pese a la digitalización. El dato sobre jóvenes acumulando efectivo desafía estereotipos sobre preferencias generacionales en medios de pago.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-university source-icon"></i>
+                            <span>Banco Central Europeo</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">BCE</span>
+                            <span class="tag">Efectivo</span>
+                            <span class="tag">Eurozona</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=ECB+Cash+Study" alt="Estudio BCE efectivo" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Infraestructura crítica -->
+            <article class="news-card" data-scope="Internacional" data-url="https://www.rte.ie/brainstorm/2026/0102/1545488-cash-money-emergency-planning/">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-internacional">
+                                <i class="fas fa-globe"></i> Internacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> Ene 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">El efectivo reconocido como infraestructura crítica tras el apagón de abril 2025</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El BCE y gobiernos europeos reconocen el efectivo como componente crítico de preparación ante crisis</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Irlanda y países nórdicos recomiendan a ciudadanos mantener efectivo en casa para emergencias</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El BCE declaró que la demanda sostenida de efectivo sugiere su utilidad única e imperfecta sustituibilidad</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>España: límite de €1.000 para pagos en efectivo con empresarios (€10.000 para turistas no residentes)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Operaciones de cambio de moneda en establecimientos autorizados están exentas del límite</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> El reconocimiento institucional del efectivo como infraestructura crítica refuerza el argumento comercial del sector. La exención para operaciones de cambio de moneda representa una ventaja competitiva regulatoria.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-broadcast-tower source-icon"></i>
+                            <span>RTÉ Brainstorm</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Infraestructura</span>
+                            <span class="tag">Crisis</span>
+                            <span class="tag">Regulación</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Critical+Infrastructure" alt="Infraestructura crítica" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Denaria -->
+            <article class="news-card" data-scope="Nacional" data-url="https://www.plataformadenaria.com/es/notas-de-prensa/">
+                <div class="news-content">
+                    <div class="news-header">
+                        <div class="news-meta">
+                            <span class="news-badge badge-nacional">
+                                <i class="fas fa-map-marker-alt"></i> Nacional
+                            </span>
+                            <span class="news-date">
+                                <i class="far fa-calendar"></i> 2026
+                            </span>
+                        </div>
+                        <button class="copy-link-btn" title="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="news-title">Denaria intensifica la defensa del efectivo como servicio público esencial</h3>
+                    
+                    <div class="news-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El 90% de españoles se opone a la sustitución del efectivo según encuesta de Denaria</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El 87% considera que debe garantizarse el derecho a pagar en efectivo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>El 77% lo considera un bien público</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Jornada en el Congreso de los Diputados pidiendo reforzar el efectivo como infraestructura crítica</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lanzamiento de Denaria Chile: primer capítulo en Latinoamérica</span>
+                        </div>
+                    </div>
+
+                    <div class="news-summary">
+                        <strong>Resumen:</strong> Denaria aprovecha los fallos tecnológicos recientes (apagón de abril, caída de Redsys) para reforzar su mensaje sobre la importancia del dinero físico y su papel como respaldo ante crisis digitales.
+                    </div>
+
+                    <div class="news-footer">
+                        <div class="news-source">
+                            <i class="fas fa-users source-icon"></i>
+                            <span>Plataforma Denaria</span>
+                        </div>
+                        <div class="news-tags">
+                            <span class="tag">Denaria</span>
+                            <span class="tag">Defensa efectivo</span>
+                            <span class="tag">Congreso</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img src="https://placehold.co/400x300/122864/FFFFFF?text=Denaria+Platform" alt="Plataforma Denaria" loading="lazy">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver noticia completa</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Global Exchange - Todos los derechos reservados</p>
+            <p class="footer-note">Global Media Report - Elaborado por el Departamento de Comunicación</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
