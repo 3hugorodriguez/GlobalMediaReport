@@ -9,9 +9,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <link rel="stylesheet" href="styles.css">
-    <!-- Tipografías -->
+    <!-- Tipografías Premium -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -20,138 +20,176 @@
     <!-- Barra de progreso de lectura -->
     <div class="reading-progress"></div>
 
-    <!-- Header Minimalista -->
-    <header class="header">
-        <div class="header-content">
-            <div class="header-left">
-                <h1 class="header-title">Global Media Report</h1>
-                <p class="header-subtitle" id="currentPeriod">Enero 2026</p>
+    <!-- Hero Header con Glassmorphism -->
+    <header class="hero-header">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-top">
+                <div class="hero-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1 class="hero-title">Global Media Report</h1>
+                        <p class="hero-subtitle" id="currentPeriod">Enero 2026</p>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button class="icon-btn glass" id="themeToggle" title="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="icon-btn glass" id="viewToggle" title="Cambiar vista">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                </div>
             </div>
-            <div class="header-actions">
-                <button class="icon-btn" id="viewToggle" title="Cambiar vista">
-                    <i class="fas fa-th-large"></i>
-                </button>
-                <button class="icon-btn" id="themeToggle" title="Cambiar tema">
-                    <i class="fas fa-moon"></i>
-                </button>
+
+            <!-- Stats Inline Premium -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-icon-mini">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-data">
+                        <span class="stat-number-mini" id="totalNewsHero">0</span>
+                        <span class="stat-label-mini">Noticias</span>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon-mini">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="stat-data">
+                        <span class="stat-number-mini" id="topCategoryHero">-</span>
+                        <span class="stat-label-mini">Destacada</span>
+                    </div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-icon-mini">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-data">
+                        <span class="stat-number-mini" id="lastUpdateHero">Hoy</span>
+                        <span class="stat-label-mini">Actualizado</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Búsqueda Premium Centrada -->
+            <div class="hero-search">
+                <div class="search-container-hero">
+                    <i class="fas fa-search search-icon-hero"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input-hero" 
+                        placeholder="Buscar noticias, medios, categorías..."
+                    >
+                    <kbd class="search-shortcut">⌘K</kbd>
+                    <div class="search-results-badge" id="searchBadge"></div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Stats Visuales Útiles -->
-    <section class="stats-bar">
-        <div class="stats-container">
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-newspaper"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-number" id="totalNews">0</div>
-                    <div class="stat-label">Noticias</div>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-number">
-                        <span id="growthRate">+15%</span>
-                    </div>
-                    <div class="stat-label">vs. mes anterior</div>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-fire"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-number" id="topCategory">-</div>
-                    <div class="stat-label">Categoría destacada</div>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <div class="stat-content">
-                    <div class="stat-number" id="lastUpdate">Hoy</div>
-                    <div class="stat-label">Última actualización</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Navegación Sticky Unificada -->
-    <nav class="main-nav" id="mainNav">
-        <div class="nav-container">
-            
+    <!-- Navegación Sticky con Filtros -->
+    <nav class="filter-nav" id="filterNav">
+        <div class="filter-nav-content">
             <!-- Filtros de Mes -->
-            <div class="nav-section">
-                <label class="nav-label">
-                    <i class="far fa-calendar"></i> Período
-                </label>
-                <div class="filter-chips" id="monthFilters">
-                    <button class="chip active" data-month="all">
-                        Todos
+            <div class="filter-section">
+                <div class="filter-timeline" id="monthTimeline">
+                    <button class="timeline-chip active" data-month="all">
+                        <i class="fas fa-infinity"></i>
+                        <span>Todos</span>
                     </button>
-                    <!-- Se generan dinámicamente -->
+                    <!-- Generados dinámicamente -->
                 </div>
             </div>
 
             <!-- Filtros de Categoría -->
-            <div class="nav-section">
-                <label class="nav-label">
-                    <i class="fas fa-tags"></i> Categoría
-                </label>
-                <div class="filter-chips" id="categoryFilters">
-                    <button class="chip active" data-category="all">
-                        Todas <span class="chip-count" id="countAll">0</span>
+            <div class="filter-section">
+                <div class="category-filters" id="categoryFilters">
+                    <button class="category-chip active" data-category="all">
+                        <div class="chip-icon">
+                            <i class="fas fa-th"></i>
+                        </div>
+                        <div class="chip-content">
+                            <span class="chip-label">Todas</span>
+                            <span class="chip-count" id="countAll">0</span>
+                        </div>
                     </button>
-                    <!-- Se generan dinámicamente -->
+                    <!-- Generados dinámicamente -->
                 </div>
             </div>
 
-            <!-- Búsqueda -->
-            <div class="nav-section search-section">
-                <div class="search-wrapper">
-                    <i class="fas fa-search search-icon"></i>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        class="search-input" 
-                        placeholder="Buscar noticias..."
-                    >
-                    <span class="search-badge" id="searchBadge"></span>
-                </div>
-            </div>
-
+            <!-- Reset Button -->
+            <button class="reset-filters-btn" id="resetFilters" title="Resetear filtros">
+                <i class="fas fa-redo"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Contenedor Principal -->
     <main class="main-container" id="newsContainer">
-        <!-- Se genera dinámicamente por JavaScript -->
+        <!-- Skeleton Loader -->
+        <div class="skeleton-container" id="skeletonLoader">
+            <div class="skeleton-month">
+                <div class="skeleton-month-header"></div>
+                <div class="skeleton-cards">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenido dinámico aquí -->
     </main>
 
-    <!-- Empty State -->
+    <!-- Empty State Premium -->
     <div class="empty-state" id="emptyState" style="display: none;">
-        <i class="fas fa-search"></i>
-        <h3>No se encontraron noticias</h3>
-        <p>Intenta ajustar los filtros o busca otro término</p>
+        <div class="empty-icon">
+            <i class="fas fa-search"></i>
+        </div>
+        <h3 class="empty-title">No se encontraron resultados</h3>
+        <p class="empty-text">Intenta ajustar los filtros o busca otro término</p>
         <button class="btn-primary" onclick="resetAllFilters()">
-            <i class="fas fa-redo"></i> Resetear filtros
+            <i class="fas fa-redo"></i>
+            <span>Resetear filtros</span>
         </button>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Premium -->
+    <footer class="footer-premium">
         <div class="footer-content">
-            <p>&copy; 2026 Global Exchange - Todos los derechos reservados</p>
-            <p class="footer-note">Global Media Report - Departamento de Comunicación</p>
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <div class="footer-text">
+                    <h4>Global Media Report</h4>
+                    <p>Departamento de Comunicación</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2026 Global Exchange. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 

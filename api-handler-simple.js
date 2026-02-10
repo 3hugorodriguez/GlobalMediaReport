@@ -1,5 +1,5 @@
 // ===============================
-// API HANDLER - Versión 2.0
+// API HANDLER - VERSIÓN PREMIUM
 // ===============================
 
 class GMRDataService {
@@ -49,32 +49,27 @@ class GMRDataService {
 }
 
 // ===============================
-// RENDERIZADOR PRINCIPAL
+// RENDERIZADOR PREMIUM
 // ===============================
 
 class GMRRenderer {
     constructor(data) {
         this.data = data;
-        this.currentView = 'grid'; // 'grid' o 'compact'
+        this.currentView = 'grid';
     }
 
-    // ============================
-    // STATS ÚTILES
-    // ============================
-    renderStats() {
+    // Stats para hero header
+    renderHeroStats() {
         const stats = this.calculateStats();
         
         // Total noticias
-        document.getElementById('totalNews').textContent = stats.total;
+        this.animateCounter('totalNewsHero', stats.total);
         
-        // Crecimiento (simulado por ahora, puedes calcularlo real si tienes histórico)
-        document.getElementById('growthRate').textContent = '+15%';
-        
-        // Categoría destacada (la que tiene más noticias)
+        // Categoría destacada
         const topCat = Object.entries(stats.porCategoria)
             .sort((a, b) => b[1] - a[1])[0];
         const topCatName = this.getCategoryName(topCat[0]);
-        document.getElementById('topCategory').textContent = topCatName;
+        document.getElementById('topCategoryHero').textContent = topCatName;
         
         // Última actualización
         const lastDate = new Date(this.data.noticias[0].fecha);
@@ -85,15 +80,12 @@ class GMRRenderer {
         if (diffDays === 1) updateText = 'Ayer';
         else if (diffDays > 1) updateText = `Hace ${diffDays}d`;
         
-        document.getElementById('lastUpdate').textContent = updateText;
-        
-        // Animar números
-        this.animateCounter('totalNews', stats.total);
+        document.getElementById('lastUpdateHero').textContent = updateText;
     }
 
     animateCounter(elementId, target) {
         const element = document.getElementById(elementId);
-        const duration = 1000;
+        const duration = 1500;
         const increment = target / (duration / 16);
         let current = 0;
 
@@ -107,17 +99,7 @@ class GMRRenderer {
             }
         };
 
-        // Iniciar solo cuando sea visible
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animate();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        observer.observe(element);
+        animate();
     }
 
     calculateStats() {
@@ -134,11 +116,9 @@ class GMRRenderer {
         };
     }
 
-    // ============================
-    // FILTROS DE MES
-    // ============================
+    // Filtros de mes
     renderMonthFilters() {
-        const container = document.getElementById('monthFilters');
+        const container = document.getElementById('monthTimeline');
         const stats = this.calculateStats();
         const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
 
@@ -147,11 +127,11 @@ class GMRRenderer {
             const monthName = this.formatMonth(month);
             
             const chip = document.createElement('button');
-            chip.className = 'chip';
+            chip.className = 'timeline-chip';
             chip.setAttribute('data-month', month);
             chip.innerHTML = `
-                ${monthName}
-                <span class="chip-count">${count}</span>
+                <i class="far fa-calendar"></i>
+                <span>${monthName}</span>
             `;
             
             container.appendChild(chip);
@@ -177,14 +157,11 @@ class GMRRenderer {
             .join(' ');
     }
 
-    // ============================
-    // FILTROS DE CATEGORÍA
-    // ============================
+    // Filtros de categoría
     renderCategoryFilters() {
         const container = document.getElementById('categoryFilters');
         const stats = this.calculateStats();
 
-        // Actualizar contador de "Todas"
         document.getElementById('countAll').textContent = stats.total;
 
         this.data.categorias.forEach(cat => {
@@ -192,26 +169,35 @@ class GMRRenderer {
             if (count === 0) return;
 
             const chip = document.createElement('button');
-            chip.className = 'chip';
+            chip.className = 'category-chip';
             chip.setAttribute('data-category', cat.Slug);
             chip.innerHTML = `
-                <i class="fas ${cat.Icono}"></i>
-                ${cat.Nombre}
-                <span class="chip-count">${count}</span>
+                <div class="chip-icon">
+                    <i class="fas ${cat.Icono}"></i>
+                </div>
+                <div class="chip-content">
+                    <span class="chip-label">${cat.Nombre}</span>
+                    <span class="chip-count">${count}</span>
+                </div>
             `;
             
             container.appendChild(chip);
         });
     }
 
-    // ============================
-    // RENDERIZADO DE NOTICIAS
-    // ============================
+    // Renderizado de noticias
     renderNews() {
         const container = document.getElementById('newsContainer');
+        
+        // Ocultar skeleton
+        const skeleton = document.getElementById('skeletonLoader');
+        if (skeleton) {
+            skeleton.style.opacity = '0';
+            setTimeout(() => skeleton.remove(), 300);
+        }
+        
         container.innerHTML = '';
 
-        // Agrupar por mes y luego por categoría
         const noticiasPorMes = this.groupNewsByMonth(this.data.noticias);
         const mesesOrdenados = Object.keys(noticiasPorMes).sort((a, b) => new Date(b) - new Date(a));
 
@@ -248,14 +234,12 @@ class GMRRenderer {
             </div>
         `;
 
-        // Agrupar noticias por categoría dentro del mes
         const noticiasPorCategoria = noticias.reduce((acc, noticia) => {
             if (!acc[noticia.categoria]) acc[noticia.categoria] = [];
             acc[noticia.categoria].push(noticia);
             return acc;
         }, {});
 
-        // Renderizar cada grupo de categoría
         this.data.categorias.forEach(cat => {
             const noticiasCategoria = noticiasPorCategoria[cat.Slug];
             if (!noticiasCategoria || noticiasCategoria.length === 0) return;
@@ -322,10 +306,10 @@ class GMRRenderer {
 
         article.innerHTML = `
             <div class="news-image">
-                <img src="${noticia.imagen || 'https://placehold.co/400x200/122864/FFFFFF?text=Global+Exchange'}" 
+                <img src="${noticia.imagen || 'https://placehold.co/400x240/122864/FFFFFF?text=Global+Exchange'}" 
                      alt="${noticia.titulo}" 
                      loading="lazy"
-                     onerror="this.src='https://placehold.co/400x200/122864/FFFFFF?text=Imagen+no+disponible'">
+                     onerror="this.src='https://placehold.co/400x240/122864/FFFFFF?text=Sin+Imagen'">
                 <div class="news-image-overlay">
                     ${newBadge}
                 </div>
@@ -362,9 +346,6 @@ class GMRRenderer {
         return article;
     }
 
-    // ============================
-    // HEADER
-    // ============================
     renderHeader() {
         const config = this.data.config;
         if (config && config.mes_actual) {
@@ -372,25 +353,14 @@ class GMRRenderer {
         }
     }
 
-    // ============================
-    // HELPERS
-    // ============================
     getCategoryName(slug) {
-        const names = {
-            'grupo-global': 'Grupo Global',
-            'sector-cambiario': 'Sector Cambiario',
-            'sector-aeroportuario': 'Aeroportuario',
-            'medios-efectivo': 'Medios de Pago'
-        };
-        return names[slug] || slug;
+        const cat = this.data.categorias.find(c => c.Slug === slug);
+        return cat ? cat.Nombre : slug;
     }
 
-    // ============================
-    // RENDER ALL
-    // ============================
     renderAll() {
         this.renderHeader();
-        this.renderStats();
+        this.renderHeroStats();
         this.renderMonthFilters();
         this.renderCategoryFilters();
         this.renderNews();
@@ -406,8 +376,6 @@ let renderer;
 let allData;
 
 async function initializeGMR() {
-    showLoading();
-
     try {
         dataService = new GMRDataService('./data/gmr-data.json');
         allData = await dataService.fetchData();
@@ -415,18 +383,19 @@ async function initializeGMR() {
         renderer = new GMRRenderer(allData);
         renderer.renderAll();
         
-        // Inicializar funcionalidades interactivas
-        initializeFilters();
-        initializeSearch();
-        initializeNewsCards();
-        initializeViewToggle();
-        
-        hideLoading();
-        console.log('✅ GMR inicializado correctamente');
+        // Esperar un tick para que el DOM esté listo
+        setTimeout(() => {
+            initializeFilters();
+            initializeSearch();
+            initializeNewsCards();
+            initializeViewToggle();
+            initializeBackToTop();
+            console.log('✅ GMR Premium inicializado correctamente');
+        }, 100);
         
     } catch (error) {
         console.error('❌ Error crítico:', error);
-        showError('No se pudieron cargar los datos. Por favor, recarga la página.');
+        showToast('Error al cargar los datos', 'error');
     }
 }
 
@@ -439,12 +408,11 @@ function initializeFilters() {
     let activeCategory = 'all';
 
     // Filtros de mes
-    document.getElementById('monthFilters').addEventListener('click', (e) => {
-        const chip = e.target.closest('.chip');
+    document.getElementById('monthTimeline').addEventListener('click', (e) => {
+        const chip = e.target.closest('.timeline-chip');
         if (!chip) return;
 
-        // Actualizar activo
-        document.querySelectorAll('#monthFilters .chip').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('#monthTimeline .timeline-chip').forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
 
         activeMonth = chip.getAttribute('data-month');
@@ -453,23 +421,25 @@ function initializeFilters() {
 
     // Filtros de categoría
     document.getElementById('categoryFilters').addEventListener('click', (e) => {
-        const chip = e.target.closest('.chip');
+        const chip = e.target.closest('.category-chip');
         if (!chip) return;
 
-        // Actualizar activo
-        document.querySelectorAll('#categoryFilters .chip').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('#categoryFilters .category-chip').forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
 
         activeCategory = chip.getAttribute('data-category');
         applyFilters(activeMonth, activeCategory);
     });
 
+    // Reset filters
+    document.getElementById('resetFilters').addEventListener('click', () => {
+        resetAllFilters();
+    });
+
     function applyFilters(month, category) {
         const monthSections = document.querySelectorAll('.month-section');
-        const categoryGroups = document.querySelectorAll('.category-group');
         let visibleCount = 0;
 
-        // Filtrar secciones de mes
         monthSections.forEach(section => {
             const sectionMonth = section.getAttribute('data-month');
             const shouldShowMonth = month === 'all' || sectionMonth === month;
@@ -477,7 +447,6 @@ function initializeFilters() {
             if (shouldShowMonth) {
                 section.style.display = 'block';
                 
-                // Filtrar grupos de categoría dentro del mes
                 const groupsInSection = section.querySelectorAll('.category-group');
                 let visibleGroupsInSection = 0;
 
@@ -494,7 +463,6 @@ function initializeFilters() {
                     }
                 });
 
-                // Ocultar mes si no tiene grupos visibles
                 if (visibleGroupsInSection === 0) {
                     section.style.display = 'none';
                 }
@@ -503,16 +471,24 @@ function initializeFilters() {
             }
         });
 
-        // Mostrar/ocultar empty state
         toggleEmptyState(visibleCount);
 
-        // Scroll suave a la primera sección visible
-        const firstVisible = document.querySelector('.month-section[style="display: block;"]');
-        if (firstVisible && (month !== 'all' || category !== 'all')) {
-            setTimeout(() => {
-                firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
+        if (month !== 'all' || category !== 'all') {
+            const firstVisible = document.querySelector('.month-section[style="display: block;"]');
+            if (firstVisible) {
+                setTimeout(() => {
+                    const offset = 180; // Height of fixed headers
+                    const elementPosition = firstVisible.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
         }
+
+        showToast(`Mostrando ${visibleCount} noticia${visibleCount !== 1 ? 's' : ''}`, 'info');
     }
 }
 
@@ -532,12 +508,20 @@ function initializeSearch() {
         }, 300);
     });
 
+    // Expandir búsqueda al hacer focus
+    searchInput.addEventListener('focus', () => {
+        searchInput.parentElement.style.transform = 'scale(1.02)';
+    });
+
+    searchInput.addEventListener('blur', () => {
+        searchInput.parentElement.style.transform = 'scale(1)';
+    });
+
     function performSearch(term) {
         const cards = document.querySelectorAll('.news-card');
         let visibleCount = 0;
 
         if (term === '') {
-            // Mostrar todas
             cards.forEach(card => card.style.display = '');
             searchBadge.classList.remove('visible');
             toggleEmptyState(cards.length);
@@ -558,11 +542,9 @@ function initializeSearch() {
             }
         });
 
-        // Actualizar badge
-        searchBadge.textContent = `${visibleCount} resultado${visibleCount !== 1 ? 's' : ''}`;
+        searchBadge.textContent = `${visibleCount}`;
         searchBadge.classList.add('visible');
 
-        // Ocultar secciones vacías
         document.querySelectorAll('.category-group').forEach(group => {
             const visibleCards = group.querySelectorAll('.news-card[style=""]').length;
             group.style.display = visibleCards > 0 ? 'block' : 'none';
@@ -583,7 +565,7 @@ function initializeSearch() {
         }
 
         const regex = new RegExp(`(${term})`, 'gi');
-        element.innerHTML = originalText.replace(regex, '<mark style="background: #fef08a; padding: 2px 4px; border-radius: 3px;">$1</mark>');
+        element.innerHTML = originalText.replace(regex, '<mark style="background: linear-gradient(135deg, #fef08a, #fde047); padding: 2px 6px; border-radius: 4px; font-weight: 700;">$1</mark>');
     }
 }
 
@@ -598,11 +580,14 @@ function initializeNewsCards() {
 
         const url = card.getAttribute('data-url');
         if (url) {
+            // Feedback visual
             card.style.transform = 'scale(0.98)';
+            
             setTimeout(() => {
                 window.open(url, '_blank');
                 card.style.transform = '';
-            }, 100);
+                showToast('Abriendo noticia...', 'success');
+            }, 150);
         }
     });
 }
@@ -623,17 +608,41 @@ function initializeViewToggle() {
             container.classList.add('compact-view');
             toggleBtn.innerHTML = '<i class="fas fa-th-large"></i>';
             toggleBtn.title = 'Vista en grid';
+            showToast('Vista compacta activada', 'info');
         } else {
             container.classList.remove('compact-view');
             toggleBtn.innerHTML = '<i class="fas fa-list"></i>';
-            toggleBtn.title = 'Vista compacta';
+            toggleBtn.title = 'Vista lista';
+            showToast('Vista grid activada', 'info');
         }
 
-        // Animación del botón
         toggleBtn.style.transform = 'rotate(180deg)';
         setTimeout(() => {
             toggleBtn.style.transform = '';
         }, 300);
+    });
+}
+
+// ===============================
+// BACK TO TOP
+// ===============================
+
+function initializeBackToTop() {
+    const btn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }
 
@@ -647,31 +656,29 @@ function toggleEmptyState(count) {
 
     if (count === 0) {
         emptyState.style.display = 'block';
-        newsContainer.style.display = 'none';
+        newsContainer.style.opacity = '0';
+        setTimeout(() => newsContainer.style.display = 'none', 300);
     } else {
         emptyState.style.display = 'none';
         newsContainer.style.display = 'block';
+        setTimeout(() => newsContainer.style.opacity = '1', 10);
     }
 }
 
 function resetAllFilters() {
-    // Reset filtros de mes
-    document.querySelectorAll('#monthFilters .chip').forEach(chip => {
+    document.querySelectorAll('#monthTimeline .timeline-chip').forEach(chip => {
         chip.classList.remove('active');
     });
-    document.querySelector('#monthFilters .chip[data-month="all"]').classList.add('active');
+    document.querySelector('#monthTimeline .timeline-chip[data-month="all"]').classList.add('active');
 
-    // Reset filtros de categoría
-    document.querySelectorAll('#categoryFilters .chip').forEach(chip => {
+    document.querySelectorAll('#categoryFilters .category-chip').forEach(chip => {
         chip.classList.remove('active');
     });
-    document.querySelector('#categoryFilters .chip[data-category="all"]').classList.add('active');
+    document.querySelector('#categoryFilters .category-chip[data-category="all"]').classList.add('active');
 
-    // Reset búsqueda
     document.getElementById('searchInput').value = '';
     document.getElementById('searchBadge').classList.remove('visible');
 
-    // Mostrar todo
     document.querySelectorAll('.news-card').forEach(card => {
         card.style.display = '';
         const title = card.querySelector('.news-title');
@@ -685,68 +692,38 @@ function resetAllFilters() {
     });
 
     toggleEmptyState(document.querySelectorAll('.news-card').length);
+    showToast('Filtros restablecidos', 'success');
 }
 
 // ===============================
-// LOADING & ERROR
+// TOAST NOTIFICATIONS
 // ===============================
 
-function showLoading() {
-    document.body.insertAdjacentHTML('beforeend', `
-        <div id="gmr-loader" style="
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, #122864 0%, #010276 100%);
-            display: flex; flex-direction: column; justify-content: center;
-            align-items: center; z-index: 10000; color: white;">
-            <div style="
-                width: 60px; height: 60px;
-                border: 4px solid rgba(255,255,255,0.2);
-                border-top-color: white; border-radius: 50%;
-                animation: spin 1s linear infinite;"></div>
-            <p style="margin-top: 24px; font-size: 1.2rem; font-weight: 600;">
-                Cargando Global Media Report...
-            </p>
-            <p style="margin-top: 8px; font-size: 0.9rem; opacity: 0.8;">
-                Preparando contenido
-            </p>
-        </div>
-        <style>
-            @keyframes spin { to { transform: rotate(360deg); }}
-        </style>
-    `);
-}
+function showToast(message, type = 'info') {
+    const container = document.getElementById('toastContainer');
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
 
-function hideLoading() {
-    const loader = document.getElementById('gmr-loader');
-    if (loader) {
-        loader.style.opacity = '0';
-        loader.style.transition = 'opacity 0.3s ease';
-        setTimeout(() => loader.remove(), 300);
-    }
-}
+    const icons = {
+        success: 'fa-check-circle',
+        error: 'fa-exclamation-circle',
+        info: 'fa-info-circle'
+    };
 
-function showError(message) {
-    hideLoading();
-    document.body.insertAdjacentHTML('beforeend', `
-        <div style="
-            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            background: white; padding: 48px; border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center;
-            z-index: 10001; max-width: 500px;">
-            <i class="fas fa-exclamation-triangle" style="
-                font-size: 4rem; color: #ef4444; margin-bottom: 24px;"></i>
-            <h3 style="margin-bottom: 16px; color: #122864; font-size: 1.5rem;">
-                Error de Conexión
-            </h3>
-            <p style="color: #64748b; margin-bottom: 32px; line-height: 1.6;">
-                ${message}
-            </p>
-            <button onclick="location.reload()" style="
-                padding: 14px 32px; background: linear-gradient(135deg, #3d73f1, #28bdc7);
-                color: white; border: none; border-radius: 10px;
-                cursor: pointer; font-weight: 600; font-size: 1rem;">
-                <i class="fas fa-redo"></i> Reintentar
-            </button>
+    toast.innerHTML = `
+        <div class="toast-icon">
+            <i class="fas ${icons[type]}"></i>
         </div>
-    `);
+        <div class="toast-content">
+            <div class="toast-message">${message}</div>
+        </div>
+    `;
+
+    container.appendChild(toast);
+
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(400px)';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
 }
