@@ -1,0 +1,318 @@
+{
+  "success": true,
+  "timestamp": "2026-02-10T11:31:09.235Z",
+  "version": "1.0",
+  "data": {
+    "noticias": [
+      {
+        "fecha": "2026-01-26",
+        "titulo": "Global Exchange inicia operaciones en Heathrow y supera las 500 oficinas en su red mundial",
+        "categoria": "grupo-global",
+        "alcance": "Nacional",
+        "url": "https://www.lagacetadesalamanca.es/salamanca/global-exchange-inicia-operaciones-heathrow-supera-500-20260126171259-nt.html",
+        "medio": "La Gaceta de Salamanca",
+        "resumen": "Este contrato representa el hito más importante en la historia de Global Exchange, consolidando su posición como líder mundial del sector al operar en 4 de los 5 aeropuertos más transitados de Europa: Heathrow, Estambul, París CDG y Madrid-Barajas.",
+        "highlights": [
+          "Comenzó operaciones en Heathrow el 26 de enero de 2026, el aeropuerto más transitado de Europa con 83,9 millones de pasajeros anuales",
+          "Despliegue de 23 oficinas de cambio en las 4 terminales, 78 cajeros automáticos y más de 40 dispensadores cash-to-cash",
+          "Equipo de 180 profesionales contratados para las operaciones",
+          "El contrato pone fin a 39 años de presencia exclusiva de Travelex en el aeropuerto",
+          "Con esta apertura, Global Exchange supera las 515 oficinas en 31 países y 90 aeropuertos internacionales"
+        ],
+        "tags": [
+          "Heathrow",
+          "Expansión",
+          "Liderazgo"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Airport"
+      },
+      {
+        "fecha": "2026-01-26",
+        "titulo": "Heathrow announces Global Exchange to become new currency exchange provider",
+        "categoria": "grupo-global",
+        "alcance": "Internacional",
+        "url": "https://mediacentre.heathrow.com/pressrelease/detail/23952",
+        "medio": "Heathrow Media Centre",
+        "resumen": "El comunicado oficial de Heathrow destaca el enfoque digital de Global Exchange y su compromiso con la experiencia del cliente como factores clave en la adjudicación del contrato.",
+        "highlights": [
+          "Global Exchange selected to operate currency exchange services at Europe's busiest airport",
+          "The deal includes 23 in-terminal locations, 78 ATMs, and over 40 cash-to-cash dispensers",
+          "Digital-first approach with state-of-the-art technology highlighted in winning proposal",
+          "Operations began January 2026, replacing Travelex after 39 years"
+        ],
+        "tags": [
+          "Official",
+          "Partnership"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Official"
+      },
+      {
+        "fecha": "2025-09-01",
+        "titulo": "Global Exchange alcanza el liderazgo mundial en cambio de divisas tras llegar a 30 países y 84 aeropuertos internacionales",
+        "categoria": "grupo-global",
+        "alcance": "Nacional",
+        "url": "https://www.eleconomista.es/transportes-turismo/noticias/13551342/09/25/global-exchange-alcanza-el-liderazgo-mundial-en-cambio-de-divisas.html",
+        "medio": "El Economista",
+        "resumen": "La expansión en Asia-Pacífico se acelera con nuevas operaciones en Auckland (8 oficinas), Kuala Lumpur y aeropuertos de Malasia (6 oficinas). México sigue siendo el epicentro de la actividad en América con 50 centros de trabajo y 72 oficinas.",
+        "highlights": [
+          "Facturación de 275,2 millones de euros en 2024, crecimiento del 281% respecto a 2015",
+          "Apertura en 6 nuevos países durante 2025: Malasia, Nueva Zelanda, Perú, Rumanía, Japón y Arabia Saudí",
+          "92 nuevas oficinas inauguradas durante el año",
+          "Plantilla de 2.900 empleados, un 80% más que en 2020",
+          "En 2026 la compañía celebra su 30 aniversario"
+        ],
+        "tags": [
+          "Liderazgo",
+          "Expansión global",
+          "Asia-Pacífico"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Global+Leadership"
+      },
+      {
+        "fecha": "2026-01-01",
+        "titulo": "Travelex pierde Heathrow pero mantiene posiciones en Frankfurt y Ámsterdam",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.travelex-corporate.com/media-centre/",
+        "medio": "Travelex Corporate",
+        "resumen": "La pérdida de Heathrow representa un golpe estratégico significativo para Travelex, aunque la compañía diversifica hacia tarjetas prepago con +54% en transacciones de recarga y lanzó el programa de fidelización Travelex Plus con 20.000 miembros.",
+        "highlights": [
+          "Pérdida del contrato de Heathrow tras 39 años de presencia exclusiva",
+          "Mantiene Frankfurt (contrato renovado 6 años, 13 tiendas y 25 ATMs)",
+          "Conserva Ámsterdam Schiphol (renovado 5 años, 11 tiendas y 50 ATMs)",
+          "Ingresos FY2024: £520,1 millones (-3% interanual)",
+          "Nuevo CEO Philip Bowcock nombrado en julio 2025"
+        ],
+        "tags": [
+          "Travelex",
+          "Competencia"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Travelex"
+      },
+      {
+        "fecha": "2025-12-01",
+        "titulo": "Wise Full Year 2025 Earnings: Strong Growth Continues",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://wise.com/gb/blog/annual-report-2025",
+        "medio": "Wise Investor Relations",
+        "resumen": "Wise mantiene crecimiento de doble dígito con expansión de productos más allá de las transferencias. La tarjeta Wise alcanzó £15.000 millones en gasto con +28% de crecimiento en ingresos.",
+        "highlights": [
+          "Ingresos: 1.650 millones de libras (+17% interanual)",
+          "Clientes activos: 15,6 millones de usuarios",
+          "Volumen transfronterizo: 145.200 millones de libras",
+          "Margen EBITDA subyacente: 21%, superando objetivo del 13-16%",
+          "Ingresos no transfronterizos ya representan el 41% del total",
+          "Propuesta de dual listing en NYSE para Q2 2026"
+        ],
+        "tags": [
+          "Wise",
+          "Fintech",
+          "Resultados"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Growth"
+      },
+      {
+        "fecha": "2026-01-15",
+        "titulo": "Revolut alcanza los 6 millones de clientes en España y supera a Sabadell e ING",
+        "categoria": "sector-cambiario",
+        "alcance": "Nacional",
+        "url": "https://www.eleconomista.es/banca-finanzas/noticias/13717866/01/26/revolut-alcanza-los-seis-millones-de-clientes-en-espana.html",
+        "medio": "El Economista",
+        "resumen": "Revolut representa la mayor amenaza competitiva digital en España. Su red de ATMs propios compite directamente con el negocio tradicional de cambio de divisas, ofreciendo tipos de cambio interbancarios. España fue elegida como mercado piloto mundial porque el 60% de pagos en punto de venta siguen siendo en efectivo.",
+        "highlights": [
+          "6 millones de usuarios en España (13% de penetración de mercado)",
+          "España es el cuarto banco por número de clientes, superando a ING y Sabadell",
+          "Valoración de la compañía: 75.000 millones de dólares (+67% en 2025)",
+          "Lanzamiento de red propia de cajeros: 50 unidades en Madrid y Barcelona",
+          "Plan de expansión a 200 cajeros en 2026 (Valencia, Málaga incluidas)",
+          "ATMs permiten retiros sin comisión y dispensación instantánea de tarjetas"
+        ],
+        "tags": [
+          "Revolut",
+          "Fintech",
+          "ATMs",
+          "Amenaza"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Spain"
+      },
+      {
+        "fecha": "2025-12-31",
+        "titulo": "Los aeropuertos del Grupo AENA gestionaron 384,8 millones de pasajeros en 2025",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.aena.es/en/press/aena-group-airports-exceed-384.8-million-passengers-in-2025.html",
+        "medio": "AENA",
+        "resumen": "El crecimiento sostenido del tráfico aéreo en España garantiza volumen de clientes para servicios de cambio de divisa. Los aeropuertos mediterráneos muestran el mayor dinamismo, con Valencia y Alicante liderando el crecimiento.",
+        "highlights": [
+          "Récord histórico: 321,6 millones de pasajeros en aeropuertos españoles (+3,9%)",
+          "Grupo AENA global (incluyendo Brasil y Londres Luton): 384,8 millones (+4,2%)",
+          "23 aeropuertos españoles batieron sus máximos históricos",
+          "Valencia: 11,8M pasajeros (+9,6%), mayor crecimiento porcentual",
+          "Alicante-Elche: 20,0M pasajeros (+8,5%)",
+          "Madrid-Barajas: 68,2M pasajeros (+3,0%)"
+        ],
+        "tags": [
+          "AENA",
+          "Aeropuertos",
+          "Tráfico"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=AENA+Record"
+      },
+      {
+        "fecha": "2025-12-15",
+        "titulo": "España bate récord de turismo: 97 millones de visitantes y 135.000 millones de gasto",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/hereu-adelanta-previsiones-gasto-turistas-internacionales.aspx",
+        "medio": "Ministerio de Industria y Turismo",
+        "resumen": "El crecimiento del gasto turístico casi duplica el de llegadas, indicando un turismo de mayor valor. El mercado británico y estadounidense, con mayor necesidad de cambio GBP/USD, representan oportunidades estratégicas para el sector.",
+        "highlights": [
+          "97 millones de turistas internacionales en 2025 (+3,5%)",
+          "Gasto turístico récord: 135.000 millones de euros (+6,8%)",
+          "Gasto medio por turista: aproximadamente 1.400 euros por viaje",
+          "Reino Unido lidera como mercado emisor: 18,2 millones de turistas (+3,9%)",
+          "Turismo estadounidense con fuerte crecimiento del gasto (+11,6%)"
+        ],
+        "tags": [
+          "Turismo",
+          "España",
+          "Récord"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Tourism+Record"
+      },
+      {
+        "fecha": "2026-01-10",
+        "titulo": "ACI World: Global air travel to exceed 10 billion passengers in 2026",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.aci-europe.org/economic-forecasts.html",
+        "medio": "ACI Europe",
+        "resumen": "Las previsiones de ACI confirman la tendencia alcista del tráfico aéreo global, con el segmento internacional mostrando mayor dinamismo que el doméstico, lo que beneficia directamente al sector de cambio de divisas.",
+        "highlights": [
+          "Previsión global: 10.200 millones de pasajeros en 2026 (+3,9%)",
+          "Tráfico internacional crece más del doble que el doméstico (+5,3% vs +2,4%)",
+          "Europa: crecimiento estimado del +3,6%",
+          "European Travel Commission proyecta +6,8% en llegadas internacionales a Europa",
+          "Recuperación del turismo de larga distancia desde Asia-Pacífico"
+        ],
+        "tags": [
+          "ACI",
+          "Previsiones",
+          "Global"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ACI+Forecast"
+      },
+      {
+        "fecha": "2024-11-01",
+        "titulo": "BCE: El efectivo sigue siendo el método de pago más utilizado en tiendas de la eurozona",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2024.en.html",
+        "medio": "Banco Central Europeo",
+        "resumen": "El estudio SPACE 2024 del BCE confirma la resiliencia del efectivo pese a la digitalización. El dato sobre jóvenes acumulando efectivo desafía estereotipos sobre preferencias generacionales en medios de pago.",
+        "highlights": [
+          "52% de las transacciones en punto de venta de la eurozona se pagan en efectivo",
+          "El 62% de consumidores considera importante poder pagar en efectivo (+2 puntos desde 2022)",
+          "En 14 de los 20 países de la eurozona, el efectivo sigue siendo el método predominante",
+          "Jóvenes de 18-27 años muestran mayor propensión a acumular efectivo como reserva",
+          "Motivaciones: preocupaciones sobre ciberamenazas, privacidad y desconfianza en sistemas digitales"
+        ],
+        "tags": [
+          "BCE",
+          "Efectivo",
+          "Eurozona"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ECB+Cash+Study"
+      },
+      {
+        "fecha": "2026-01-02",
+        "titulo": "El efectivo reconocido como infraestructura crítica tras el apagón de abril 2025",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.rte.ie/brainstorm/2026/0102/1545488-cash-money-emergency-planning/",
+        "medio": "RTÉ Brainstorm",
+        "resumen": "El reconocimiento institucional del efectivo como infraestructura crítica refuerza el argumento comercial del sector. La exención para operaciones de cambio de moneda representa una ventaja competitiva regulatoria.",
+        "highlights": [
+          "El BCE y gobiernos europeos reconocen el efectivo como componente crítico de preparación ante crisis",
+          "Irlanda y países nórdicos recomiendan a ciudadanos mantener efectivo en casa para emergencias",
+          "El BCE declaró que la demanda sostenida de efectivo sugiere su utilidad única e imperfecta sustituibilidad",
+          "España: límite de €1.000 para pagos en efectivo con empresarios (€10.000 para turistas no residentes)",
+          "Operaciones de cambio de moneda en establecimientos autorizados están exentas del límite"
+        ],
+        "tags": [
+          "Infraestructura",
+          "Crisis",
+          "Regulación"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Critical+Infrastructure"
+      },
+      {
+        "fecha": "2026-01-05",
+        "titulo": "Denaria intensifica la defensa del efectivo como servicio público esencial",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.plataformadenaria.com/es/notas-de-prensa/",
+        "medio": "Plataforma Denaria",
+        "resumen": "Denaria aprovecha los fallos tecnológicos recientes (apagón de abril, caída de Redsys) para reforzar su mensaje sobre la importancia del dinero físico y su papel como respaldo ante crisis digitales.",
+        "highlights": [
+          "El 90% de españoles se opone a la sustitución del efectivo según encuesta de Denaria",
+          "El 87% considera que debe garantizarse el derecho a pagar en efectivo",
+          "El 77% lo considera un bien público",
+          "Jornada en el Congreso de los Diputados pidiendo reforzar el efectivo como infraestructura crítica",
+          "Lanzamiento de Denaria Chile: primer capítulo en Latinoamérica"
+        ],
+        "tags": [
+          "Denaria",
+          "Defensa efectivo",
+          "Congreso"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Denaria+Platform"
+      },
+      {
+        "fecha": "2026-02-10",
+        "titulo": "Prueba noticia Febrero",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://getd.es/",
+        "medio": "Hugo (Comunicación)",
+        "resumen": "Tikitaka tikitaka ti",
+        "highlights": [
+          "Taka tiki ti taka ti"
+        ],
+        "tags": [
+          "Molinos",
+          "Cosas"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Prueba+Hugo"
+      }
+    ],
+    "categorias": [
+      {
+        "Slug": "grupo-global",
+        "Nombre": "Grupo Global Exchange",
+        "Icono": "fa-building",
+        "Color": "#122864"
+      },
+      {
+        "Slug": "sector-cambiario",
+        "Nombre": "Sector Cambiario",
+        "Icono": "fa-exchange-alt",
+        "Color": "#3b82f6"
+      },
+      {
+        "Slug": "sector-aeroportuario",
+        "Nombre": "Aeroportuario y Turístico",
+        "Icono": "fa-plane",
+        "Color": "#8b5cf6"
+      },
+      {
+        "Slug": "medios-efectivo",
+        "Nombre": "Medios de Pago: Efectivo",
+        "Icono": "fa-money-bill-wave",
+        "Color": "#10b981"
+      }
+    ],
+    "config": {}
+  }
+}

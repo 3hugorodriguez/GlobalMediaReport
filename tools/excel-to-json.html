@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Excel → JSON para GMR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #122864;
+            margin-bottom: 30px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .upload-btn {
+            background: #122864;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .upload-btn:hover {
+            background: #0d1d4a;
+            transform: translateY(-2px);
+        }
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+        }
+        .success {
+            color: #10b981;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .download-btn {
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .download-btn:hover {
+            background: #059669;
+        }
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            max-height: 400px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Excel → JSON Converter</h1>
+        <p>Sube tu archivo <strong>GMR-Data.xlsx</strong> y obtén el JSON automáticamente</p>
+        
+        <label for="fileInput" class="upload-btn">
+            📂 Seleccionar GMR-Data.xlsx
+        </label>
+        <input type="file" id="fileInput" accept=".xlsx,.xls">
+        
+        <div id="result">
+            <div class="success">✅ Conversión exitosa</div>
+            <p>Estadísticas:</p>
+            <ul id="stats"></ul>
+            <button class="download-btn" onclick="downloadJSON()">💾 Descargar gmr-data.json</button>
+            <h3>Vista previa:</h3>
+            <pre id="preview"></pre>
+        </div>
+    </div>
+
+    <script>
+        let jsonData;
+
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, {type: 'array'});
+
+                // Leer las 3 hojas
+                const noticias = XLSX.utils.sheet_to_json(workbook.Sheets['Noticias']);
+                const categorias = XLSX.utils.sheet_to_json(workbook.Sheets['Categorias']);
+                const config = XLSX.utils.sheet_to_json(workbook.Sheets['Config']);
+
+                // Procesar noticias
+                const noticiasPublicadas = noticias
+                    .filter(n => n.Estado === 'Publicado')
+                    .map(n => ({
+                        id: n.ID,
+                        fecha: formatDate(n.Fecha),
+                        titulo: n.Titulo,
+                        categoria: n.Categoria,
+                        alcance: n.Alcance,
+                        url: n.URL,
+                        medio: n.Medio,
+                        resumen: n.Resumen,
+                        highlights: n.Highlights ? n.Highlights.split('||').map(h => h.trim()) : [],
+                        tags: n.Tags ? n.Tags.split(',').map(t => t.trim()) : [],
+                        imagen: n.Imagen
+                    }));
+
+                // Procesar categorías
+                const categoriasFormateadas = categorias.map(c => ({
+                    Slug: c.Slug,
+                    Nombre: c.Nombre,
+                    Icono: c.Icono,
+                    Color: c.Color
+                }));
+
+                // Procesar config
+                const configObj = {};
+                config.forEach(item => {
+                    configObj[item.Clave] = item.Valor;
+                });
+
+                // Crear JSON final
+                jsonData = {
+                    success: true,
+                    timestamp: new Date().toISOString(),
+                    version: "1.0",
+                    data: {
+                        noticias: noticiasPublicadas,
+                        categorias: categoriasFormateadas,
+                        config: configObj
+                    }
+                };
+
+                // Mostrar resultados
+                document.getElementById('stats').innerHTML = `
+                    <li>📰 ${noticiasPublicadas.length} noticias publicadas</li>
+                    <li>🏷️ ${categoriasFormateadas.length} categorías</li>
+                    <li>⚙️ ${Object.keys(configObj).length} parámetros de configuración</li>
+                `;
+                document.getElementById('preview').textContent = JSON.stringify(jsonData, null, 2);
+                document.getElementById('result').style.display = 'block';
+            };
+
+            reader.readAsArrayBuffer(file);
+        });
+
+        function formatDate(excelDate) {
+            if (typeof excelDate === 'number') {
+                const date = XLSX.SSF.parse_date_code(excelDate);
+                return `${date.y}-${String(date.m).padStart(2, '0')}-${String(date.d).padStart(2, '0')}`;
+            }
+            return excelDate;
+        }
+
+        function downloadJSON() {
+            const blob = new Blob([JSON.stringify(jsonData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'gmr-data.json';
+            a.click();
+        }
+    </script>
+</body>
+</html>
