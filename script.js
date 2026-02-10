@@ -429,3 +429,276 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('✅ Barra de progreso inicializada');
     console.log('⏳ Cargando datos...');
 });
+
+
+function initializeGMR();
+
+
+// ===============================
+// UTILIDADES DE FECHA
+// ===============================
+
+function getRelativeTime(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    
+    if (diffMins < 1) return 'Hace un momento';
+    if (diffMins < 60) return `Hace ${diffMins}m`;
+    if (diffHours < 24) return `Hace ${diffHours}h`;
+    if (diffDays < 7) return `Hace ${diffDays}d`;
+    
+    // Si es más de 7 días, mostrar fecha formateada
+    const options = { day: 'numeric', month: 'short' };
+    return date.toLocaleDateString('es-ES', options);
+}
+
+function getLatestNewsDate(newsData) {
+    if (!newsData || Object.keys(newsData).length === 0) return null;
+    
+    let latestDate = null;
+    
+    Object.values(newsData).forEach(months => {
+        Object.values(months).forEach(categories => {
+            Object.values(categories).forEach(newsList => {
+                newsList.forEach(news => {
+                    const newsDate = new Date(news.date || news.fecha);
+                    if (!latestDate || newsDate > latestDate) {
+                        latestDate = newsDate;
+                    }
+                });
+            });
+        });
+    });
+    
+    return latestDate;
+}
+
+function getPeriodRange(newsData) {
+    if (!newsData || Object.keys(newsData).length === 0) {
+        return 'Sin datos';
+    }
+    
+    let oldestDate = null;
+    let newestDate = null;
+    
+    Object.values(newsData).forEach(months => {
+        Object.values(months).forEach(categories => {
+            Object.values(categories).forEach(newsList => {
+                newsList.forEach(news => {
+                    const newsDate = new Date(news.date || news.fecha);
+                    if (!oldestDate || newsDate < oldestDate) {
+                        oldestDate = newsDate;
+                    }
+                    if (!newestDate || newsDate > newestDate) {
+                        newestDate = newsDate;
+                    }
+                });
+            });
+        });
+    });
+    
+    if (!oldestDate || !newestDate) return 'Sin datos';
+    
+    const optionsMonth = { month: 'long', year: 'numeric' };
+    const oldestStr = oldestDate.toLocaleDateString('es-ES', optionsMonth);
+    const newestStr = newestDate.toLocaleDateString('es-ES', optionsMonth);
+    
+    // Capitalizar primera letra
+    const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+    
+    // Si es el mismo mes, mostrar solo uno
+    if (oldestStr === newestStr) {
+        return capitalize(oldestStr);
+    }
+    
+    // Si es perpetuo (más de 6 meses), mostrar rango
+    const diffMonths = (newestDate.getFullYear() - oldestDate.getFullYear()) * 12 
+                     + (newestDate.getMonth() - oldestDate.getMonth());
+    
+    if (diffMonths > 6) {
+        return `Feed perpetuo`;
+    }
+    
+    return `${capitalize(oldestStr)} - ${capitalize(newestStr)}`;
+}
+
+// ===============================
+// ACTUALIZAR ESTADÍSTICAS DEL HERO
+// ===============================
+
+function updateHeroStats(newsData) {
+    // Total de noticias
+    let totalNews = 0;
+    let internationalCount = 0;
+    const categoryCounts = {};
+    
+    Object.values(newsData).forEach(months => {
+        Object.values(months).forEach(categories => {
+            Object.entries(categories).forEach(([category, newsList]) => {
+                totalNews += newsList.length;
+                
+                // Contar categorías
+                categoryCounts[category] = (categoryCounts[category] || 0) + newsList.length;
+                
+                // Contar internacionales
+                newsList.forEach(news => {
+                    if (news.ambito?.toLowerCase() === 'internacional' || 
+                        news.scope?.toLowerCase() === 'internacional') {
+                        internationalCount++;
+                    }
+                });
+            });
+        });
+    });
+    
+    // Actualizar total de noticias
+    const totalNewsEl = document.getElementById('totalNewsHero');
+    if (totalNewsEl) {
+        animateNumber(totalNewsEl, 0, totalNews, 1000);
+    }
+    
+    // Actualizar conteo internacional
+    const internationalEl = document.getElementById('internationalCount');
+    if (internationalEl) {
+        animateNumber(internationalEl, 0, internationalCount, 1000);
+    }
+    
+    // Categoría más destacada
+    const topCategory = Object.entries(categoryCounts)
+        .sort((a, b) => b[1] - a[1])[0];
+    
+    const topCategoryEl = document.getElementById('topCategoryHero');
+    if (topCategoryEl && topCategory) {
+        topCategoryEl.textContent = topCategory[0];
+    }
+    
+    // Última actualización (fecha de la noticia más reciente)
+    const latestDate = getLatestNewsDate(newsData);
+    const lastUpdateEl = document.getElementById('lastUpdateHero');
+    if (lastUpdateEl && latestDate) {
+        lastUpdateEl.textContent = getRelativeTime(latestDate);
+        
+        // Actualizar cada minuto
+        setInterval(() => {
+            lastUpdateEl.textContent = getRelativeTime(latestDate);
+        }, 60000);
+    }
+    
+    // Periodo dinámico
+    const periodEl = document.getElementById('currentPeriod');
+    if (periodEl) {
+        periodEl.textContent = getPeriodRange(newsData);
+    }
+}
+
+// ===============================
+// ANIMACIÓN DE NÚMEROS
+// ===============================
+
+function animateNumber(element, start, end, duration) {
+    const range = end - start;
+    const increment = range / (duration / 16);
+    let current = start;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+            current = end;
+            clearInterval(timer);
+        }
+        element.textContent = Math.round(current);
+    }, 16);
+}
+
+// ===============================
+// INICIALIZACIÓN MODIFICADA
+// ===============================
+
+// En tu función initializeGMR() o donde cargas las noticias, añade:
+
+function initializeGMR() {
+    console.log('🚀 Inicializando Global Media Report...');
+    
+    // Mostrar skeleton
+    showSkeleton();
+    
+    // Cargar datos (ajusta según tu API)
+    loadNewsData()
+        .then(newsData => {
+            // Ocultar skeleton
+            hideSkeleton();
+            
+            // IMPORTANTE: Actualizar estadísticas del hero
+            updateHeroStats(newsData);
+            
+            // Renderizar noticias
+            renderNews(newsData);
+            
+            // Inicializar filtros
+            initializeFilters(newsData);
+            
+            // Inicializar búsqueda
+            initializeSearch(newsData);
+            
+            console.log('✅ Datos cargados correctamente');
+        })
+        .catch(error => {
+            console.error('❌ Error al cargar datos:', error);
+            showError();
+        });
+}
+
+// ===============================
+// EJEMPLO DE CARGA DE DATOS
+// ===============================
+
+async function loadNewsData() {
+    // Ajusta según tu fuente de datos
+    // Puede ser desde tu api-handler-simple.js
+    
+    try {
+        const response = await fetch('tu-api-endpoint.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching news:', error);
+        throw error;
+    }
+}
+
+// ===============================
+// FUNCIONES DE UI
+// ===============================
+
+function showSkeleton() {
+    const skeleton = document.getElementById('skeletonLoader');
+    if (skeleton) skeleton.style.display = 'block';
+}
+
+function hideSkeleton() {
+    const skeleton = document.getElementById('skeletonLoader');
+    if (skeleton) skeleton.style.display = 'none';
+}
+
+function showError() {
+    const container = document.getElementById('newsContainer');
+    if (container) {
+        container.innerHTML = `
+            <div class="empty-state" style="display: block;">
+                <div class="empty-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3 class="empty-title">Error al cargar datos</h3>
+                <p class="empty-text">No se pudieron cargar las noticias. Intenta recargar la página.</p>
+                <button class="btn-primary" onclick="location.reload()">
+                    <i class="fas fa-redo"></i>
+                    Recargar
+                </button>
+            </div>
+        `;
+    }
+}
