@@ -431,8 +431,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function initializeGMR();
-
 
 // ===============================
 // UTILIDADES DE FECHA
