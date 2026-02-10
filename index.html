@@ -221,13 +221,15 @@
     <!-- Scripts -->
     <script src="api-handler-simple.js"></script>
     <script src="script.js"></script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            initializeTheme();
-            initializeReadingProgress();
-            initializeGMR();
-        });
-    </script>
+	
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Las funciones de script.js ya se inicializan solas
+        // Solo necesitamos iniciar el GMR
+        console.log('🎬 Iniciando carga de datos...');
+    });
+</script>
+
+
 </body>
 </html>
