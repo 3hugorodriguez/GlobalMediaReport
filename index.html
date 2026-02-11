@@ -221,15 +221,37 @@
     <!-- Scripts -->
     <script src="api-handler-simple.js"></script>
     <script src="script.js"></script>
-	
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Las funciones de script.js ya se inicializan solas
-        // Solo necesitamos iniciar el GMR
-        console.log('🎬 Iniciando carga de datos...');
-    });
-</script>
-
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🎬 DOM Ready - Iniciando Global Media Report...');
+            
+            // Verificar dependencias
+            if (typeof GMRDataService === 'undefined') {
+                console.error('❌ GMRDataService no cargado');
+                return;
+            }
+            
+            if (typeof GMRRenderer === 'undefined') {
+                console.error('❌ GMRRenderer no cargado');
+                return;
+            }
+            
+            // Iniciar aplicación
+            if (typeof initializeGMR === 'function') {
+                console.log('✅ Iniciando GMR...');
+                initializeGMR();
+            } else {
+                console.error('❌ initializeGMR no encontrado');
+                showErrorState();
+            }
+        });
+        
+        // Error handler global
+        window.addEventListener('error', (e) => {
+            console.error('💥 Error global:', e.error);
+        });
+    </script>
 
 </body>
 </html>

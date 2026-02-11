@@ -206,25 +206,35 @@ class GMRRenderer {
     // ===============================
     
     renderMonthFilters() {
-        const container = document.getElementById('monthTimeline');
-        const stats = this.calculateStats();
-        const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
-        
-        months.forEach(month => {
-            const count = stats.porMes[month];
-            const monthName = this.formatMonth(month);
-            
-            const chip = document.createElement('button');
-            chip.className = 'chip';
-            chip.setAttribute('data-month', month);
-            chip.innerHTML = `
-                <span>${monthName}</span>
-                <span class="chip-count">${count}</span>
-            `;
-            
-            container.appendChild(chip);
-        });
+    const container = document.getElementById('monthTimeline');
+    const stats = this.calculateStats();
+    const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
+    
+    // Actualizar el contador del chip "Todos" (que ya existe en HTML)
+    const allChip = container.querySelector('.chip[data-month="all"]');
+    if (allChip) {
+        const allCount = allChip.querySelector('.chip-count');
+        if (allCount) {
+            allCount.textContent = this.data.noticias.length;
+        }
     }
+    
+    // Agregar chips de meses dinámicos
+    months.forEach(month => {
+        const count = stats.porMes[month];
+        const monthName = this.formatMonth(month);
+        
+        const chip = document.createElement('button');
+        chip.className = 'chip';
+        chip.setAttribute('data-month', month);
+        chip.innerHTML = `
+            <span>${monthName}</span>
+            <span class="chip-count">${count}</span>
+        `;
+        
+        container.appendChild(chip);
+    });
+}
 
     groupByMonth(noticias) {
         return noticias.reduce((acc, noticia) => {
