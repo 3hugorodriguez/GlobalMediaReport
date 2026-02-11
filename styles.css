@@ -3,53 +3,37 @@
    =============================== */
 
 :root {
-    /* Colores corporativos Global Exchange */
-    --color-primary: #122864;
-    --color-primary-light: #006cb1;
-    --color-primary-accent: #85aed9;
+/* ===============================
+   VARIABLES MEJORADAS
+   =============================== */
+
+:root {
+    /* Colores corporativos */
+    --primary: #122864;
+    --primary-light: #006cb1;
+    --accent: #3d73f1;
+    --accent-secondary: #28bdc7;
     
-    /* Colores digitales */
-    --color-digital-dark: #010276;
-    --color-digital-blue: #2251c0;
-    --color-digital-cyan: #24acb5;
-    --color-accent: #3d73f1;
-    --color-accent-secondary: #28bdc7;
-    
-    /* Gradientes optimizados */
-    --gradient-primary: linear-gradient(135deg, #122864 0%, #006cb1 100%);
-    --gradient-accent: linear-gradient(135deg, #3d73f1 0%, #28bdc7 100%);
-    --gradient-mesh: linear-gradient(135deg, #122864 0%, #2251c0 50%, #24acb5 100%);
-    
-    /* Sistema de colores neutros */
-    --color-bg: #f8fafc;
-    --color-surface: #ffffff;
-    --color-surface-elevated: #ffffff;
-    --color-text: #0f172a;
-    --color-text-secondary: #475569;
-    --color-text-tertiary: #94a3b8;
-    --color-border: #e2e8f0;
-    --color-border-light: #f1f5f9;
+    /* Colores UI modernos */
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --surface-elevated: #f5f7fa;
+    --border: #e4e7ec;
+    --text: #0f172a;
+    --text-secondary: #64748b;
+    --text-tertiary: #94a3b8;
     
     /* Colores semánticos */
-    --color-success: #10b981;
-    --color-warning: #f59e0b;
-    --color-error: #ef4444;
-    --color-info: #3b82f6;
+    --success: #10b981;
+    --error: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
     
-    /* Tipografía */
+    /* ⚡ TIPOGRAFÍAS CORPORATIVAS */
     --font-display: 'Satoshi', system-ui, -apple-system, sans-serif;
     --font-body: 'Inter', system-ui, -apple-system, sans-serif;
     
-    /* Tamaños de fuente fluidos */
-    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-    --text-sm: clamp(0.875rem, 0.85rem + 0.25vw, 1rem);
-    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-    --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
-    --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
-    --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
-    --text-3xl: clamp(2rem, 1.75rem + 1.25vw, 3rem);
-    
-    /* Espaciado consistente */
+    /* Espaciado */
     --space-xs: 0.5rem;
     --space-sm: 0.75rem;
     --space-md: 1rem;
@@ -58,25 +42,31 @@
     --space-2xl: 3rem;
     --space-3xl: 4rem;
     
-    /* Sombras optimizadas */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    
-    /* Animaciones */
-    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: 150ms var(--ease-smooth);
-    --transition-base: 300ms var(--ease-smooth);
-    --transition-slow: 500ms var(--ease-smooth);
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
     
     /* Border radius */
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 14px;
-    --radius-xl: 20px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
     --radius-full: 9999px;
+    
+    /* Transiciones */
+    --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+    --bg: #0a0e1a;
+    --surface: #111827;
+    --surface-elevated: #1f2937;
+    --border: #374151;
+    --text: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-tertiary: #9ca3af;
 }
 
 /* Dark Mode */
