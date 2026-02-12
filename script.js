@@ -1,5 +1,5 @@
 // ===============================
-// THEME TOGGLE
+// THEME SYSTEM
 // ===============================
 
 function initializeTheme() {
@@ -14,12 +14,21 @@ function initializeTheme() {
         const current = document.documentElement.getAttribute('data-theme');
         const newTheme = current === 'light' ? 'dark' : 'light';
         
+        // Animación de transición suave
+        document.body.style.transition = 'background-color 0.4s ease, color 0.4s ease';
+        
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('gmr-theme', newTheme);
         updateThemeIcon(newTheme);
         
+        // Efecto de rotación en el botón
+        themeToggle.style.transform = 'rotate(360deg) scale(1.2)';
+        setTimeout(() => {
+            themeToggle.style.transform = '';
+        }, 400);
+        
         if (typeof showToast === 'function') {
-            showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'}`, 'success');
+            showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'} activado`, 'success');
         }
     });
 }
@@ -41,11 +50,15 @@ function initializeExport() {
     
     exportBtn.addEventListener('click', () => {
         if (typeof showToast === 'function') {
-            showToast('Preparando impresión...', 'info');
+            showToast('Preparando documento para impresión...', 'info');
         }
+        
+        // Añadir clase temporal para estilos de impresión
+        document.body.classList.add('print-mode');
         
         setTimeout(() => {
             window.print();
+            document.body.classList.remove('print-mode');
         }, 500);
     });
 }
@@ -62,6 +75,12 @@ document.addEventListener('keydown', (e) => {
         if (searchInput) {
             searchInput.focus();
             searchInput.select();
+            
+            // Efecto visual
+            searchInput.parentElement.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                searchInput.parentElement.style.transform = '';
+            }, 200);
         }
     }
     
@@ -75,10 +94,11 @@ document.addEventListener('keydown', (e) => {
         }
     }
     
-    // Cmd/Ctrl + P para imprimir
-    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+    // Cmd/Ctrl + D para dark mode
+    if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
         e.preventDefault();
-        window.print();
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) themeToggle.click();
     }
     
     // Cmd/Ctrl + R para resetear
@@ -88,43 +108,94 @@ document.addEventListener('keydown', (e) => {
             resetAllFilters();
         }
     }
-});
-
-// ===============================
-// SMOOTH SCROLL
-// ===============================
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    
+    // Cmd/Ctrl + P para imprimir
+    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
+        window.print();
+    }
 });
+
+// ===============================
+// PARALLAX EFFECT (SUTIL)
+// ===============================
+
+function initializeParallax() {
+    const cards = document.querySelectorAll('.crystal-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            card.style.transform = `
+                perspective(1000px) 
+                rotateX(${rotateX}deg) 
+                rotateY(${rotateY}deg) 
+                translateY(-8px)
+            `;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+        });
+    });
+}
+
+// ===============================
+// LAZY LOADING IMAGES
+// ===============================
+
+function initializeLazyLoad() {
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                    }
+                    
+                    imageObserver.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '100px'
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+}
 
 // ===============================
 // NETWORK STATUS
 // ===============================
 
-let isOnline = navigator.onLine;
+let wasOffline = false;
 
 window.addEventListener('online', () => {
-    if (!isOnline && typeof showToast === 'function') {
+    if (wasOffline && typeof showToast === 'function') {
         showToast('Conexión restaurada', 'success');
     }
-    isOnline = true;
+    wasOffline = false;
 });
 
 window.addEventListener('offline', () => {
+    wasOffline = true;
     if (typeof showToast === 'function') {
-        showToast('Sin conexión', 'error');
+        showToast('Sin conexión a Internet', 'error');
     }
-    isOnline = false;
 });
 
 // ===============================
@@ -134,40 +205,61 @@ window.addEventListener('offline', () => {
 window.addEventListener('load', () => {
     if (performance.timing) {
         const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-        console.log(`⚡ Página cargada en ${loadTime}ms`);
+        
+        console.log(`⚡ Carga completa: ${loadTime}ms`);
         
         if (loadTime < 1000) {
             console.log('🚀 Rendimiento excelente');
-        } else if (loadTime < 3000) {
+        } else if (loadTime < 2500) {
             console.log('✅ Rendimiento bueno');
         } else {
             console.log('⚠️ Considera optimizar recursos');
         }
     }
+    
+    // Inicializar efectos adicionales después de carga
+    setTimeout(() => {
+        initializeParallax();
+        initializeLazyLoad();
+    }, 1000);
 });
 
 // ===============================
-// ERROR HANDLING
+// CONSOLE STYLING
 // ===============================
 
-window.addEventListener('error', (e) => {
-    console.error('Error global:', e.error);
-});
+console.log(
+    '%c🔮 GMR Crystal v3.0',
+    `
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(135deg, #122864, #006cb1, #28bdc7);
+        padding: 20px 40px;
+        border-radius: 12px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    `
+);
 
-window.addEventListener('unhandledrejection', (e) => {
-    console.error('Promise rechazada:', e.reason);
-});
+console.log(
+    '%c✨ Atajos de teclado:\n' +
+    '   • ⌘/Ctrl + K → Búsqueda\n' +
+    '   • ⌘/Ctrl + D → Modo oscuro\n' +
+    '   • ⌘/Ctrl + P → Imprimir\n' +
+    '   • ⌘/Ctrl + R → Resetear filtros\n' +
+    '   • Esc → Limpiar búsqueda',
+    'color: #6b7a8f; font-size: 13px; line-height: 1.8; font-family: monospace;'
+);
 
 // ===============================
 // INICIALIZACIÓN
 // ===============================
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('%c📊 Global Media Report v2.0', 'font-size: 16px; font-weight: bold; color: #122864;');
-    console.log('%cInicializando sistema...', 'color: #6b7280;');
+    console.log('🚀 Inicializando Crystal Executive...');
     
     initializeTheme();
     initializeExport();
     
-    console.log('✅ Módulos cargados');
+    console.log('✅ Módulos base cargados');
 });

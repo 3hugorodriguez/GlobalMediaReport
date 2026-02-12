@@ -1,16 +1,16 @@
 // ===============================
-// CONFIGURACIÓN
+// CONFIGURACIÓN CRYSTAL
 // ===============================
 
 const CONFIG = {
     dataPath: './data/gmr-data.json',
-    logoFallback: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23122864;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%23006cb1;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="200" height="200" fill="url(%23grad)"/%3E%3Ctext x="100" y="100" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle"%3EGE%3C/text%3E%3C/svg%3E',
     newsDaysThreshold: 7,
     monthNames: {
         '01': 'Enero', '02': 'Febrero', '03': 'Marzo', '04': 'Abril',
         '05': 'Mayo', '06': 'Junio', '07': 'Julio', '08': 'Agosto',
         '09': 'Septiembre', '10': 'Octubre', '11': 'Noviembre', '12': 'Diciembre'
-    }
+    },
+    fallbackImage: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23122864;stop-opacity:1" /%3E%3Cstop offset="50%25" style="stop-color:%23006cb1;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%2328bdc7;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="800" height="400" fill="url(%23grad)"/%3E%3Ctext x="400" y="200" font-family="Inter, sans-serif" font-size="80" font-weight="bold" fill="rgba(255,255,255,0.9)" text-anchor="middle" dominant-baseline="middle"%3EGE%3C/text%3E%3C/svg%3E'
 };
 
 // ===============================
@@ -24,7 +24,7 @@ class GMRDataService {
 
     async fetchData() {
         try {
-            console.log('📡 Cargando datos...');
+            console.log('📡 Cargando datos GMR Crystal...');
             const response = await fetch(`${this.jsonPath}?t=${Date.now()}`);
             
             if (!response.ok) {
@@ -47,15 +47,19 @@ class GMRDataService {
     }
 
     processData(data) {
-        // Ordenar por fecha descendente
         data.noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
         
-        // Marcar noticias nuevas
         const now = new Date();
         data.noticias.forEach(noticia => {
             const newsDate = new Date(noticia.fecha);
             const diffDays = Math.floor((now - newsDate) / (1000 * 60 * 60 * 24));
             noticia.isNew = diffDays >= 0 && diffDays <= CONFIG.newsDaysThreshold;
+            
+            // Fallback de imagen
+            if (!noticia.imagen || noticia.imagen.includes('placehold.co')) {
+                noticia.imagen = CONFIG.fallbackImage;
+                noticia.useFallback = true;
+            }
         });
         
         return data;
@@ -63,10 +67,10 @@ class GMRDataService {
 }
 
 // ===============================
-// RENDERIZADOR COMPACTO
+// CRYSTAL RENDERER
 // ===============================
 
-class GMRRenderer {
+class CrystalRenderer {
     constructor(data) {
         this.data = data;
     }
@@ -75,16 +79,59 @@ class GMRRenderer {
         const meta = document.getElementById('headerMeta');
         if (!meta) return;
         
-        const total = this.data.noticias.length;
-        const internacional = this.data.noticias.filter(n => n.alcance === 'Internacional').length;
-        
+        const stats = this.calculateStats();
         let lastUpdate = 'Sin datos';
+        
         if (this.data.noticias.length > 0) {
             const lastDate = new Date(this.data.noticias[0].fecha);
             lastUpdate = this.getRelativeTime(lastDate);
         }
         
-        meta.textContent = `${total} noticias • ${internacional} internacionales • Actualizado: ${lastUpdate}`;
+        meta.innerHTML = `
+            <span class="pulse-dot"></span>
+            ${stats.total} noticias • ${stats.internacional} internacionales • ${lastUpdate}
+        `;
+    }
+
+    updateStatsBar() {
+        const stats = this.calculateStats();
+        
+        this.animateCounter('totalStat', stats.total);
+        this.animateCounter('intlStat', stats.internacional);
+        this.animateCounter('newStat', stats.new);
+        
+        // Top category
+        const topCat = Object.entries(stats.porCategoria)
+            .sort((a, b) => b[1] - a[1])[0];
+        
+        if (topCat) {
+            const catName = this.getCategoryName(topCat[0]);
+            const topCatEl = document.getElementById('topCat');
+            if (topCatEl) {
+                topCatEl.textContent = catName.split(' ').slice(0, 2).join(' ');
+            }
+        }
+    }
+
+    animateCounter(elementId, target) {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+        
+        const duration = 1500;
+        const increment = target / (duration / 16);
+        let current = 0;
+        
+        const animate = () => {
+            current += increment;
+            if (current < target) {
+                element.textContent = Math.floor(current);
+                requestAnimationFrame(animate);
+            } else {
+                element.textContent = target;
+            }
+        };
+        
+        animate();
     }
 
     getRelativeTime(date) {
@@ -94,65 +141,12 @@ class GMRRenderer {
         const diffHours = Math.floor(diffMs / 3600000);
         const diffDays = Math.floor(diffMs / 86400000);
         
-        if (diffMins < 1) return 'Ahora';
-        if (diffMins < 60) return `Hace ${diffMins}m`;
+        if (diffMins < 1) return 'Ahora mismo';
+        if (diffMins < 60) return `Hace ${diffMins} min`;
         if (diffHours < 24) return `Hace ${diffHours}h`;
         if (diffDays < 30) return `Hace ${diffDays}d`;
         
         return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
-    }
-
-    renderMonthFilters() {
-        const container = document.getElementById('monthFilters');
-        if (!container) return;
-        
-        const stats = this.calculateStats();
-        const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
-        
-        // Actualizar "Todos"
-        const allPill = container.querySelector('.pill[data-month="all"]');
-        if (allPill) {
-            allPill.querySelector('span').textContent = stats.total;
-        }
-        
-        // Crear pills de meses
-        months.forEach(month => {
-            const count = stats.porMes[month];
-            const monthName = this.formatMonth(month);
-            
-            const pill = document.createElement('button');
-            pill.className = 'pill';
-            pill.setAttribute('data-month', month);
-            pill.innerHTML = `${monthName} <span>${count}</span>`;
-            
-            container.appendChild(pill);
-        });
-    }
-
-    renderCategoryFilters() {
-        const container = document.getElementById('categoryFilters');
-        if (!container) return;
-        
-        const stats = this.calculateStats();
-        
-        // Actualizar "Todas"
-        const allPill = container.querySelector('.pill[data-category="all"]');
-        if (allPill) {
-            allPill.querySelector('span').textContent = stats.total;
-        }
-        
-        // Crear pills de categorías
-        this.data.categorias.forEach(cat => {
-            const count = stats.porCategoria[cat.Slug] || 0;
-            if (count === 0) return;
-            
-            const pill = document.createElement('button');
-            pill.className = 'pill';
-            pill.setAttribute('data-category', cat.Slug);
-            pill.innerHTML = `${cat.Nombre} <span>${count}</span>`;
-            
-            container.appendChild(pill);
-        });
     }
 
     calculateStats() {
@@ -162,6 +156,7 @@ class GMRRenderer {
             total: noticias.length,
             nacional: noticias.filter(n => n.alcance === 'Nacional').length,
             internacional: noticias.filter(n => n.alcance === 'Internacional').length,
+            new: noticias.filter(n => n.isNew).length,
             porCategoria: noticias.reduce((acc, n) => {
                 acc[n.categoria] = (acc[n.categoria] || 0) + 1;
                 return acc;
@@ -179,6 +174,67 @@ class GMRRenderer {
         }, {});
     }
 
+    renderMonthFilters() {
+        const container = document.getElementById('monthFilters');
+        if (!container) return;
+        
+        const stats = this.calculateStats();
+        const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
+        
+        // Actualizar "Todos"
+        const allPill = container.querySelector('.glass-pill[data-month="all"]');
+        if (allPill) {
+            allPill.querySelector('.pill-count').textContent = stats.total;
+        }
+        
+        // Crear pills de meses
+        months.forEach((month, index) => {
+            const count = stats.porMes[month];
+            const monthName = this.formatMonth(month);
+            
+            const pill = document.createElement('button');
+            pill.className = 'glass-pill';
+            pill.setAttribute('data-month', month);
+            pill.style.animationDelay = `${index * 0.05}s`;
+            pill.innerHTML = `
+                <span>${monthName}</span>
+                <span class="pill-count">${count}</span>
+            `;
+            
+            container.appendChild(pill);
+        });
+    }
+
+    renderCategoryFilters() {
+        const container = document.getElementById('categoryFilters');
+        if (!container) return;
+        
+        const stats = this.calculateStats();
+        
+        // Actualizar "Todas"
+        const allPill = container.querySelector('.glass-pill[data-category="all"]');
+        if (allPill) {
+            allPill.querySelector('.pill-count').textContent = stats.total;
+        }
+        
+        // Crear pills de categorías
+        this.data.categorias.forEach((cat, index) => {
+            const count = stats.porCategoria[cat.Slug] || 0;
+            if (count === 0) return;
+            
+            const pill = document.createElement('button');
+            pill.className = 'glass-pill';
+            pill.setAttribute('data-category', cat.Slug);
+            pill.style.animationDelay = `${index * 0.05}s`;
+            pill.innerHTML = `
+                <span>${cat.Nombre}</span>
+                <span class="pill-count">${count}</span>
+            `;
+            
+            container.appendChild(pill);
+        });
+    }
+
     formatMonth(monthKey) {
         const [year, month] = monthKey.split('-');
         return `${CONFIG.monthNames[month]} ${year}`;
@@ -188,11 +244,11 @@ class GMRRenderer {
         const container = document.getElementById('newsContainer');
         if (!container) return;
         
-        // Ocultar skeleton
+        // Ocultar skeleton con fade
         const skeleton = document.getElementById('skeletonLoader');
         if (skeleton) {
             skeleton.style.opacity = '0';
-            setTimeout(() => skeleton.remove(), 300);
+            setTimeout(() => skeleton.remove(), 400);
         }
         
         container.innerHTML = '';
@@ -201,8 +257,9 @@ class GMRRenderer {
         const noticiasPorMes = this.groupNewsByMonth(this.data.noticias);
         const mesesOrdenados = Object.keys(noticiasPorMes).sort((a, b) => new Date(b) - new Date(a));
         
-        mesesOrdenados.forEach(mes => {
+        mesesOrdenados.forEach((mes, index) => {
             const monthSection = this.createMonthSection(mes, noticiasPorMes[mes]);
+            monthSection.style.animationDelay = `${index * 0.1}s`;
             container.appendChild(monthSection);
         });
     }
@@ -234,10 +291,10 @@ class GMRRenderer {
             </div>
         `;
         
-        // Agrupar noticias por categoría
+        // Agrupar por categoría
         const noticiasPorCategoria = this.groupNewsByCategory(noticias);
         
-        // Ordenar categorías según orden definido
+        // Ordenar categorías
         const categoriasOrdenadas = this.data.categorias
             .filter(cat => noticiasPorCategoria[cat.Slug])
             .map(cat => cat.Slug);
@@ -281,26 +338,27 @@ class GMRRenderer {
                 <h3 class="category-name">${categoryData.Nombre}</h3>
                 <span class="category-count">${noticias.length}</span>
             </div>
-            <div class="news-list"></div>
+            <div class="news-grid"></div>
         `;
         
-        const list = section.querySelector('.news-list');
+        const grid = section.querySelector('.news-grid');
         
-        noticias.forEach(noticia => {
-            const item = this.createNewsItem(noticia, categoryData);
-            list.appendChild(item);
+        noticias.forEach((noticia, index) => {
+            const card = this.createCrystalCard(noticia, categoryData);
+            card.style.animationDelay = `${index * 0.08}s`;
+            grid.appendChild(card);
         });
         
         return section;
     }
 
-    createNewsItem(noticia, categoryData) {
-        const item = document.createElement('article');
-        item.className = 'news-item';
-        item.setAttribute('data-url', noticia.url);
-        item.setAttribute('data-category', noticia.categoria);
-        item.setAttribute('data-scope', noticia.alcance);
-        item.style.setProperty('--cat-color', categoryData.Color);
+    createCrystalCard(noticia, categoryData) {
+        const article = document.createElement('article');
+        article.className = 'crystal-card';
+        article.setAttribute('data-url', noticia.url);
+        article.setAttribute('data-category', noticia.categoria);
+        article.setAttribute('data-scope', noticia.alcance);
+        article.style.setProperty('--cat-color', categoryData.Color);
         
         const fecha = new Date(noticia.fecha);
         const fechaFormateada = fecha.toLocaleDateString('es-ES', {
@@ -311,58 +369,85 @@ class GMRRenderer {
         
         const badgeClass = noticia.alcance === 'Nacional' ? 'nacional' : 'internacional';
         
-        // Limitar highlights a 3 para vista compacta
+        // Limitar highlights a 3 para mejor UX
         const highlightsLimited = noticia.highlights ? noticia.highlights.slice(0, 3) : [];
         
-        item.innerHTML = `
-            <div class="news-item-header">
-                <div class="news-meta">
-                    <span class="news-badge ${badgeClass}">
+        article.innerHTML = `
+            <div class="card-image">
+                <img src="${noticia.imagen}" 
+                     alt="${noticia.titulo}"
+                     loading="lazy"
+                     onerror="this.src='${CONFIG.fallbackImage}'">
+                <div class="card-image-overlay"></div>
+                ${noticia.isNew ? `
+                    <div class="card-badge-new">
+                        <i class="fas fa-star"></i>
+                        Nueva
+                    </div>
+                ` : ''}
+            </div>
+            
+            <div class="card-content">
+                <div class="card-meta">
+                    <span class="card-badge ${badgeClass}">
                         <i class="fas ${noticia.alcance === 'Nacional' ? 'fa-map-marker-alt' : 'fa-globe'}"></i>
                         ${noticia.alcance}
                     </span>
-                    <span class="news-source">
-                        <i class="fas fa-newspaper"></i>
-                        ${noticia.medio}
-                    </span>
-                    <span class="news-date">
+                    <span class="card-date">
                         <i class="far fa-clock"></i>
                         ${fechaFormateada}
                     </span>
+                    <span class="card-source">
+                        <i class="fas fa-newspaper"></i>
+                        ${noticia.medio}
+                    </span>
                 </div>
-                ${noticia.isNew ? '<span class="badge-new"><i class="fas fa-star"></i> Nueva</span>' : ''}
-            </div>
-            
-            <h3 class="news-title">${noticia.titulo}</h3>
-            
-            ${noticia.resumen ? `<p class="news-summary">${noticia.resumen}</p>` : ''}
-            
-            ${highlightsLimited.length > 0 ? `
-                <ul class="news-highlights">
-                    ${highlightsLimited.map(h => `<li>${h}</li>`).join('')}
-                </ul>
-            ` : ''}
-            
-            <div class="news-footer">
-                <div class="news-tags">
-                    ${noticia.tags ? noticia.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : ''}
+                
+                <h3 class="card-title">${noticia.titulo}</h3>
+                
+                ${noticia.resumen ? `
+                    <p class="card-summary">${noticia.resumen}</p>
+                ` : ''}
+                
+                ${highlightsLimited.length > 0 ? `
+                    <ul class="card-highlights">
+                        ${highlightsLimited.map(h => `<li>${h}</li>`).join('')}
+                    </ul>
+                ` : ''}
+                
+                <div class="card-footer">
+                    <div class="card-tags">
+                        ${noticia.tags ? noticia.tags.slice(0, 3).map(tag => 
+                            `<span class="card-tag">${tag}</span>`
+                        ).join('') : ''}
+                    </div>
+                    <a href="${noticia.url}" 
+                       target="_blank" 
+                       class="card-link"
+                       onclick="event.stopPropagation()">
+                        Leer más
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <a href="${noticia.url}" target="_blank" class="news-link" onclick="event.stopPropagation()">
-                    Ver noticia <i class="fas fa-external-link-alt"></i>
-                </a>
             </div>
         `;
         
-        return item;
+        return article;
+    }
+
+    getCategoryName(slug) {
+        const cat = this.data.categorias.find(c => c.Slug === slug);
+        return cat ? cat.Nombre : slug;
     }
 
     renderAll() {
-        console.log('🎨 Renderizando interfaz...');
+        console.log('🎨 Renderizando Crystal UI...');
         this.updateHeaderMeta();
+        this.updateStatsBar();
         this.renderMonthFilters();
         this.renderCategoryFilters();
         this.renderNews();
-        console.log('✅ Renderizado completo');
+        console.log('✅ Crystal UI renderizado');
     }
 }
 
@@ -376,26 +461,27 @@ let allData;
 
 async function initializeGMR() {
     try {
-        console.log('🚀 Iniciando GMR v2.0...');
+        console.log('🔮 Iniciando GMR Crystal v3.0...');
         
         dataService = new GMRDataService(CONFIG.dataPath);
         allData = await dataService.fetchData();
         
-        renderer = new GMRRenderer(allData);
+        renderer = new CrystalRenderer(allData);
         renderer.renderAll();
         
         setTimeout(() => {
             initializeFilters();
             initializeSearch();
-            initializeNewsItems();
+            initializeCrystalCards();
+            initializeScrollEffects();
             
-            console.log('✅ Sistema listo');
-            showToast('Datos cargados correctamente', 'success');
+            console.log('✨ Sistema Crystal listo');
+            showToast('Sistema cargado correctamente', 'success');
         }, 100);
         
     } catch (error) {
         console.error('❌ Error crítico:', error);
-        showToast('Error al cargar datos', 'error');
+        showToast('Error al cargar el sistema', 'error');
         showErrorState();
     }
 }
@@ -408,12 +494,15 @@ function showErrorState() {
     if (!container) return;
     
     container.innerHTML = `
-        <div class="empty-state" style="display: flex;">
-            <i class="fas fa-exclamation-triangle"></i>
+        <div class="empty-state-crystal" style="display: flex;">
+            <div class="empty-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
             <h3>Error al cargar datos</h3>
             <p>No se pudieron cargar las noticias. Verifica tu conexión.</p>
-            <button class="btn-primary" onclick="location.reload()">
-                <i class="fas fa-redo"></i> Recargar
+            <button class="crystal-btn primary" onclick="location.reload()">
+                <i class="fas fa-redo"></i>
+                Recargar página
             </button>
         </div>
     `;
@@ -438,10 +527,10 @@ function initializeFilters() {
     
     // Month filters
     monthFilters.addEventListener('click', (e) => {
-        const pill = e.target.closest('.pill');
+        const pill = e.target.closest('.glass-pill');
         if (!pill) return;
         
-        monthFilters.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        monthFilters.querySelectorAll('.glass-pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         
         activeMonth = pill.getAttribute('data-month');
@@ -450,10 +539,10 @@ function initializeFilters() {
     
     // Category filters
     categoryFilters.addEventListener('click', (e) => {
-        const pill = e.target.closest('.pill');
+        const pill = e.target.closest('.glass-pill');
         if (!pill) return;
         
-        categoryFilters.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        categoryFilters.querySelectorAll('.glass-pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         
         activeCategory = pill.getAttribute('data-category');
@@ -483,9 +572,9 @@ function initializeFilters() {
                     
                     if (shouldShowCat) {
                         catSec.style.display = '';
-                        const items = catSec.querySelectorAll('.news-item');
-                        visibleInMonth += items.length;
-                        visibleCount += items.length;
+                        const cards = catSec.querySelectorAll('.crystal-card');
+                        visibleInMonth += cards.length;
+                        visibleCount += cards.length;
                     } else {
                         catSec.style.display = 'none';
                     }
@@ -498,12 +587,12 @@ function initializeFilters() {
         });
         
         toggleEmptyState(visibleCount);
-        showToast(`${visibleCount} noticia${visibleCount !== 1 ? 's' : ''}`, 'info');
+        showToast(`${visibleCount} noticia${visibleCount !== 1 ? 's' : ''} encontrada${visibleCount !== 1 ? 's' : ''}`, 'info');
     }
 }
 
 // ===============================
-// BÚSQUEDA
+// BÚSQUEDA MEJORADA
 // ===============================
 
 function initializeSearch() {
@@ -523,35 +612,47 @@ function initializeSearch() {
         }, 300);
     });
     
+    // Animación en foco
+    searchInput.addEventListener('focus', () => {
+        searchInput.parentElement.style.transform = 'scale(1.02)';
+    });
+    
+    searchInput.addEventListener('blur', () => {
+        searchInput.parentElement.style.transform = '';
+    });
+    
     function performSearch(term) {
-        const items = document.querySelectorAll('.news-item');
+        const cards = document.querySelectorAll('.crystal-card');
         let visibleCount = 0;
         
         if (term === '') {
-            items.forEach(item => item.style.display = '');
+            cards.forEach(card => card.style.display = '');
             document.querySelectorAll('.month-section, .category-section').forEach(s => s.style.display = '');
-            toggleEmptyState(items.length);
+            toggleEmptyState(cards.length);
             return;
         }
         
-        items.forEach(item => {
-            const title = item.querySelector('.news-title')?.textContent.toLowerCase() || '';
-            const source = item.querySelector('.news-source')?.textContent.toLowerCase() || '';
-            const summary = item.querySelector('.news-summary')?.textContent.toLowerCase() || '';
-            const highlights = item.querySelector('.news-highlights')?.textContent.toLowerCase() || '';
+        cards.forEach(card => {
+            const title = card.querySelector('.card-title')?.textContent.toLowerCase() || '';
+            const source = card.querySelector('.card-source')?.textContent.toLowerCase() || '';
+            const summary = card.querySelector('.card-summary')?.textContent.toLowerCase() || '';
+            const highlights = card.querySelector('.card-highlights')?.textContent.toLowerCase() || '';
             
-            if (title.includes(term) || source.includes(term) || summary.includes(term) || highlights.includes(term)) {
-                item.style.display = '';
+            const matches = title.includes(term) || source.includes(term) || 
+                          summary.includes(term) || highlights.includes(term);
+            
+            if (matches) {
+                card.style.display = '';
                 visibleCount++;
             } else {
-                item.style.display = 'none';
+                card.style.display = 'none';
             }
         });
         
-        // Ocultar categorías y meses vacíos
+        // Ocultar secciones vacías
         document.querySelectorAll('.category-section').forEach(catSec => {
-            const visibleItems = catSec.querySelectorAll('.news-item:not([style*="display: none"])').length;
-            catSec.style.display = visibleItems > 0 ? '' : 'none';
+            const visibleCards = catSec.querySelectorAll('.crystal-card:not([style*="display: none"])').length;
+            catSec.style.display = visibleCards > 0 ? '' : 'none';
         });
         
         document.querySelectorAll('.month-section').forEach(section => {
@@ -564,26 +665,74 @@ function initializeSearch() {
 }
 
 // ===============================
-// INTERACCIONES
+// INTERACCIONES CRYSTAL CARDS
 // ===============================
 
-function initializeNewsItems() {
+function initializeCrystalCards() {
     const container = document.getElementById('newsContainer');
     if (!container) return;
     
     container.addEventListener('click', (e) => {
-        const item = e.target.closest('.news-item');
-        if (!item) return;
+        const card = e.target.closest('.crystal-card');
+        if (!card) return;
         
         // No abrir si se hizo clic en un enlace
-        if (e.target.closest('.news-link')) return;
+        if (e.target.closest('.card-link')) return;
         
-        const url = item.getAttribute('data-url');
+        const url = card.getAttribute('data-url');
         if (url) {
-            window.open(url, '_blank');
+            // Animación antes de abrir
+            card.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                window.open(url, '_blank');
+                card.style.transform = '';
+            }, 150);
         }
     });
 }
+
+// ===============================
+// EFECTOS DE SCROLL
+// ===============================
+
+function initializeScrollEffects() {
+    const header = document.getElementById('mainHeader');
+    const backToTop = document.getElementById('backToTop');
+    
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        // Header sticky effect
+        if (currentScroll > 100) {
+            header?.classList.add('scrolled');
+        } else {
+            header?.classList.remove('scrolled');
+        }
+        
+        // Back to top button
+        if (currentScroll > 500) {
+            backToTop?.classList.add('visible');
+        } else {
+            backToTop?.classList.remove('visible');
+        }
+        
+        lastScroll = currentScroll;
+    });
+    
+    // Back to top click
+    backToTop?.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// ===============================
+// UTILIDADES
+// ===============================
 
 function toggleEmptyState(count) {
     const emptyState = document.getElementById('emptyState');
@@ -593,21 +742,21 @@ function toggleEmptyState(count) {
 }
 
 function resetAllFilters() {
-    document.querySelectorAll('.pill').forEach(pill => pill.classList.remove('active'));
-    document.querySelector('.pill[data-month="all"]')?.classList.add('active');
-    document.querySelector('.pill[data-category="all"]')?.classList.add('active');
+    document.querySelectorAll('.glass-pill').forEach(pill => pill.classList.remove('active'));
+    document.querySelector('.glass-pill[data-month="all"]')?.classList.add('active');
+    document.querySelector('.glass-pill[data-category="all"]')?.classList.add('active');
     
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.value = '';
     
-    document.querySelectorAll('.news-item, .month-section, .category-section').forEach(el => el.style.display = '');
+    document.querySelectorAll('.crystal-card, .month-section, .category-section').forEach(el => el.style.display = '');
     
-    toggleEmptyState(document.querySelectorAll('.news-item').length);
+    toggleEmptyState(document.querySelectorAll('.crystal-card').length);
     showToast('Filtros restablecidos', 'success');
 }
 
 // ===============================
-// TOAST
+// TOAST SYSTEM
 // ===============================
 
 function showToast(message, type = 'info') {
@@ -632,7 +781,7 @@ function showToast(message, type = 'info') {
     
     setTimeout(() => {
         toast.style.opacity = '0';
-        toast.style.transform = 'translateY(-10px)';
-        setTimeout(() => toast.remove(), 300);
+        toast.style.transform = 'translateX(400px) scale(0.8)';
+        setTimeout(() => toast.remove(), 400);
     }, 3000);
 }
