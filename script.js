@@ -1,30 +1,30 @@
 // ===============================
-// THEME SYSTEM
+// THEME TOGGLE
 // ===============================
 
 function initializeTheme() {
     const themeToggle = document.getElementById('themeToggle');
     if (!themeToggle) return;
     
-    const currentTheme = localStorage.getItem('gmr-theme') || 'light';
+    const currentTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
     updateThemeIcon(currentTheme);
     
     themeToggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const newTheme = current === 'light' ? 'dark' : 'light';
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
         document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('gmr-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
         updateThemeIcon(newTheme);
         
         themeToggle.style.transform = 'rotate(360deg) scale(1.2)';
         setTimeout(() => {
             themeToggle.style.transform = '';
-        }, 400);
+        }, 300);
         
         if (typeof showToast === 'function') {
-            showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'}`, 'success');
+            showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'} activado`, 'success');
         }
     });
 }
@@ -37,95 +37,190 @@ function updateThemeIcon(theme) {
 }
 
 // ===============================
-// VISTA EJECUTIVA RÁPIDA
+// VIEW SWITCHER
 // ===============================
 
-function initializeExecutiveView() {
-    const viewToggle = document.getElementById('viewToggle');
-    if (!viewToggle) return;
-    
-    let isExecutiveView = false;
-    
-    viewToggle.addEventListener('click', () => {
-        isExecutiveView = !isExecutiveView;
-        
-        if (isExecutiveView) {
-            activateExecutiveView();
-            viewToggle.innerHTML = '<i class="fas fa-th"></i>';
-            viewToggle.title = 'Vista normal';
-        } else {
-            deactivateExecutiveView();
-            viewToggle.innerHTML = '<i class="fas fa-list-ul"></i>';
-            viewToggle.title = 'Vista ejecutiva';
-        }
-        
-        if (typeof showToast === 'function') {
-            showToast(
-                isExecutiveView ? 'Vista ejecutiva activada' : 'Vista normal activada',
-                'info'
-            );
-        }
-    });
-}
-
-function activateExecutiveView() {
-    // Mostrar solo últimas 10 noticias
-    const allCards = document.querySelectorAll('.card-executive');
-    const allSections = document.querySelectorAll('.month-section, .category-section');
-    
-    // Ocultar todo primero
-    allSections.forEach(s => s.style.display = 'none');
-    
-    // Obtener últimas 10 noticias
-    const visibleCards = Array.from(allCards).slice(0, 10);
-    
-    // Crear contenedor especial
+function initializeViewSwitcher() {
+    const viewBtns = document.querySelectorAll('.view-btn');
     const container = document.getElementById('newsContainer');
-    const executiveContainer = document.createElement('div');
-    executiveContainer.id = 'executiveViewContainer';
-    executiveContainer.className = 'executive-view-special';
     
-    executiveContainer.innerHTML = `
-        <div class="executive-header">
-            <h2>
-                <i class="fas fa-bolt"></i>
-                Resumen Ejecutivo
-            </h2>
-            <p>Últimas 10 noticias más relevantes</p>
-        </div>
-        <div class="news-grid"></div>
-    `;
+    if (!viewBtns.length || !container) return;
     
-    const grid = executiveContainer.querySelector('.news-grid');
+    // Cargar vista guardada
+    const savedView = localStorage.getItem('gmr-view') || 'timeline';
+    switchView(savedView);
     
-    visibleCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        grid.appendChild(clone);
+    viewBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const view = btn.getAttribute('data-view');
+            
+            viewBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            switchView(view);
+            localStorage.setItem('gmr-view', view);
+            
+            if (typeof showToast === 'function') {
+                const viewNames = {
+                    timeline: 'Timeline',
+                    grid: 'Tarjetas',
+                    compact: 'Compacta'
+                };
+                showToast(`Vista ${viewNames[view]}`, 'info');
+            }
+        });
     });
     
-    container.appendChild(executiveContainer);
-    
-    // Scroll al top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    function switchView(view) {
+        container.setAttribute('data-view', view);
+        
+        // Actualizar botón activo
+        viewBtns.forEach(btn => {
+            if (btn.getAttribute('data-view') === view) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
 }
 
-function deactivateExecutiveView() {
-    const executiveContainer = document.getElementById('executiveViewContainer');
-    if (executiveContainer) {
-        executiveContainer.remove();
+// ===============================
+// READING PROGRESS
+// ===============================
+
+function initializeReadingProgress() {
+    const progressBar = document.querySelector('.reading-progress');
+    if (!progressBar) return;
+    
+    let ticking = false;
+    
+    function updateProgress() {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight - windowHeight;
+        const scrolled = window.scrollY;
+        const progress = Math.min((scrolled / documentHeight) * 100, 100);
+        
+        progressBar.style.width = `${progress}%`;
+        ticking = false;
     }
     
-    // Mostrar todo de nuevo
-    document.querySelectorAll('.month-section, .category-section').forEach(s => {
-        s.style.display = '';
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                updateProgress();
+            });
+            ticking = true;
+        }
     });
-    
-    // Scroll al top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ===============================
-// EXPORT TO PDF
+// KEYBOARD SHORTCUTS
+// ===============================
+
+document.addEventListener('keydown', (e) => {
+    // Cmd/Ctrl + K para búsqueda
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.focus();
+            searchInput.select();
+            if (typeof showToast === 'function') {
+                showToast('Búsqueda activada', 'info');
+            }
+        }
+    }
+    
+    // Escape para limpiar búsqueda
+    if (e.key === 'Escape') {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput && searchInput.value) {
+            searchInput.value = '';
+            searchInput.dispatchEvent(new Event('input'));
+            searchInput.blur();
+            if (typeof showToast === 'function') {
+                showToast('Búsqueda limpiada', 'info');
+            }
+        }
+    }
+    
+    // Cmd/Ctrl + D para dark mode
+    if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
+        e.preventDefault();
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) themeToggle.click();
+    }
+    
+    // Cmd/Ctrl + R para reset filters
+    if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
+        e.preventDefault();
+        if (typeof resetAllFilters === 'function') {
+            resetAllFilters();
+        }
+    }
+    
+    // 1, 2, 3 para cambiar vista
+    if (['1', '2', '3'].includes(e.key) && !e.ctrlKey && !e.metaKey) {
+        const views = ['timeline', 'grid', 'compact'];
+        const viewBtn = document.querySelector(`.view-btn[data-view="${views[parseInt(e.key) - 1]}"]`);
+        if (viewBtn) viewBtn.click();
+    }
+    
+    // Home para volver al inicio
+    if (e.key === 'Home') {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+});
+
+// ===============================
+// INTERSECTION OBSERVER ANIMATIONS
+// ===============================
+
+function initializeScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    const observeElements = () => {
+        document.querySelectorAll('.news-card, .month-section, .category-section').forEach((el, index) => {
+            if (!el.dataset.observed) {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = `opacity 0.6s ease ${index * 0.02}s, transform 0.6s ease ${index * 0.02}s`;
+                observer.observe(el);
+                el.dataset.observed = 'true';
+            }
+        });
+    };
+
+    const containerObserver = new MutationObserver(observeElements);
+    const container = document.getElementById('newsContainer');
+    if (container) {
+        containerObserver.observe(container, {
+            childList: true,
+            subtree: true
+        });
+    }
+}
+
+// ===============================
+// EXPORT FUNCTIONALITY
 // ===============================
 
 function initializeExport() {
@@ -134,7 +229,7 @@ function initializeExport() {
     
     exportBtn.addEventListener('click', () => {
         if (typeof showToast === 'function') {
-            showToast('Preparando documento...', 'info');
+            showToast('Preparando exportación...', 'info');
         }
         
         setTimeout(() => {
@@ -144,120 +239,69 @@ function initializeExport() {
 }
 
 // ===============================
-// KEYBOARD SHORTCUTS
-// ===============================
-
-document.addEventListener('keydown', (e) => {
-    // Cmd/Ctrl + K → Búsqueda
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-        e.preventDefault();
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput) {
-            searchInput.focus();
-            searchInput.select();
-        }
-    }
-    
-    // Escape → Limpiar búsqueda
-    if (e.key === 'Escape') {
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput && searchInput.value) {
-            searchInput.value = '';
-            searchInput.dispatchEvent(new Event('input'));
-            searchInput.blur();
-        }
-    }
-    
-    // Cmd/Ctrl + D → Dark mode
-    if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
-        e.preventDefault();
-        const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) themeToggle.click();
-    }
-    
-    // Cmd/Ctrl + E → Vista ejecutiva
-    if ((e.ctrlKey || e.metaKey) && e.key === 'e') {
-        e.preventDefault();
-        const viewToggle = document.getElementById('viewToggle');
-        if (viewToggle) viewToggle.click();
-    }
-    
-    // Cmd/Ctrl + P → Imprimir
-    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
-        e.preventDefault();
-        window.print();
-    }
-    
-    // Cmd/Ctrl + R → Resetear
-    if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
-        e.preventDefault();
-        if (typeof resetAllFilters === 'function') {
-            resetAllFilters();
-        }
-    }
-});
-
-// ===============================
 // NETWORK STATUS
 // ===============================
 
-let wasOffline = false;
-
 window.addEventListener('online', () => {
-    if (wasOffline && typeof showToast === 'function') {
+    if (typeof showToast === 'function') {
         showToast('Conexión restaurada', 'success');
     }
-    wasOffline = false;
 });
 
 window.addEventListener('offline', () => {
-    wasOffline = true;
     if (typeof showToast === 'function') {
         showToast('Sin conexión a Internet', 'error');
     }
 });
 
 // ===============================
-// PERFORMANCE
-// ===============================
-
-window.addEventListener('load', () => {
-    if (performance.timing) {
-        const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-        console.log(`⚡ Carga: ${loadTime}ms`);
-    }
-});
-
-// ===============================
-// CONSOLE
+// CONSOLE STYLING
 // ===============================
 
 console.log(
-    '%c📊 GMR Executive v3.5',
-    'font-size: 20px; font-weight: bold; color: #122864; padding: 10px;'
+    '%c🏢 Global Media Report %cv2.0',
+    'background: linear-gradient(135deg, #122864, #006cb1); color: white; padding: 10px 20px; border-radius: 8px 0 0 8px; font-weight: bold; font-size: 16px;',
+    'background: linear-gradient(135deg, #3d73f1, #28bdc7); color: white; padding: 10px 20px; border-radius: 0 8px 8px 0; font-weight: bold; font-size: 16px;'
 );
 
 console.log(
-    '%c⌨️ Atajos:\n' +
-    '  • ⌘/Ctrl + K → Buscar\n' +
-    '  • ⌘/Ctrl + D → Modo oscuro\n' +
-    '  • ⌘/Ctrl + E → Vista ejecutiva\n' +
-    '  • ⌘/Ctrl + P → Imprimir\n' +
-    '  • ⌘/Ctrl + R → Resetear\n' +
-    '  • Esc → Limpiar búsqueda',
-    'color: #6b7a8f; font-size: 12px; line-height: 1.8;'
+    '%c💡 Atajos de teclado:\n' +
+    '   • Cmd/Ctrl + K → Búsqueda\n' +
+    '   • Cmd/Ctrl + D → Dark Mode\n' +
+    '   • Cmd/Ctrl + R → Reset Filtros\n' +
+    '   • 1/2/3 → Cambiar vista\n' +
+    '   • Esc → Limpiar búsqueda\n' +
+    '   • Home → Volver al inicio',
+    'color: #64748b; font-size: 12px; line-height: 1.6;'
 );
 
 // ===============================
-// INICIALIZACIÓN
+// INICIALIZACIÓN FINAL
 // ===============================
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 Iniciando GMR Executive...');
+    console.log('🚀 Inicializando Global Media Report v2.0...');
+    
+    if (!document.getElementById('newsContainer')) {
+        console.error('❌ Contenedor principal no encontrado');
+        return;
+    }
     
     initializeTheme();
-    initializeExecutiveView();
+    initializeReadingProgress();
+    initializeViewSwitcher();
     initializeExport();
     
-    console.log('✅ Módulos cargados');
+    console.log('✅ Sistema de temas inicializado');
+    console.log('✅ Selector de vistas inicializado');
+    console.log('⏳ Esperando carga de datos...');
+});
+
+window.addEventListener('load', () => {
+    initializeScrollAnimations();
+    
+    if (performance.timing) {
+        const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+        console.log(`⚡ Página cargada en ${loadTime}ms`);
+    }
 });
