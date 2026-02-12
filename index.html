@@ -7,11 +7,10 @@
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
-    <!-- Tipografías Corporativas -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <!-- Tipografía corporativa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -19,229 +18,99 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <!-- Progress Bar -->
-    <div class="reading-progress"></div>
 
-    <!-- Hero Header RENOVADO -->
-    <header class="hero-header">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-            <div class="noise-overlay"></div>
-        </div>
-        
-        <div class="hero-content">
-            <!-- Top Bar con Logo -->
-            <div class="hero-top">
-                <div class="brand">
-                    <!-- 🎯 LOGO GLOBAL EXCHANGE - Reemplaza la URL cuando tengas el logo -->
-                    <img src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg" alt="Global Exchange" class="brand-logo-img">
-                    <div class="brand-text">
-                        <h1 class="brand-title">Global Media Report</h1>
-                        <p class="brand-subtitle">Internal News Intelligence</p>
-                    </div>
-                </div>
-                
-                <div class="hero-actions">
-                    <!-- Selector de Vista -->
-                    <div class="view-selector">
-                        <button class="view-btn active" data-view="timeline" title="Vista Timeline">
-                            <i class="fas fa-stream"></i>
-                        </button>
-                        <button class="view-btn" data-view="grid" title="Vista Tarjetas">
-                            <i class="fas fa-th"></i>
-                        </button>
-                        <button class="view-btn" data-view="compact" title="Vista Compacta">
-                            <i class="fas fa-list"></i>
-                        </button>
-                    </div>
-                    
-                    <button class="action-btn" id="themeToggle" title="Cambiar tema">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="action-btn" id="exportBtn" title="Exportar">
-                        <i class="fas fa-download"></i>
-                    </button>
+    <!-- Header compacto corporativo -->
+    <header class="header-compact">
+        <div class="header-content">
+            <div class="header-left">
+                <!-- Logo -->
+                <img src="logo-horizontal-white.png" alt="Global Exchange" class="logo">
+                <div class="header-info">
+                    <h1>Global Media Report</h1>
+                    <span class="header-meta" id="headerMeta">Cargando...</span>
                 </div>
             </div>
-
-            <!-- Stats Dashboard -->
-            <div class="stats-grid">
-                <div class="stat-card stat-primary">
-                    <div class="stat-header">
-                        <span class="stat-label">Total Noticias</span>
-                        <div class="stat-icon">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
-                    </div>
-                    <div class="stat-value" id="totalNewsHero">0</div>
-                    <div class="stat-footer">
-                        <span class="stat-trend up">
-                            <i class="fas fa-arrow-up"></i> 12%
-                        </span>
-                        <span class="stat-period">vs. mes anterior</span>
-                    </div>
+            
+            <div class="header-right">
+                <!-- Búsqueda compacta -->
+                <div class="search-compact">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar...">
                 </div>
                 
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <span class="stat-label">Categoría Destacada</span>
-                        <div class="stat-icon secondary">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                    </div>
-                    <div class="stat-value small" id="topCategoryHero">—</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <span class="stat-label">Alcance Internacional</span>
-                        <div class="stat-icon accent">
-                            <i class="fas fa-globe-americas"></i>
-                        </div>
-                    </div>
-                    <div class="stat-value" id="internationalCount">0</div>
-                    <div class="stat-footer">
-                        <span class="stat-period" id="currentPeriod">Enero 2026</span>
-                    </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <span class="stat-label">Última Actualización</span>
-                        <div class="stat-icon success">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="stat-value small" id="lastUpdateHero">Hoy</div>
-                </div>
-            </div>
-
-            <!-- Search -->
-            <div class="search-section">
-                <div class="search-box">
-                    <i class="fas fa-search search-icon"></i>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        class="search-input" 
-                        placeholder="Buscar noticias, medios, categorías..."
-                        autocomplete="off"
-                    >
-                    <div class="search-badge" id="searchBadge">0</div>
-                    <kbd class="search-kbd">⌘K</kbd>
-                </div>
+                <!-- Acciones -->
+                <button class="icon-btn" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="icon-btn" id="exportBtn" title="Exportar PDF">
+                    <i class="fas fa-print"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Filters Section -->
-    <section class="filters-section" id="filtersSection">
-        <div class="filters-container">
-            <!-- Month Filters -->
-            <div class="filter-group">
-                <div class="filter-header">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Periodo</span>
-                </div>
-                <div class="filter-pills" id="monthTimeline">
-                    <button class="pill active" data-month="all">
-                        <span>Todos</span>
-                        <span class="pill-badge">0</span>
-                    </button>
-                </div>
+    <!-- Filtros compactos -->
+    <nav class="filters-compact">
+        <div class="filter-group">
+            <label>Periodo:</label>
+            <div class="filter-pills" id="monthFilters">
+                <button class="pill active" data-month="all">Todos <span>0</span></button>
             </div>
-
-            <!-- Category Filters -->
-            <div class="filter-group">
-                <div class="filter-header">
-                    <i class="fas fa-tag"></i>
-                    <span>Categorías</span>
-                </div>
-                <div class="filter-pills" id="categoryFilters">
-                    <button class="pill active" data-category="all">
-                        <span>Todas</span>
-                        <span class="pill-badge" id="countAll">0</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Reset Button -->
-            <button class="btn-reset" id="resetFilters" title="Limpiar filtros">
-                <i class="fas fa-times"></i>
-            </button>
         </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="main-content" id="newsContainer" data-view="timeline">
-        <!-- Skeleton Loader -->
-        <div class="skeleton-wrapper" id="skeletonLoader">
-            <div class="skeleton-section">
-                <div class="skeleton-title"></div>
-                <div class="skeleton-grid">
-                    <div class="skeleton-card"></div>
-                    <div class="skeleton-card"></div>
-                    <div class="skeleton-card"></div>
-                </div>
+        
+        <div class="filter-group">
+            <label>Categoría:</label>
+            <div class="filter-pills" id="categoryFilters">
+                <button class="pill active" data-category="all">Todas <span>0</span></button>
             </div>
+        </div>
+        
+        <button class="btn-reset" id="resetFilters" title="Resetear">
+            <i class="fas fa-redo"></i>
+        </button>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-compact" id="newsContainer">
+        <!-- Skeleton loader -->
+        <div class="skeleton-loader" id="skeletonLoader">
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
+            <div class="skeleton-item"></div>
         </div>
     </main>
 
-    <!-- Empty State -->
+    <!-- Empty state -->
     <div class="empty-state" id="emptyState">
-        <div class="empty-icon">
-            <i class="fas fa-inbox"></i>
-        </div>
-        <h3 class="empty-title">No hay resultados</h3>
-        <p class="empty-text">Intenta ajustar los filtros o cambiar el término de búsqueda</p>
-        <button class="btn-primary" onclick="resetAllFilters()">
-            <i class="fas fa-redo"></i>
-            Resetear filtros
-        </button>
+        <i class="fas fa-inbox"></i>
+        <h3>No hay resultados</h3>
+        <p>Intenta ajustar los filtros</p>
+        <button class="btn-primary" onclick="resetAllFilters()">Resetear filtros</button>
     </div>
 
-    <!-- Toast Container -->
+    <!-- Toast -->
     <div class="toast-container" id="toastContainer"></div>
 
-    <!-- Back to Top -->
-    <button class="btn-float" id="backToTop" title="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer compacto -->
+    <footer class="footer-compact">
         <div class="footer-content">
-            <div class="footer-left">
-                <span>© 2026 Global Exchange</span>
-                <span class="separator">•</span>
-                <span>Departamento de Comunicación</span>
-            </div>
-            <div class="footer-right">
-                <span>GMR v2.0</span>
-            </div>
+            <span>© 2026 Global Exchange • Comunicación Corporativa</span>
+            <span>GMR v2.0</span>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="api-handler-simple.js"></script>
     <script src="script.js"></script>
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('%c🌐 Global Media Report', 'font-size: 20px; font-weight: bold; color: #122864;');
-            console.log('%cInicializando sistema v2.0...', 'color: #666;');
-            
             if (typeof initializeGMR === 'function') {
                 initializeGMR();
             } else {
-                console.error('❌ Error al cargar el sistema');
-                showErrorState();
+                console.error('Error al cargar el sistema');
             }
         });
     </script>
 
 </body>
-</html>
+</html>	

@@ -7,18 +7,9 @@ const CONFIG = {
     logoFallback: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23122864;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%23006cb1;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="200" height="200" fill="url(%23grad)"/%3E%3Ctext x="100" y="100" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle"%3EGE%3C/text%3E%3C/svg%3E',
     newsDaysThreshold: 7,
     monthNames: {
-        '01': 'Enero',
-        '02': 'Febrero',
-        '03': 'Marzo',
-        '04': 'Abril',
-        '05': 'Mayo',
-        '06': 'Junio',
-        '07': 'Julio',
-        '08': 'Agosto',
-        '09': 'Septiembre',
-        '10': 'Octubre',
-        '11': 'Noviembre',
-        '12': 'Diciembre'
+        '01': 'Enero', '02': 'Febrero', '03': 'Marzo', '04': 'Abril',
+        '05': 'Mayo', '06': 'Junio', '07': 'Julio', '08': 'Agosto',
+        '09': 'Septiembre', '10': 'Octubre', '11': 'Noviembre', '12': 'Diciembre'
     }
 };
 
@@ -47,7 +38,6 @@ class GMRDataService {
             }
             
             console.log(`✅ ${result.data.noticias.length} noticias cargadas`);
-            
             return this.processData(result.data);
             
         } catch (error) {
@@ -66,12 +56,6 @@ class GMRDataService {
             const newsDate = new Date(noticia.fecha);
             const diffDays = Math.floor((now - newsDate) / (1000 * 60 * 60 * 24));
             noticia.isNew = diffDays >= 0 && diffDays <= CONFIG.newsDaysThreshold;
-            
-            // Fallback de imagen
-            if (!noticia.imagen || noticia.imagen.includes('placehold.co')) {
-                noticia.imagen = CONFIG.logoFallback;
-                noticia.useFallback = true;
-            }
         });
         
         return data;
@@ -79,7 +63,7 @@ class GMRDataService {
 }
 
 // ===============================
-// RENDERIZADOR
+// RENDERIZADOR COMPACTO
 // ===============================
 
 class GMRRenderer {
@@ -87,34 +71,20 @@ class GMRRenderer {
         this.data = data;
     }
 
-    renderHeroStats() {
-        const stats = this.calculateStats();
+    updateHeaderMeta() {
+        const meta = document.getElementById('headerMeta');
+        if (!meta) return;
         
-        this.animateCounter('totalNewsHero', stats.total);
-        this.animateCounter('internationalCount', stats.internacional);
+        const total = this.data.noticias.length;
+        const internacional = this.data.noticias.filter(n => n.alcance === 'Internacional').length;
         
-        // Top category
-        const topCat = Object.entries(stats.porCategoria)
-            .sort((a, b) => b[1] - a[1])[0];
-        
-        if (topCat) {
-            const catName = this.getCategoryName(topCat[0]);
-            const el = document.getElementById('topCategoryHero');
-            if (el) el.textContent = catName;
-        }
-        
-        // Last update
+        let lastUpdate = 'Sin datos';
         if (this.data.noticias.length > 0) {
             const lastDate = new Date(this.data.noticias[0].fecha);
-            const el = document.getElementById('lastUpdateHero');
-            if (el) el.textContent = this.getRelativeTime(lastDate);
+            lastUpdate = this.getRelativeTime(lastDate);
         }
         
-        // Period
-        const periodEl = document.getElementById('currentPeriod');
-        if (periodEl) {
-            periodEl.textContent = this.getPeriodRange();
-        }
+        meta.textContent = `${total} noticias • ${internacional} internacionales • Actualizado: ${lastUpdate}`;
     }
 
     getRelativeTime(date) {
@@ -132,48 +102,57 @@ class GMRRenderer {
         return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
     }
 
-    getPeriodRange() {
-        if (this.data.noticias.length === 0) return 'Sin datos';
+    renderMonthFilters() {
+        const container = document.getElementById('monthFilters');
+        if (!container) return;
         
-        const fechas = this.data.noticias.map(n => new Date(n.fecha));
-        const oldestDate = new Date(Math.min(...fechas));
-        const newestDate = new Date(Math.max(...fechas));
+        const stats = this.calculateStats();
+        const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
         
-        const oldestStr = this.formatMonthYear(oldestDate);
-        const newestStr = this.formatMonthYear(newestDate);
-        
-        if (oldestStr === newestStr) {
-            return oldestStr;
+        // Actualizar "Todos"
+        const allPill = container.querySelector('.pill[data-month="all"]');
+        if (allPill) {
+            allPill.querySelector('span').textContent = stats.total;
         }
         
-        return `${oldestStr} - ${newestStr}`;
+        // Crear pills de meses
+        months.forEach(month => {
+            const count = stats.porMes[month];
+            const monthName = this.formatMonth(month);
+            
+            const pill = document.createElement('button');
+            pill.className = 'pill';
+            pill.setAttribute('data-month', month);
+            pill.innerHTML = `${monthName} <span>${count}</span>`;
+            
+            container.appendChild(pill);
+        });
     }
 
-    formatMonthYear(date) {
-        const month = String(date.getMonth() + 1).padStart(2, '0');
-        const year = date.getFullYear();
-        return `${CONFIG.monthNames[month]} ${year}`;
-    }
-
-    animateCounter(elementId, target) {
-        const element = document.getElementById(elementId);
-        if (!element) return;
+    renderCategoryFilters() {
+        const container = document.getElementById('categoryFilters');
+        if (!container) return;
         
-        const duration = 1200;
-        const increment = target / (duration / 16);
-        let current = 0;
+        const stats = this.calculateStats();
         
-        const animate = () => {
-            current += increment;
-            if (current < target) {
-                element.textContent = Math.floor(current);
-                requestAnimationFrame(animate);
-            } else {
-                element.textContent = target;
-            }
-        };
+        // Actualizar "Todas"
+        const allPill = container.querySelector('.pill[data-category="all"]');
+        if (allPill) {
+            allPill.querySelector('span').textContent = stats.total;
+        }
         
-        animate();
+        // Crear pills de categorías
+        this.data.categorias.forEach(cat => {
+            const count = stats.porCategoria[cat.Slug] || 0;
+            if (count === 0) return;
+            
+            const pill = document.createElement('button');
+            pill.className = 'pill';
+            pill.setAttribute('data-category', cat.Slug);
+            pill.innerHTML = `${cat.Nombre} <span>${count}</span>`;
+            
+            container.appendChild(pill);
+        });
     }
 
     calculateStats() {
@@ -191,37 +170,6 @@ class GMRRenderer {
         };
     }
 
-    renderMonthFilters() {
-        const container = document.getElementById('monthTimeline');
-        if (!container) return;
-        
-        const stats = this.calculateStats();
-        const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
-        
-        // Actualizar contador "Todos"
-        const allPill = container.querySelector('.pill[data-month="all"]');
-        if (allPill) {
-            const badge = allPill.querySelector('.pill-badge');
-            if (badge) badge.textContent = stats.total;
-        }
-        
-        // Crear pills de meses
-        months.forEach(month => {
-            const count = stats.porMes[month];
-            const monthName = this.formatMonth(month);
-            
-            const pill = document.createElement('button');
-            pill.className = 'pill';
-            pill.setAttribute('data-month', month);
-            pill.innerHTML = `
-                <span>${monthName}</span>
-                <span class="pill-badge">${count}</span>
-            `;
-            
-            container.appendChild(pill);
-        });
-    }
-
     groupByMonth(noticias) {
         return noticias.reduce((acc, noticia) => {
             const date = new Date(noticia.fecha);
@@ -234,32 +182,6 @@ class GMRRenderer {
     formatMonth(monthKey) {
         const [year, month] = monthKey.split('-');
         return `${CONFIG.monthNames[month]} ${year}`;
-    }
-
-    renderCategoryFilters() {
-        const container = document.getElementById('categoryFilters');
-        if (!container) return;
-        
-        const stats = this.calculateStats();
-        
-        // Actualizar "Todas"
-        const countAll = document.getElementById('countAll');
-        if (countAll) countAll.textContent = stats.total;
-        
-        // Crear pills de categorías
-        this.data.categorias.forEach(cat => {
-            const count = stats.porCategoria[cat.Slug] || 0;
-            
-            const pill = document.createElement('button');
-            pill.className = 'pill';
-            pill.setAttribute('data-category', cat.Slug);
-            pill.innerHTML = `
-                <span>${cat.Nombre}</span>
-                <span class="pill-badge">${count}</span>
-            `;
-            
-            container.appendChild(pill);
-        });
     }
 
     renderNews() {
@@ -304,18 +226,18 @@ class GMRRenderer {
         
         section.innerHTML = `
             <div class="month-header">
-                <div class="month-title">
+                <h2 class="month-title">
                     <i class="far fa-calendar"></i>
-                    <h2>${monthName}</h2>
-                </div>
-                <span class="month-badge">${noticias.length}</span>
+                    ${monthName}
+                </h2>
+                <span class="month-count">${noticias.length}</span>
             </div>
         `;
         
         // Agrupar noticias por categoría
         const noticiasPorCategoria = this.groupNewsByCategory(noticias);
         
-        // Ordenar categorías según el orden definido
+        // Ordenar categorías según orden definido
         const categoriasOrdenadas = this.data.categorias
             .filter(cat => noticiasPorCategoria[cat.Slug])
             .map(cat => cat.Slug);
@@ -359,26 +281,26 @@ class GMRRenderer {
                 <h3 class="category-name">${categoryData.Nombre}</h3>
                 <span class="category-count">${noticias.length}</span>
             </div>
-            <div class="news-grid"></div>
+            <div class="news-list"></div>
         `;
         
-        const grid = section.querySelector('.news-grid');
+        const list = section.querySelector('.news-list');
         
-        noticias.forEach((noticia, index) => {
-            const card = this.createNewsCard(noticia);
-            card.style.animationDelay = `${index * 0.05}s`;
-            grid.appendChild(card);
+        noticias.forEach(noticia => {
+            const item = this.createNewsItem(noticia, categoryData);
+            list.appendChild(item);
         });
         
         return section;
     }
 
-    createNewsCard(noticia) {
-        const article = document.createElement('article');
-        article.className = 'news-card';
-        article.setAttribute('data-url', noticia.url);
-        article.setAttribute('data-category', noticia.categoria);
-        article.setAttribute('data-scope', noticia.alcance);
+    createNewsItem(noticia, categoryData) {
+        const item = document.createElement('article');
+        item.className = 'news-item';
+        item.setAttribute('data-url', noticia.url);
+        item.setAttribute('data-category', noticia.categoria);
+        item.setAttribute('data-scope', noticia.alcance);
+        item.style.setProperty('--cat-color', categoryData.Color);
         
         const fecha = new Date(noticia.fecha);
         const fechaFormateada = fecha.toLocaleDateString('es-ES', {
@@ -387,72 +309,56 @@ class GMRRenderer {
             year: 'numeric'
         });
         
-        const categoryData = this.data.categorias.find(c => c.Slug === noticia.categoria);
-        const categoryIcon = categoryData ? categoryData.Icono : 'fa-circle';
-        const categoryColor = categoryData ? categoryData.Color : '#666';
-        const categoryName = categoryData ? categoryData.Nombre : noticia.categoria;
+        const badgeClass = noticia.alcance === 'Nacional' ? 'nacional' : 'internacional';
         
-        const badgeClass = noticia.alcance === 'Nacional' ? 'badge-nacional' : 'badge-internacional';
-        const imageClass = noticia.useFallback ? 'news-img fallback' : 'news-img';
+        // Limitar highlights a 3 para vista compacta
+        const highlightsLimited = noticia.highlights ? noticia.highlights.slice(0, 3) : [];
         
-        article.innerHTML = `
-            <div class="news-img-wrapper">
-                <img src="${noticia.imagen}" 
-                     alt="${noticia.titulo}" 
-                     class="${imageClass}"
-                     loading="lazy">
-                ${noticia.isNew ? `
-                    <div class="badge-new">
-                        <i class="fas fa-certificate"></i>
-                        Nueva
-                    </div>
-                ` : ''}
-            </div>
-            
-            <div class="news-body">
+        item.innerHTML = `
+            <div class="news-item-header">
                 <div class="news-meta">
-                    <span class="badge ${badgeClass}">
+                    <span class="news-badge ${badgeClass}">
                         <i class="fas ${noticia.alcance === 'Nacional' ? 'fa-map-marker-alt' : 'fa-globe'}"></i>
                         ${noticia.alcance}
+                    </span>
+                    <span class="news-source">
+                        <i class="fas fa-newspaper"></i>
+                        ${noticia.medio}
                     </span>
                     <span class="news-date">
                         <i class="far fa-clock"></i>
                         ${fechaFormateada}
                     </span>
                 </div>
-                
-                <h3 class="news-title">${noticia.titulo}</h3>
-                
-                ${noticia.resumen ? `
-                    <p class="news-summary">${noticia.resumen}</p>
-                ` : ''}
-                
-                <div class="news-footer">
-                    <div class="news-source">
-                        <i class="fas fa-newspaper"></i>
-                        ${noticia.medio}
-                    </div>
-                    
-                    <div class="news-category" 
-                         style="--cat-color: ${categoryColor}"
-                         data-tooltip="${categoryName}">
-                        <i class="fas ${categoryIcon}"></i>
-                    </div>
+                ${noticia.isNew ? '<span class="badge-new"><i class="fas fa-star"></i> Nueva</span>' : ''}
+            </div>
+            
+            <h3 class="news-title">${noticia.titulo}</h3>
+            
+            ${noticia.resumen ? `<p class="news-summary">${noticia.resumen}</p>` : ''}
+            
+            ${highlightsLimited.length > 0 ? `
+                <ul class="news-highlights">
+                    ${highlightsLimited.map(h => `<li>${h}</li>`).join('')}
+                </ul>
+            ` : ''}
+            
+            <div class="news-footer">
+                <div class="news-tags">
+                    ${noticia.tags ? noticia.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : ''}
                 </div>
+                <a href="${noticia.url}" target="_blank" class="news-link" onclick="event.stopPropagation()">
+                    Ver noticia <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
         `;
         
-        return article;
-    }
-
-    getCategoryName(slug) {
-        const cat = this.data.categorias.find(c => c.Slug === slug);
-        return cat ? cat.Nombre : slug;
+        return item;
     }
 
     renderAll() {
         console.log('🎨 Renderizando interfaz...');
-        this.renderHeroStats();
+        this.updateHeaderMeta();
         this.renderMonthFilters();
         this.renderCategoryFilters();
         this.renderNews();
@@ -470,7 +376,7 @@ let allData;
 
 async function initializeGMR() {
     try {
-        console.log('🚀 Iniciando GMR...');
+        console.log('🚀 Iniciando GMR v2.0...');
         
         dataService = new GMRDataService(CONFIG.dataPath);
         allData = await dataService.fetchData();
@@ -481,11 +387,10 @@ async function initializeGMR() {
         setTimeout(() => {
             initializeFilters();
             initializeSearch();
-            initializeNewsCards();
-            initializeBackToTop();
+            initializeNewsItems();
             
             console.log('✅ Sistema listo');
-            showToast('Datos cargados', 'success');
+            showToast('Datos cargados correctamente', 'success');
         }, 100);
         
     } catch (error) {
@@ -500,19 +405,15 @@ function showErrorState() {
     const skeleton = document.getElementById('skeletonLoader');
     
     if (skeleton) skeleton.remove();
-    
     if (!container) return;
     
     container.innerHTML = `
         <div class="empty-state" style="display: flex;">
-            <div class="empty-icon">
-                <i class="fas fa-exclamation-triangle"></i>
-            </div>
-            <h3 class="empty-title">Error al cargar datos</h3>
-            <p class="empty-text">No se pudieron cargar las noticias.</p>
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Error al cargar datos</h3>
+            <p>No se pudieron cargar las noticias. Verifica tu conexión.</p>
             <button class="btn-primary" onclick="location.reload()">
-                <i class="fas fa-redo"></i>
-                Recargar
+                <i class="fas fa-redo"></i> Recargar
             </button>
         </div>
     `;
@@ -526,21 +427,21 @@ function initializeFilters() {
     let activeMonth = 'all';
     let activeCategory = 'all';
     
-    const monthTimeline = document.getElementById('monthTimeline');
+    const monthFilters = document.getElementById('monthFilters');
     const categoryFilters = document.getElementById('categoryFilters');
     const resetBtn = document.getElementById('resetFilters');
     
-    if (!monthTimeline || !categoryFilters || !resetBtn) {
+    if (!monthFilters || !categoryFilters || !resetBtn) {
         console.warn('⚠️ Elementos de filtros no encontrados');
         return;
     }
     
     // Month filters
-    monthTimeline.addEventListener('click', (e) => {
+    monthFilters.addEventListener('click', (e) => {
         const pill = e.target.closest('.pill');
         if (!pill) return;
         
-        document.querySelectorAll('#monthTimeline .pill').forEach(p => p.classList.remove('active'));
+        monthFilters.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         
         activeMonth = pill.getAttribute('data-month');
@@ -552,7 +453,7 @@ function initializeFilters() {
         const pill = e.target.closest('.pill');
         if (!pill) return;
         
-        document.querySelectorAll('#categoryFilters .pill').forEach(p => p.classList.remove('active'));
+        categoryFilters.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         
         activeCategory = pill.getAttribute('data-category');
@@ -573,18 +474,18 @@ function initializeFilters() {
             const shouldShowMonth = month === 'all' || sectionMonth === month;
             
             if (shouldShowMonth) {
-                const categorySection = section.querySelectorAll('.category-section');
+                const categorySections = section.querySelectorAll('.category-section');
                 let visibleInMonth = 0;
                 
-                categorySection.forEach(catSec => {
+                categorySections.forEach(catSec => {
                     const catSlug = catSec.getAttribute('data-category');
                     const shouldShowCat = category === 'all' || catSlug === category;
                     
                     if (shouldShowCat) {
                         catSec.style.display = '';
-                        const cards = catSec.querySelectorAll('.news-card');
-                        visibleInMonth += cards.length;
-                        visibleCount += cards.length;
+                        const items = catSec.querySelectorAll('.news-item');
+                        visibleInMonth += items.length;
+                        visibleCount += items.length;
                     } else {
                         catSec.style.display = 'none';
                     }
@@ -607,10 +508,9 @@ function initializeFilters() {
 
 function initializeSearch() {
     const searchInput = document.getElementById('searchInput');
-    const searchBadge = document.getElementById('searchBadge');
     
-    if (!searchInput || !searchBadge) {
-        console.warn('⚠️ Elementos de búsqueda no encontrados');
+    if (!searchInput) {
+        console.warn('⚠️ Input de búsqueda no encontrado');
         return;
     }
     
@@ -624,38 +524,34 @@ function initializeSearch() {
     });
     
     function performSearch(term) {
-        const cards = document.querySelectorAll('.news-card');
+        const items = document.querySelectorAll('.news-item');
         let visibleCount = 0;
         
         if (term === '') {
-            cards.forEach(card => card.style.display = '');
-            searchBadge.style.display = 'none';
-            
+            items.forEach(item => item.style.display = '');
             document.querySelectorAll('.month-section, .category-section').forEach(s => s.style.display = '');
-            toggleEmptyState(cards.length);
+            toggleEmptyState(items.length);
             return;
         }
         
-        cards.forEach(card => {
-            const title = card.querySelector('.news-title')?.textContent.toLowerCase() || '';
-            const source = card.querySelector('.news-source')?.textContent.toLowerCase() || '';
-            const summary = card.querySelector('.news-summary')?.textContent.toLowerCase() || '';
+        items.forEach(item => {
+            const title = item.querySelector('.news-title')?.textContent.toLowerCase() || '';
+            const source = item.querySelector('.news-source')?.textContent.toLowerCase() || '';
+            const summary = item.querySelector('.news-summary')?.textContent.toLowerCase() || '';
+            const highlights = item.querySelector('.news-highlights')?.textContent.toLowerCase() || '';
             
-            if (title.includes(term) || source.includes(term) || summary.includes(term)) {
-                card.style.display = '';
+            if (title.includes(term) || source.includes(term) || summary.includes(term) || highlights.includes(term)) {
+                item.style.display = '';
                 visibleCount++;
             } else {
-                card.style.display = 'none';
+                item.style.display = 'none';
             }
         });
         
-        searchBadge.textContent = visibleCount;
-        searchBadge.style.display = 'flex';
-        
         // Ocultar categorías y meses vacíos
         document.querySelectorAll('.category-section').forEach(catSec => {
-            const visibleCards = catSec.querySelectorAll('.news-card:not([style*="display: none"])').length;
-            catSec.style.display = visibleCards > 0 ? '' : 'none';
+            const visibleItems = catSec.querySelectorAll('.news-item:not([style*="display: none"])').length;
+            catSec.style.display = visibleItems > 0 ? '' : 'none';
         });
         
         document.querySelectorAll('.month-section').forEach(section => {
@@ -671,39 +567,21 @@ function initializeSearch() {
 // INTERACCIONES
 // ===============================
 
-function initializeNewsCards() {
+function initializeNewsItems() {
     const container = document.getElementById('newsContainer');
     if (!container) return;
     
     container.addEventListener('click', (e) => {
-        const card = e.target.closest('.news-card');
-        if (!card) return;
+        const item = e.target.closest('.news-item');
+        if (!item) return;
         
-        const url = card.getAttribute('data-url');
+        // No abrir si se hizo clic en un enlace
+        if (e.target.closest('.news-link')) return;
+        
+        const url = item.getAttribute('data-url');
         if (url) {
-            card.style.transform = 'scale(0.98)';
-            setTimeout(() => {
-                window.open(url, '_blank');
-                card.style.transform = '';
-            }, 150);
+            window.open(url, '_blank');
         }
-    });
-}
-
-function initializeBackToTop() {
-    const btn = document.getElementById('backToTop');
-    if (!btn) return;
-    
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 500) {
-            btn.classList.add('visible');
-        } else {
-            btn.classList.remove('visible');
-        }
-    });
-    
-    btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
 
@@ -711,11 +589,7 @@ function toggleEmptyState(count) {
     const emptyState = document.getElementById('emptyState');
     if (!emptyState) return;
     
-    if (count === 0) {
-        emptyState.style.display = 'flex';
-    } else {
-        emptyState.style.display = 'none';
-    }
+    emptyState.style.display = count === 0 ? 'flex' : 'none';
 }
 
 function resetAllFilters() {
@@ -724,14 +598,11 @@ function resetAllFilters() {
     document.querySelector('.pill[data-category="all"]')?.classList.add('active');
     
     const searchInput = document.getElementById('searchInput');
-    const searchBadge = document.getElementById('searchBadge');
-    
     if (searchInput) searchInput.value = '';
-    if (searchBadge) searchBadge.style.display = 'none';
     
-    document.querySelectorAll('.news-card, .month-section, .category-section').forEach(el => el.style.display = '');
+    document.querySelectorAll('.news-item, .month-section, .category-section').forEach(el => el.style.display = '');
     
-    toggleEmptyState(document.querySelectorAll('.news-card').length);
+    toggleEmptyState(document.querySelectorAll('.news-item').length);
     showToast('Filtros restablecidos', 'success');
 }
 
@@ -761,7 +632,7 @@ function showToast(message, type = 'info') {
     
     setTimeout(() => {
         toast.style.opacity = '0';
-        toast.style.transform = 'translateY(-20px)';
+        toast.style.transform = 'translateY(-10px)';
         setTimeout(() => toast.remove(), 300);
     }, 3000);
 }
