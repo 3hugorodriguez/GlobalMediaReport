@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Media Report — Global Exchange</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Compacto Sticky -->
+    <header class="header-executive" id="mainHeader">
+        <div class="header-container">
+            <!-- Branding -->
+            <div class="brand-executive">
+                <img src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg" 
+                     alt="Global Exchange" 
+                     class="brand-logo">
+                <div class="brand-text">
+                    <h1 class="brand-title">Global Media Report</h1>
+                    <p class="brand-subtitle" id="headerSubtitle">
+                        <span class="status-dot"></span>
+                        <span id="statsInfo">Cargando...</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Actions -->
+            <div class="header-actions">
+                <div class="search-executive">
+                    <i class="fas fa-search"></i>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="Buscar..."
+                           autocomplete="off">
+                </div>
+                
+                <button class="action-btn" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <button class="action-btn" id="viewToggle" title="Vista rápida ejecutiva">
+                    <i class="fas fa-list-ul"></i>
+                </button>
+                
+                <button class="action-btn" id="exportBtn" title="Exportar PDF">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filtros Flotantes -->
+    <nav class="filters-floating" id="filtersBar">
+        <div class="filters-wrapper">
+            <!-- Periodo -->
+            <div class="filter-compact">
+                <label>
+                    <i class="fas fa-calendar-alt"></i>
+                    Periodo
+                </label>
+                <div class="pill-scroll" id="monthFilters">
+                    <button class="pill-compact active" data-month="all">
+                        Todos <span class="count">0</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Categoría -->
+            <div class="filter-compact">
+                <label>
+                    <i class="fas fa-layer-group"></i>
+                    Categoría
+                </label>
+                <div class="pill-scroll" id="categoryFilters">
+                    <button class="pill-compact active" data-category="all">
+                        Todas <span class="count">0</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Reset -->
+            <button class="btn-reset-compact" id="resetFilters" title="Resetear">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-executive" id="newsContainer">
+        <!-- Skeleton -->
+        <div class="skeleton-executive" id="skeletonLoader">
+            <div class="skeleton-card-exec"></div>
+            <div class="skeleton-card-exec"></div>
+            <div class="skeleton-card-exec"></div>
+        </div>
+    </main>
+
+    <!-- Empty State -->
+    <div class="empty-executive" id="emptyState">
+        <i class="fas fa-inbox"></i>
+        <h3>No hay resultados</h3>
+        <p>Intenta ajustar los filtros</p>
+        <button class="btn-primary-exec" onclick="resetAllFilters()">
+            <i class="fas fa-redo"></i>
+            Resetear filtros
+        </button>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top -->
+    <button class="fab-executive" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer-executive">
+        <div class="footer-content">
+            <span>© 2026 Global Exchange • Comunicación Corporativa</span>
+            <span>GMR v3.5 Executive</span>
+        </div>
+    </footer>
+
+    <script src="api-handler-simple.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('%c📊 GMR Executive v3.5', 'font-size: 18px; font-weight: bold; color: #122864;');
+            
+            if (typeof initializeGMR === 'function') {
+                initializeGMR();
+            }
+        });
+    </script>
+
+</body>
+</html>

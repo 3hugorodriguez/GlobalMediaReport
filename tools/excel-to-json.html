@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel → JSON para GMR v2.0</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #122864 0%, #006cb1 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #122864;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 1.125rem;
+        }
+
+        .upload-area {
+            border: 3px dashed #e4e7ec;
+            border-radius: 16px;
+            padding: 60px 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: #fafbfc;
+        }
+
+        .upload-area:hover {
+            border-color: #122864;
+            background: #f5f7fa;
+            transform: translateY(-2px);
+        }
+
+        .upload-area.drag-over {
+            border-color: #28bdc7;
+            background: #e6f7f9;
+        }
+
+        .upload-icon {
+            font-size: 4rem;
+            color: #122864;
+            margin-bottom: 20px;
+        }
+
+        .upload-text {
+            color: #0f172a;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .upload-hint {
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #122864, #006cb1);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            border: none;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(18, 40, 100, 0.3);
+        }
+
+        #result {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 16px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success {
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning {
+            color: #f59e0b;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #fffbeb;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .stats {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .stats li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e4e7ec;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1rem;
+            color: #0f172a;
+        }
+
+        .stats li:last-child {
+            border-bottom: none;
+        }
+
+        .stats li i {
+            color: #122864;
+            font-size: 1.25rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+
+        .preview-title {
+            color: #0f172a;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 30px 0 15px 0;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 12px;
+            overflow-x: auto;
+            max-height: 400px;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            font-family: 'Fira Code', 'Courier New', monospace;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e4e7ec;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #122864, #28bdc7);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .error-message {
+            background: #fee;
+            border-left: 4px solid #ef4444;
+            padding: 16px;
+            border-radius: 8px;
+            color: #dc2626;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .sheet-info {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.875rem;
+            color: #1e40af;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .upload-area {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Excel → JSON Converter</h1>
+            <p>Convierte tu archivo <strong>GMR-Data.xlsx</strong> al formato JSON</p>
+        </div>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <div class="upload-text">Arrastra tu archivo aquí</div>
+            <div class="upload-hint">o haz clic para seleccionar</div>
+            <input type="file" id="fileInput" accept=".xlsx,.xls">
+            <button class="btn-primary" onclick="document.getElementById('fileInput').click()">
+                <i class="fas fa-folder-open"></i>
+                Seleccionar GMR-Data.xlsx
+            </button>
+        </div>
+
+        <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            <strong>Error:</strong> <span id="errorText"></span>
+        </div>
+        
+        <div id="result">
+            <div class="success">
+                <i class="fas fa-check-circle"></i>
+                ✅ Conversión exitosa
+            </div>
+            <div id="warningContainer"></div>
+            <div id="sheetInfo"></div>
+            <p style="color: #64748b; margin-bottom: 20px;">Estadísticas del archivo procesado:</p>
+            <ul class="stats" id="stats"></ul>
+            <button class="download-btn" onclick="downloadJSON()">
+                <i class="fas fa-download"></i>
+                💾 Descargar gmr-data.json
+            </button>
+            <h3 class="preview-title">Vista previa del JSON:</h3>
+            <pre id="preview"></pre>
+        </div>
+    </div>
+
+    <script>
+        let jsonData;
+
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+
+        uploadArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('drag-over');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('drag-over');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('drag-over');
+            
+            const file = e.dataTransfer.files[0];
+            if (file && (file.name.endsWith('.xlsx') || file.name.endsWith('.xls'))) {
+                processFile(file);
+            } else {
+                showError('Por favor, sube un archivo .xlsx o .xls válido');
+            }
+        });
+
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                processFile(file);
+            }
+        });
+
+        function findSheetByName(workbook, possibleNames) {
+            /**
+             * Busca una hoja por múltiples nombres posibles (case-insensitive)
+             * Retorna el nombre exacto de la hoja encontrada o null
+             */
+            const sheetNames = workbook.SheetNames.map(name => name.toLowerCase());
+            
+            for (let possibleName of possibleNames) {
+                const index = sheetNames.indexOf(possibleName.toLowerCase());
+                if (index !== -1) {
+                    return workbook.SheetNames[index]; // Retornar el nombre original
+                }
+            }
+            
+            return null;
+        }
+
+        function processFile(file) {
+            const reader = new FileReader();
+            
+            document.getElementById('progressBar').style.display = 'block';
+            document.getElementById('progressFill').style.width = '30%';
+            document.getElementById('errorMessage').style.display = 'none';
+
+            reader.onload = function(e) {
+                try {
+                    document.getElementById('progressFill').style.width = '60%';
+                    
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = XLSX.read(data, {type: 'array'});
+
+                    console.log('📋 Hojas detectadas:', workbook.SheetNames);
+
+                    // Buscar hojas con nombres flexibles
+                    const noticiasSheet = findSheetByName(workbook, ['Noticias', 'noticias', 'News']);
+                    const categoriasSheet = findSheetByName(workbook, ['Categorias', 'categorias', 'Categories', 'Categorías']);
+                    const configSheet = findSheetByName(workbook, ['Config', 'config', 'Configuration', 'Configuracion']);
+
+                    const warnings = [];
+                    const sheetInfo = [];
+
+                    // Verificar hojas encontradas
+                    if (!noticiasSheet) {
+                        throw new Error('No se encontró la hoja de Noticias. Hojas disponibles: ' + workbook.SheetNames.join(', '));
+                    } else {
+                        sheetInfo.push(`✓ Noticias: "${noticiasSheet}"`);
+                    }
+
+                    if (!categoriasSheet) {
+                        throw new Error('No se encontró la hoja de Categorías. Hojas disponibles: ' + workbook.SheetNames.join(', '));
+                    } else {
+                        sheetInfo.push(`✓ Categorías: "${categoriasSheet}"`);
+                    }
+
+                    // Config es opcional
+                    if (!configSheet) {
+                        warnings.push('⚠️ No se encontró la hoja Config. Se usará configuración por defecto.');
+                        sheetInfo.push(`⚠ Config: No encontrada (usando defaults)`);
+                    } else {
+                        sheetInfo.push(`✓ Config: "${configSheet}"`);
+                    }
+
+                    // Leer las hojas
+                    const noticias = XLSX.utils.sheet_to_json(workbook.Sheets[noticiasSheet]);
+                    const categorias = XLSX.utils.sheet_to_json(workbook.Sheets[categoriasSheet]);
+                    const config = configSheet ? XLSX.utils.sheet_to_json(workbook.Sheets[configSheet]) : [];
+
+                    document.getElementById('progressFill').style.width = '80%';
+
+                    // Procesar noticias
+                    const noticiasPublicadas = noticias
+                        .filter(n => n.Estado === 'Publicado')
+                        .map(n => ({
+                            fecha: formatDate(n.Fecha),
+                            titulo: n.Titulo || '',
+                            categoria: n.Categoria || 'otros-medios-pago',
+                            alcance: n.Alcance || 'Nacional',
+                            url: n.URL || '',
+                            medio: n.Medio || '',
+                            resumen: n.Resumen || '',
+                            highlights: n.Highlights ? n.Highlights.split('||').map(h => h.trim()) : [],
+                            tags: n.Tags ? n.Tags.split(',').map(t => t.trim()) : [],
+                            imagen: n.Imagen || ''
+                        }));
+
+                    // Procesar categorías
+                    const categoriasFormateadas = categorias.map(c => ({
+                        Slug: c.Slug || '',
+                        Nombre: c.Nombre || '',
+                        Icono: c.Icono || 'fa-circle',
+                        Color: c.Color || '#666666'
+                    }));
+
+                    // Procesar config (con defaults si no existe)
+                    let configObj = {
+                        mes_actual: new Date().toLocaleDateString('es-ES', { month: 'short', year: '2-digit' }),
+                        ultima_actualizacion: new Date().toLocaleString('es-ES'),
+                        version: '2.0',
+                        total_categorias: categoriasFormateadas.length.toString(),
+                        autor: 'Departamento de Comunicación'
+                    };
+
+                    if (config.length > 0) {
+                        config.forEach(item => {
+                            if (item.Clave && item.Valor) {
+                                configObj[item.Clave] = item.Valor;
+                            }
+                        });
+                    }
+
+                    // Crear JSON final
+                    jsonData = {
+                        success: true,
+                        timestamp: new Date().toISOString(),
+                        version: "2.0",
+                        data: {
+                            noticias: noticiasPublicadas,
+                            categorias: categoriasFormateadas,
+                            config: configObj
+                        }
+                    };
+
+                    document.getElementById('progressFill').style.width = '100%';
+
+                    // Mostrar warnings si los hay
+                    const warningContainer = document.getElementById('warningContainer');
+                    if (warnings.length > 0) {
+                        warningContainer.innerHTML = warnings.map(w => 
+                            `<div class="warning"><i class="fas fa-exclamation-triangle"></i> ${w}</div>`
+                        ).join('');
+                    }
+
+                    // Mostrar info de hojas
+                    const sheetInfoContainer = document.getElementById('sheetInfo');
+                    sheetInfoContainer.innerHTML = `
+                        <div class="sheet-info">
+                            <strong>Hojas detectadas:</strong><br>
+                            ${sheetInfo.join('<br>')}
+                        </div>
+                    `;
+
+                    // Mostrar resultados
+                    document.getElementById('stats').innerHTML = `
+                        <li><i class="fas fa-newspaper"></i> ${noticiasPublicadas.length} noticias publicadas (${noticias.length - noticiasPublicadas.length} filtradas)</li>
+                        <li><i class="fas fa-tags"></i> ${categoriasFormateadas.length} categorías configuradas</li>
+                        <li><i class="fas fa-cog"></i> ${Object.keys(configObj).length} parámetros de configuración</li>
+                        <li><i class="fas fa-calendar"></i> Generado: ${new Date().toLocaleString('es-ES')}</li>
+                    `;
+                    
+                    document.getElementById('preview').textContent = JSON.stringify(jsonData, null, 2);
+                    document.getElementById('result').style.display = 'block';
+                    
+                    setTimeout(() => {
+                        document.getElementById('progressBar').style.display = 'none';
+                    }, 500);
+
+                } catch (error) {
+                    showError(error.message);
+                    document.getElementById('progressBar').style.display = 'none';
+                    console.error('Error completo:', error);
+                }
+            };
+
+            reader.onerror = function() {
+                showError('Error al leer el archivo. Intenta nuevamente.');
+                document.getElementById('progressBar').style.display = 'none';
+            };
+
+            reader.readAsArrayBuffer(file);
+        }
+
+        function formatDate(excelDate) {
+            if (typeof excelDate === 'number') {
+                const date = XLSX.SSF.parse_date_code(excelDate);
+                return `${date.y}-${String(date.m).padStart(2, '0')}-${String(date.d).padStart(2, '0')}`;
+            }
+            
+            if (typeof excelDate === 'string' && excelDate.match(/^\d{4}-\d{2}-\d{2}$/)) {
+                return excelDate;
+            }
+            
+            const parsed = new Date(excelDate);
+            if (!isNaN(parsed)) {
+                return `${parsed.getFullYear()}-${String(parsed.getMonth() + 1).padStart(2, '0')}-${String(parsed.getDate()).padStart(2, '0')}`;
+            }
+            
+            return new Date().toISOString().split('T')[0];
+        }
+
+        function downloadJSON() {
+            const blob = new Blob([JSON.stringify(jsonData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'gmr-data.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            const btn = event.target.closest('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> ¡Descargado!';
+            btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.style.background = '';
+            }, 2000);
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            errorText.textContent = message;
+            errorDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 8000);
+        }
+    </script>
+</body>
+</html>
