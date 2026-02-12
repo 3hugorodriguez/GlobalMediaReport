@@ -5,7 +5,21 @@
 const CONFIG = {
     dataPath: './data/gmr-data.json',
     logoFallback: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23122864;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%23006cb1;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="200" height="200" fill="url(%23grad)"/%3E%3Ctext x="100" y="100" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle"%3EGE%3C/text%3E%3C/svg%3E',
-    newsDaysThreshold: 7
+    newsDaysThreshold: 7,
+    monthNames: {
+        '01': 'Enero',
+        '02': 'Febrero',
+        '03': 'Marzo',
+        '04': 'Abril',
+        '05': 'Mayo',
+        '06': 'Junio',
+        '07': 'Julio',
+        '08': 'Agosto',
+        '09': 'Septiembre',
+        '10': 'Octubre',
+        '11': 'Noviembre',
+        '12': 'Diciembre'
+    }
 };
 
 // ===============================
@@ -125,17 +139,20 @@ class GMRRenderer {
         const oldestDate = new Date(Math.min(...fechas));
         const newestDate = new Date(Math.max(...fechas));
         
-        const optionsMonth = { month: 'long', year: 'numeric' };
-        const oldestStr = oldestDate.toLocaleDateString('es-ES', optionsMonth);
-        const newestStr = newestDate.toLocaleDateString('es-ES', optionsMonth);
-        
-        const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+        const oldestStr = this.formatMonthYear(oldestDate);
+        const newestStr = this.formatMonthYear(newestDate);
         
         if (oldestStr === newestStr) {
-            return capitalize(oldestStr);
+            return oldestStr;
         }
         
-        return `${capitalize(oldestStr)} - ${capitalize(newestStr)}`;
+        return `${oldestStr} - ${newestStr}`;
+    }
+
+    formatMonthYear(date) {
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${CONFIG.monthNames[month]} ${year}`;
     }
 
     animateCounter(elementId, target) {
@@ -216,9 +233,7 @@ class GMRRenderer {
 
     formatMonth(monthKey) {
         const [year, month] = monthKey.split('-');
-        const date = new Date(year, parseInt(month) - 1);
-        const formatted = date.toLocaleDateString('es-ES', { month: 'short', year: 'numeric' });
-        return formatted.charAt(0).toUpperCase() + formatted.slice(1).replace('.', '');
+        return `${CONFIG.monthNames[month]} ${year}`;
     }
 
     renderCategoryFilters() {
@@ -234,7 +249,6 @@ class GMRRenderer {
         // Crear pills de categorías
         this.data.categorias.forEach(cat => {
             const count = stats.porCategoria[cat.Slug] || 0;
-            if (count === 0) return;
             
             const pill = document.createElement('button');
             pill.className = 'pill';
@@ -261,7 +275,7 @@ class GMRRenderer {
         
         container.innerHTML = '';
         
-        // Agrupar por mes
+        // Agrupar por mes → categoría
         const noticiasPorMes = this.groupNewsByMonth(this.data.noticias);
         const mesesOrdenados = Object.keys(noticiasPorMes).sort((a, b) => new Date(b) - new Date(a));
         
@@ -296,6 +310,55 @@ class GMRRenderer {
                 </div>
                 <span class="month-badge">${noticias.length}</span>
             </div>
+        `;
+        
+        // Agrupar noticias por categoría
+        const noticiasPorCategoria = this.groupNewsByCategory(noticias);
+        
+        // Ordenar categorías según el orden definido
+        const categoriasOrdenadas = this.data.categorias
+            .filter(cat => noticiasPorCategoria[cat.Slug])
+            .map(cat => cat.Slug);
+        
+        categoriasOrdenadas.forEach(catSlug => {
+            const categorySection = this.createCategorySection(
+                catSlug, 
+                noticiasPorCategoria[catSlug]
+            );
+            section.appendChild(categorySection);
+        });
+        
+        return section;
+    }
+
+    groupNewsByCategory(noticias) {
+        return noticias.reduce((acc, noticia) => {
+            if (!acc[noticia.categoria]) acc[noticia.categoria] = [];
+            acc[noticia.categoria].push(noticia);
+            return acc;
+        }, {});
+    }
+
+    createCategorySection(categorySlug, noticias) {
+        const categoryData = this.data.categorias.find(c => c.Slug === categorySlug);
+        
+        if (!categoryData) {
+            console.warn(`Categoría no encontrada: ${categorySlug}`);
+            return document.createElement('div');
+        }
+        
+        const section = document.createElement('div');
+        section.className = 'category-section';
+        section.setAttribute('data-category', categorySlug);
+        
+        section.innerHTML = `
+            <div class="category-header" style="--cat-color: ${categoryData.Color}">
+                <div class="category-icon">
+                    <i class="fas ${categoryData.Icono}"></i>
+                </div>
+                <h3 class="category-name">${categoryData.Nombre}</h3>
+                <span class="category-count">${noticias.length}</span>
+            </div>
             <div class="news-grid"></div>
         `;
         
@@ -327,6 +390,7 @@ class GMRRenderer {
         const categoryData = this.data.categorias.find(c => c.Slug === noticia.categoria);
         const categoryIcon = categoryData ? categoryData.Icono : 'fa-circle';
         const categoryColor = categoryData ? categoryData.Color : '#666';
+        const categoryName = categoryData ? categoryData.Nombre : noticia.categoria;
         
         const badgeClass = noticia.alcance === 'Nacional' ? 'badge-nacional' : 'badge-internacional';
         const imageClass = noticia.useFallback ? 'news-img fallback' : 'news-img';
@@ -369,7 +433,9 @@ class GMRRenderer {
                         ${noticia.medio}
                     </div>
                     
-                    <div class="news-category" style="--cat-color: ${categoryColor}">
+                    <div class="news-category" 
+                         style="--cat-color: ${categoryColor}"
+                         data-tooltip="${categoryName}">
                         <i class="fas ${categoryIcon}"></i>
                     </div>
                 </div>
@@ -507,23 +573,24 @@ function initializeFilters() {
             const shouldShowMonth = month === 'all' || sectionMonth === month;
             
             if (shouldShowMonth) {
-                const cards = section.querySelectorAll('.news-card');
-                let visibleInSection = 0;
+                const categorySection = section.querySelectorAll('.category-section');
+                let visibleInMonth = 0;
                 
-                cards.forEach(card => {
-                    const cardCategory = card.getAttribute('data-category');
-                    const shouldShowCategory = category === 'all' || cardCategory === category;
+                categorySection.forEach(catSec => {
+                    const catSlug = catSec.getAttribute('data-category');
+                    const shouldShowCat = category === 'all' || catSlug === category;
                     
-                    if (shouldShowCategory) {
-                        card.style.display = '';
-                        visibleInSection++;
-                        visibleCount++;
+                    if (shouldShowCat) {
+                        catSec.style.display = '';
+                        const cards = catSec.querySelectorAll('.news-card');
+                        visibleInMonth += cards.length;
+                        visibleCount += cards.length;
                     } else {
-                        card.style.display = 'none';
+                        catSec.style.display = 'none';
                     }
                 });
                 
-                section.style.display = visibleInSection > 0 ? '' : 'none';
+                section.style.display = visibleInMonth > 0 ? '' : 'none';
             } else {
                 section.style.display = 'none';
             }
@@ -564,7 +631,7 @@ function initializeSearch() {
             cards.forEach(card => card.style.display = '');
             searchBadge.style.display = 'none';
             
-            document.querySelectorAll('.month-section').forEach(s => s.style.display = '');
+            document.querySelectorAll('.month-section, .category-section').forEach(s => s.style.display = '');
             toggleEmptyState(cards.length);
             return;
         }
@@ -585,9 +652,15 @@ function initializeSearch() {
         searchBadge.textContent = visibleCount;
         searchBadge.style.display = 'flex';
         
+        // Ocultar categorías y meses vacíos
+        document.querySelectorAll('.category-section').forEach(catSec => {
+            const visibleCards = catSec.querySelectorAll('.news-card:not([style*="display: none"])').length;
+            catSec.style.display = visibleCards > 0 ? '' : 'none';
+        });
+        
         document.querySelectorAll('.month-section').forEach(section => {
-            const visibleCards = section.querySelectorAll('.news-card:not([style*="display: none"])').length;
-            section.style.display = visibleCards > 0 ? '' : 'none';
+            const visibleCats = section.querySelectorAll('.category-section:not([style*="display: none"])').length;
+            section.style.display = visibleCats > 0 ? '' : 'none';
         });
         
         toggleEmptyState(visibleCount);
@@ -656,7 +729,7 @@ function resetAllFilters() {
     if (searchInput) searchInput.value = '';
     if (searchBadge) searchBadge.style.display = 'none';
     
-    document.querySelectorAll('.news-card, .month-section').forEach(el => el.style.display = '');
+    document.querySelectorAll('.news-card, .month-section, .category-section').forEach(el => el.style.display = '');
     
     toggleEmptyState(document.querySelectorAll('.news-card').length);
     showToast('Filtros restablecidos', 'success');
