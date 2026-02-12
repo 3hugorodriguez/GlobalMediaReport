@@ -1,5 +1,5 @@
 // ===============================
-// CONFIGURACIÓN CRYSTAL
+// CONFIGURACIÓN
 // ===============================
 
 const CONFIG = {
@@ -9,8 +9,7 @@ const CONFIG = {
         '01': 'Enero', '02': 'Febrero', '03': 'Marzo', '04': 'Abril',
         '05': 'Mayo', '06': 'Junio', '07': 'Julio', '08': 'Agosto',
         '09': 'Septiembre', '10': 'Octubre', '11': 'Noviembre', '12': 'Diciembre'
-    },
-    fallbackImage: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"%3E%3Cdefs%3E%3ClinearGradient id="grad" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:%23122864;stop-opacity:1" /%3E%3Cstop offset="50%25" style="stop-color:%23006cb1;stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:%2328bdc7;stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="800" height="400" fill="url(%23grad)"/%3E%3Ctext x="400" y="200" font-family="Inter, sans-serif" font-size="80" font-weight="bold" fill="rgba(255,255,255,0.9)" text-anchor="middle" dominant-baseline="middle"%3EGE%3C/text%3E%3C/svg%3E'
+    }
 };
 
 // ===============================
@@ -24,7 +23,7 @@ class GMRDataService {
 
     async fetchData() {
         try {
-            console.log('📡 Cargando datos GMR Crystal...');
+            console.log('📡 Cargando datos...');
             const response = await fetch(`${this.jsonPath}?t=${Date.now()}`);
             
             if (!response.ok) {
@@ -54,12 +53,6 @@ class GMRDataService {
             const newsDate = new Date(noticia.fecha);
             const diffDays = Math.floor((now - newsDate) / (1000 * 60 * 60 * 24));
             noticia.isNew = diffDays >= 0 && diffDays <= CONFIG.newsDaysThreshold;
-            
-            // Fallback de imagen
-            if (!noticia.imagen || noticia.imagen.includes('placehold.co')) {
-                noticia.imagen = CONFIG.fallbackImage;
-                noticia.useFallback = true;
-            }
         });
         
         return data;
@@ -67,17 +60,17 @@ class GMRDataService {
 }
 
 // ===============================
-// CRYSTAL RENDERER
+// EXECUTIVE RENDERER
 // ===============================
 
-class CrystalRenderer {
+class ExecutiveRenderer {
     constructor(data) {
         this.data = data;
     }
 
-    updateHeaderMeta() {
-        const meta = document.getElementById('headerMeta');
-        if (!meta) return;
+    updateHeaderStats() {
+        const statsInfo = document.getElementById('statsInfo');
+        if (!statsInfo) return;
         
         const stats = this.calculateStats();
         let lastUpdate = 'Sin datos';
@@ -87,64 +80,18 @@ class CrystalRenderer {
             lastUpdate = this.getRelativeTime(lastDate);
         }
         
-        meta.innerHTML = `
-            <span class="pulse-dot"></span>
-            ${stats.total} noticias • ${stats.internacional} internacionales • ${lastUpdate}
-        `;
-    }
-
-    updateStatsBar() {
-        const stats = this.calculateStats();
-        
-        this.animateCounter('totalStat', stats.total);
-        this.animateCounter('intlStat', stats.internacional);
-        this.animateCounter('newStat', stats.new);
-        
-        // Top category
-        const topCat = Object.entries(stats.porCategoria)
-            .sort((a, b) => b[1] - a[1])[0];
-        
-        if (topCat) {
-            const catName = this.getCategoryName(topCat[0]);
-            const topCatEl = document.getElementById('topCat');
-            if (topCatEl) {
-                topCatEl.textContent = catName.split(' ').slice(0, 2).join(' ');
-            }
-        }
-    }
-
-    animateCounter(elementId, target) {
-        const element = document.getElementById(elementId);
-        if (!element) return;
-        
-        const duration = 1500;
-        const increment = target / (duration / 16);
-        let current = 0;
-        
-        const animate = () => {
-            current += increment;
-            if (current < target) {
-                element.textContent = Math.floor(current);
-                requestAnimationFrame(animate);
-            } else {
-                element.textContent = target;
-            }
-        };
-        
-        animate();
+        statsInfo.textContent = `${stats.total} noticias • ${stats.new} nuevas • Actualizado ${lastUpdate}`;
     }
 
     getRelativeTime(date) {
         const now = new Date();
         const diffMs = now - date;
-        const diffMins = Math.floor(diffMs / 60000);
         const diffHours = Math.floor(diffMs / 3600000);
         const diffDays = Math.floor(diffMs / 86400000);
         
-        if (diffMins < 1) return 'Ahora mismo';
-        if (diffMins < 60) return `Hace ${diffMins} min`;
-        if (diffHours < 24) return `Hace ${diffHours}h`;
-        if (diffDays < 30) return `Hace ${diffDays}d`;
+        if (diffHours < 1) return 'ahora';
+        if (diffHours < 24) return `hace ${diffHours}h`;
+        if (diffDays < 30) return `hace ${diffDays}d`;
         
         return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
     }
@@ -182,24 +129,20 @@ class CrystalRenderer {
         const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
         
         // Actualizar "Todos"
-        const allPill = container.querySelector('.glass-pill[data-month="all"]');
+        const allPill = container.querySelector('.pill-compact[data-month="all"]');
         if (allPill) {
-            allPill.querySelector('.pill-count').textContent = stats.total;
+            allPill.querySelector('.count').textContent = stats.total;
         }
         
-        // Crear pills de meses
-        months.forEach((month, index) => {
+        // Crear pills
+        months.forEach(month => {
             const count = stats.porMes[month];
             const monthName = this.formatMonth(month);
             
             const pill = document.createElement('button');
-            pill.className = 'glass-pill';
+            pill.className = 'pill-compact';
             pill.setAttribute('data-month', month);
-            pill.style.animationDelay = `${index * 0.05}s`;
-            pill.innerHTML = `
-                <span>${monthName}</span>
-                <span class="pill-count">${count}</span>
-            `;
+            pill.innerHTML = `${monthName} <span class="count">${count}</span>`;
             
             container.appendChild(pill);
         });
@@ -212,24 +155,20 @@ class CrystalRenderer {
         const stats = this.calculateStats();
         
         // Actualizar "Todas"
-        const allPill = container.querySelector('.glass-pill[data-category="all"]');
+        const allPill = container.querySelector('.pill-compact[data-category="all"]');
         if (allPill) {
-            allPill.querySelector('.pill-count').textContent = stats.total;
+            allPill.querySelector('.count').textContent = stats.total;
         }
         
-        // Crear pills de categorías
-        this.data.categorias.forEach((cat, index) => {
+        // Crear pills
+        this.data.categorias.forEach(cat => {
             const count = stats.porCategoria[cat.Slug] || 0;
             if (count === 0) return;
             
             const pill = document.createElement('button');
-            pill.className = 'glass-pill';
+            pill.className = 'pill-compact';
             pill.setAttribute('data-category', cat.Slug);
-            pill.style.animationDelay = `${index * 0.05}s`;
-            pill.innerHTML = `
-                <span>${cat.Nombre}</span>
-                <span class="pill-count">${count}</span>
-            `;
+            pill.innerHTML = `${cat.Nombre} <span class="count">${count}</span>`;
             
             container.appendChild(pill);
         });
@@ -244,11 +183,11 @@ class CrystalRenderer {
         const container = document.getElementById('newsContainer');
         if (!container) return;
         
-        // Ocultar skeleton con fade
+        // Ocultar skeleton
         const skeleton = document.getElementById('skeletonLoader');
         if (skeleton) {
             skeleton.style.opacity = '0';
-            setTimeout(() => skeleton.remove(), 400);
+            setTimeout(() => skeleton.remove(), 300);
         }
         
         container.innerHTML = '';
@@ -257,9 +196,8 @@ class CrystalRenderer {
         const noticiasPorMes = this.groupNewsByMonth(this.data.noticias);
         const mesesOrdenados = Object.keys(noticiasPorMes).sort((a, b) => new Date(b) - new Date(a));
         
-        mesesOrdenados.forEach((mes, index) => {
+        mesesOrdenados.forEach(mes => {
             const monthSection = this.createMonthSection(mes, noticiasPorMes[mes]);
-            monthSection.style.animationDelay = `${index * 0.1}s`;
             container.appendChild(monthSection);
         });
     }
@@ -321,10 +259,7 @@ class CrystalRenderer {
     createCategorySection(categorySlug, noticias) {
         const categoryData = this.data.categorias.find(c => c.Slug === categorySlug);
         
-        if (!categoryData) {
-            console.warn(`Categoría no encontrada: ${categorySlug}`);
-            return document.createElement('div');
-        }
+        if (!categoryData) return document.createElement('div');
         
         const section = document.createElement('div');
         section.className = 'category-section';
@@ -343,21 +278,19 @@ class CrystalRenderer {
         
         const grid = section.querySelector('.news-grid');
         
-        noticias.forEach((noticia, index) => {
-            const card = this.createCrystalCard(noticia, categoryData);
-            card.style.animationDelay = `${index * 0.08}s`;
+        noticias.forEach(noticia => {
+            const card = this.createExecutiveCard(noticia, categoryData);
             grid.appendChild(card);
         });
         
         return section;
     }
 
-    createCrystalCard(noticia, categoryData) {
+    createExecutiveCard(noticia, categoryData) {
         const article = document.createElement('article');
-        article.className = 'crystal-card';
+        article.className = 'card-executive';
         article.setAttribute('data-url', noticia.url);
         article.setAttribute('data-category', noticia.categoria);
-        article.setAttribute('data-scope', noticia.alcance);
         article.style.setProperty('--cat-color', categoryData.Color);
         
         const fecha = new Date(noticia.fecha);
@@ -369,63 +302,83 @@ class CrystalRenderer {
         
         const badgeClass = noticia.alcance === 'Nacional' ? 'nacional' : 'internacional';
         
-        // Limitar highlights a 3 para mejor UX
+        // Limitar highlights a 3
         const highlightsLimited = noticia.highlights ? noticia.highlights.slice(0, 3) : [];
         
-        article.innerHTML = `
-            <div class="card-image">
-                <img src="${noticia.imagen}" 
-                     alt="${noticia.titulo}"
-                     loading="lazy"
-                     onerror="this.src='${CONFIG.fallbackImage}'">
-                <div class="card-image-overlay"></div>
-                ${noticia.isNew ? `
-                    <div class="card-badge-new">
-                        <i class="fas fa-star"></i>
-                        Nueva
+        // Detectar si tiene imagen
+        const hasImage = noticia.imagen && 
+                        !noticia.imagen.includes('placehold.co') && 
+                        noticia.imagen.trim() !== '';
+        
+        let imageHTML;
+        if (hasImage) {
+            imageHTML = `
+                <div class="card-image-exec">
+                    <img src="${noticia.imagen}" 
+                         alt="${noticia.titulo}"
+                         loading="lazy"
+                         onerror="this.parentElement.classList.add('placeholder'); this.style.display='none';">
+                    ${noticia.isNew ? `
+                        <div class="card-badge-new">
+                            <i class="fas fa-star"></i>
+                            Nueva
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        } else {
+            // Placeholder personalizado
+            imageHTML = `
+                <div class="card-image-exec placeholder">
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">
+                            <i class="fas ${categoryData.Icono}"></i>
+                        </div>
+                        <div class="placeholder-text">${categoryData.Nombre}</div>
                     </div>
-                ` : ''}
-            </div>
+                    ${noticia.isNew ? `
+                        <div class="card-badge-new">
+                            <i class="fas fa-star"></i>
+                            Nueva
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+        
+        article.innerHTML = `
+            ${imageHTML}
             
-            <div class="card-content">
-                <div class="card-meta">
-                    <span class="card-badge ${badgeClass}">
+            <div class="card-content-exec">
+                <div class="card-meta-exec">
+                    <span class="card-badge-exec ${badgeClass}">
                         <i class="fas ${noticia.alcance === 'Nacional' ? 'fa-map-marker-alt' : 'fa-globe'}"></i>
                         ${noticia.alcance}
                     </span>
-                    <span class="card-date">
+                    <span>
                         <i class="far fa-clock"></i>
                         ${fechaFormateada}
                     </span>
-                    <span class="card-source">
-                        <i class="fas fa-newspaper"></i>
-                        ${noticia.medio}
-                    </span>
                 </div>
                 
-                <h3 class="card-title">${noticia.titulo}</h3>
-                
-                ${noticia.resumen ? `
-                    <p class="card-summary">${noticia.resumen}</p>
-                ` : ''}
+                <h3 class="card-title-exec">${noticia.titulo}</h3>
                 
                 ${highlightsLimited.length > 0 ? `
-                    <ul class="card-highlights">
+                    <ul class="card-highlights-exec">
                         ${highlightsLimited.map(h => `<li>${h}</li>`).join('')}
                     </ul>
                 ` : ''}
                 
-                <div class="card-footer">
-                    <div class="card-tags">
-                        ${noticia.tags ? noticia.tags.slice(0, 3).map(tag => 
-                            `<span class="card-tag">${tag}</span>`
-                        ).join('') : ''}
-                    </div>
+                <div class="card-footer-exec">
+                    <span class="card-source-exec">
+                        <i class="fas fa-newspaper"></i>
+                        ${noticia.medio}
+                    </span>
                     <a href="${noticia.url}" 
                        target="_blank" 
-                       class="card-link"
+                       class="card-link-exec"
                        onclick="event.stopPropagation()">
-                        Leer más
+                        Leer
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -435,19 +388,13 @@ class CrystalRenderer {
         return article;
     }
 
-    getCategoryName(slug) {
-        const cat = this.data.categorias.find(c => c.Slug === slug);
-        return cat ? cat.Nombre : slug;
-    }
-
     renderAll() {
-        console.log('🎨 Renderizando Crystal UI...');
-        this.updateHeaderMeta();
-        this.updateStatsBar();
+        console.log('🎨 Renderizando Executive UI...');
+        this.updateHeaderStats();
         this.renderMonthFilters();
         this.renderCategoryFilters();
         this.renderNews();
-        console.log('✅ Crystal UI renderizado');
+        console.log('✅ Executive UI renderizado');
     }
 }
 
@@ -461,21 +408,21 @@ let allData;
 
 async function initializeGMR() {
     try {
-        console.log('🔮 Iniciando GMR Crystal v3.0...');
+        console.log('🚀 Iniciando GMR Executive v3.5...');
         
         dataService = new GMRDataService(CONFIG.dataPath);
         allData = await dataService.fetchData();
         
-        renderer = new CrystalRenderer(allData);
+        renderer = new ExecutiveRenderer(allData);
         renderer.renderAll();
         
         setTimeout(() => {
             initializeFilters();
             initializeSearch();
-            initializeCrystalCards();
+            initializeCards();
             initializeScrollEffects();
             
-            console.log('✨ Sistema Crystal listo');
+            console.log('✅ Sistema listo');
             showToast('Sistema cargado correctamente', 'success');
         }, 100);
         
@@ -494,15 +441,13 @@ function showErrorState() {
     if (!container) return;
     
     container.innerHTML = `
-        <div class="empty-state-crystal" style="display: flex;">
-            <div class="empty-icon">
-                <i class="fas fa-exclamation-triangle"></i>
-            </div>
+        <div class="empty-executive" style="display: flex;">
+            <i class="fas fa-exclamation-triangle"></i>
             <h3>Error al cargar datos</h3>
-            <p>No se pudieron cargar las noticias. Verifica tu conexión.</p>
-            <button class="crystal-btn primary" onclick="location.reload()">
+            <p>Verifica tu conexión e intenta nuevamente</p>
+            <button class="btn-primary-exec" onclick="location.reload()">
                 <i class="fas fa-redo"></i>
-                Recargar página
+                Recargar
             </button>
         </div>
     `;
@@ -520,36 +465,30 @@ function initializeFilters() {
     const categoryFilters = document.getElementById('categoryFilters');
     const resetBtn = document.getElementById('resetFilters');
     
-    if (!monthFilters || !categoryFilters || !resetBtn) {
-        console.warn('⚠️ Elementos de filtros no encontrados');
-        return;
-    }
+    if (!monthFilters || !categoryFilters || !resetBtn) return;
     
-    // Month filters
     monthFilters.addEventListener('click', (e) => {
-        const pill = e.target.closest('.glass-pill');
+        const pill = e.target.closest('.pill-compact');
         if (!pill) return;
         
-        monthFilters.querySelectorAll('.glass-pill').forEach(p => p.classList.remove('active'));
+        monthFilters.querySelectorAll('.pill-compact').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         
         activeMonth = pill.getAttribute('data-month');
         applyFilters(activeMonth, activeCategory);
     });
     
-    // Category filters
     categoryFilters.addEventListener('click', (e) => {
-        const pill = e.target.closest('.glass-pill');
+        const pill = e.target.closest('.pill-compact');
         if (!pill) return;
         
-        categoryFilters.querySelectorAll('.glass-pill').forEach(p => p.classList.remove('active'));
+        categoryFilters.querySelectorAll('.pill-compact').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         
         activeCategory = pill.getAttribute('data-category');
         applyFilters(activeMonth, activeCategory);
     });
     
-    // Reset
     resetBtn.addEventListener('click', () => {
         resetAllFilters();
     });
@@ -572,7 +511,7 @@ function initializeFilters() {
                     
                     if (shouldShowCat) {
                         catSec.style.display = '';
-                        const cards = catSec.querySelectorAll('.crystal-card');
+                        const cards = catSec.querySelectorAll('.card-executive');
                         visibleInMonth += cards.length;
                         visibleCount += cards.length;
                     } else {
@@ -587,21 +526,17 @@ function initializeFilters() {
         });
         
         toggleEmptyState(visibleCount);
-        showToast(`${visibleCount} noticia${visibleCount !== 1 ? 's' : ''} encontrada${visibleCount !== 1 ? 's' : ''}`, 'info');
+        showToast(`${visibleCount} noticia${visibleCount !== 1 ? 's' : ''}`, 'info');
     }
 }
 
 // ===============================
-// BÚSQUEDA MEJORADA
+// BÚSQUEDA
 // ===============================
 
 function initializeSearch() {
     const searchInput = document.getElementById('searchInput');
-    
-    if (!searchInput) {
-        console.warn('⚠️ Input de búsqueda no encontrado');
-        return;
-    }
+    if (!searchInput) return;
     
     let searchTimeout;
     
@@ -612,17 +547,8 @@ function initializeSearch() {
         }, 300);
     });
     
-    // Animación en foco
-    searchInput.addEventListener('focus', () => {
-        searchInput.parentElement.style.transform = 'scale(1.02)';
-    });
-    
-    searchInput.addEventListener('blur', () => {
-        searchInput.parentElement.style.transform = '';
-    });
-    
     function performSearch(term) {
-        const cards = document.querySelectorAll('.crystal-card');
+        const cards = document.querySelectorAll('.card-executive');
         let visibleCount = 0;
         
         if (term === '') {
@@ -633,15 +559,11 @@ function initializeSearch() {
         }
         
         cards.forEach(card => {
-            const title = card.querySelector('.card-title')?.textContent.toLowerCase() || '';
-            const source = card.querySelector('.card-source')?.textContent.toLowerCase() || '';
-            const summary = card.querySelector('.card-summary')?.textContent.toLowerCase() || '';
-            const highlights = card.querySelector('.card-highlights')?.textContent.toLowerCase() || '';
+            const title = card.querySelector('.card-title-exec')?.textContent.toLowerCase() || '';
+            const source = card.querySelector('.card-source-exec')?.textContent.toLowerCase() || '';
+            const highlights = card.querySelector('.card-highlights-exec')?.textContent.toLowerCase() || '';
             
-            const matches = title.includes(term) || source.includes(term) || 
-                          summary.includes(term) || highlights.includes(term);
-            
-            if (matches) {
+            if (title.includes(term) || source.includes(term) || highlights.includes(term)) {
                 card.style.display = '';
                 visibleCount++;
             } else {
@@ -651,7 +573,7 @@ function initializeSearch() {
         
         // Ocultar secciones vacías
         document.querySelectorAll('.category-section').forEach(catSec => {
-            const visibleCards = catSec.querySelectorAll('.crystal-card:not([style*="display: none"])').length;
+            const visibleCards = catSec.querySelectorAll('.card-executive:not([style*="display: none"])').length;
             catSec.style.display = visibleCards > 0 ? '' : 'none';
         });
         
@@ -665,35 +587,25 @@ function initializeSearch() {
 }
 
 // ===============================
-// INTERACCIONES CRYSTAL CARDS
+// INTERACCIONES
 // ===============================
 
-function initializeCrystalCards() {
+function initializeCards() {
     const container = document.getElementById('newsContainer');
     if (!container) return;
     
     container.addEventListener('click', (e) => {
-        const card = e.target.closest('.crystal-card');
+        const card = e.target.closest('.card-executive');
         if (!card) return;
         
-        // No abrir si se hizo clic en un enlace
-        if (e.target.closest('.card-link')) return;
+        if (e.target.closest('.card-link-exec')) return;
         
         const url = card.getAttribute('data-url');
         if (url) {
-            // Animación antes de abrir
-            card.style.transform = 'scale(0.98)';
-            setTimeout(() => {
-                window.open(url, '_blank');
-                card.style.transform = '';
-            }, 150);
+            window.open(url, '_blank');
         }
     });
 }
-
-// ===============================
-// EFECTOS DE SCROLL
-// ===============================
 
 function initializeScrollEffects() {
     const header = document.getElementById('mainHeader');
@@ -704,14 +616,14 @@ function initializeScrollEffects() {
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
         
-        // Header sticky effect
+        // Header compacto
         if (currentScroll > 100) {
-            header?.classList.add('scrolled');
+            header?.classList.add('compact');
         } else {
-            header?.classList.remove('scrolled');
+            header?.classList.remove('compact');
         }
         
-        // Back to top button
+        // Back to top
         if (currentScroll > 500) {
             backToTop?.classList.add('visible');
         } else {
@@ -721,12 +633,8 @@ function initializeScrollEffects() {
         lastScroll = currentScroll;
     });
     
-    // Back to top click
     backToTop?.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
 
@@ -742,21 +650,21 @@ function toggleEmptyState(count) {
 }
 
 function resetAllFilters() {
-    document.querySelectorAll('.glass-pill').forEach(pill => pill.classList.remove('active'));
-    document.querySelector('.glass-pill[data-month="all"]')?.classList.add('active');
-    document.querySelector('.glass-pill[data-category="all"]')?.classList.add('active');
+    document.querySelectorAll('.pill-compact').forEach(pill => pill.classList.remove('active'));
+    document.querySelector('.pill-compact[data-month="all"]')?.classList.add('active');
+    document.querySelector('.pill-compact[data-category="all"]')?.classList.add('active');
     
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.value = '';
     
-    document.querySelectorAll('.crystal-card, .month-section, .category-section').forEach(el => el.style.display = '');
+    document.querySelectorAll('.card-executive, .month-section, .category-section').forEach(el => el.style.display = '');
     
-    toggleEmptyState(document.querySelectorAll('.crystal-card').length);
+    toggleEmptyState(document.querySelectorAll('.card-executive').length);
     showToast('Filtros restablecidos', 'success');
 }
 
 // ===============================
-// TOAST SYSTEM
+// TOAST
 // ===============================
 
 function showToast(message, type = 'info') {
@@ -781,7 +689,7 @@ function showToast(message, type = 'info') {
     
     setTimeout(() => {
         toast.style.opacity = '0';
-        toast.style.transform = 'translateX(400px) scale(0.8)';
-        setTimeout(() => toast.remove(), 400);
+        toast.style.transform = 'translateX(400px)';
+        setTimeout(() => toast.remove(), 300);
     }, 3000);
 }

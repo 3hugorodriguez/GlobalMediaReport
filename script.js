@@ -14,21 +14,17 @@ function initializeTheme() {
         const current = document.documentElement.getAttribute('data-theme');
         const newTheme = current === 'light' ? 'dark' : 'light';
         
-        // Animación de transición suave
-        document.body.style.transition = 'background-color 0.4s ease, color 0.4s ease';
-        
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('gmr-theme', newTheme);
         updateThemeIcon(newTheme);
         
-        // Efecto de rotación en el botón
         themeToggle.style.transform = 'rotate(360deg) scale(1.2)';
         setTimeout(() => {
             themeToggle.style.transform = '';
         }, 400);
         
         if (typeof showToast === 'function') {
-            showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'} activado`, 'success');
+            showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'}`, 'success');
         }
     });
 }
@@ -41,6 +37,94 @@ function updateThemeIcon(theme) {
 }
 
 // ===============================
+// VISTA EJECUTIVA RÁPIDA
+// ===============================
+
+function initializeExecutiveView() {
+    const viewToggle = document.getElementById('viewToggle');
+    if (!viewToggle) return;
+    
+    let isExecutiveView = false;
+    
+    viewToggle.addEventListener('click', () => {
+        isExecutiveView = !isExecutiveView;
+        
+        if (isExecutiveView) {
+            activateExecutiveView();
+            viewToggle.innerHTML = '<i class="fas fa-th"></i>';
+            viewToggle.title = 'Vista normal';
+        } else {
+            deactivateExecutiveView();
+            viewToggle.innerHTML = '<i class="fas fa-list-ul"></i>';
+            viewToggle.title = 'Vista ejecutiva';
+        }
+        
+        if (typeof showToast === 'function') {
+            showToast(
+                isExecutiveView ? 'Vista ejecutiva activada' : 'Vista normal activada',
+                'info'
+            );
+        }
+    });
+}
+
+function activateExecutiveView() {
+    // Mostrar solo últimas 10 noticias
+    const allCards = document.querySelectorAll('.card-executive');
+    const allSections = document.querySelectorAll('.month-section, .category-section');
+    
+    // Ocultar todo primero
+    allSections.forEach(s => s.style.display = 'none');
+    
+    // Obtener últimas 10 noticias
+    const visibleCards = Array.from(allCards).slice(0, 10);
+    
+    // Crear contenedor especial
+    const container = document.getElementById('newsContainer');
+    const executiveContainer = document.createElement('div');
+    executiveContainer.id = 'executiveViewContainer';
+    executiveContainer.className = 'executive-view-special';
+    
+    executiveContainer.innerHTML = `
+        <div class="executive-header">
+            <h2>
+                <i class="fas fa-bolt"></i>
+                Resumen Ejecutivo
+            </h2>
+            <p>Últimas 10 noticias más relevantes</p>
+        </div>
+        <div class="news-grid"></div>
+    `;
+    
+    const grid = executiveContainer.querySelector('.news-grid');
+    
+    visibleCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        grid.appendChild(clone);
+    });
+    
+    container.appendChild(executiveContainer);
+    
+    // Scroll al top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function deactivateExecutiveView() {
+    const executiveContainer = document.getElementById('executiveViewContainer');
+    if (executiveContainer) {
+        executiveContainer.remove();
+    }
+    
+    // Mostrar todo de nuevo
+    document.querySelectorAll('.month-section, .category-section').forEach(s => {
+        s.style.display = '';
+    });
+    
+    // Scroll al top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ===============================
 // EXPORT TO PDF
 // ===============================
 
@@ -50,15 +134,11 @@ function initializeExport() {
     
     exportBtn.addEventListener('click', () => {
         if (typeof showToast === 'function') {
-            showToast('Preparando documento para impresión...', 'info');
+            showToast('Preparando documento...', 'info');
         }
-        
-        // Añadir clase temporal para estilos de impresión
-        document.body.classList.add('print-mode');
         
         setTimeout(() => {
             window.print();
-            document.body.classList.remove('print-mode');
         }, 500);
     });
 }
@@ -68,23 +148,17 @@ function initializeExport() {
 // ===============================
 
 document.addEventListener('keydown', (e) => {
-    // Cmd/Ctrl + K para búsqueda
+    // Cmd/Ctrl + K → Búsqueda
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
         const searchInput = document.getElementById('searchInput');
         if (searchInput) {
             searchInput.focus();
             searchInput.select();
-            
-            // Efecto visual
-            searchInput.parentElement.style.transform = 'scale(1.05)';
-            setTimeout(() => {
-                searchInput.parentElement.style.transform = '';
-            }, 200);
         }
     }
     
-    // Escape para limpiar búsqueda
+    // Escape → Limpiar búsqueda
     if (e.key === 'Escape') {
         const searchInput = document.getElementById('searchInput');
         if (searchInput && searchInput.value) {
@@ -94,89 +168,34 @@ document.addEventListener('keydown', (e) => {
         }
     }
     
-    // Cmd/Ctrl + D para dark mode
+    // Cmd/Ctrl + D → Dark mode
     if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
         e.preventDefault();
         const themeToggle = document.getElementById('themeToggle');
         if (themeToggle) themeToggle.click();
     }
     
-    // Cmd/Ctrl + R para resetear
+    // Cmd/Ctrl + E → Vista ejecutiva
+    if ((e.ctrlKey || e.metaKey) && e.key === 'e') {
+        e.preventDefault();
+        const viewToggle = document.getElementById('viewToggle');
+        if (viewToggle) viewToggle.click();
+    }
+    
+    // Cmd/Ctrl + P → Imprimir
+    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        window.print();
+    }
+    
+    // Cmd/Ctrl + R → Resetear
     if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
         e.preventDefault();
         if (typeof resetAllFilters === 'function') {
             resetAllFilters();
         }
     }
-    
-    // Cmd/Ctrl + P para imprimir
-    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
-        e.preventDefault();
-        window.print();
-    }
 });
-
-// ===============================
-// PARALLAX EFFECT (SUTIL)
-// ===============================
-
-function initializeParallax() {
-    const cards = document.querySelectorAll('.crystal-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const rotateX = (y - centerY) / 20;
-            const rotateY = (centerX - x) / 20;
-            
-            card.style.transform = `
-                perspective(1000px) 
-                rotateX(${rotateX}deg) 
-                rotateY(${rotateY}deg) 
-                translateY(-8px)
-            `;
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = '';
-        });
-    });
-}
-
-// ===============================
-// LAZY LOADING IMAGES
-// ===============================
-
-function initializeLazyLoad() {
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    
-                    if (img.dataset.src) {
-                        img.src = img.dataset.src;
-                        img.classList.add('loaded');
-                    }
-                    
-                    imageObserver.unobserve(img);
-                }
-            });
-        }, {
-            rootMargin: '100px'
-        });
-
-        document.querySelectorAll('img[data-src]').forEach(img => {
-            imageObserver.observe(img);
-        });
-    }
-}
 
 // ===============================
 // NETWORK STATUS
@@ -199,56 +218,34 @@ window.addEventListener('offline', () => {
 });
 
 // ===============================
-// PERFORMANCE MONITORING
+// PERFORMANCE
 // ===============================
 
 window.addEventListener('load', () => {
     if (performance.timing) {
         const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-        
-        console.log(`⚡ Carga completa: ${loadTime}ms`);
-        
-        if (loadTime < 1000) {
-            console.log('🚀 Rendimiento excelente');
-        } else if (loadTime < 2500) {
-            console.log('✅ Rendimiento bueno');
-        } else {
-            console.log('⚠️ Considera optimizar recursos');
-        }
+        console.log(`⚡ Carga: ${loadTime}ms`);
     }
-    
-    // Inicializar efectos adicionales después de carga
-    setTimeout(() => {
-        initializeParallax();
-        initializeLazyLoad();
-    }, 1000);
 });
 
 // ===============================
-// CONSOLE STYLING
+// CONSOLE
 // ===============================
 
 console.log(
-    '%c🔮 GMR Crystal v3.0',
-    `
-        font-size: 24px;
-        font-weight: bold;
-        background: linear-gradient(135deg, #122864, #006cb1, #28bdc7);
-        padding: 20px 40px;
-        border-radius: 12px;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    `
+    '%c📊 GMR Executive v3.5',
+    'font-size: 20px; font-weight: bold; color: #122864; padding: 10px;'
 );
 
 console.log(
-    '%c✨ Atajos de teclado:\n' +
-    '   • ⌘/Ctrl + K → Búsqueda\n' +
-    '   • ⌘/Ctrl + D → Modo oscuro\n' +
-    '   • ⌘/Ctrl + P → Imprimir\n' +
-    '   • ⌘/Ctrl + R → Resetear filtros\n' +
-    '   • Esc → Limpiar búsqueda',
-    'color: #6b7a8f; font-size: 13px; line-height: 1.8; font-family: monospace;'
+    '%c⌨️ Atajos:\n' +
+    '  • ⌘/Ctrl + K → Buscar\n' +
+    '  • ⌘/Ctrl + D → Modo oscuro\n' +
+    '  • ⌘/Ctrl + E → Vista ejecutiva\n' +
+    '  • ⌘/Ctrl + P → Imprimir\n' +
+    '  • ⌘/Ctrl + R → Resetear\n' +
+    '  • Esc → Limpiar búsqueda',
+    'color: #6b7a8f; font-size: 12px; line-height: 1.8;'
 );
 
 // ===============================
@@ -256,10 +253,11 @@ console.log(
 // ===============================
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 Inicializando Crystal Executive...');
+    console.log('🚀 Iniciando GMR Executive...');
     
     initializeTheme();
+    initializeExecutiveView();
     initializeExport();
     
-    console.log('✅ Módulos base cargados');
+    console.log('✅ Módulos cargados');
 });
