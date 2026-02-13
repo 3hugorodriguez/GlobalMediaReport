@@ -37,102 +37,6 @@ function updateThemeIcon(theme) {
 }
 
 // ===============================
-// VISTA EJECUTIVA RÁPIDA
-// ===============================
-
-function initializeExecutiveView() {
-    const viewToggle = document.getElementById('viewToggle');
-    if (!viewToggle) return;
-    
-    let isExecutiveView = false;
-    
-    viewToggle.addEventListener('click', () => {
-        isExecutiveView = !isExecutiveView;
-        
-        if (isExecutiveView) {
-            activateExecutiveView();
-            viewToggle.innerHTML = '<i class="fas fa-th"></i>';
-            viewToggle.title = 'Vista normal';
-        } else {
-            deactivateExecutiveView();
-            viewToggle.innerHTML = '<i class="fas fa-list-ul"></i>';
-            viewToggle.title = 'Vista ejecutiva';
-        }
-        
-        if (typeof showToast === 'function') {
-            showToast(
-                isExecutiveView ? 'Vista ejecutiva activada' : 'Vista normal activada',
-                'info'
-            );
-        }
-    });
-}
-
-function activateExecutiveView() {
-    // Mostrar solo últimas 10 noticias
-    const allCards = document.querySelectorAll('.card-executive');
-    const allSections = document.querySelectorAll('.month-section, .category-section');
-    
-    // Ocultar todo primero
-    allSections.forEach(s => s.style.display = 'none');
-    
-    // Obtener últimas 10 noticias
-    const visibleCards = Array.from(allCards).slice(0, 10);
-    
-    // Crear contenedor especial
-    const container = document.getElementById('newsContainer');
-    const executiveContainer = document.createElement('div');
-    executiveContainer.id = 'executiveViewContainer';
-    executiveContainer.className = 'executive-view-special';
-    
-    executiveContainer.innerHTML = `
-        <div class="executive-header">
-            <h2>
-                <i class="fas fa-bolt"></i>
-                Resumen Ejecutivo
-            </h2>
-            <p>Últimas 10 noticias más relevantes</p>
-        </div>
-        <div class="news-grid"></div>
-    `;
-    
-    const grid = executiveContainer.querySelector('.news-grid');
-    
-    visibleCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        grid.appendChild(clone);
-    });
-    
-    container.appendChild(executiveContainer);
-    
-    // Ocultar timeline en vista ejecutiva
-    const timeline = document.getElementById('timelineSidebar');
-    if (timeline) timeline.style.display = 'none';
-    
-    // Scroll al top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function deactivateExecutiveView() {
-    const executiveContainer = document.getElementById('executiveViewContainer');
-    if (executiveContainer) {
-        executiveContainer.remove();
-    }
-    
-    // Mostrar todo de nuevo
-    document.querySelectorAll('.month-section, .category-section').forEach(s => {
-        s.style.display = '';
-    });
-    
-    // Mostrar timeline
-    const timeline = document.getElementById('timelineSidebar');
-    if (timeline) timeline.style.display = '';
-    
-    // Scroll al top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// ===============================
 // EXPORT TO PDF
 // ===============================
 
@@ -181,13 +85,6 @@ document.addEventListener('keydown', (e) => {
         e.preventDefault();
         const themeToggle = document.getElementById('themeToggle');
         if (themeToggle) themeToggle.click();
-    }
-    
-    // Cmd/Ctrl + E → Vista ejecutiva
-    if ((e.ctrlKey || e.metaKey) && e.key === 'e') {
-        e.preventDefault();
-        const viewToggle = document.getElementById('viewToggle');
-        if (viewToggle) viewToggle.click();
     }
     
     // Cmd/Ctrl + P → Imprimir
@@ -241,7 +138,7 @@ window.addEventListener('load', () => {
 // ===============================
 
 console.log(
-    '%c📊 GMR Executive v3.6',
+    '%c📊 GMR Executive v3.7',
     'font-size: 20px; font-weight: bold; color: #122864; padding: 10px;'
 );
 
@@ -249,7 +146,6 @@ console.log(
     '%c⌨️ Atajos:\n' +
     '  • ⌘/Ctrl + K → Buscar\n' +
     '  • ⌘/Ctrl + D → Modo oscuro\n' +
-    '  • ⌘/Ctrl + E → Vista ejecutiva\n' +
     '  • ⌘/Ctrl + P → Imprimir\n' +
     '  • ⌘/Ctrl + R → Resetear\n' +
     '  • Esc → Limpiar búsqueda',
@@ -257,13 +153,12 @@ console.log(
 );
 
 console.log(
-    '%c✨ Novedades v3.6:\n' +
-    '  • Tipografía Inter en filtros\n' +
-    '  • Badge de última actualización\n' +
-    '  • Búsqueda mejorada con highlight\n' +
-    '  • Scroll suave a secciones\n' +
-    '  • Timeline lateral sticky\n' +
-    '  • Contadores más visibles',
+    '%c✨ Novedades v3.7:\n' +
+    '  • Header oculto al scroll\n' +
+    '  • Búsqueda con z-index correcto\n' +
+    '  • Categorías con mejor separación\n' +
+    '  • Dark mode legible\n' +
+    '  • Resumen ejecutivo eliminado',
     'color: #10b981; font-size: 11px; line-height: 1.6;'
 );
 
@@ -275,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Iniciando GMR Executive...');
     
     initializeTheme();
-    initializeExecutiveView();
     initializeExport();
     
     console.log('✅ Módulos cargados');

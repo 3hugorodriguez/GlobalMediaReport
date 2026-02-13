@@ -55,7 +55,6 @@ class GMRDataService {
             noticia.isNew = diffDays >= 0 && diffDays <= CONFIG.newsDaysThreshold;
         });
         
-        // Añadir timestamp
         data.timestamp = timestamp;
         
         return data;
@@ -76,14 +75,7 @@ class ExecutiveRenderer {
         if (!statsInfo) return;
         
         const stats = this.calculateStats();
-        let lastUpdate = 'Sin datos';
         
-        if (this.data.noticias.length > 0) {
-            const lastDate = new Date(this.data.noticias[0].fecha);
-            lastUpdate = this.getRelativeTime(lastDate);
-        }
-        
-        // MEJORA 2: Badge de última actualización más visible
         const timestamp = this.data.timestamp ? new Date(this.data.timestamp) : new Date();
         const formattedTime = timestamp.toLocaleString('es-ES', {
             day: '2-digit',
@@ -99,19 +91,6 @@ class ExecutiveRenderer {
                 ${formattedTime}
             </span>
         `;
-    }
-
-    getRelativeTime(date) {
-        const now = new Date();
-        const diffMs = now - date;
-        const diffHours = Math.floor(diffMs / 3600000);
-        const diffDays = Math.floor(diffMs / 86400000);
-        
-        if (diffHours < 1) return 'ahora';
-        if (diffHours < 24) return `hace ${diffHours}h`;
-        if (diffDays < 30) return `hace ${diffDays}d`;
-        
-        return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
     }
 
     calculateStats() {
@@ -146,13 +125,11 @@ class ExecutiveRenderer {
         const stats = this.calculateStats();
         const months = Object.keys(stats.porMes).sort((a, b) => new Date(b) - new Date(a));
         
-        // Actualizar "Todos"
         const allPill = container.querySelector('.pill-compact[data-month="all"]');
         if (allPill) {
             allPill.querySelector('.count').textContent = stats.total;
         }
         
-        // MEJORA 3 + 5: Contador visible y scroll al hacer click
         months.forEach(month => {
             const count = stats.porMes[month];
             const monthName = this.formatMonth(month);
@@ -173,13 +150,11 @@ class ExecutiveRenderer {
         
         const stats = this.calculateStats();
         
-        // Actualizar "Todas"
         const allPill = container.querySelector('.pill-compact[data-category="all"]');
         if (allPill) {
             allPill.querySelector('.count').textContent = stats.total;
         }
         
-        // Crear pills
         this.data.categorias.forEach(cat => {
             const count = stats.porCategoria[cat.Slug] || 0;
             if (count === 0) return;
@@ -202,7 +177,6 @@ class ExecutiveRenderer {
         const container = document.getElementById('newsContainer');
         if (!container) return;
         
-        // Ocultar skeleton
         const skeleton = document.getElementById('skeletonLoader');
         if (skeleton) {
             skeleton.style.opacity = '0';
@@ -211,7 +185,6 @@ class ExecutiveRenderer {
         
         container.innerHTML = '';
         
-        // Agrupar por mes → categoría
         const noticiasPorMes = this.groupNewsByMonth(this.data.noticias);
         const mesesOrdenados = Object.keys(noticiasPorMes).sort((a, b) => new Date(b) - new Date(a));
         
@@ -220,7 +193,6 @@ class ExecutiveRenderer {
             container.appendChild(monthSection);
         });
         
-        // MEJORA 10: Renderizar timeline después de las noticias
         this.renderTimeline(mesesOrdenados);
     }
 
@@ -238,7 +210,7 @@ class ExecutiveRenderer {
         const section = document.createElement('section');
         section.className = 'month-section';
         section.setAttribute('data-month', mes);
-        section.setAttribute('id', `month-${mes}`); // MEJORA 5: ID para scroll
+        section.setAttribute('id', `month-${mes}`);
         
         const monthName = this.formatMonth(mes);
         
@@ -252,10 +224,8 @@ class ExecutiveRenderer {
             </div>
         `;
         
-        // Agrupar por categoría
         const noticiasPorCategoria = this.groupNewsByCategory(noticias);
         
-        // Ordenar categorías
         const categoriasOrdenadas = this.data.categorias
             .filter(cat => noticiasPorCategoria[cat.Slug])
             .map(cat => cat.Slug);
@@ -325,10 +295,8 @@ class ExecutiveRenderer {
         
         const badgeClass = noticia.alcance === 'Nacional' ? 'nacional' : 'internacional';
         
-        // Limitar highlights a 3
         const highlightsLimited = noticia.highlights ? noticia.highlights.slice(0, 3) : [];
         
-        // Detectar si tiene imagen
         const hasImage = noticia.imagen && 
                         !noticia.imagen.includes('placehold.co') && 
                         noticia.imagen.trim() !== '';
@@ -350,7 +318,6 @@ class ExecutiveRenderer {
                 </div>
             `;
         } else {
-            // Placeholder personalizado
             imageHTML = `
                 <div class="card-image-exec placeholder">
                     <div class="placeholder-content">
@@ -411,7 +378,6 @@ class ExecutiveRenderer {
         return article;
     }
 
-    // MEJORA 10: Timeline lateral
     renderTimeline(mesesOrdenados) {
         const stats = this.calculateStats();
         
@@ -440,7 +406,6 @@ class ExecutiveRenderer {
         
         document.body.appendChild(timeline);
         
-        // Mostrar timeline después de un delay
         setTimeout(() => {
             timeline.classList.add('visible');
         }, 500);
@@ -466,7 +431,7 @@ let allData;
 
 async function initializeGMR() {
     try {
-        console.log('🚀 Iniciando GMR Executive v3.6...');
+        console.log('🚀 Iniciando GMR Executive v3.7...');
         
         dataService = new GMRDataService(CONFIG.dataPath);
         allData = await dataService.fetchData();
@@ -479,7 +444,7 @@ async function initializeGMR() {
             initializeSearch();
             initializeCards();
             initializeScrollEffects();
-            initializeTimelineScroll(); // MEJORA 5 + 10
+            initializeTimelineScroll();
             
             console.log('✅ Sistema listo');
             showToast('Sistema cargado correctamente', 'success');
@@ -535,7 +500,6 @@ function initializeFilters() {
         
         activeMonth = pill.getAttribute('data-month');
         
-        // MEJORA 5: Scroll suave a la sección
         const scrollTarget = pill.getAttribute('data-scroll-target');
         if (scrollTarget && scrollTarget !== 'all') {
             const targetSection = document.getElementById(`month-${scrollTarget}`);
@@ -620,7 +584,6 @@ function initializeSearch() {
         const cards = document.querySelectorAll('.card-executive');
         let visibleCount = 0;
         
-        // MEJORA 4: Limpiar highlights previos
         document.querySelectorAll('.search-highlight').forEach(el => {
             const parent = el.parentNode;
             parent.replaceChild(document.createTextNode(el.textContent), el);
@@ -639,7 +602,6 @@ function initializeSearch() {
             const source = card.querySelector('.card-source-exec');
             const highlights = card.querySelector('.card-highlights-exec');
             
-            // MEJORA 4: Buscar también en tags (atributo data-tags si existe)
             const tags = card.getAttribute('data-tags') || '';
             
             const titleText = title?.textContent.toLowerCase() || '';
@@ -656,7 +618,6 @@ function initializeSearch() {
                 card.style.display = '';
                 visibleCount++;
                 
-                // MEJORA 4: Highlight del texto encontrado
                 if (title && titleText.includes(term)) {
                     highlightText(title, term);
                 }
@@ -668,7 +629,6 @@ function initializeSearch() {
             }
         });
         
-        // Ocultar secciones vacías
         document.querySelectorAll('.category-section').forEach(catSec => {
             const visibleCards = catSec.querySelectorAll('.card-executive:not([style*="display: none"])').length;
             catSec.style.display = visibleCards > 0 ? '' : 'none';
@@ -682,7 +642,6 @@ function initializeSearch() {
         toggleEmptyState(visibleCount);
     }
     
-    // MEJORA 4: Función para highlight
     function highlightText(element, term) {
         const walker = document.createTreeWalker(
             element,
@@ -748,18 +707,24 @@ function initializeScrollEffects() {
     const backToTop = document.getElementById('backToTop');
     
     let lastScroll = 0;
+    const scrollThreshold = 100;
     
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
         
-        // Header compacto
-        if (currentScroll > 100) {
-            header?.classList.add('compact');
+        if (currentScroll > scrollThreshold) {
+            if (currentScroll > lastScroll) {
+                header?.classList.add('hidden');
+                document.body.classList.add('header-hidden');
+            } else {
+                header?.classList.remove('hidden');
+                document.body.classList.remove('header-hidden');
+            }
         } else {
-            header?.classList.remove('compact');
+            header?.classList.remove('hidden');
+            document.body.classList.remove('header-hidden');
         }
         
-        // Back to top
         if (currentScroll > 500) {
             backToTop?.classList.add('visible');
         } else {
@@ -774,7 +739,6 @@ function initializeScrollEffects() {
     });
 }
 
-// MEJORA 5 + 10: Timeline interactiva
 function initializeTimelineScroll() {
     const timelineItems = document.querySelectorAll('.timeline-item');
     
@@ -786,14 +750,12 @@ function initializeTimelineScroll() {
             if (targetSection) {
                 targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 
-                // Activar visualmente
                 timelineItems.forEach(i => i.classList.remove('active'));
                 item.classList.add('active');
             }
         });
     });
     
-    // MEJORA 10: Activar timeline item al hacer scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -832,7 +794,6 @@ function resetAllFilters() {
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.value = '';
     
-    // Limpiar highlights
     document.querySelectorAll('.search-highlight').forEach(el => {
         const parent = el.parentNode;
         parent.replaceChild(document.createTextNode(el.textContent), el);
