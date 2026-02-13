@@ -102,6 +102,11 @@ body {
     color: var(--gray-900);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    padding-top: 86px; /* Espacio para header fijo */
+}
+
+body.header-hidden {
+    padding-top: 0;
 }
 
 ::selection {
@@ -299,16 +304,12 @@ body {
     border-bottom: 1px solid var(--glass-border);
     box-shadow: var(--glass-shadow);
     margin-bottom: var(--space-xl);
-    transition: top var(--transition);
+    transition: all var(--transition);
 }
 
-body:not(.header-hidden) .filters-floating {
-    top: 86px;
-}
+/* NO hacer ajuste de top cuando header está visible */
 
-body.header-hidden .filters-floating {
-    top: 0;
-}
+
 
 .filters-wrapper {
     max-width: 1400px;
