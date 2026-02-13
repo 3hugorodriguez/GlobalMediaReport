@@ -948,3 +948,216 @@ body {
         box-shadow: none;
     }
 }
+
+/* ===============================
+   MEJORAS GMR v3.6
+   =============================== */
+
+/* 1. Tipografía Inter en pills */
+.pill-compact,
+.month-title,
+.category-name,
+.filter-compact label {
+    font-family: var(--font) !important;
+}
+
+/* 2. Indicador de última actualización mejorado */
+.last-update-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-full);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--success);
+}
+
+.last-update-badge i {
+    animation: pulse-update 2s infinite;
+}
+
+@keyframes pulse-update {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* 3. Contador más visible en pills */
+.pill-compact .count {
+    min-width: 22px;
+    height: 22px;
+    padding: 0 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.pill-compact.active .count {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+/* 4. Highlight de búsqueda */
+.search-highlight {
+    background: rgba(250, 204, 21, 0.4);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* 5. Pills clickeables para scroll */
+.pill-compact[data-month]:not([data-month="all"]) {
+    cursor: pointer;
+    position: relative;
+}
+
+.pill-compact[data-month]:not([data-month="all"]):hover::after {
+    content: '↓';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+/* 10. Timeline lateral sticky */
+.timeline-sidebar {
+    position: fixed;
+    left: 20px;
+    top: 180px;
+    width: 140px;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    box-shadow: var(--glass-shadow);
+    z-index: 90;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-sidebar.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-title {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray-600);
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.timeline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.timeline-list::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        var(--primary) 0%,
+        var(--accent-cyan) 100%
+    );
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 6px 0 6px 20px;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background: var(--gray-300);
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all var(--transition);
+    box-shadow: 0 0 0 0 rgba(18, 40, 100, 0);
+}
+
+.timeline-item:hover::before {
+    background: var(--primary);
+    transform: scale(1.3);
+    box-shadow: 0 0 0 4px rgba(18, 40, 100, 0.1);
+}
+
+.timeline-item.active::before {
+    background: var(--primary);
+    width: 12px;
+    height: 12px;
+    left: 1px;
+    top: 11px;
+    box-shadow: 0 0 0 4px rgba(18, 40, 100, 0.15);
+}
+
+.timeline-month {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    transition: color var(--transition);
+}
+
+.timeline-item:hover .timeline-month,
+.timeline-item.active .timeline-month {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.timeline-count {
+    font-size: 0.6875rem;
+    color: var(--gray-500);
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+/* Responsive: ocultar timeline en móvil */
+@media (max-width: 1200px) {
+    .timeline-sidebar {
+        display: none;
+    }
+}
+
+/* Dark mode para nuevos elementos */
+[data-theme="dark"] .last-update-badge {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: rgba(16, 185, 129, 0.4);
+}
+
+[data-theme="dark"] .timeline-sidebar {
+    background: rgba(26, 32, 44, 0.9);
+}
+
+[data-theme="dark"] .timeline-list::before {
+    opacity: 0.5;
+}
+
+[data-theme="dark"] .search-highlight {
+    background: rgba(250, 204, 21, 0.3);
+    color: white;
+}

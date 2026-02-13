@@ -105,6 +105,10 @@ function activateExecutiveView() {
     
     container.appendChild(executiveContainer);
     
+    // Ocultar timeline en vista ejecutiva
+    const timeline = document.getElementById('timelineSidebar');
+    if (timeline) timeline.style.display = 'none';
+    
     // Scroll al top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -119,6 +123,10 @@ function deactivateExecutiveView() {
     document.querySelectorAll('.month-section, .category-section').forEach(s => {
         s.style.display = '';
     });
+    
+    // Mostrar timeline
+    const timeline = document.getElementById('timelineSidebar');
+    if (timeline) timeline.style.display = '';
     
     // Scroll al top
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -233,7 +241,7 @@ window.addEventListener('load', () => {
 // ===============================
 
 console.log(
-    '%c📊 GMR Executive v3.5',
+    '%c📊 GMR Executive v3.6',
     'font-size: 20px; font-weight: bold; color: #122864; padding: 10px;'
 );
 
@@ -246,6 +254,17 @@ console.log(
     '  • ⌘/Ctrl + R → Resetear\n' +
     '  • Esc → Limpiar búsqueda',
     'color: #6b7a8f; font-size: 12px; line-height: 1.8;'
+);
+
+console.log(
+    '%c✨ Novedades v3.6:\n' +
+    '  • Tipografía Inter en filtros\n' +
+    '  • Badge de última actualización\n' +
+    '  • Búsqueda mejorada con highlight\n' +
+    '  • Scroll suave a secciones\n' +
+    '  • Timeline lateral sticky\n' +
+    '  • Contadores más visibles',
+    'color: #10b981; font-size: 11px; line-height: 1.6;'
 );
 
 // ===============================

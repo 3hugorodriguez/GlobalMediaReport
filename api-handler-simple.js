@@ -37,7 +37,7 @@ class GMRDataService {
             }
             
             console.log(`✅ ${result.data.noticias.length} noticias cargadas`);
-            return this.processData(result.data);
+            return this.processData(result.data, result.timestamp);
             
         } catch (error) {
             console.error('❌ Error al cargar datos:', error);
@@ -45,7 +45,7 @@ class GMRDataService {
         }
     }
 
-    processData(data) {
+    processData(data, timestamp) {
         data.noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
         
         const now = new Date();
@@ -54,6 +54,9 @@ class GMRDataService {
             const diffDays = Math.floor((now - newsDate) / (1000 * 60 * 60 * 24));
             noticia.isNew = diffDays >= 0 && diffDays <= CONFIG.newsDaysThreshold;
         });
+        
+        // Añadir timestamp
+        data.timestamp = timestamp;
         
         return data;
     }
@@ -80,7 +83,22 @@ class ExecutiveRenderer {
             lastUpdate = this.getRelativeTime(lastDate);
         }
         
-        statsInfo.textContent = `${stats.total} noticias • ${stats.new} nuevas • Actualizado ${lastUpdate}`;
+        // MEJORA 2: Badge de última actualización más visible
+        const timestamp = this.data.timestamp ? new Date(this.data.timestamp) : new Date();
+        const formattedTime = timestamp.toLocaleString('es-ES', {
+            day: '2-digit',
+            month: 'short',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        
+        statsInfo.innerHTML = `
+            ${stats.total} noticias • ${stats.new} nuevas • 
+            <span class="last-update-badge">
+                <i class="fas fa-sync-alt"></i>
+                ${formattedTime}
+            </span>
+        `;
     }
 
     getRelativeTime(date) {
@@ -134,7 +152,7 @@ class ExecutiveRenderer {
             allPill.querySelector('.count').textContent = stats.total;
         }
         
-        // Crear pills
+        // MEJORA 3 + 5: Contador visible y scroll al hacer click
         months.forEach(month => {
             const count = stats.porMes[month];
             const monthName = this.formatMonth(month);
@@ -142,6 +160,7 @@ class ExecutiveRenderer {
             const pill = document.createElement('button');
             pill.className = 'pill-compact';
             pill.setAttribute('data-month', month);
+            pill.setAttribute('data-scroll-target', month);
             pill.innerHTML = `${monthName} <span class="count">${count}</span>`;
             
             container.appendChild(pill);
@@ -200,6 +219,9 @@ class ExecutiveRenderer {
             const monthSection = this.createMonthSection(mes, noticiasPorMes[mes]);
             container.appendChild(monthSection);
         });
+        
+        // MEJORA 10: Renderizar timeline después de las noticias
+        this.renderTimeline(mesesOrdenados);
     }
 
     groupNewsByMonth(noticias) {
@@ -216,6 +238,7 @@ class ExecutiveRenderer {
         const section = document.createElement('section');
         section.className = 'month-section';
         section.setAttribute('data-month', mes);
+        section.setAttribute('id', `month-${mes}`); // MEJORA 5: ID para scroll
         
         const monthName = this.formatMonth(mes);
         
@@ -388,6 +411,41 @@ class ExecutiveRenderer {
         return article;
     }
 
+    // MEJORA 10: Timeline lateral
+    renderTimeline(mesesOrdenados) {
+        const stats = this.calculateStats();
+        
+        const timeline = document.createElement('aside');
+        timeline.className = 'timeline-sidebar';
+        timeline.id = 'timelineSidebar';
+        
+        timeline.innerHTML = `
+            <div class="timeline-title">
+                <i class="fas fa-stream"></i>
+                Timeline
+            </div>
+            <ul class="timeline-list">
+                ${mesesOrdenados.map(mes => {
+                    const count = stats.porMes[mes];
+                    const monthName = this.formatMonth(mes);
+                    return `
+                        <li class="timeline-item" data-timeline-month="${mes}">
+                            <span class="timeline-month">${monthName}</span>
+                            <span class="timeline-count">${count}</span>
+                        </li>
+                    `;
+                }).join('')}
+            </ul>
+        `;
+        
+        document.body.appendChild(timeline);
+        
+        // Mostrar timeline después de un delay
+        setTimeout(() => {
+            timeline.classList.add('visible');
+        }, 500);
+    }
+
     renderAll() {
         console.log('🎨 Renderizando Executive UI...');
         this.updateHeaderStats();
@@ -408,7 +466,7 @@ let allData;
 
 async function initializeGMR() {
     try {
-        console.log('🚀 Iniciando GMR Executive v3.5...');
+        console.log('🚀 Iniciando GMR Executive v3.6...');
         
         dataService = new GMRDataService(CONFIG.dataPath);
         allData = await dataService.fetchData();
@@ -421,6 +479,7 @@ async function initializeGMR() {
             initializeSearch();
             initializeCards();
             initializeScrollEffects();
+            initializeTimelineScroll(); // MEJORA 5 + 10
             
             console.log('✅ Sistema listo');
             showToast('Sistema cargado correctamente', 'success');
@@ -475,6 +534,16 @@ function initializeFilters() {
         pill.classList.add('active');
         
         activeMonth = pill.getAttribute('data-month');
+        
+        // MEJORA 5: Scroll suave a la sección
+        const scrollTarget = pill.getAttribute('data-scroll-target');
+        if (scrollTarget && scrollTarget !== 'all') {
+            const targetSection = document.getElementById(`month-${scrollTarget}`);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
         applyFilters(activeMonth, activeCategory);
     });
     
@@ -531,7 +600,7 @@ function initializeFilters() {
 }
 
 // ===============================
-// BÚSQUEDA
+// BÚSQUEDA MEJORADA
 // ===============================
 
 function initializeSearch() {
@@ -551,6 +620,13 @@ function initializeSearch() {
         const cards = document.querySelectorAll('.card-executive');
         let visibleCount = 0;
         
+        // MEJORA 4: Limpiar highlights previos
+        document.querySelectorAll('.search-highlight').forEach(el => {
+            const parent = el.parentNode;
+            parent.replaceChild(document.createTextNode(el.textContent), el);
+            parent.normalize();
+        });
+        
         if (term === '') {
             cards.forEach(card => card.style.display = '');
             document.querySelectorAll('.month-section, .category-section').forEach(s => s.style.display = '');
@@ -559,13 +635,34 @@ function initializeSearch() {
         }
         
         cards.forEach(card => {
-            const title = card.querySelector('.card-title-exec')?.textContent.toLowerCase() || '';
-            const source = card.querySelector('.card-source-exec')?.textContent.toLowerCase() || '';
-            const highlights = card.querySelector('.card-highlights-exec')?.textContent.toLowerCase() || '';
+            const title = card.querySelector('.card-title-exec');
+            const source = card.querySelector('.card-source-exec');
+            const highlights = card.querySelector('.card-highlights-exec');
             
-            if (title.includes(term) || source.includes(term) || highlights.includes(term)) {
+            // MEJORA 4: Buscar también en tags (atributo data-tags si existe)
+            const tags = card.getAttribute('data-tags') || '';
+            
+            const titleText = title?.textContent.toLowerCase() || '';
+            const sourceText = source?.textContent.toLowerCase() || '';
+            const highlightsText = highlights?.textContent.toLowerCase() || '';
+            const tagsText = tags.toLowerCase();
+            
+            const found = titleText.includes(term) || 
+                         sourceText.includes(term) || 
+                         highlightsText.includes(term) ||
+                         tagsText.includes(term);
+            
+            if (found) {
                 card.style.display = '';
                 visibleCount++;
+                
+                // MEJORA 4: Highlight del texto encontrado
+                if (title && titleText.includes(term)) {
+                    highlightText(title, term);
+                }
+                if (highlights && highlightsText.includes(term)) {
+                    highlightText(highlights, term);
+                }
             } else {
                 card.style.display = 'none';
             }
@@ -583,6 +680,45 @@ function initializeSearch() {
         });
         
         toggleEmptyState(visibleCount);
+    }
+    
+    // MEJORA 4: Función para highlight
+    function highlightText(element, term) {
+        const walker = document.createTreeWalker(
+            element,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+        
+        const nodesToReplace = [];
+        let node;
+        
+        while (node = walker.nextNode()) {
+            if (node.nodeValue.toLowerCase().includes(term)) {
+                nodesToReplace.push(node);
+            }
+        }
+        
+        nodesToReplace.forEach(node => {
+            const text = node.nodeValue;
+            const regex = new RegExp(`(${term})`, 'gi');
+            const parts = text.split(regex);
+            
+            const fragment = document.createDocumentFragment();
+            parts.forEach(part => {
+                if (part.toLowerCase() === term) {
+                    const mark = document.createElement('span');
+                    mark.className = 'search-highlight';
+                    mark.textContent = part;
+                    fragment.appendChild(mark);
+                } else {
+                    fragment.appendChild(document.createTextNode(part));
+                }
+            });
+            
+            node.parentNode.replaceChild(fragment, node);
+        });
     }
 }
 
@@ -638,6 +774,45 @@ function initializeScrollEffects() {
     });
 }
 
+// MEJORA 5 + 10: Timeline interactiva
+function initializeTimelineScroll() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    timelineItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const targetMonth = item.getAttribute('data-timeline-month');
+            const targetSection = document.getElementById(`month-${targetMonth}`);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Activar visualmente
+                timelineItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            }
+        });
+    });
+    
+    // MEJORA 10: Activar timeline item al hacer scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const month = entry.target.getAttribute('data-month');
+                const timelineItem = document.querySelector(`.timeline-item[data-timeline-month="${month}"]`);
+                
+                if (timelineItem) {
+                    document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                    timelineItem.classList.add('active');
+                }
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    document.querySelectorAll('.month-section').forEach(section => {
+        observer.observe(section);
+    });
+}
+
 // ===============================
 // UTILIDADES
 // ===============================
@@ -656,6 +831,13 @@ function resetAllFilters() {
     
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.value = '';
+    
+    // Limpiar highlights
+    document.querySelectorAll('.search-highlight').forEach(el => {
+        const parent = el.parentNode;
+        parent.replaceChild(document.createTextNode(el.textContent), el);
+        parent.normalize();
+    });
     
     document.querySelectorAll('.card-executive, .month-section, .category-section').forEach(el => el.style.display = '');
     
