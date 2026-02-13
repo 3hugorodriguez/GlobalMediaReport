@@ -1,6 +1,6 @@
 {
   "success": true,
-  "timestamp": "2026-02-12T09:33:15.387Z",
+  "timestamp": "2026-02-13T11:04:24.070Z",
   "version": "2.0",
   "data": {
     "noticias": [
@@ -285,6 +285,244 @@
           "Cosas"
         ],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Prueba+Hugo"
+      },
+      {
+        "fecha": "2025-12-16",
+        "titulo": "Los grandes nombres de Salamanca brillan en la primera edición de los Premios &quot;SER Únicos&quot;",
+        "categoria": "grupo-global",
+        "alcance": "Nacional",
+        "url": "https://cadenaser.com/castillayleon/salamanca/",
+        "medio": "Cadena SER",
+        "resumen": "La primera edición de los Premios &quot;SER Únicos&quot; de Radio Salamanca congregó a autoridades y público en el Teatro Liceo, donde ocho distinguidos representantes de la excelencia salmantina fueron galardonados. El evento reconoció la labor de instituciones como el Centro de Investigación del Cáncer y personalidades destacadas como Vicente del Bosque.",
+        "highlights": [
+          "Global Exchange galardonada en categoría &quot;Empresa&quot;"
+        ],
+        "tags": [],
+        "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/Portada-10-scaled.jpg"
+      },
+      {
+        "fecha": "2025-12-16",
+        "titulo": "Premios &quot;SER Únicos&quot;: Global Exchange recibe el premio &quot;a la Empresa&quot;",
+        "categoria": "grupo-global",
+        "alcance": "Regional",
+        "url": "https://salamancartvaldia.es/",
+        "medio": "SALAMANCArtv AL DÍA",
+        "resumen": "Radio Salamanca celebró la primera edición de los premios &#39;SER Únicos&#39; en el Teatro Liceo, reconociendo a figuras destacadas de la provincia en diversas categorías, incluyendo a Global Exchange como mejor empresa.",
+        "highlights": [
+          "Primera edición de premios &#39;SER Únicos&#39; en Teatro Liceo"
+        ],
+        "tags": [],
+        "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/04-7-1024x768.jpg"
+      },
+      {
+        "fecha": "2025-12-01",
+        "titulo": "Wise Becomes First Non-Bank to Go Live on Japan&#39;s Zengin System",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.fintechfutures.com/2025/12/wise-zengin-japan/",
+        "medio": "Fintech Finance News",
+        "resumen": "La conexión directa de Wise al sistema Zengin fortalece su infraestructura en Asia, reduciendo costos y tiempos de transferencia al mercado japonés, el tercero más grande del mundo.",
+        "highlights": [
+          "Primera fintech no bancaria conectada directamente al sistema de pagos doméstico japonés Zengin vía API"
+        ],
+        "tags": [],
+        "imagen": "https://cdn.prod.website-files.com/64199d190fc7afa82666d89c/689128a0b1c9d15000f504ec_point-of-sale-payment-card-tap.webp"
+      },
+      {
+        "fecha": "2025-12-03",
+        "titulo": "Wise: December fee review - here&#39;s what&#39;s changed",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://wise.com/gb/blog/fee-review-december-2025",
+        "medio": "Wise",
+        "resumen": "Wise continúa presionando los márgenes de la industria con comisiones históricamente bajas, consolidando su propuesta de valor frente a la banca tradicional.",
+        "highlights": [
+          "Comisión promedio global bajó a 0,53% (la más baja en 5 años)"
+        ],
+        "tags": [],
+        "imagen": "Clientes han movido £145.000 millones y ahorrado £2.000M vs bancos tradicionales"
+      },
+      {
+        "fecha": "2025-12-10",
+        "titulo": "British Travel Awards 2025: Eurochange Takes Home Bronze",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.businessmole.com/eurochange-bronze-2025/",
+        "medio": "BusinessMole",
+        "resumen": "Eurochange mantiene su estatus en el mercado británico de cambio minorista, aunque se mantiene detrás de los líderes del sector.",
+        "highlights": [
+          "Tercer año consecutivo entre finalistas de British Travel Awards"
+        ],
+        "tags": [],
+        "imagen": "Premio Bronce en categoría &quot;Best Retailer for Forex/Travel Money&quot;"
+      },
+      {
+        "fecha": "2025-12-03",
+        "titulo": "El gasto de los turistas internacionales supera los 118.000 millones de euros, un 7% más que hace un año",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/turismo/",
+        "medio": "INE / La Moncloa",
+        "resumen": "España consolida su posición como segundo destino turístico mundial, con cifras que fundamentan la demanda continua de servicios de cambio de divisas.",
+        "highlights": [
+          "Turistas internacionales octubre: 9,2 millones (+3,2%)"
+        ],
+        "tags": [],
+        "imagen": "Acumulado enero-octubre: 85,7 millones (+3,5%) - RÉCORD HISTÓRICO"
+      },
+      {
+        "fecha": "2025-12-12",
+        "titulo": "Los aeropuertos del Grupo Aena rozan los 27,7 millones de pasajeros en noviembre",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.aena.es/es/sala-de-prensa/aena-noviembre-2025.html",
+        "medio": "Aena",
+        "resumen": "Los récords continuos de AENA fundamentan la demanda de servicios cambiarios en aeropuertos españoles, con crecimientos especialmente fuertes en destinos turísticos como Málaga y Alicante.",
+        "highlights": [
+          "Red AENA España noviembre: 22.543.602 pasajeros (+4,6% interanual)"
+        ],
+        "tags": [],
+        "imagen": "Acumulado enero-noviembre España: 299.141.995 pasajeros (+4%)"
+      },
+      {
+        "fecha": "2025-12-31",
+        "titulo": "España lidera el tráfico aéreo europeo en un año crítico para la seguridad",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.aviaciondigital.com/espana-liderazgo-aereo-2025/",
+        "medio": "Aviación Digital",
+        "resumen": "ENAIRE gestionó 2,5 millones de vuelos consolidando el liderazgo español. Las demoras cayeron un 7%, mientras el sector global enfrentó desafíos de seguridad significativos.",
+        "highlights": [
+          "ENAIRE gestionó 2,5 millones de vuelos (+14% vs. 2019)"
+        ],
+        "tags": [],
+        "imagen": "Demoras redujeron 7% respecto al año anterior"
+      },
+      {
+        "fecha": "2025-12-19",
+        "titulo": "Council agrees position on strengthening the role of cash",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/cash-payments/",
+        "medio": "Consilium (Europa)",
+        "resumen": "La UE refuerza la protección del efectivo como medio legal de pago, asegurando su disponibilidad y aceptación ante la creciente digitalización de los pagos.",
+        "highlights": [
+          "Consejo UE adopta medidas para salvaguardar el efectivo como medio de pago"
+        ],
+        "tags": [],
+        "imagen": "Prohibición de rechazo de pagos en efectivo por empresas (excepto ventas online)"
+      },
+      {
+        "fecha": "2025-12-18",
+        "titulo": "Revolut abrirá nuevas sedes en Madrid y Barcelona y contratará 800 personas hasta 2028",
+        "categoria": "medios-digital",
+        "alcance": "Nacional",
+        "url": "https://www.eleconomista.es/banca-finanzas/noticias/revolut-expansio-espana-2028.html",
+        "medio": "El Economista",
+        "resumen": "Revolut intensifica su apuesta por España como mercado estratégico, compitiendo directamente con la banca tradicional mediante inversiones masivas en infraestructura local y talento.",
+        "highlights": [
+          "800 nuevos empleados hasta 2028: 500 Madrid (Paseo Castellana), 300 Barcelona (Av. Diagonal)"
+        ],
+        "tags": [],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/London_Revolut.jpg"
+      },
+      {
+        "fecha": "2025-12-02",
+        "titulo": "Visa Launches New Digital Wallets in Europe",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.visa.com/newsroom/digital-wallets-europe-2025",
+        "medio": "VISA",
+        "resumen": "La apertura de iOS a carteras de terceros bajo la DMA acelera la competencia en pagos móviles europeos, con BBVA Pay liderando la innovación en España.",
+        "highlights": [
+          "Visa lanza 3 nuevas wallets en Europa: BBVA Pay, Klarna, Vipps MobilePay"
+        ],
+        "tags": [],
+        "imagen": "https://www.bbva.com/wp-content/uploads/2025/10/bbva-pay-wallet-compatible-iphone.jpg"
+      },
+      {
+        "fecha": "2025-12-06",
+        "titulo": "Euro Stablecoin Market Cap Doubles in Year After MiCA",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.coindesk.com/policy/2025/12/euro-stablecoin-mica/",
+        "medio": "Coindesk",
+        "resumen": "MiCA está remodelando el mercado de stablecoins en Europa, favoreciendo emisores conformes como Circle mientras Tether pierde terreno.",
+        "highlights": [
+          "Un año de MiCA: 102 CASPs autorizados y 30 emisores activos de stablecoins"
+        ],
+        "tags": [],
+        "imagen": "Capitalización de mercado de stablecoins en euros se duplicó"
+      },
+      {
+        "fecha": "2025-12-19",
+        "titulo": "Council agrees position on the digital euro",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/digital-euro/",
+        "medio": "Consilium (Europa)",
+        "resumen": "Hito regulatorio clave que marca el camino hacia la implementación del euro digital. Servicio gratuito para consumidores y límites de tenencia buscan equilibrar adopción con estabilidad financiera.",
+        "highlights": [
+          "Consejo UE acuerda posición sobre marco regulatorio del euro digital"
+        ],
+        "tags": [],
+        "imagen": "Servicio gratuito para consumidores finales"
+      },
+      {
+        "fecha": "2025-12-19",
+        "titulo": "ECB: A digital euro for the digital age",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251219.en.html",
+        "medio": "ECB",
+        "resumen": "El BCE ha completado la fase de preparación técnica e insta al legislador europeo a avanzar con el marco legal para el euro digital.",
+        "highlights": [
+          "BCE completa fase de preparación técnica del euro digital"
+        ],
+        "tags": [],
+        "imagen": "40% de consumidores han oído hablar del euro digital (vs 9% en 2021)"
+      },
+      {
+        "fecha": "2025-12-01",
+        "titulo": "PSD3/PSR: EU reforms promise safer payments",
+        "categoria": "otros-medios-pago",
+        "alcance": "Internacional",
+        "url": "https://www.fintechglobal.com/psd3-psr-analysis-2025/",
+        "medio": "FinTech Global",
+        "resumen": "PSD3/PSR representa la mayor reforma regulatoria del sector de pagos desde PSD2, enfatizando protección al consumidor y prevención de fraude.",
+        "highlights": [
+          "Mayor reforma del sector pagos desde PSD2"
+        ],
+        "tags": [],
+        "imagen": "https://technoxander.com/wp-content/uploads/2024/06/Verification-of-Payee-Smart-Data.webp"
+      },
+      {
+        "fecha": "2025-12-22",
+        "titulo": "Madrid Foro Empresarial y Denaria piden subir el límite de pago en efectivo",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.efe.com/denaria-limite-efectivo-3000-euros/",
+        "medio": "EFE / Investing",
+        "resumen": "La Plataforma Denaria intensifica sus esfuerzos de lobby para flexibilizar las restricciones al efectivo en España, argumentando inclusión financiera y libertad de elección.",
+        "highlights": [
+          "Firma de acuerdo marco entre Madrid Foro Empresarial y Plataforma Denaria"
+        ],
+        "tags": [],
+        "imagen": "Reclaman subir límite de pago en efectivo de €1.000 a €3.000"
+      },
+      {
+        "fecha": "2025-12-16",
+        "titulo": "Bizum: nuevo control fiscal desde enero 2026",
+        "categoria": "medios-digital",
+        "alcance": "Nacional",
+        "url": "https://www.elespanol.com/economia/bizum-control-fiscal-2026/",
+        "medio": "El Español",
+        "resumen": "Desde 1 enero 2026 Hacienda recibirá informes mensuales de todos los pagos digitales, eliminando el umbral de €3.000 anuales para reportar. Solo afecta a empresarios y autónomos.",
+        "highlights": [
+          "Desde 1 enero 2026: Hacienda recibirá informes mensuales de pagos digitales"
+        ],
+        "tags": [],
+        "imagen": "Eliminación del umbral de €3.000 anuales para reportar"
       }
     ],
     "categorias": [
