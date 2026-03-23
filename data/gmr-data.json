@@ -1,1342 +1,188 @@
 {
   "success": true,
-  "timestamp": "2026-02-13T11:04:24.070Z",
+  "timestamp": "2026-03-23T14:30:00.000Z",
   "version": "2.0",
   "data": {
     "noticias": [
       {
-        "fecha": "2026-01-26",
-        "titulo": "Global Exchange inicia operaciones en Heathrow y supera las 500 oficinas en su red mundial",
+        "fecha": "2026-03-18",
+        "titulo": "Travelex publica su primer informe Travel Money Insights: el 69% de los viajeros sigue eligiendo el efectivo",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://financialit.net/news/cash-management/travelex-launches-inaugural-insights-report-69-travellers-still-choose-cash",
+        "medio": "Financial IT",
+        "resumen": "Travelex lanzó su primer informe 'Travel Money Insights Report', coincidiendo con el 50 aniversario de la empresa. El estudio revela que el 69% de los viajeros internacionales prefiere llevar efectivo al extranjero, superando a las tarjetas en casi todas las regiones. Solo el 6% compra divisas el mismo día del viaje; la tendencia se inclina a planificar semanas antes.",
+        "highlights": [
+          "69% de viajeros internacionales prefiere efectivo",
+          "Solo el 6% compra divisas el día del viaje",
+          "Coincide con el 50 aniversario de Travelex (fundada en 1976)",
+          "Datos combinan ingresos globales de Travelex con encuestas a consumidores"
+        ],
+        "tags": ["Travelex", "travel money", "efectivo", "informe", "consumidor"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Travelex+Insights",
+        "otros_medios": [
+          { "nombre": "TravelMole", "url": "https://www.travelmole.com/news/travelex-two-thirds-of-travellers-still-prefer-to-use-cash/" },
+          { "nombre": "Travel And Tour World", "url": "https://www.travelandtourworld.com/news/article/travelex-launches-inaugural-travel-money-insights-report-cash-still-reigns-supreme-for-69-of-global-travelers/" },
+          { "nombre": "TradeArabia", "url": "https://tradearabia.com/News/390388/69pc-of-travellers-still-choose-cash--Travelex-report" },
+          { "nombre": "ATM Marketplace", "url": "https://www.atmmarketplace.com/news/study-finds-69-of-travelers-prefer-cash/" },
+          { "nombre": "IBS Intelligence", "url": "https://ibsintelligence.com/ibsi-news/cash-remains-key-for-travel-spending-report-reveals/" }
+        ]
+      },
+      {
+        "fecha": "2026-03-10",
+        "titulo": "Eurochange España publica guía de viaje para aficionados españoles en la Champions League",
+        "categoria": "sector-cambiario",
+        "alcance": "Nacional",
+        "url": "https://eurochange.es/blog/en/travels/champions-league-uk-travel-tips-currency-exchange/",
+        "medio": "Eurochange Blog",
+        "resumen": "Eurochange España publicó en su blog corporativo una guía de viaje dirigida a aficionados españoles que viajaban a Inglaterra para los octavos de final de la Champions League. La guía cubría los partidos de Barcelona en Newcastle, Atlético de Madrid frente al Tottenham y Real Madrid contra el Manchester City, incluyendo consejos sobre cambio de divisas y planificación financiera del viaje.",
+        "highlights": [
+          "Guía para partidos de Barcelona, Atlético y Real Madrid en UK",
+          "Consejos sobre cambio de divisas para viajeros deportivos",
+          "Incluye información de transporte y planificación financiera"
+        ],
+        "tags": ["Eurochange", "Champions League", "travel money", "España", "turismo deportivo"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Champions"
+      },
+      {
+        "fecha": "2026-03-15",
+        "titulo": "Eurochange España publica guía sobre Semana Santa 2026 con promoción de cambio de divisas",
+        "categoria": "sector-cambiario",
+        "alcance": "Nacional",
+        "url": "https://eurochange.es/blog/en/viajes-en/aster-spain-2026-currency-exchange/",
+        "medio": "Eurochange Blog",
+        "resumen": "Eurochange España publicó una guía sobre la Semana Santa 2026 (29 de marzo al 5 de abril) dirigida a turistas extranjeros que visitan España, promoviendo el servicio de cambio de divisas en sus más de 40 oficinas. La guía destacaba destinos como Málaga y Sevilla e incluía consejos prácticos sobre el cambio de moneda.",
+        "highlights": [
+          "Semana Santa 2026: 29 de marzo al 5 de abril",
+          "Más de 40 oficinas de Eurochange en España",
+          "Destinos destacados: Málaga y Sevilla"
+        ],
+        "tags": ["Eurochange", "Semana Santa", "turismo", "cambio de divisas", "España"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Semana+Santa"
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "Wise obtiene cinco licencias regulatorias en Tailandia: primera empresa no bancaria en lograrlo",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://newsroom.wise.com/en-UKI/263427-wise-becomes-first-non-bank-to-be-granted-five-licences-in-thailand-accelerating-its-global-expansion-and-growth/",
+        "medio": "Wise Newsroom",
+        "resumen": "Wise se convirtió en la primera empresa no bancaria en obtener cinco licencias regulatorias del Banco de Tailandia y del Ministerio de Comercio para operar localmente. Las licencias cubren pagos, dinero electrónico y cambio de divisas. Tailandia mueve más de $17.000 millones anuales en flujos transfronterizos, y Wise estima que los consumidores podrían ahorrar más de $1.040 millones al año en comisiones ocultas.",
+        "highlights": [
+          "Primera no-banca con cinco licencias en Tailandia",
+          "Billetera digital multimoneda completamente regulada",
+          "$17.000 millones anuales en flujos transfronterizos en Tailandia",
+          "Ahorro potencial de $1.040 millones/año en comisiones"
+        ],
+        "tags": ["Wise", "Tailandia", "licencia", "APAC", "cambio de divisas"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Thailand",
+        "otros_medios": [
+          { "nombre": "FinTech Magazine", "url": "https://fintechmagazine.com/news/a-wise-decision-bank-of-thailand-grants-banking-licence" },
+          { "nombre": "FinTech Global", "url": "https://fintech.global/2026/03/17/wise-lands-thailand-licences-in-push-to-expand-across-apac/" },
+          { "nombre": "The Paypers", "url": "https://thepaypers.com/payments/news/wise-secures-five-licences-in-thailand-in-latest-apac-expansion" }
+        ]
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "Revolut obtiene la licencia bancaria completa en el Reino Unido tras cuatro años de espera",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.cnbc.com/2026/03/11/revolut-acquires-full-uk-banking-license.html",
+        "medio": "CNBC",
+        "resumen": "Revolut obtuvo la licencia bancaria completa en el Reino Unido tras un proceso regulatorio de cuatro años. La PRA levantó todas las restricciones sobre Revolut Bank UK Ltd, permitiéndole ofrecer cuentas corrientes, crédito y depósitos protegidos por el FSCS hasta £120.000 a sus 13 millones de clientes británicos. La empresa planea invertir £3.000 millones en el Reino Unido creando 1.000 empleos.",
+        "highlights": [
+          "Licencia bancaria completa UK tras 4 años de proceso",
+          "13 millones de clientes británicos",
+          "Depósitos protegidos hasta £120.000 por FSCS",
+          "Inversión prevista de £3.000 millones y 1.000 empleos"
+        ],
+        "tags": ["Revolut", "licencia bancaria", "UK", "PRA", "FSCS"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+UK+License",
+        "otros_medios": [
+          { "nombre": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-11/revolut-set-to-secure-full-uk-banking-license-unlocking-lending" },
+          { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/11/crypto-friendly-fintech-revolut-gains-full-uk-banking-license" },
+          { "nombre": "PYMNTS", "url": "https://www.pymnts.com/news/banking/2026/revolut-wins-long-awaited-full-banking-license-in-the-uk/" }
+        ]
+      },
+      {
+        "fecha": "2026-03-05",
+        "titulo": "Revolut solicita licencia bancaria federal en Estados Unidos y nombra nuevo CEO para el país",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.americanbanker.com/news/fintech-giant-revolut-pursues-us-bank-charter",
+        "medio": "American Banker",
+        "resumen": "Revolut presentó una solicitud formal ante la OCC y la FDIC de EE.UU. para obtener una licencia bancaria nacional. De aprobarse, Revolut podría ofrecer depósitos asegurados por la FDIC, acceso a Fedwire y ACH, y lanzar productos de crédito. Cetin Duransoy (ex-Visa y Capital One) fue nombrado nuevo CEO en EE.UU.",
+        "highlights": [
+          "Solicitud formal ante OCC y FDIC",
+          "Eliminaría dependencia de Lead Bank como socio bancario",
+          "Cetin Duransoy (ex-Visa, Capital One) nombrado CEO en EE.UU.",
+          "Acceso directo a Fedwire y ACH si aprobada"
+        ],
+        "tags": ["Revolut", "licencia bancaria", "EE.UU.", "OCC", "FDIC"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+US+License",
+        "otros_medios": [
+          { "nombre": "The Irish Times", "url": "https://www.irishtimes.com/business/2026/03/05/revolut-applies-for-us-banking-licence-in-push-to-crack-american-market/" },
+          { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/05/crypto-friendly-fintech-giant-revolut-files-for-u-s-banking-license" },
+          { "nombre": "El Español", "url": "https://www.elespanol.com/invertia/empresas/banca/20260305/revolut-pide-licencia-bancaria-federal-eeuu-nombra-duransoy-nuevo-ceo-pais/1003744157125_0.html" }
+        ]
+      },
+      {
+        "fecha": "2026-03-01",
+        "titulo": "Global Exchange reemplaza a Travelex en el aeropuerto de Heathrow como proveedor de cambio de divisas",
         "categoria": "grupo-global",
-        "alcance": "Nacional",
-        "url": "https://www.lagacetadesalamanca.es/salamanca/global-exchange-inicia-operaciones-heathrow-supera-500-20260126171259-nt.html",
-        "medio": "La Gaceta de Salamanca",
-        "resumen": "Este contrato representa el hito más importante en la historia de Global Exchange, consolidando su posición como líder mundial del sector al operar en 4 de los 5 aeropuertos más transitados de Europa: Heathrow, Estambul, París CDG y Madrid-Barajas.",
-        "highlights": [
-          "Comenzó operaciones en Heathrow el 26 de enero de 2026, el aeropuerto más transitado de Europa con 83,9 millones de pasajeros anuales",
-          "Despliegue de 23 oficinas de cambio en las 4 terminales, 78 cajeros automáticos y más de 40 dispensadores cash-to-cash",
-          "Equipo de 180 profesionales contratados para las operaciones",
-          "El contrato pone fin a 39 años de presencia exclusiva de Travelex en el aeropuerto",
-          "Con esta apertura, Global Exchange supera las 515 oficinas en 31 países y 90 aeropuertos internacionales"
-        ],
-        "tags": [
-          "Heathrow",
-          "Expansión",
-          "Liderazgo"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Airport"
-      },
-      {
-        "fecha": "2026-01-26",
-        "titulo": "Heathrow announces Global Exchange to become new currency exchange provider",
-        "categoria": "grupo-global",
         "alcance": "Internacional",
-        "url": "https://mediacentre.heathrow.com/pressrelease/detail/23952",
-        "medio": "Heathrow Media Centre",
-        "resumen": "El comunicado oficial de Heathrow destaca el enfoque digital de Global Exchange y su compromiso con la experiencia del cliente como factores clave en la adjudicación del contrato.",
+        "url": "https://www.global-exchange.com/en-GB/press/global-exchange-will-begin-providing-currency-exchange-services-at-heathrow-airport-starting-january-2026",
+        "medio": "Global Exchange",
+        "resumen": "Global Exchange, multinacional española con sede en Salamanca, inició operaciones como proveedor exclusivo de cambio de moneda en el aeropuerto de Heathrow desde enero de 2026, reemplazando a Travelex tras 39 años de presencia. El acuerdo comprende 23 oficinas de cambio, 98 cajeros automáticos y más de 40 dispensadores automáticos de efectivo en las cuatro terminales.",
         "highlights": [
-          "Global Exchange selected to operate currency exchange services at Europe's busiest airport",
-          "The deal includes 23 in-terminal locations, 78 ATMs, and over 40 cash-to-cash dispensers",
-          "Digital-first approach with state-of-the-art technology highlighted in winning proposal",
-          "Operations began January 2026, replacing Travelex after 39 years"
+          "Global Exchange reemplaza a Travelex tras 39 años en Heathrow",
+          "23 oficinas, 98 cajeros, 40+ dispensadores automáticos",
+          "Más de 180 empleados desplegados",
+          "4 de 5 aeropuertos europeos más transitados bajo su gestión"
         ],
-        "tags": [
-          "Official",
-          "Partnership"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Official"
-      },
-      {
-        "fecha": "2025-09-01",
-        "titulo": "Global Exchange alcanza el liderazgo mundial en cambio de divisas tras llegar a 30 países y 84 aeropuertos internacionales",
-        "categoria": "grupo-global",
-        "alcance": "Nacional",
-        "url": "https://www.eleconomista.es/transportes-turismo/noticias/13551342/09/25/global-exchange-alcanza-el-liderazgo-mundial-en-cambio-de-divisas.html",
-        "medio": "El Economista",
-        "resumen": "La expansión en Asia-Pacífico se acelera con nuevas operaciones en Auckland (8 oficinas), Kuala Lumpur y aeropuertos de Malasia (6 oficinas). México sigue siendo el epicentro de la actividad en América con 50 centros de trabajo y 72 oficinas.",
-        "highlights": [
-          "Facturación de 275,2 millones de euros en 2024, crecimiento del 281% respecto a 2015",
-          "Apertura en 6 nuevos países durante 2025: Malasia, Nueva Zelanda, Perú, Rumanía, Japón y Arabia Saudí",
-          "92 nuevas oficinas inauguradas durante el año",
-          "Plantilla de 2.900 empleados, un 80% más que en 2020",
-          "En 2026 la compañía celebra su 30 aniversario"
-        ],
-        "tags": [
-          "Liderazgo",
-          "Expansión global",
-          "Asia-Pacífico"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Global+Leadership"
-      },
-      {
-        "fecha": "2026-01-01",
-        "titulo": "Travelex pierde Heathrow pero mantiene posiciones en Frankfurt y Ámsterdam",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.travelex-corporate.com/media-centre/",
-        "medio": "Travelex Corporate",
-        "resumen": "La pérdida de Heathrow representa un golpe estratégico significativo para Travelex, aunque la compañía diversifica hacia tarjetas prepago con +54% en transacciones de recarga y lanzó el programa de fidelización Travelex Plus con 20.000 miembros.",
-        "highlights": [
-          "Pérdida del contrato de Heathrow tras 39 años de presencia exclusiva",
-          "Mantiene Frankfurt (contrato renovado 6 años, 13 tiendas y 25 ATMs)",
-          "Conserva Ámsterdam Schiphol (renovado 5 años, 11 tiendas y 50 ATMs)",
-          "Ingresos FY2024: £520,1 millones (-3% interanual)",
-          "Nuevo CEO Philip Bowcock nombrado en julio 2025"
-        ],
-        "tags": [
-          "Travelex",
-          "Competencia"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Travelex"
-      },
-      {
-        "fecha": "2025-12-01",
-        "titulo": "Wise Full Year 2025 Earnings: Strong Growth Continues",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://wise.com/gb/blog/annual-report-2025",
-        "medio": "Wise Investor Relations",
-        "resumen": "Wise mantiene crecimiento de doble dígito con expansión de productos más allá de las transferencias. La tarjeta Wise alcanzó £15.000 millones en gasto con +28% de crecimiento en ingresos.",
-        "highlights": [
-          "Ingresos: 1.650 millones de libras (+17% interanual)",
-          "Clientes activos: 15,6 millones de usuarios",
-          "Volumen transfronterizo: 145.200 millones de libras",
-          "Margen EBITDA subyacente: 21%, superando objetivo del 13-16%",
-          "Ingresos no transfronterizos ya representan el 41% del total",
-          "Propuesta de dual listing en NYSE para Q2 2026"
-        ],
-        "tags": [
-          "Wise",
-          "Fintech",
-          "Resultados"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Growth"
-      },
-      {
-        "fecha": "2026-01-15",
-        "titulo": "Revolut alcanza los 6 millones de clientes en España y supera a Sabadell e ING",
-        "categoria": "sector-cambiario",
-        "alcance": "Nacional",
-        "url": "https://www.eleconomista.es/banca-finanzas/noticias/13717866/01/26/revolut-alcanza-los-seis-millones-de-clientes-en-espana.html",
-        "medio": "El Economista",
-        "resumen": "Revolut representa la mayor amenaza competitiva digital en España. Su red de ATMs propios compite directamente con el negocio tradicional de cambio de divisas, ofreciendo tipos de cambio interbancarios. España fue elegida como mercado piloto mundial porque el 60% de pagos en punto de venta siguen siendo en efectivo.",
-        "highlights": [
-          "6 millones de usuarios en España (13% de penetración de mercado)",
-          "España es el cuarto banco por número de clientes, superando a ING y Sabadell",
-          "Valoración de la compañía: 75.000 millones de dólares (+67% en 2025)",
-          "Lanzamiento de red propia de cajeros: 50 unidades en Madrid y Barcelona",
-          "Plan de expansión a 200 cajeros en 2026 (Valencia, Málaga incluidas)",
-          "ATMs permiten retiros sin comisión y dispensación instantánea de tarjetas"
-        ],
-        "tags": [
-          "Revolut",
-          "Fintech",
-          "ATMs",
-          "Amenaza"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Spain"
-      },
-      {
-        "fecha": "2025-12-31",
-        "titulo": "Los aeropuertos del Grupo AENA gestionaron 384,8 millones de pasajeros en 2025",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Nacional",
-        "url": "https://www.aena.es/en/press/aena-group-airports-exceed-384.8-million-passengers-in-2025.html",
-        "medio": "AENA",
-        "resumen": "El crecimiento sostenido del tráfico aéreo en España garantiza volumen de clientes para servicios de cambio de divisa. Los aeropuertos mediterráneos muestran el mayor dinamismo, con Valencia y Alicante liderando el crecimiento.",
-        "highlights": [
-          "Récord histórico: 321,6 millones de pasajeros en aeropuertos españoles (+3,9%)",
-          "Grupo AENA global (incluyendo Brasil y Londres Luton): 384,8 millones (+4,2%)",
-          "23 aeropuertos españoles batieron sus máximos históricos",
-          "Valencia: 11,8M pasajeros (+9,6%), mayor crecimiento porcentual",
-          "Alicante-Elche: 20,0M pasajeros (+8,5%)",
-          "Madrid-Barajas: 68,2M pasajeros (+3,0%)"
-        ],
-        "tags": [
-          "AENA",
-          "Aeropuertos",
-          "Tráfico"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=AENA+Record"
-      },
-      {
-        "fecha": "2025-12-15",
-        "titulo": "España bate récord de turismo: 97 millones de visitantes y 135.000 millones de gasto",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Nacional",
-        "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/hereu-adelanta-previsiones-gasto-turistas-internacionales.aspx",
-        "medio": "Ministerio de Industria y Turismo",
-        "resumen": "El crecimiento del gasto turístico casi duplica el de llegadas, indicando un turismo de mayor valor. El mercado británico y estadounidense, con mayor necesidad de cambio GBP/USD, representan oportunidades estratégicas para el sector.",
-        "highlights": [
-          "97 millones de turistas internacionales en 2025 (+3,5%)",
-          "Gasto turístico récord: 135.000 millones de euros (+6,8%)",
-          "Gasto medio por turista: aproximadamente 1.400 euros por viaje",
-          "Reino Unido lidera como mercado emisor: 18,2 millones de turistas (+3,9%)",
-          "Turismo estadounidense con fuerte crecimiento del gasto (+11,6%)"
-        ],
-        "tags": [
-          "Turismo",
-          "España",
-          "Récord"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Tourism+Record"
-      },
-      {
-        "fecha": "2026-01-10",
-        "titulo": "ACI World: Global air travel to exceed 10 billion passengers in 2026",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.aci-europe.org/economic-forecasts.html",
-        "medio": "ACI Europe",
-        "resumen": "Las previsiones de ACI confirman la tendencia alcista del tráfico aéreo global, con el segmento internacional mostrando mayor dinamismo que el doméstico, lo que beneficia directamente al sector de cambio de divisas.",
-        "highlights": [
-          "Previsión global: 10.200 millones de pasajeros en 2026 (+3,9%)",
-          "Tráfico internacional crece más del doble que el doméstico (+5,3% vs +2,4%)",
-          "Europa: crecimiento estimado del +3,6%",
-          "European Travel Commission proyecta +6,8% en llegadas internacionales a Europa",
-          "Recuperación del turismo de larga distancia desde Asia-Pacífico"
-        ],
-        "tags": [
-          "ACI",
-          "Previsiones",
-          "Global"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ACI+Forecast"
-      },
-      {
-        "fecha": "2024-11-01",
-        "titulo": "BCE: El efectivo sigue siendo el método de pago más utilizado en tiendas de la eurozona",
-        "categoria": "medios-efectivo",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2024.en.html",
-        "medio": "Banco Central Europeo",
-        "resumen": "El estudio SPACE 2024 del BCE confirma la resiliencia del efectivo pese a la digitalización. El dato sobre jóvenes acumulando efectivo desafía estereotipos sobre preferencias generacionales en medios de pago.",
-        "highlights": [
-          "52% de las transacciones en punto de venta de la eurozona se pagan en efectivo",
-          "El 62% de consumidores considera importante poder pagar en efectivo (+2 puntos desde 2022)",
-          "En 14 de los 20 países de la eurozona, el efectivo sigue siendo el método predominante",
-          "Jóvenes de 18-27 años muestran mayor propensión a acumular efectivo como reserva",
-          "Motivaciones: preocupaciones sobre ciberamenazas, privacidad y desconfianza en sistemas digitales"
-        ],
-        "tags": [
-          "BCE",
-          "Efectivo",
-          "Eurozona"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ECB+Cash+Study"
-      },
-      {
-        "fecha": "2026-01-02",
-        "titulo": "El efectivo reconocido como infraestructura crítica tras el apagón de abril 2025",
-        "categoria": "medios-efectivo",
-        "alcance": "Internacional",
-        "url": "https://www.rte.ie/brainstorm/2026/0102/1545488-cash-money-emergency-planning/",
-        "medio": "RTÉ Brainstorm",
-        "resumen": "El reconocimiento institucional del efectivo como infraestructura crítica refuerza el argumento comercial del sector. La exención para operaciones de cambio de moneda representa una ventaja competitiva regulatoria.",
-        "highlights": [
-          "El BCE y gobiernos europeos reconocen el efectivo como componente crítico de preparación ante crisis",
-          "Irlanda y países nórdicos recomiendan a ciudadanos mantener efectivo en casa para emergencias",
-          "El BCE declaró que la demanda sostenida de efectivo sugiere su utilidad única e imperfecta sustituibilidad",
-          "España: límite de €1.000 para pagos en efectivo con empresarios (€10.000 para turistas no residentes)",
-          "Operaciones de cambio de moneda en establecimientos autorizados están exentas del límite"
-        ],
-        "tags": [
-          "Infraestructura",
-          "Crisis",
-          "Regulación"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Critical+Infrastructure"
-      },
-      {
-        "fecha": "2026-01-05",
-        "titulo": "Denaria intensifica la defensa del efectivo como servicio público esencial",
-        "categoria": "medios-efectivo",
-        "alcance": "Nacional",
-        "url": "https://www.plataformadenaria.com/es/notas-de-prensa/",
-        "medio": "Plataforma Denaria",
-        "resumen": "Denaria aprovecha los fallos tecnológicos recientes (apagón de abril, caída de Redsys) para reforzar su mensaje sobre la importancia del dinero físico y su papel como respaldo ante crisis digitales.",
-        "highlights": [
-          "El 90% de españoles se opone a la sustitución del efectivo según encuesta de Denaria",
-          "El 87% considera que debe garantizarse el derecho a pagar en efectivo",
-          "El 77% lo considera un bien público",
-          "Jornada en el Congreso de los Diputados pidiendo reforzar el efectivo como infraestructura crítica",
-          "Lanzamiento de Denaria Chile: primer capítulo en Latinoamérica"
-        ],
-        "tags": [
-          "Denaria",
-          "Defensa efectivo",
-          "Congreso"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Denaria+Platform"
-      },
-      {
-        "fecha": "2026-02-10",
-        "titulo": "Prueba noticia Febrero",
-        "categoria": "medios-efectivo",
-        "alcance": "Internacional",
-        "url": "https://getd.es/",
-        "medio": "Hugo (Comunicación)",
-        "resumen": "Tikitaka tikitaka ti",
-        "highlights": [
-          "Taka tiki ti taka ti"
-        ],
-        "tags": [
-          "Molinos",
-          "Cosas"
-        ],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Prueba+Hugo"
-      },
-      {
-        "fecha": "2025-12-16",
-        "titulo": "Los grandes nombres de Salamanca brillan en la primera edición de los Premios \"SER Únicos\"",
-        "categoria": "grupo-global",
-        "alcance": "Nacional",
-        "url": "https://cadenaser.com/castillayleon/salamanca/",
-        "medio": "Cadena SER",
-        "resumen": "La primera edición de los Premios \"SER Únicos\" de Radio Salamanca congregó a autoridades y público en el Teatro Liceo, donde ocho distinguidos representantes de la excelencia salmantina fueron galardonados. El evento reconoció la labor de instituciones como el Centro de Investigación del Cáncer y personalidades destacadas como Vicente del Bosque.",
-        "highlights": [
-          "Global Exchange galardonada en categoría \"Empresa\""
-        ],
-        "tags": [],
-        "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/Portada-10-scaled.jpg"
-      },
-      {
-        "fecha": "2025-12-16",
-        "titulo": "Premios \"SER Únicos\": Global Exchange recibe el premio \"a la Empresa\"",
-        "categoria": "grupo-global",
-        "alcance": "Regional",
-        "url": "https://salamancartvaldia.es/",
-        "medio": "SALAMANCArtv AL DÍA",
-        "resumen": "Radio Salamanca celebró la primera edición de los premios 'SER Únicos' en el Teatro Liceo, reconociendo a figuras destacadas de la provincia en diversas categorías, incluyendo a Global Exchange como mejor empresa.",
-        "highlights": [
-          "Primera edición de premios 'SER Únicos' en Teatro Liceo"
-        ],
-        "tags": [],
-        "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/04-7-1024x768.jpg"
-      },
-      {
-        "fecha": "2025-12-01",
-        "titulo": "Wise Becomes First Non-Bank to Go Live on Japan's Zengin System",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.fintechfutures.com/2025/12/wise-zengin-japan/",
-        "medio": "Fintech Finance News",
-        "resumen": "La conexión directa de Wise al sistema Zengin fortalece su infraestructura en Asia, reduciendo costos y tiempos de transferencia al mercado japonés, el tercero más grande del mundo.",
-        "highlights": [
-          "Primera fintech no bancaria conectada directamente al sistema de pagos doméstico japonés Zengin vía API"
-        ],
-        "tags": [],
-        "imagen": "https://cdn.prod.website-files.com/64199d190fc7afa82666d89c/689128a0b1c9d15000f504ec_point-of-sale-payment-card-tap.webp"
-      },
-      {
-        "fecha": "2025-12-03",
-        "titulo": "Wise: December fee review - here's what's changed",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://wise.com/gb/blog/fee-review-december-2025",
-        "medio": "Wise",
-        "resumen": "Wise continúa presionando los márgenes de la industria con comisiones históricamente bajas, consolidando su propuesta de valor frente a la banca tradicional.",
-        "highlights": [
-          "Comisión promedio global bajó a 0,53% (la más baja en 5 años)"
-        ],
-        "tags": [],
-        "imagen": "Clientes han movido £145.000 millones y ahorrado £2.000M vs bancos tradicionales"
-      },
-      {
-        "fecha": "2025-12-10",
-        "titulo": "British Travel Awards 2025: Eurochange Takes Home Bronze",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.businessmole.com/eurochange-bronze-2025/",
-        "medio": "BusinessMole",
-        "resumen": "Eurochange mantiene su estatus en el mercado británico de cambio minorista, aunque se mantiene detrás de los líderes del sector.",
-        "highlights": [
-          "Tercer año consecutivo entre finalistas de British Travel Awards"
-        ],
-        "tags": [],
-        "imagen": "Premio Bronce en categoría \"Best Retailer for Forex/Travel Money\""
-      },
-      {
-        "fecha": "2025-12-03",
-        "titulo": "El gasto de los turistas internacionales supera los 118.000 millones de euros, un 7% más que hace un año",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Nacional",
-        "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/turismo/",
-        "medio": "INE / La Moncloa",
-        "resumen": "España consolida su posición como segundo destino turístico mundial, con cifras que fundamentan la demanda continua de servicios de cambio de divisas.",
-        "highlights": [
-          "Turistas internacionales octubre: 9,2 millones (+3,2%)"
-        ],
-        "tags": [],
-        "imagen": "Acumulado enero-octubre: 85,7 millones (+3,5%) - RÉCORD HISTÓRICO"
-      },
-      {
-        "fecha": "2025-12-12",
-        "titulo": "Los aeropuertos del Grupo Aena rozan los 27,7 millones de pasajeros en noviembre",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Nacional",
-        "url": "https://www.aena.es/es/sala-de-prensa/aena-noviembre-2025.html",
-        "medio": "Aena",
-        "resumen": "Los récords continuos de AENA fundamentan la demanda de servicios cambiarios en aeropuertos españoles, con crecimientos especialmente fuertes en destinos turísticos como Málaga y Alicante.",
-        "highlights": [
-          "Red AENA España noviembre: 22.543.602 pasajeros (+4,6% interanual)"
-        ],
-        "tags": [],
-        "imagen": "Acumulado enero-noviembre España: 299.141.995 pasajeros (+4%)"
-      },
-      {
-        "fecha": "2025-12-31",
-        "titulo": "España lidera el tráfico aéreo europeo en un año crítico para la seguridad",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.aviaciondigital.com/espana-liderazgo-aereo-2025/",
-        "medio": "Aviación Digital",
-        "resumen": "ENAIRE gestionó 2,5 millones de vuelos consolidando el liderazgo español. Las demoras cayeron un 7%, mientras el sector global enfrentó desafíos de seguridad significativos.",
-        "highlights": [
-          "ENAIRE gestionó 2,5 millones de vuelos (+14% vs. 2019)"
-        ],
-        "tags": [],
-        "imagen": "Demoras redujeron 7% respecto al año anterior"
-      },
-      {
-        "fecha": "2025-12-19",
-        "titulo": "Council agrees position on strengthening the role of cash",
-        "categoria": "medios-efectivo",
-        "alcance": "Internacional",
-        "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/cash-payments/",
-        "medio": "Consilium (Europa)",
-        "resumen": "La UE refuerza la protección del efectivo como medio legal de pago, asegurando su disponibilidad y aceptación ante la creciente digitalización de los pagos.",
-        "highlights": [
-          "Consejo UE adopta medidas para salvaguardar el efectivo como medio de pago"
-        ],
-        "tags": [],
-        "imagen": "Prohibición de rechazo de pagos en efectivo por empresas (excepto ventas online)"
-      },
-      {
-        "fecha": "2025-12-18",
-        "titulo": "Revolut abrirá nuevas sedes en Madrid y Barcelona y contratará 800 personas hasta 2028",
-        "categoria": "medios-digital",
-        "alcance": "Nacional",
-        "url": "https://www.eleconomista.es/banca-finanzas/noticias/revolut-expansio-espana-2028.html",
-        "medio": "El Economista",
-        "resumen": "Revolut intensifica su apuesta por España como mercado estratégico, compitiendo directamente con la banca tradicional mediante inversiones masivas en infraestructura local y talento.",
-        "highlights": [
-          "800 nuevos empleados hasta 2028: 500 Madrid (Paseo Castellana), 300 Barcelona (Av. Diagonal)"
-        ],
-        "tags": [],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/London_Revolut.jpg"
-      },
-      {
-        "fecha": "2025-12-02",
-        "titulo": "Visa Launches New Digital Wallets in Europe",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.visa.com/newsroom/digital-wallets-europe-2025",
-        "medio": "VISA",
-        "resumen": "La apertura de iOS a carteras de terceros bajo la DMA acelera la competencia en pagos móviles europeos, con BBVA Pay liderando la innovación en España.",
-        "highlights": [
-          "Visa lanza 3 nuevas wallets en Europa: BBVA Pay, Klarna, Vipps MobilePay"
-        ],
-        "tags": [],
-        "imagen": "https://www.bbva.com/wp-content/uploads/2025/10/bbva-pay-wallet-compatible-iphone.jpg"
-      },
-      {
-        "fecha": "2025-12-06",
-        "titulo": "Euro Stablecoin Market Cap Doubles in Year After MiCA",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.coindesk.com/policy/2025/12/euro-stablecoin-mica/",
-        "medio": "Coindesk",
-        "resumen": "MiCA está remodelando el mercado de stablecoins en Europa, favoreciendo emisores conformes como Circle mientras Tether pierde terreno.",
-        "highlights": [
-          "Un año de MiCA: 102 CASPs autorizados y 30 emisores activos de stablecoins"
-        ],
-        "tags": [],
-        "imagen": "Capitalización de mercado de stablecoins en euros se duplicó"
-      },
-      {
-        "fecha": "2025-12-19",
-        "titulo": "Council agrees position on the digital euro",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/digital-euro/",
-        "medio": "Consilium (Europa)",
-        "resumen": "Hito regulatorio clave que marca el camino hacia la implementación del euro digital. Servicio gratuito para consumidores y límites de tenencia buscan equilibrar adopción con estabilidad financiera.",
-        "highlights": [
-          "Consejo UE acuerda posición sobre marco regulatorio del euro digital"
-        ],
-        "tags": [],
-        "imagen": "Servicio gratuito para consumidores finales"
-      },
-      {
-        "fecha": "2025-12-19",
-        "titulo": "ECB: A digital euro for the digital age",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251219.en.html",
-        "medio": "ECB",
-        "resumen": "El BCE ha completado la fase de preparación técnica e insta al legislador europeo a avanzar con el marco legal para el euro digital.",
-        "highlights": [
-          "BCE completa fase de preparación técnica del euro digital"
-        ],
-        "tags": [],
-        "imagen": "40% de consumidores han oído hablar del euro digital (vs 9% en 2021)"
-      },
-      {
-        "fecha": "2025-12-01",
-        "titulo": "PSD3/PSR: EU reforms promise safer payments",
-        "categoria": "otros-medios-pago",
-        "alcance": "Internacional",
-        "url": "https://www.fintechglobal.com/psd3-psr-analysis-2025/",
-        "medio": "FinTech Global",
-        "resumen": "PSD3/PSR representa la mayor reforma regulatoria del sector de pagos desde PSD2, enfatizando protección al consumidor y prevención de fraude.",
-        "highlights": [
-          "Mayor reforma del sector pagos desde PSD2"
-        ],
-        "tags": [],
-        "imagen": "https://technoxander.com/wp-content/uploads/2024/06/Verification-of-Payee-Smart-Data.webp"
-      },
-      {
-        "fecha": "2025-12-22",
-        "titulo": "Madrid Foro Empresarial y Denaria piden subir el límite de pago en efectivo",
-        "categoria": "medios-efectivo",
-        "alcance": "Nacional",
-        "url": "https://www.efe.com/denaria-limite-efectivo-3000-euros/",
-        "medio": "EFE / Investing",
-        "resumen": "La Plataforma Denaria intensifica sus esfuerzos de lobby para flexibilizar las restricciones al efectivo en España, argumentando inclusión financiera y libertad de elección.",
-        "highlights": [
-          "Firma de acuerdo marco entre Madrid Foro Empresarial y Plataforma Denaria"
-        ],
-        "tags": [],
-        "imagen": "Reclaman subir límite de pago en efectivo de €1.000 a €3.000"
-      },
-      {
-        "fecha": "2025-12-16",
-        "titulo": "Bizum: nuevo control fiscal desde enero 2026",
-        "categoria": "medios-digital",
-        "alcance": "Nacional",
-        "url": "https://www.elespanol.com/economia/bizum-control-fiscal-2026/",
-        "medio": "El Español",
-        "resumen": "Desde 1 enero 2026 Hacienda recibirá informes mensuales de todos los pagos digitales, eliminando el umbral de €3.000 anuales para reportar. Solo afecta a empresarios y autónomos.",
-        "highlights": [
-          "Desde 1 enero 2026: Hacienda recibirá informes mensuales de pagos digitales"
-        ],
-        "tags": [],
-        "imagen": "Eliminación del umbral de €3.000 anuales para reportar"
-      },
-      {
-        "fecha": "2026-02-24",
-        "titulo": "Retrocede el precio de dos monedas en la venta informal en Cuba",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.cibercuba.com/noticias/2026-02-24-u1-e129488-s27061-nid321539-retrocede-precio-dos-monedas-venta-informal-cuba",
-        "medio": "CiberCuba",
-        "resumen": "El mercado informal de divisas en Cuba muestra el 24 de febrero que el euro y la MLC retroceden mientras el dólar se mantiene estable en 505 CUP, un récord histórico alcanzado días antes. La brecha entre el tipo de cambio oficial (1 USD = 120 CUP estatal) y el informal refleja la persistente escasez de divisas en el sistema bancario cubano.",
-        "highlights": [
-          "Dólar estable en 505 CUP en mercado informal, nuevo récord superando barrera de 500 pesos",
-          "Euro baja a 565 CUP y MLC retrocede a 405 CUP",
-          "Tipo de cambio oficial se mantiene en 1 USD = 24 CUP (personas jurídicas) y 1 USD = 120 CUP (mercado cambiario estatal)",
-          "El tipo de cambio 'flotante' introducido en diciembre sigue muy distante de la cotización informal"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "cuba",
-          "mercado-informal",
-          "dolar",
-          "euro"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "tags": ["Global Exchange", "Travelex", "Heathrow", "aeropuertos", "cambio de moneda"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Global+Exchange+Heathrow",
         "otros_medios": [
-          {
-            "nombre": "Directorio Cubano",
-            "url": "https://www.directoriocubano.info/actualidad/mercado-informal-y-oficial-de-divisas-en-cuba-hoy-tasas-actualizadas/"
-          }
+          { "nombre": "Heathrow Media Centre", "url": "https://mediacentre.heathrow.com/pressrelease/detail/23952" },
+          { "nombre": "El Economista", "url": "https://www.eleconomista.es/economia/noticias/13579060/10/25/global-exchange-gestionara-el-cambio-de-moneda-en-el-aeropuerto-de-heathrow-a-partir-de-2026.html" }
         ]
       },
       {
-        "fecha": "2026-02-24",
-        "titulo": "Western Union Q4 Earnings Call Highlights",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.defenseworld.net/2026/02/24/western-union-q4-earnings-call-highlights.html",
-        "medio": "Defense World",
-        "resumen": "Resumen de la conferencia de resultados del Q4 2025 de Western Union, donde los ejecutivos destacaron los Servicios al Consumidor como motor clave de crecimiento. En el cuarto trimestre, este segmento representó el 14% de los ingresos totales con un crecimiento ajustado del 26%, impulsado por el negocio de travel money (incluyendo eurochange) y pagos de facturas.",
-        "highlights": [
-          "Los ingresos ajustados de Consumer Services crecieron un 26% en Q4 y casi un 30% en el año completo, impulsados por eurochange",
-          "El CEO McGranahan proyectó que el negocio de travel money se acercará a 150 millones de dólares en ingresos en 2026",
-          "Western Union describió el mercado de travel money como fragmentado, con oportunidades de expansión geográfica",
-          "La empresa espera cerrar la adquisición de Intermex en Q2 2026"
-        ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "reino-unido",
-          "estados-unidos",
-          "resultados-financieros",
-          "travel-money"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-23",
-        "titulo": "eurochange Wins 'Best Currency Travel Card' at the Moneynet Awards",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://pressat.co.uk/releases/eurochange-wins-best-currency-travel-card-at-the-moneynet-awards-f9a45fe2bb30c1bb5cb7bef72dfdd937/",
-        "medio": "Pressat",
-        "resumen": "eurochange, el proveedor especialista de cambio de divisas del Reino Unido, ganó el premio 'Best Currency Travel Card' en los Moneynet Awards 2026. El premio reconoce la tarjeta eurochange Travel Money Card, respaldada por Mastercard, por su facilidad de uso y adecuación para el viajero moderno.",
-        "highlights": [
-          "eurochange ganó el premio Moneynet Awards 2026 a la 'Mejor Tarjeta de Viaje de Divisas'",
-          "La tarjeta es emitida por PrePay Technologies y funciona con licencia de Mastercard International",
-          "Charles Stewart, Director General de eurochange y tiendas de Western Union en Europa, comentó sobre el logro",
-          "eurochange cuenta con más de 240 sucursales en el Reino Unido",
-          "El premio se suma a otros galardones: Good Business Pays Fast Payer 2025, Bronze en British Travel Awards 2025"
-        ],
-        "tags": [
-          "eurochange",
-          "reino-unido",
-          "premios",
-          "tarjeta-viaje",
-          "moneynet-awards",
-          "mastercard"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "Moneynet",
-            "url": "https://www.moneynet.co.uk/moneynet-awards-2026-winners-announced/"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-02-23",
-        "titulo": "Revolut gana peso en España con una estrategia que cambia las reglas",
+        "fecha": "2026-03-02",
+        "titulo": "Revolut publica informe sobre estafas financieras: Telegram concentra el 22% del fraude en España",
         "categoria": "sector-cambiario",
         "alcance": "Nacional",
-        "url": "https://www.elconfidencialdigital.com/articulo/dinero/revolut-gana-peso-espana-estrategia-que-cambia-reglas/202602231313121005411.html",
-        "medio": "El Confidencial Digital",
-        "resumen": "Revolut se ha consolidado como uno de los grandes actores de la banca digital en Europa y avanza en España con una estrategia cada vez más ambiciosa. Su crecimiento en clientes, productos y servicios anticipa un movimiento que puede alterar el equilibrio del sector financiero tradicional español.",
+        "url": "https://www.eldebate.com/tecnologia/20260302/estafas-telegram-disparan-espana-revolut-advierte-auge-timos-cns_391046.html",
+        "medio": "El Debate",
+        "resumen": "Revolut publicó la cuarta edición de su Informe sobre Seguridad del Consumidor y Delitos Financieros, revelando que Telegram concentró el 22% de las estafas reportadas en España en 2025. A nivel global, los fraudes en Telegram crecieron un 233%. Las estafas de compras online lideran con un 53% en España.",
         "highlights": [
-          "Revolut opera bajo licencia bancaria europea y ofrece servicios financieros regulados en España",
-          "La compañía ha reforzado sus sistemas de autenticación, verificación biométrica y control antifraude",
-          "Revolut nació como alternativa al cambio de divisas tradicional con comisiones reducidas",
-          "Permite pagos en diferentes divisas con tipo de cambio interbancario"
+          "22% de las estafas en España originadas en Telegram",
+          "Fraude en Telegram creció 233% a nivel global",
+          "53% de estafas en España son de compras online",
+          "Revolut implementa chatbot de IA antifraude"
         ],
-        "tags": [
-          "revolut",
-          "cambio-de-divisas",
-          "espana",
-          "fintech",
-          "banca-digital",
-          "expansion"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-23",
-        "titulo": "Pagar con tarjeta o cambiar moneda: ¿qué opción es más rentable si viajas al extranjero?",
-        "categoria": "sector-cambiario",
-        "alcance": "Nacional",
-        "url": "https://www.bbva.com/es/salud-financiera/pagar-con-tarjeta-o-cambiar-moneda-que-opcion-es-mas-rentable-si-viajas-al-extranjero/",
-        "medio": "BBVA",
-        "resumen": "Guía actualizada de BBVA que compara las opciones de pago con tarjeta frente al cambio de moneda al viajar al extranjero. Advierte que cualquier cambio de moneda implica comisión y que el tipo de cambio es libre en España, donde los tipos oficiales son solo orientativos.",
-        "highlights": [
-          "Cualquier cambio de moneda implica una comisión; si al volver necesitas reconvertir, pagas de nuevo",
-          "El tipo de cambio es libre en España; los tipos oficiales son solo orientativos",
-          "Lugares turísticos que ofrecen cambio sin comisiones ocultan el coste en un tipo de cambio desfavorable",
-          "Las comisiones bancarias por cambio de divisas oscilan entre un 3% y un 5%",
-          "Aconseja evitar el DCC (Dynamic Currency Conversion) y elegir siempre pago en moneda local"
-        ],
-        "tags": [
-          "cambio-de-moneda",
-          "cambio-de-divisas",
-          "espana",
-          "turismo",
-          "comisiones",
-          "tarjetas-viaje"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-20",
-        "titulo": "Western Union Reports Fourth Quarter and Full Year 2025 Results",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.businesswire.com/news/home/20260220258915/en/Western-Union-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
-        "medio": "Business Wire",
-        "resumen": "Western Union reportó resultados del Q4 y año completo 2025. Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la expansión del negocio Travel Money, que incluyó la adquisición de Eurochange Limited, y mayores ingresos de pagos de facturas.",
-        "highlights": [
-          "Los ingresos del segmento Consumer Services crecieron un 15% reportado y un 26% ajustado en Q4, gracias a la adquisición de Eurochange Limited",
-          "EPS ajustado de Q4 fue $0.45, superando el consenso de $0.43",
-          "Guía 2026: crecimiento de ingresos GAAP del 5%-8% y EPS ajustado de $1.75-$1.85",
-          "Dividendo de $0.235 por acción aprobado para Q1 2026"
-        ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "resultados-financieros",
-          "adquisicion"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "tags": ["Revolut", "estafas", "Telegram", "fraude", "España", "seguridad"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Fraud+Report",
         "otros_medios": [
-          {
-            "nombre": "Stock Titan",
-            "url": "https://www.stocktitan.net/news/WU/western-union-reports-fourth-quarter-and-full-year-2025-aotghsa83nkd.html"
-          }
+          { "nombre": "Infobae", "url": "https://www.infobae.com/tecno/2026/02/27/telegram-bajo-la-lupa-las-estafas-aumentan-un-233-en-la-plataforma/" }
         ]
       },
       {
-        "fecha": "2026-02-20",
-        "titulo": "Western Union (WU) Q4 2025 Earnings Call Transcript",
+        "fecha": "2026-03-16",
+        "titulo": "Promociones de travel money en UK: John Lewis, Asda y TUI lanzan ofertas en marzo 2026",
         "categoria": "sector-cambiario",
         "alcance": "Internacional",
-        "url": "https://www.fool.com/earnings/call-transcripts/2026/02/20/western-union-wu-q4-2025-earnings-transcript/",
-        "medio": "The Motley Fool",
-        "resumen": "Transcripción completa de la conferencia de resultados Q4 2025 de Western Union. El CEO Devin McGranahan destacó que los ingresos ajustados de Consumer Services subieron un 26% en el trimestre y un 30% en el año, impulsados por el crecimiento en travel money liderado por eurochange.",
+        "url": "https://www.johnlewisfinance.com/travel-money",
+        "medio": "John Lewis Finance",
+        "resumen": "Los principales proveedores minoristas de travel money del Reino Unido lanzaron promociones especiales: John Lewis Bureau de Change ofreció Rate Sale del 13 al 25 de marzo, Asda Travel Money del 16 al 23 de marzo, y TUI Travel Money del 19 al 27 de marzo. Estas promociones evidencian la competencia activa en el mercado minorista de cambio de divisas antes de Semana Santa.",
         "highlights": [
-          "McGranahan señaló: 'Consumer Services adjusted revenue was up 26% in the quarter and roughly 30% for the full year, driven by growth in travel money, led by Eurochange'",
-          "El negocio de travel money se proyecta a alcanzar 150 millones de dólares en ingresos en 2026",
-          "Western Union ve oportunidad en un mercado de travel money fragmentado donde grandes jugadores se retiraron desde el COVID",
-          "La empresa espera cerrar la adquisición de Intermex en Q2 2026"
+          "John Lewis Rate Sale: 13-25 marzo",
+          "Asda Travel Money: 16-23 marzo",
+          "TUI Travel Money: 19-27 marzo (solo online)",
+          "Competencia activa pre-Semana Santa"
         ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "resultados-financieros",
-          "travel-money"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "Yahoo Finance",
-            "url": "https://finance.yahoo.com/news/western-union-wu-q4-2025-151225141.html"
-          },
-          {
-            "nombre": "The Globe and Mail",
-            "url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/330379/western-union-wu-q4-2025-earnings-transcript/"
-          },
-          {
-            "nombre": "Insider Monkey",
-            "url": "https://www.insidermonkey.com/blog/the-western-union-company-nysewu-q4-2025-earnings-call-transcript-1700321/"
-          },
-          {
-            "nombre": "Fintool",
-            "url": "https://fintool.com/app/research/companies/WU/documents/transcripts/q4-2025"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-02-20",
-        "titulo": "Does Western Union's Earnings Beat Mean Its Transition Is Working?",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://247wallst.com/investing/2026/02/20/does-western-unions-earnings-beat-mean-its-transition-is-working/",
-        "medio": "24/7 Wall St.",
-        "resumen": "Artículo de análisis sobre los resultados de Western Union Q4 2025. Destaca que Consumer Services fue el único punto brillante, con ingresos que subieron un 15% en Q4 a 136,9 millones de dólares, impulsados por la adquisición de Eurochange Limited expandiendo el negocio Travel Money de WU.",
-        "highlights": [
-          "Consumer Services revenue creció un 15% en Q4 a 136,9 millones de dólares, impulsado por la adquisición de Eurochange Limited",
-          "El negocio core de Consumer Money Transfer cayó un 7% interanual a 871,5 millones de dólares",
-          "El rendimiento por dividendo de WU es del 9,9% pero la sostenibilidad es cuestionada: ratio de pago del 87%",
-          "Consenso de analistas es 'Reduce' con 5 Sell, 10 Hold y solo 1 Buy",
-          "El flujo de caja operativo cayó un 48% desde 2021"
-        ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "analisis-financiero",
-          "adquisicion"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "AOL",
-            "url": "https://www.aol.com/articles/does-western-union-earnings-beat-134549799.html"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-02-20",
-        "titulo": "Western Union falls as revenue misses analyst estimates",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.investing.com/news/earnings/western-union-falls-as-revenue-misses-analyst-estimates-4515973",
-        "medio": "Investing.com",
-        "resumen": "Investing.com reportó que las acciones de Western Union cayeron tras no alcanzar las estimaciones de ingresos de los analistas. No obstante, el segmento Consumer Services creció un 26% ajustado, impulsado por la expansión del negocio Travel Money incluyendo la adquisición de Eurochange Limited.",
-        "highlights": [
-          "Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la adquisición de Eurochange Limited",
-          "Las transacciones de Branded Digital crecieron un 13%, representando el 30% de ingresos totales de Consumer Money Transfer",
-          "Guía fiscal 2026: EPS ajustado de $1.75-$1.85 y crecimiento de ingresos del 6%-9% ajustado",
-          "La caída del precio de la acción refleja la debilidad en el negocio core de remesas"
-        ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "resultados-financieros",
-          "bolsa"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'EUROCHANGE': Tras búsqueda exhaustiva en medios prioritarios españoles (expansion.com, eleconomista.es, elpais.com, elmundo.es, lavanguardia.com, cincodias.elpais.com), británicos (Daily Mail, Guardian, Mirror, Metro, The Sun, The Times, cityam.com, thisismoney.co.uk, travelweekly.co.uk, ttgmedia.com) e internacionales (Bloomberg, Reuters), se encontraron únicamente 6 historias verificadas que mencionan 'Eurochange' entre el 25 de enero y el 24 de febrero de 2026. No se alcanza el objetivo de 40 artículos. Las menciones se concentran en dos eventos: (1) Resultados Q4 2025 de Western Union (20 febrero), donde Eurochange Limited se cita como motor del crecimiento del 26% en Consumer Services; y (2) Premio Moneynet Awards 2026 a la 'Best Currency Travel Card' de eurochange (23 febrero). Eurochange no es una empresa cotizada por sí misma (fue adquirida por Western Union en abril 2025), lo que limita la cobertura mediática independiente. Ningún medio español ni británico nacional publicó artículos exclusivamente sobre eurochange en este período."
-      },
-      {
-        "fecha": "2026-02-20",
-        "titulo": "Precio del dólar hoy 20 de febrero de 2026: Peso mexicano y tipo de cambio",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-20-febrero-2026-a-cuanto-cotiza-en-vivo-atm",
-        "medio": "Milenio",
-        "resumen": "El peso mexicano avanzó 0,8% cerrando la semana a 17,11 pesos por dólar tras el fallo de la Corte Suprema de EE.UU. contra los aranceles generalizados de Trump. En respuesta, Trump anunció un arancel global del 10% para sustituir las tarifas anuladas. El artículo incluye información sobre casas de cambio de divisas.",
-        "highlights": [
-          "Peso mexicano cerró en 17,11 unidades por dólar, avanzando 0,8% en la semana",
-          "Corte Suprema de EE.UU. falló contra aranceles generalizados de Trump",
-          "Trump anunció arancel global del 10% como sustituto",
-          "Tipo de cambio FIX de Banxico: 17,1722 pesos por dólar",
-          "Casas de cambio tienen límite de compra de 1.500 dólares"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "aranceles"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-20",
-        "titulo": "El error más grande que podés cometer a la hora de cambiar dólares",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.ambito.com/economia/el-error-mas-grande-que-podes-cometer-la-hora-cambiar-dolares-n6248406",
-        "medio": "Ámbito",
-        "resumen": "Artículo de Ámbito (Argentina) que advierte sobre el error de cambiar moneda en aeropuertos, donde las casas de cambio suelen ofrecer cotizaciones menos favorables. Recomienda planificar el cambio de moneda antes del viaje y comparar tasas online.",
-        "highlights": [
-          "Casas de cambio en aeropuertos ofrecen cotizaciones menos favorables que en centros de ciudades",
-          "Los locales aeroportuarios enfrentan alquileres elevados, seguridad y horarios extendidos que encarecen el tipo de cambio",
-          "Recomendación: planificar el cambio de moneda antes del viaje y comparar tasas online",
-          "Opción alternativa: retirar efectivo en cajeros automáticos del destino evaluando comisiones"
-        ],
-        "tags": [
-          "cambio-de-moneda",
-          "argentina",
-          "aeropuerto",
-          "consejos-viaje",
-          "casas-de-cambio"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-19",
-        "titulo": "China y RWA: El gigante asiático define las reglas del juego para los activos digitales",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://criptotendencia.com/2026/02/19/china-y-rwa-el-gigante-asiatico-define-las-reglas-del-juego-para-los-activos-digitales/",
-        "medio": "CriptoTendencia",
-        "resumen": "China publicó el 6 de febrero de 2026 un nuevo marco regulatorio para activos virtuales que clasifica las stablecoins como activos con funciones de curso legal. El intercambio de estas monedas por divisas tradicionales podría ser procesado como 'operaciones de cambio de divisas encubiertas', elevando drásticamente el riesgo para los mercados OTC.",
-        "highlights": [
-          "El PBOC y siete agencias emitieron nueva normativa sobre riesgos de monedas virtuales (Yin Fa [2026] No. 42)",
-          "Stablecoins clasificadas formalmente como activos con funciones de curso legal",
-          "El intercambio de stablecoins podría procesarse como 'operaciones de cambio de divisas encubiertas'",
-          "La Administración Estatal de Divisas (SAFE) es una de las entidades supervisoras",
-          "El nuevo Aviso anula oficialmente el restrictivo 'Aviso 924' de 2021"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "china",
-          "regulacion",
-          "criptomonedas",
-          "stablecoins"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-18",
-        "titulo": "Travelex Plus sees over 150,000 members sign up within first 10 months",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://retailtimes.co.uk/travelex-plus-sees-over-150000-members-sign-up-within-first-10-months/",
-        "medio": "Retail Times",
-        "resumen": "El programa de fidelización Travelex Plus ha superado los 150.000 miembros en menos de un año desde su lanzamiento en el Reino Unido. Los miembros acceden a tarifas exclusivas, descuentos, congelación de precios y alertas de tipos de cambio favorables, lo que ha impulsado significativamente el engagement del cliente.",
-        "highlights": [
-          "Más de 150.000 miembros captados en los primeros 10 meses del programa Travelex Plus en el Reino Unido",
-          "Los miembros de Travelex Plus adquieren de media un 25% más de divisa que los no miembros",
-          "El número de clientes que recargan su Travelex Money Card (TMC) casi se ha duplicado entre miembros del programa",
-          "Simon Jackson, Chief Customer Officer: 'Los clientes acceden a nuestras mejores tarifas en efectivo y tarjeta al unirse a Travelex Plus'",
-          "El programa ofrece comisión 0%, descuentos en la primera compra y ventas exclusivas periódicas"
-        ],
-        "tags": [
-          "travelex",
-          "travelex-plus",
-          "reino-unido",
-          "programa-fidelizacion",
-          "tipo-de-cambio"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "Travel And Tour World",
-            "url": "https://www.travelandtourworld.com/news/article/travelex-plus-hits-150000-members-in-less-than-a-year-the-uk-loyalty-program-revolutionizing-foreign-exchange/"
-          },
-          {
-            "nombre": "Financial IT",
-            "url": "https://financialit.net/news/infrastructure/travelex-plus-sees-over-150000-members-sign-within-first-ten-months"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-02-18",
-        "titulo": "Mercado informal y oficial de divisas en Cuba hoy: tasas actualizadas",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.directoriocubano.info/actualidad/mercado-informal-y-oficial-de-divisas-en-cuba-hoy-tasas-actualizadas/",
-        "medio": "Directorio Cubano",
-        "resumen": "El dólar alcanza los 500 CUP en el mercado informal cubano, mientras que la tasa oficial se mantiene en 458 CUP. El euro cotiza a 560 CUP informalmente frente a los 542,41 CUP oficiales. La brecha creciente entre ambos tipos de cambio refleja la escasez de moneda extranjera y la alta demanda de divisas en la isla.",
-        "highlights": [
-          "Dólar en mercado informal: 500 CUP vs tasa oficial 458 CUP",
-          "Euro informal: 560 CUP vs oficial 542,41 CUP",
-          "MLC cotiza a 410 CUP en mercado informal",
-          "Operaciones Zelle valoradas en 493,62 CUP",
-          "Peso mexicano sube hasta 29,19 CUP en mercado informal"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "cuba",
-          "mercado-informal",
-          "dolar",
-          "euro"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-16",
-        "titulo": "Wise plc appoints Computershare as new share registrar",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.investing.com/news/company-news/wise-plc-appoints-computershare-as-new-share-registrar-93CH-4507606",
-        "medio": "Investing.com",
-        "resumen": "Wise plc nombró a Computershare Investor Services PLC como nuevo registrador de acciones, sustituyendo a Equiniti Limited con efecto inmediato. Las acciones de Wise cayeron un 1,6% a 848 peniques ese día. Los inversores están atentos a la doble cotización prevista en EE.UU. para el primer semestre de 2026.",
-        "highlights": [
-          "Computershare reemplaza a Equiniti como registrador de acciones de Wise, efectivo 16 febrero 2026",
-          "Acciones Wise Clase A cayeron 1,6% a 848 peniques en Londres",
-          "Wise procesó más de 185.000 millones de dólares en transacciones transfronterizas en el año fiscal 2025",
-          "Wise cuenta con aproximadamente 15,6 millones de clientes y gestiona 40 divisas",
-          "La doble cotización en EE.UU. está prevista para H1 2026"
-        ],
-        "tags": [
-          "wise",
-          "fintech",
-          "reino-unido",
-          "bolsa",
-          "cotizacion",
-          "corporativo"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "TipRanks",
-            "url": "https://www.tipranks.com/news/company-announcements/wise-plc-switches-share-registrar-to-computershare"
-          },
-          {
-            "nombre": "Investegate (London Stock Exchange RNS)",
-            "url": "https://www.investegate.co.uk/announcement/rns/wise-class-a--wise/change-of-adviser/9432631"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-02-14",
-        "titulo": "El peso toca su mejor nivel del año y cierra en 17.14 por dólar",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://lopezdoriga.com/economia-y-finanzas/el-peso-toca-su-mejor-nivel-del-ano-y-cierra-en-17-14-por-dolar/",
-        "medio": "López-Dóriga Digital",
-        "resumen": "El tipo de cambio cerró la séptima semana de 2026 con su menor nivel en lo que va del año, un registro no visto desde junio de 2024, cotizando 17,14 pesos por dólar. El avance semanal del peso fue del 0,67%, beneficiado por la debilidad del dólar ante datos económicos negativos en EE.UU.",
-        "highlights": [
-          "Peso mexicano cerró en 17,14 por dólar, mejor nivel del año 2026",
-          "Nivel no visto desde junio de 2024",
-          "Avance semanal del peso del 0,67%",
-          "Debilidad del dólar por datos económicos negativos en EE.UU. y contracción en ventas minoristas",
-          "China pidió a instituciones financieras reducir exposición a bonos del Tesoro estadounidense"
-        ],
-        "tags": [
-          "cambio-de-moneda",
-          "mexico",
-          "tipo-de-cambio",
-          "peso-dolar",
-          "mercado-cambiario"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-13",
-        "titulo": "Apollo in Talks to Offer Funds to Revolut Customers in Europe",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.bloomberg.com/news/articles/2026-02-13/apollo-in-talks-to-offer-funds-to-revolut-customers-in-europe",
-        "medio": "Bloomberg",
-        "resumen": "Apollo Global Management está en conversaciones preliminares con Revolut para ofrecer sus fondos de inversión a clientes minoristas en Europa a través de la plataforma fintech. Revolut también mantiene conversaciones exploratorias con Blackstone para ofrecer fondos a clientes de banca privada.",
-        "highlights": [
-          "Apollo sería uno de los gestores de capital privado que ofrecerían vehículos a través de la oferta de mercados privados de Revolut",
-          "Revolut planea lanzar su plataforma de mercados privados a lo largo de 2026",
-          "Los ingresos de wealth management de Revolut crecieron casi un 300% en 2024, alcanzando 506 millones de libras",
-          "Revolut también negocia con Blackstone para ofrecer fondos a clientes de banca privada",
-          "Revolut está reclutando banqueros de inversión junior, gestores de activos y asesores de capital privado"
-        ],
-        "tags": [
-          "revolut",
-          "fintech",
-          "europa",
-          "wealth-management",
-          "mercados-privados",
-          "apollo",
-          "blackstone"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "Finance Magnates",
-            "url": "https://www.financemagnates.com/fintech/revolut-targets-high-net-worth-clients-in-potential-blackstone-partnership/"
-          },
-          {
-            "nombre": "GuruFocus",
-            "url": "https://www.gurufocus.com/news/8616067/apollo-explores-revolut-partnership-as-wealth-revenue-jumps-nearly-300"
-          },
-          {
-            "nombre": "Bloomberg Law",
-            "url": "https://news.bloomberglaw.com/banking-law/blackstone-holds-early-talks-with-revolut-on-wealth-partnership"
-          },
-          {
-            "nombre": "Yahoo Finance",
-            "url": "https://finance.yahoo.com/news/blackstone-revolut-talks-collaborate-wealth-101426248.html"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-02-10",
-        "titulo": "Es falso que Donald Trump anunció que el dólar será la nueva moneda oficial de Venezuela",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://es-us.noticias.yahoo.com/falso-donald-trump-anunci%C3%B3-d%C3%B3lar-040614722.html",
-        "medio": "Yahoo Noticias",
-        "resumen": "Verificación de hechos que desmiente la desinformación sobre un supuesto anuncio de Donald Trump de cambiar la moneda oficial de Venezuela al dólar. El artículo 318 de la Constitución venezolana establece el bolívar como la unidad monetaria y cualquier cambio de moneda requeriría reforma constitucional.",
-        "highlights": [
-          "Es falso que Trump anunció cambio de moneda en Venezuela; no existe decreto oficial",
-          "Artículo 318 de la Constitución de Venezuela establece el bolívar como moneda nacional",
-          "Un cambio de moneda requeriría reforma constitucional o enmienda",
-          "El Banco Central de Venezuela tiene potestad exclusiva sobre decisiones monetarias"
-        ],
-        "tags": [
-          "cambio-de-moneda",
-          "venezuela",
-          "desinformacion",
-          "dolar",
-          "bolivar"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-02-06",
-        "titulo": "Antes de facturar: consulta el tipo de cambio de monedas y dólar enero 2026",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.unotv.com/negocios/antes-de-facturar-consulta-el-tipo-de-cambio-de-monedas-y-dolar-enero-2026/",
-        "medio": "UnoTV",
-        "resumen": "El Banco de México (Banxico) publicó en el Diario Oficial de la Federación la equivalencia de las principales monedas del mundo frente al dólar correspondiente a enero de 2026. Este tipo de cambio es obligatorio para efectos fiscales, facturación electrónica e importaciones/exportaciones.",
-        "highlights": [
-          "Banxico publicó las equivalencias oficiales de monedas frente al dólar para enero 2026",
-          "Tipo de cambio obligatorio para efectos fiscales según artículo 20 del Código Fiscal de la Federación",
-          "Indispensable para facturación electrónica en operaciones en moneda extranjera"
-        ],
-        "tags": [
-          "cambio-de-moneda",
-          "mexico",
-          "tipo-de-cambio",
-          "banxico",
-          "fiscal"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'CAMBIO DE MONEDA': Tras búsqueda exhaustiva con más de 14 consultas incluyendo búsquedas site-specific en los medios prioritarios españoles (El País, ABC, La Vanguardia, El Mundo, El Confidencial, Expansión, Cinco Días, El Economista, Europa Press, EFE, COPE, Cadena SER, RTVE), medios regionales de Castilla y León y Salamanca, la frase exacta 'cambio de moneda' aparece abrumadoramente en páginas comerciales/de servicios (Exact Change, Eurochange, Global Exchange, Cambiator) y no en artículos periodísticos. Los medios españoles prioritarios no produjeron resultados indexados con esta frase exacta en el período solicitado. La cobertura periodística de temas cambiarios en español utiliza predominantemente 'tipo de cambio', 'cambio de divisas' o 'mercado cambiario'. Se encontraron solo 5 artículos verificados. Objetivo: 40."
-      },
-      {
-        "fecha": "2026-01-30",
-        "titulo": "Precio del dólar hoy 30 de enero de 2026 EN VIVO | Peso mexicano",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-30-enero-2026-a-cuanto-cotiza-en-vivo-atm",
-        "medio": "Milenio",
-        "resumen": "El peso mexicano se depreció 1,46% cerrando la semana a 17,46 unidades por dólar tras la nominación de Kevin Warsh para dirigir la Fed. México fue amenazado con aranceles por suministrar petróleo a Cuba. El peso cerró enero con rendimiento acumulado del 3%, su mejor desempeño desde junio 2025.",
-        "highlights": [
-          "Peso cerró en 17,46 por dólar con depreciación de 1,46% en la jornada",
-          "Kevin Warsh nominado para dirigir la Reserva Federal",
-          "EE.UU. amenazó con aranceles a países que suministran petróleo a Cuba, incluido México",
-          "Peso acumuló rendimiento de 3% en enero, mejor desempeño desde junio 2025"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "fed"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-01-29",
-        "titulo": "Revolut planea alcanzar los 8 millones de clientes en España en 2026 a los mandos de su equipo Audi en la Fórmula 1",
-        "categoria": "sector-cambiario",
-        "alcance": "Nacional",
-        "url": "https://www.elespanol.com/invertia/empresas/banca/20260129/revolut-planea-alcanzar-millones-clientes-espana-mandos-equipo-audi-formula/1003744107692_0.html",
-        "medio": "El Español / Invertia",
-        "resumen": "Revolut planea alcanzar los 8 millones de clientes en España en 2026, lo que supondría un crecimiento del 33% respecto al año anterior. El neobanco ha fichado a Santiago Pérez Olano como nuevo CEO en España y ha suscrito un acuerdo trianual con Audi para patrocinar su equipo en la Fórmula 1.",
-        "highlights": [
-          "Revolut cerró 2025 con más de 6 millones de clientes en España",
-          "Objetivo de 8 millones de clientes en España para cierre de 2026 (crecimiento del 33%)",
-          "Fichaje de Santiago Pérez Olano como nuevo CEO de Revolut España",
-          "Prevé reforzar oficinas con 800 nuevos empleos y desplegar 200 cajeros automáticos físicos en 2026",
-          "Más de 1.000 empresas y comercios se adhieren cada semana a Revolut Business en España"
-        ],
-        "tags": [
-          "revolut",
-          "espana",
-          "fintech",
-          "audi-f1",
-          "expansion",
-          "banca-digital"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-01-29",
-        "titulo": "Precio del dólar hoy 29 de enero 2026: Peso mexicano y tipo de cambio",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-29-enero-2026-a-cuanto-cotiza-en-vivo-atm",
-        "medio": "Milenio",
-        "resumen": "El peso mexicano se depreció 0,24% cerrando a 17,22 unidades por dólar. La sesión estuvo marcada por una llamada entre Trump y Sheinbaum sobre comercio y seguridad, mientras preparan la revisión del T-MEC. La Fed mantuvo tasas de interés sin cambios.",
-        "highlights": [
-          "Tipo de cambio cerró en 17,22 pesos por dólar",
-          "Llamada telefónica Trump-Sheinbaum sobre comercio y seguridad",
-          "Fed mantuvo tasas de interés sin cambios",
-          "Tipo de cambio FIX de Banxico: 17,2532 pesos por dólar"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "t-mec"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-01-28",
-        "titulo": "Travelex to install ATMs in Europe",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.atmmarketplace.com/news/travelex-to-install-atms-in-europe/",
-        "medio": "ATM Marketplace",
-        "resumen": "Travelex está expandiendo sus cajeros automáticos por Europa, con dispositivos adicionales instalados en la terminal de LeShuttle en Folkestone (Inglaterra) y en el Aeropuerto de Berlín Brandeburgo. Los cajeros ofrecen efectivo en hasta seis divisas diferentes, con 45 divisas disponibles mediante pedidos online.",
-        "highlights": [
-          "Travelex cuenta con más de 600 cajeros automáticos en ocho países",
-          "Los nuevos ATM ofrecen retiros de efectivo sin contacto (contactless)",
-          "Se pueden obtener hasta 6 divisas directamente en los ATM y hasta 45 divisas mediante pedido previo online o en tienda",
-          "Simon Jackson, Chief Customer Officer: 'Estamos orgullosos de ampliar nuestras alianzas con LeShuttle y el Aeropuerto de Berlín Brandeburgo'",
-          "Total de 50 cajeros automáticos de Travelex en toda Alemania"
-        ],
-        "tags": [
-          "travelex",
-          "reino-unido",
-          "alemania",
-          "cajeros-automaticos",
-          "aeropuertos",
-          "expansion"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "Regional Gateway",
-            "url": "https://www.regionalgateway.net/travelex-installs-three-atms-at-berlin-brandenburg-airport/"
-          }
-        ],
-        "_nota": "TÉRMINO 'TRAVELEX': Tras búsqueda exhaustiva con más de 15 consultas en medios prioritarios españoles (20minutos.es, abc.es, elconfidencial.com, elmundo.es, elpais.com, lavanguardia.com, expansion.com, cincodias.elpais.com, eleconomista.es, europapress.es), británicos (dailymail.co.uk, theguardian.com, independent.co.uk, thetimes.co.uk, standard.co.uk, mirror.co.uk, metro.co.uk, thesun.co.uk, cityam.com, thisismoney.co.uk, moneyweek.com, travelweekly.co.uk, ttgmedia.com) e internacionales (bloomberg.com, reuters.com), se encontraron solo 2 historias verificadas (6 artículos incluyendo sindicaciones) sobre Travelex entre el 25 de enero y el 24 de febrero de 2026: (1) Expansión de cajeros ATM en Europa (Berlín y LeShuttle, 26-28 enero); (2) Hito de 150.000 miembros de Travelex Plus (17-18 febrero). Ninguno de los medios españoles prioritarios publicó artículos sobre Travelex en este período. Los medios nacionales británicos tampoco publicaron artículos dedicados. Bloomberg y Reuters no publicaron cobertura específica. Objetivo: 40. Encontrados: 2 historias únicas."
-      },
-      {
-        "fecha": "2026-01-28",
-        "titulo": "Revolut Launches 15% Savings Rate in Mexico in Battle With Banks",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.bloomberg.com/news/articles/2026-01-28/revolut-launches-15-savings-rate-in-mexico-in-battle-with-banks",
-        "medio": "Bloomberg",
-        "resumen": "Revolut lanzó operaciones bancarias completas en México ofreciendo una tasa de interés del 15% en depósitos de ahorro, buscando captar una parte significativa del mercado bancario del país. Revolut Bank S.A. IBM es el primer banco digital independiente en obtener licencia bancaria mexicana por solicitud directa.",
-        "highlights": [
-          "Revolut ofrece una tasa de ahorro del 15% en México para atraer clientes",
-          "Primer banco de Revolut establecido fuera del continente europeo",
-          "Capitalización superior a 100 millones de dólares, más del doble del mínimo regulatorio",
-          "La expansión extiende la presencia de Revolut a 40 países",
-          "Nik Storonsky, CEO: 'Este lanzamiento es un modelo para la expansión a otros mercados de alto crecimiento'"
-        ],
-        "tags": [
-          "revolut",
-          "mexico",
-          "fintech",
-          "banca-digital",
-          "licencia-bancaria",
-          "expansion-global",
-          "latinoamerica"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "RTÉ News",
-            "url": "https://www.rte.ie/news/business/2026/0128/1555464-evolut-launches-full-banking-operations-in-mexico/"
-          },
-          {
-            "nombre": "FinTech Futures",
-            "url": "https://www.fintechfutures.com/challenger-banks/revolut-launches-in-mexico"
-          },
-          {
-            "nombre": "Retail Banker International",
-            "url": "https://www.retailbankerinternational.com/news/revolut-mexico-banking-services/"
-          },
-          {
-            "nombre": "American Banker",
-            "url": "https://www.americanbanker.com/payments/news/revolut-drops-anchor-in-mexico-jpmorganchase-hires-a-payments-chief"
-          },
-          {
-            "nombre": "PYMNTS.com",
-            "url": "https://www.pymnts.com/news/digital-banking/2026/revolut-launches-mexico-bank-and-debuts-subscriptions-in-uk/"
-          },
-          {
-            "nombre": "Revolut (comunicado oficial)",
-            "url": "https://www.revolut.com/en-MX/news/revolut_launches_full_banking_operations_in_mexico_accelerating_global_expansion/"
-          }
-        ],
-        "_nota": "TÉRMINO 'REVOLUT': Tras búsqueda exhaustiva en medios nacionales (UK y España), internacionales (Bloomberg, Reuters), especializados en fintech (Sifted, FinTech Futures, PYMNTS) y fuentes oficiales, se identificaron 4 historias únicas verificadas (12 artículos incluyendo sindicaciones) entre el 25 de enero y el 24 de febrero de 2026: (1) Lanzamiento bancario en México, 27-28 enero; (2) Conversaciones con Apollo y Blackstone para partnerships en wealth management, 13 febrero; (3) Planes de expansión en España con objetivo de 8M clientes, 29 enero; (4) Posicionamiento estratégico de Revolut en España, 23 febrero. Muchos artículos adicionales sobre Revolut (IPO, valoración $75B, Audi F1, crypto, licencia Perú) fueron publicados fuera del rango temporal. Objetivo: 40. Encontrados: 4 historias únicas."
-      },
-      {
-        "fecha": "2026-01-28",
-        "titulo": "Payments Canada announces new PSP members",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/payments/news/five-new-psp-members-join-payments-canada",
-        "medio": "The Paypers",
-        "resumen": "Payments Canada anunció la admisión de cinco nuevos miembros proveedores de servicios de pago, incluyendo Wise, Float, KOHO, Paramount Commerce y Brim. Wise se convirtió en uno de los primeros proveedores de servicios de pago no bancarios en obtener membresía, lo que le permitirá acelerar tiempos de transferencia y reducir costos para clientes canadienses.",
-        "highlights": [
-          "Wise es uno de los cinco nuevos PSP admitidos en Payments Canada y uno de los primeros no bancarios",
-          "La membresía permite acceso a sistemas de pago nacionales canadienses incluyendo el futuro Real-Time Rail (RTR)",
-          "Clientes activos de Wise en Canadá aumentaron más del 30% en FY25",
-          "Costo promedio de transacción de Wise: solo 0,52% por operación",
-          "74% de los pagos de Wise se procesan instantáneamente (en menos de 20 segundos)"
-        ],
-        "tags": [
-          "wise",
-          "fintech",
-          "canada",
-          "pagos",
-          "infraestructura-pagos",
-          "expansion"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [
-          {
-            "nombre": "Wise Newsroom",
-            "url": "https://newsroom.wise.com/en-NAM/260024-wise-strengthens-its-canadian-market-investment-with-payments-canada-membership/"
-          },
-          {
-            "nombre": "CNW Newswire",
-            "url": "https://www.newswire.ca/news-releases/wise-strengthens-its-canadian-market-investment-with-payments-canada-membership-811062092.html"
-          },
-          {
-            "nombre": "Payments Canada",
-            "url": "https://www.payments.ca/payments-canada-welcomes-payment-service-provider-members"
-          },
-          {
-            "nombre": "BetaKit",
-            "url": "https://betakit.com/float-wise-koho-paramount-and-brim-join-payments-canada/"
-          },
-          {
-            "nombre": "BriefGlance",
-            "url": "https://briefglance.com/articles/wise-joins-payments-canada-ushering-in-new-era-for-financial-tech"
-          },
-          {
-            "nombre": "Fintech.ca",
-            "url": "https://www.fintech.ca/2026/01/27/payments-canada-welcomes-five-new-fintech-psp-members/"
-          },
-          {
-            "nombre": "Yahoo Finance Canada",
-            "url": "https://ca.finance.yahoo.com/news/wise-strengthens-canadian-market-investment-130000049.html"
-          }
-        ],
-        "_nota": "TÉRMINO 'WISE': Tras búsqueda exhaustiva en más de 15 consultas incluyendo búsquedas en español (expansion.com, eleconomista.es, cincodias.elpais.com, elpais.com, elmundo.es) y en inglés (bloomberg.com, reuters.com, theguardian.com, dailymail.co.uk, cityam.com, thisismoney.co.uk, moneyweek.com), se encontraron solo 2 historias únicas verificadas (12 artículos incluyendo sindicaciones) dentro del período 25 enero - 24 febrero 2026: (1) Membresía en Payments Canada, 27-28 enero; (2) Cambio de registrador de acciones a Computershare, 16 febrero. Los resultados Q3 FY2026 de Wise se publicaron el 20 de enero (justo antes de la ventana) generando cobertura masiva fuera del período. La doble cotización en EE.UU. se espera para Q2 2026 (después). No se encontró cobertura en medios españoles generalistas. Objetivo: 40. Encontrados: 2 historias únicas."
-      },
-      {
-        "fecha": "2026-01-25",
-        "titulo": "Precio del dólar HOY domingo 25 de enero 2026: Peso se mantiene firme ante amenazas de Trump por Groenlandia",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://laparadoja.com.mx/2026/01/precio-del-dolar-hoy-domingo-25-de-enero-2026-peso-se-mantiene-firme-ante-amenazas-de-trump-por-groenlandia",
-        "medio": "La Paradoja",
-        "resumen": "El peso mexicano se mantuvo firme a 17,36 pesos por dólar el 25 de enero, beneficiado por el debilitamiento del dólar en mercados internacionales. Trump amenazó a ocho países europeos con aranceles si no le dejaban intervenir en Groenlandia, generando incertidumbre internacional.",
-        "highlights": [
-          "Tipo de cambio cotizó en 17,36 pesos por dólar",
-          "Trump amenazó a 8 países europeos con aranceles por el caso Groenlandia",
-          "El peso se mantuvo por debajo de la barrera de 18 pesos",
-          "El debilitamiento del dólar benefició a la moneda mexicana"
-        ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "trump"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'CAMBIO DE DIVISAS': Tras búsqueda exhaustiva utilizando todas las queries especificadas (incluyendo búsquedas site-specific en 30+ medios prioritarios), se encontraron únicamente 9 artículos verificables que mencionan explícitamente 'cambio de divisas' en el periodo 25 enero - 24 febrero 2026. Los principales medios españoles (El País, El Mundo, ABC, La Vanguardia, El Periódico, La Razón, OkDiario, Cadena SER, COPE, RTVE, Cinco Días, Expansión, Europa Press, EFE) NO publicaron artículos con la frase exacta 'cambio de divisas' en este período según los resultados de búsqueda disponibles. Los medios regionales de Castilla y León y Salamanca tampoco arrojaron resultados. La mayoría de resultados provienen de medios mexicanos (reportes diarios de tipo de cambio), medios cubanos (tasas informales) y contenido fintech. Objetivo: 40. Encontrados: 9 artículos."
-      },
-      {
-        "fecha": "2026-01-25",
-        "titulo": "Sin resultados para el término 'Exact Change'",
-        "categoria": "sector-cambiario",
-        "alcance": "Nacional",
-        "url": "https://placehold.co/no-results",
-        "medio": "N/A",
-        "resumen": "No se encontraron artículos de prensa verificables sobre la empresa Exact Change (Maccorp Exact Change) publicados entre el 25 de enero y el 24 de febrero de 2026.",
-        "highlights": [
-          "Cero artículos de prensa encontrados para 'Exact Change' en el período analizado"
-        ],
-        "tags": [
-          "exact-change",
-          "espana",
-          "sin-resultados"
-        ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'EXACT CHANGE': Tras búsqueda exhaustiva utilizando más de 14 consultas distintas en Google, incluyendo búsquedas generales ('Exact Change' cambio moneda 2026, 'Maccorp Exact Change' 2026 noticias, etc.), búsquedas específicas por medio (site:europapress.es, site:expansion.com, site:hosteltur.com, site:eleconomista.es, site:cincodias.elpais.com), búsquedas regionales (Salamanca, Valencia) y verificación del blog corporativo de exactchange.es, NO se encontraron artículos de prensa verificables sobre la empresa 'Exact Change' publicados en el período solicitado. Los resultados obtenidos fueron exclusivamente: páginas del sitio web corporativo, contenido de blogs de viajes afiliados (no periodístico), directorios empresariales, perfiles de redes sociales, y artículos de prensa antiguos (2013-2023). 'Exact Change' (Maccorp Exact Change) es una entidad de pago privada española que no genera cobertura mediática regular en prensa generalista. Se recomienda verificar con servicios de clipping especializados (Kantar, MyNews) o con el departamento de comunicación de Grupo Exact. Objetivo: 40. Encontrados: 0."
+        "tags": ["travel money", "UK", "John Lewis", "Asda", "TUI", "promociones"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=UK+Travel+Money+Promos"
       }
     ],
     "categorias": [
@@ -1369,451 +215,14 @@
         "Nombre": "Medios de Pago: Digital",
         "Icono": "fa-credit-card",
         "Color": "#f59e0b"
-      },
-      {
-        "Slug": "otros-medios-pago",
-        "Nombre": "Otros medios de pago",
-        "Icono": "fa-wallet",
-        "Color": "#6366f1"
       }
     ],
     "config": {
-      "mes_actual": 46065,
-      "ultima_actualizacion": 46063.4375,
+      "mes_actual": "Marzo 2026",
+      "ultima_actualizacion": "2026-03-23T14:30:00.000Z",
       "version": 2,
-      "total_categorias": 6,
+      "total_categorias": 5,
       "autor": "Departamento de Comunicación"
     }
-  }
-
-{
-    "fecha": "2026-03-18",
-    "titulo": "Travelex publica su primer informe Travel Money Insights: el 69% de los viajeros sigue eligiendo el efectivo",
-    "categoria": "Mercado",
-    "alcance": "Internacional",
-    "url": "https://financialit.net/news/cash-management/travelex-launches-inaugural-insights-report-69-travellers-still-choose-cash",
-    "medio": "Financial IT",
-    "resumen": "Travelex lanzó su primer informe 'Travel Money Insights Report', coincidiendo con el 50 aniversario de la empresa. El estudio revela que el 69% de los viajeros internacionales prefiere llevar efectivo al extranjero, superando a las tarjetas en casi todas las regiones. Solo el 6% compra divisas el mismo día del viaje; la tendencia se inclina a planificar semanas antes.",
-    "highlights": [
-      "69% de viajeros internacionales prefiere efectivo",
-      "Solo el 6% compra divisas el día del viaje",
-      "Coincide con el 50 aniversario de Travelex (fundada en 1976)",
-      "Datos combinan ingresos globales de Travelex con encuestas a consumidores"
-    ],
-    "tags": ["Travelex", "MERCADO", "travel money", "efectivo", "informe", "consumidor"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "TravelMole", "url": "https://www.travelmole.com/news/travelex-two-thirds-of-travellers-still-prefer-to-use-cash/" },
-      { "nombre": "Travel And Tour World", "url": "https://www.travelandtourworld.com/news/article/travelex-launches-inaugural-travel-money-insights-report-cash-still-reigns-supreme-for-69-of-global-travelers/" },
-      { "nombre": "TradeArabia", "url": "https://tradearabia.com/News/390388/69pc-of-travellers-still-choose-cash--Travelex-report" },
-      { "nombre": "ATM Marketplace", "url": "https://www.atmmarketplace.com/news/study-finds-69-of-travelers-prefer-cash/" },
-      { "nombre": "IBS Intelligence", "url": "https://ibsintelligence.com/ibsi-news/cash-remains-key-for-travel-spending-report-reveals/" },
-      { "nombre": "ZAWYA", "url": "https://www.zawya.com/en/business/travel-and-tourism/69-of-travellers-still-choose-cash-travelex-report-k5py6uc9" },
-      { "nombre": "TravelDailyNews", "url": "https://www.traveldailynews.com/statistics-trends/travelex-report-shows-69-of-travellers-still-use-cash/" },
-      { "nombre": "Travelex Corporate", "url": "https://www.travelex-corporate.com/media/8295/travelex-travel-money-insights-report-global-consumer-trends-final.pdf" }
-    ],
-    "_nota": "Única noticia principal verificada sobre Travelex en el período marzo 1-23, 2026."
-  },
-  {
-    "fecha": "2026-03-10",
-    "titulo": "Eurochange España publica guía de viaje para aficionados españoles en la Champions League",
-    "categoria": "Mercado",
-    "alcance": "Nacional",
-    "url": "https://eurochange.es/blog/en/travels/champions-league-uk-travel-tips-currency-exchange/",
-    "medio": "Eurochange Blog",
-    "resumen": "Eurochange España publicó en su blog corporativo una guía de viaje dirigida a aficionados españoles que viajaban a Inglaterra para los octavos de final de la Champions League. La guía cubría los partidos de Barcelona en Newcastle, Atlético de Madrid frente al Tottenham y Real Madrid contra el Manchester City, incluyendo consejos sobre cambio de divisas y planificación financiera del viaje.",
-    "highlights": [
-      "Guía para partidos de Barcelona, Atlético y Real Madrid en UK",
-      "Consejos sobre cambio de divisas para viajeros deportivos",
-      "Incluye información de transporte y planificación financiera"
-    ],
-    "tags": ["Eurochange", "MERCADO", "Champions League", "travel money", "España", "turismo deportivo"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Contenido propio corporativo de Eurochange España. No cubierto por medios externos."
-  },
-  {
-    "fecha": "2026-03-15",
-    "titulo": "Eurochange España publica guía sobre Semana Santa 2026 con promoción de cambio de divisas",
-    "categoria": "Mercado",
-    "alcance": "Nacional",
-    "url": "https://eurochange.es/blog/en/viajes-en/aster-spain-2026-currency-exchange/",
-    "medio": "Eurochange Blog",
-    "resumen": "Eurochange España publicó una guía sobre la Semana Santa 2026 (29 de marzo al 5 de abril) dirigida a turistas extranjeros que visitan España, promoviendo el servicio de cambio de divisas en sus más de 40 oficinas. La guía destacaba destinos como Málaga y Sevilla e incluía consejos prácticos sobre el cambio de moneda.",
-    "highlights": [
-      "Semana Santa 2026: 29 de marzo al 5 de abril",
-      "Más de 40 oficinas de Eurochange en España",
-      "Destinos destacados: Málaga y Sevilla"
-    ],
-    "tags": ["Eurochange", "MERCADO", "Semana Santa", "turismo", "cambio de divisas", "España"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Contenido propio corporativo de Eurochange España."
-  },
-  {
-    "fecha": "2026-03-10",
-    "titulo": "eurochange UK implementa servicio especial de recompra de divisas por conflicto en Oriente Medio",
-    "categoria": "Estrategia",
-    "alcance": "Internacional",
-    "url": "https://www.eurochange.co.uk/travel-money/sell-currency",
-    "medio": "eurochange.co.uk",
-    "resumen": "eurochange UK activó un servicio de 'goodwill currency buyback' (recompra solidaria de divisas) para clientes con viajes cancelados o afectados por el conflicto en Oriente Medio. El servicio permite vender divisas de regiones afectadas por el conflicto en condiciones especiales.",
-    "highlights": [
-      "Recompra solidaria de divisas por cancelaciones",
-      "Aplica a divisas de regiones afectadas por conflicto en Oriente Medio",
-      "Condiciones especiales para clientes afectados"
-    ],
-    "tags": ["Eurochange", "ESTRAT", "Oriente Medio", "recompra divisas", "travel money", "UK"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Funcionalidad activa en el sitio web de eurochange UK durante marzo 2026. Sin comunicado de prensa independiente verificado."
-  },
-  {
-    "fecha": "2026-03-01",
-    "titulo": "eurochange UK aparece como proveedor destacado en comparativas de travel money de marzo 2026",
-    "categoria": "Mercado",
-    "alcance": "Internacional",
-    "url": "https://www.compareholidaymoney.com/exchange-rates/eurochange",
-    "medio": "Compare Holiday Money",
-    "resumen": "eurochange figura como uno de los principales proveedores de travel money en las comparativas mensuales de money.co.uk y Compare Holiday Money para marzo de 2026. Está clasificada como número 5 de 25 proveedores en el Reino Unido, con 57 divisas disponibles, y ocupa el primer puesto en varias divisas exóticas.",
-    "highlights": [
-      "Número 5 de 25 proveedores en UK",
-      "57 divisas disponibles",
-      "Primer puesto en varias divisas: Taka (Bangladesh), Lev búlgaro, Dólar bermudense, Dólar de Fiji"
-    ],
-    "tags": ["Eurochange", "MERCADO", "ranking", "travel money", "UK", "comparativa"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "Exchange Rates UK", "url": "https://www.exchangerates.org.uk/compare-travel-money/eurochange-exchange-rates" },
-      { "nombre": "money.co.uk", "url": "https://www.money.co.uk/travel-money/best-euro-exchange-rate" }
-    ],
-    "_nota": "Datos de comparativas actualizadas a marzo 2026."
-  },
-  {
-    "fecha": "2026-03-17",
-    "titulo": "Wise obtiene cinco licencias regulatorias en Tailandia: primera empresa no bancaria en lograrlo",
-    "categoria": "Regulación",
-    "alcance": "Internacional",
-    "url": "https://newsroom.wise.com/en-UKI/263427-wise-becomes-first-non-bank-to-be-granted-five-licences-in-thailand-accelerating-its-global-expansion-and-growth/",
-    "medio": "Wise Newsroom",
-    "resumen": "Wise se convirtió en la primera empresa no bancaria en obtener cinco licencias regulatorias del Banco de Tailandia y del Ministerio de Comercio para operar localmente. Las licencias cubren pagos, dinero electrónico y cambio de divisas. Tailandia mueve más de $17.000 millones anuales en flujos transfronterizos, y Wise estima que los consumidores podrían ahorrar más de $1.040 millones al año en comisiones ocultas.",
-    "highlights": [
-      "Primera no-banca con cinco licencias en Tailandia",
-      "Billetera digital multimoneda completamente regulada",
-      "$17.000 millones anuales en flujos transfronterizos en Tailandia",
-      "Ahorro potencial de $1.040 millones/año en comisiones"
-    ],
-    "tags": ["Wise", "REG", "ESTRAT", "Tailandia", "licencia", "APAC", "cambio de divisas"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "FinTech Magazine", "url": "https://fintechmagazine.com/news/a-wise-decision-bank-of-thailand-grants-banking-licence" },
-      { "nombre": "FinTech Global", "url": "https://fintech.global/2026/03/17/wise-lands-thailand-licences-in-push-to-expand-across-apac/" },
-      { "nombre": "The Paypers", "url": "https://thepaypers.com/payments/news/wise-secures-five-licences-in-thailand-in-latest-apac-expansion" },
-      { "nombre": "Scandasia", "url": "https://scandasia.com/wise-secures-licences-in-thailand-sending-money-just-got-easier-for-expats/" },
-      { "nombre": "Neobanque.ch", "url": "https://neobanque.ch/blog/wise-bank-of-thailand-regulated-money-transfer-app/" },
-      { "nombre": "Fintech News Singapore", "url": "https://fintechnews.sg/127765/payments/wise-thailand/" }
-    ],
-    "_nota": ""
-  },
-  {
-    "fecha": "2026-03-02",
-    "titulo": "Wise nombra a Scott Hill, ex-CFO de Intercontinental Exchange, como director no ejecutivo independiente",
-    "categoria": "Estrategia",
-    "alcance": "Internacional",
-    "url": "https://www.investegate.co.uk/announcement/rns/wise-class-a--wise/board-appointment/9453269",
-    "medio": "Investegate (RNS)",
-    "resumen": "Wise plc anunció el nombramiento de Scott Hill como director no ejecutivo independiente. Hill fue director financiero de Intercontinental Exchange (empresa matriz de la Bolsa de Nueva York) durante 14 años y aporta experiencia en finanzas, mercados de capitales y tecnología. El nombramiento refuerza el consejo mientras la empresa busca mayor cuota del mercado de pagos transfronterizos ($43 billones anuales) y avanza en su doble cotización en EE.UU.",
-    "highlights": [
-      "Scott Hill: ex-CFO de ICE (NYSE) durante 14 años",
-      "Mercado de pagos transfronterizos valorado en $43 billones/año",
-      "Preparación para doble cotización EE.UU.-UK"
-    ],
-    "tags": ["Wise", "ESTRAT", "nombramiento", "consejo directivo", "ICE", "pagos transfronterizos"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "Investing.com", "url": "https://www.investing.com/news/company-news/wise-appoints-scott-hill-as-independent-nonexecutive-director-93CH-4533821" },
-      { "nombre": "The Fintech Times", "url": "https://thefintechtimes.com/wise-appoints-former-ice-cfo-scott-hill-to-board-of-directors-as-cross-border-ambitions-grow/" },
-      { "nombre": "UKTN", "url": "https://www.uktech.news/fintech/wise-strengthens-its-board-with-new-appointment-20260302" },
-      { "nombre": "Finance Magnates", "url": "https://www.financemagnates.com/executives/moves/wise-names-ex-intercontinental-exchange-cfo-scott-hill-as-independent-director/" },
-      { "nombre": "The Globe and Mail", "url": "https://www.theglobeandmail.com/investing/markets/stocks/WPLCF/pressreleases/527123/wise-strengthens-board-with-appointment-of-veteran-fintech-executive-scott-hill/" }
-    ],
-    "_nota": ""
-  },
-  {
-    "fecha": "2026-03-03",
-    "titulo": "Jefferies identifica a Wise como valor preferido entre pagos europeos para 2026",
-    "categoria": "Mercado",
-    "alcance": "Internacional",
-    "url": "https://www.investing.com/news/stock-market-news/european-payments-ripe-for-acceleration-in-2026-jefferies-names-top-picks-4414162",
-    "medio": "Investing.com",
-    "resumen": "Jefferies publicó un informe señalando que las acciones del sector de pagos europeo están 'maduras para acelerarse' en 2026. Los analistas Hannes Leitner y Charles Brennan nombraron a Wise y Adyen como sus valores preferidos entre las empresas de gran capitalización, citando la aceleración del crecimiento de ingresos. Para Wise, esperan que la aceleración se concentre en la segunda mitad del año, tras completar su re-cotización en bolsa estadounidense.",
-    "highlights": [
-      "Wise y Adyen: valores preferidos de Jefferies en pagos europeos",
-      "Aceleración esperada en H2 2026 para Wise",
-      "Tesis: re-cotización en bolsa EE.UU. como catalizador"
-    ],
-    "tags": ["Wise", "MERCADO", "Jefferies", "análisis", "pagos europeos", "bolsa"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Exclusivo de Investing.com."
-  },
-  {
-    "fecha": "2026-03-11",
-    "titulo": "Revolut obtiene la licencia bancaria completa en el Reino Unido tras cuatro años de espera",
-    "categoria": "Regulación",
-    "alcance": "Internacional",
-    "url": "https://www.cnbc.com/2026/03/11/revolut-acquires-full-uk-banking-license.html",
-    "medio": "CNBC",
-    "resumen": "Revolut obtuvo la licencia bancaria completa en el Reino Unido tras un proceso regulatorio de cuatro años. La PRA levantó todas las restricciones sobre Revolut Bank UK Ltd, permitiéndole ofrecer cuentas corrientes, crédito y depósitos protegidos por el FSCS hasta £120.000 a sus 13 millones de clientes británicos. La empresa planea invertir £3.000 millones en el Reino Unido creando 1.000 empleos.",
-    "highlights": [
-      "Licencia bancaria completa UK tras 4 años de proceso",
-      "13 millones de clientes británicos",
-      "Depósitos protegidos hasta £120.000 por FSCS",
-      "Inversión prevista de £3.000 millones y 1.000 empleos"
-    ],
-    "tags": ["Revolut", "REG", "licencia bancaria", "UK", "PRA", "FSCS"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-11/revolut-set-to-secure-full-uk-banking-license-unlocking-lending" },
-      { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/11/crypto-friendly-fintech-revolut-gains-full-uk-banking-license" },
-      { "nombre": "PYMNTS", "url": "https://www.pymnts.com/news/banking/2026/revolut-wins-long-awaited-full-banking-license-in-the-uk/" },
-      { "nombre": "Payment Expert", "url": "https://paymentexpert.com/2026/03/11/revolut-uk-banking-licence-approved/" },
-      { "nombre": "MoneyWeek", "url": "https://moneyweek.com/personal-finance/bank-accounts/revolut-secures-full-uk-banking-licence" },
-      { "nombre": "East & Partners", "url": "https://eastandpartners.com/news/revolut-secures-full-uk-banking-licence-after-four-year-process/" },
-      { "nombre": "How2Bank", "url": "https://www.how2bank.com/2026/03/18/revolut-uk-banking-licence-reshape-traditional-banking-2026/" }
-    ],
-    "_nota": ""
-  },
-  {
-    "fecha": "2026-03-05",
-    "titulo": "Revolut solicita licencia bancaria federal en Estados Unidos y nombra nuevo CEO para el país",
-    "categoria": "Regulación",
-    "alcance": "Internacional",
-    "url": "https://www.americanbanker.com/news/fintech-giant-revolut-pursues-us-bank-charter",
-    "medio": "American Banker",
-    "resumen": "Revolut presentó una solicitud formal ante la OCC y la FDIC de EE.UU. para obtener una licencia bancaria nacional. De aprobarse, Revolut podría ofrecer depósitos asegurados por la FDIC, acceso a Fedwire y ACH, y lanzar productos de crédito. Cetin Duransoy (ex-Visa y Capital One) fue nombrado nuevo CEO en EE.UU.",
-    "highlights": [
-      "Solicitud formal ante OCC y FDIC",
-      "Eliminaría dependencia de Lead Bank como socio bancario",
-      "Cetin Duransoy (ex-Visa, Capital One) nombrado CEO en EE.UU.",
-      "Acceso directo a Fedwire y ACH si aprobada"
-    ],
-    "tags": ["Revolut", "REG", "ESTRAT", "licencia bancaria", "EE.UU.", "OCC", "FDIC"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "The Irish Times / Financial Times", "url": "https://www.irishtimes.com/business/2026/03/05/revolut-applies-for-us-banking-licence-in-push-to-crack-american-market/" },
-      { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/05/crypto-friendly-fintech-giant-revolut-files-for-u-s-banking-license" },
-      { "nombre": "PYMNTS", "url": "https://www.pymnts.com/news/digital-banking/2026/revolut-drops-us-bank-buyout-plan-eyes-standalone-occ-charter/" },
-      { "nombre": "El Español", "url": "https://www.elespanol.com/invertia/empresas/banca/20260305/revolut-pide-licencia-bancaria-federal-eeuu-nombra-duransoy-nuevo-ceo-pais/1003744157125_0.html" },
-      { "nombre": "Trending Topics EU", "url": "https://www.trendingtopics.eu/from-payments-to-full-banking-revolut-bets-big-on-a-us-national-license/" },
-      { "nombre": "CryptoTimes", "url": "https://www.cryptotimes.io/2026/03/05/revolut-files-application-for-u-s-banking-license-to-expand-financial-services/" }
-    ],
-    "_nota": ""
-  },
-  {
-    "fecha": "2026-03-01",
-    "titulo": "Revolut seleccionada para el sandbox de stablecoins de la FCA del Reino Unido",
-    "categoria": "Regulación",
-    "alcance": "Internacional",
-    "url": "https://www.fca.org.uk/news/press-releases/4-firms-selected-test-stablecoin-regulatory-sandbox",
-    "medio": "FCA (Financial Conduct Authority)",
-    "resumen": "La FCA seleccionó a Revolut junto con otras tres empresas para probar servicios de stablecoins en su sandbox regulatorio. Revolut planea testear una stablecoin denominada en libras esterlinas para pagos, liquidación mayorista y trading crypto. Las pruebas iniciaron en el primer trimestre de 2026.",
-    "highlights": [
-      "Revolut entre 4 empresas seleccionadas para sandbox FCA",
-      "Stablecoin en libras esterlinas para pagos y liquidación",
-      "Resultados informarán las reglas finales del UK sobre stablecoins"
-    ],
-    "tags": ["Revolut", "REG", "TECH", "stablecoin", "FCA", "sandbox", "UK", "crypto"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/02/25/the-uk-is-picking-winners-for-its-digital-dollar-future-while-coinbase-ceo-cries-foul" },
-      { "nombre": "PYMNTS", "url": "https://www.pymnts.com/blockchain/2026/revolut-picked-to-test-stablecoins-in-uks-regulatory-sandbox" },
-      { "nombre": "CryptoSlate", "url": "https://cryptoslate.com/revolut-pound-stablecoin-uk-sandbox-trial/" },
-      { "nombre": "Ledger Insights", "url": "https://www.ledgerinsights.com/uks-fca-selects-4-for-stablecoin-sandbox-incl-revolut/" },
-      { "nombre": "Finance Magnates", "url": "https://www.financemagnates.com/cryptocurrency/fca-picks-four-firms-for-stablecoin-trials-in-sandbox-ahead-of-next-years-crypto-rules/" },
-      { "nombre": "Coinpaper", "url": "https://coinpaper.com/14985/uk-fca-shortlists-revolut-and-three-others-for-uk-stablecoin-trial" }
-    ],
-    "_nota": "Anuncio de la FCA fue el 25 de febrero; las pruebas se iniciaron en marzo 2026."
-  },
-  {
-    "fecha": "2026-03-02",
-    "titulo": "Revolut publica informe sobre estafas financieras: Telegram concentra el 22% del fraude en España",
-    "categoria": "Mercado",
-    "alcance": "Nacional",
-    "url": "https://www.eldebate.com/tecnologia/20260302/estafas-telegram-disparan-espana-revolut-advierte-auge-timos-cns_391046.html",
-    "medio": "El Debate",
-    "resumen": "Revolut publicó la cuarta edición de su Informe sobre Seguridad del Consumidor y Delitos Financieros, revelando que Telegram concentró el 22% de las estafas reportadas en España en 2025. A nivel global, los fraudes en Telegram crecieron un 233%. Las estafas de compras online lideran con un 53% en España. Revolut destacó sus medidas de seguridad con chatbot de IA antifraude.",
-    "highlights": [
-      "22% de las estafas en España originadas en Telegram",
-      "Fraude en Telegram creció 233% a nivel global",
-      "53% de estafas en España son de compras online",
-      "Revolut implementa chatbot de IA antifraude"
-    ],
-    "tags": ["Revolut", "MERCADO", "TECH", "estafas", "Telegram", "fraude", "España", "seguridad"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "Infobae", "url": "https://www.infobae.com/tecno/2026/02/27/telegram-bajo-la-lupa-las-estafas-aumentan-un-233-en-la-plataforma/" },
-      { "nombre": "Que.es", "url": "https://www.que.es/2026/03/05/boom-estafas-telegram/" },
-      { "nombre": "Bolsa Digital", "url": "https://bolsadigital.org/2026/02/26/telegram-lidera-las-estafas-digitales-en-espana-en-2025-segun-revolut/" },
-      { "nombre": "PressDigital", "url": "https://www.pressdigital.es/articulo/economia/2026-02-26/5786511-telegram-situa-como-plataforma-donde-crecieron-estafas-2025-segun-revolut" },
-      { "nombre": "Distribución Actualidad", "url": "https://www.distribucionactualidad.com/telegram-impulsa-el-auge-de-las-estafas-digitales-en-2025" }
-    ],
-    "_nota": "Algunas coberturas iniciales fueron de finales de febrero 2026, pero la difusión principal en prensa española fue en marzo."
-  },
-  {
-    "fecha": "2026-03-12",
-    "titulo": "Sifted revela planes de Revolut para un 'blitz' de productos en 2026",
-    "categoria": "Estrategia",
-    "alcance": "Internacional",
-    "url": "https://sifted.eu/articles/revolut-product-plan-2026-europe",
-    "medio": "Sifted",
-    "resumen": "Según documentos filtrados obtenidos por Sifted, Revolut está preparando el lanzamiento de una gran cantidad de nuevos productos en toda Europa y otras regiones a lo largo de 2026. La información apunta a una ofensiva significativa en productos financieros que probablemente incluya mejoras en servicios de cambio de divisas y transferencias internacionales.",
-    "highlights": [
-      "Documentos filtrados revelan ofensiva de nuevos productos",
-      "Alcance europeo y otras regiones",
-      "Incluiría mejoras en cambio de divisas y transferencias"
-    ],
-    "tags": ["Revolut", "ESTRAT", "productos", "Europa", "expansión", "fintech"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Exclusivo de Sifted. Contenido completo detrás de muro de pago."
-  },
-  {
-    "fecha": "2026-03-23",
-    "titulo": "Revolut actualiza su API de Open Banking",
-    "categoria": "Tecnología",
-    "alcance": "Internacional",
-    "url": "https://developer.revolut.com/updates",
-    "medio": "Revolut Developer Docs",
-    "resumen": "Revolut anunció una actualización técnica de su API de Open Banking programada para el 23 de marzo de 2026, incluyendo cambios en el archivo de configuración OpenID, valores de AccountSubType y endpoints DCR. Esta actualización es relevante para integradores de servicios financieros y de cambio de divisas que utilizan la infraestructura abierta de Revolut.",
-    "highlights": [
-      "Cambios en OpenID configuration file",
-      "Nuevos valores de AccountSubType",
-      "Actualización de endpoints DCR"
-    ],
-    "tags": ["Revolut", "TECH", "API", "Open Banking", "integraciones"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Documentación técnica corporativa."
-  },
-  {
-    "fecha": "2026-03-01",
-    "titulo": "Global Exchange reemplaza a Travelex en el aeropuerto de Heathrow como proveedor de cambio de divisas",
-    "categoria": "Estrategia",
-    "alcance": "Internacional",
-    "url": "https://www.global-exchange.com/en-GB/press/global-exchange-will-begin-providing-currency-exchange-services-at-heathrow-airport-starting-january-2026",
-    "medio": "Global Exchange",
-    "resumen": "Global Exchange, multinacional española con sede en Salamanca, inició operaciones como proveedor exclusivo de cambio de moneda en el aeropuerto de Heathrow desde enero de 2026, reemplazando a Travelex tras 39 años de presencia. El acuerdo comprende 23 oficinas de cambio, 98 cajeros automáticos y más de 40 dispensadores automáticos de efectivo en las cuatro terminales. La empresa consolida su posición como operador en cuatro de los cinco aeropuertos europeos con mayor tráfico.",
-    "highlights": [
-      "Global Exchange reemplaza a Travelex tras 39 años en Heathrow",
-      "23 oficinas, 98 cajeros, 40+ dispensadores automáticos",
-      "Más de 180 empleados desplegados",
-      "4 de 5 aeropuertos europeos más transitados bajo su gestión",
-      "Tecnología: pantallas multilingües, Click & Collect, autoservicio"
-    ],
-    "tags": ["Global Exchange", "Travelex", "ESTRAT", "MERCADO", "Heathrow", "aeropuertos", "cambio de moneda", "España"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "Heathrow Media Centre", "url": "https://mediacentre.heathrow.com/pressrelease/detail/23952" },
-      { "nombre": "El Economista", "url": "https://www.eleconomista.es/economia/noticias/13579060/10/25/global-exchange-gestionara-el-cambio-de-moneda-en-el-aeropuerto-de-heathrow-a-partir-de-2026.html" },
-      { "nombre": "Moodie Davitt Report", "url": "https://moodiedavittreport.com/heathrow-airport-names-global-exchange-as-new-currency-services-partner/" },
-      { "nombre": "Airport World", "url": "https://airport-world.com/new-currency-exchange-provider-at-heathrow-airport/" },
-      { "nombre": "Airports International", "url": "https://www.airportsinternational.com/article/heathrow-opts-global-exchange" }
-    ],
-    "_nota": "Las operaciones comenzaron en enero 2026; la transición y repercusión mediática se extendió hasta marzo."
-  },
-  {
-    "fecha": "2026-03-16",
-    "titulo": "Promociones de travel money en UK: John Lewis, Asda y TUI lanzan ofertas en marzo 2026",
-    "categoria": "Mercado",
-    "alcance": "Internacional",
-    "url": "https://www.johnlewisfinance.com/travel-money",
-    "medio": "John Lewis Finance",
-    "resumen": "Los principales proveedores minoristas de travel money del Reino Unido lanzaron promociones especiales: John Lewis Bureau de Change ofreció Rate Sale del 13 al 25 de marzo, Asda Travel Money del 16 al 23 de marzo, y TUI Travel Money del 19 al 27 de marzo. Estas promociones evidencian la competencia activa en el mercado minorista de cambio de divisas antes de Semana Santa.",
-    "highlights": [
-      "John Lewis Rate Sale: 13-25 marzo",
-      "Asda Travel Money: 16-23 marzo",
-      "TUI Travel Money: 19-27 marzo (solo online)",
-      "Competencia activa pre-Semana Santa"
-    ],
-    "tags": ["currency exchange", "MERCADO", "travel money", "UK", "John Lewis", "Asda", "TUI", "promociones"],
-    "imagen": "",
-    "otros_medios": [
-      { "nombre": "Asda Travel Money", "url": "https://money.asda.com/travel/travel-money/" },
-      { "nombre": "TUI Travel Money", "url": "https://www.tui.co.uk/travel-money" }
-    ],
-    "_nota": ""
-  },
-  {
-    "fecha": "2026-03-10",
-    "titulo": "HTFX abandona el régimen regulatorio del Reino Unido tras renunciar a licencia CySEC",
-    "categoria": "Regulación",
-    "alcance": "Internacional",
-    "url": "https://www.financemagnates.com/forex/",
-    "medio": "Finance Magnates",
-    "resumen": "El broker de FX y CFDs minorista HTFX anunció su salida del régimen regulatorio del Reino Unido, poco después de haber renunciado a su licencia CySEC (Chipre). Esta decisión refleja las crecientes presiones regulatorias sobre brokers minoristas de divisas en jurisdicciones tier-1 de Europa.",
-    "highlights": [
-      "HTFX renuncia a regulación UK y CySEC",
-      "Tendencia de brokers abandonando jurisdicciones tier-1",
-      "Presión regulatoria creciente en Europa"
-    ],
-    "tags": ["FX retail", "REG", "ESTRAT", "HTFX", "brokers", "UK", "CySEC"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Exclusivo de Finance Magnates."
-  },
-  {
-    "fecha": "2026-03-05",
-    "titulo": "ESMA reconoce que las normas MiFID II son demasiado complejas y costosas para inversores minoristas",
-    "categoria": "Regulación",
-    "alcance": "Internacional",
-    "url": "https://www.esma.europa.eu/",
-    "medio": "ESMA",
-    "resumen": "La Autoridad Europea de Valores y Mercados (ESMA) reconoció públicamente que el marco regulatorio MiFID II impone complejidad y costes excesivos para los inversores minoristas. Esto es relevante dado que la prohibición total del PFOF en la UE entrará en vigor el 30 de junio de 2026, afectando directamente al modelo de negocio de brokers de FX y CFDs minoristas.",
-    "highlights": [
-      "ESMA admite complejidad excesiva de MiFID II",
-      "Prohibición total del PFOF el 30 de junio de 2026",
-      "Afecta modelo de negocio de brokers FX minoristas"
-    ],
-    "tags": ["FX retail", "REG", "ESMA", "MiFID II", "PFOF", "UE", "brokers"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": ""
-  },
-  {
-    "fecha": "2026-03-01",
-    "titulo": "Demanda de trading minorista alcanza récord a principios de 2026, un 25% por encima del pico anterior",
-    "categoria": "Mercado",
-    "alcance": "Internacional",
-    "url": "https://www.financemagnates.com/forex/analysis/retail-trading-demand-hits-record-in-early-2026-up-25-from-prior-peak/",
-    "medio": "Finance Magnates",
-    "resumen": "La demanda de trading minorista (FX y CFDs) alcanzó un récord a principios de 2026 con un incremento del 25% frente al pico anterior. Las cuentas activas de CFDs superaron los 6 millones al cierre de 2025 (+14,6% en Q4). Las estimaciones proyectan que el volumen mensual del sector podría superar los $37,3 billones en 2026.",
-    "highlights": [
-      "Demanda de trading minorista récord: +25%",
-      "Más de 6 millones de cuentas activas de CFDs",
-      "Volumen proyectado: $37,3 billones/mes en 2026"
-    ],
-    "tags": ["FX retail", "MERCADO", "trading minorista", "CFDs", "volúmenes", "récord"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Exclusivo de Finance Magnates."
-  },
-  {
-    "fecha": "2026-03-08",
-    "titulo": "Phillip Securities de Singapur pivota del mercado minorista al institucional de FX",
-    "categoria": "Estrategia",
-    "alcance": "Internacional",
-    "url": "https://www.financemagnates.com/institutional-forex/retail-focused-phillip-securities-pivots-to-institutional-fx-market/",
-    "medio": "Finance Magnates",
-    "resumen": "La corredora singapurense Phillip Securities expandió sus operaciones al mercado institucional de FX mediante una alianza tecnológica con Integral. La firma utilizará los sistemas de fijación de precios y distribución de Integral para gestionar operaciones de CFDs de divisas para clientes institucionales.",
-    "highlights": [
-      "Alianza tecnológica con Integral",
-      "Diversificación de retail a institucional",
-      "Uso de sistemas de pricing y distribución de Integral"
-    ],
-    "tags": ["FX retail", "ESTRAT", "Phillip Securities", "Singapur", "institucional", "Integral"],
-    "imagen": "",
-    "otros_medios": [],
-    "_nota": "Exclusivo de Finance Magnates."
   }
 }
