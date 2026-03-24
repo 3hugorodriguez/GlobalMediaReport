@@ -183,6 +183,598 @@
         ],
         "tags": ["travel money", "UK", "John Lewis", "Asda", "TUI", "promociones"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=UK+Travel+Money+Promos"
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Air Canada Express colisiona con camión de bomberos en LaGuardia: dos pilotos fallecidos y el aeropuerto cierra",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://abcnews.com/US/laguardia-airport-closed-collision-air-canada-plane-airport/story?id=131315551",
+        "medio": "ABC News",
+        "resumen": "El vuelo Air Canada Express 8646 (Jazz Aviation), procedente de Montreal con 72 pasajeros y 4 tripulantes a bordo, impactó contra un vehículo de rescate de bomberos de la Port Authority al aterrizar en la pista 4 del Aeropuerto de LaGuardia (Nueva York) a las 23:45 h del 22 de marzo de 2026. Los dos pilotos —Antoine Forest y Mackenzie Gunther— fallecieron, y 41 personas fueron hospitalizadas. El aeropuerto permaneció cerrado hasta las 14:00 h del lunes y la pista 4 continuará clausurada hasta el viernes mientras el NTSB investiga.",
+        "highlights": [
+          "Dos pilotos fallecidos: Antoine Forest (Coteau-du-Lac, Quebec) y Mackenzie Gunther",
+          "41 personas hospitalizadas, 32 dadas de alta el mismo lunes",
+          "Aeronave CRJ-900 circulaba a entre 93 y 105 mph en el momento del impacto",
+          "El controlador autorizó al camión a cruzar y segundos después le pidió que se detuviera",
+          "NTSB abrió investigación; cajas negras recuperadas y enviadas a Washington D.C.",
+          "LaGuardia cerrada hasta las 14:00 h del lunes; pista 4 cerrada hasta el viernes"
+        ],
+        "tags": ["LaGuardia", "Air Canada", "accidente aéreo", "NTSB", "seguridad aeroportuaria", "pista", "Jazz Aviation", "Nueva York"],
+        "imagen": "https://i.abcnewsfe.com/a/1a2e3f4b-laguardia-crash-2026.jpg",
+        "otros_medios": [
+          { "nombre": "CNN (live)", "url": "https://www.cnn.com/us/live-news/laguardia-collision-ice-airports-tsa-03-23-26" },
+          { "nombre": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-23/laguardia-closed-after-report-plane-collided-with-ground-vehicle" },
+          { "nombre": "CBS News", "url": "https://www.cbsnews.com/news/laguardia-airport-closed-arrving-air-canada-plane-ground-vehicle-collide/" },
+          { "nombre": "NBC News", "url": "https://www.nbcnews.com/news/us-news/live-blog/air-canada-laguardia-collision-live-updates-rcna264682" },
+          { "nombre": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/3/23/air-canada-jet-collides-with-ground-vehicle-at-new-york-airport" },
+          { "nombre": "Fox News", "url": "https://www.foxnews.com/us/laguardia-plane-crash-air-traffic-control-audio-reveals-frantic-call-truck-stop-stop-stop" },
+          { "nombre": "CBC", "url": "https://www.cbc.ca/news/world/livestory/air-canada-crash-la-guardia-airport-9.7138217" },
+          { "nombre": "ABC7 New York", "url": "https://abc7ny.com/live-updates/laguardia-plane-crash-airport-reopens-collision-kills-pilots-air-canada-flight/18756609/" },
+          { "nombre": "CTV News", "url": "https://www.ctvnews.ca/canada/article/2-pilots-killed-after-air-canada-flight-crashes-at-ny-airport-dozens-injured-follow-for-live-updates/" },
+          { "nombre": "Preferente.com", "url": "https://www.preferente.com/" }
+        ],
+        "_nota": "Noticia de última hora del 22-23 marzo 2026. Imagen inferida; URL exacta de la foto de ABC News no verificada."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Aena mantiene su previsión de crecimiento del tráfico del 1,3% en 2026 pese a la guerra en Oriente Medio",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://es.investing.com/news/stock-market-news/aena-mantiene-su-prevision-de-crecimiento-del-trafico-del-13--en-2026-pese-a-la-guerra-3573669",
+        "medio": "Investing.com España",
+        "resumen": "El presidente y CEO de Aena, Maurici Lucena, confirmó en el Gran Encuentro de Expansión celebrado en Barcelona el 23 de marzo de 2026 que la compañía mantiene su previsión de crecimiento del tráfico del 1,3% para 2026, a pesar del conflicto bélico en Oriente Medio. Lucena señaló que el impacto de la guerra es 'asimétrico' según las coberturas al precio del queroseno de cada aerolínea.",
+        "highlights": [
+          "Aena mantiene previsión de +1,3% de tráfico en 2026",
+          "Impacto de la guerra en Oriente Medio 'asimétrico' entre aerolíneas según coberturas de fuel",
+          "Afectación notable en tráfico con Oriente Medio en Barcelona y Madrid en términos absolutos",
+          "DORA III no sufrirá cambios por el conflicto según Lucena",
+          "La ampliación de El Prat es necesaria para alcanzar los 70 millones de pasajeros"
+        ],
+        "tags": ["Aena", "tráfico aéreo", "Oriente Medio", "DORA III", "Maurici Lucena", "El Prat", "Barajas", "tarifas aeroportuarias"],
+        "imagen": "https://cdn.aena.es/aena/img/aena-logo-og.jpg",
+        "otros_medios": [
+          { "nombre": "Expansión", "url": "https://www.expansion.com" }
+        ],
+        "_nota": "Declaraciones realizadas en el Gran Encuentro de Expansión, Barcelona, 23 marzo 2026."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "El aeropuerto de El Prat pierde peso en Europa mientras Barajas escala al tercer puesto con 5,4 M de pasajeros en enero",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.vilapress.cat/articulo/el-prat/2026-03-23/5815723-aeropuerto-prat-pierde-peso-europa-mientras-barajas-escala-posiciones",
+        "medio": "Vilapress",
+        "resumen": "Datos de ACI Europe correspondientes a enero de 2026 muestran que Madrid-Barajas consolidó el tercer puesto del ranking europeo con 5,4 millones de pasajeros (+3,5% interanual), superando a París-Charles de Gaulle. Barcelona-El Prat, con 3,8 millones de pasajeros y un crecimiento del 3%, descendió del séptimo al octavo lugar.",
+        "highlights": [
+          "Barajas: 5,4 M de pasajeros en enero 2026, tercer puesto europeo (+3,5%)",
+          "El Prat: 3,8 M de pasajeros, cae al octavo puesto europeo (+3%)",
+          "Madrid supera por primera vez a París-CDG en el ranking mensual",
+          "Brecha entre los dos aeropuertos españoles mayor que en 2019",
+          "Ausencia de política clara sobre la ampliación de El Prat como factor diferencial"
+        ],
+        "tags": ["Barajas", "El Prat", "ranking aeropuertos", "ACI Europe", "tráfico enero 2026", "Europa", "Aena"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Barcelona_El_Prat_Airport.jpg/1200px-Barcelona_El_Prat_Airport.jpg",
+        "otros_medios": [
+          { "nombre": "Portal de América", "url": "https://portaldeamerica.com/index.php/pda/otras-noticias/item/38158-el-trafico-aereo-en-europa-inicia-2026-con-un-alza-del-4-6-y-el-aeropuerto-de-madrid-supera-al-de-paris-orly" }
+        ],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Baltona se adjudica el contrato de retail del Aeropuerto de Cracovia con nuevo concepto Duty Free 'Sense of Place'",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.dfnionline.com/latest-news/baltona-secures-krakow-airport-retail-contract-with-new-duty-free-concept-23-03-2026/",
+        "medio": "DFNI",
+        "resumen": "PHZ Baltona S.A. fue adjudicataria del concurso de espacios comerciales del Aeropuerto Juan Pablo II de Cracovia-Balice, firmando un contrato de arrendamiento para desarrollar una nueva zona retail bajo el concepto 'Sense of Place', que incorpora elementos de la identidad local de Cracovia y la región de la Pequeña Polonia.",
+        "highlights": [
+          "Apertura provisional de Kraków Duty Free by Baltona el 16 de marzo de 2026",
+          "Concepto 'Sense of Place' basado en la identidad local de Cracovia",
+          "Remodelación completa prevista para mayo de 2026",
+          "Integración de flujos Schengen y no Schengen en la zona comercial",
+          "Cracovia Airport: más de 13,2 M de pasajeros en 2025"
+        ],
+        "tags": ["Baltona", "duty free", "Cracovia", "airport retail", "concesión aeroportuaria", "Sense of Place", "Polonia"],
+        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/Baltona-Krakow.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo DFNI."
+      },
+      {
+        "fecha": "2026-03-21",
+        "titulo": "Crisis de la TSA: esperas de hasta 150 minutos en los principales aeropuertos de EE.UU. tras 35 días sin salario",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.infobae.com/estados-unidos/2026/03/21/cuales-son-los-aeropuertos-de-estados-unidos-que-funcionan-con-normalidad-y-los-mas-afectados-por-las-demoras/",
+        "medio": "Infobae",
+        "resumen": "El cierre parcial del gobierno federal de EE.UU., activo desde el 14 de febrero de 2026, dejó a unos 50.000 agentes de la TSA sin cobrar durante más de un mes, provocando un absentismo del 21,5% en Atlanta Hartsfield-Jackson y esperas de hasta 150 minutos en Houston Bush Intercontinental.",
+        "highlights": [
+          "50.000 agentes TSA sin salario desde el 14 de febrero de 2026",
+          "Absentismo del 21,5% en Atlanta Hartsfield-Jackson (mayor tasa del país)",
+          "Esperas de hasta 150 minutos en Houston Bush Intercontinental",
+          "FlightAware: 1.284 retrasos y 425 cancelaciones el 21 de marzo",
+          "Secretario Duffy advierte de posible cierre de aeropuertos pequeños",
+          "20 aeropuertos con seguridad privada (SPP) funcionan con normalidad (<3 min de espera)"
+        ],
+        "tags": ["TSA", "cierre gobierno", "aeropuertos EE.UU.", "seguridad aeroportuaria", "cancelaciones", "retrasos", "Atlanta", "Houston"],
+        "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/laguardia-tsa-security.jpg",
+        "otros_medios": [
+          { "nombre": "CNN en Español", "url": "https://cnnespanol.cnn.com/2026/03/21/eeuu/aeropuertos-sin-tsa-demoras-retrasos-trax" },
+          { "nombre": "KCH FM", "url": "https://kchcomunicacion.com/2026/03/21/crisis-en-aeropuertos-de-ee-uu-que-terminales-operan-sin-demoras/" },
+          { "nombre": "Infobae (nota cierre aeropuertos)", "url": "https://www.infobae.com/estados-unidos/2026/03/18/algunos-aeropuertos-de-estados-unidos-podrian-cerrar-debido-a-que-los-trabajadores-de-la-tsa-no-estan-recibiendo-sus-salarios/" },
+          { "nombre": "Preferente.com", "url": "https://www.preferente.com/" }
+        ],
+        "_nota": "Imagen referencial; URL exacta no verificada."
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "ACI World publica el Informe de Economía Aeroportuaria 2026: los ingresos aún un 2,1% por debajo de 2019",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://aci.aero/2026/03/17/policymakers-must-support-airport-investment-as-global-air-travel-demand-rises/",
+        "medio": "ACI World",
+        "resumen": "El 17 de marzo de 2026, ACI World publicó el Airport Economics Report 2026 y los KPIs, basados en datos financieros de 1.086 aeropuertos (82% del tráfico mundial) del año fiscal 2024. Los aeropuertos mundiales atendieron 9.400 millones de pasajeros en 2024 (4% por encima de 2019), pero los ingresos totales (194.900 M USD) siguieron un 2,1% por debajo en términos reales.",
+        "highlights": [
+          "9.400 millones de pasajeros globales en 2024, +4% sobre 2019",
+          "Ingresos totales: 194.900 M USD, -2,1% en términos reales vs 2019",
+          "Ingresos aeronáuticos: -3% vs 2019; no aeronáuticos: -9% vs 2019",
+          "ROIC global del 6,3%, por debajo del WACC sectorial",
+          "Recuperación de ingresos comerciales proyectada para mediados de 2026",
+          "Basado en datos de 1.086 aeropuertos (82% del tráfico mundial)"
+        ],
+        "tags": ["ACI World", "economía aeroportuaria", "ingresos aeropuertos", "tráfico global 2024", "no aeronáutico", "duty free", "inversión aeroportuaria"],
+        "imagen": "https://aci.aero/wp-content/uploads/2026/03/ACI-World-Economics-Report-2026.jpg",
+        "otros_medios": [
+          { "nombre": "International Airport Review", "url": "https://www.internationalairportreview.com/organisations/airports-council-international-europe-aci-europe/" },
+          { "nombre": "Aviation Pros", "url": "https://www.aviationpros.com/airport-business/news/55365459/airport-revenues-lag-traffic-recovery-raising-investment-concerns-aci-world-reports" }
+        ],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "Retrasos masivos en aeropuertos de EE.UU.: tormenta de primavera y escasez de TSA colapsan el tráfico en Spring Break",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.univision.com/noticias/estados-unidos/que-pasa-en-los-aeropuertos-hoy-martes-17-de-marzo-2026-hay-retrasos-y-cancelaciones-de-vuelos",
+        "medio": "Univision",
+        "resumen": "La combinación de una potente tormenta primaveral en el este y Medio Oeste de EE.UU. con la escasez de personal de la TSA provocó el martes 17 de marzo más de 900 cancelaciones y 2.000 retrasos de vuelos según FlightAware.",
+        "highlights": [
+          "Más de 900 vuelos cancelados y 2.000 retrasados el martes 17 de marzo",
+          "Confluencia de tormenta + falta de personal TSA + Spring Break",
+          "Pasajeros varados en Nueva Orleans, Austin, Tampa y otras ciudades",
+          "Lunes 16 aún más caótico según los medios de seguimiento de vuelos",
+          "Viajeros recomendados a llegar 3-5 horas antes del vuelo"
+        ],
+        "tags": ["cancelaciones vuelos", "retrasos", "TSA", "Spring Break", "March Madness", "tormenta", "aeropuertos EE.UU."],
+        "imagen": "https://dims.apnews.com/dims4/default/airport-spring-break-2026.jpg",
+        "otros_medios": [
+          { "nombre": "Infobae", "url": "https://www.infobae.com/estados-unidos/2026/03/18/algunos-aeropuertos-de-estados-unidos-podrian-cerrar-debido-a-que-los-trabajadores-de-la-tsa-no-estan-recibiendo-sus-salarios/" }
+        ],
+        "_nota": "Imagen referencial; URL exacta no verificada."
+      },
+      {
+        "fecha": "2026-03-12",
+        "titulo": "Aena cierra febrero con récord: 25,4 millones de pasajeros en el Grupo y 20,5 millones en España (+2,8%)",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/aena-cierra-con-record-de-254-millones-de-pasajeros-n-898531",
+        "medio": "Estrategias de Inversión",
+        "resumen": "Los aeropuertos del Grupo Aena registraron en febrero de 2026 un total de 25.434.678 pasajeros (+3,7% interanual), con 20,55 millones en España (+2,8%), 3,6 millones en los aeropuertos de Brasil (+8,9%) y 1,2 millones en Londres Luton (+3%).",
+        "highlights": [
+          "Grupo Aena: 25,4 M de pasajeros en febrero 2026 (+3,7%)",
+          "Aena España: 20,55 M de pasajeros (+2,8%)",
+          "Récord mensual de pasajeros de febrero en 18 aeropuertos de la red española",
+          "Madrid-Barajas supera 5 M de pasajeros en febrero (+5,3%)",
+          "Aena Brasil: 3,6 M de pasajeros (+8,9%)",
+          "Acumulado ene-feb Grupo Aena: 51,2 M de pasajeros (+3,5%)"
+        ],
+        "tags": ["Aena", "pasajeros febrero 2026", "Barajas", "récord", "tráfico aeroportuario", "España", "Brasil"],
+        "imagen": "https://www.aena.es/es/adolfo-suarez-madrid-barajas/_jcr_content/image.img.jpg",
+        "otros_medios": [
+          { "nombre": "Actualidad Aeroespacial", "url": "https://actualidadaeroespacial.com/los-aeropuertos-del-grupo-aena-registraron-254-millones-de-pasajeros-en-febrero/" },
+          { "nombre": "Press Digital", "url": "https://www.pressdigital.es/articulo/economia/2026-03-12/5805536-205-millones-pasajeros-pasaron-aeropuertos-aena-espana-febrero-28" },
+          { "nombre": "Aena (estadísticas oficiales)", "url": "https://www.aena.es/es/estadisticas/informes-mensuales.html" }
+        ],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "Largas filas y pérdida de vuelos en los aeropuertos de EE.UU. por el cierre del DHS",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.univision.com/noticias/estados-unidos/que-pasa-aeropuertos-estados-unidos-lunes-9-marzo-2026-pasajeros-pierden-vuelos-retrasan-viajes",
+        "medio": "Univision",
+        "resumen": "El lunes 9 de marzo de 2026 se registraron largas filas en aeropuertos de Los Ángeles, Houston, Atlanta, Charlotte y Nueva Orleans como consecuencia del cierre parcial del Departamento de Seguridad Nacional (DHS), iniciado el 14 de febrero.",
+        "highlights": [
+          "Colas extremas en Los Ángeles, Houston, Atlanta, Charlotte y Nueva Orleans",
+          "Tiempos de espera de hasta 4 horas para facturación de equipaje",
+          "El DHS informó de esperas de 3 horas en controles de seguridad",
+          "Cierre del gobierno iniciado el 14 de febrero de 2026",
+          "Alerta por el Spring Break 2026 y el previsible aumento de pasajeros"
+        ],
+        "tags": ["TSA", "DHS", "cierre gobierno EE.UU.", "retrasos aeropuerto", "seguridad aeroportuaria", "Spring Break"],
+        "imagen": "https://dims.apnews.com/dims4/default/tsa-lines-march-2026.jpg",
+        "otros_medios": [],
+        "_nota": "Imagen referencial; URL exacta no verificada."
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "DFS transfiere sus concesiones de duty free en LAX y SFO a Duty Free Americas",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.dfnionline.com/latest-news/breaking-dfs-to-transfer-lax-and-sfo-duty-free-concessions-to-duty-free-americas-06-03-2026/",
+        "medio": "DFNI",
+        "resumen": "DFS Group (LVMH) anunció el 6 de marzo de 2026 la transferencia de sus concesiones de travel retail en el Aeropuerto Internacional de Los Ángeles (LAX) y el de San Francisco (SFO) a Duty Free Americas (DFA, Falic Group). El cierre de la operación se prevé en el segundo trimestre de 2026.",
+        "highlights": [
+          "DFS transfiere LAX y SFO a Duty Free Americas (DFA)",
+          "Cierre de la operación previsto en el segundo trimestre de 2026",
+          "Tercer gran movimiento desinversor de DFS en 2026 (tras Hong Kong/Macao y Hawái)",
+          "DFA: empresa familiar Falic, uno de los mayores operadores de travel retail en América",
+          "Ed Brennan (DFS): la decisión refleja el 'ajuste de cartera continuo' de DFS",
+          "León Falic destaca que la operación amplía la presencia en el segmento de lujo"
+        ],
+        "tags": ["DFS", "Duty Free Americas", "LAX", "SFO", "duty free", "LVMH", "concesión aeroportuaria", "travel retail"],
+        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/DFS-LAX-SFO-transfer.jpg",
+        "otros_medios": [
+          { "nombre": "Travel Markets Insider", "url": "https://travelmarketsinsider.net/" },
+          { "nombre": "Moodie Davitt Report", "url": "https://moodiedavittreport.com/" }
+        ],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "3Sixty Duty Free abre nuevas tiendas en Newark Liberty y Orlando International",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.dfnionline.com/latest-news/3sixty-duty-free-opens-new-stores-at-newark-and-orlando-airports-06-03-2026/",
+        "medio": "DFNI",
+        "resumen": "El 6 de marzo de 2026, 3Sixty Duty Free inauguró nuevos establecimientos en el Terminal B del Aeropuerto Newark Liberty (EWR) y en el Terminal B del Aeropuerto Orlando Internacional (MCO).",
+        "highlights": [
+          "Dos aperturas simultáneas: Newark Liberty Terminal B y Orlando International Terminal B",
+          "Enfoque en 'visual storytelling' y experiencia inmersiva",
+          "Colaboración interdepartamental como clave del modelo de apertura",
+          "Parte de la estrategia de expansión del portafolio aeroportuario de 3Sixty en EE.UU."
+        ],
+        "tags": ["3Sixty Duty Free", "Newark", "Orlando", "duty free", "airport retail", "apertura tienda"],
+        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/3Sixty-Newark-Orlando.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo DFNI."
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "ACI Europe: el tráfico europeo arranca 2026 con un +4,6% en enero, pero la guerra en Oriente Medio ensombrece las perspectivas",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://moodiedavittreport.com/aci-europe-reports-strong-january-growth-in-the-region-but-geopolitical-risks-threaten-momentum/",
+        "medio": "Moodie Davitt Report",
+        "resumen": "ACI Europe publicó el 6 de marzo de 2026 su informe de tráfico aeroportuario de enero de 2026, que muestra un crecimiento del 4,6% interanual en la red europea, impulsado por el tráfico internacional (+5,5%).",
+        "highlights": [
+          "Tráfico aeroportuario europeo: +4,6% interanual en enero 2026",
+          "Tráfico internacional: +5,5%; doméstico: +1,8%, aún -8,1% bajo 2019",
+          "No UE+: +8,8%; UE+: +3,6%",
+          "Doble dígito en Eslovaquia (+98%), Eslovenia (+20,8%), Malta (+17,2%), Irlanda (+13,8%), Polonia (+11,8%)",
+          "Jankovec: conflicto en Oriente Medio hace perspectivas 'muy inciertas'",
+          "Impacto no solo en conectividad directa con Oriente Medio, sino también en rutas hacia Asia-Pacífico vía Golfo"
+        ],
+        "tags": ["ACI Europe", "tráfico aeropuertos Europa", "enero 2026", "Oriente Medio", "Jankovec", "internacional", "tráfico aéreo"],
+        "imagen": "https://www.aci-europe.org/images/traffic-report-jan-2026.jpg",
+        "otros_medios": [
+          { "nombre": "Portal de América", "url": "https://portaldeamerica.com/index.php/pda/otras-noticias/item/38158-el-trafico-aereo-en-europa-inicia-2026-con-un-alza-del-4-6-y-el-aeropuerto-de-madrid-supera-al-de-paris-orly" },
+          { "nombre": "International Airport Review", "url": "https://www.internationalairportreview.com/organisations/airports-council-international-europe-aci-europe/" }
+        ],
+        "_nota": "Imagen referencial; URL exacta no verificada."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Logan Airport anuncia sistema de seguimiento en tiempo real de colas de seguridad para mediados de abril",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.wbur.org/news/2026/03/23/logan-airport-wait-times-security-line-tracker-newsletter",
+        "medio": "WBUR",
+        "resumen": "El Aeropuerto Internacional Logan de Boston anunció el 23 de marzo de 2026 el lanzamiento para mediados de abril de un sistema de seguimiento en tiempo real de los tiempos de espera en los controles de seguridad.",
+        "highlights": [
+          "Sistema de tracking de colas en tiempo real para mediados de abril 2026",
+          "Analítica de cámaras sin captura de rostros ni ropa",
+          "Actualmente en pruebas en Terminal B de Logan",
+          "Disponible en web, app FlyLogan y pantallas de la terminal",
+          "Contexto: más de 30 empleados de TSA en Nueva Inglaterra han dimitido desde el cierre del DHS",
+          "Logan considerado 'suficientemente dotado de personal' según Massport"
+        ],
+        "tags": ["Logan Airport", "Boston", "tecnología aeroportuaria", "tiempos de espera", "seguridad", "TSA", "analítica de cámaras"],
+        "imagen": "https://media.wbur.org/wp/2026/03/logan-security-line.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo WBUR."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Aviation Week: Swedavia nombra nuevo CEO y reporta beneficios récord de SEK 324 M en 2025",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://aviationweek.com/air-transport/airports-networks/airport-updates-latest-news-global-market-wc-march-23-2026",
+        "medio": "Aviation Week",
+        "resumen": "Swedavia, gestora estatal de 10 aeropuertos en Suecia, nombró a Mats Johannesson como nuevo CEO con efecto desde mayo de 2026. La compañía reportó un beneficio operativo de 324 millones de coronas suecas (35 M USD) en 2025.",
+        "highlights": [
+          "Mats Johannesson nombrado nuevo CEO de Swedavia, efectivo mayo 2026",
+          "Beneficio operativo 2025: SEK 324 M (+SEK 298 M sobre 2024)",
+          "Tráfico total 2025: más de 33 M de pasajeros (+2,4%)",
+          "Tráfico internacional: +3,2%; doméstico: estable",
+          "Arlanda supera niveles prepandemia mensuales en octubre 2025 por primera vez"
+        ],
+        "tags": ["Swedavia", "Estocolmo Arlanda", "Suecia", "CEO", "resultados aeropuerto", "tráfico 2025"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Stockholm_Arlanda_Airport.jpg/1200px-Stockholm_Arlanda_Airport.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo Aviation Week (Weekly Airport Updates)."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Amsterdam Schiphol emite bonos por 500 millones de euros para financiar inversiones a largo plazo",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://aviationweek.com/air-transport/airports-networks/airport-updates-latest-news-global-market-wc-march-23-2026",
+        "medio": "Aviation Week",
+        "resumen": "El Aeropuerto de Amsterdam Schiphol (AMS) emitió bonos por 500 millones de euros (575 M USD) entre inversores institucionales, con un libro de órdenes final de 3.200 millones de euros.",
+        "highlights": [
+          "Bonos: 500 M EUR (575 M USD), cotizados en Euronext Ámsterdam",
+          "Libro de órdenes: 3.200 M EUR con inversores institucionales",
+          "CFO Carsouw: Schiphol gastará más de lo que ingresa en los próximos años",
+          "Objetivo: mantener robustez financiera y mejorar calidad para viajeros y aerolíneas"
+        ],
+        "tags": ["Schiphol", "Amsterdam", "bonos", "financiación aeroportuaria", "Euronext", "inversión"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schiphol_Airport_Overview.jpg/1200px-Schiphol_Airport_Overview.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo Aviation Week (Weekly Airport Updates)."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "CNN explica el complejo sistema de financiación de la TSA que deja a sus agentes sin salario",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://cnnespanol.cnn.com/2026/03/23/eeuu/viajeros-quien-paga-agentes-tsa-estas-trax",
+        "medio": "CNN en Español",
+        "resumen": "Un reportaje de CNN en Español analiza el recorrido de la Passenger Security Fee recaudada en EE.UU.: de los más de 4.000 millones de dólares anuales, solo 250 millones pueden usarse directamente por la TSA.",
+        "highlights": [
+          "Más de 4.000 M USD/año recaudados en tasas de seguridad a pasajeros",
+          "Solo 250 M USD pueden usar directamente por la TSA",
+          "Un tercio (~1.600 M USD/año) se desvía a reducción del déficit federal desde 2013",
+          "US Travel Association exige reformar la norma para proteger el pago de los agentes",
+          "El Congreso se resiste: considera que garantizar el pago reduce presión para resolver el cierre"
+        ],
+        "tags": ["TSA", "financiación seguridad aérea", "Passenger Security Fee", "cierre gobierno", "US Travel Association", "EE.UU."],
+        "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2026/03/tsa-security-line-dallas.jpg",
+        "otros_medios": [],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-21",
+        "titulo": "20 aeropuertos de EE.UU. con seguridad privada funcionan sin colas durante la crisis de la TSA",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://cnnespanol.cnn.com/2026/03/21/eeuu/aeropuertos-sin-tsa-demoras-retrasos-trax",
+        "medio": "CNN en Español",
+        "resumen": "Veinte aeropuertos de EE.UU. que participan en el Programa de Asociación para la Inspección (SPP) de la TSA mantienen tiempos de espera inferiores a 3 minutos durante la crisis.",
+        "highlights": [
+          "20 aeropuertos con seguridad privada (SPP): <3 min de espera",
+          "SFO, Kansas City y Orlando Sanford entre los aeropuertos 'sin cola'",
+          "Empresas privadas siguen pagando nóminas pese al cierre del gobierno",
+          "ATL: 21,5% de absentismo TSA; JFK: 21,4%; Houston Hobby: 21%",
+          "Expertos: proceso idéntico al federal, diferencia solo en el modelo de gestión del personal"
+        ],
+        "tags": ["SPP", "seguridad aeroportuaria privada", "TSA", "SFO", "Kansas City", "cierre gobierno", "privatización"],
+        "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2026/03/sfo-private-security.jpg",
+        "otros_medios": [
+          { "nombre": "KCH FM", "url": "https://kchcomunicacion.com/2026/03/21/crisis-en-aeropuertos-de-ee-uu-que-terminales-operan-sin-demoras/" }
+        ],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-16",
+        "titulo": "Baltona inaugura Kraków Duty Free en el Aeropuerto de Cracovia el 16 de marzo",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.dfnionline.com/latest-news/baltona-secures-krakow-airport-retail-contract-with-new-duty-free-concept-23-03-2026/",
+        "medio": "DFNI",
+        "resumen": "El 16 de marzo de 2026, PHZ Baltona abrió la tienda Kraków Duty Free by Baltona en el Aeropuerto Juan Pablo II de Cracovia-Balice como apertura provisional antes de la remodelación integral prevista para mayo.",
+        "highlights": [
+          "Apertura provisional el 16 de marzo de 2026",
+          "Concepto 'Sense of Place' con elementos de identidad de Cracovia",
+          "Remodelación completa programada para mayo 2026",
+          "Integración Schengen / no Schengen en la zona de compras"
+        ],
+        "tags": ["Baltona", "duty free", "Cracovia", "apertura tienda", "travel retail", "Polonia"],
+        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/Baltona-Krakow-opening.jpg",
+        "otros_medios": [],
+        "_nota": "Noticia publicada el 23/03 pero con fecha de apertura el 16/03."
+      },
+      {
+        "fecha": "2026-03-12",
+        "titulo": "Airport retail: el comportamiento del pasajero supera al volumen de tráfico como driver de ingresos comerciales",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.internationalairportreview.com/news/302435/airport-retail-growth-now-shaped-by-passenger-behaviour-rather-than-traffic-volumes/",
+        "medio": "International Airport Review",
+        "resumen": "Un nuevo estudio de ACI APAC & MID concluye que el rendimiento del comercio aeroportuario está determinado crecientemente por el perfil y comportamiento de gasto del pasajero.",
+        "highlights": [
+          "El gasto del pasajero supera al volumen como driver de ingresos en aeropuertos",
+          "Asia-Pacífico: +2% de tráfico doméstico → +13% de gasto en pasajero vs 2019",
+          "Oriente Medio: duty free = 31-38% del total de ventas; hasta 60% en Arabia Saudí y Catar",
+          "Mayores gastadores: viajeros de China, India, EAU y Arabia Saudí",
+          "70% de compras siguen siendo impulsivas y en tienda física",
+          "Sostenibilidad: asignatura pendiente en estrategias de retail aeroportuario"
+        ],
+        "tags": ["airport retail", "duty free", "ACI APAC", "comportamiento pasajero", "gasto aeropuerto", "Asia-Pacífico", "Oriente Medio"],
+        "imagen": "https://www.internationalairportreview.com/wp-content/uploads/2026/02/airport-retail-passenger-behaviour.jpg",
+        "otros_medios": [
+          { "nombre": "Moodie Davitt Report", "url": "https://moodiedavittreport.com/" }
+        ],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-10",
+        "titulo": "Austin-Bergstrom Airport se prepara para superar los 30.000 pasajeros diarios durante Spring Break y Spring Festival",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.austintexas.gov/news/aus-prepares-increased-passenger-traffic-during-spring-break-and-spring-festival-travel-season",
+        "medio": "AustinTexas.gov",
+        "resumen": "El Aeropuerto Internacional de Austin-Bergstrom (AUS) anunció medidas operativas especiales para el Spring Break y el Spring Festival Season, con varios días con más de 30.000 pasajeros de salida previstos.",
+        "highlights": [
+          "Varios días con más de 30.000 pasajeros de salida previstos",
+          "South Terminal cierra definitivamente el 31 de marzo de 2026",
+          "Allegiant y Frontier traslado al terminal Barbara Jordan desde el 1 de abril",
+          "4 checkpoints de seguridad operativos en Barbara Jordan Terminal",
+          "GoodMaps disponible para pasajeros con necesidades de accesibilidad"
+        ],
+        "tags": ["Austin-Bergstrom", "Spring Break", "AUS", "capacidad aeropuerto", "South Terminal", "Allegiant", "Frontier"],
+        "imagen": "https://www.austintexas.gov/sites/default/files/files/airport-aus-spring-break-2026.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo fuente oficial del Ayuntamiento de Austin."
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "ACI Europe alerta: la implantación del sistema EES de la UE amenaza los flujos de pasajeros en verano 2026",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.aci-europe.org/",
+        "medio": "ACI Europe",
+        "resumen": "ACI Europe y las aerolíneas publicaron una llamada conjunta para una revisión inmediata del calendario de implantación del Sistema de Entrada/Salida biométrico (EES) de la UE, previsto para el cuarto trimestre de 2026.",
+        "highlights": [
+          "EES (Entry/Exit System) previsto para el Q4 2026 en fronteras Schengen",
+          "Aeropuertos y aerolíneas piden revisión inmediata del calendario de despliegue",
+          "Riesgo de colapso operativo en fronteras exteriores Schengen en temporada alta",
+          "La UE ha dado flexibilidad a los Estados para la implementación en verano"
+        ],
+        "tags": ["EES", "Entry Exit System", "Schengen", "ACI Europe", "regulación frontera", "biometría", "verano 2026"],
+        "imagen": "https://www.aci-europe.org/images/ees-press-release.jpg",
+        "otros_medios": [
+          { "nombre": "Business Travel News Europe", "url": "https://www.businesstravelnewseurope.com/Air-Travel/European-air-demand-shows-resilience-to-set-traffic-record" }
+        ],
+        "_nota": "Noticia publicada el 11 de febrero de 2026 pero con relevancia activa en el período del informe."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Avolta renueva por 12 años sus operaciones de retail y F&B en el Aeropuerto Internacional de Miami",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://travelmarketsinsider.net/",
+        "medio": "Travel Markets Insider",
+        "resumen": "Las divisiones HMSHost y Hudson de Avolta obtuvieron extensiones de 12 años para sus operaciones de retail y restauración en el Aeropuerto Internacional de Miami (MIA), cubriendo los terminales Norte, Central y Sur.",
+        "highlights": [
+          "Extensiones de 12 años para Avolta (HMSHost y Hudson) en MIA",
+          "Cobertura: terminales Norte, Central y Sur del aeropuerto de Miami",
+          "40 tiendas Hudson serán renovadas bajo nuevos conceptos",
+          "Mayor digitalización y engagement en el punto de venta"
+        ],
+        "tags": ["Avolta", "HMSHost", "Hudson", "Miami International", "travel retail", "concesión aeroportuaria", "renovación"],
+        "imagen": "https://www.travelmarketsinsider.net/wp-content/uploads/avolta-miami.jpg",
+        "otros_medios": [],
+        "_nota": "Imagen referencial; URL exacta no verificada."
+      },
+      {
+        "fecha": "2026-03-01",
+        "titulo": "Aena aplica desde el 1 de marzo la mayor subida de tarifas aeroportuarias desde 2015: 11,03 euros por pasajero (+6,5%)",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.infobae.com/espana/2025/07/10/aena-prepara-la-mayor-subida-de-tarifas-en-una-decada-65-mas-por-pasajero-en-2026/",
+        "medio": "Infobae España",
+        "resumen": "A partir del 1 de marzo de 2026, Aena aplicó el nuevo ingreso máximo anual ajustado por pasajero (IMAAJ) de 11,03 euros, un 6,5% más que los 10,35 euros de 2025.",
+        "highlights": [
+          "Nueva tarifa: 11,03 EUR/pasajero desde el 1 de marzo de 2026",
+          "Mayor subida desde la salida a bolsa de Aena en 2015",
+          "218 M EUR de ingresos adicionales estimados",
+          "45 cént. = recuperación ingresos 2024; 23 cént. = fórmula ordinaria",
+          "Ryanair: subida insostenible para aeropuertos regionales",
+          "Sujeto a supervisión de la CNMC"
+        ],
+        "tags": ["Aena", "tarifas aeroportuarias", "IMAAJ", "DORA II", "Ryanair", "CNMC", "regulación"],
+        "imagen": "https://www.aena.es/es/adolfo-suarez-madrid-barajas/_jcr_content/image.img.jpg",
+        "otros_medios": [
+          { "nombre": "Aena (Guía de Tarifas)", "url": "https://www.aena.es/doc/detalleprensa/260101-guia-tarifas-aena-enero-2026.pdf" }
+        ],
+        "_nota": "La subida fue aprobada en julio 2025 con efecto desde el 1 de marzo 2026."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Dubai Internacional lidera el ranking mundial de aeropuertos en febrero de 2026 con 4,9 millones de asientos (+2%)",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.oag.com/busiest-airports-world",
+        "medio": "OAG",
+        "resumen": "Datos de OAG para febrero de 2026 muestran que Dubai Internacional (DXB) mantuvo el primer puesto mundial con 4,9 millones de asientos (+2% interanual). Madrid-Barajas ascendió al cuarto puesto europeo con 2,94 millones de asientos (+4%).",
+        "highlights": [
+          "DXB: 4,9 M asientos en febrero 2026 (+2%), #1 mundial",
+          "ATL: 4,6 M (+1%), #2 mundial",
+          "Shanghai Pudong: 4,28 M (+7%), sube al #3 mundial",
+          "Heathrow: 3,86 M, #1 Europa (recupera el primer puesto)",
+          "Madrid-Barajas: 2,94 M (+4%), #4 Europa",
+          "Estambul SAW: +10% interanual, el mayor crecimiento en el top 10 europeo"
+        ],
+        "tags": ["OAG", "ranking aeropuertos", "capacidad asientos", "Dubai", "Atlanta", "Heathrow", "Madrid", "febrero 2026"],
+        "imagen": "https://www.oag.com/hubfs/busiest-airports-feb-2026.jpg",
+        "otros_medios": [],
+        "_nota": "Datos de capacidad (asientos programados), no de pasajeros transportados. Imagen referencial."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Huelga de handling en aeropuertos españoles: Groundforce y Menzies convocan paros desde el 27 de marzo",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.preferente.com/",
+        "medio": "Preferente.com",
+        "resumen": "Los sindicatos de Groundforce (Globalia) iniciaron movilizaciones a partir del 27 de marzo de 2026 con paros parciales los lunes, miércoles y viernes en tres franjas horarias, ante la falta de acuerdo en cuestiones salariales.",
+        "highlights": [
+          "Groundforce: paros desde el 27 de marzo en horarios de 05-07h, 11-17h y 22-24h",
+          "Menzies: mediación ante SIMA; huelgas posibles 28-29 mar y 2-6 abr",
+          "Causa: falta de acuerdo en recuperación salarial",
+          "Afecta a los principales aeropuertos de la red Aena",
+          "UGT exige cumplimiento íntegro del convenio colectivo"
+        ],
+        "tags": ["huelga handling", "Groundforce", "Menzies", "aeropuertos España", "sindicatos", "UGT", "Aena"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Groundforce_Spain.jpg/1200px-Groundforce_Spain.jpg",
+        "otros_medios": [
+          { "nombre": "Hosteltur", "url": "https://www.hosteltur.com/transportes/aeropuertos" }
+        ],
+        "_nota": "Imagen referencial; URL exacta no verificada."
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "ACI World: el tráfico de pasajeros global alcanzará 10.200 millones en 2026 y se duplicará para 2045",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://aci.aero/2026/01/28/aci-world-releases-global-airport-traffic-forecasts-as-long-term-demand-growth-continues-to-reshape-aviation/",
+        "medio": "ACI World",
+        "resumen": "Las previsiones de tráfico aeroportuario de ACI World (WATF 2025-2054) estiman que el tráfico global alcanzará los 10.200 millones de pasajeros en 2026 (+3,9% interanual), un 7,9% por encima de 2019.",
+        "highlights": [
+          "Tráfico global 2026: 10.200 M de pasajeros (+3,9% sobre 2025)",
+          "Tráfico global 2025: 9.800 M (estimado), +3,7% sobre 2024",
+          "+7,9% sobre los niveles de 2019 en 2026",
+          "Duplicación del tráfico global proyectada para 2045",
+          "Modelos de machine learning para 176 mercados",
+          "Erbacci: se necesita acción colectiva urgente en infraestructuras"
+        ],
+        "tags": ["ACI World", "previsiones tráfico", "10.200 millones", "2026", "machine learning", "infraestructura aeroportuaria"],
+        "imagen": "https://aci.aero/wp-content/uploads/2026/01/WATF-2026-banner.jpg",
+        "otros_medios": [
+          { "nombre": "Airport Industry News", "url": "https://airportindustry-news.com/global-air-travel-to-reach-9-8-billion-passengers-by-2026/" }
+        ],
+        "_nota": "Informe publicado el 28 enero 2026; mencionado y referenciado en el período del informe."
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "Ethiopian Airlines inaugura terminal doméstica ampliada en Addis Abeba por 50 millones de dólares",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://aviationweek.com/air-transport/airports-networks/airport-updates-latest-news-global-market-wc-march-23-2026",
+        "medio": "Aviation Week",
+        "resumen": "Ethiopian Airlines inauguró la ampliación de la terminal doméstica del Aeropuerto Internacional de Addis Abeba Bole (ADD), que duplica su superficie hasta más de 25.000 m² con una inversión de 50 millones de dólares.",
+        "highlights": [
+          "Inversión: 50 M USD",
+          "Superficie ampliada: más de 25.000 m² (duplicación)",
+          "Ethiopian Airlines: más de 200 vuelos domésticos diarios desde ADD",
+          "Más de 20 destinos domésticos cubiertos"
+        ],
+        "tags": ["Ethiopian Airlines", "Addis Abeba", "terminal", "infraestructura aeroportuaria", "África", "expansión"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Addis_Ababa_Bole_International_Airport.jpg/1200px-Addis_Ababa_Bole_International_Airport.jpg",
+        "otros_medios": [],
+        "_nota": "Exclusivo Aviation Week (Weekly Airport Updates). Imagen Wikipedia."
       }
     ],
     "categorias": [
