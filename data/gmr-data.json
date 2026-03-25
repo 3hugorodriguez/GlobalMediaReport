@@ -42,7 +42,8 @@
           "Incluye información de transporte y planificación financiera"
         ],
         "tags": ["Eurochange", "Champions League", "travel money", "España", "turismo deportivo"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Champions"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Champions",
+        "otros_medios": []
       },
       {
         "fecha": "2026-03-15",
@@ -58,7 +59,8 @@
           "Destinos destacados: Málaga y Sevilla"
         ],
         "tags": ["Eurochange", "Semana Santa", "turismo", "cambio de divisas", "España"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Semana+Santa"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Semana+Santa",
+        "otros_medios": []
       },
       {
         "fecha": "2026-03-17",
@@ -182,7 +184,766 @@
           "Competencia activa pre-Semana Santa"
         ],
         "tags": ["travel money", "UK", "John Lewis", "Asda", "TUI", "promociones"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=UK+Travel+Money+Promos"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=UK+Travel+Money+Promos",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-24",
+        "titulo": "El euro digital: preparativos para una posible introducción",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260324~66f71f7577.es.html",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "Piero Cipollone, miembro del Comité Ejecutivo del BCE, pronuncia un discurso ante el Parlamento Europeo exponiendo el estado del proyecto del euro digital y su hoja de ruta. Destaca el proceso de selección de proveedores de servicios de pago para el piloto, la convocatoria de manifestaciones de interés del 5 de marzo y las Conclusiones del Consejo Europeo del 19 de marzo que reafirman el apoyo político al proyecto. El Eurosistema prevé lanzar Pontes —su solución DLT para liquidación mayorista— en el tercer trimestre de 2026.",
+        "highlights": [
+          "Convocatoria de manifestaciones de interés para PSPs lanzada el 5 de marzo de 2026",
+          "El Consejo Europeo del 19 de marzo reafirmó la importancia vital del euro digital",
+          "Pontes, la solución DLT del Eurosistema, se lanzará en el tercer trimestre de 2026",
+          "La primera emisión del euro digital se estima posible en 2029 si la legislación se aprueba en 2026"
+        ],
+        "tags": ["ESTRAT", "REG", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Discurso de Cipollone ante la Comisión de Asuntos Económicos y Monetarios del Parlamento Europeo, 24 de marzo de 2026."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Building the rails for Europe's tokenised financial markets",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260323~a88f20c049.en.html",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "Cipollone detalla ante la industria en Bruselas las tres condiciones que Europa debe cumplir para liderar las finanzas tokenizadas: un ancla de liquidación segura en dinero de banco central, una auténtica alianza público-privada y un marco legal a la altura de la ambición tecnológica. Presenta la hoja de ruta Appia como respuesta estratégica a la dependencia de redes de pago no europeas.",
+        "highlights": [
+          "Pontes conectará los servicios TARGET del Eurosistema con plataformas DLT en Q3 2026",
+          "El BCE acepta desde marzo de 2026 activos DLT como garantías en sus operaciones de crédito",
+          "Appia tiene como objetivo publicar un documento estratégico del ecosistema tokenizado en 2028",
+          "Casi dos tercios de las transacciones con tarjeta en la zona euro son procesadas por operadores no europeos"
+        ],
+        "tags": ["ESTRAT", "TECH", "REG"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "Cryptonomist", "url": "https://en.cryptonomist.ch/2026/03/23/tokenized-deposits-european-rails/" }
+        ],
+        "_nota": "Discurso pronunciado en Bruselas el 23 de marzo de 2026. Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-21",
+        "titulo": "ECB Advances Digital Euro To Strengthen Europe's Payment Autonomy",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.crowdfundinsider.com/2026/03/268161-ecb-advances-digital-euro-to-strengthen-europes-payment-autonomy/",
+        "medio": "Crowdfund Insider",
+        "resumen": "El BCE presenta el discurso de Cipollone titulado 'Digital euro – why?' del 21 de marzo, en el que encuadra el euro digital como una forma digital del efectivo esencial para mantener el acceso público al dinero de banco central mientras los pagos cotidianos migran a lo digital. El artículo contrasta la posición europea con la de EE.UU., donde el Congreso ha prohibido efectivamente a la Fed emitir una CBDC minorista hasta al menos 2030.",
+        "highlights": [
+          "Casi dos tercios de las transacciones con tarjeta en la zona euro son procesadas por redes no europeas",
+          "El Parlamento Europeo finalizará su posición sobre el euro digital en mayo de 2026",
+          "El piloto de 12 meses comenzará en el segundo semestre de 2027",
+          "EE.UU. ha prohibido una CBDC minorista de la Reserva Federal hasta al menos 2030"
+        ],
+        "tags": ["ESTRAT", "REG", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "CriptoNoticias", "url": "https://www.criptonoticias.com/finanzas/bce-eurodigital-dominio-extranjero-pagos/" }
+        ],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-21",
+        "titulo": "BCE acelera el euro digital para poner fin al dominio extranjero en pagos",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.criptonoticias.com/finanzas/bce-eurodigital-dominio-extranjero-pagos/",
+        "medio": "CriptoNoticias",
+        "resumen": "CriptoNoticias cubre el discurso de Cipollone del 21 de marzo, destacando que el BCE impulsa el euro digital como instrumento de soberanía financiera ante la dependencia de esquemas internacionales para los pagos minoristas en la zona euro. El artículo contextualiza los avances dentro del marco MiCA, donde las restricciones a las stablecoins vinculadas al dólar abren un espacio competitivo que el BCE busca ocupar.",
+        "highlights": [
+          "El BCE diagnostica que casi dos tercios de los pagos con tarjeta están procesados por esquemas internacionales",
+          "El Parlamento Europeo debe posicionarse en mayo de 2026 sobre el lanzamiento de la CBDC",
+          "La protección constitucional del efectivo en Suiza refleja una persistente desconfianza pública hacia las CBDC",
+          "La emisión definitiva del euro digital está proyectada tentativamente para 2029"
+        ],
+        "tags": ["ESTRAT", "MERCADO", "REG"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-19",
+        "titulo": "ECB seeks experts to help integrate digital euro into ATMs and card payment terminals",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.coindesk.com/policy/2026/03/19/ecb-seeks-experts-to-help-integrate-digital-euro-into-atms-card-payment-terminals",
+        "medio": "CoinDesk",
+        "resumen": "El BCE recluta expertos para redactar las normas técnicas que regularán el funcionamiento del euro digital en cajeros automáticos y terminales de pago en tienda. Uno de los grupos de trabajo definirá cómo los dispositivos procesan transacciones en euro digital —incluyendo el uso fuera de línea y la compatibilidad con estándares existentes—, mientras otro diseñará un proceso de certificación para herramientas e infraestructura de pago.",
+        "highlights": [
+          "El BCE lanza dos grupos de trabajo técnicos sobre integración del euro digital en infraestructura de pago existente",
+          "El proyecto avanza en paralelo al proyecto Qivalis, en el que 12 bancos europeos planean lanzar una stablecoin vinculada al euro en 2026",
+          "Entre los bancos del proyecto Qivalis figuran BBVA, ING y BNP Paribas"
+        ],
+        "tags": ["TECH", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-20",
+        "titulo": "Focus Session (virtual): Digital euro pilot – Sesión para PSPs",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/euro/digital_euro/pilot/html/index.en.html",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "El BCE celebra una sesión virtual el 20 de marzo para apoyar a los proveedores de servicios de pago (PSPs) en sus preparativos para responder a la convocatoria de manifestaciones de interés del piloto del euro digital. Los expertos del BCE abordan los aspectos técnicos y operativos del ejercicio piloto, que incluirá PSPs autorizados en la zona euro, comerciantes seleccionados y personal del Eurosistema probando el euro digital beta en situaciones cotidianas.",
+        "highlights": [
+          "El piloto probará el euro digital beta en situaciones cotidianas como pagos en cafeterías",
+          "Los PSPs interesados deben cumplir requisitos de admisibilidad de licencia y capacidad técnica",
+          "La convocatoria formal de manifestaciones de interés se lanzó el 5 de marzo de 2026"
+        ],
+        "tags": ["ESTRAT", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-05",
+        "titulo": "BCE lanza convocatoria para que proveedores de servicios de pago participen en el piloto del euro digital",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/euro/digital_euro/pilot/html/index.en.html",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "El Banco Central Europeo publica el 5 de marzo una convocatoria de manifestaciones de interés para que proveedores de servicios de pago participen en el piloto del euro digital. Los PSPs interesados deben acreditar autorización y capacidad técnica y operativa, y serán evaluados ponderando su cobertura geográfica. El piloto de 12 meses comenzará en la segunda mitad de 2027.",
+        "highlights": [
+          "Convocatoria publicada el 5 de marzo de 2026 en el sitio web dedicado del BCE",
+          "Los PSPs participantes serán evaluados en función de su presencia geográfica para asegurar cobertura amplia",
+          "El piloto de 12 meses está previsto para el segundo semestre de 2027"
+        ],
+        "tags": ["ESTRAT", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-03",
+        "titulo": "El BCE ve 'ambicioso' adelantar el euro digital a 2028 como propone Pedro Sánchez",
+        "categoria": "medios-digital",
+        "alcance": "Nacional",
+        "url": "https://capital.es/economia/mercados-e-inversion/el-bce-ve-ambicioso-adelantar-el-euro-digital-a-2028-como-propone-pedro-sanchez/169568/",
+        "medio": "Capital",
+        "resumen": "Fuentes del BCE y del Banco de España califican de 'ambiciosa' la propuesta de Pedro Sánchez de adelantar el lanzamiento del euro digital a 2028. Según estas instituciones, los países miembros acordaron que, una vez aprobada la legislación, debería ser posible emitir el euro digital 'no antes de dos años después', lo que situaría la fecha más temprana en 2029. El proyecto busca especialmente beneficiar a los pequeños comercios, que soportan comisiones de pago tres o cuatro veces mayores que las grandes superficies.",
+        "highlights": [
+          "El presidente Sánchez propuso formalmente adelantar el euro digital a 2028",
+          "El BCE recuerda que la emisión del euro digital no puede producirse antes de dos años tras la aprobación legislativa",
+          "Los minoristas de la eurozona pagan cerca de 3.750 millones de euros anuales en comisiones por tarjetas de débito",
+          "Para los pequeños comercios, la comisión puede alcanzar el 1% del valor de la transacción"
+        ],
+        "tags": ["REG", "MERCADO", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "Infobae (vía Europa Press)", "url": "https://www.infobae.com/america/agencias/2026/03/02/el-bce-considera-ambicioso-adelantar-el-euro-digital-a-2028-tal-como-propone-pedro-sanchez/" },
+          { "nombre": "Press Digital", "url": "https://www.pressdigital.es/articulo/economia/2026-03-02/5791986-bce-considera-ambicioso-adelantar-euro-digital-2028-como-propone-pedro-sanchez" }
+        ],
+        "_nota": "Noticia publicada originalmente el 2 de marzo y recogida ampliamente el 3 de marzo de 2026."
+      },
+      {
+        "fecha": "2026-03-20",
+        "titulo": "China Extends Digital Yuan Project to 12 New Banks",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.pymnts.com/cbdc/2026/china-extends-digital-yuan-project-to-12-new-banks",
+        "medio": "PYMNTS.com",
+        "resumen": "El Banco Popular de China ha seleccionado 12 nuevos bancos para promover el yuan digital, sumándolos a los 10 ya autorizados, según Reuters. Este movimiento marca un fuerte contraste con la postura de EE.UU., donde el Congreso aprobó una prohibición de las CBDC minoristas de la Reserva Federal como parte de un proyecto de ley de vivienda. Los analistas señalan que el mayor potencial del yuan digital reside en los pagos transfronterizos, al margen de los sistemas dominados por el dólar.",
+        "highlights": [
+          "El Banco Popular de China suma 12 nuevos bancos al programa del yuan digital, hasta un total de 22",
+          "La adopción minorista del yuan digital ha sido lenta, pues los ciudadanos ya tienen acceso a WeChat Pay y Alipay",
+          "El Senado de EE.UU. incluyó una prohibición de la CBDC minorista de la Fed en un proyecto de ley de vivienda",
+          "El mayor potencial del yuan digital se atribuye a los pagos transfronterizos fuera del sistema dólar"
+        ],
+        "tags": ["ESTRAT", "MERCADO", "REG"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "Reuters", "url": "https://www.reuters.com" }
+        ],
+        "_nota": "Publicado originalmente en inglés. Fuente primaria: Reuters del 20 de marzo de 2026."
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "CBDC and Banking: How Central Bank Digital Currency Could Transform the Financial System",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://economy.ac/review/2026/03/202603288612",
+        "medio": "The Economy",
+        "resumen": "Análisis académico sobre el impacto potencial de las CBDC en el sistema financiero mundial, a partir de una encuesta del BIS según la cual el 91% de 93 bancos centrales está investigando activamente una CBDC mayorista o minorista. El artículo examina dos escenarios: sustitución gradual de depósitos bancarios hacia CBDC, y riesgo de estampida financiera en momentos de crisis, planteando que el diseño de la política determinará cuál de los dos predomina.",
+        "highlights": [
+          "El 91% de los 93 bancos centrales encuestados por el BIS en 2024 investigan activamente una CBDC",
+          "Las CBDC podrían reducir la base de depósitos bancarios y encarecer su financiación",
+          "El diseño de los límites de tenencia y la remuneración serán clave para la estabilidad del sistema",
+          "Si se generaliza, el acceso directo al dinero de banco central desplazaría a los bancos comerciales de algunas funciones"
+        ],
+        "tags": ["TECH", "REG", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-04",
+        "titulo": "UAE Launches Digital Dirham: Central Bank Digital Currency Goes Live for Retail Payments",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.digitaldubai.ai/dubai-updates/uae-digital-dirham-cbdc-launch-2026",
+        "medio": "Digital Dubai",
+        "resumen": "El Banco Central de los Emiratos Árabes Unidos lanza oficialmente el Dírham Digital para transacciones minoristas en marzo de 2026. El sistema ofrece liquidación instantánea 24/7, transferencias transfronterizas directas con Arabia Saudí, India, China y Hong Kong a través de la red mBridge, e integración completa con la aplicación UAE Pass y las apps bancarias existentes. Los pagos pequeños mantienen privacidad total, mientras los de mayor volumen cumplen requisitos AML.",
+        "highlights": [
+          "El Dírham Digital se integra con la red mBridge para transferencias directas con Arabia Saudí, India, China y Hong Kong",
+          "El corredor de remesas India-EAU mueve aproximadamente 15.000 millones de dólares anuales",
+          "Liquidación instantánea, 24/7/365, sin retrasos por horarios bancarios",
+          "Paridad 1:1 con el dírham físico, respaldado por el banco central"
+        ],
+        "tags": ["ESTRAT", "MERCADO", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "Mastercard to acquire BVNK to connect on-chain payments and fiat rails",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/march/Mastercard-to-acquire-BVNK-to-connect-on-chain-payments-and-fiat-rails.html",
+        "medio": "Mastercard",
+        "resumen": "Mastercard anuncia la adquisición definitiva de BVNK, líder en infraestructura de stablecoins, por hasta 1.800 millones de dólares, incluyendo 300 millones en pagos contingentes. La operación amplía las capacidades de Mastercard para soportar activos digitales y el movimiento de valor entre monedas, carriles y regiones. La empresa señala que el volumen de pagos con divisas digitales alcanzó al menos 350.000 millones de dólares en 2025.",
+        "highlights": [
+          "Mastercard adquiere BVNK por hasta 1.800 millones de dólares, incluyendo 300 millones contingentes",
+          "Los pagos digitales con criptomonedas alcanzaron al menos 350.000 millones de dólares en volumen en 2025",
+          "BVNK opera en más de 130 países con infraestructura de stablecoins para empresas",
+          "La adquisición crea interoperabilidad entre carriles fiat y stablecoins a escala global"
+        ],
+        "tags": ["ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "The Paypers", "url": "https://thepaypers.com/news" },
+          { "nombre": "Reuters", "url": "https://www.reuters.com" }
+        ],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "X Money to enter early public access in April – XMoney de Elon Musk lanzará en beta",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.cbsnews.com/news/xmoney-elon-musk-online-payments/",
+        "medio": "CBS News",
+        "resumen": "Elon Musk confirma que XMoney, la plataforma de pagos digitales de X, lanzará en versión beta para usuarios seleccionados en abril de 2026. La plataforma, diseñada como un 'Everything App' similar a WeChat, permitirá transacciones entre particulares similares a PayPal o Venmo y financiará una cartera digital de marca X a través de Visa Direct. La integración con Visa fue anunciada originalmente por Linda Yaccarino cuando era CEO de X.",
+        "highlights": [
+          "XMoney entrará en acceso público anticipado en abril de 2026",
+          "La plataforma se financiará mediante un monedero digital de marca X a través de Visa Direct",
+          "Musk ha descrito XMoney como el lugar donde 'estará todo el dinero'",
+          "El analista Scott Devitt de Wedbush destaca la profunda comprensión de Musk de los sistemas de pago"
+        ],
+        "tags": ["ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "The Paypers", "url": "https://thepaypers.com/news" }
+        ],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-19",
+        "titulo": "México hará obligatorios los pagos digitales en gasolineras y casetas de peaje",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://ground.news/article/search-banxico-to-boost-digital-payments_7f8d7d",
+        "medio": "Banxico / Ground News",
+        "resumen": "La presidenta mexicana Claudia Sheinbaum anunció en la 89ª Convención Bancaria de Cancún que los pagos digitales serán obligatorios en gasolineras y casetas de peaje en 2026, como parte de la estrategia nacional de digitalización financiera. La gobernadora del Banco de México, Victoria Rodríguez Ceja, lanzó simultáneamente una consulta pública para estandarizar las transferencias digitales y facilitar los pagos desde dispositivos móviles.",
+        "highlights": [
+          "Sheinbaum anuncia la obligatoriedad de pagos digitales en gasolineras y casetas de peaje en 2026",
+          "Banxico lanza consulta pública para estandarizar transferencias electrónicas y pagos móviles",
+          "La iniciativa busca ampliar el uso del SPEI a sectores con alta presencia de efectivo",
+          "México buscará implementar los cambios a través de alianzas con el sector bancario"
+        ],
+        "tags": ["REG", "MERCADO", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "El Financiero", "url": "https://www.elfinanciero.com.mx/economia/2026/03/18/pagos-digitales-palanca-estructural-para-el-crecimiento-del-pais/" }
+        ],
+        "_nota": "Publicado originalmente en inglés y español. Contexto: 89ª Convención Bancaria de México."
+      },
+      {
+        "fecha": "2026-03-18",
+        "titulo": "Pagos digitales: palanca estructural para el crecimiento del país",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.elfinanciero.com.mx/economia/2026/03/18/pagos-digitales-palanca-estructural-para-el-crecimiento-del-pais/",
+        "medio": "El Financiero (México)",
+        "resumen": "Francisco Valdivia, director general de Visa México, afirma que los pagos digitales son una palanca estructural de crecimiento para el país, con especial foco en las MiPymes. Visa trabaja junto al Gobierno federal en la iniciativa 'Crece tu MiPyme', que busca habilitar hasta un millón de negocios para aceptar pagos digitales, y señala la Copa Mundial de la FIFA 2026 como catalizador de la adopción. La empresa destaca la tokenización como el habilitador silencioso pero estructural del sistema de pagos.",
+        "highlights": [
+          "Visa busca habilitar hasta un millón de MiPymes mexicanas para aceptar pagos digitales",
+          "La tecnología Tap to Phone convierte el teléfono en una terminal de pago sin contacto, acelerando la infraestructura de aceptación",
+          "Visa habilita a agentes de inteligencia artificial como participantes legítimos del comercio mediante Visa Intelligent Commerce",
+          "La Copa Mundial de la FIFA 2026 actúa como catalizador de la adopción de pagos digitales en México"
+        ],
+        "tags": ["MERCADO", "TECH", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "Mastercard launches Virtual C-Suite for small businesses",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "Mastercard presenta Virtual C-Suite, una herramienta de inteligencia artificial agéntica diseñada para proporcionar a las pequeñas empresas inteligencia financiera y operativa de nivel ejecutivo. La solución utiliza IA para ofrecer capacidades similares a las de un equipo directivo completo, orientadas a la gestión de pagos y tesorería de pymes.",
+        "highlights": [
+          "Virtual C-Suite es una herramienta de IA agéntica diseñada para las necesidades financieras de las pequeñas empresas",
+          "La solución proporciona inteligencia financiera y operativa de nivel ejecutivo de manera automatizada",
+          "El lanzamiento se enmarca en la estrategia más amplia de Mastercard de integrar IA en los pagos"
+        ],
+        "tags": ["TECH", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-05",
+        "titulo": "Mastercard completes first live agentic transaction in Singapore with DBS and UOB",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "Mastercard anuncia la finalización de la primera transacción agéntica en vivo en Singapur, realizada en colaboración con los bancos DBS y UOB. Este hito marca un avance significativo hacia el comercio agéntico, donde los agentes de inteligencia artificial pueden realizar transacciones en nombre de consumidores y empresas de forma autónoma y segura.",
+        "highlights": [
+          "Primera transacción agéntica en vivo ejecutada con infraestructura de Mastercard en Singapur",
+          "Los bancos DBS y UOB participan en el experimento de pagos agénticos",
+          "El comercio agéntico, donde la IA compra en nombre del usuario, avanza hacia su implementación comercial"
+        ],
+        "tags": ["TECH", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-05",
+        "titulo": "Wero expands ecommerce payments to Belgium with first merchants",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "Wero, la solución de pago paneuropea impulsada por el Consejo Europeo de Pagos, amplía sus servicios de pagos de comercio electrónico a Bélgica con sus primeros comerciantes. Este movimiento forma parte de la expansión geográfica de la iniciativa para consolidar un carril de pago europeo competitivo ante los operadores internacionales.",
+        "highlights": [
+          "Wero desembarca en Bélgica con pagos de ecommerce para sus primeros comercios",
+          "La expansión responde a la estrategia de Wero de construir una alternativa de pago paneuropea",
+          "El servicio se enmarca en el impulso del Consejo Europeo de Pagos por la soberanía de pagos en Europa"
+        ],
+        "tags": ["ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "Mastercard introduces Verifiable Intent, co-developed with Google",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "Mastercard presenta Verifiable Intent, una solución de seguridad para pagos co-desarrollada con Google, diseñada para verificar la intención de pago del usuario y reducir el fraude en transacciones digitales. La solución responde al aumento de ataques de ingeniería social y deepfakes en el ecosistema de pagos.",
+        "highlights": [
+          "Verifiable Intent es una solución de verificación de pagos co-desarrollada por Mastercard y Google",
+          "El producto busca combatir el creciente fraude por ingeniería social y deepfakes en pagos digitales",
+          "Su desarrollo refleja la tendencia hacia la integración de IA y seguridad avanzada en los pagos"
+        ],
+        "tags": ["TECH", "REG"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "SEC and CFTC name Bitcoin, Ether, Solana and 13 more crypto assets digital commodities",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.fintechweekly.com/news/sec-bitcoin-ether-solana-digital-commodities-not-securities-march-2026",
+        "medio": "FinTech Weekly",
+        "resumen": "La SEC y la CFTC publican conjuntamente una interpretación de 68 páginas que clasifica explícitamente 16 criptoactivos, incluidos Bitcoin, Ether y Solana, como materias primas digitales, excluyéndolos de la regulación de valores. El documento es un paso previo a la ley CLARITY Act, que codificaría estatutariamente la clasificación materias primas vs. valores para los activos digitales. La ley pasó la Cámara en julio de 2025 y está en el comité del Senado.",
+        "highlights": [
+          "La SEC y la CFTC publican una interpretación conjunta de 68 páginas clasificando 16 criptoactivos como materias primas digitales",
+          "Bitcoin, Ether y Solana quedan explícitamente fuera de la regulación de valores",
+          "La CLARITY Act que codificaría estas clasificaciones por ley está pendiente en el Comité Bancario del Senado",
+          "Los airdrops de activos no-valores quedan también fuera de las leyes de valores"
+        ],
+        "tags": ["REG"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-10",
+        "titulo": "Square auto-enables Bitcoin payments for millions of merchants globally via Lightning Network",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.livebitcoinnews.com/bitcoin-payments-set-to-go-live-by-default-for-square-merchants-globally/",
+        "medio": "LiveBitcoinNews",
+        "resumen": "Square, la empresa de pagos de Block, anunciará en marzo que activará automáticamente los pagos en Bitcoin para todos los comerciantes elegibles a partir del 30 de marzo de 2026, con conversión automática a dólares en el punto de venta. El sistema utiliza la Lightning Network para procesar las transacciones con confirmaciones más rápidas y comisiones reducidas, lo que lo hace apto para entornos minoristas de alto volumen.",
+        "highlights": [
+          "Square activará los pagos en Bitcoin por defecto para millones de comerciantes a partir del 30 de marzo de 2026",
+          "Los comerciantes podrán desactivar la opción o elegir la conversión automática a dólares en el punto de venta",
+          "El sistema usa Lightning Network para mayor velocidad y menores comisiones",
+          "Los comerciantes no necesitan nuevo hardware ni herramientas adicionales para la integración"
+        ],
+        "tags": ["ESTRAT", "MERCADO", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "Strike secures BitLicense in New York to bring Bitcoin payments closer to everyday finance",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.thestreet.com/crypto/real-estate/new-yorkers-can-now-pay-mortgage-with-bitcoin",
+        "medio": "TheStreet Crypto",
+        "resumen": "Strike, la plataforma de pagos basada en Bitcoin Lightning Network, ha obtenido tanto la BitLicense como la licencia de transmisión de dinero del Departamento de Servicios Financieros de Nueva York (NYDFS), el mercado cripto más regulado de EE.UU. Con esta aprobación, los usuarios de Strike en Nueva York podrán comprar y vender Bitcoin, recibir salarios en Bitcoin y realizar pagos de facturas —incluyendo hipotecas— directamente desde sus saldos en Bitcoin.",
+        "highlights": [
+          "Strike obtiene BitLicense y licencia de transmisión de dinero del NYDFS de Nueva York",
+          "Los usuarios podrán pagar hipotecas y facturas recurrentes directamente desde saldos en Bitcoin",
+          "Strike planea introducir préstamos respaldados en Bitcoin, permitiendo pedir prestado moneda fiduciaria manteniendo los BTC",
+          "BitPay y Bakkt ya permiten a usuarios convertir criptomonedas para pagar hipotecas en EE.UU."
+        ],
+        "tags": ["REG", "ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-04",
+        "titulo": "Kraken Financial becomes first digital asset bank to receive Federal Reserve master account",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://dev.to/qbitflow/stablecoin-regulation-is-here-what-it-means-for-merchants-accepting-crypto-payments-in-2026-2m37",
+        "medio": "DEV Community",
+        "resumen": "El 4 de marzo de 2026, Kraken Financial se convierte en el primer banco de activos digitales en recibir una cuenta maestra de la Reserva Federal, otorgándole acceso directo a los sistemas de pago básicos del banco central —los mismos carriles que usan los bancos tradicionales. Este hito señala que el cripto ya no opera como un sistema financiero paralelo, sino que se conecta directamente al existente.",
+        "highlights": [
+          "Kraken Financial es el primer banco de activos digitales en obtener una cuenta maestra de la Reserva Federal",
+          "La cuenta maestra da acceso directo a los sistemas de pago de la Fed (ACH, Fedwire)",
+          "El acontecimiento marca la integración del cripto en el sistema financiero convencional, no su paralelismo",
+          "Stripe's Bridge también ha recibido aprobación inicial para una licencia bancaria federal de confianza"
+        ],
+        "tags": ["REG", "ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-20",
+        "titulo": "Stablecoins and the Future of Payments – IMF Working Paper",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://formatresearch.com/en/2026/03/20/stablecoin-e-futuro-dei-pagamenti-fmi/",
+        "medio": "FMI / Format Research",
+        "resumen": "Un documento de trabajo del FMI del 20 de marzo analiza si los mercados financieros esperan que las stablecoins tengan un papel relevante en los pagos. Usando movimientos de cotizaciones bursátiles en alta frecuencia, los autores estiman que la legislación estadounidense que respalda el uso de stablecoins en pagos redujo el valor de mercado de las empresas de pagos cotizadas incumbentes en un 18%, equivalente a unos 300.000 millones de dólares, lo que confirma el aumento de la competencia.",
+        "highlights": [
+          "La legislación de stablecoins en EE.UU. redujo el valor bursátil de las incumbentes de pagos en un 18%, aproximadamente 300.000 millones de dólares",
+          "El impacto es mayor para las incumbentes centradas en pagos transfronterizos",
+          "Es menor para incumbentes protegidas por efectos de red y para las que ya ofrecen servicios cripto",
+          "El estudio usa movimientos de precios de acciones como indicador de las expectativas del mercado sobre el papel futuro de las stablecoins"
+        ],
+        "tags": ["MERCADO", "REG"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés. Documento de trabajo del FMI, no una posición oficial de la institución."
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "Mastercard adquiere BVNK por hasta 1.800 millones de dólares para conectar pagos on-chain y fiduciarios",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/march/Mastercard-to-acquire-BVNK-to-connect-on-chain-payments-and-fiat-rails.html",
+        "medio": "Mastercard",
+        "resumen": "Mastercard anuncia la adquisición de BVNK, líder en infraestructura de stablecoins, por hasta 1.800 millones de dólares, con el objetivo de crear interoperabilidad entre moneda fiduciaria y stablecoins a escala mundial. La operación sitúa a Mastercard como proveedor de orquestación de pagos entre sistemas de activos digitales y fiat para instituciones financieras y fintechs.",
+        "highlights": [
+          "Mastercard adquiere BVNK por hasta 1.800 millones de dólares, incluyendo 300 millones contingentes",
+          "Las stablecoins y depósitos tokenizados pueden resolver puntos de dolor en remesas, pagos B2B y mercados de capitales",
+          "El CFO de Mastercard señala que la mayoría de instituciones financieras ofrecerán servicios de divisas digitales",
+          "BVNK opera en 130+ países con infraestructura de stablecoins para empresas"
+        ],
+        "tags": ["ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-19",
+        "titulo": "ECB seeks experts to integrate digital euro; 12 European banks advance Qivalis euro-pegged stablecoin",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.coindesk.com/policy/2026/03/19/ecb-seeks-experts-to-help-integrate-digital-euro-into-atms-card-payment-terminals",
+        "medio": "CoinDesk",
+        "resumen": "Mientras el BCE avanza en la integración técnica del euro digital, un grupo de 12 bancos europeos —incluidos BBVA, ING y BNP Paribas— impulsan el proyecto Qivalis, un plan para lanzar en la segunda mitad de 2026 una stablecoin vinculada al euro en blockchain, con el objetivo de ofrecer pagos sin depender de tokens respaldados por el dólar.",
+        "highlights": [
+          "El proyecto Qivalis reúne a 12 bancos europeos, incluidos BBVA, ING y BNP Paribas",
+          "Qivalis prevé lanzar su stablecoin vinculada al euro en el segundo semestre de 2026",
+          "El proyecto busca ofrecer pagos blockchain sin depender de stablecoins en dólares",
+          "El BCE avanza en paralelo en la integración técnica del euro digital en cajeros y terminales"
+        ],
+        "tags": ["ESTRAT", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "KAST raises USD 80 million Series A to expand stablecoin neobank globally",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "KAST, un neobanco centrado en stablecoins, capta 80 millones de dólares en una ronda Serie A para expandir su modelo globalmente. La startup ofrece servicios bancarios basados en stablecoins, apuntando a usuarios que buscan acceso a dólares digitales fuera del sistema bancario tradicional.",
+        "highlights": [
+          "KAST cierra una ronda Serie A de 80 millones de dólares para expansión global",
+          "El modelo de negocio se basa en ofrecer servicios bancarios mediante stablecoins",
+          "La ronda refleja el creciente interés inversor en infraestructura de stablecoins como alternativa bancaria"
+        ],
+        "tags": ["ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "Los bancos consideran acciones legales contra la OCC por las licencias bancarias cripto",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://phemex.com/news/article/cb-insights-forecasts-2026-fintech-trends-asset-tokenization-and-ai-payments-rise-66894",
+        "medio": "Phemex News",
+        "resumen": "Según Phemex News, bancos estadounidenses estarían considerando acciones legales contra la OCC por el otorgamiento de licencias bancarias a empresas cripto bajo la GENIUS Act. La tensión surge porque los bancos tradicionales temen la competencia directa de stablecoin issuers con acceso directo al sistema financiero regulado. El artículo también destaca el auge de las stablecoins como carriles de pago para agentes de inteligencia artificial.",
+        "highlights": [
+          "Bancos estadounidenses estudian acciones legales contra la OCC por las licencias bancarias a issuers cripto",
+          "El auge de las stablecoins como carriles de pago para agentes de IA es una de las tendencias fintech de 2026",
+          "Las adquisiciones y alianzas de Ripple con grandes bancos reflejan su entrada en la banca institucional",
+          "Los bancos tokenizarán activos para mantener el control de los depósitos"
+        ],
+        "tags": ["REG", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "El BCE presenta Appia, la hoja de ruta para las finanzas tokenizadas de Europa",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.coindesk.com/business/2026/03/11/european-central-bank-unveils-tokenized-finance-plan-to-bolster-eu-s-financial-autonomy",
+        "medio": "CoinDesk",
+        "resumen": "El Banco Central Europeo presenta el 11 de marzo la hoja de ruta de la iniciativa Appia para construir un ecosistema mayorista de finanzas tokenizadas centrado en el euro. La estrategia se articula en torno a dos iniciativas complementarias: Pontes, una capa de transacción basada en DLT prevista para el tercer trimestre de 2026; y Appia, un proyecto de largo plazo para diseñar la arquitectura, la gobernanza y los estándares de un sistema financiero tokenizado hasta 2028.",
+        "highlights": [
+          "Appia es el proyecto del BCE para diseñar el ecosistema financiero tokenizado europeo junto con el mercado, hasta 2028",
+          "Pontes, la solución DLT del Eurosistema, debutará en el tercer trimestre de 2026",
+          "El BCE abre una consulta pública sobre Appia con respuestas hasta el 22 de abril de 2026",
+          "La iniciativa responde al riesgo geopolítico derivado de la dependencia de redes de pago no europeas y centradas en el dólar"
+        ],
+        "tags": ["TECH", "ESTRAT", "REG"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "BCE (nota de prensa oficial)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260311~14ddf51a77.es.pdf" },
+          { "nombre": "Il Sole 24 Ore", "url": "https://en.ilsole24ore.com/art/the-ecb-presents-appia-new-infrastructure-integrate-euro-tokenized-payments-AICV1LtB" },
+          { "nombre": "Format Research", "url": "https://formatresearch.com/en/2026/03/12/uninfrastruttura-per-il-futuro-della-finanza-digitale-europea-bce/" },
+          { "nombre": "Phemex News", "url": "https://phemex.com/news/article/ecb-unveils-appia-roadmap-for-tokenized-euro-financial-market-65822" }
+        ],
+        "_nota": "Publicado originalmente en inglés y traducido al español por el BCE. Iniciativa de gran impacto en la arquitectura financiera europea."
+      },
+      {
+        "fecha": "2026-03-23",
+        "titulo": "Tokenized deposits push Europe toward next-gen digital money",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://en.cryptonomist.ch/2026/03/23/tokenized-deposits-european-rails/",
+        "medio": "Cryptonomist",
+        "resumen": "Análisis de cómo los depósitos tokenizados están abriendo el camino a la próxima generación de dinero digital en Europa. El BCE acepta desde marzo de 2026 activos DLT como garantías elegibles en sus operaciones de crédito, y UK Finance coordina los pilotos de depósitos tokenizados 'Great British' hasta mediados de 2026. Cada instrumento —depósitos tokenizados, stablecoins reguladas y CBDC— encuentra su lugar dentro de un sistema financiero digital múltiple.",
+        "highlights": [
+          "El BCE acepta desde marzo de 2026 activos emitidos en depositarios centrales con tecnología DLT como garantías",
+          "UK Finance ejecuta pilotos de depósitos tokenizados hasta mediados de 2026, probando pagos P2P, refinanciaciones y liquidación de activos digitales",
+          "Pontes conectará los servicios TARGET a plataformas DLT en Q3 2026 para liquidación en dinero de banco central",
+          "Los depósitos tokenizados actúan como puente entre la infraestructura bancaria tradicional y los nuevos carriles digitales"
+        ],
+        "tags": ["TECH", "ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-12",
+        "titulo": "Una infraestructura para el futuro de las finanzas digitales de Europa – Blog del BCE",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260312~5dfa697fdd.es.html",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "El BCE publica un artículo de opinión, distribuido también en medios de comunicación de la zona euro, en el que detalla el por qué de la estrategia Appia y Pontes. Cipollone subraya que la tokenización permite representar activos financieros como bonos en forma de tokens digitales transferibles y actualizables de manera más eficiente, y que Pontes ofrecerá una forma de liquidar en dinero de banco central operaciones mayoristas basadas en DLT desde el tercer trimestre de 2026.",
+        "highlights": [
+          "Pontes ofrecerá liquidación en dinero de banco central para operaciones DLT mayoristas desde Q3 2026",
+          "La tokenización promete operar en un ciclo de vida de activos completo (negociación, liquidación, custodia) en una sola plataforma 24/7",
+          "La actividad transfronteriza será más sencilla y barata gracias a activos DLT interoperables",
+          "Appia busca diseñar junto con el mercado la próxima generación de infraestructuras financieras europeas"
+        ],
+        "tags": ["TECH", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "Format Research", "url": "https://formatresearch.com/en/2026/03/12/uninfrastruttura-per-il-futuro-della-finanza-digitale-europea-bce/" }
+        ],
+        "_nota": "Artículo de opinión publicado como op-ed en medios de la zona euro."
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "Eurosistema presenta hoja de ruta Appia para finanzas tokenizadas – Nota de prensa oficial",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260311~14ddf51a77.es.pdf",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "Nota de prensa oficial del BCE del 11 de marzo en la que el Eurosistema presenta formalmente la hoja de ruta de Appia para las finanzas tokenizadas de Europa. La estrategia incluye dos iniciativas complementarias: Pontes —prevista para Q3 2026— que conectará TARGET Services a plataformas DLT, y Appia, que definirá con el mercado el ecosistema financiero mayorista tokenizado del futuro. La hoja de ruta incluye un cuestionario de consulta pública.",
+        "highlights": [
+          "Pontes se pondrá en marcha en Q3 2026 para liquidación en dinero de banco central de operaciones DLT",
+          "Appia explorará distintas configuraciones de redes DLT como infraestructuras básicas para servicios financieros mayoristas",
+          "Las infraestructuras compartidas basadas en estándares comunes reducirán la fragmentación y barreras de entrada en los mercados financieros europeos",
+          "El Eurosistema prevé publicar un documento estratégico sobre el ecosistema tokenizado en 2028"
+        ],
+        "tags": ["TECH", "ESTRAT", "REG"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Nota de prensa oficial publicada en español e inglés."
+      },
+      {
+        "fecha": "2026-03-21",
+        "titulo": "ECB prevé emitir el euro digital en 2029 si la legislación se aprueba en 2026",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html",
+        "medio": "Banco Central Europeo (BCE)",
+        "resumen": "La página principal del proyecto euro digital del BCE recoge el objetivo de estar listos para una posible primera emisión del euro digital durante 2029, asumiendo que el Reglamento europeo se adopte en el curso de 2026. El proyecto avanza en tres frentes: preparación técnica, interacción con el mercado y apoyo al proceso legislativo.",
+        "highlights": [
+          "El BCE se fija como objetivo estar listo para una posible primera emisión del euro digital en 2029",
+          "Un piloto podría comenzar en la segunda mitad de 2027 antes de la emisión definitiva",
+          "En octubre de 2025 el Consejo de Gobierno del BCE decidió pasar a la siguiente fase del proyecto del euro digital",
+          "Los proveedores para la plataforma de servicios del euro digital han sido seleccionados y han firmado acuerdos marco"
+        ],
+        "tags": ["ESTRAT", "TECH", "REG"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": null
+      },
+      {
+        "fecha": "2026-03-20",
+        "titulo": "China amplía el yuan digital a 12 nuevos bancos en contraste con la posición de EE.UU.",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.pymnts.com/cbdc/2026/china-extends-digital-yuan-project-to-12-new-banks",
+        "medio": "PYMNTS.com",
+        "resumen": "El Banco Popular de China selecciona 12 nuevos bancos para promover el yuan digital, sumándose a los 10 ya autorizados. Esta expansión contrasta con la prohibición de la CBDC minorista de la Fed aprobada por el Senado de EE.UU. como parte de un proyecto de ley de vivienda. Los analistas observan que la adopción minorista del yuan digital ha sido lenta dado que WeChat Pay y Alipay ya cubren las necesidades cotidianas, mientras que el potencial mayor reside en pagos transfronterizos.",
+        "highlights": [
+          "China amplía de 10 a 22 el número de bancos autorizados a promover el yuan digital",
+          "La adopción minorista del yuan digital ha sido lenta: WeChat Pay y Alipay ya dominan los pagos cotidianos",
+          "El mayor potencial del yuan digital está en los pagos transfronterizos fuera del sistema dólar",
+          "EE.UU. aprobó en el Senado una prohibición de CBDC minoristas de la Fed adjunta a un proyecto de ley de vivienda"
+        ],
+        "tags": ["ESTRAT", "MERCADO", "REG"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "Reuters", "url": "https://www.reuters.com" }
+        ],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-04",
+        "titulo": "UAE lanza el Dírham Digital para pagos minoristas en marzo de 2026",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.digitaldubai.ai/dubai-updates/uae-digital-dirham-cbdc-launch-2026",
+        "medio": "Digital Dubai",
+        "resumen": "Los Emiratos Árabes Unidos lanzan oficialmente el Dírham Digital para transacciones minoristas en marzo de 2026, convirtiéndose en uno de los primeros países del mundo en hacerlo. El sistema ofrece liquidación instantánea, privacidad en pequeñas transacciones, cumplimiento AML en transacciones grandes e integración con la red mBridge para transferencias internacionales.",
+        "highlights": [
+          "El Dírham Digital se lanza para pagos minoristas con paridad 1:1 respecto al dírham físico",
+          "Integración con mBridge para transferencias con Arabia Saudí, India, China y Hong Kong",
+          "El gobernador del Banco Central de EAU declara que representa una evolución fundamental en el funcionamiento del dinero",
+          "Las pequeñas transacciones mantienen privacidad total; las grandes cumplen requisitos AML"
+        ],
+        "tags": ["ESTRAT", "MERCADO", "TECH"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "CBDC and Banking: How Central Bank Digital Currency Could Transform the Financial System",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://economy.ac/review/2026/03/202603288612",
+        "medio": "The Economy",
+        "resumen": "Análisis académico sobre el potencial transformador de las monedas digitales de banco central en el sistema financiero global. Con un 91% de los bancos centrales investigando CBDC según el BIS, el artículo analiza los dos escenarios macroeconómicos más probables: sustitución gradual de depósitos y riesgo de estampida financiera en crisis, señalando que el diseño de la política determinará cuál prevalece.",
+        "highlights": [
+          "91% de los 93 bancos centrales encuestados por el BIS investigan activamente una CBDC retail o mayorista",
+          "Las CBDC podrían redefinir dónde se mantienen los ahorros, cómo se otorga el crédito y quién genera las rentas de la creación monetaria",
+          "Una CBDC extendería las responsabilidades del banco central a unidades digitales accesibles desde monederos individuales",
+          "El diseño cuidadoso es esencial para que la CBDC no provoque inestabilidad bancaria sistémica"
+        ],
+        "tags": ["TECH", "REG", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "X Money lanzará en beta en abril: wallet digital para pagos P2P integrado en la red social X",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.cbsnews.com/news/xmoney-elon-musk-online-payments/",
+        "medio": "CBS News",
+        "resumen": "X Money, la plataforma financiera de Elon Musk integrada en la red social X, anunciará en marzo de 2026 que lanzará en beta a usuarios seleccionados en abril. La solución se concibe como un 'monedero digital todo-en-uno' que permite transacciones entre particulares, con financiación a través de Visa Direct y posibilidad de integrar funciones de ahorro, inversión y pagos en un único entorno.",
+        "highlights": [
+          "XMoney entrará en acceso anticipado para usuarios seleccionados en abril de 2026",
+          "El monedero digital de X se financia a través de una cuenta de marca X conectada a Visa Direct",
+          "El modelo conceptual se basa en el 'Everything App' WeChat, que integra pagos, mensajería y compras",
+          "Musk ha descrito XMoney como el lugar donde 'estará todo el dinero'"
+        ],
+        "tags": ["ESTRAT", "MERCADO"],
+        "imagen": null,
+        "otros_medios": [
+          { "nombre": "The Paypers", "url": "https://thepaypers.com/news" }
+        ],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-06",
+        "titulo": "Affirm expands Stripe collaboration to facilitate agentic commerce payments",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "Affirm amplía su colaboración con Stripe para facilitar pagos de comercio agéntico, permitiendo que los agentes de IA ejecuten compras en nombre de los usuarios con opciones de pago aplazado. La integración apunta a la creciente tendencia del comercio donde los asistentes de IA toman decisiones de compra de forma autónoma.",
+        "highlights": [
+          "Affirm y Stripe amplían su colaboración para habilitar pagos en el comercio agéntico",
+          "La integración permite a agentes de IA comprar en nombre de usuarios con opciones de pago a plazos",
+          "El comercio agéntico emerge como uno de los grandes vectores de crecimiento de los pagos digitales en 2026"
+        ],
+        "tags": ["TECH", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
+      },
+      {
+        "fecha": "2026-03-05",
+        "titulo": "Wero expands ecommerce payments to Belgium – Wallet paneuropeo de pagos",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/news",
+        "medio": "The Paypers",
+        "resumen": "Wero, el monedero de pagos paneuropeo impulsado por bancos europeos, expande sus servicios de ecommerce a Bélgica con sus primeros comercios. La solución permite pagos de comercio electrónico directamente desde la app bancaria del usuario, sin necesidad de tarjeta de crédito, utilizando la red SEPA como infraestructura subyacente.",
+        "highlights": [
+          "Wero llega al ecommerce belga con sus primeros comercios en marzo de 2026",
+          "La solución integra pagos de ecommerce directamente en las apps bancarias de los usuarios",
+          "Wero forma parte de la estrategia de soberanía de pagos digitales en Europa frente a PayPal y los wallets americanos"
+        ],
+        "tags": ["MERCADO", "ESTRAT"],
+        "imagen": null,
+        "otros_medios": [],
+        "_nota": "Publicado originalmente en inglés."
       },
       {
         "fecha": "2026-03-23",
