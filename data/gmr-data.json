@@ -1,1541 +1,1342 @@
 {
   "success": true,
-  "timestamp": "2026-03-23T14:30:00.000Z",
+  "timestamp": "2026-02-13T11:04:24.070Z",
   "version": "2.0",
   "data": {
     "noticias": [
       {
-        "fecha": "2026-03-18",
-        "titulo": "Travelex publica su primer informe Travel Money Insights: el 69% de los viajeros sigue eligiendo el efectivo",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://financialit.net/news/cash-management/travelex-launches-inaugural-insights-report-69-travellers-still-choose-cash",
-        "medio": "Financial IT",
-        "resumen": "Travelex lanzó su primer informe 'Travel Money Insights Report', coincidiendo con el 50 aniversario de la empresa. El estudio revela que el 69% de los viajeros internacionales prefiere llevar efectivo al extranjero, superando a las tarjetas en casi todas las regiones. Solo el 6% compra divisas el mismo día del viaje; la tendencia se inclina a planificar semanas antes.",
-        "highlights": [
-          "69% de viajeros internacionales prefiere efectivo",
-          "Solo el 6% compra divisas el día del viaje",
-          "Coincide con el 50 aniversario de Travelex (fundada en 1976)",
-          "Datos combinan ingresos globales de Travelex con encuestas a consumidores"
-        ],
-        "tags": ["Travelex", "travel money", "efectivo", "informe", "consumidor"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Travelex+Insights",
-        "otros_medios": [
-          { "nombre": "TravelMole", "url": "https://www.travelmole.com/news/travelex-two-thirds-of-travellers-still-prefer-to-use-cash/" },
-          { "nombre": "Travel And Tour World", "url": "https://www.travelandtourworld.com/news/article/travelex-launches-inaugural-travel-money-insights-report-cash-still-reigns-supreme-for-69-of-global-travelers/" },
-          { "nombre": "TradeArabia", "url": "https://tradearabia.com/News/390388/69pc-of-travellers-still-choose-cash--Travelex-report" },
-          { "nombre": "ATM Marketplace", "url": "https://www.atmmarketplace.com/news/study-finds-69-of-travelers-prefer-cash/" },
-          { "nombre": "IBS Intelligence", "url": "https://ibsintelligence.com/ibsi-news/cash-remains-key-for-travel-spending-report-reveals/" }
-        ]
-      },
-      {
-        "fecha": "2026-03-10",
-        "titulo": "Eurochange España publica guía de viaje para aficionados españoles en la Champions League",
-        "categoria": "sector-cambiario",
+        "fecha": "2026-01-26",
+        "titulo": "Global Exchange inicia operaciones en Heathrow y supera las 500 oficinas en su red mundial",
+        "categoria": "grupo-global",
         "alcance": "Nacional",
-        "url": "https://eurochange.es/blog/en/travels/champions-league-uk-travel-tips-currency-exchange/",
-        "medio": "Eurochange Blog",
-        "resumen": "Eurochange España publicó en su blog corporativo una guía de viaje dirigida a aficionados españoles que viajaban a Inglaterra para los octavos de final de la Champions League. La guía cubría los partidos de Barcelona en Newcastle, Atlético de Madrid frente al Tottenham y Real Madrid contra el Manchester City, incluyendo consejos sobre cambio de divisas y planificación financiera del viaje.",
+        "url": "https://www.lagacetadesalamanca.es/salamanca/global-exchange-inicia-operaciones-heathrow-supera-500-20260126171259-nt.html",
+        "medio": "La Gaceta de Salamanca",
+        "resumen": "Este contrato representa el hito más importante en la historia de Global Exchange, consolidando su posición como líder mundial del sector al operar en 4 de los 5 aeropuertos más transitados de Europa: Heathrow, Estambul, París CDG y Madrid-Barajas.",
         "highlights": [
-          "Guía para partidos de Barcelona, Atlético y Real Madrid en UK",
-          "Consejos sobre cambio de divisas para viajeros deportivos",
-          "Incluye información de transporte y planificación financiera"
+          "Comenzó operaciones en Heathrow el 26 de enero de 2026, el aeropuerto más transitado de Europa con 83,9 millones de pasajeros anuales",
+          "Despliegue de 23 oficinas de cambio en las 4 terminales, 78 cajeros automáticos y más de 40 dispensadores cash-to-cash",
+          "Equipo de 180 profesionales contratados para las operaciones",
+          "El contrato pone fin a 39 años de presencia exclusiva de Travelex en el aeropuerto",
+          "Con esta apertura, Global Exchange supera las 515 oficinas en 31 países y 90 aeropuertos internacionales"
         ],
-        "tags": ["Eurochange", "Champions League", "travel money", "España", "turismo deportivo"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Champions",
-        "otros_medios": []
+        "tags": [
+          "Heathrow",
+          "Expansión",
+          "Liderazgo"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Airport"
       },
       {
-        "fecha": "2026-03-15",
-        "titulo": "Eurochange España publica guía sobre Semana Santa 2026 con promoción de cambio de divisas",
-        "categoria": "sector-cambiario",
-        "alcance": "Nacional",
-        "url": "https://eurochange.es/blog/en/viajes-en/aster-spain-2026-currency-exchange/",
-        "medio": "Eurochange Blog",
-        "resumen": "Eurochange España publicó una guía sobre la Semana Santa 2026 (29 de marzo al 5 de abril) dirigida a turistas extranjeros que visitan España, promoviendo el servicio de cambio de divisas en sus más de 40 oficinas. La guía destacaba destinos como Málaga y Sevilla e incluía consejos prácticos sobre el cambio de moneda.",
-        "highlights": [
-          "Semana Santa 2026: 29 de marzo al 5 de abril",
-          "Más de 40 oficinas de Eurochange en España",
-          "Destinos destacados: Málaga y Sevilla"
-        ],
-        "tags": ["Eurochange", "Semana Santa", "turismo", "cambio de divisas", "España"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Semana+Santa",
-        "otros_medios": []
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "Wise obtiene cinco licencias regulatorias en Tailandia: primera empresa no bancaria en lograrlo",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://newsroom.wise.com/en-UKI/263427-wise-becomes-first-non-bank-to-be-granted-five-licences-in-thailand-accelerating-its-global-expansion-and-growth/",
-        "medio": "Wise Newsroom",
-        "resumen": "Wise se convirtió en la primera empresa no bancaria en obtener cinco licencias regulatorias del Banco de Tailandia y del Ministerio de Comercio para operar localmente. Las licencias cubren pagos, dinero electrónico y cambio de divisas. Tailandia mueve más de $17.000 millones anuales en flujos transfronterizos, y Wise estima que los consumidores podrían ahorrar más de $1.040 millones al año en comisiones ocultas.",
-        "highlights": [
-          "Primera no-banca con cinco licencias en Tailandia",
-          "Billetera digital multimoneda completamente regulada",
-          "$17.000 millones anuales en flujos transfronterizos en Tailandia",
-          "Ahorro potencial de $1.040 millones/año en comisiones"
-        ],
-        "tags": ["Wise", "Tailandia", "licencia", "APAC", "cambio de divisas"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Thailand",
-        "otros_medios": [
-          { "nombre": "FinTech Magazine", "url": "https://fintechmagazine.com/news/a-wise-decision-bank-of-thailand-grants-banking-licence" },
-          { "nombre": "FinTech Global", "url": "https://fintech.global/2026/03/17/wise-lands-thailand-licences-in-push-to-expand-across-apac/" },
-          { "nombre": "The Paypers", "url": "https://thepaypers.com/payments/news/wise-secures-five-licences-in-thailand-in-latest-apac-expansion" }
-        ]
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "Revolut obtiene la licencia bancaria completa en el Reino Unido tras cuatro años de espera",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.cnbc.com/2026/03/11/revolut-acquires-full-uk-banking-license.html",
-        "medio": "CNBC",
-        "resumen": "Revolut obtuvo la licencia bancaria completa en el Reino Unido tras un proceso regulatorio de cuatro años. La PRA levantó todas las restricciones sobre Revolut Bank UK Ltd, permitiéndole ofrecer cuentas corrientes, crédito y depósitos protegidos por el FSCS hasta £120.000 a sus 13 millones de clientes británicos. La empresa planea invertir £3.000 millones en el Reino Unido creando 1.000 empleos.",
-        "highlights": [
-          "Licencia bancaria completa UK tras 4 años de proceso",
-          "13 millones de clientes británicos",
-          "Depósitos protegidos hasta £120.000 por FSCS",
-          "Inversión prevista de £3.000 millones y 1.000 empleos"
-        ],
-        "tags": ["Revolut", "licencia bancaria", "UK", "PRA", "FSCS"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+UK+License",
-        "otros_medios": [
-          { "nombre": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-11/revolut-set-to-secure-full-uk-banking-license-unlocking-lending" },
-          { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/11/crypto-friendly-fintech-revolut-gains-full-uk-banking-license" },
-          { "nombre": "PYMNTS", "url": "https://www.pymnts.com/news/banking/2026/revolut-wins-long-awaited-full-banking-license-in-the-uk/" }
-        ]
-      },
-      {
-        "fecha": "2026-03-05",
-        "titulo": "Revolut solicita licencia bancaria federal en Estados Unidos y nombra nuevo CEO para el país",
-        "categoria": "sector-cambiario",
-        "alcance": "Internacional",
-        "url": "https://www.americanbanker.com/news/fintech-giant-revolut-pursues-us-bank-charter",
-        "medio": "American Banker",
-        "resumen": "Revolut presentó una solicitud formal ante la OCC y la FDIC de EE.UU. para obtener una licencia bancaria nacional. De aprobarse, Revolut podría ofrecer depósitos asegurados por la FDIC, acceso a Fedwire y ACH, y lanzar productos de crédito. Cetin Duransoy (ex-Visa y Capital One) fue nombrado nuevo CEO en EE.UU.",
-        "highlights": [
-          "Solicitud formal ante OCC y FDIC",
-          "Eliminaría dependencia de Lead Bank como socio bancario",
-          "Cetin Duransoy (ex-Visa, Capital One) nombrado CEO en EE.UU.",
-          "Acceso directo a Fedwire y ACH si aprobada"
-        ],
-        "tags": ["Revolut", "licencia bancaria", "EE.UU.", "OCC", "FDIC"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+US+License",
-        "otros_medios": [
-          { "nombre": "The Irish Times", "url": "https://www.irishtimes.com/business/2026/03/05/revolut-applies-for-us-banking-licence-in-push-to-crack-american-market/" },
-          { "nombre": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/05/crypto-friendly-fintech-giant-revolut-files-for-u-s-banking-license" },
-          { "nombre": "El Español", "url": "https://www.elespanol.com/invertia/empresas/banca/20260305/revolut-pide-licencia-bancaria-federal-eeuu-nombra-duransoy-nuevo-ceo-pais/1003744157125_0.html" }
-        ]
-      },
-      {
-        "fecha": "2026-03-01",
-        "titulo": "Global Exchange reemplaza a Travelex en el aeropuerto de Heathrow como proveedor de cambio de divisas",
+        "fecha": "2026-01-26",
+        "titulo": "Heathrow announces Global Exchange to become new currency exchange provider",
         "categoria": "grupo-global",
         "alcance": "Internacional",
-        "url": "https://www.global-exchange.com/en-GB/press/global-exchange-will-begin-providing-currency-exchange-services-at-heathrow-airport-starting-january-2026",
-        "medio": "Global Exchange",
-        "resumen": "Global Exchange, multinacional española con sede en Salamanca, inició operaciones como proveedor exclusivo de cambio de moneda en el aeropuerto de Heathrow desde enero de 2026, reemplazando a Travelex tras 39 años de presencia. El acuerdo comprende 23 oficinas de cambio, 98 cajeros automáticos y más de 40 dispensadores automáticos de efectivo en las cuatro terminales.",
+        "url": "https://mediacentre.heathrow.com/pressrelease/detail/23952",
+        "medio": "Heathrow Media Centre",
+        "resumen": "El comunicado oficial de Heathrow destaca el enfoque digital de Global Exchange y su compromiso con la experiencia del cliente como factores clave en la adjudicación del contrato.",
         "highlights": [
-          "Global Exchange reemplaza a Travelex tras 39 años en Heathrow",
-          "23 oficinas, 98 cajeros, 40+ dispensadores automáticos",
-          "Más de 180 empleados desplegados",
-          "4 de 5 aeropuertos europeos más transitados bajo su gestión"
+          "Global Exchange selected to operate currency exchange services at Europe's busiest airport",
+          "The deal includes 23 in-terminal locations, 78 ATMs, and over 40 cash-to-cash dispensers",
+          "Digital-first approach with state-of-the-art technology highlighted in winning proposal",
+          "Operations began January 2026, replacing Travelex after 39 years"
         ],
-        "tags": ["Global Exchange", "Travelex", "Heathrow", "aeropuertos", "cambio de moneda"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Global+Exchange+Heathrow",
-        "otros_medios": [
-          { "nombre": "Heathrow Media Centre", "url": "https://mediacentre.heathrow.com/pressrelease/detail/23952" },
-          { "nombre": "El Economista", "url": "https://www.eleconomista.es/economia/noticias/13579060/10/25/global-exchange-gestionara-el-cambio-de-moneda-en-el-aeropuerto-de-heathrow-a-partir-de-2026.html" }
-        ]
+        "tags": [
+          "Official",
+          "Partnership"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Official"
       },
       {
-        "fecha": "2026-03-02",
-        "titulo": "Revolut publica informe sobre estafas financieras: Telegram concentra el 22% del fraude en España",
-        "categoria": "sector-cambiario",
+        "fecha": "2025-09-01",
+        "titulo": "Global Exchange alcanza el liderazgo mundial en cambio de divisas tras llegar a 30 países y 84 aeropuertos internacionales",
+        "categoria": "grupo-global",
         "alcance": "Nacional",
-        "url": "https://www.eldebate.com/tecnologia/20260302/estafas-telegram-disparan-espana-revolut-advierte-auge-timos-cns_391046.html",
-        "medio": "El Debate",
-        "resumen": "Revolut publicó la cuarta edición de su Informe sobre Seguridad del Consumidor y Delitos Financieros, revelando que Telegram concentró el 22% de las estafas reportadas en España en 2025. A nivel global, los fraudes en Telegram crecieron un 233%. Las estafas de compras online lideran con un 53% en España.",
+        "url": "https://www.eleconomista.es/transportes-turismo/noticias/13551342/09/25/global-exchange-alcanza-el-liderazgo-mundial-en-cambio-de-divisas.html",
+        "medio": "El Economista",
+        "resumen": "La expansión en Asia-Pacífico se acelera con nuevas operaciones en Auckland (8 oficinas), Kuala Lumpur y aeropuertos de Malasia (6 oficinas). México sigue siendo el epicentro de la actividad en América con 50 centros de trabajo y 72 oficinas.",
         "highlights": [
-          "22% de las estafas en España originadas en Telegram",
-          "Fraude en Telegram creció 233% a nivel global",
-          "53% de estafas en España son de compras online",
-          "Revolut implementa chatbot de IA antifraude"
+          "Facturación de 275,2 millones de euros en 2024, crecimiento del 281% respecto a 2015",
+          "Apertura en 6 nuevos países durante 2025: Malasia, Nueva Zelanda, Perú, Rumanía, Japón y Arabia Saudí",
+          "92 nuevas oficinas inauguradas durante el año",
+          "Plantilla de 2.900 empleados, un 80% más que en 2020",
+          "En 2026 la compañía celebra su 30 aniversario"
         ],
-        "tags": ["Revolut", "estafas", "Telegram", "fraude", "España", "seguridad"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Fraud+Report",
-        "otros_medios": [
-          { "nombre": "Infobae", "url": "https://www.infobae.com/tecno/2026/02/27/telegram-bajo-la-lupa-las-estafas-aumentan-un-233-en-la-plataforma/" }
-        ]
+        "tags": [
+          "Liderazgo",
+          "Expansión global",
+          "Asia-Pacífico"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Global+Leadership"
       },
       {
-        "fecha": "2026-03-16",
-        "titulo": "Promociones de travel money en UK: John Lewis, Asda y TUI lanzan ofertas en marzo 2026",
+        "fecha": "2026-01-01",
+        "titulo": "Travelex pierde Heathrow pero mantiene posiciones en Frankfurt y Ámsterdam",
         "categoria": "sector-cambiario",
         "alcance": "Internacional",
-        "url": "https://www.johnlewisfinance.com/travel-money",
-        "medio": "John Lewis Finance",
-        "resumen": "Los principales proveedores minoristas de travel money del Reino Unido lanzaron promociones especiales: John Lewis Bureau de Change ofreció Rate Sale del 13 al 25 de marzo, Asda Travel Money del 16 al 23 de marzo, y TUI Travel Money del 19 al 27 de marzo. Estas promociones evidencian la competencia activa en el mercado minorista de cambio de divisas antes de Semana Santa.",
+        "url": "https://www.travelex-corporate.com/media-centre/",
+        "medio": "Travelex Corporate",
+        "resumen": "La pérdida de Heathrow representa un golpe estratégico significativo para Travelex, aunque la compañía diversifica hacia tarjetas prepago con +54% en transacciones de recarga y lanzó el programa de fidelización Travelex Plus con 20.000 miembros.",
         "highlights": [
-          "John Lewis Rate Sale: 13-25 marzo",
-          "Asda Travel Money: 16-23 marzo",
-          "TUI Travel Money: 19-27 marzo (solo online)",
-          "Competencia activa pre-Semana Santa"
+          "Pérdida del contrato de Heathrow tras 39 años de presencia exclusiva",
+          "Mantiene Frankfurt (contrato renovado 6 años, 13 tiendas y 25 ATMs)",
+          "Conserva Ámsterdam Schiphol (renovado 5 años, 11 tiendas y 50 ATMs)",
+          "Ingresos FY2024: £520,1 millones (-3% interanual)",
+          "Nuevo CEO Philip Bowcock nombrado en julio 2025"
         ],
-        "tags": ["travel money", "UK", "John Lewis", "Asda", "TUI", "promociones"],
-        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=UK+Travel+Money+Promos",
+        "tags": [
+          "Travelex",
+          "Competencia"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Travelex"
+      },
+      {
+        "fecha": "2025-12-01",
+        "titulo": "Wise Full Year 2025 Earnings: Strong Growth Continues",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://wise.com/gb/blog/annual-report-2025",
+        "medio": "Wise Investor Relations",
+        "resumen": "Wise mantiene crecimiento de doble dígito con expansión de productos más allá de las transferencias. La tarjeta Wise alcanzó £15.000 millones en gasto con +28% de crecimiento en ingresos.",
+        "highlights": [
+          "Ingresos: 1.650 millones de libras (+17% interanual)",
+          "Clientes activos: 15,6 millones de usuarios",
+          "Volumen transfronterizo: 145.200 millones de libras",
+          "Margen EBITDA subyacente: 21%, superando objetivo del 13-16%",
+          "Ingresos no transfronterizos ya representan el 41% del total",
+          "Propuesta de dual listing en NYSE para Q2 2026"
+        ],
+        "tags": [
+          "Wise",
+          "Fintech",
+          "Resultados"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Growth"
+      },
+      {
+        "fecha": "2026-01-15",
+        "titulo": "Revolut alcanza los 6 millones de clientes en España y supera a Sabadell e ING",
+        "categoria": "sector-cambiario",
+        "alcance": "Nacional",
+        "url": "https://www.eleconomista.es/banca-finanzas/noticias/13717866/01/26/revolut-alcanza-los-seis-millones-de-clientes-en-espana.html",
+        "medio": "El Economista",
+        "resumen": "Revolut representa la mayor amenaza competitiva digital en España. Su red de ATMs propios compite directamente con el negocio tradicional de cambio de divisas, ofreciendo tipos de cambio interbancarios. España fue elegida como mercado piloto mundial porque el 60% de pagos en punto de venta siguen siendo en efectivo.",
+        "highlights": [
+          "6 millones de usuarios en España (13% de penetración de mercado)",
+          "España es el cuarto banco por número de clientes, superando a ING y Sabadell",
+          "Valoración de la compañía: 75.000 millones de dólares (+67% en 2025)",
+          "Lanzamiento de red propia de cajeros: 50 unidades en Madrid y Barcelona",
+          "Plan de expansión a 200 cajeros en 2026 (Valencia, Málaga incluidas)",
+          "ATMs permiten retiros sin comisión y dispensación instantánea de tarjetas"
+        ],
+        "tags": [
+          "Revolut",
+          "Fintech",
+          "ATMs",
+          "Amenaza"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Spain"
+      },
+      {
+        "fecha": "2025-12-31",
+        "titulo": "Los aeropuertos del Grupo AENA gestionaron 384,8 millones de pasajeros en 2025",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.aena.es/en/press/aena-group-airports-exceed-384.8-million-passengers-in-2025.html",
+        "medio": "AENA",
+        "resumen": "El crecimiento sostenido del tráfico aéreo en España garantiza volumen de clientes para servicios de cambio de divisa. Los aeropuertos mediterráneos muestran el mayor dinamismo, con Valencia y Alicante liderando el crecimiento.",
+        "highlights": [
+          "Récord histórico: 321,6 millones de pasajeros en aeropuertos españoles (+3,9%)",
+          "Grupo AENA global (incluyendo Brasil y Londres Luton): 384,8 millones (+4,2%)",
+          "23 aeropuertos españoles batieron sus máximos históricos",
+          "Valencia: 11,8M pasajeros (+9,6%), mayor crecimiento porcentual",
+          "Alicante-Elche: 20,0M pasajeros (+8,5%)",
+          "Madrid-Barajas: 68,2M pasajeros (+3,0%)"
+        ],
+        "tags": [
+          "AENA",
+          "Aeropuertos",
+          "Tráfico"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=AENA+Record"
+      },
+      {
+        "fecha": "2025-12-15",
+        "titulo": "España bate récord de turismo: 97 millones de visitantes y 135.000 millones de gasto",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/hereu-adelanta-previsiones-gasto-turistas-internacionales.aspx",
+        "medio": "Ministerio de Industria y Turismo",
+        "resumen": "El crecimiento del gasto turístico casi duplica el de llegadas, indicando un turismo de mayor valor. El mercado británico y estadounidense, con mayor necesidad de cambio GBP/USD, representan oportunidades estratégicas para el sector.",
+        "highlights": [
+          "97 millones de turistas internacionales en 2025 (+3,5%)",
+          "Gasto turístico récord: 135.000 millones de euros (+6,8%)",
+          "Gasto medio por turista: aproximadamente 1.400 euros por viaje",
+          "Reino Unido lidera como mercado emisor: 18,2 millones de turistas (+3,9%)",
+          "Turismo estadounidense con fuerte crecimiento del gasto (+11,6%)"
+        ],
+        "tags": [
+          "Turismo",
+          "España",
+          "Récord"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Tourism+Record"
+      },
+      {
+        "fecha": "2026-01-10",
+        "titulo": "ACI World: Global air travel to exceed 10 billion passengers in 2026",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.aci-europe.org/economic-forecasts.html",
+        "medio": "ACI Europe",
+        "resumen": "Las previsiones de ACI confirman la tendencia alcista del tráfico aéreo global, con el segmento internacional mostrando mayor dinamismo que el doméstico, lo que beneficia directamente al sector de cambio de divisas.",
+        "highlights": [
+          "Previsión global: 10.200 millones de pasajeros en 2026 (+3,9%)",
+          "Tráfico internacional crece más del doble que el doméstico (+5,3% vs +2,4%)",
+          "Europa: crecimiento estimado del +3,6%",
+          "European Travel Commission proyecta +6,8% en llegadas internacionales a Europa",
+          "Recuperación del turismo de larga distancia desde Asia-Pacífico"
+        ],
+        "tags": [
+          "ACI",
+          "Previsiones",
+          "Global"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ACI+Forecast"
+      },
+      {
+        "fecha": "2024-11-01",
+        "titulo": "BCE: El efectivo sigue siendo el método de pago más utilizado en tiendas de la eurozona",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2024.en.html",
+        "medio": "Banco Central Europeo",
+        "resumen": "El estudio SPACE 2024 del BCE confirma la resiliencia del efectivo pese a la digitalización. El dato sobre jóvenes acumulando efectivo desafía estereotipos sobre preferencias generacionales en medios de pago.",
+        "highlights": [
+          "52% de las transacciones en punto de venta de la eurozona se pagan en efectivo",
+          "El 62% de consumidores considera importante poder pagar en efectivo (+2 puntos desde 2022)",
+          "En 14 de los 20 países de la eurozona, el efectivo sigue siendo el método predominante",
+          "Jóvenes de 18-27 años muestran mayor propensión a acumular efectivo como reserva",
+          "Motivaciones: preocupaciones sobre ciberamenazas, privacidad y desconfianza en sistemas digitales"
+        ],
+        "tags": [
+          "BCE",
+          "Efectivo",
+          "Eurozona"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ECB+Cash+Study"
+      },
+      {
+        "fecha": "2026-01-02",
+        "titulo": "El efectivo reconocido como infraestructura crítica tras el apagón de abril 2025",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.rte.ie/brainstorm/2026/0102/1545488-cash-money-emergency-planning/",
+        "medio": "RTÉ Brainstorm",
+        "resumen": "El reconocimiento institucional del efectivo como infraestructura crítica refuerza el argumento comercial del sector. La exención para operaciones de cambio de moneda representa una ventaja competitiva regulatoria.",
+        "highlights": [
+          "El BCE y gobiernos europeos reconocen el efectivo como componente crítico de preparación ante crisis",
+          "Irlanda y países nórdicos recomiendan a ciudadanos mantener efectivo en casa para emergencias",
+          "El BCE declaró que la demanda sostenida de efectivo sugiere su utilidad única e imperfecta sustituibilidad",
+          "España: límite de €1.000 para pagos en efectivo con empresarios (€10.000 para turistas no residentes)",
+          "Operaciones de cambio de moneda en establecimientos autorizados están exentas del límite"
+        ],
+        "tags": [
+          "Infraestructura",
+          "Crisis",
+          "Regulación"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Critical+Infrastructure"
+      },
+      {
+        "fecha": "2026-01-05",
+        "titulo": "Denaria intensifica la defensa del efectivo como servicio público esencial",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.plataformadenaria.com/es/notas-de-prensa/",
+        "medio": "Plataforma Denaria",
+        "resumen": "Denaria aprovecha los fallos tecnológicos recientes (apagón de abril, caída de Redsys) para reforzar su mensaje sobre la importancia del dinero físico y su papel como respaldo ante crisis digitales.",
+        "highlights": [
+          "El 90% de españoles se opone a la sustitución del efectivo según encuesta de Denaria",
+          "El 87% considera que debe garantizarse el derecho a pagar en efectivo",
+          "El 77% lo considera un bien público",
+          "Jornada en el Congreso de los Diputados pidiendo reforzar el efectivo como infraestructura crítica",
+          "Lanzamiento de Denaria Chile: primer capítulo en Latinoamérica"
+        ],
+        "tags": [
+          "Denaria",
+          "Defensa efectivo",
+          "Congreso"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Denaria+Platform"
+      },
+      {
+        "fecha": "2026-02-10",
+        "titulo": "Prueba noticia Febrero",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://getd.es/",
+        "medio": "Hugo (Comunicación)",
+        "resumen": "Tikitaka tikitaka ti",
+        "highlights": [
+          "Taka tiki ti taka ti"
+        ],
+        "tags": [
+          "Molinos",
+          "Cosas"
+        ],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Prueba+Hugo"
+      },
+      {
+        "fecha": "2025-12-16",
+        "titulo": "Los grandes nombres de Salamanca brillan en la primera edición de los Premios \"SER Únicos\"",
+        "categoria": "grupo-global",
+        "alcance": "Nacional",
+        "url": "https://cadenaser.com/castillayleon/salamanca/",
+        "medio": "Cadena SER",
+        "resumen": "La primera edición de los Premios \"SER Únicos\" de Radio Salamanca congregó a autoridades y público en el Teatro Liceo, donde ocho distinguidos representantes de la excelencia salmantina fueron galardonados. El evento reconoció la labor de instituciones como el Centro de Investigación del Cáncer y personalidades destacadas como Vicente del Bosque.",
+        "highlights": [
+          "Global Exchange galardonada en categoría \"Empresa\""
+        ],
+        "tags": [],
+        "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/Portada-10-scaled.jpg"
+      },
+      {
+        "fecha": "2025-12-16",
+        "titulo": "Premios \"SER Únicos\": Global Exchange recibe el premio \"a la Empresa\"",
+        "categoria": "grupo-global",
+        "alcance": "Regional",
+        "url": "https://salamancartvaldia.es/",
+        "medio": "SALAMANCArtv AL DÍA",
+        "resumen": "Radio Salamanca celebró la primera edición de los premios 'SER Únicos' en el Teatro Liceo, reconociendo a figuras destacadas de la provincia en diversas categorías, incluyendo a Global Exchange como mejor empresa.",
+        "highlights": [
+          "Primera edición de premios 'SER Únicos' en Teatro Liceo"
+        ],
+        "tags": [],
+        "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/04-7-1024x768.jpg"
+      },
+      {
+        "fecha": "2025-12-01",
+        "titulo": "Wise Becomes First Non-Bank to Go Live on Japan's Zengin System",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.fintechfutures.com/2025/12/wise-zengin-japan/",
+        "medio": "Fintech Finance News",
+        "resumen": "La conexión directa de Wise al sistema Zengin fortalece su infraestructura en Asia, reduciendo costos y tiempos de transferencia al mercado japonés, el tercero más grande del mundo.",
+        "highlights": [
+          "Primera fintech no bancaria conectada directamente al sistema de pagos doméstico japonés Zengin vía API"
+        ],
+        "tags": [],
+        "imagen": "https://cdn.prod.website-files.com/64199d190fc7afa82666d89c/689128a0b1c9d15000f504ec_point-of-sale-payment-card-tap.webp"
+      },
+      {
+        "fecha": "2025-12-03",
+        "titulo": "Wise: December fee review - here's what's changed",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://wise.com/gb/blog/fee-review-december-2025",
+        "medio": "Wise",
+        "resumen": "Wise continúa presionando los márgenes de la industria con comisiones históricamente bajas, consolidando su propuesta de valor frente a la banca tradicional.",
+        "highlights": [
+          "Comisión promedio global bajó a 0,53% (la más baja en 5 años)"
+        ],
+        "tags": [],
+        "imagen": "Clientes han movido £145.000 millones y ahorrado £2.000M vs bancos tradicionales"
+      },
+      {
+        "fecha": "2025-12-10",
+        "titulo": "British Travel Awards 2025: Eurochange Takes Home Bronze",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.businessmole.com/eurochange-bronze-2025/",
+        "medio": "BusinessMole",
+        "resumen": "Eurochange mantiene su estatus en el mercado británico de cambio minorista, aunque se mantiene detrás de los líderes del sector.",
+        "highlights": [
+          "Tercer año consecutivo entre finalistas de British Travel Awards"
+        ],
+        "tags": [],
+        "imagen": "Premio Bronce en categoría \"Best Retailer for Forex/Travel Money\""
+      },
+      {
+        "fecha": "2025-12-03",
+        "titulo": "El gasto de los turistas internacionales supera los 118.000 millones de euros, un 7% más que hace un año",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/turismo/",
+        "medio": "INE / La Moncloa",
+        "resumen": "España consolida su posición como segundo destino turístico mundial, con cifras que fundamentan la demanda continua de servicios de cambio de divisas.",
+        "highlights": [
+          "Turistas internacionales octubre: 9,2 millones (+3,2%)"
+        ],
+        "tags": [],
+        "imagen": "Acumulado enero-octubre: 85,7 millones (+3,5%) - RÉCORD HISTÓRICO"
+      },
+      {
+        "fecha": "2025-12-12",
+        "titulo": "Los aeropuertos del Grupo Aena rozan los 27,7 millones de pasajeros en noviembre",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Nacional",
+        "url": "https://www.aena.es/es/sala-de-prensa/aena-noviembre-2025.html",
+        "medio": "Aena",
+        "resumen": "Los récords continuos de AENA fundamentan la demanda de servicios cambiarios en aeropuertos españoles, con crecimientos especialmente fuertes en destinos turísticos como Málaga y Alicante.",
+        "highlights": [
+          "Red AENA España noviembre: 22.543.602 pasajeros (+4,6% interanual)"
+        ],
+        "tags": [],
+        "imagen": "Acumulado enero-noviembre España: 299.141.995 pasajeros (+4%)"
+      },
+      {
+        "fecha": "2025-12-31",
+        "titulo": "España lidera el tráfico aéreo europeo en un año crítico para la seguridad",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.aviaciondigital.com/espana-liderazgo-aereo-2025/",
+        "medio": "Aviación Digital",
+        "resumen": "ENAIRE gestionó 2,5 millones de vuelos consolidando el liderazgo español. Las demoras cayeron un 7%, mientras el sector global enfrentó desafíos de seguridad significativos.",
+        "highlights": [
+          "ENAIRE gestionó 2,5 millones de vuelos (+14% vs. 2019)"
+        ],
+        "tags": [],
+        "imagen": "Demoras redujeron 7% respecto al año anterior"
+      },
+      {
+        "fecha": "2025-12-19",
+        "titulo": "Council agrees position on strengthening the role of cash",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/cash-payments/",
+        "medio": "Consilium (Europa)",
+        "resumen": "La UE refuerza la protección del efectivo como medio legal de pago, asegurando su disponibilidad y aceptación ante la creciente digitalización de los pagos.",
+        "highlights": [
+          "Consejo UE adopta medidas para salvaguardar el efectivo como medio de pago"
+        ],
+        "tags": [],
+        "imagen": "Prohibición de rechazo de pagos en efectivo por empresas (excepto ventas online)"
+      },
+      {
+        "fecha": "2025-12-18",
+        "titulo": "Revolut abrirá nuevas sedes en Madrid y Barcelona y contratará 800 personas hasta 2028",
+        "categoria": "medios-digital",
+        "alcance": "Nacional",
+        "url": "https://www.eleconomista.es/banca-finanzas/noticias/revolut-expansio-espana-2028.html",
+        "medio": "El Economista",
+        "resumen": "Revolut intensifica su apuesta por España como mercado estratégico, compitiendo directamente con la banca tradicional mediante inversiones masivas en infraestructura local y talento.",
+        "highlights": [
+          "800 nuevos empleados hasta 2028: 500 Madrid (Paseo Castellana), 300 Barcelona (Av. Diagonal)"
+        ],
+        "tags": [],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/London_Revolut.jpg"
+      },
+      {
+        "fecha": "2025-12-02",
+        "titulo": "Visa Launches New Digital Wallets in Europe",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.visa.com/newsroom/digital-wallets-europe-2025",
+        "medio": "VISA",
+        "resumen": "La apertura de iOS a carteras de terceros bajo la DMA acelera la competencia en pagos móviles europeos, con BBVA Pay liderando la innovación en España.",
+        "highlights": [
+          "Visa lanza 3 nuevas wallets en Europa: BBVA Pay, Klarna, Vipps MobilePay"
+        ],
+        "tags": [],
+        "imagen": "https://www.bbva.com/wp-content/uploads/2025/10/bbva-pay-wallet-compatible-iphone.jpg"
+      },
+      {
+        "fecha": "2025-12-06",
+        "titulo": "Euro Stablecoin Market Cap Doubles in Year After MiCA",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.coindesk.com/policy/2025/12/euro-stablecoin-mica/",
+        "medio": "Coindesk",
+        "resumen": "MiCA está remodelando el mercado de stablecoins en Europa, favoreciendo emisores conformes como Circle mientras Tether pierde terreno.",
+        "highlights": [
+          "Un año de MiCA: 102 CASPs autorizados y 30 emisores activos de stablecoins"
+        ],
+        "tags": [],
+        "imagen": "Capitalización de mercado de stablecoins en euros se duplicó"
+      },
+      {
+        "fecha": "2025-12-19",
+        "titulo": "Council agrees position on the digital euro",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/digital-euro/",
+        "medio": "Consilium (Europa)",
+        "resumen": "Hito regulatorio clave que marca el camino hacia la implementación del euro digital. Servicio gratuito para consumidores y límites de tenencia buscan equilibrar adopción con estabilidad financiera.",
+        "highlights": [
+          "Consejo UE acuerda posición sobre marco regulatorio del euro digital"
+        ],
+        "tags": [],
+        "imagen": "Servicio gratuito para consumidores finales"
+      },
+      {
+        "fecha": "2025-12-19",
+        "titulo": "ECB: A digital euro for the digital age",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251219.en.html",
+        "medio": "ECB",
+        "resumen": "El BCE ha completado la fase de preparación técnica e insta al legislador europeo a avanzar con el marco legal para el euro digital.",
+        "highlights": [
+          "BCE completa fase de preparación técnica del euro digital"
+        ],
+        "tags": [],
+        "imagen": "40% de consumidores han oído hablar del euro digital (vs 9% en 2021)"
+      },
+      {
+        "fecha": "2025-12-01",
+        "titulo": "PSD3/PSR: EU reforms promise safer payments",
+        "categoria": "otros-medios-pago",
+        "alcance": "Internacional",
+        "url": "https://www.fintechglobal.com/psd3-psr-analysis-2025/",
+        "medio": "FinTech Global",
+        "resumen": "PSD3/PSR representa la mayor reforma regulatoria del sector de pagos desde PSD2, enfatizando protección al consumidor y prevención de fraude.",
+        "highlights": [
+          "Mayor reforma del sector pagos desde PSD2"
+        ],
+        "tags": [],
+        "imagen": "https://technoxander.com/wp-content/uploads/2024/06/Verification-of-Payee-Smart-Data.webp"
+      },
+      {
+        "fecha": "2025-12-22",
+        "titulo": "Madrid Foro Empresarial y Denaria piden subir el límite de pago en efectivo",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.efe.com/denaria-limite-efectivo-3000-euros/",
+        "medio": "EFE / Investing",
+        "resumen": "La Plataforma Denaria intensifica sus esfuerzos de lobby para flexibilizar las restricciones al efectivo en España, argumentando inclusión financiera y libertad de elección.",
+        "highlights": [
+          "Firma de acuerdo marco entre Madrid Foro Empresarial y Plataforma Denaria"
+        ],
+        "tags": [],
+        "imagen": "Reclaman subir límite de pago en efectivo de €1.000 a €3.000"
+      },
+      {
+        "fecha": "2025-12-16",
+        "titulo": "Bizum: nuevo control fiscal desde enero 2026",
+        "categoria": "medios-digital",
+        "alcance": "Nacional",
+        "url": "https://www.elespanol.com/economia/bizum-control-fiscal-2026/",
+        "medio": "El Español",
+        "resumen": "Desde 1 enero 2026 Hacienda recibirá informes mensuales de todos los pagos digitales, eliminando el umbral de €3.000 anuales para reportar. Solo afecta a empresarios y autónomos.",
+        "highlights": [
+          "Desde 1 enero 2026: Hacienda recibirá informes mensuales de pagos digitales"
+        ],
+        "tags": [],
+        "imagen": "Eliminación del umbral de €3.000 anuales para reportar"
+      },
+      {
+        "fecha": "2026-02-24",
+        "titulo": "Retrocede el precio de dos monedas en la venta informal en Cuba",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.cibercuba.com/noticias/2026-02-24-u1-e129488-s27061-nid321539-retrocede-precio-dos-monedas-venta-informal-cuba",
+        "medio": "CiberCuba",
+        "resumen": "El mercado informal de divisas en Cuba muestra el 24 de febrero que el euro y la MLC retroceden mientras el dólar se mantiene estable en 505 CUP, un récord histórico alcanzado días antes. La brecha entre el tipo de cambio oficial (1 USD = 120 CUP estatal) y el informal refleja la persistente escasez de divisas en el sistema bancario cubano.",
+        "highlights": [
+          "Dólar estable en 505 CUP en mercado informal, nuevo récord superando barrera de 500 pesos",
+          "Euro baja a 565 CUP y MLC retrocede a 405 CUP",
+          "Tipo de cambio oficial se mantiene en 1 USD = 24 CUP (personas jurídicas) y 1 USD = 120 CUP (mercado cambiario estatal)",
+          "El tipo de cambio 'flotante' introducido en diciembre sigue muy distante de la cotización informal"
+        ],
+        "tags": [
+          "cambio-de-divisas",
+          "cuba",
+          "mercado-informal",
+          "dolar",
+          "euro"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Directorio Cubano",
+            "url": "https://www.directoriocubano.info/actualidad/mercado-informal-y-oficial-de-divisas-en-cuba-hoy-tasas-actualizadas/"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-24",
+        "titulo": "Western Union Q4 Earnings Call Highlights",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.defenseworld.net/2026/02/24/western-union-q4-earnings-call-highlights.html",
+        "medio": "Defense World",
+        "resumen": "Resumen de la conferencia de resultados del Q4 2025 de Western Union, donde los ejecutivos destacaron los Servicios al Consumidor como motor clave de crecimiento. En el cuarto trimestre, este segmento representó el 14% de los ingresos totales con un crecimiento ajustado del 26%, impulsado por el negocio de travel money (incluyendo eurochange) y pagos de facturas.",
+        "highlights": [
+          "Los ingresos ajustados de Consumer Services crecieron un 26% en Q4 y casi un 30% en el año completo, impulsados por eurochange",
+          "El CEO McGranahan proyectó que el negocio de travel money se acercará a 150 millones de dólares en ingresos en 2026",
+          "Western Union describió el mercado de travel money como fragmentado, con oportunidades de expansión geográfica",
+          "La empresa espera cerrar la adquisición de Intermex en Q2 2026"
+        ],
+        "tags": [
+          "eurochange",
+          "western-union",
+          "reino-unido",
+          "estados-unidos",
+          "resultados-financieros",
+          "travel-money"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
       {
-        "fecha": "2026-03-24",
-        "titulo": "El euro digital: preparativos para una posible introducción",
-        "categoria": "medios-digital",
+        "fecha": "2026-02-23",
+        "titulo": "eurochange Wins 'Best Currency Travel Card' at the Moneynet Awards",
+        "categoria": "sector-cambiario",
         "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260324~66f71f7577.es.html",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "Piero Cipollone, miembro del Comité Ejecutivo del BCE, pronuncia un discurso ante el Parlamento Europeo exponiendo el estado del proyecto del euro digital y su hoja de ruta. Destaca el proceso de selección de proveedores de servicios de pago para el piloto, la convocatoria de manifestaciones de interés del 5 de marzo y las Conclusiones del Consejo Europeo del 19 de marzo que reafirman el apoyo político al proyecto. El Eurosistema prevé lanzar Pontes —su solución DLT para liquidación mayorista— en el tercer trimestre de 2026.",
+        "url": "https://pressat.co.uk/releases/eurochange-wins-best-currency-travel-card-at-the-moneynet-awards-f9a45fe2bb30c1bb5cb7bef72dfdd937/",
+        "medio": "Pressat",
+        "resumen": "eurochange, el proveedor especialista de cambio de divisas del Reino Unido, ganó el premio 'Best Currency Travel Card' en los Moneynet Awards 2026. El premio reconoce la tarjeta eurochange Travel Money Card, respaldada por Mastercard, por su facilidad de uso y adecuación para el viajero moderno.",
         "highlights": [
-          "Convocatoria de manifestaciones de interés para PSPs lanzada el 5 de marzo de 2026",
-          "El Consejo Europeo del 19 de marzo reafirmó la importancia vital del euro digital",
-          "Pontes, la solución DLT del Eurosistema, se lanzará en el tercer trimestre de 2026",
-          "La primera emisión del euro digital se estima posible en 2029 si la legislación se aprueba en 2026"
+          "eurochange ganó el premio Moneynet Awards 2026 a la 'Mejor Tarjeta de Viaje de Divisas'",
+          "La tarjeta es emitida por PrePay Technologies y funciona con licencia de Mastercard International",
+          "Charles Stewart, Director General de eurochange y tiendas de Western Union en Europa, comentó sobre el logro",
+          "eurochange cuenta con más de 240 sucursales en el Reino Unido",
+          "El premio se suma a otros galardones: Good Business Pays Fast Payer 2025, Bronze en British Travel Awards 2025"
         ],
-        "tags": ["ESTRAT", "REG", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Discurso de Cipollone ante la Comisión de Asuntos Económicos y Monetarios del Parlamento Europeo, 24 de marzo de 2026."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Building the rails for Europe's tokenised financial markets",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260323~a88f20c049.en.html",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "Cipollone detalla ante la industria en Bruselas las tres condiciones que Europa debe cumplir para liderar las finanzas tokenizadas: un ancla de liquidación segura en dinero de banco central, una auténtica alianza público-privada y un marco legal a la altura de la ambición tecnológica. Presenta la hoja de ruta Appia como respuesta estratégica a la dependencia de redes de pago no europeas.",
-        "highlights": [
-          "Pontes conectará los servicios TARGET del Eurosistema con plataformas DLT en Q3 2026",
-          "El BCE acepta desde marzo de 2026 activos DLT como garantías en sus operaciones de crédito",
-          "Appia tiene como objetivo publicar un documento estratégico del ecosistema tokenizado en 2028",
-          "Casi dos tercios de las transacciones con tarjeta en la zona euro son procesadas por operadores no europeos"
+        "tags": [
+          "eurochange",
+          "reino-unido",
+          "premios",
+          "tarjeta-viaje",
+          "moneynet-awards",
+          "mastercard"
         ],
-        "tags": ["ESTRAT", "TECH", "REG"],
-        "imagen": null,
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
-          { "nombre": "Cryptonomist", "url": "https://en.cryptonomist.ch/2026/03/23/tokenized-deposits-european-rails/" }
-        ],
-        "_nota": "Discurso pronunciado en Bruselas el 23 de marzo de 2026. Publicado originalmente en inglés."
+          {
+            "nombre": "Moneynet",
+            "url": "https://www.moneynet.co.uk/moneynet-awards-2026-winners-announced/"
+          }
+        ]
       },
       {
-        "fecha": "2026-03-21",
-        "titulo": "ECB Advances Digital Euro To Strengthen Europe's Payment Autonomy",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.crowdfundinsider.com/2026/03/268161-ecb-advances-digital-euro-to-strengthen-europes-payment-autonomy/",
-        "medio": "Crowdfund Insider",
-        "resumen": "El BCE presenta el discurso de Cipollone titulado 'Digital euro – why?' del 21 de marzo, en el que encuadra el euro digital como una forma digital del efectivo esencial para mantener el acceso público al dinero de banco central mientras los pagos cotidianos migran a lo digital. El artículo contrasta la posición europea con la de EE.UU., donde el Congreso ha prohibido efectivamente a la Fed emitir una CBDC minorista hasta al menos 2030.",
-        "highlights": [
-          "Casi dos tercios de las transacciones con tarjeta en la zona euro son procesadas por redes no europeas",
-          "El Parlamento Europeo finalizará su posición sobre el euro digital en mayo de 2026",
-          "El piloto de 12 meses comenzará en el segundo semestre de 2027",
-          "EE.UU. ha prohibido una CBDC minorista de la Reserva Federal hasta al menos 2030"
-        ],
-        "tags": ["ESTRAT", "REG", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "CriptoNoticias", "url": "https://www.criptonoticias.com/finanzas/bce-eurodigital-dominio-extranjero-pagos/" }
-        ],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-21",
-        "titulo": "BCE acelera el euro digital para poner fin al dominio extranjero en pagos",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.criptonoticias.com/finanzas/bce-eurodigital-dominio-extranjero-pagos/",
-        "medio": "CriptoNoticias",
-        "resumen": "CriptoNoticias cubre el discurso de Cipollone del 21 de marzo, destacando que el BCE impulsa el euro digital como instrumento de soberanía financiera ante la dependencia de esquemas internacionales para los pagos minoristas en la zona euro. El artículo contextualiza los avances dentro del marco MiCA, donde las restricciones a las stablecoins vinculadas al dólar abren un espacio competitivo que el BCE busca ocupar.",
-        "highlights": [
-          "El BCE diagnostica que casi dos tercios de los pagos con tarjeta están procesados por esquemas internacionales",
-          "El Parlamento Europeo debe posicionarse en mayo de 2026 sobre el lanzamiento de la CBDC",
-          "La protección constitucional del efectivo en Suiza refleja una persistente desconfianza pública hacia las CBDC",
-          "La emisión definitiva del euro digital está proyectada tentativamente para 2029"
-        ],
-        "tags": ["ESTRAT", "MERCADO", "REG"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-19",
-        "titulo": "ECB seeks experts to help integrate digital euro into ATMs and card payment terminals",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.coindesk.com/policy/2026/03/19/ecb-seeks-experts-to-help-integrate-digital-euro-into-atms-card-payment-terminals",
-        "medio": "CoinDesk",
-        "resumen": "El BCE recluta expertos para redactar las normas técnicas que regularán el funcionamiento del euro digital en cajeros automáticos y terminales de pago en tienda. Uno de los grupos de trabajo definirá cómo los dispositivos procesan transacciones en euro digital —incluyendo el uso fuera de línea y la compatibilidad con estándares existentes—, mientras otro diseñará un proceso de certificación para herramientas e infraestructura de pago.",
-        "highlights": [
-          "El BCE lanza dos grupos de trabajo técnicos sobre integración del euro digital en infraestructura de pago existente",
-          "El proyecto avanza en paralelo al proyecto Qivalis, en el que 12 bancos europeos planean lanzar una stablecoin vinculada al euro en 2026",
-          "Entre los bancos del proyecto Qivalis figuran BBVA, ING y BNP Paribas"
-        ],
-        "tags": ["TECH", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-20",
-        "titulo": "Focus Session (virtual): Digital euro pilot – Sesión para PSPs",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/euro/digital_euro/pilot/html/index.en.html",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "El BCE celebra una sesión virtual el 20 de marzo para apoyar a los proveedores de servicios de pago (PSPs) en sus preparativos para responder a la convocatoria de manifestaciones de interés del piloto del euro digital. Los expertos del BCE abordan los aspectos técnicos y operativos del ejercicio piloto, que incluirá PSPs autorizados en la zona euro, comerciantes seleccionados y personal del Eurosistema probando el euro digital beta en situaciones cotidianas.",
-        "highlights": [
-          "El piloto probará el euro digital beta en situaciones cotidianas como pagos en cafeterías",
-          "Los PSPs interesados deben cumplir requisitos de admisibilidad de licencia y capacidad técnica",
-          "La convocatoria formal de manifestaciones de interés se lanzó el 5 de marzo de 2026"
-        ],
-        "tags": ["ESTRAT", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-05",
-        "titulo": "BCE lanza convocatoria para que proveedores de servicios de pago participen en el piloto del euro digital",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/euro/digital_euro/pilot/html/index.en.html",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "El Banco Central Europeo publica el 5 de marzo una convocatoria de manifestaciones de interés para que proveedores de servicios de pago participen en el piloto del euro digital. Los PSPs interesados deben acreditar autorización y capacidad técnica y operativa, y serán evaluados ponderando su cobertura geográfica. El piloto de 12 meses comenzará en la segunda mitad de 2027.",
-        "highlights": [
-          "Convocatoria publicada el 5 de marzo de 2026 en el sitio web dedicado del BCE",
-          "Los PSPs participantes serán evaluados en función de su presencia geográfica para asegurar cobertura amplia",
-          "El piloto de 12 meses está previsto para el segundo semestre de 2027"
-        ],
-        "tags": ["ESTRAT", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-03",
-        "titulo": "El BCE ve 'ambicioso' adelantar el euro digital a 2028 como propone Pedro Sánchez",
-        "categoria": "medios-digital",
+        "fecha": "2026-02-23",
+        "titulo": "Revolut gana peso en España con una estrategia que cambia las reglas",
+        "categoria": "sector-cambiario",
         "alcance": "Nacional",
-        "url": "https://capital.es/economia/mercados-e-inversion/el-bce-ve-ambicioso-adelantar-el-euro-digital-a-2028-como-propone-pedro-sanchez/169568/",
-        "medio": "Capital",
-        "resumen": "Fuentes del BCE y del Banco de España califican de 'ambiciosa' la propuesta de Pedro Sánchez de adelantar el lanzamiento del euro digital a 2028. Según estas instituciones, los países miembros acordaron que, una vez aprobada la legislación, debería ser posible emitir el euro digital 'no antes de dos años después', lo que situaría la fecha más temprana en 2029. El proyecto busca especialmente beneficiar a los pequeños comercios, que soportan comisiones de pago tres o cuatro veces mayores que las grandes superficies.",
+        "url": "https://www.elconfidencialdigital.com/articulo/dinero/revolut-gana-peso-espana-estrategia-que-cambia-reglas/202602231313121005411.html",
+        "medio": "El Confidencial Digital",
+        "resumen": "Revolut se ha consolidado como uno de los grandes actores de la banca digital en Europa y avanza en España con una estrategia cada vez más ambiciosa. Su crecimiento en clientes, productos y servicios anticipa un movimiento que puede alterar el equilibrio del sector financiero tradicional español.",
         "highlights": [
-          "El presidente Sánchez propuso formalmente adelantar el euro digital a 2028",
-          "El BCE recuerda que la emisión del euro digital no puede producirse antes de dos años tras la aprobación legislativa",
-          "Los minoristas de la eurozona pagan cerca de 3.750 millones de euros anuales en comisiones por tarjetas de débito",
-          "Para los pequeños comercios, la comisión puede alcanzar el 1% del valor de la transacción"
+          "Revolut opera bajo licencia bancaria europea y ofrece servicios financieros regulados en España",
+          "La compañía ha reforzado sus sistemas de autenticación, verificación biométrica y control antifraude",
+          "Revolut nació como alternativa al cambio de divisas tradicional con comisiones reducidas",
+          "Permite pagos en diferentes divisas con tipo de cambio interbancario"
         ],
-        "tags": ["REG", "MERCADO", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "Infobae (vía Europa Press)", "url": "https://www.infobae.com/america/agencias/2026/03/02/el-bce-considera-ambicioso-adelantar-el-euro-digital-a-2028-tal-como-propone-pedro-sanchez/" },
-          { "nombre": "Press Digital", "url": "https://www.pressdigital.es/articulo/economia/2026-03-02/5791986-bce-considera-ambicioso-adelantar-euro-digital-2028-como-propone-pedro-sanchez" }
+        "tags": [
+          "revolut",
+          "cambio-de-divisas",
+          "espana",
+          "fintech",
+          "banca-digital",
+          "expansion"
         ],
-        "_nota": "Noticia publicada originalmente el 2 de marzo y recogida ampliamente el 3 de marzo de 2026."
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
       },
       {
-        "fecha": "2026-03-20",
-        "titulo": "China Extends Digital Yuan Project to 12 New Banks",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.pymnts.com/cbdc/2026/china-extends-digital-yuan-project-to-12-new-banks",
-        "medio": "PYMNTS.com",
-        "resumen": "El Banco Popular de China ha seleccionado 12 nuevos bancos para promover el yuan digital, sumándolos a los 10 ya autorizados, según Reuters. Este movimiento marca un fuerte contraste con la postura de EE.UU., donde el Congreso aprobó una prohibición de las CBDC minoristas de la Reserva Federal como parte de un proyecto de ley de vivienda. Los analistas señalan que el mayor potencial del yuan digital reside en los pagos transfronterizos, al margen de los sistemas dominados por el dólar.",
-        "highlights": [
-          "El Banco Popular de China suma 12 nuevos bancos al programa del yuan digital, hasta un total de 22",
-          "La adopción minorista del yuan digital ha sido lenta, pues los ciudadanos ya tienen acceso a WeChat Pay y Alipay",
-          "El Senado de EE.UU. incluyó una prohibición de la CBDC minorista de la Fed en un proyecto de ley de vivienda",
-          "El mayor potencial del yuan digital se atribuye a los pagos transfronterizos fuera del sistema dólar"
-        ],
-        "tags": ["ESTRAT", "MERCADO", "REG"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "Reuters", "url": "https://www.reuters.com" }
-        ],
-        "_nota": "Publicado originalmente en inglés. Fuente primaria: Reuters del 20 de marzo de 2026."
-      },
-      {
-        "fecha": "2026-03-09",
-        "titulo": "CBDC and Banking: How Central Bank Digital Currency Could Transform the Financial System",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://economy.ac/review/2026/03/202603288612",
-        "medio": "The Economy",
-        "resumen": "Análisis académico sobre el impacto potencial de las CBDC en el sistema financiero mundial, a partir de una encuesta del BIS según la cual el 91% de 93 bancos centrales está investigando activamente una CBDC mayorista o minorista. El artículo examina dos escenarios: sustitución gradual de depósitos bancarios hacia CBDC, y riesgo de estampida financiera en momentos de crisis, planteando que el diseño de la política determinará cuál de los dos predomina.",
-        "highlights": [
-          "El 91% de los 93 bancos centrales encuestados por el BIS en 2024 investigan activamente una CBDC",
-          "Las CBDC podrían reducir la base de depósitos bancarios y encarecer su financiación",
-          "El diseño de los límites de tenencia y la remuneración serán clave para la estabilidad del sistema",
-          "Si se generaliza, el acceso directo al dinero de banco central desplazaría a los bancos comerciales de algunas funciones"
-        ],
-        "tags": ["TECH", "REG", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-04",
-        "titulo": "UAE Launches Digital Dirham: Central Bank Digital Currency Goes Live for Retail Payments",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.digitaldubai.ai/dubai-updates/uae-digital-dirham-cbdc-launch-2026",
-        "medio": "Digital Dubai",
-        "resumen": "El Banco Central de los Emiratos Árabes Unidos lanza oficialmente el Dírham Digital para transacciones minoristas en marzo de 2026. El sistema ofrece liquidación instantánea 24/7, transferencias transfronterizas directas con Arabia Saudí, India, China y Hong Kong a través de la red mBridge, e integración completa con la aplicación UAE Pass y las apps bancarias existentes. Los pagos pequeños mantienen privacidad total, mientras los de mayor volumen cumplen requisitos AML.",
-        "highlights": [
-          "El Dírham Digital se integra con la red mBridge para transferencias directas con Arabia Saudí, India, China y Hong Kong",
-          "El corredor de remesas India-EAU mueve aproximadamente 15.000 millones de dólares anuales",
-          "Liquidación instantánea, 24/7/365, sin retrasos por horarios bancarios",
-          "Paridad 1:1 con el dírham físico, respaldado por el banco central"
-        ],
-        "tags": ["ESTRAT", "MERCADO", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "Mastercard to acquire BVNK to connect on-chain payments and fiat rails",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/march/Mastercard-to-acquire-BVNK-to-connect-on-chain-payments-and-fiat-rails.html",
-        "medio": "Mastercard",
-        "resumen": "Mastercard anuncia la adquisición definitiva de BVNK, líder en infraestructura de stablecoins, por hasta 1.800 millones de dólares, incluyendo 300 millones en pagos contingentes. La operación amplía las capacidades de Mastercard para soportar activos digitales y el movimiento de valor entre monedas, carriles y regiones. La empresa señala que el volumen de pagos con divisas digitales alcanzó al menos 350.000 millones de dólares en 2025.",
-        "highlights": [
-          "Mastercard adquiere BVNK por hasta 1.800 millones de dólares, incluyendo 300 millones contingentes",
-          "Los pagos digitales con criptomonedas alcanzaron al menos 350.000 millones de dólares en volumen en 2025",
-          "BVNK opera en más de 130 países con infraestructura de stablecoins para empresas",
-          "La adquisición crea interoperabilidad entre carriles fiat y stablecoins a escala global"
-        ],
-        "tags": ["ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "The Paypers", "url": "https://thepaypers.com/news" },
-          { "nombre": "Reuters", "url": "https://www.reuters.com" }
-        ],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "X Money to enter early public access in April – XMoney de Elon Musk lanzará en beta",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.cbsnews.com/news/xmoney-elon-musk-online-payments/",
-        "medio": "CBS News",
-        "resumen": "Elon Musk confirma que XMoney, la plataforma de pagos digitales de X, lanzará en versión beta para usuarios seleccionados en abril de 2026. La plataforma, diseñada como un 'Everything App' similar a WeChat, permitirá transacciones entre particulares similares a PayPal o Venmo y financiará una cartera digital de marca X a través de Visa Direct. La integración con Visa fue anunciada originalmente por Linda Yaccarino cuando era CEO de X.",
-        "highlights": [
-          "XMoney entrará en acceso público anticipado en abril de 2026",
-          "La plataforma se financiará mediante un monedero digital de marca X a través de Visa Direct",
-          "Musk ha descrito XMoney como el lugar donde 'estará todo el dinero'",
-          "El analista Scott Devitt de Wedbush destaca la profunda comprensión de Musk de los sistemas de pago"
-        ],
-        "tags": ["ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "The Paypers", "url": "https://thepaypers.com/news" }
-        ],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-19",
-        "titulo": "México hará obligatorios los pagos digitales en gasolineras y casetas de peaje",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://ground.news/article/search-banxico-to-boost-digital-payments_7f8d7d",
-        "medio": "Banxico / Ground News",
-        "resumen": "La presidenta mexicana Claudia Sheinbaum anunció en la 89ª Convención Bancaria de Cancún que los pagos digitales serán obligatorios en gasolineras y casetas de peaje en 2026, como parte de la estrategia nacional de digitalización financiera. La gobernadora del Banco de México, Victoria Rodríguez Ceja, lanzó simultáneamente una consulta pública para estandarizar las transferencias digitales y facilitar los pagos desde dispositivos móviles.",
-        "highlights": [
-          "Sheinbaum anuncia la obligatoriedad de pagos digitales en gasolineras y casetas de peaje en 2026",
-          "Banxico lanza consulta pública para estandarizar transferencias electrónicas y pagos móviles",
-          "La iniciativa busca ampliar el uso del SPEI a sectores con alta presencia de efectivo",
-          "México buscará implementar los cambios a través de alianzas con el sector bancario"
-        ],
-        "tags": ["REG", "MERCADO", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "El Financiero", "url": "https://www.elfinanciero.com.mx/economia/2026/03/18/pagos-digitales-palanca-estructural-para-el-crecimiento-del-pais/" }
-        ],
-        "_nota": "Publicado originalmente en inglés y español. Contexto: 89ª Convención Bancaria de México."
-      },
-      {
-        "fecha": "2026-03-18",
-        "titulo": "Pagos digitales: palanca estructural para el crecimiento del país",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.elfinanciero.com.mx/economia/2026/03/18/pagos-digitales-palanca-estructural-para-el-crecimiento-del-pais/",
-        "medio": "El Financiero (México)",
-        "resumen": "Francisco Valdivia, director general de Visa México, afirma que los pagos digitales son una palanca estructural de crecimiento para el país, con especial foco en las MiPymes. Visa trabaja junto al Gobierno federal en la iniciativa 'Crece tu MiPyme', que busca habilitar hasta un millón de negocios para aceptar pagos digitales, y señala la Copa Mundial de la FIFA 2026 como catalizador de la adopción. La empresa destaca la tokenización como el habilitador silencioso pero estructural del sistema de pagos.",
-        "highlights": [
-          "Visa busca habilitar hasta un millón de MiPymes mexicanas para aceptar pagos digitales",
-          "La tecnología Tap to Phone convierte el teléfono en una terminal de pago sin contacto, acelerando la infraestructura de aceptación",
-          "Visa habilita a agentes de inteligencia artificial como participantes legítimos del comercio mediante Visa Intelligent Commerce",
-          "La Copa Mundial de la FIFA 2026 actúa como catalizador de la adopción de pagos digitales en México"
-        ],
-        "tags": ["MERCADO", "TECH", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "Mastercard launches Virtual C-Suite for small businesses",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "Mastercard presenta Virtual C-Suite, una herramienta de inteligencia artificial agéntica diseñada para proporcionar a las pequeñas empresas inteligencia financiera y operativa de nivel ejecutivo. La solución utiliza IA para ofrecer capacidades similares a las de un equipo directivo completo, orientadas a la gestión de pagos y tesorería de pymes.",
-        "highlights": [
-          "Virtual C-Suite es una herramienta de IA agéntica diseñada para las necesidades financieras de las pequeñas empresas",
-          "La solución proporciona inteligencia financiera y operativa de nivel ejecutivo de manera automatizada",
-          "El lanzamiento se enmarca en la estrategia más amplia de Mastercard de integrar IA en los pagos"
-        ],
-        "tags": ["TECH", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-05",
-        "titulo": "Mastercard completes first live agentic transaction in Singapore with DBS and UOB",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "Mastercard anuncia la finalización de la primera transacción agéntica en vivo en Singapur, realizada en colaboración con los bancos DBS y UOB. Este hito marca un avance significativo hacia el comercio agéntico, donde los agentes de inteligencia artificial pueden realizar transacciones en nombre de consumidores y empresas de forma autónoma y segura.",
-        "highlights": [
-          "Primera transacción agéntica en vivo ejecutada con infraestructura de Mastercard en Singapur",
-          "Los bancos DBS y UOB participan en el experimento de pagos agénticos",
-          "El comercio agéntico, donde la IA compra en nombre del usuario, avanza hacia su implementación comercial"
-        ],
-        "tags": ["TECH", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-05",
-        "titulo": "Wero expands ecommerce payments to Belgium with first merchants",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "Wero, la solución de pago paneuropea impulsada por el Consejo Europeo de Pagos, amplía sus servicios de pagos de comercio electrónico a Bélgica con sus primeros comerciantes. Este movimiento forma parte de la expansión geográfica de la iniciativa para consolidar un carril de pago europeo competitivo ante los operadores internacionales.",
-        "highlights": [
-          "Wero desembarca en Bélgica con pagos de ecommerce para sus primeros comercios",
-          "La expansión responde a la estrategia de Wero de construir una alternativa de pago paneuropea",
-          "El servicio se enmarca en el impulso del Consejo Europeo de Pagos por la soberanía de pagos en Europa"
-        ],
-        "tags": ["ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-09",
-        "titulo": "Mastercard introduces Verifiable Intent, co-developed with Google",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "Mastercard presenta Verifiable Intent, una solución de seguridad para pagos co-desarrollada con Google, diseñada para verificar la intención de pago del usuario y reducir el fraude en transacciones digitales. La solución responde al aumento de ataques de ingeniería social y deepfakes en el ecosistema de pagos.",
-        "highlights": [
-          "Verifiable Intent es una solución de verificación de pagos co-desarrollada por Mastercard y Google",
-          "El producto busca combatir el creciente fraude por ingeniería social y deepfakes en pagos digitales",
-          "Su desarrollo refleja la tendencia hacia la integración de IA y seguridad avanzada en los pagos"
-        ],
-        "tags": ["TECH", "REG"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "SEC and CFTC name Bitcoin, Ether, Solana and 13 more crypto assets digital commodities",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.fintechweekly.com/news/sec-bitcoin-ether-solana-digital-commodities-not-securities-march-2026",
-        "medio": "FinTech Weekly",
-        "resumen": "La SEC y la CFTC publican conjuntamente una interpretación de 68 páginas que clasifica explícitamente 16 criptoactivos, incluidos Bitcoin, Ether y Solana, como materias primas digitales, excluyéndolos de la regulación de valores. El documento es un paso previo a la ley CLARITY Act, que codificaría estatutariamente la clasificación materias primas vs. valores para los activos digitales. La ley pasó la Cámara en julio de 2025 y está en el comité del Senado.",
-        "highlights": [
-          "La SEC y la CFTC publican una interpretación conjunta de 68 páginas clasificando 16 criptoactivos como materias primas digitales",
-          "Bitcoin, Ether y Solana quedan explícitamente fuera de la regulación de valores",
-          "La CLARITY Act que codificaría estas clasificaciones por ley está pendiente en el Comité Bancario del Senado",
-          "Los airdrops de activos no-valores quedan también fuera de las leyes de valores"
-        ],
-        "tags": ["REG"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-10",
-        "titulo": "Square auto-enables Bitcoin payments for millions of merchants globally via Lightning Network",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.livebitcoinnews.com/bitcoin-payments-set-to-go-live-by-default-for-square-merchants-globally/",
-        "medio": "LiveBitcoinNews",
-        "resumen": "Square, la empresa de pagos de Block, anunciará en marzo que activará automáticamente los pagos en Bitcoin para todos los comerciantes elegibles a partir del 30 de marzo de 2026, con conversión automática a dólares en el punto de venta. El sistema utiliza la Lightning Network para procesar las transacciones con confirmaciones más rápidas y comisiones reducidas, lo que lo hace apto para entornos minoristas de alto volumen.",
-        "highlights": [
-          "Square activará los pagos en Bitcoin por defecto para millones de comerciantes a partir del 30 de marzo de 2026",
-          "Los comerciantes podrán desactivar la opción o elegir la conversión automática a dólares en el punto de venta",
-          "El sistema usa Lightning Network para mayor velocidad y menores comisiones",
-          "Los comerciantes no necesitan nuevo hardware ni herramientas adicionales para la integración"
-        ],
-        "tags": ["ESTRAT", "MERCADO", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "Strike secures BitLicense in New York to bring Bitcoin payments closer to everyday finance",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.thestreet.com/crypto/real-estate/new-yorkers-can-now-pay-mortgage-with-bitcoin",
-        "medio": "TheStreet Crypto",
-        "resumen": "Strike, la plataforma de pagos basada en Bitcoin Lightning Network, ha obtenido tanto la BitLicense como la licencia de transmisión de dinero del Departamento de Servicios Financieros de Nueva York (NYDFS), el mercado cripto más regulado de EE.UU. Con esta aprobación, los usuarios de Strike en Nueva York podrán comprar y vender Bitcoin, recibir salarios en Bitcoin y realizar pagos de facturas —incluyendo hipotecas— directamente desde sus saldos en Bitcoin.",
-        "highlights": [
-          "Strike obtiene BitLicense y licencia de transmisión de dinero del NYDFS de Nueva York",
-          "Los usuarios podrán pagar hipotecas y facturas recurrentes directamente desde saldos en Bitcoin",
-          "Strike planea introducir préstamos respaldados en Bitcoin, permitiendo pedir prestado moneda fiduciaria manteniendo los BTC",
-          "BitPay y Bakkt ya permiten a usuarios convertir criptomonedas para pagar hipotecas en EE.UU."
-        ],
-        "tags": ["REG", "ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-04",
-        "titulo": "Kraken Financial becomes first digital asset bank to receive Federal Reserve master account",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://dev.to/qbitflow/stablecoin-regulation-is-here-what-it-means-for-merchants-accepting-crypto-payments-in-2026-2m37",
-        "medio": "DEV Community",
-        "resumen": "El 4 de marzo de 2026, Kraken Financial se convierte en el primer banco de activos digitales en recibir una cuenta maestra de la Reserva Federal, otorgándole acceso directo a los sistemas de pago básicos del banco central —los mismos carriles que usan los bancos tradicionales. Este hito señala que el cripto ya no opera como un sistema financiero paralelo, sino que se conecta directamente al existente.",
-        "highlights": [
-          "Kraken Financial es el primer banco de activos digitales en obtener una cuenta maestra de la Reserva Federal",
-          "La cuenta maestra da acceso directo a los sistemas de pago de la Fed (ACH, Fedwire)",
-          "El acontecimiento marca la integración del cripto en el sistema financiero convencional, no su paralelismo",
-          "Stripe's Bridge también ha recibido aprobación inicial para una licencia bancaria federal de confianza"
-        ],
-        "tags": ["REG", "ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-20",
-        "titulo": "Stablecoins and the Future of Payments – IMF Working Paper",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://formatresearch.com/en/2026/03/20/stablecoin-e-futuro-dei-pagamenti-fmi/",
-        "medio": "FMI / Format Research",
-        "resumen": "Un documento de trabajo del FMI del 20 de marzo analiza si los mercados financieros esperan que las stablecoins tengan un papel relevante en los pagos. Usando movimientos de cotizaciones bursátiles en alta frecuencia, los autores estiman que la legislación estadounidense que respalda el uso de stablecoins en pagos redujo el valor de mercado de las empresas de pagos cotizadas incumbentes en un 18%, equivalente a unos 300.000 millones de dólares, lo que confirma el aumento de la competencia.",
-        "highlights": [
-          "La legislación de stablecoins en EE.UU. redujo el valor bursátil de las incumbentes de pagos en un 18%, aproximadamente 300.000 millones de dólares",
-          "El impacto es mayor para las incumbentes centradas en pagos transfronterizos",
-          "Es menor para incumbentes protegidas por efectos de red y para las que ya ofrecen servicios cripto",
-          "El estudio usa movimientos de precios de acciones como indicador de las expectativas del mercado sobre el papel futuro de las stablecoins"
-        ],
-        "tags": ["MERCADO", "REG"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés. Documento de trabajo del FMI, no una posición oficial de la institución."
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "Mastercard adquiere BVNK por hasta 1.800 millones de dólares para conectar pagos on-chain y fiduciarios",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/march/Mastercard-to-acquire-BVNK-to-connect-on-chain-payments-and-fiat-rails.html",
-        "medio": "Mastercard",
-        "resumen": "Mastercard anuncia la adquisición de BVNK, líder en infraestructura de stablecoins, por hasta 1.800 millones de dólares, con el objetivo de crear interoperabilidad entre moneda fiduciaria y stablecoins a escala mundial. La operación sitúa a Mastercard como proveedor de orquestación de pagos entre sistemas de activos digitales y fiat para instituciones financieras y fintechs.",
-        "highlights": [
-          "Mastercard adquiere BVNK por hasta 1.800 millones de dólares, incluyendo 300 millones contingentes",
-          "Las stablecoins y depósitos tokenizados pueden resolver puntos de dolor en remesas, pagos B2B y mercados de capitales",
-          "El CFO de Mastercard señala que la mayoría de instituciones financieras ofrecerán servicios de divisas digitales",
-          "BVNK opera en 130+ países con infraestructura de stablecoins para empresas"
-        ],
-        "tags": ["ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-19",
-        "titulo": "ECB seeks experts to integrate digital euro; 12 European banks advance Qivalis euro-pegged stablecoin",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.coindesk.com/policy/2026/03/19/ecb-seeks-experts-to-help-integrate-digital-euro-into-atms-card-payment-terminals",
-        "medio": "CoinDesk",
-        "resumen": "Mientras el BCE avanza en la integración técnica del euro digital, un grupo de 12 bancos europeos —incluidos BBVA, ING y BNP Paribas— impulsan el proyecto Qivalis, un plan para lanzar en la segunda mitad de 2026 una stablecoin vinculada al euro en blockchain, con el objetivo de ofrecer pagos sin depender de tokens respaldados por el dólar.",
-        "highlights": [
-          "El proyecto Qivalis reúne a 12 bancos europeos, incluidos BBVA, ING y BNP Paribas",
-          "Qivalis prevé lanzar su stablecoin vinculada al euro en el segundo semestre de 2026",
-          "El proyecto busca ofrecer pagos blockchain sin depender de stablecoins en dólares",
-          "El BCE avanza en paralelo en la integración técnica del euro digital en cajeros y terminales"
-        ],
-        "tags": ["ESTRAT", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "KAST raises USD 80 million Series A to expand stablecoin neobank globally",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "KAST, un neobanco centrado en stablecoins, capta 80 millones de dólares en una ronda Serie A para expandir su modelo globalmente. La startup ofrece servicios bancarios basados en stablecoins, apuntando a usuarios que buscan acceso a dólares digitales fuera del sistema bancario tradicional.",
-        "highlights": [
-          "KAST cierra una ronda Serie A de 80 millones de dólares para expansión global",
-          "El modelo de negocio se basa en ofrecer servicios bancarios mediante stablecoins",
-          "La ronda refleja el creciente interés inversor en infraestructura de stablecoins como alternativa bancaria"
-        ],
-        "tags": ["ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "Los bancos consideran acciones legales contra la OCC por las licencias bancarias cripto",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://phemex.com/news/article/cb-insights-forecasts-2026-fintech-trends-asset-tokenization-and-ai-payments-rise-66894",
-        "medio": "Phemex News",
-        "resumen": "Según Phemex News, bancos estadounidenses estarían considerando acciones legales contra la OCC por el otorgamiento de licencias bancarias a empresas cripto bajo la GENIUS Act. La tensión surge porque los bancos tradicionales temen la competencia directa de stablecoin issuers con acceso directo al sistema financiero regulado. El artículo también destaca el auge de las stablecoins como carriles de pago para agentes de inteligencia artificial.",
-        "highlights": [
-          "Bancos estadounidenses estudian acciones legales contra la OCC por las licencias bancarias a issuers cripto",
-          "El auge de las stablecoins como carriles de pago para agentes de IA es una de las tendencias fintech de 2026",
-          "Las adquisiciones y alianzas de Ripple con grandes bancos reflejan su entrada en la banca institucional",
-          "Los bancos tokenizarán activos para mantener el control de los depósitos"
-        ],
-        "tags": ["REG", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "El BCE presenta Appia, la hoja de ruta para las finanzas tokenizadas de Europa",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.coindesk.com/business/2026/03/11/european-central-bank-unveils-tokenized-finance-plan-to-bolster-eu-s-financial-autonomy",
-        "medio": "CoinDesk",
-        "resumen": "El Banco Central Europeo presenta el 11 de marzo la hoja de ruta de la iniciativa Appia para construir un ecosistema mayorista de finanzas tokenizadas centrado en el euro. La estrategia se articula en torno a dos iniciativas complementarias: Pontes, una capa de transacción basada en DLT prevista para el tercer trimestre de 2026; y Appia, un proyecto de largo plazo para diseñar la arquitectura, la gobernanza y los estándares de un sistema financiero tokenizado hasta 2028.",
-        "highlights": [
-          "Appia es el proyecto del BCE para diseñar el ecosistema financiero tokenizado europeo junto con el mercado, hasta 2028",
-          "Pontes, la solución DLT del Eurosistema, debutará en el tercer trimestre de 2026",
-          "El BCE abre una consulta pública sobre Appia con respuestas hasta el 22 de abril de 2026",
-          "La iniciativa responde al riesgo geopolítico derivado de la dependencia de redes de pago no europeas y centradas en el dólar"
-        ],
-        "tags": ["TECH", "ESTRAT", "REG"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "BCE (nota de prensa oficial)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260311~14ddf51a77.es.pdf" },
-          { "nombre": "Il Sole 24 Ore", "url": "https://en.ilsole24ore.com/art/the-ecb-presents-appia-new-infrastructure-integrate-euro-tokenized-payments-AICV1LtB" },
-          { "nombre": "Format Research", "url": "https://formatresearch.com/en/2026/03/12/uninfrastruttura-per-il-futuro-della-finanza-digitale-europea-bce/" },
-          { "nombre": "Phemex News", "url": "https://phemex.com/news/article/ecb-unveils-appia-roadmap-for-tokenized-euro-financial-market-65822" }
-        ],
-        "_nota": "Publicado originalmente en inglés y traducido al español por el BCE. Iniciativa de gran impacto en la arquitectura financiera europea."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Tokenized deposits push Europe toward next-gen digital money",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://en.cryptonomist.ch/2026/03/23/tokenized-deposits-european-rails/",
-        "medio": "Cryptonomist",
-        "resumen": "Análisis de cómo los depósitos tokenizados están abriendo el camino a la próxima generación de dinero digital en Europa. El BCE acepta desde marzo de 2026 activos DLT como garantías elegibles en sus operaciones de crédito, y UK Finance coordina los pilotos de depósitos tokenizados 'Great British' hasta mediados de 2026. Cada instrumento —depósitos tokenizados, stablecoins reguladas y CBDC— encuentra su lugar dentro de un sistema financiero digital múltiple.",
-        "highlights": [
-          "El BCE acepta desde marzo de 2026 activos emitidos en depositarios centrales con tecnología DLT como garantías",
-          "UK Finance ejecuta pilotos de depósitos tokenizados hasta mediados de 2026, probando pagos P2P, refinanciaciones y liquidación de activos digitales",
-          "Pontes conectará los servicios TARGET a plataformas DLT en Q3 2026 para liquidación en dinero de banco central",
-          "Los depósitos tokenizados actúan como puente entre la infraestructura bancaria tradicional y los nuevos carriles digitales"
-        ],
-        "tags": ["TECH", "ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-12",
-        "titulo": "Una infraestructura para el futuro de las finanzas digitales de Europa – Blog del BCE",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260312~5dfa697fdd.es.html",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "El BCE publica un artículo de opinión, distribuido también en medios de comunicación de la zona euro, en el que detalla el por qué de la estrategia Appia y Pontes. Cipollone subraya que la tokenización permite representar activos financieros como bonos en forma de tokens digitales transferibles y actualizables de manera más eficiente, y que Pontes ofrecerá una forma de liquidar en dinero de banco central operaciones mayoristas basadas en DLT desde el tercer trimestre de 2026.",
-        "highlights": [
-          "Pontes ofrecerá liquidación en dinero de banco central para operaciones DLT mayoristas desde Q3 2026",
-          "La tokenización promete operar en un ciclo de vida de activos completo (negociación, liquidación, custodia) en una sola plataforma 24/7",
-          "La actividad transfronteriza será más sencilla y barata gracias a activos DLT interoperables",
-          "Appia busca diseñar junto con el mercado la próxima generación de infraestructuras financieras europeas"
-        ],
-        "tags": ["TECH", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "Format Research", "url": "https://formatresearch.com/en/2026/03/12/uninfrastruttura-per-il-futuro-della-finanza-digitale-europea-bce/" }
-        ],
-        "_nota": "Artículo de opinión publicado como op-ed en medios de la zona euro."
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "Eurosistema presenta hoja de ruta Appia para finanzas tokenizadas – Nota de prensa oficial",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260311~14ddf51a77.es.pdf",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "Nota de prensa oficial del BCE del 11 de marzo en la que el Eurosistema presenta formalmente la hoja de ruta de Appia para las finanzas tokenizadas de Europa. La estrategia incluye dos iniciativas complementarias: Pontes —prevista para Q3 2026— que conectará TARGET Services a plataformas DLT, y Appia, que definirá con el mercado el ecosistema financiero mayorista tokenizado del futuro. La hoja de ruta incluye un cuestionario de consulta pública.",
-        "highlights": [
-          "Pontes se pondrá en marcha en Q3 2026 para liquidación en dinero de banco central de operaciones DLT",
-          "Appia explorará distintas configuraciones de redes DLT como infraestructuras básicas para servicios financieros mayoristas",
-          "Las infraestructuras compartidas basadas en estándares comunes reducirán la fragmentación y barreras de entrada en los mercados financieros europeos",
-          "El Eurosistema prevé publicar un documento estratégico sobre el ecosistema tokenizado en 2028"
-        ],
-        "tags": ["TECH", "ESTRAT", "REG"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Nota de prensa oficial publicada en español e inglés."
-      },
-      {
-        "fecha": "2026-03-21",
-        "titulo": "ECB prevé emitir el euro digital en 2029 si la legislación se aprueba en 2026",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html",
-        "medio": "Banco Central Europeo (BCE)",
-        "resumen": "La página principal del proyecto euro digital del BCE recoge el objetivo de estar listos para una posible primera emisión del euro digital durante 2029, asumiendo que el Reglamento europeo se adopte en el curso de 2026. El proyecto avanza en tres frentes: preparación técnica, interacción con el mercado y apoyo al proceso legislativo.",
-        "highlights": [
-          "El BCE se fija como objetivo estar listo para una posible primera emisión del euro digital en 2029",
-          "Un piloto podría comenzar en la segunda mitad de 2027 antes de la emisión definitiva",
-          "En octubre de 2025 el Consejo de Gobierno del BCE decidió pasar a la siguiente fase del proyecto del euro digital",
-          "Los proveedores para la plataforma de servicios del euro digital han sido seleccionados y han firmado acuerdos marco"
-        ],
-        "tags": ["ESTRAT", "TECH", "REG"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-20",
-        "titulo": "China amplía el yuan digital a 12 nuevos bancos en contraste con la posición de EE.UU.",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.pymnts.com/cbdc/2026/china-extends-digital-yuan-project-to-12-new-banks",
-        "medio": "PYMNTS.com",
-        "resumen": "El Banco Popular de China selecciona 12 nuevos bancos para promover el yuan digital, sumándose a los 10 ya autorizados. Esta expansión contrasta con la prohibición de la CBDC minorista de la Fed aprobada por el Senado de EE.UU. como parte de un proyecto de ley de vivienda. Los analistas observan que la adopción minorista del yuan digital ha sido lenta dado que WeChat Pay y Alipay ya cubren las necesidades cotidianas, mientras que el potencial mayor reside en pagos transfronterizos.",
-        "highlights": [
-          "China amplía de 10 a 22 el número de bancos autorizados a promover el yuan digital",
-          "La adopción minorista del yuan digital ha sido lenta: WeChat Pay y Alipay ya dominan los pagos cotidianos",
-          "El mayor potencial del yuan digital está en los pagos transfronterizos fuera del sistema dólar",
-          "EE.UU. aprobó en el Senado una prohibición de CBDC minoristas de la Fed adjunta a un proyecto de ley de vivienda"
-        ],
-        "tags": ["ESTRAT", "MERCADO", "REG"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "Reuters", "url": "https://www.reuters.com" }
-        ],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-04",
-        "titulo": "UAE lanza el Dírham Digital para pagos minoristas en marzo de 2026",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.digitaldubai.ai/dubai-updates/uae-digital-dirham-cbdc-launch-2026",
-        "medio": "Digital Dubai",
-        "resumen": "Los Emiratos Árabes Unidos lanzan oficialmente el Dírham Digital para transacciones minoristas en marzo de 2026, convirtiéndose en uno de los primeros países del mundo en hacerlo. El sistema ofrece liquidación instantánea, privacidad en pequeñas transacciones, cumplimiento AML en transacciones grandes e integración con la red mBridge para transferencias internacionales.",
-        "highlights": [
-          "El Dírham Digital se lanza para pagos minoristas con paridad 1:1 respecto al dírham físico",
-          "Integración con mBridge para transferencias con Arabia Saudí, India, China y Hong Kong",
-          "El gobernador del Banco Central de EAU declara que representa una evolución fundamental en el funcionamiento del dinero",
-          "Las pequeñas transacciones mantienen privacidad total; las grandes cumplen requisitos AML"
-        ],
-        "tags": ["ESTRAT", "MERCADO", "TECH"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-09",
-        "titulo": "CBDC and Banking: How Central Bank Digital Currency Could Transform the Financial System",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://economy.ac/review/2026/03/202603288612",
-        "medio": "The Economy",
-        "resumen": "Análisis académico sobre el potencial transformador de las monedas digitales de banco central en el sistema financiero global. Con un 91% de los bancos centrales investigando CBDC según el BIS, el artículo analiza los dos escenarios macroeconómicos más probables: sustitución gradual de depósitos y riesgo de estampida financiera en crisis, señalando que el diseño de la política determinará cuál prevalece.",
-        "highlights": [
-          "91% de los 93 bancos centrales encuestados por el BIS investigan activamente una CBDC retail o mayorista",
-          "Las CBDC podrían redefinir dónde se mantienen los ahorros, cómo se otorga el crédito y quién genera las rentas de la creación monetaria",
-          "Una CBDC extendería las responsabilidades del banco central a unidades digitales accesibles desde monederos individuales",
-          "El diseño cuidadoso es esencial para que la CBDC no provoque inestabilidad bancaria sistémica"
-        ],
-        "tags": ["TECH", "REG", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-11",
-        "titulo": "X Money lanzará en beta en abril: wallet digital para pagos P2P integrado en la red social X",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://www.cbsnews.com/news/xmoney-elon-musk-online-payments/",
-        "medio": "CBS News",
-        "resumen": "X Money, la plataforma financiera de Elon Musk integrada en la red social X, anunciará en marzo de 2026 que lanzará en beta a usuarios seleccionados en abril. La solución se concibe como un 'monedero digital todo-en-uno' que permite transacciones entre particulares, con financiación a través de Visa Direct y posibilidad de integrar funciones de ahorro, inversión y pagos en un único entorno.",
-        "highlights": [
-          "XMoney entrará en acceso anticipado para usuarios seleccionados en abril de 2026",
-          "El monedero digital de X se financia a través de una cuenta de marca X conectada a Visa Direct",
-          "El modelo conceptual se basa en el 'Everything App' WeChat, que integra pagos, mensajería y compras",
-          "Musk ha descrito XMoney como el lugar donde 'estará todo el dinero'"
-        ],
-        "tags": ["ESTRAT", "MERCADO"],
-        "imagen": null,
-        "otros_medios": [
-          { "nombre": "The Paypers", "url": "https://thepaypers.com/news" }
-        ],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "Affirm expands Stripe collaboration to facilitate agentic commerce payments",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "Affirm amplía su colaboración con Stripe para facilitar pagos de comercio agéntico, permitiendo que los agentes de IA ejecuten compras en nombre de los usuarios con opciones de pago aplazado. La integración apunta a la creciente tendencia del comercio donde los asistentes de IA toman decisiones de compra de forma autónoma.",
-        "highlights": [
-          "Affirm y Stripe amplían su colaboración para habilitar pagos en el comercio agéntico",
-          "La integración permite a agentes de IA comprar en nombre de usuarios con opciones de pago a plazos",
-          "El comercio agéntico emerge como uno de los grandes vectores de crecimiento de los pagos digitales en 2026"
-        ],
-        "tags": ["TECH", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-05",
-        "titulo": "Wero expands ecommerce payments to Belgium – Wallet paneuropeo de pagos",
-        "categoria": "medios-digital",
-        "alcance": "Internacional",
-        "url": "https://thepaypers.com/news",
-        "medio": "The Paypers",
-        "resumen": "Wero, el monedero de pagos paneuropeo impulsado por bancos europeos, expande sus servicios de ecommerce a Bélgica con sus primeros comercios. La solución permite pagos de comercio electrónico directamente desde la app bancaria del usuario, sin necesidad de tarjeta de crédito, utilizando la red SEPA como infraestructura subyacente.",
-        "highlights": [
-          "Wero llega al ecommerce belga con sus primeros comercios en marzo de 2026",
-          "La solución integra pagos de ecommerce directamente en las apps bancarias de los usuarios",
-          "Wero forma parte de la estrategia de soberanía de pagos digitales en Europa frente a PayPal y los wallets americanos"
-        ],
-        "tags": ["MERCADO", "ESTRAT"],
-        "imagen": null,
-        "otros_medios": [],
-        "_nota": "Publicado originalmente en inglés."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Air Canada Express colisiona con camión de bomberos en LaGuardia: dos pilotos fallecidos y el aeropuerto cierra",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://abcnews.com/US/laguardia-airport-closed-collision-air-canada-plane-airport/story?id=131315551",
-        "medio": "ABC News",
-        "resumen": "El vuelo Air Canada Express 8646 (Jazz Aviation), procedente de Montreal con 72 pasajeros y 4 tripulantes a bordo, impactó contra un vehículo de rescate de bomberos de la Port Authority al aterrizar en la pista 4 del Aeropuerto de LaGuardia (Nueva York) a las 23:45 h del 22 de marzo de 2026. Los dos pilotos —Antoine Forest y Mackenzie Gunther— fallecieron, y 41 personas fueron hospitalizadas. El aeropuerto permaneció cerrado hasta las 14:00 h del lunes y la pista 4 continuará clausurada hasta el viernes mientras el NTSB investiga.",
-        "highlights": [
-          "Dos pilotos fallecidos: Antoine Forest (Coteau-du-Lac, Quebec) y Mackenzie Gunther",
-          "41 personas hospitalizadas, 32 dadas de alta el mismo lunes",
-          "Aeronave CRJ-900 circulaba a entre 93 y 105 mph en el momento del impacto",
-          "El controlador autorizó al camión a cruzar y segundos después le pidió que se detuviera",
-          "NTSB abrió investigación; cajas negras recuperadas y enviadas a Washington D.C.",
-          "LaGuardia cerrada hasta las 14:00 h del lunes; pista 4 cerrada hasta el viernes"
-        ],
-        "tags": ["LaGuardia", "Air Canada", "accidente aéreo", "NTSB", "seguridad aeroportuaria", "pista", "Jazz Aviation", "Nueva York"],
-        "imagen": "https://i.abcnewsfe.com/a/1a2e3f4b-laguardia-crash-2026.jpg",
-        "otros_medios": [
-          { "nombre": "CNN (live)", "url": "https://www.cnn.com/us/live-news/laguardia-collision-ice-airports-tsa-03-23-26" },
-          { "nombre": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-23/laguardia-closed-after-report-plane-collided-with-ground-vehicle" },
-          { "nombre": "CBS News", "url": "https://www.cbsnews.com/news/laguardia-airport-closed-arrving-air-canada-plane-ground-vehicle-collide/" },
-          { "nombre": "NBC News", "url": "https://www.nbcnews.com/news/us-news/live-blog/air-canada-laguardia-collision-live-updates-rcna264682" },
-          { "nombre": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/3/23/air-canada-jet-collides-with-ground-vehicle-at-new-york-airport" },
-          { "nombre": "Fox News", "url": "https://www.foxnews.com/us/laguardia-plane-crash-air-traffic-control-audio-reveals-frantic-call-truck-stop-stop-stop" },
-          { "nombre": "CBC", "url": "https://www.cbc.ca/news/world/livestory/air-canada-crash-la-guardia-airport-9.7138217" },
-          { "nombre": "ABC7 New York", "url": "https://abc7ny.com/live-updates/laguardia-plane-crash-airport-reopens-collision-kills-pilots-air-canada-flight/18756609/" },
-          { "nombre": "CTV News", "url": "https://www.ctvnews.ca/canada/article/2-pilots-killed-after-air-canada-flight-crashes-at-ny-airport-dozens-injured-follow-for-live-updates/" },
-          { "nombre": "Preferente.com", "url": "https://www.preferente.com/" }
-        ],
-        "_nota": "Noticia de última hora del 22-23 marzo 2026. Imagen inferida; URL exacta de la foto de ABC News no verificada."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Aena mantiene su previsión de crecimiento del tráfico del 1,3% en 2026 pese a la guerra en Oriente Medio",
-        "categoria": "sector-aeroportuario",
+        "fecha": "2026-02-23",
+        "titulo": "Pagar con tarjeta o cambiar moneda: ¿qué opción es más rentable si viajas al extranjero?",
+        "categoria": "sector-cambiario",
         "alcance": "Nacional",
-        "url": "https://es.investing.com/news/stock-market-news/aena-mantiene-su-prevision-de-crecimiento-del-trafico-del-13--en-2026-pese-a-la-guerra-3573669",
-        "medio": "Investing.com España",
-        "resumen": "El presidente y CEO de Aena, Maurici Lucena, confirmó en el Gran Encuentro de Expansión celebrado en Barcelona el 23 de marzo de 2026 que la compañía mantiene su previsión de crecimiento del tráfico del 1,3% para 2026, a pesar del conflicto bélico en Oriente Medio. Lucena señaló que el impacto de la guerra es 'asimétrico' según las coberturas al precio del queroseno de cada aerolínea.",
+        "url": "https://www.bbva.com/es/salud-financiera/pagar-con-tarjeta-o-cambiar-moneda-que-opcion-es-mas-rentable-si-viajas-al-extranjero/",
+        "medio": "BBVA",
+        "resumen": "Guía actualizada de BBVA que compara las opciones de pago con tarjeta frente al cambio de moneda al viajar al extranjero. Advierte que cualquier cambio de moneda implica comisión y que el tipo de cambio es libre en España, donde los tipos oficiales son solo orientativos.",
         "highlights": [
-          "Aena mantiene previsión de +1,3% de tráfico en 2026",
-          "Impacto de la guerra en Oriente Medio 'asimétrico' entre aerolíneas según coberturas de fuel",
-          "Afectación notable en tráfico con Oriente Medio en Barcelona y Madrid en términos absolutos",
-          "DORA III no sufrirá cambios por el conflicto según Lucena",
-          "La ampliación de El Prat es necesaria para alcanzar los 70 millones de pasajeros"
+          "Cualquier cambio de moneda implica una comisión; si al volver necesitas reconvertir, pagas de nuevo",
+          "El tipo de cambio es libre en España; los tipos oficiales son solo orientativos",
+          "Lugares turísticos que ofrecen cambio sin comisiones ocultan el coste en un tipo de cambio desfavorable",
+          "Las comisiones bancarias por cambio de divisas oscilan entre un 3% y un 5%",
+          "Aconseja evitar el DCC (Dynamic Currency Conversion) y elegir siempre pago en moneda local"
         ],
-        "tags": ["Aena", "tráfico aéreo", "Oriente Medio", "DORA III", "Maurici Lucena", "El Prat", "Barajas", "tarifas aeroportuarias"],
-        "imagen": "https://cdn.aena.es/aena/img/aena-logo-og.jpg",
-        "otros_medios": [
-          { "nombre": "Expansión", "url": "https://www.expansion.com" }
+        "tags": [
+          "cambio-de-moneda",
+          "cambio-de-divisas",
+          "espana",
+          "turismo",
+          "comisiones",
+          "tarjetas-viaje"
         ],
-        "_nota": "Declaraciones realizadas en el Gran Encuentro de Expansión, Barcelona, 23 marzo 2026."
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
       },
       {
-        "fecha": "2026-03-23",
-        "titulo": "El aeropuerto de El Prat pierde peso en Europa mientras Barajas escala al tercer puesto con 5,4 M de pasajeros en enero",
-        "categoria": "sector-aeroportuario",
+        "fecha": "2026-02-20",
+        "titulo": "Western Union Reports Fourth Quarter and Full Year 2025 Results",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.businesswire.com/news/home/20260220258915/en/Western-Union-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+        "medio": "Business Wire",
+        "resumen": "Western Union reportó resultados del Q4 y año completo 2025. Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la expansión del negocio Travel Money, que incluyó la adquisición de Eurochange Limited, y mayores ingresos de pagos de facturas.",
+        "highlights": [
+          "Los ingresos del segmento Consumer Services crecieron un 15% reportado y un 26% ajustado en Q4, gracias a la adquisición de Eurochange Limited",
+          "EPS ajustado de Q4 fue $0.45, superando el consenso de $0.43",
+          "Guía 2026: crecimiento de ingresos GAAP del 5%-8% y EPS ajustado de $1.75-$1.85",
+          "Dividendo de $0.235 por acción aprobado para Q1 2026"
+        ],
+        "tags": [
+          "eurochange",
+          "western-union",
+          "estados-unidos",
+          "reino-unido",
+          "resultados-financieros",
+          "adquisicion"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Stock Titan",
+            "url": "https://www.stocktitan.net/news/WU/western-union-reports-fourth-quarter-and-full-year-2025-aotghsa83nkd.html"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-20",
+        "titulo": "Western Union (WU) Q4 2025 Earnings Call Transcript",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/02/20/western-union-wu-q4-2025-earnings-transcript/",
+        "medio": "The Motley Fool",
+        "resumen": "Transcripción completa de la conferencia de resultados Q4 2025 de Western Union. El CEO Devin McGranahan destacó que los ingresos ajustados de Consumer Services subieron un 26% en el trimestre y un 30% en el año, impulsados por el crecimiento en travel money liderado por eurochange.",
+        "highlights": [
+          "McGranahan señaló: 'Consumer Services adjusted revenue was up 26% in the quarter and roughly 30% for the full year, driven by growth in travel money, led by Eurochange'",
+          "El negocio de travel money se proyecta a alcanzar 150 millones de dólares en ingresos en 2026",
+          "Western Union ve oportunidad en un mercado de travel money fragmentado donde grandes jugadores se retiraron desde el COVID",
+          "La empresa espera cerrar la adquisición de Intermex en Q2 2026"
+        ],
+        "tags": [
+          "eurochange",
+          "western-union",
+          "estados-unidos",
+          "reino-unido",
+          "resultados-financieros",
+          "travel-money"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/news/western-union-wu-q4-2025-151225141.html"
+          },
+          {
+            "nombre": "The Globe and Mail",
+            "url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/330379/western-union-wu-q4-2025-earnings-transcript/"
+          },
+          {
+            "nombre": "Insider Monkey",
+            "url": "https://www.insidermonkey.com/blog/the-western-union-company-nysewu-q4-2025-earnings-call-transcript-1700321/"
+          },
+          {
+            "nombre": "Fintool",
+            "url": "https://fintool.com/app/research/companies/WU/documents/transcripts/q4-2025"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-20",
+        "titulo": "Does Western Union's Earnings Beat Mean Its Transition Is Working?",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://247wallst.com/investing/2026/02/20/does-western-unions-earnings-beat-mean-its-transition-is-working/",
+        "medio": "24/7 Wall St.",
+        "resumen": "Artículo de análisis sobre los resultados de Western Union Q4 2025. Destaca que Consumer Services fue el único punto brillante, con ingresos que subieron un 15% en Q4 a 136,9 millones de dólares, impulsados por la adquisición de Eurochange Limited expandiendo el negocio Travel Money de WU.",
+        "highlights": [
+          "Consumer Services revenue creció un 15% en Q4 a 136,9 millones de dólares, impulsado por la adquisición de Eurochange Limited",
+          "El negocio core de Consumer Money Transfer cayó un 7% interanual a 871,5 millones de dólares",
+          "El rendimiento por dividendo de WU es del 9,9% pero la sostenibilidad es cuestionada: ratio de pago del 87%",
+          "Consenso de analistas es 'Reduce' con 5 Sell, 10 Hold y solo 1 Buy",
+          "El flujo de caja operativo cayó un 48% desde 2021"
+        ],
+        "tags": [
+          "eurochange",
+          "western-union",
+          "estados-unidos",
+          "reino-unido",
+          "analisis-financiero",
+          "adquisicion"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "AOL",
+            "url": "https://www.aol.com/articles/does-western-union-earnings-beat-134549799.html"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-20",
+        "titulo": "Western Union falls as revenue misses analyst estimates",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.investing.com/news/earnings/western-union-falls-as-revenue-misses-analyst-estimates-4515973",
+        "medio": "Investing.com",
+        "resumen": "Investing.com reportó que las acciones de Western Union cayeron tras no alcanzar las estimaciones de ingresos de los analistas. No obstante, el segmento Consumer Services creció un 26% ajustado, impulsado por la expansión del negocio Travel Money incluyendo la adquisición de Eurochange Limited.",
+        "highlights": [
+          "Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la adquisición de Eurochange Limited",
+          "Las transacciones de Branded Digital crecieron un 13%, representando el 30% de ingresos totales de Consumer Money Transfer",
+          "Guía fiscal 2026: EPS ajustado de $1.75-$1.85 y crecimiento de ingresos del 6%-9% ajustado",
+          "La caída del precio de la acción refleja la debilidad en el negocio core de remesas"
+        ],
+        "tags": [
+          "eurochange",
+          "western-union",
+          "estados-unidos",
+          "reino-unido",
+          "resultados-financieros",
+          "bolsa"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [],
+        "_nota": "TÉRMINO 'EUROCHANGE': Tras búsqueda exhaustiva en medios prioritarios españoles (expansion.com, eleconomista.es, elpais.com, elmundo.es, lavanguardia.com, cincodias.elpais.com), británicos (Daily Mail, Guardian, Mirror, Metro, The Sun, The Times, cityam.com, thisismoney.co.uk, travelweekly.co.uk, ttgmedia.com) e internacionales (Bloomberg, Reuters), se encontraron únicamente 6 historias verificadas que mencionan 'Eurochange' entre el 25 de enero y el 24 de febrero de 2026. No se alcanza el objetivo de 40 artículos. Las menciones se concentran en dos eventos: (1) Resultados Q4 2025 de Western Union (20 febrero), donde Eurochange Limited se cita como motor del crecimiento del 26% en Consumer Services; y (2) Premio Moneynet Awards 2026 a la 'Best Currency Travel Card' de eurochange (23 febrero). Eurochange no es una empresa cotizada por sí misma (fue adquirida por Western Union en abril 2025), lo que limita la cobertura mediática independiente. Ningún medio español ni británico nacional publicó artículos exclusivamente sobre eurochange en este período."
+      },
+      {
+        "fecha": "2026-02-20",
+        "titulo": "Precio del dólar hoy 20 de febrero de 2026: Peso mexicano y tipo de cambio",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-20-febrero-2026-a-cuanto-cotiza-en-vivo-atm",
+        "medio": "Milenio",
+        "resumen": "El peso mexicano avanzó 0,8% cerrando la semana a 17,11 pesos por dólar tras el fallo de la Corte Suprema de EE.UU. contra los aranceles generalizados de Trump. En respuesta, Trump anunció un arancel global del 10% para sustituir las tarifas anuladas. El artículo incluye información sobre casas de cambio de divisas.",
+        "highlights": [
+          "Peso mexicano cerró en 17,11 unidades por dólar, avanzando 0,8% en la semana",
+          "Corte Suprema de EE.UU. falló contra aranceles generalizados de Trump",
+          "Trump anunció arancel global del 10% como sustituto",
+          "Tipo de cambio FIX de Banxico: 17,1722 pesos por dólar",
+          "Casas de cambio tienen límite de compra de 1.500 dólares"
+        ],
+        "tags": [
+          "cambio-de-divisas",
+          "mexico",
+          "tipo-de-cambio",
+          "dolar",
+          "peso-mexicano",
+          "aranceles"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-02-20",
+        "titulo": "El error más grande que podés cometer a la hora de cambiar dólares",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.ambito.com/economia/el-error-mas-grande-que-podes-cometer-la-hora-cambiar-dolares-n6248406",
+        "medio": "Ámbito",
+        "resumen": "Artículo de Ámbito (Argentina) que advierte sobre el error de cambiar moneda en aeropuertos, donde las casas de cambio suelen ofrecer cotizaciones menos favorables. Recomienda planificar el cambio de moneda antes del viaje y comparar tasas online.",
+        "highlights": [
+          "Casas de cambio en aeropuertos ofrecen cotizaciones menos favorables que en centros de ciudades",
+          "Los locales aeroportuarios enfrentan alquileres elevados, seguridad y horarios extendidos que encarecen el tipo de cambio",
+          "Recomendación: planificar el cambio de moneda antes del viaje y comparar tasas online",
+          "Opción alternativa: retirar efectivo en cajeros automáticos del destino evaluando comisiones"
+        ],
+        "tags": [
+          "cambio-de-moneda",
+          "argentina",
+          "aeropuerto",
+          "consejos-viaje",
+          "casas-de-cambio"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-02-19",
+        "titulo": "China y RWA: El gigante asiático define las reglas del juego para los activos digitales",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://criptotendencia.com/2026/02/19/china-y-rwa-el-gigante-asiatico-define-las-reglas-del-juego-para-los-activos-digitales/",
+        "medio": "CriptoTendencia",
+        "resumen": "China publicó el 6 de febrero de 2026 un nuevo marco regulatorio para activos virtuales que clasifica las stablecoins como activos con funciones de curso legal. El intercambio de estas monedas por divisas tradicionales podría ser procesado como 'operaciones de cambio de divisas encubiertas', elevando drásticamente el riesgo para los mercados OTC.",
+        "highlights": [
+          "El PBOC y siete agencias emitieron nueva normativa sobre riesgos de monedas virtuales (Yin Fa [2026] No. 42)",
+          "Stablecoins clasificadas formalmente como activos con funciones de curso legal",
+          "El intercambio de stablecoins podría procesarse como 'operaciones de cambio de divisas encubiertas'",
+          "La Administración Estatal de Divisas (SAFE) es una de las entidades supervisoras",
+          "El nuevo Aviso anula oficialmente el restrictivo 'Aviso 924' de 2021"
+        ],
+        "tags": [
+          "cambio-de-divisas",
+          "china",
+          "regulacion",
+          "criptomonedas",
+          "stablecoins"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-02-18",
+        "titulo": "Travelex Plus sees over 150,000 members sign up within first 10 months",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://retailtimes.co.uk/travelex-plus-sees-over-150000-members-sign-up-within-first-10-months/",
+        "medio": "Retail Times",
+        "resumen": "El programa de fidelización Travelex Plus ha superado los 150.000 miembros en menos de un año desde su lanzamiento en el Reino Unido. Los miembros acceden a tarifas exclusivas, descuentos, congelación de precios y alertas de tipos de cambio favorables, lo que ha impulsado significativamente el engagement del cliente.",
+        "highlights": [
+          "Más de 150.000 miembros captados en los primeros 10 meses del programa Travelex Plus en el Reino Unido",
+          "Los miembros de Travelex Plus adquieren de media un 25% más de divisa que los no miembros",
+          "El número de clientes que recargan su Travelex Money Card (TMC) casi se ha duplicado entre miembros del programa",
+          "Simon Jackson, Chief Customer Officer: 'Los clientes acceden a nuestras mejores tarifas en efectivo y tarjeta al unirse a Travelex Plus'",
+          "El programa ofrece comisión 0%, descuentos en la primera compra y ventas exclusivas periódicas"
+        ],
+        "tags": [
+          "travelex",
+          "travelex-plus",
+          "reino-unido",
+          "programa-fidelizacion",
+          "tipo-de-cambio"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Travel And Tour World",
+            "url": "https://www.travelandtourworld.com/news/article/travelex-plus-hits-150000-members-in-less-than-a-year-the-uk-loyalty-program-revolutionizing-foreign-exchange/"
+          },
+          {
+            "nombre": "Financial IT",
+            "url": "https://financialit.net/news/infrastructure/travelex-plus-sees-over-150000-members-sign-within-first-ten-months"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-18",
+        "titulo": "Mercado informal y oficial de divisas en Cuba hoy: tasas actualizadas",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.directoriocubano.info/actualidad/mercado-informal-y-oficial-de-divisas-en-cuba-hoy-tasas-actualizadas/",
+        "medio": "Directorio Cubano",
+        "resumen": "El dólar alcanza los 500 CUP en el mercado informal cubano, mientras que la tasa oficial se mantiene en 458 CUP. El euro cotiza a 560 CUP informalmente frente a los 542,41 CUP oficiales. La brecha creciente entre ambos tipos de cambio refleja la escasez de moneda extranjera y la alta demanda de divisas en la isla.",
+        "highlights": [
+          "Dólar en mercado informal: 500 CUP vs tasa oficial 458 CUP",
+          "Euro informal: 560 CUP vs oficial 542,41 CUP",
+          "MLC cotiza a 410 CUP en mercado informal",
+          "Operaciones Zelle valoradas en 493,62 CUP",
+          "Peso mexicano sube hasta 29,19 CUP en mercado informal"
+        ],
+        "tags": [
+          "cambio-de-divisas",
+          "cuba",
+          "mercado-informal",
+          "dolar",
+          "euro"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-02-16",
+        "titulo": "Wise plc appoints Computershare as new share registrar",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.investing.com/news/company-news/wise-plc-appoints-computershare-as-new-share-registrar-93CH-4507606",
+        "medio": "Investing.com",
+        "resumen": "Wise plc nombró a Computershare Investor Services PLC como nuevo registrador de acciones, sustituyendo a Equiniti Limited con efecto inmediato. Las acciones de Wise cayeron un 1,6% a 848 peniques ese día. Los inversores están atentos a la doble cotización prevista en EE.UU. para el primer semestre de 2026.",
+        "highlights": [
+          "Computershare reemplaza a Equiniti como registrador de acciones de Wise, efectivo 16 febrero 2026",
+          "Acciones Wise Clase A cayeron 1,6% a 848 peniques en Londres",
+          "Wise procesó más de 185.000 millones de dólares en transacciones transfronterizas en el año fiscal 2025",
+          "Wise cuenta con aproximadamente 15,6 millones de clientes y gestiona 40 divisas",
+          "La doble cotización en EE.UU. está prevista para H1 2026"
+        ],
+        "tags": [
+          "wise",
+          "fintech",
+          "reino-unido",
+          "bolsa",
+          "cotizacion",
+          "corporativo"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "TipRanks",
+            "url": "https://www.tipranks.com/news/company-announcements/wise-plc-switches-share-registrar-to-computershare"
+          },
+          {
+            "nombre": "Investegate (London Stock Exchange RNS)",
+            "url": "https://www.investegate.co.uk/announcement/rns/wise-class-a--wise/change-of-adviser/9432631"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-14",
+        "titulo": "El peso toca su mejor nivel del año y cierra en 17.14 por dólar",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://lopezdoriga.com/economia-y-finanzas/el-peso-toca-su-mejor-nivel-del-ano-y-cierra-en-17-14-por-dolar/",
+        "medio": "López-Dóriga Digital",
+        "resumen": "El tipo de cambio cerró la séptima semana de 2026 con su menor nivel en lo que va del año, un registro no visto desde junio de 2024, cotizando 17,14 pesos por dólar. El avance semanal del peso fue del 0,67%, beneficiado por la debilidad del dólar ante datos económicos negativos en EE.UU.",
+        "highlights": [
+          "Peso mexicano cerró en 17,14 por dólar, mejor nivel del año 2026",
+          "Nivel no visto desde junio de 2024",
+          "Avance semanal del peso del 0,67%",
+          "Debilidad del dólar por datos económicos negativos en EE.UU. y contracción en ventas minoristas",
+          "China pidió a instituciones financieras reducir exposición a bonos del Tesoro estadounidense"
+        ],
+        "tags": [
+          "cambio-de-moneda",
+          "mexico",
+          "tipo-de-cambio",
+          "peso-dolar",
+          "mercado-cambiario"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-02-13",
+        "titulo": "Apollo in Talks to Offer Funds to Revolut Customers in Europe",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-13/apollo-in-talks-to-offer-funds-to-revolut-customers-in-europe",
+        "medio": "Bloomberg",
+        "resumen": "Apollo Global Management está en conversaciones preliminares con Revolut para ofrecer sus fondos de inversión a clientes minoristas en Europa a través de la plataforma fintech. Revolut también mantiene conversaciones exploratorias con Blackstone para ofrecer fondos a clientes de banca privada.",
+        "highlights": [
+          "Apollo sería uno de los gestores de capital privado que ofrecerían vehículos a través de la oferta de mercados privados de Revolut",
+          "Revolut planea lanzar su plataforma de mercados privados a lo largo de 2026",
+          "Los ingresos de wealth management de Revolut crecieron casi un 300% en 2024, alcanzando 506 millones de libras",
+          "Revolut también negocia con Blackstone para ofrecer fondos a clientes de banca privada",
+          "Revolut está reclutando banqueros de inversión junior, gestores de activos y asesores de capital privado"
+        ],
+        "tags": [
+          "revolut",
+          "fintech",
+          "europa",
+          "wealth-management",
+          "mercados-privados",
+          "apollo",
+          "blackstone"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Finance Magnates",
+            "url": "https://www.financemagnates.com/fintech/revolut-targets-high-net-worth-clients-in-potential-blackstone-partnership/"
+          },
+          {
+            "nombre": "GuruFocus",
+            "url": "https://www.gurufocus.com/news/8616067/apollo-explores-revolut-partnership-as-wealth-revenue-jumps-nearly-300"
+          },
+          {
+            "nombre": "Bloomberg Law",
+            "url": "https://news.bloomberglaw.com/banking-law/blackstone-holds-early-talks-with-revolut-on-wealth-partnership"
+          },
+          {
+            "nombre": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/news/blackstone-revolut-talks-collaborate-wealth-101426248.html"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-02-10",
+        "titulo": "Es falso que Donald Trump anunció que el dólar será la nueva moneda oficial de Venezuela",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://es-us.noticias.yahoo.com/falso-donald-trump-anunci%C3%B3-d%C3%B3lar-040614722.html",
+        "medio": "Yahoo Noticias",
+        "resumen": "Verificación de hechos que desmiente la desinformación sobre un supuesto anuncio de Donald Trump de cambiar la moneda oficial de Venezuela al dólar. El artículo 318 de la Constitución venezolana establece el bolívar como la unidad monetaria y cualquier cambio de moneda requeriría reforma constitucional.",
+        "highlights": [
+          "Es falso que Trump anunció cambio de moneda en Venezuela; no existe decreto oficial",
+          "Artículo 318 de la Constitución de Venezuela establece el bolívar como moneda nacional",
+          "Un cambio de moneda requeriría reforma constitucional o enmienda",
+          "El Banco Central de Venezuela tiene potestad exclusiva sobre decisiones monetarias"
+        ],
+        "tags": [
+          "cambio-de-moneda",
+          "venezuela",
+          "desinformacion",
+          "dolar",
+          "bolivar"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-02-06",
+        "titulo": "Antes de facturar: consulta el tipo de cambio de monedas y dólar enero 2026",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.unotv.com/negocios/antes-de-facturar-consulta-el-tipo-de-cambio-de-monedas-y-dolar-enero-2026/",
+        "medio": "UnoTV",
+        "resumen": "El Banco de México (Banxico) publicó en el Diario Oficial de la Federación la equivalencia de las principales monedas del mundo frente al dólar correspondiente a enero de 2026. Este tipo de cambio es obligatorio para efectos fiscales, facturación electrónica e importaciones/exportaciones.",
+        "highlights": [
+          "Banxico publicó las equivalencias oficiales de monedas frente al dólar para enero 2026",
+          "Tipo de cambio obligatorio para efectos fiscales según artículo 20 del Código Fiscal de la Federación",
+          "Indispensable para facturación electrónica en operaciones en moneda extranjera"
+        ],
+        "tags": [
+          "cambio-de-moneda",
+          "mexico",
+          "tipo-de-cambio",
+          "banxico",
+          "fiscal"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [],
+        "_nota": "TÉRMINO 'CAMBIO DE MONEDA': Tras búsqueda exhaustiva con más de 14 consultas incluyendo búsquedas site-specific en los medios prioritarios españoles (El País, ABC, La Vanguardia, El Mundo, El Confidencial, Expansión, Cinco Días, El Economista, Europa Press, EFE, COPE, Cadena SER, RTVE), medios regionales de Castilla y León y Salamanca, la frase exacta 'cambio de moneda' aparece abrumadoramente en páginas comerciales/de servicios (Exact Change, Eurochange, Global Exchange, Cambiator) y no en artículos periodísticos. Los medios españoles prioritarios no produjeron resultados indexados con esta frase exacta en el período solicitado. La cobertura periodística de temas cambiarios en español utiliza predominantemente 'tipo de cambio', 'cambio de divisas' o 'mercado cambiario'. Se encontraron solo 5 artículos verificados. Objetivo: 40."
+      },
+      {
+        "fecha": "2026-01-30",
+        "titulo": "Precio del dólar hoy 30 de enero de 2026 EN VIVO | Peso mexicano",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-30-enero-2026-a-cuanto-cotiza-en-vivo-atm",
+        "medio": "Milenio",
+        "resumen": "El peso mexicano se depreció 1,46% cerrando la semana a 17,46 unidades por dólar tras la nominación de Kevin Warsh para dirigir la Fed. México fue amenazado con aranceles por suministrar petróleo a Cuba. El peso cerró enero con rendimiento acumulado del 3%, su mejor desempeño desde junio 2025.",
+        "highlights": [
+          "Peso cerró en 17,46 por dólar con depreciación de 1,46% en la jornada",
+          "Kevin Warsh nominado para dirigir la Reserva Federal",
+          "EE.UU. amenazó con aranceles a países que suministran petróleo a Cuba, incluido México",
+          "Peso acumuló rendimiento de 3% en enero, mejor desempeño desde junio 2025"
+        ],
+        "tags": [
+          "cambio-de-divisas",
+          "mexico",
+          "tipo-de-cambio",
+          "dolar",
+          "peso-mexicano",
+          "fed"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-01-29",
+        "titulo": "Revolut planea alcanzar los 8 millones de clientes en España en 2026 a los mandos de su equipo Audi en la Fórmula 1",
+        "categoria": "sector-cambiario",
         "alcance": "Nacional",
-        "url": "https://www.vilapress.cat/articulo/el-prat/2026-03-23/5815723-aeropuerto-prat-pierde-peso-europa-mientras-barajas-escala-posiciones",
-        "medio": "Vilapress",
-        "resumen": "Datos de ACI Europe correspondientes a enero de 2026 muestran que Madrid-Barajas consolidó el tercer puesto del ranking europeo con 5,4 millones de pasajeros (+3,5% interanual), superando a París-Charles de Gaulle. Barcelona-El Prat, con 3,8 millones de pasajeros y un crecimiento del 3%, descendió del séptimo al octavo lugar.",
+        "url": "https://www.elespanol.com/invertia/empresas/banca/20260129/revolut-planea-alcanzar-millones-clientes-espana-mandos-equipo-audi-formula/1003744107692_0.html",
+        "medio": "El Español / Invertia",
+        "resumen": "Revolut planea alcanzar los 8 millones de clientes en España en 2026, lo que supondría un crecimiento del 33% respecto al año anterior. El neobanco ha fichado a Santiago Pérez Olano como nuevo CEO en España y ha suscrito un acuerdo trianual con Audi para patrocinar su equipo en la Fórmula 1.",
         "highlights": [
-          "Barajas: 5,4 M de pasajeros en enero 2026, tercer puesto europeo (+3,5%)",
-          "El Prat: 3,8 M de pasajeros, cae al octavo puesto europeo (+3%)",
-          "Madrid supera por primera vez a París-CDG en el ranking mensual",
-          "Brecha entre los dos aeropuertos españoles mayor que en 2019",
-          "Ausencia de política clara sobre la ampliación de El Prat como factor diferencial"
+          "Revolut cerró 2025 con más de 6 millones de clientes en España",
+          "Objetivo de 8 millones de clientes en España para cierre de 2026 (crecimiento del 33%)",
+          "Fichaje de Santiago Pérez Olano como nuevo CEO de Revolut España",
+          "Prevé reforzar oficinas con 800 nuevos empleos y desplegar 200 cajeros automáticos físicos en 2026",
+          "Más de 1.000 empresas y comercios se adhieren cada semana a Revolut Business en España"
         ],
-        "tags": ["Barajas", "El Prat", "ranking aeropuertos", "ACI Europe", "tráfico enero 2026", "Europa", "Aena"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Barcelona_El_Prat_Airport.jpg/1200px-Barcelona_El_Prat_Airport.jpg",
-        "otros_medios": [
-          { "nombre": "Portal de América", "url": "https://portaldeamerica.com/index.php/pda/otras-noticias/item/38158-el-trafico-aereo-en-europa-inicia-2026-con-un-alza-del-4-6-y-el-aeropuerto-de-madrid-supera-al-de-paris-orly" }
+        "tags": [
+          "revolut",
+          "espana",
+          "fintech",
+          "audi-f1",
+          "expansion",
+          "banca-digital"
         ],
-        "_nota": null
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
       },
       {
-        "fecha": "2026-03-23",
-        "titulo": "Baltona se adjudica el contrato de retail del Aeropuerto de Cracovia con nuevo concepto Duty Free 'Sense of Place'",
-        "categoria": "sector-aeroportuario",
+        "fecha": "2026-01-29",
+        "titulo": "Precio del dólar hoy 29 de enero 2026: Peso mexicano y tipo de cambio",
+        "categoria": "sector-cambiario",
         "alcance": "Internacional",
-        "url": "https://www.dfnionline.com/latest-news/baltona-secures-krakow-airport-retail-contract-with-new-duty-free-concept-23-03-2026/",
-        "medio": "DFNI",
-        "resumen": "PHZ Baltona S.A. fue adjudicataria del concurso de espacios comerciales del Aeropuerto Juan Pablo II de Cracovia-Balice, firmando un contrato de arrendamiento para desarrollar una nueva zona retail bajo el concepto 'Sense of Place', que incorpora elementos de la identidad local de Cracovia y la región de la Pequeña Polonia.",
+        "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-29-enero-2026-a-cuanto-cotiza-en-vivo-atm",
+        "medio": "Milenio",
+        "resumen": "El peso mexicano se depreció 0,24% cerrando a 17,22 unidades por dólar. La sesión estuvo marcada por una llamada entre Trump y Sheinbaum sobre comercio y seguridad, mientras preparan la revisión del T-MEC. La Fed mantuvo tasas de interés sin cambios.",
         "highlights": [
-          "Apertura provisional de Kraków Duty Free by Baltona el 16 de marzo de 2026",
-          "Concepto 'Sense of Place' basado en la identidad local de Cracovia",
-          "Remodelación completa prevista para mayo de 2026",
-          "Integración de flujos Schengen y no Schengen en la zona comercial",
-          "Cracovia Airport: más de 13,2 M de pasajeros en 2025"
+          "Tipo de cambio cerró en 17,22 pesos por dólar",
+          "Llamada telefónica Trump-Sheinbaum sobre comercio y seguridad",
+          "Fed mantuvo tasas de interés sin cambios",
+          "Tipo de cambio FIX de Banxico: 17,2532 pesos por dólar"
         ],
-        "tags": ["Baltona", "duty free", "Cracovia", "airport retail", "concesión aeroportuaria", "Sense of Place", "Polonia"],
-        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/Baltona-Krakow.jpg",
+        "tags": [
+          "cambio-de-divisas",
+          "mexico",
+          "tipo-de-cambio",
+          "dolar",
+          "peso-mexicano",
+          "t-mec"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-01-28",
+        "titulo": "Travelex to install ATMs in Europe",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.atmmarketplace.com/news/travelex-to-install-atms-in-europe/",
+        "medio": "ATM Marketplace",
+        "resumen": "Travelex está expandiendo sus cajeros automáticos por Europa, con dispositivos adicionales instalados en la terminal de LeShuttle en Folkestone (Inglaterra) y en el Aeropuerto de Berlín Brandeburgo. Los cajeros ofrecen efectivo en hasta seis divisas diferentes, con 45 divisas disponibles mediante pedidos online.",
+        "highlights": [
+          "Travelex cuenta con más de 600 cajeros automáticos en ocho países",
+          "Los nuevos ATM ofrecen retiros de efectivo sin contacto (contactless)",
+          "Se pueden obtener hasta 6 divisas directamente en los ATM y hasta 45 divisas mediante pedido previo online o en tienda",
+          "Simon Jackson, Chief Customer Officer: 'Estamos orgullosos de ampliar nuestras alianzas con LeShuttle y el Aeropuerto de Berlín Brandeburgo'",
+          "Total de 50 cajeros automáticos de Travelex en toda Alemania"
+        ],
+        "tags": [
+          "travelex",
+          "reino-unido",
+          "alemania",
+          "cajeros-automaticos",
+          "aeropuertos",
+          "expansion"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Regional Gateway",
+            "url": "https://www.regionalgateway.net/travelex-installs-three-atms-at-berlin-brandenburg-airport/"
+          }
+        ],
+        "_nota": "TÉRMINO 'TRAVELEX': Tras búsqueda exhaustiva con más de 15 consultas en medios prioritarios españoles (20minutos.es, abc.es, elconfidencial.com, elmundo.es, elpais.com, lavanguardia.com, expansion.com, cincodias.elpais.com, eleconomista.es, europapress.es), británicos (dailymail.co.uk, theguardian.com, independent.co.uk, thetimes.co.uk, standard.co.uk, mirror.co.uk, metro.co.uk, thesun.co.uk, cityam.com, thisismoney.co.uk, moneyweek.com, travelweekly.co.uk, ttgmedia.com) e internacionales (bloomberg.com, reuters.com), se encontraron solo 2 historias verificadas (6 artículos incluyendo sindicaciones) sobre Travelex entre el 25 de enero y el 24 de febrero de 2026: (1) Expansión de cajeros ATM en Europa (Berlín y LeShuttle, 26-28 enero); (2) Hito de 150.000 miembros de Travelex Plus (17-18 febrero). Ninguno de los medios españoles prioritarios publicó artículos sobre Travelex en este período. Los medios nacionales británicos tampoco publicaron artículos dedicados. Bloomberg y Reuters no publicaron cobertura específica. Objetivo: 40. Encontrados: 2 historias únicas."
+      },
+      {
+        "fecha": "2026-01-28",
+        "titulo": "Revolut Launches 15% Savings Rate in Mexico in Battle With Banks",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://www.bloomberg.com/news/articles/2026-01-28/revolut-launches-15-savings-rate-in-mexico-in-battle-with-banks",
+        "medio": "Bloomberg",
+        "resumen": "Revolut lanzó operaciones bancarias completas en México ofreciendo una tasa de interés del 15% en depósitos de ahorro, buscando captar una parte significativa del mercado bancario del país. Revolut Bank S.A. IBM es el primer banco digital independiente en obtener licencia bancaria mexicana por solicitud directa.",
+        "highlights": [
+          "Revolut ofrece una tasa de ahorro del 15% en México para atraer clientes",
+          "Primer banco de Revolut establecido fuera del continente europeo",
+          "Capitalización superior a 100 millones de dólares, más del doble del mínimo regulatorio",
+          "La expansión extiende la presencia de Revolut a 40 países",
+          "Nik Storonsky, CEO: 'Este lanzamiento es un modelo para la expansión a otros mercados de alto crecimiento'"
+        ],
+        "tags": [
+          "revolut",
+          "mexico",
+          "fintech",
+          "banca-digital",
+          "licencia-bancaria",
+          "expansion-global",
+          "latinoamerica"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "RTÉ News",
+            "url": "https://www.rte.ie/news/business/2026/0128/1555464-evolut-launches-full-banking-operations-in-mexico/"
+          },
+          {
+            "nombre": "FinTech Futures",
+            "url": "https://www.fintechfutures.com/challenger-banks/revolut-launches-in-mexico"
+          },
+          {
+            "nombre": "Retail Banker International",
+            "url": "https://www.retailbankerinternational.com/news/revolut-mexico-banking-services/"
+          },
+          {
+            "nombre": "American Banker",
+            "url": "https://www.americanbanker.com/payments/news/revolut-drops-anchor-in-mexico-jpmorganchase-hires-a-payments-chief"
+          },
+          {
+            "nombre": "PYMNTS.com",
+            "url": "https://www.pymnts.com/news/digital-banking/2026/revolut-launches-mexico-bank-and-debuts-subscriptions-in-uk/"
+          },
+          {
+            "nombre": "Revolut (comunicado oficial)",
+            "url": "https://www.revolut.com/en-MX/news/revolut_launches_full_banking_operations_in_mexico_accelerating_global_expansion/"
+          }
+        ],
+        "_nota": "TÉRMINO 'REVOLUT': Tras búsqueda exhaustiva en medios nacionales (UK y España), internacionales (Bloomberg, Reuters), especializados en fintech (Sifted, FinTech Futures, PYMNTS) y fuentes oficiales, se identificaron 4 historias únicas verificadas (12 artículos incluyendo sindicaciones) entre el 25 de enero y el 24 de febrero de 2026: (1) Lanzamiento bancario en México, 27-28 enero; (2) Conversaciones con Apollo y Blackstone para partnerships en wealth management, 13 febrero; (3) Planes de expansión en España con objetivo de 8M clientes, 29 enero; (4) Posicionamiento estratégico de Revolut en España, 23 febrero. Muchos artículos adicionales sobre Revolut (IPO, valoración $75B, Audi F1, crypto, licencia Perú) fueron publicados fuera del rango temporal. Objetivo: 40. Encontrados: 4 historias únicas."
+      },
+      {
+        "fecha": "2026-01-28",
+        "titulo": "Payments Canada announces new PSP members",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://thepaypers.com/payments/news/five-new-psp-members-join-payments-canada",
+        "medio": "The Paypers",
+        "resumen": "Payments Canada anunció la admisión de cinco nuevos miembros proveedores de servicios de pago, incluyendo Wise, Float, KOHO, Paramount Commerce y Brim. Wise se convirtió en uno de los primeros proveedores de servicios de pago no bancarios en obtener membresía, lo que le permitirá acelerar tiempos de transferencia y reducir costos para clientes canadienses.",
+        "highlights": [
+          "Wise es uno de los cinco nuevos PSP admitidos en Payments Canada y uno de los primeros no bancarios",
+          "La membresía permite acceso a sistemas de pago nacionales canadienses incluyendo el futuro Real-Time Rail (RTR)",
+          "Clientes activos de Wise en Canadá aumentaron más del 30% en FY25",
+          "Costo promedio de transacción de Wise: solo 0,52% por operación",
+          "74% de los pagos de Wise se procesan instantáneamente (en menos de 20 segundos)"
+        ],
+        "tags": [
+          "wise",
+          "fintech",
+          "canada",
+          "pagos",
+          "infraestructura-pagos",
+          "expansion"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
+        "otros_medios": [
+          {
+            "nombre": "Wise Newsroom",
+            "url": "https://newsroom.wise.com/en-NAM/260024-wise-strengthens-its-canadian-market-investment-with-payments-canada-membership/"
+          },
+          {
+            "nombre": "CNW Newswire",
+            "url": "https://www.newswire.ca/news-releases/wise-strengthens-its-canadian-market-investment-with-payments-canada-membership-811062092.html"
+          },
+          {
+            "nombre": "Payments Canada",
+            "url": "https://www.payments.ca/payments-canada-welcomes-payment-service-provider-members"
+          },
+          {
+            "nombre": "BetaKit",
+            "url": "https://betakit.com/float-wise-koho-paramount-and-brim-join-payments-canada/"
+          },
+          {
+            "nombre": "BriefGlance",
+            "url": "https://briefglance.com/articles/wise-joins-payments-canada-ushering-in-new-era-for-financial-tech"
+          },
+          {
+            "nombre": "Fintech.ca",
+            "url": "https://www.fintech.ca/2026/01/27/payments-canada-welcomes-five-new-fintech-psp-members/"
+          },
+          {
+            "nombre": "Yahoo Finance Canada",
+            "url": "https://ca.finance.yahoo.com/news/wise-strengthens-canadian-market-investment-130000049.html"
+          }
+        ],
+        "_nota": "TÉRMINO 'WISE': Tras búsqueda exhaustiva en más de 15 consultas incluyendo búsquedas en español (expansion.com, eleconomista.es, cincodias.elpais.com, elpais.com, elmundo.es) y en inglés (bloomberg.com, reuters.com, theguardian.com, dailymail.co.uk, cityam.com, thisismoney.co.uk, moneyweek.com), se encontraron solo 2 historias únicas verificadas (12 artículos incluyendo sindicaciones) dentro del período 25 enero - 24 febrero 2026: (1) Membresía en Payments Canada, 27-28 enero; (2) Cambio de registrador de acciones a Computershare, 16 febrero. Los resultados Q3 FY2026 de Wise se publicaron el 20 de enero (justo antes de la ventana) generando cobertura masiva fuera del período. La doble cotización en EE.UU. se espera para Q2 2026 (después). No se encontró cobertura en medios españoles generalistas. Objetivo: 40. Encontrados: 2 historias únicas."
+      },
+      {
+        "fecha": "2026-01-25",
+        "titulo": "Precio del dólar HOY domingo 25 de enero 2026: Peso se mantiene firme ante amenazas de Trump por Groenlandia",
+        "categoria": "sector-cambiario",
+        "alcance": "Internacional",
+        "url": "https://laparadoja.com.mx/2026/01/precio-del-dolar-hoy-domingo-25-de-enero-2026-peso-se-mantiene-firme-ante-amenazas-de-trump-por-groenlandia",
+        "medio": "La Paradoja",
+        "resumen": "El peso mexicano se mantuvo firme a 17,36 pesos por dólar el 25 de enero, beneficiado por el debilitamiento del dólar en mercados internacionales. Trump amenazó a ocho países europeos con aranceles si no le dejaban intervenir en Groenlandia, generando incertidumbre internacional.",
+        "highlights": [
+          "Tipo de cambio cotizó en 17,36 pesos por dólar",
+          "Trump amenazó a 8 países europeos con aranceles por el caso Groenlandia",
+          "El peso se mantuvo por debajo de la barrera de 18 pesos",
+          "El debilitamiento del dólar benefició a la moneda mexicana"
+        ],
+        "tags": [
+          "cambio-de-divisas",
+          "mexico",
+          "tipo-de-cambio",
+          "dolar",
+          "peso-mexicano",
+          "trump"
+        ],
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [],
-        "_nota": "Exclusivo DFNI."
+        "_nota": "TÉRMINO 'CAMBIO DE DIVISAS': Tras búsqueda exhaustiva utilizando todas las queries especificadas (incluyendo búsquedas site-specific en 30+ medios prioritarios), se encontraron únicamente 9 artículos verificables que mencionan explícitamente 'cambio de divisas' en el periodo 25 enero - 24 febrero 2026. Los principales medios españoles (El País, El Mundo, ABC, La Vanguardia, El Periódico, La Razón, OkDiario, Cadena SER, COPE, RTVE, Cinco Días, Expansión, Europa Press, EFE) NO publicaron artículos con la frase exacta 'cambio de divisas' en este período según los resultados de búsqueda disponibles. Los medios regionales de Castilla y León y Salamanca tampoco arrojaron resultados. La mayoría de resultados provienen de medios mexicanos (reportes diarios de tipo de cambio), medios cubanos (tasas informales) y contenido fintech. Objetivo: 40. Encontrados: 9 artículos."
       },
       {
-        "fecha": "2026-03-21",
-        "titulo": "Crisis de la TSA: esperas de hasta 150 minutos en los principales aeropuertos de EE.UU. tras 35 días sin salario",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.infobae.com/estados-unidos/2026/03/21/cuales-son-los-aeropuertos-de-estados-unidos-que-funcionan-con-normalidad-y-los-mas-afectados-por-las-demoras/",
-        "medio": "Infobae",
-        "resumen": "El cierre parcial del gobierno federal de EE.UU., activo desde el 14 de febrero de 2026, dejó a unos 50.000 agentes de la TSA sin cobrar durante más de un mes, provocando un absentismo del 21,5% en Atlanta Hartsfield-Jackson y esperas de hasta 150 minutos en Houston Bush Intercontinental.",
-        "highlights": [
-          "50.000 agentes TSA sin salario desde el 14 de febrero de 2026",
-          "Absentismo del 21,5% en Atlanta Hartsfield-Jackson (mayor tasa del país)",
-          "Esperas de hasta 150 minutos en Houston Bush Intercontinental",
-          "FlightAware: 1.284 retrasos y 425 cancelaciones el 21 de marzo",
-          "Secretario Duffy advierte de posible cierre de aeropuertos pequeños",
-          "20 aeropuertos con seguridad privada (SPP) funcionan con normalidad (<3 min de espera)"
-        ],
-        "tags": ["TSA", "cierre gobierno", "aeropuertos EE.UU.", "seguridad aeroportuaria", "cancelaciones", "retrasos", "Atlanta", "Houston"],
-        "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/laguardia-tsa-security.jpg",
-        "otros_medios": [
-          { "nombre": "CNN en Español", "url": "https://cnnespanol.cnn.com/2026/03/21/eeuu/aeropuertos-sin-tsa-demoras-retrasos-trax" },
-          { "nombre": "KCH FM", "url": "https://kchcomunicacion.com/2026/03/21/crisis-en-aeropuertos-de-ee-uu-que-terminales-operan-sin-demoras/" },
-          { "nombre": "Infobae (nota cierre aeropuertos)", "url": "https://www.infobae.com/estados-unidos/2026/03/18/algunos-aeropuertos-de-estados-unidos-podrian-cerrar-debido-a-que-los-trabajadores-de-la-tsa-no-estan-recibiendo-sus-salarios/" },
-          { "nombre": "Preferente.com", "url": "https://www.preferente.com/" }
-        ],
-        "_nota": "Imagen referencial; URL exacta no verificada."
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "ACI World publica el Informe de Economía Aeroportuaria 2026: los ingresos aún un 2,1% por debajo de 2019",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://aci.aero/2026/03/17/policymakers-must-support-airport-investment-as-global-air-travel-demand-rises/",
-        "medio": "ACI World",
-        "resumen": "El 17 de marzo de 2026, ACI World publicó el Airport Economics Report 2026 y los KPIs, basados en datos financieros de 1.086 aeropuertos (82% del tráfico mundial) del año fiscal 2024. Los aeropuertos mundiales atendieron 9.400 millones de pasajeros en 2024 (4% por encima de 2019), pero los ingresos totales (194.900 M USD) siguieron un 2,1% por debajo en términos reales.",
-        "highlights": [
-          "9.400 millones de pasajeros globales en 2024, +4% sobre 2019",
-          "Ingresos totales: 194.900 M USD, -2,1% en términos reales vs 2019",
-          "Ingresos aeronáuticos: -3% vs 2019; no aeronáuticos: -9% vs 2019",
-          "ROIC global del 6,3%, por debajo del WACC sectorial",
-          "Recuperación de ingresos comerciales proyectada para mediados de 2026",
-          "Basado en datos de 1.086 aeropuertos (82% del tráfico mundial)"
-        ],
-        "tags": ["ACI World", "economía aeroportuaria", "ingresos aeropuertos", "tráfico global 2024", "no aeronáutico", "duty free", "inversión aeroportuaria"],
-        "imagen": "https://aci.aero/wp-content/uploads/2026/03/ACI-World-Economics-Report-2026.jpg",
-        "otros_medios": [
-          { "nombre": "International Airport Review", "url": "https://www.internationalairportreview.com/organisations/airports-council-international-europe-aci-europe/" },
-          { "nombre": "Aviation Pros", "url": "https://www.aviationpros.com/airport-business/news/55365459/airport-revenues-lag-traffic-recovery-raising-investment-concerns-aci-world-reports" }
-        ],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "Retrasos masivos en aeropuertos de EE.UU.: tormenta de primavera y escasez de TSA colapsan el tráfico en Spring Break",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.univision.com/noticias/estados-unidos/que-pasa-en-los-aeropuertos-hoy-martes-17-de-marzo-2026-hay-retrasos-y-cancelaciones-de-vuelos",
-        "medio": "Univision",
-        "resumen": "La combinación de una potente tormenta primaveral en el este y Medio Oeste de EE.UU. con la escasez de personal de la TSA provocó el martes 17 de marzo más de 900 cancelaciones y 2.000 retrasos de vuelos según FlightAware.",
-        "highlights": [
-          "Más de 900 vuelos cancelados y 2.000 retrasados el martes 17 de marzo",
-          "Confluencia de tormenta + falta de personal TSA + Spring Break",
-          "Pasajeros varados en Nueva Orleans, Austin, Tampa y otras ciudades",
-          "Lunes 16 aún más caótico según los medios de seguimiento de vuelos",
-          "Viajeros recomendados a llegar 3-5 horas antes del vuelo"
-        ],
-        "tags": ["cancelaciones vuelos", "retrasos", "TSA", "Spring Break", "March Madness", "tormenta", "aeropuertos EE.UU."],
-        "imagen": "https://dims.apnews.com/dims4/default/airport-spring-break-2026.jpg",
-        "otros_medios": [
-          { "nombre": "Infobae", "url": "https://www.infobae.com/estados-unidos/2026/03/18/algunos-aeropuertos-de-estados-unidos-podrian-cerrar-debido-a-que-los-trabajadores-de-la-tsa-no-estan-recibiendo-sus-salarios/" }
-        ],
-        "_nota": "Imagen referencial; URL exacta no verificada."
-      },
-      {
-        "fecha": "2026-03-12",
-        "titulo": "Aena cierra febrero con récord: 25,4 millones de pasajeros en el Grupo y 20,5 millones en España (+2,8%)",
-        "categoria": "sector-aeroportuario",
+        "fecha": "2026-01-25",
+        "titulo": "Sin resultados para el término 'Exact Change'",
+        "categoria": "sector-cambiario",
         "alcance": "Nacional",
-        "url": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/aena-cierra-con-record-de-254-millones-de-pasajeros-n-898531",
-        "medio": "Estrategias de Inversión",
-        "resumen": "Los aeropuertos del Grupo Aena registraron en febrero de 2026 un total de 25.434.678 pasajeros (+3,7% interanual), con 20,55 millones en España (+2,8%), 3,6 millones en los aeropuertos de Brasil (+8,9%) y 1,2 millones en Londres Luton (+3%).",
+        "url": "https://placehold.co/no-results",
+        "medio": "N/A",
+        "resumen": "No se encontraron artículos de prensa verificables sobre la empresa Exact Change (Maccorp Exact Change) publicados entre el 25 de enero y el 24 de febrero de 2026.",
         "highlights": [
-          "Grupo Aena: 25,4 M de pasajeros en febrero 2026 (+3,7%)",
-          "Aena España: 20,55 M de pasajeros (+2,8%)",
-          "Récord mensual de pasajeros de febrero en 18 aeropuertos de la red española",
-          "Madrid-Barajas supera 5 M de pasajeros en febrero (+5,3%)",
-          "Aena Brasil: 3,6 M de pasajeros (+8,9%)",
-          "Acumulado ene-feb Grupo Aena: 51,2 M de pasajeros (+3,5%)"
+          "Cero artículos de prensa encontrados para 'Exact Change' en el período analizado"
         ],
-        "tags": ["Aena", "pasajeros febrero 2026", "Barajas", "récord", "tráfico aeroportuario", "España", "Brasil"],
-        "imagen": "https://www.aena.es/es/adolfo-suarez-madrid-barajas/_jcr_content/image.img.jpg",
-        "otros_medios": [
-          { "nombre": "Actualidad Aeroespacial", "url": "https://actualidadaeroespacial.com/los-aeropuertos-del-grupo-aena-registraron-254-millones-de-pasajeros-en-febrero/" },
-          { "nombre": "Press Digital", "url": "https://www.pressdigital.es/articulo/economia/2026-03-12/5805536-205-millones-pasajeros-pasaron-aeropuertos-aena-espana-febrero-28" },
-          { "nombre": "Aena (estadísticas oficiales)", "url": "https://www.aena.es/es/estadisticas/informes-mensuales.html" }
+        "tags": [
+          "exact-change",
+          "espana",
+          "sin-resultados"
         ],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-09",
-        "titulo": "Largas filas y pérdida de vuelos en los aeropuertos de EE.UU. por el cierre del DHS",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.univision.com/noticias/estados-unidos/que-pasa-aeropuertos-estados-unidos-lunes-9-marzo-2026-pasajeros-pierden-vuelos-retrasan-viajes",
-        "medio": "Univision",
-        "resumen": "El lunes 9 de marzo de 2026 se registraron largas filas en aeropuertos de Los Ángeles, Houston, Atlanta, Charlotte y Nueva Orleans como consecuencia del cierre parcial del Departamento de Seguridad Nacional (DHS), iniciado el 14 de febrero.",
-        "highlights": [
-          "Colas extremas en Los Ángeles, Houston, Atlanta, Charlotte y Nueva Orleans",
-          "Tiempos de espera de hasta 4 horas para facturación de equipaje",
-          "El DHS informó de esperas de 3 horas en controles de seguridad",
-          "Cierre del gobierno iniciado el 14 de febrero de 2026",
-          "Alerta por el Spring Break 2026 y el previsible aumento de pasajeros"
-        ],
-        "tags": ["TSA", "DHS", "cierre gobierno EE.UU.", "retrasos aeropuerto", "seguridad aeroportuaria", "Spring Break"],
-        "imagen": "https://dims.apnews.com/dims4/default/tsa-lines-march-2026.jpg",
+        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [],
-        "_nota": "Imagen referencial; URL exacta no verificada."
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "DFS transfiere sus concesiones de duty free en LAX y SFO a Duty Free Americas",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.dfnionline.com/latest-news/breaking-dfs-to-transfer-lax-and-sfo-duty-free-concessions-to-duty-free-americas-06-03-2026/",
-        "medio": "DFNI",
-        "resumen": "DFS Group (LVMH) anunció el 6 de marzo de 2026 la transferencia de sus concesiones de travel retail en el Aeropuerto Internacional de Los Ángeles (LAX) y el de San Francisco (SFO) a Duty Free Americas (DFA, Falic Group). El cierre de la operación se prevé en el segundo trimestre de 2026.",
-        "highlights": [
-          "DFS transfiere LAX y SFO a Duty Free Americas (DFA)",
-          "Cierre de la operación previsto en el segundo trimestre de 2026",
-          "Tercer gran movimiento desinversor de DFS en 2026 (tras Hong Kong/Macao y Hawái)",
-          "DFA: empresa familiar Falic, uno de los mayores operadores de travel retail en América",
-          "Ed Brennan (DFS): la decisión refleja el 'ajuste de cartera continuo' de DFS",
-          "León Falic destaca que la operación amplía la presencia en el segmento de lujo"
-        ],
-        "tags": ["DFS", "Duty Free Americas", "LAX", "SFO", "duty free", "LVMH", "concesión aeroportuaria", "travel retail"],
-        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/DFS-LAX-SFO-transfer.jpg",
-        "otros_medios": [
-          { "nombre": "Travel Markets Insider", "url": "https://travelmarketsinsider.net/" },
-          { "nombre": "Moodie Davitt Report", "url": "https://moodiedavittreport.com/" }
-        ],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "3Sixty Duty Free abre nuevas tiendas en Newark Liberty y Orlando International",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.dfnionline.com/latest-news/3sixty-duty-free-opens-new-stores-at-newark-and-orlando-airports-06-03-2026/",
-        "medio": "DFNI",
-        "resumen": "El 6 de marzo de 2026, 3Sixty Duty Free inauguró nuevos establecimientos en el Terminal B del Aeropuerto Newark Liberty (EWR) y en el Terminal B del Aeropuerto Orlando Internacional (MCO).",
-        "highlights": [
-          "Dos aperturas simultáneas: Newark Liberty Terminal B y Orlando International Terminal B",
-          "Enfoque en 'visual storytelling' y experiencia inmersiva",
-          "Colaboración interdepartamental como clave del modelo de apertura",
-          "Parte de la estrategia de expansión del portafolio aeroportuario de 3Sixty en EE.UU."
-        ],
-        "tags": ["3Sixty Duty Free", "Newark", "Orlando", "duty free", "airport retail", "apertura tienda"],
-        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/3Sixty-Newark-Orlando.jpg",
-        "otros_medios": [],
-        "_nota": "Exclusivo DFNI."
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "ACI Europe: el tráfico europeo arranca 2026 con un +4,6% en enero, pero la guerra en Oriente Medio ensombrece las perspectivas",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://moodiedavittreport.com/aci-europe-reports-strong-january-growth-in-the-region-but-geopolitical-risks-threaten-momentum/",
-        "medio": "Moodie Davitt Report",
-        "resumen": "ACI Europe publicó el 6 de marzo de 2026 su informe de tráfico aeroportuario de enero de 2026, que muestra un crecimiento del 4,6% interanual en la red europea, impulsado por el tráfico internacional (+5,5%).",
-        "highlights": [
-          "Tráfico aeroportuario europeo: +4,6% interanual en enero 2026",
-          "Tráfico internacional: +5,5%; doméstico: +1,8%, aún -8,1% bajo 2019",
-          "No UE+: +8,8%; UE+: +3,6%",
-          "Doble dígito en Eslovaquia (+98%), Eslovenia (+20,8%), Malta (+17,2%), Irlanda (+13,8%), Polonia (+11,8%)",
-          "Jankovec: conflicto en Oriente Medio hace perspectivas 'muy inciertas'",
-          "Impacto no solo en conectividad directa con Oriente Medio, sino también en rutas hacia Asia-Pacífico vía Golfo"
-        ],
-        "tags": ["ACI Europe", "tráfico aeropuertos Europa", "enero 2026", "Oriente Medio", "Jankovec", "internacional", "tráfico aéreo"],
-        "imagen": "https://www.aci-europe.org/images/traffic-report-jan-2026.jpg",
-        "otros_medios": [
-          { "nombre": "Portal de América", "url": "https://portaldeamerica.com/index.php/pda/otras-noticias/item/38158-el-trafico-aereo-en-europa-inicia-2026-con-un-alza-del-4-6-y-el-aeropuerto-de-madrid-supera-al-de-paris-orly" },
-          { "nombre": "International Airport Review", "url": "https://www.internationalairportreview.com/organisations/airports-council-international-europe-aci-europe/" }
-        ],
-        "_nota": "Imagen referencial; URL exacta no verificada."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Logan Airport anuncia sistema de seguimiento en tiempo real de colas de seguridad para mediados de abril",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.wbur.org/news/2026/03/23/logan-airport-wait-times-security-line-tracker-newsletter",
-        "medio": "WBUR",
-        "resumen": "El Aeropuerto Internacional Logan de Boston anunció el 23 de marzo de 2026 el lanzamiento para mediados de abril de un sistema de seguimiento en tiempo real de los tiempos de espera en los controles de seguridad.",
-        "highlights": [
-          "Sistema de tracking de colas en tiempo real para mediados de abril 2026",
-          "Analítica de cámaras sin captura de rostros ni ropa",
-          "Actualmente en pruebas en Terminal B de Logan",
-          "Disponible en web, app FlyLogan y pantallas de la terminal",
-          "Contexto: más de 30 empleados de TSA en Nueva Inglaterra han dimitido desde el cierre del DHS",
-          "Logan considerado 'suficientemente dotado de personal' según Massport"
-        ],
-        "tags": ["Logan Airport", "Boston", "tecnología aeroportuaria", "tiempos de espera", "seguridad", "TSA", "analítica de cámaras"],
-        "imagen": "https://media.wbur.org/wp/2026/03/logan-security-line.jpg",
-        "otros_medios": [],
-        "_nota": "Exclusivo WBUR."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Aviation Week: Swedavia nombra nuevo CEO y reporta beneficios récord de SEK 324 M en 2025",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://aviationweek.com/air-transport/airports-networks/airport-updates-latest-news-global-market-wc-march-23-2026",
-        "medio": "Aviation Week",
-        "resumen": "Swedavia, gestora estatal de 10 aeropuertos en Suecia, nombró a Mats Johannesson como nuevo CEO con efecto desde mayo de 2026. La compañía reportó un beneficio operativo de 324 millones de coronas suecas (35 M USD) en 2025.",
-        "highlights": [
-          "Mats Johannesson nombrado nuevo CEO de Swedavia, efectivo mayo 2026",
-          "Beneficio operativo 2025: SEK 324 M (+SEK 298 M sobre 2024)",
-          "Tráfico total 2025: más de 33 M de pasajeros (+2,4%)",
-          "Tráfico internacional: +3,2%; doméstico: estable",
-          "Arlanda supera niveles prepandemia mensuales en octubre 2025 por primera vez"
-        ],
-        "tags": ["Swedavia", "Estocolmo Arlanda", "Suecia", "CEO", "resultados aeropuerto", "tráfico 2025"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Stockholm_Arlanda_Airport.jpg/1200px-Stockholm_Arlanda_Airport.jpg",
-        "otros_medios": [],
-        "_nota": "Exclusivo Aviation Week (Weekly Airport Updates)."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Amsterdam Schiphol emite bonos por 500 millones de euros para financiar inversiones a largo plazo",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://aviationweek.com/air-transport/airports-networks/airport-updates-latest-news-global-market-wc-march-23-2026",
-        "medio": "Aviation Week",
-        "resumen": "El Aeropuerto de Amsterdam Schiphol (AMS) emitió bonos por 500 millones de euros (575 M USD) entre inversores institucionales, con un libro de órdenes final de 3.200 millones de euros.",
-        "highlights": [
-          "Bonos: 500 M EUR (575 M USD), cotizados en Euronext Ámsterdam",
-          "Libro de órdenes: 3.200 M EUR con inversores institucionales",
-          "CFO Carsouw: Schiphol gastará más de lo que ingresa en los próximos años",
-          "Objetivo: mantener robustez financiera y mejorar calidad para viajeros y aerolíneas"
-        ],
-        "tags": ["Schiphol", "Amsterdam", "bonos", "financiación aeroportuaria", "Euronext", "inversión"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schiphol_Airport_Overview.jpg/1200px-Schiphol_Airport_Overview.jpg",
-        "otros_medios": [],
-        "_nota": "Exclusivo Aviation Week (Weekly Airport Updates)."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "CNN explica el complejo sistema de financiación de la TSA que deja a sus agentes sin salario",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://cnnespanol.cnn.com/2026/03/23/eeuu/viajeros-quien-paga-agentes-tsa-estas-trax",
-        "medio": "CNN en Español",
-        "resumen": "Un reportaje de CNN en Español analiza el recorrido de la Passenger Security Fee recaudada en EE.UU.: de los más de 4.000 millones de dólares anuales, solo 250 millones pueden usarse directamente por la TSA.",
-        "highlights": [
-          "Más de 4.000 M USD/año recaudados en tasas de seguridad a pasajeros",
-          "Solo 250 M USD pueden usar directamente por la TSA",
-          "Un tercio (~1.600 M USD/año) se desvía a reducción del déficit federal desde 2013",
-          "US Travel Association exige reformar la norma para proteger el pago de los agentes",
-          "El Congreso se resiste: considera que garantizar el pago reduce presión para resolver el cierre"
-        ],
-        "tags": ["TSA", "financiación seguridad aérea", "Passenger Security Fee", "cierre gobierno", "US Travel Association", "EE.UU."],
-        "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2026/03/tsa-security-line-dallas.jpg",
-        "otros_medios": [],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-21",
-        "titulo": "20 aeropuertos de EE.UU. con seguridad privada funcionan sin colas durante la crisis de la TSA",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://cnnespanol.cnn.com/2026/03/21/eeuu/aeropuertos-sin-tsa-demoras-retrasos-trax",
-        "medio": "CNN en Español",
-        "resumen": "Veinte aeropuertos de EE.UU. que participan en el Programa de Asociación para la Inspección (SPP) de la TSA mantienen tiempos de espera inferiores a 3 minutos durante la crisis.",
-        "highlights": [
-          "20 aeropuertos con seguridad privada (SPP): <3 min de espera",
-          "SFO, Kansas City y Orlando Sanford entre los aeropuertos 'sin cola'",
-          "Empresas privadas siguen pagando nóminas pese al cierre del gobierno",
-          "ATL: 21,5% de absentismo TSA; JFK: 21,4%; Houston Hobby: 21%",
-          "Expertos: proceso idéntico al federal, diferencia solo en el modelo de gestión del personal"
-        ],
-        "tags": ["SPP", "seguridad aeroportuaria privada", "TSA", "SFO", "Kansas City", "cierre gobierno", "privatización"],
-        "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2026/03/sfo-private-security.jpg",
-        "otros_medios": [
-          { "nombre": "KCH FM", "url": "https://kchcomunicacion.com/2026/03/21/crisis-en-aeropuertos-de-ee-uu-que-terminales-operan-sin-demoras/" }
-        ],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-16",
-        "titulo": "Baltona inaugura Kraków Duty Free en el Aeropuerto de Cracovia el 16 de marzo",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.dfnionline.com/latest-news/baltona-secures-krakow-airport-retail-contract-with-new-duty-free-concept-23-03-2026/",
-        "medio": "DFNI",
-        "resumen": "El 16 de marzo de 2026, PHZ Baltona abrió la tienda Kraków Duty Free by Baltona en el Aeropuerto Juan Pablo II de Cracovia-Balice como apertura provisional antes de la remodelación integral prevista para mayo.",
-        "highlights": [
-          "Apertura provisional el 16 de marzo de 2026",
-          "Concepto 'Sense of Place' con elementos de identidad de Cracovia",
-          "Remodelación completa programada para mayo 2026",
-          "Integración Schengen / no Schengen en la zona de compras"
-        ],
-        "tags": ["Baltona", "duty free", "Cracovia", "apertura tienda", "travel retail", "Polonia"],
-        "imagen": "https://www.dfnionline.com/wp-content/uploads/2026/03/Baltona-Krakow-opening.jpg",
-        "otros_medios": [],
-        "_nota": "Noticia publicada el 23/03 pero con fecha de apertura el 16/03."
-      },
-      {
-        "fecha": "2026-03-12",
-        "titulo": "Airport retail: el comportamiento del pasajero supera al volumen de tráfico como driver de ingresos comerciales",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.internationalairportreview.com/news/302435/airport-retail-growth-now-shaped-by-passenger-behaviour-rather-than-traffic-volumes/",
-        "medio": "International Airport Review",
-        "resumen": "Un nuevo estudio de ACI APAC & MID concluye que el rendimiento del comercio aeroportuario está determinado crecientemente por el perfil y comportamiento de gasto del pasajero.",
-        "highlights": [
-          "El gasto del pasajero supera al volumen como driver de ingresos en aeropuertos",
-          "Asia-Pacífico: +2% de tráfico doméstico → +13% de gasto en pasajero vs 2019",
-          "Oriente Medio: duty free = 31-38% del total de ventas; hasta 60% en Arabia Saudí y Catar",
-          "Mayores gastadores: viajeros de China, India, EAU y Arabia Saudí",
-          "70% de compras siguen siendo impulsivas y en tienda física",
-          "Sostenibilidad: asignatura pendiente en estrategias de retail aeroportuario"
-        ],
-        "tags": ["airport retail", "duty free", "ACI APAC", "comportamiento pasajero", "gasto aeropuerto", "Asia-Pacífico", "Oriente Medio"],
-        "imagen": "https://www.internationalairportreview.com/wp-content/uploads/2026/02/airport-retail-passenger-behaviour.jpg",
-        "otros_medios": [
-          { "nombre": "Moodie Davitt Report", "url": "https://moodiedavittreport.com/" }
-        ],
-        "_nota": null
-      },
-      {
-        "fecha": "2026-03-10",
-        "titulo": "Austin-Bergstrom Airport se prepara para superar los 30.000 pasajeros diarios durante Spring Break y Spring Festival",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.austintexas.gov/news/aus-prepares-increased-passenger-traffic-during-spring-break-and-spring-festival-travel-season",
-        "medio": "AustinTexas.gov",
-        "resumen": "El Aeropuerto Internacional de Austin-Bergstrom (AUS) anunció medidas operativas especiales para el Spring Break y el Spring Festival Season, con varios días con más de 30.000 pasajeros de salida previstos.",
-        "highlights": [
-          "Varios días con más de 30.000 pasajeros de salida previstos",
-          "South Terminal cierra definitivamente el 31 de marzo de 2026",
-          "Allegiant y Frontier traslado al terminal Barbara Jordan desde el 1 de abril",
-          "4 checkpoints de seguridad operativos en Barbara Jordan Terminal",
-          "GoodMaps disponible para pasajeros con necesidades de accesibilidad"
-        ],
-        "tags": ["Austin-Bergstrom", "Spring Break", "AUS", "capacidad aeropuerto", "South Terminal", "Allegiant", "Frontier"],
-        "imagen": "https://www.austintexas.gov/sites/default/files/files/airport-aus-spring-break-2026.jpg",
-        "otros_medios": [],
-        "_nota": "Exclusivo fuente oficial del Ayuntamiento de Austin."
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "ACI Europe alerta: la implantación del sistema EES de la UE amenaza los flujos de pasajeros en verano 2026",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.aci-europe.org/",
-        "medio": "ACI Europe",
-        "resumen": "ACI Europe y las aerolíneas publicaron una llamada conjunta para una revisión inmediata del calendario de implantación del Sistema de Entrada/Salida biométrico (EES) de la UE, previsto para el cuarto trimestre de 2026.",
-        "highlights": [
-          "EES (Entry/Exit System) previsto para el Q4 2026 en fronteras Schengen",
-          "Aeropuertos y aerolíneas piden revisión inmediata del calendario de despliegue",
-          "Riesgo de colapso operativo en fronteras exteriores Schengen en temporada alta",
-          "La UE ha dado flexibilidad a los Estados para la implementación en verano"
-        ],
-        "tags": ["EES", "Entry Exit System", "Schengen", "ACI Europe", "regulación frontera", "biometría", "verano 2026"],
-        "imagen": "https://www.aci-europe.org/images/ees-press-release.jpg",
-        "otros_medios": [
-          { "nombre": "Business Travel News Europe", "url": "https://www.businesstravelnewseurope.com/Air-Travel/European-air-demand-shows-resilience-to-set-traffic-record" }
-        ],
-        "_nota": "Noticia publicada el 11 de febrero de 2026 pero con relevancia activa en el período del informe."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Avolta renueva por 12 años sus operaciones de retail y F&B en el Aeropuerto Internacional de Miami",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://travelmarketsinsider.net/",
-        "medio": "Travel Markets Insider",
-        "resumen": "Las divisiones HMSHost y Hudson de Avolta obtuvieron extensiones de 12 años para sus operaciones de retail y restauración en el Aeropuerto Internacional de Miami (MIA), cubriendo los terminales Norte, Central y Sur.",
-        "highlights": [
-          "Extensiones de 12 años para Avolta (HMSHost y Hudson) en MIA",
-          "Cobertura: terminales Norte, Central y Sur del aeropuerto de Miami",
-          "40 tiendas Hudson serán renovadas bajo nuevos conceptos",
-          "Mayor digitalización y engagement en el punto de venta"
-        ],
-        "tags": ["Avolta", "HMSHost", "Hudson", "Miami International", "travel retail", "concesión aeroportuaria", "renovación"],
-        "imagen": "https://www.travelmarketsinsider.net/wp-content/uploads/avolta-miami.jpg",
-        "otros_medios": [],
-        "_nota": "Imagen referencial; URL exacta no verificada."
-      },
-      {
-        "fecha": "2026-03-01",
-        "titulo": "Aena aplica desde el 1 de marzo la mayor subida de tarifas aeroportuarias desde 2015: 11,03 euros por pasajero (+6,5%)",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Nacional",
-        "url": "https://www.infobae.com/espana/2025/07/10/aena-prepara-la-mayor-subida-de-tarifas-en-una-decada-65-mas-por-pasajero-en-2026/",
-        "medio": "Infobae España",
-        "resumen": "A partir del 1 de marzo de 2026, Aena aplicó el nuevo ingreso máximo anual ajustado por pasajero (IMAAJ) de 11,03 euros, un 6,5% más que los 10,35 euros de 2025.",
-        "highlights": [
-          "Nueva tarifa: 11,03 EUR/pasajero desde el 1 de marzo de 2026",
-          "Mayor subida desde la salida a bolsa de Aena en 2015",
-          "218 M EUR de ingresos adicionales estimados",
-          "45 cént. = recuperación ingresos 2024; 23 cént. = fórmula ordinaria",
-          "Ryanair: subida insostenible para aeropuertos regionales",
-          "Sujeto a supervisión de la CNMC"
-        ],
-        "tags": ["Aena", "tarifas aeroportuarias", "IMAAJ", "DORA II", "Ryanair", "CNMC", "regulación"],
-        "imagen": "https://www.aena.es/es/adolfo-suarez-madrid-barajas/_jcr_content/image.img.jpg",
-        "otros_medios": [
-          { "nombre": "Aena (Guía de Tarifas)", "url": "https://www.aena.es/doc/detalleprensa/260101-guia-tarifas-aena-enero-2026.pdf" }
-        ],
-        "_nota": "La subida fue aprobada en julio 2025 con efecto desde el 1 de marzo 2026."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Dubai Internacional lidera el ranking mundial de aeropuertos en febrero de 2026 con 4,9 millones de asientos (+2%)",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://www.oag.com/busiest-airports-world",
-        "medio": "OAG",
-        "resumen": "Datos de OAG para febrero de 2026 muestran que Dubai Internacional (DXB) mantuvo el primer puesto mundial con 4,9 millones de asientos (+2% interanual). Madrid-Barajas ascendió al cuarto puesto europeo con 2,94 millones de asientos (+4%).",
-        "highlights": [
-          "DXB: 4,9 M asientos en febrero 2026 (+2%), #1 mundial",
-          "ATL: 4,6 M (+1%), #2 mundial",
-          "Shanghai Pudong: 4,28 M (+7%), sube al #3 mundial",
-          "Heathrow: 3,86 M, #1 Europa (recupera el primer puesto)",
-          "Madrid-Barajas: 2,94 M (+4%), #4 Europa",
-          "Estambul SAW: +10% interanual, el mayor crecimiento en el top 10 europeo"
-        ],
-        "tags": ["OAG", "ranking aeropuertos", "capacidad asientos", "Dubai", "Atlanta", "Heathrow", "Madrid", "febrero 2026"],
-        "imagen": "https://www.oag.com/hubfs/busiest-airports-feb-2026.jpg",
-        "otros_medios": [],
-        "_nota": "Datos de capacidad (asientos programados), no de pasajeros transportados. Imagen referencial."
-      },
-      {
-        "fecha": "2026-03-23",
-        "titulo": "Huelga de handling en aeropuertos españoles: Groundforce y Menzies convocan paros desde el 27 de marzo",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Nacional",
-        "url": "https://www.preferente.com/",
-        "medio": "Preferente.com",
-        "resumen": "Los sindicatos de Groundforce (Globalia) iniciaron movilizaciones a partir del 27 de marzo de 2026 con paros parciales los lunes, miércoles y viernes en tres franjas horarias, ante la falta de acuerdo en cuestiones salariales.",
-        "highlights": [
-          "Groundforce: paros desde el 27 de marzo en horarios de 05-07h, 11-17h y 22-24h",
-          "Menzies: mediación ante SIMA; huelgas posibles 28-29 mar y 2-6 abr",
-          "Causa: falta de acuerdo en recuperación salarial",
-          "Afecta a los principales aeropuertos de la red Aena",
-          "UGT exige cumplimiento íntegro del convenio colectivo"
-        ],
-        "tags": ["huelga handling", "Groundforce", "Menzies", "aeropuertos España", "sindicatos", "UGT", "Aena"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Groundforce_Spain.jpg/1200px-Groundforce_Spain.jpg",
-        "otros_medios": [
-          { "nombre": "Hosteltur", "url": "https://www.hosteltur.com/transportes/aeropuertos" }
-        ],
-        "_nota": "Imagen referencial; URL exacta no verificada."
-      },
-      {
-        "fecha": "2026-03-17",
-        "titulo": "ACI World: el tráfico de pasajeros global alcanzará 10.200 millones en 2026 y se duplicará para 2045",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://aci.aero/2026/01/28/aci-world-releases-global-airport-traffic-forecasts-as-long-term-demand-growth-continues-to-reshape-aviation/",
-        "medio": "ACI World",
-        "resumen": "Las previsiones de tráfico aeroportuario de ACI World (WATF 2025-2054) estiman que el tráfico global alcanzará los 10.200 millones de pasajeros en 2026 (+3,9% interanual), un 7,9% por encima de 2019.",
-        "highlights": [
-          "Tráfico global 2026: 10.200 M de pasajeros (+3,9% sobre 2025)",
-          "Tráfico global 2025: 9.800 M (estimado), +3,7% sobre 2024",
-          "+7,9% sobre los niveles de 2019 en 2026",
-          "Duplicación del tráfico global proyectada para 2045",
-          "Modelos de machine learning para 176 mercados",
-          "Erbacci: se necesita acción colectiva urgente en infraestructuras"
-        ],
-        "tags": ["ACI World", "previsiones tráfico", "10.200 millones", "2026", "machine learning", "infraestructura aeroportuaria"],
-        "imagen": "https://aci.aero/wp-content/uploads/2026/01/WATF-2026-banner.jpg",
-        "otros_medios": [
-          { "nombre": "Airport Industry News", "url": "https://airportindustry-news.com/global-air-travel-to-reach-9-8-billion-passengers-by-2026/" }
-        ],
-        "_nota": "Informe publicado el 28 enero 2026; mencionado y referenciado en el período del informe."
-      },
-      {
-        "fecha": "2026-03-06",
-        "titulo": "Ethiopian Airlines inaugura terminal doméstica ampliada en Addis Abeba por 50 millones de dólares",
-        "categoria": "sector-aeroportuario",
-        "alcance": "Internacional",
-        "url": "https://aviationweek.com/air-transport/airports-networks/airport-updates-latest-news-global-market-wc-march-23-2026",
-        "medio": "Aviation Week",
-        "resumen": "Ethiopian Airlines inauguró la ampliación de la terminal doméstica del Aeropuerto Internacional de Addis Abeba Bole (ADD), que duplica su superficie hasta más de 25.000 m² con una inversión de 50 millones de dólares.",
-        "highlights": [
-          "Inversión: 50 M USD",
-          "Superficie ampliada: más de 25.000 m² (duplicación)",
-          "Ethiopian Airlines: más de 200 vuelos domésticos diarios desde ADD",
-          "Más de 20 destinos domésticos cubiertos"
-        ],
-        "tags": ["Ethiopian Airlines", "Addis Abeba", "terminal", "infraestructura aeroportuaria", "África", "expansión"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Addis_Ababa_Bole_International_Airport.jpg/1200px-Addis_Ababa_Bole_International_Airport.jpg",
-        "otros_medios": [],
-        "_nota": "Exclusivo Aviation Week (Weekly Airport Updates). Imagen Wikipedia."
+        "_nota": "TÉRMINO 'EXACT CHANGE': Tras búsqueda exhaustiva utilizando más de 14 consultas distintas en Google, incluyendo búsquedas generales ('Exact Change' cambio moneda 2026, 'Maccorp Exact Change' 2026 noticias, etc.), búsquedas específicas por medio (site:europapress.es, site:expansion.com, site:hosteltur.com, site:eleconomista.es, site:cincodias.elpais.com), búsquedas regionales (Salamanca, Valencia) y verificación del blog corporativo de exactchange.es, NO se encontraron artículos de prensa verificables sobre la empresa 'Exact Change' publicados en el período solicitado. Los resultados obtenidos fueron exclusivamente: páginas del sitio web corporativo, contenido de blogs de viajes afiliados (no periodístico), directorios empresariales, perfiles de redes sociales, y artículos de prensa antiguos (2013-2023). 'Exact Change' (Maccorp Exact Change) es una entidad de pago privada española que no genera cobertura mediática regular en prensa generalista. Se recomienda verificar con servicios de clipping especializados (Kantar, MyNews) o con el departamento de comunicación de Grupo Exact. Objetivo: 40. Encontrados: 0."
       }
     ],
     "categorias": [
@@ -1568,13 +1369,19 @@
         "Nombre": "Medios de Pago: Digital",
         "Icono": "fa-credit-card",
         "Color": "#f59e0b"
+      },
+      {
+        "Slug": "otros-medios-pago",
+        "Nombre": "Otros medios de pago",
+        "Icono": "fa-wallet",
+        "Color": "#6366f1"
       }
     ],
     "config": {
-      "mes_actual": "Marzo 2026",
-      "ultima_actualizacion": "2026-03-23T14:30:00.000Z",
+      "mes_actual": 46065,
+      "ultima_actualizacion": 46063.4375,
       "version": 2,
-      "total_categorias": 5,
+      "total_categorias": 6,
       "autor": "Departamento de Comunicación"
     }
   }

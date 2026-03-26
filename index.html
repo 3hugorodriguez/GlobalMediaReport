@@ -4,28 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Media Report — Global Exchange</title>
-    
+
+    <!-- ✅ MEJORA 8: Open Graph + Meta tags -->
+    <meta name="description" content="Global Media Report — Dashboard de medios corporativo de Global Exchange. Seguimiento de noticias del sector cambiario, aeroportuario y medios de pago.">
+    <meta property="og:title" content="Global Media Report — Global Exchange">
+    <meta property="og:description" content="Dashboard ejecutivo de noticias del sector cambiario y aeroportuario.">
+    <meta property="og:image" content="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#122864">
+
+    <!-- ✅ MEJORA 24 (PWA): Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
     <!-- Tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- ✅ MEJORA 1: Splash / Hero de entrada -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-content">
+            <img src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg"
+                 alt="Global Exchange"
+                 class="splash-logo">
+            <h1 class="splash-title">Global Media Report</h1>
+            <p class="splash-month" id="splashMonth">Cargando...</p>
+            <div class="splash-counter-row">
+                <div class="splash-stat">
+                    <span class="splash-num" id="splashTotal">0</span>
+                    <span class="splash-label">noticias</span>
+                </div>
+                <div class="splash-divider"></div>
+                <div class="splash-stat">
+                    <span class="splash-num" id="splashCats">0</span>
+                    <span class="splash-label">categorías</span>
+                </div>
+                <div class="splash-divider"></div>
+                <div class="splash-stat">
+                    <span class="splash-num" id="splashNew">0</span>
+                    <span class="splash-label">nuevas</span>
+                </div>
+            </div>
+            <div class="splash-loader">
+                <div class="splash-loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ MEJORA 16: Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Header Compacto Sticky -->
     <header class="header-executive" id="mainHeader">
         <div class="header-container">
-            <!-- Branding -->
             <div class="brand-executive">
-                <img src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg" 
-                     alt="Global Exchange" 
+                <img src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg"
+                     alt="Global Exchange"
                      class="brand-logo">
                 <div class="brand-text">
                     <h1 class="brand-title">Global Media Report</h1>
@@ -35,21 +78,25 @@
                     </p>
                 </div>
             </div>
-            
-            <!-- Actions -->
+
             <div class="header-actions">
+                <!-- ✅ MEJORA 6: Toggle vista compacta/expandida -->
+                <button class="action-btn" id="viewToggle" title="Cambiar vista">
+                    <i class="fas fa-list"></i>
+                </button>
+
                 <div class="search-executive">
                     <i class="fas fa-search"></i>
-                    <input type="text" 
-                           id="searchInput" 
-                           placeholder="Buscar..."
+                    <input type="text"
+                           id="searchInput"
+                           placeholder="Buscar... (⌘K)"
                            autocomplete="off">
                 </div>
-                
+
                 <button class="action-btn" id="themeToggle" title="Modo oscuro">
                     <i class="fas fa-moon"></i>
                 </button>
-                
+
                 <button class="action-btn" id="exportBtn" title="Exportar PDF">
                     <i class="fas fa-download"></i>
                 </button>
@@ -57,10 +104,9 @@
         </div>
     </header>
 
-    <!-- Filtros Flotantes -->
+    <!-- ✅ MEJORA 10: Filtros con barras proporcionales -->
     <nav class="filters-floating" id="filtersBar">
         <div class="filters-wrapper">
-            <!-- Periodo -->
             <div class="filter-compact">
                 <label>
                     <i class="fas fa-calendar-alt"></i>
@@ -72,8 +118,7 @@
                     </button>
                 </div>
             </div>
-            
-            <!-- Categoría -->
+
             <div class="filter-compact">
                 <label>
                     <i class="fas fa-layer-group"></i>
@@ -85,17 +130,39 @@
                     </button>
                 </div>
             </div>
-            
-            <!-- Reset -->
+
             <button class="btn-reset-compact" id="resetFilters" title="Resetear">
                 <i class="fas fa-redo"></i>
             </button>
         </div>
+
+        <!-- ✅ MEJORA 10: Mini barras proporcionales por categoría -->
+        <div class="category-bars" id="categoryBars"></div>
     </nav>
+
+    <!-- ✅ MEJORA 11: Heatmap de actividad -->
+    <div class="heatmap-container" id="heatmapContainer" style="display:none;">
+        <div class="heatmap-inner">
+            <div class="heatmap-title">
+                <i class="fas fa-fire"></i>
+                Actividad del mes
+            </div>
+            <div class="heatmap-grid" id="heatmapGrid"></div>
+            <div class="heatmap-legend">
+                <span>Menos</span>
+                <div class="heatmap-legend-dots">
+                    <span class="hd hd-0"></span>
+                    <span class="hd hd-1"></span>
+                    <span class="hd hd-2"></span>
+                    <span class="hd hd-3"></span>
+                </div>
+                <span>Más</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="main-executive" id="newsContainer">
-        <!-- Skeleton -->
         <div class="skeleton-executive" id="skeletonLoader">
             <div class="skeleton-card-exec"></div>
             <div class="skeleton-card-exec"></div>
@@ -114,34 +181,58 @@
         </button>
     </div>
 
+    <!-- ✅ MEJORA 28: Panel briefing del día -->
+    <div class="briefing-overlay" id="briefingOverlay" style="display:none;">
+        <div class="briefing-panel">
+            <div class="briefing-header">
+                <div class="briefing-title">
+                    <i class="fas fa-file-alt"></i>
+                    Briefing Ejecutivo
+                </div>
+                <div class="briefing-actions">
+                    <button class="briefing-btn" onclick="printBriefing()">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
+                    <button class="briefing-close" onclick="closeBriefing()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="briefing-content" id="briefingContent"></div>
+        </div>
+    </div>
+
     <!-- Toast -->
     <div class="toast-container" id="toastContainer"></div>
 
     <!-- Back to Top -->
-    <button class="fab-executive" id="backToTop">
+    <button class="fab-executive" id="backToTop" title="Volver arriba">
         <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ✅ MEJORA 28: FAB Briefing -->
+    <button class="fab-briefing" id="briefingBtn" title="Generar Briefing">
+        <i class="fas fa-file-alt"></i>
     </button>
 
     <!-- Footer -->
     <footer class="footer-executive">
         <div class="footer-content">
             <span>© 2026 Global Exchange • Comunicación Corporativa</span>
-            <span>GMR v3.7 Executive</span>
+            <span>GMR v4.0 Executive</span>
         </div>
     </footer>
 
     <script src="api-handler-simple.js"></script>
     <script src="script.js"></script>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('%c📊 GMR Executive v3.7', 'font-size: 18px; font-weight: bold; color: #122864;');
-            
+            console.log('%c📊 GMR Executive v4.0', 'font-size: 18px; font-weight: bold; color: #122864;');
             if (typeof initializeGMR === 'function') {
                 initializeGMR();
             }
         });
     </script>
-
 </body>
 </html>
