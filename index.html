@@ -7,19 +7,16 @@
 
     <meta name="description" content="Global Media Report — Dashboard de medios corporativo de Global Exchange">
     <meta property="og:title" content="Global Media Report — Global Exchange">
-    <meta property="og:description" content="Dashboard ejecutivo de noticias del sector cambiario y aeroportuario">
-    <meta property="og:image" content="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg">
     <meta name="theme-color" content="#122864">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Satoshi (Fontshare CDN) -->
+    <!-- Satoshi -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
-    <!-- Inter (Google Fonts) -->
+    <!-- Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -35,13 +32,12 @@
         <div class="header-inner">
 
             <div class="header-brand">
-                <!-- Logo versión clara (visible en header oscuro) -->
-                <img class="logo-light"
+                <img class="header-logo"
                      src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg"
                      alt="Global Exchange">
                 <div class="header-brand-text">
                     <span class="header-title">Global Media Report</span>
-                    <span class="header-sub" id="headerSub">
+                    <span class="header-sub">
                         <span class="status-dot"></span>
                         <span id="statsInfo">Cargando...</span>
                     </span>
@@ -76,6 +72,7 @@
     <!-- FILTERS -->
     <nav class="filters" id="filtersBar">
         <div class="filters-inner">
+
             <div class="filter-group">
                 <span class="filter-label">
                     <i class="fas fa-calendar-alt"></i>
@@ -83,7 +80,7 @@
                 </span>
                 <div class="chips" id="monthFilters">
                     <button class="chip active" data-month="all">
-                        Todos <span class="chip-count">0</span>
+                        Todos <span class="chip-n">0</span>
                     </button>
                 </div>
             </div>
@@ -97,35 +94,35 @@
                 </span>
                 <div class="chips" id="categoryFilters">
                     <button class="chip active" data-category="all">
-                        Todas <span class="chip-count">0</span>
+                        Todas <span class="chip-n">0</span>
                     </button>
                 </div>
             </div>
 
-            <button class="filter-reset" id="resetFilters" title="Resetear filtros">
+            <button class="filter-reset" id="resetFilters" title="Resetear">
                 <i class="fas fa-xmark"></i>
             </button>
+
         </div>
     </nav>
 
     <!-- MAIN -->
     <main class="main" id="newsContainer">
         <div class="skeleton-grid" id="skeletonLoader">
-            <div class="skeleton-card"></div>
-            <div class="skeleton-card"></div>
-            <div class="skeleton-card"></div>
-            <div class="skeleton-card"></div>
+            <div class="sk-card"></div>
+            <div class="sk-card"></div>
+            <div class="sk-card"></div>
+            <div class="sk-card"></div>
         </div>
     </main>
 
-    <!-- EMPTY STATE -->
+    <!-- EMPTY -->
     <div class="empty-state" id="emptyState">
         <i class="fas fa-inbox"></i>
         <h3>Sin resultados</h3>
         <p>Ajusta los filtros o la búsqueda</p>
         <button class="btn-primary" onclick="resetAllFilters()">
-            <i class="fas fa-redo"></i>
-            Resetear
+            <i class="fas fa-redo"></i> Resetear
         </button>
     </div>
 
@@ -144,8 +141,7 @@
         <div class="panel-body" id="briefingBody"></div>
         <div class="panel-foot">
             <button onclick="window.print()">
-                <i class="fas fa-print"></i>
-                Imprimir
+                <i class="fas fa-print"></i> Imprimir
             </button>
         </div>
     </aside>
