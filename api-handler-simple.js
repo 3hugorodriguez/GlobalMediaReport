@@ -1,8 +1,8 @@
 /* ============================================================
-   GMR v5.0 — Data Service + Renderer
+   GMR v4.0 — Data + Renderer
    ============================================================ */
 
-const GMR_CONFIG = {
+const CONFIG = {
     dataPath: './data/gmr-data.json',
     newsDays: 7,
     months: {
@@ -11,381 +11,354 @@ const GMR_CONFIG = {
         '09':'Septiembre','10':'Octubre','11':'Noviembre','12':'Diciembre'
     },
     catColors: {
-        'grupo-global':          '#122864',
-        'sector-cambiario':      '#0ea5e9',
-        'sector-aeroportuario':  '#7c3aed',
-        'medios-efectivo':       '#059669',
-        'medios-digital':        '#d97706'
+        'grupo-global':         '#122864',
+        'sector-cambiario':     '#0ea5e9',
+        'sector-aeroportuario': '#7c3aed',
+        'medios-efectivo':      '#059669',
+        'medios-digital':       '#d97706'
+    },
+    // Fallbacks Unsplash por categoría — se usan si no hay imagen en el JSON
+    fallbackImages: {
+        'grupo-global':         'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=75',
+        'sector-cambiario':     'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=75',
+        'sector-aeroportuario': 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=75',
+        'medios-efectivo':      'https://images.unsplash.com/photo-1554768804-50c1e2b50a6e?w=800&q=75',
+        'medios-digital':       'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=75'
     }
 };
 
-/* ── DATA SERVICE ──────────────────────────────────────── */
-class GMRData {
-    static async load() {
-        const res = await fetch(`${GMR_CONFIG.dataPath}?t=${Date.now()}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const json = await res.json();
-        if (!json.success || !json.data) throw new Error('Datos inválidos');
+/* ── HELPERS ───────────────────────────────────────────── */
+function validImage(url) {
+    if (!url) return false;
+    const s = url.trim();
+    return s !== ''
+        && s !== 'null'
+        && !s.includes('placehold.co')
+        && !s.includes('placeholder');
+}
 
-        const data = json.data;
-        const now = new Date();
+function fmtDate(str) {
+    return new Date(str).toLocaleDateString('es-ES', {
+        day: 'numeric', month: 'short', year: 'numeric'
+    });
+}
 
-        data.noticias
-            .filter(n => !n.hidden)
-            .forEach(n => {
-                const d = Math.floor((now - new Date(n.fecha)) / 86400000);
-                n.isNew = d >= 0 && d <= GMR_CONFIG.newsDays;
-            });
+function fmtMonth(key) {
+    const [y, m] = key.split('-');
+    return `${CONFIG.months[m]} ${y}`;
+}
 
-        data.noticias = data.noticias.filter(n => !n.hidden);
-        data.noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-        data.timestamp = json.timestamp;
-        return data;
-    }
+function groupBy(arr, fn) {
+    return arr.reduce((acc, item) => {
+        const k = fn(item);
+        (acc[k] = acc[k] || []).push(item);
+        return acc;
+    }, {});
+}
+
+function monthKey(fecha) {
+    const d = new Date(fecha);
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+}
+
+/* ── DATA ──────────────────────────────────────────────── */
+async function loadData() {
+    const res = await fetch(`${CONFIG.dataPath}?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    if (!json.success || !json.data) throw new Error('Datos inválidos');
+
+    const data = json.data;
+    const now  = new Date();
+
+    // Filtrar ocultas, marcar nuevas, ordenar
+    data.noticias = data.noticias
+        .filter(n => !n.hidden)
+        .map(n => {
+            const diff = Math.floor((now - new Date(n.fecha)) / 86400000);
+            n.isNew = diff >= 0 && diff <= CONFIG.newsDays;
+            return n;
+        })
+        .sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+    data.timestamp = json.timestamp;
+    return data;
 }
 
 /* ── RENDERER ──────────────────────────────────────────── */
-class GMRRenderer {
-    constructor(data) {
-        this.data  = data;
-        this.cats  = data.categorias;
-    }
+function renderHeader(data) {
+    const el  = document.getElementById('statsInfo');
+    const cfg = data.config || {};
+    if (!el) return;
 
-    color(slug) {
-        return GMR_CONFIG.catColors[slug]
-            || this.cats.find(c => c.Slug === slug)?.Color
-            || '#122864';
-    }
+    const ts  = data.timestamp ? new Date(data.timestamp) : new Date();
+    const fmt = ts.toLocaleString('es-ES', {
+        day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'
+    });
+    const newCount = data.noticias.filter(n => n.isNew).length;
 
-    fmtMonth(key) {
-        const [y, m] = key.split('-');
-        return `${GMR_CONFIG.months[m]} ${y}`;
-    }
+    el.innerHTML = `
+        ${data.noticias.length} noticias
+        ${newCount > 0 ? `· <strong style="color:rgba(255,255,255,0.9)">${newCount} nuevas</strong>` : ''}
+        · ${cfg.mes_actual || fmt}
+    `;
+}
 
-    fmtDate(str) {
-        return new Date(str).toLocaleDateString('es-ES', {
-            day: 'numeric', month: 'short', year: 'numeric'
-        });
-    }
+function renderFilters(data) {
+    const catEl   = document.getElementById('categoryFilters');
+    const monthEl = document.getElementById('monthFilters');
+    if (!catEl || !monthEl) return;
 
-    /* Header */
-    renderHeader() {
-        const cfg = this.data.config || {};
-        const el = document.getElementById('headerMonth');
-        const cnt = document.getElementById('headerCount');
-        if (el)  el.textContent = cfg.mes_actual || '—';
-        if (cnt) cnt.textContent = `${this.data.noticias.length} noticias`;
-    }
+    const catCounts   = {};
+    const monthCounts = {};
 
-    /* Hero — primera noticia de grupo-global */
-    renderHero() {
-        const section = document.getElementById('heroSection');
-        if (!section) return;
+    data.noticias.forEach(n => {
+        catCounts[n.categoria]   = (catCounts[n.categoria]   || 0) + 1;
+        const mk = monthKey(n.fecha);
+        monthCounts[mk]          = (monthCounts[mk]          || 0) + 1;
+    });
 
-        const n = this.data.noticias.find(x => x.categoria === 'grupo-global');
+    // All chip
+    catEl.querySelector('[data-category="all"] .chip-count').textContent   = data.noticias.length;
+    monthEl.querySelector('[data-month="all"] .chip-count').textContent    = data.noticias.length;
+
+    // Category chips
+    data.categorias.forEach(cat => {
+        const n = catCounts[cat.Slug] || 0;
         if (!n) return;
+        const btn = document.createElement('button');
+        btn.className = 'chip';
+        btn.setAttribute('data-category', cat.Slug);
+        btn.innerHTML = `${cat.Nombre} <span class="chip-count">${n}</span>`;
+        catEl.appendChild(btn);
+    });
 
-        const color  = this.color('grupo-global');
-        const hasImg = n.imagen && !n.imagen.includes('placehold.co');
-        const cat    = this.cats.find(c => c.Slug === n.categoria);
-
-        section.style.display = 'block';
-        section.innerHTML = `
-            <article class="hero-card" data-url="${n.url}">
-                <div class="hero-image">
-                    ${hasImg
-                        ? `<img src="${n.imagen}" alt="${n.titulo}" loading="eager"
-                               onerror="this.parentElement.innerHTML='<div class=\\"hero-image-placeholder\\"><i class=\\"fas ${cat?.Icono || 'fa-building'}\\"></i></div>'">`
-                        : `<div class="hero-image-placeholder">
-                               <i class="fas ${cat?.Icono || 'fa-building'}"></i>
-                           </div>`
-                    }
-                    <span class="hero-tag">Grupo Global</span>
-                </div>
-                <div class="hero-content">
-                    <div class="hero-eyebrow">Destacado del mes</div>
-                    <h2 class="hero-title">${this.#breakTitle(n.titulo)}</h2>
-                    ${n.resumen ? `<p class="hero-summary">${n.resumen}</p>` : ''}
-                    <div class="hero-footer">
-                        <div class="hero-meta">
-                            <span class="hero-source">${n.medio}</span>
-                            <span class="hero-date">${this.fmtDate(n.fecha)}</span>
-                        </div>
-                        <a href="${n.url}" target="_blank" class="hero-cta"
-                           onclick="event.stopPropagation()">
-                            Leer <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-        `;
-
-        section.querySelector('.hero-card')
-            ?.addEventListener('click', () => window.open(n.url, '_blank'));
-    }
-
-    /* Breaks long title with em for style */
-    #breakTitle(title) {
-        const words = title.split(' ');
-        if (words.length <= 5) return title;
-        const half = Math.ceil(words.length / 2);
-        return words.slice(0, half).join(' ') +
-               ` <em>${words.slice(half).join(' ')}</em>`;
-    }
-
-    /* Filters */
-    renderFilters() {
-        const catContainer   = document.getElementById('catFilters');
-        const monthContainer = document.getElementById('monthFilters');
-        if (!catContainer || !monthContainer) return;
-
-        const catCounts   = {};
-        const monthCounts = {};
-
-        this.data.noticias.forEach(n => {
-            catCounts[n.categoria] = (catCounts[n.categoria] || 0) + 1;
-            const d = new Date(n.fecha);
-            const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
-            monthCounts[k] = (monthCounts[k] || 0) + 1;
-        });
-
-        /* Category chips */
-        const allCatBtn = catContainer.querySelector('[data-category="all"]');
-        if (allCatBtn) {
-            allCatBtn.innerHTML = `
-                <span class="chip-dot" style="background:var(--ink)"></span>
-                Todo <sup>${this.data.noticias.length}</sup>
-            `;
-        }
-
-        this.cats.forEach(cat => {
-            if (!catCounts[cat.Slug]) return;
-            const color = this.color(cat.Slug);
+    // Month chips
+    Object.keys(monthCounts)
+        .sort((a,b) => new Date(b) - new Date(a))
+        .forEach(mk => {
             const btn = document.createElement('button');
-            btn.className = 'filter-chip';
-            btn.setAttribute('data-category', cat.Slug);
-            btn.innerHTML = `
-                <span class="chip-dot" style="background:${color}"></span>
-                ${cat.Nombre}
-                <sup>${catCounts[cat.Slug]}</sup>
-            `;
-            catContainer.appendChild(btn);
+            btn.className = 'chip';
+            btn.setAttribute('data-month', mk);
+            btn.innerHTML = `${fmtMonth(mk)} <span class="chip-count">${monthCounts[mk]}</span>`;
+            monthEl.appendChild(btn);
+        });
+}
+
+function renderNews(data) {
+    const container = document.getElementById('newsContainer');
+    if (!container) return;
+
+    // Quitar skeleton
+    const skel = document.getElementById('skeletonLoader');
+    if (skel) { skel.style.opacity = '0'; setTimeout(() => skel.remove(), 250); }
+
+    container.innerHTML = '';
+
+    const byMonth = groupBy(data.noticias, n => monthKey(n.fecha));
+
+    Object.keys(byMonth)
+        .sort((a,b) => new Date(b) - new Date(a))
+        .forEach(mk => {
+            container.appendChild(buildMonthBlock(mk, byMonth[mk], data.categorias));
         });
 
-        /* Month chips */
-        const months = Object.keys(monthCounts).sort((a,b) => new Date(b)-new Date(a));
-        months.forEach(m => {
-            const btn = document.createElement('button');
-            btn.className = 'filter-chip';
-            btn.setAttribute('data-month', m);
-            btn.textContent = this.fmtMonth(m);
-            monthContainer.appendChild(btn);
-        });
-    }
+    buildTimeline(Object.keys(byMonth).sort((a,b) => new Date(b)-new Date(a)));
+}
 
-    /* All news */
-    renderNews() {
-        const container = document.getElementById('newsContainer');
-        if (!container) return;
+function buildMonthBlock(mk, noticias, categorias) {
+    const block = document.createElement('div');
+    block.className = 'month-block';
+    block.setAttribute('data-month', mk);
+    block.id = `month-${mk}`;
 
-        const skel = document.getElementById('skeletonLoader');
-        if (skel) { skel.style.opacity='0'; setTimeout(()=>skel.remove(),300); }
+    block.innerHTML = `
+        <div class="month-header">
+            <h2 class="month-title">${fmtMonth(mk)}</h2>
+            <span class="month-count">${noticias.length} noticias</span>
+        </div>
+    `;
 
-        container.innerHTML = '';
-
-        /* Group by month */
-        const byMonth = {};
-        this.data.noticias.forEach(n => {
-            const d = new Date(n.fecha);
-            const k = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
-            (byMonth[k] = byMonth[k] || []).push(n);
+    const byCat = groupBy(noticias, n => n.categoria);
+    categorias
+        .filter(c => byCat[c.Slug])
+        .forEach(cat => {
+            block.appendChild(buildCatBlock(cat, byCat[cat.Slug]));
         });
 
-        Object.keys(byMonth)
-            .sort((a,b) => new Date(b)-new Date(a))
-            .forEach(month => {
-                container.appendChild(this.#monthBlock(month, byMonth[month]));
-            });
-    }
+    return block;
+}
 
-    #monthBlock(month, noticias) {
-        const block = document.createElement('div');
-        block.className = 'month-block';
-        block.setAttribute('data-month', month);
-        block.id = `m-${month}`;
+function buildCatBlock(cat, noticias) {
+    const color = CONFIG.catColors[cat.Slug] || cat.Color;
 
-        block.innerHTML = `
-            <div class="month-label">
-                <span class="month-label-text">${this.fmtMonth(month)}</span>
-                <span class="month-label-count">${noticias.length} noticias</span>
+    const block = document.createElement('div');
+    block.className = 'cat-block';
+    block.setAttribute('data-category', cat.Slug);
+    block.style.setProperty('--cat-color', color);
+
+    block.innerHTML = `
+        <div class="cat-header">
+            <div class="cat-icon" style="background:${color}">
+                <i class="fas ${cat.Icono}"></i>
             </div>
-        `;
+            <span class="cat-name">${cat.Nombre}</span>
+            <span class="cat-count">${noticias.length}</span>
+        </div>
+        <div class="news-grid"></div>
+    `;
 
-        /* Group by category */
-        const byCat = {};
-        noticias.forEach(n => (byCat[n.categoria] = byCat[n.categoria] || []).push(n));
+    const grid = block.querySelector('.news-grid');
+    noticias.forEach((n, i) => {
+        const card = buildCard(n, cat, color, i === 0 && cat.Slug === 'grupo-global');
+        grid.appendChild(card);
+    });
 
-        this.cats
-            .filter(c => byCat[c.Slug])
-            .forEach(cat => {
-                block.appendChild(this.#catBlock(cat, byCat[cat.Slug]));
-            });
+    return block;
+}
 
-        return block;
-    }
+function buildCard(noticia, cat, color, isHero) {
+    const article = document.createElement('article');
+    article.className = 'card-executive' + (isHero ? ' hero' : '');
+    article.setAttribute('data-url', noticia.url);
+    article.setAttribute('data-category', noticia.categoria);
+    article.style.setProperty('--cat-color', color);
 
-    #catBlock(cat, noticias) {
-        const color = this.color(cat.Slug);
-        const block = document.createElement('div');
-        block.className = 'cat-block';
-        block.setAttribute('data-category', cat.Slug);
+    const isInt   = noticia.alcance === 'Internacional';
+    const imgSrc  = validImage(noticia.imagen)
+        ? noticia.imagen
+        : CONFIG.fallbackImages[noticia.categoria] || CONFIG.fallbackImages['medios-digital'];
 
-        block.innerHTML = `
-            <div class="cat-label">
-                <span class="cat-name" style="color:${color}">
-                    <i class="fas ${cat.Icono}"></i>
-                    ${cat.Nombre}
+    const highlights = (noticia.highlights || []).slice(0, 3);
+
+    article.innerHTML = `
+        <div class="card-img">
+            <img src="${imgSrc}"
+                 alt="${noticia.titulo}"
+                 loading="${isHero ? 'eager' : 'lazy'}"
+                 onerror="this.src='${CONFIG.fallbackImages[noticia.categoria]}'">
+            ${noticia.isNew ? '<div class="card-new"></div>' : ''}
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="card-scope ${isInt ? 'int' : ''}">
+                    <i class="fas ${isInt ? 'fa-globe' : 'fa-map-marker-alt'}"></i>
+                    ${noticia.alcance}
                 </span>
-                <span class="cat-count">${noticias.length}</span>
-                <div class="cat-line"></div>
+                <span class="card-date">${fmtDate(noticia.fecha)}</span>
             </div>
-        `;
+            <h3 class="card-title">${noticia.titulo}</h3>
+            ${highlights.length ? `
+                <ul class="card-highlights">
+                    ${highlights.map(h => `<li>${h}</li>`).join('')}
+                </ul>
+            ` : ''}
+            ${noticia.resumen ? `
+                <button class="card-expand" onclick="toggleSummary(this, event)">
+                    Ver resumen
+                </button>
+                <div class="card-summary">${noticia.resumen}</div>
+            ` : ''}
+            <div class="card-foot">
+                <span class="card-source">
+                    <i class="fas fa-newspaper"></i>
+                    ${noticia.medio}
+                </span>
+                <a href="${noticia.url}" target="_blank" class="card-link"
+                   onclick="event.stopPropagation()">
+                    Leer <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    `;
 
-        const grid = document.createElement('div');
-        grid.className = 'news-grid';
+    article.addEventListener('click', e => {
+        if (e.target.closest('.card-link') || e.target.closest('.card-expand')) return;
+        window.open(noticia.url, '_blank');
+    });
 
-        noticias.forEach((n, i) => {
-            const card = this.#card(n, cat, color);
-            /* Tercera card → full row */
-            if (i === 2 && noticias.length > 2) card.classList.add('full-row');
-            grid.appendChild(card);
+    return article;
+}
+
+function buildTimeline(months) {
+    const sidebar = document.createElement('aside');
+    sidebar.className = 'timeline-sidebar';
+    sidebar.id = 'timelineSidebar';
+
+    const counts = {};
+    document.querySelectorAll('.month-block').forEach(mb => {
+        counts[mb.getAttribute('data-month')] =
+            mb.querySelectorAll('.card-executive').length;
+    });
+
+    sidebar.innerHTML = `
+        <div class="timeline-label">Timeline</div>
+        <ul class="timeline-list">
+            ${months.map(mk => `
+                <li class="timeline-item" data-tm="${mk}">
+                    <span class="timeline-month">${fmtMonth(mk)}</span>
+                    <span class="timeline-n">${counts[mk] || ''}</span>
+                </li>
+            `).join('')}
+        </ul>
+    `;
+
+    document.body.appendChild(sidebar);
+    setTimeout(() => sidebar.classList.add('visible'), 400);
+}
+
+function renderBriefing(data) {
+    const body = document.getElementById('briefingBody');
+    if (!body) return;
+
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 30);
+
+    const noticias = [...data.noticias]
+        .filter(n => new Date(n.fecha) >= cutoff)
+        .sort((a, b) => {
+            if (a.categoria === 'grupo-global') return -1;
+            if (b.categoria === 'grupo-global') return 1;
+            return new Date(b.fecha) - new Date(a.fecha);
         });
 
-        block.appendChild(grid);
-        return block;
-    }
+    const cfg = data.config || {};
 
-    #card(n, cat, color) {
-        const article = document.createElement('article');
-        article.className = 'card';
-        article.setAttribute('data-url', n.url);
-        article.style.setProperty('--cat-color', color);
-
-        const hasImg = n.imagen && !n.imagen.includes('placehold.co');
-        const isInt  = n.alcance === 'Internacional';
-
-        article.innerHTML = `
-            <div class="card-img">
-                ${hasImg
-                    ? `<img src="${n.imagen}" alt="${n.titulo}" loading="lazy"
-                           onerror="this.parentElement.innerHTML='<div class=\\"card-img-placeholder\\"><i class=\\"fas ${cat.Icono}\\"></i></div>'">`
-                    : `<div class="card-img-placeholder">
-                           <i class="fas ${cat.Icono}"></i>
-                       </div>`
-                }
-                ${n.isNew ? '<div class="card-new-badge"></div>' : ''}
-            </div>
-            <div class="card-body">
-                <div class="card-top">
-                    <span class="card-scope ${isInt ? 'int' : ''}">
-                        ${n.alcance}
-                    </span>
-                    <span class="card-date">${this.fmtDate(n.fecha)}</span>
-                </div>
-                <h3 class="card-title">${n.titulo}</h3>
-                ${n.highlights?.length ? `
-                    <ul class="card-highlights">
-                        ${n.highlights.slice(0,3).map(h=>`<li>${h}</li>`).join('')}
-                    </ul>
-                ` : ''}
-                ${n.resumen ? `
-                    <button class="card-summary-toggle"
-                            onclick="toggleSummary(this, event)">
-                        Ver resumen
-                    </button>
-                    <div class="card-summary">${n.resumen}</div>
-                ` : ''}
-                <div class="card-foot">
-                    <span class="card-source">${n.medio}</span>
-                    <span class="card-read">
-                        Leer <i class="fas fa-arrow-right"></i>
-                    </span>
-                </div>
-            </div>
-        `;
-
-        article.addEventListener('click', e => {
-            if (e.target.closest('.card-summary-toggle')) return;
-            window.open(n.url, '_blank');
-        });
-
-        return article;
-    }
-
-    /* Briefing */
-    renderBriefing() {
-        const body = document.getElementById('briefingBody');
-        if (!body) return;
-
-        const cutoff = new Date();
-        cutoff.setDate(cutoff.getDate() - 30);
-
-        const noticias = [...this.data.noticias]
-            .filter(n => new Date(n.fecha) >= cutoff)
-            .sort((a, b) => {
-                if (a.categoria === 'grupo-global') return -1;
-                if (b.categoria === 'grupo-global') return 1;
-                return new Date(b.fecha) - new Date(a.fecha);
-            });
-
-        const cfg = this.data.config || {};
-
-        body.innerHTML = `
-            <div style="padding:1rem 0 1.5rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem;">
-                <p style="font-size:0.6875rem; font-weight:700; text-transform:uppercase;
-                           letter-spacing:0.08em; color:var(--ink-4); margin-bottom:6px;">
-                    Global Exchange · Comunicación Corporativa
-                </p>
-                <p style="font-family:var(--serif); font-size:1.25rem; color:var(--ink);">
-                    ${cfg.mes_actual || 'Informe mensual'}
-                </p>
-                <p style="font-size:0.8125rem; color:var(--ink-4); margin-top:4px;">
-                    ${noticias.length} noticias seleccionadas
-                </p>
-            </div>
-            ${noticias.map(n => {
-                const color = this.color(n.categoria);
-                const cat   = this.cats.find(c => c.Slug === n.categoria);
-                return `
-                    <div class="briefing-entry">
-                        <div class="briefing-dot" style="background:${color}"></div>
-                        <div class="briefing-entry-body">
-                            <div class="briefing-entry-title">${n.titulo}</div>
-                            <div class="briefing-entry-meta">
-                                ${cat?.Nombre || n.categoria} · ${n.medio} ·
-                                ${this.fmtDate(n.fecha)}
-                            </div>
-                            ${n.resumen
-                                ? `<div class="briefing-entry-summary">${n.resumen}</div>`
-                                : ''}
+    body.innerHTML = `
+        <div style="padding:0 0 1.25rem; border-bottom:1px solid var(--line); margin-bottom:1rem;">
+            <p style="font-size:0.6875rem;font-weight:700;text-transform:uppercase;
+                      letter-spacing:0.07em;color:var(--ink-4);margin-bottom:4px;">
+                Global Exchange · Comunicación Corporativa
+            </p>
+            <p style="font-family:var(--font-head);font-size:1.125rem;
+                      font-weight:700;color:var(--ink);">
+                ${cfg.mes_actual || 'Informe mensual'}
+            </p>
+            <p style="font-size:0.8125rem;color:var(--ink-4);margin-top:3px;">
+                ${noticias.length} noticias seleccionadas
+            </p>
+        </div>
+        ${noticias.map(n => {
+            const color = CONFIG.catColors[n.categoria] || '#122864';
+            const cat   = data.categorias.find(c => c.Slug === n.categoria);
+            return `
+                <div class="briefing-item">
+                    <div class="briefing-dot" style="background:${color}"></div>
+                    <div>
+                        <div class="briefing-title">${n.titulo}</div>
+                        <div class="briefing-meta">
+                            ${cat?.Nombre || n.categoria} · ${n.medio} · ${fmtDate(n.fecha)}
                         </div>
+                        ${n.resumen ? `<div class="briefing-summary">${n.resumen}</div>` : ''}
                     </div>
-                `;
-            }).join('')}
-        `;
-    }
-
-    renderAll() {
-        this.renderHeader();
-        this.renderHero();
-        this.renderFilters();
-        this.renderNews();
-        this.renderBriefing();
-    }
+                </div>
+            `;
+        }).join('')}
+    `;
 }
 
 /* ── GLOBALS ───────────────────────────────────────────── */
-let _data, _renderer;
+let allData;
 
 function toggleSummary(btn, e) {
     e.stopPropagation();
@@ -394,40 +367,261 @@ function toggleSummary(btn, e) {
     btn.textContent = open ? 'Ocultar' : 'Ver resumen';
 }
 
+function toggleEmptyState(count) {
+    const el = document.getElementById('emptyState');
+    if (el) el.style.display = count === 0 ? 'flex' : 'none';
+}
+
 function resetAllFilters() {
-    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
     document.querySelector('[data-category="all"]')?.classList.add('active');
     document.querySelector('[data-month="all"]')?.classList.add('active');
 
     const si = document.getElementById('searchInput');
     if (si) si.value = '';
 
-    document.querySelectorAll('.month-block, .cat-block, .card')
+    document.querySelectorAll('.month-block, .cat-block, .card-executive')
         .forEach(el => el.style.display = '');
 
-    document.querySelector('.hero-section') && 
-        (document.getElementById('heroSection').style.display = 'block');
-
-    toggleEmpty(false);
-    toast('Filtros restablecidos');
+    toggleEmptyState(document.querySelectorAll('.card-executive').length);
+    showToast('Filtros restablecidos');
 }
 
-function toggleEmpty(show) {
-    const el = document.getElementById('emptyState');
-    if (el) el.style.display = show ? 'flex' : 'none';
-}
-
-function toast(msg, icon = 'fa-check') {
-    const wrap = document.getElementById('toasts');
+function showToast(msg, type = 'info') {
+    const wrap = document.getElementById('toastContainer');
     if (!wrap) return;
+    const icons = { success: 'fa-check', error: 'fa-xmark', info: 'fa-info' };
     const el = document.createElement('div');
     el.className = 'toast';
-    el.innerHTML = `<i class="fas ${icon}"></i>${msg}`;
+    el.innerHTML = `<i class="fas ${icons[type] || 'fa-info'}"></i>${msg}`;
     wrap.appendChild(el);
     setTimeout(() => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(8px)';
         el.style.transition = '0.3s ease';
         setTimeout(() => el.remove(), 300);
     }, 2800);
+}
+
+/* ── INIT ──────────────────────────────────────────────── */
+async function initializeGMR() {
+    try {
+        allData = await loadData();
+        renderHeader(allData);
+        renderFilters(allData);
+        renderNews(allData);
+        renderBriefing(allData);
+
+        requestAnimationFrame(() => {
+            initializeFilters();
+            initializeSearch();
+            initializeScrollEffects();
+            initializeTimeline();
+            showToast(`${allData.noticias.length} noticias cargadas`, 'success');
+        });
+
+    } catch (err) {
+        console.error('GMR Error:', err);
+        const skel = document.getElementById('skeletonLoader');
+        if (skel) skel.innerHTML = `
+            <div class="empty-state" style="display:flex;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Error al cargar</h3>
+                <p>${err.message}</p>
+                <button class="btn-primary" onclick="location.reload()">
+                    <i class="fas fa-redo"></i> Reintentar
+                </button>
+            </div>`;
+        showToast('Error al cargar datos', 'error');
+    }
+}
+
+/* ── FILTERS ───────────────────────────────────────────── */
+function initializeFilters() {
+    let activeCat   = 'all';
+    let activeMonth = 'all';
+
+    document.getElementById('categoryFilters')?.addEventListener('click', e => {
+        const chip = e.target.closest('.chip');
+        if (!chip) return;
+        document.querySelectorAll('#categoryFilters .chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeCat = chip.getAttribute('data-category');
+        applyFilters(activeCat, activeMonth);
+    });
+
+    document.getElementById('monthFilters')?.addEventListener('click', e => {
+        const chip = e.target.closest('.chip');
+        if (!chip) return;
+        document.querySelectorAll('#monthFilters .chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeMonth = chip.getAttribute('data-month');
+        if (activeMonth !== 'all') {
+            document.getElementById(`month-${activeMonth}`)
+                ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        applyFilters(activeCat, activeMonth);
+    });
+
+    document.getElementById('resetFilters')?.addEventListener('click', resetAllFilters);
+}
+
+function applyFilters(cat, month) {
+    let count = 0;
+
+    document.querySelectorAll('.month-block').forEach(mb => {
+        const mMatch = month === 'all' || mb.getAttribute('data-month') === month;
+        if (!mMatch) { mb.style.display = 'none'; return; }
+
+        let visInMonth = 0;
+        mb.querySelectorAll('.cat-block').forEach(cb => {
+            const cMatch = cat === 'all' || cb.getAttribute('data-category') === cat;
+            cb.style.display = cMatch ? '' : 'none';
+            if (cMatch) visInMonth += cb.querySelectorAll('.card-executive').length;
+        });
+
+        mb.style.display = visInMonth > 0 ? '' : 'none';
+        count += visInMonth;
+    });
+
+    toggleEmptyState(count === 0);
+    if (count > 0) showToast(`${count} noticia${count !== 1 ? 's' : ''}`);
+}
+
+/* ── SEARCH ────────────────────────────────────────────── */
+function initializeSearch() {
+    const input = document.getElementById('searchInput');
+    if (!input) return;
+
+    let t;
+    input.addEventListener('input', () => {
+        clearTimeout(t);
+        t = setTimeout(() => runSearch(input.value.trim().toLowerCase()), 280);
+    });
+}
+
+function runSearch(term) {
+    clearHighlights();
+
+    if (!term) {
+        document.querySelectorAll('.card-executive, .cat-block, .month-block')
+            .forEach(el => el.style.display = '');
+        toggleEmptyState(false);
+        return;
+    }
+
+    let count = 0;
+    document.querySelectorAll('.card-executive').forEach(card => {
+        const text = (card.querySelector('.card-title')?.textContent || '') +
+                     (card.querySelector('.card-source')?.textContent || '') +
+                     (card.querySelector('.card-highlights')?.textContent || '');
+        const found = text.toLowerCase().includes(term);
+        card.style.display = found ? '' : 'none';
+        if (found) {
+            count++;
+            const titleEl = card.querySelector('.card-title');
+            if (titleEl) hlText(titleEl, term);
+        }
+    });
+
+    document.querySelectorAll('.cat-block').forEach(cb => {
+        cb.style.display = cb.querySelectorAll('.card-executive:not([style*="none"])').length
+            ? '' : 'none';
+    });
+    document.querySelectorAll('.month-block').forEach(mb => {
+        mb.style.display = mb.querySelectorAll('.cat-block:not([style*="none"])').length
+            ? '' : 'none';
+    });
+
+    toggleEmptyState(count === 0);
+}
+
+function hlText(el, term) {
+    const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let n;
+    while (n = walk.nextNode()) {
+        if (n.nodeValue.toLowerCase().includes(term)) nodes.push(n);
+    }
+    nodes.forEach(node => {
+        const parts = node.nodeValue.split(new RegExp(`(${term})`, 'gi'));
+        const frag  = document.createDocumentFragment();
+        parts.forEach(p => {
+            if (p.toLowerCase() === term) {
+                const mark = document.createElement('mark');
+                mark.className = 'search-highlight';
+                mark.textContent = p;
+                frag.appendChild(mark);
+            } else {
+                frag.appendChild(document.createTextNode(p));
+            }
+        });
+        node.parentNode.replaceChild(frag, node);
+    });
+}
+
+function clearHighlights() {
+    document.querySelectorAll('.search-highlight').forEach(m => {
+        m.parentNode?.replaceChild(document.createTextNode(m.textContent), m);
+    });
+    document.querySelectorAll('.card-title').forEach(el => el.normalize());
+}
+
+/* ── SCROLL ────────────────────────────────────────────── */
+function initializeScrollEffects() {
+    const header   = document.getElementById('mainHeader');
+    const filters  = document.getElementById('filtersBar');
+    const progress = document.getElementById('scrollProgress');
+    const fab      = document.getElementById('backToTop');
+    let last = 0;
+
+    window.addEventListener('scroll', () => {
+        const y   = window.scrollY;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+
+        if (progress) progress.style.width = `${(y / max) * 100}%`;
+
+        if (y > 80) {
+            if (y > last + 8) {
+                header?.classList.add('hidden');
+                filters?.classList.add('header-hidden');
+            } else if (y < last - 8) {
+                header?.classList.remove('hidden');
+                filters?.classList.remove('header-hidden');
+            }
+        } else {
+            header?.classList.remove('hidden');
+            filters?.classList.remove('header-hidden');
+        }
+
+        fab?.classList.toggle('visible', y > 400);
+        last = y;
+    }, { passive: true });
+
+    fab?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+/* ── TIMELINE ──────────────────────────────────────────── */
+function initializeTimeline() {
+    document.querySelectorAll('.timeline-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const mk = item.getAttribute('data-tm');
+            document.getElementById(`month-${mk}`)
+                ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
+
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                const mk = e.target.getAttribute('data-month');
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                document.querySelector(`.timeline-item[data-tm="${mk}"]`)
+                    ?.classList.add('active');
+            }
+        });
+    }, { threshold: 0.25 });
+
+    document.querySelectorAll('.month-block').forEach(mb => obs.observe(mb));
 }

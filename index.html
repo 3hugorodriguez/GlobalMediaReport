@@ -3,149 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GMR — Global Exchange</title>
-    <meta name="description" content="Global Media Report — Global Exchange">
-    <meta property="og:title" content="GMR — Global Exchange">
+    <title>Global Media Report — Global Exchange</title>
+
+    <meta name="description" content="Global Media Report — Dashboard de medios corporativo de Global Exchange">
+    <meta property="og:title" content="Global Media Report — Global Exchange">
+    <meta property="og:description" content="Dashboard ejecutivo de noticias del sector cambiario y aeroportuario">
     <meta property="og:image" content="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta name="theme-color" content="#122864">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Satoshi (Fontshare CDN) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <!-- Inter (Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="light">
+<body>
 
-    <!-- CURSOR CUSTOM -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursorFollower"></div>
-
-    <!-- PROGRESS -->
-    <div class="progress-bar" id="progressBar"></div>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- HEADER -->
-    <header class="header" id="header">
+    <header class="header" id="mainHeader">
         <div class="header-inner">
-            <a class="header-logo" href="#">
-                <img src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg"
-                     alt="Global Exchange" id="logoImg">
-            </a>
 
-            <div class="header-center" id="headerMeta">
-                <span class="header-label">Global Media Report</span>
-                <span class="header-dot">·</span>
-                <span class="header-month" id="headerMonth">—</span>
-                <span class="header-dot">·</span>
-                <span class="header-count" id="headerCount">—</span>
+            <div class="header-brand">
+                <!-- Logo versión clara (visible en header oscuro) -->
+                <img class="logo-light"
+                     src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg"
+                     alt="Global Exchange">
+                <div class="header-brand-text">
+                    <span class="header-title">Global Media Report</span>
+                    <span class="header-sub" id="headerSub">
+                        <span class="status-dot"></span>
+                        <span id="statsInfo">Cargando...</span>
+                    </span>
+                </div>
             </div>
 
             <div class="header-actions">
-                <button class="icon-btn" id="searchToggle" aria-label="Buscar">
+                <div class="search-wrap">
                     <i class="fas fa-search"></i>
-                </button>
-                <button class="icon-btn" id="viewToggle" aria-label="Vista" title="Vista compacta">
+                    <input type="text"
+                           id="searchInput"
+                           placeholder="Buscar... (⌘K)"
+                           autocomplete="off">
+                </div>
+                <button class="hbtn" id="viewToggle" title="Vista compacta">
                     <i class="fas fa-grip-lines"></i>
                 </button>
-                <button class="icon-btn" id="themeToggle" aria-label="Tema">
-                    <i class="fas fa-circle-half-stroke"></i>
+                <button class="hbtn" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
                 </button>
-                <button class="icon-btn" id="briefingToggle" aria-label="Briefing">
-                    <i class="fas fa-layer-group"></i>
+                <button class="hbtn" id="exportBtn" title="Imprimir">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button class="hbtn" id="briefingBtn" title="Briefing ejecutivo">
+                    <i class="fas fa-file-alt"></i>
                 </button>
             </div>
-        </div>
 
-        <!-- SEARCH BAR -->
-        <div class="search-bar" id="searchBar">
-            <div class="search-bar-inner">
-                <i class="fas fa-search"></i>
-                <input type="text" id="searchInput"
-                       placeholder="Buscar en todas las noticias...">
-                <kbd>ESC</kbd>
-            </div>
         </div>
     </header>
 
     <!-- FILTERS -->
-    <div class="filters-strip" id="filtersStrip">
+    <nav class="filters" id="filtersBar">
         <div class="filters-inner">
-            <div class="filter-group" id="catFilters">
-                <button class="filter-chip active" data-category="all">
-                    <span class="chip-dot" style="background:#0a0a0a"></span>
-                    Todo
-                </button>
+            <div class="filter-group">
+                <span class="filter-label">
+                    <i class="fas fa-calendar-alt"></i>
+                    Periodo
+                </span>
+                <div class="chips" id="monthFilters">
+                    <button class="chip active" data-month="all">
+                        Todos <span class="chip-count">0</span>
+                    </button>
+                </div>
             </div>
-            <div class="filter-divider"></div>
-            <div class="filter-group" id="monthFilters">
-                <button class="filter-chip active" data-month="all">Todos</button>
+
+            <div class="filter-sep"></div>
+
+            <div class="filter-group">
+                <span class="filter-label">
+                    <i class="fas fa-layer-group"></i>
+                    Categoría
+                </span>
+                <div class="chips" id="categoryFilters">
+                    <button class="chip active" data-category="all">
+                        Todas <span class="chip-count">0</span>
+                    </button>
+                </div>
             </div>
-            <button class="filter-reset" id="resetFilters">
+
+            <button class="filter-reset" id="resetFilters" title="Resetear filtros">
                 <i class="fas fa-xmark"></i>
             </button>
         </div>
-    </div>
-
-    <!-- HERO SECTION — se rellena dinámicamente -->
-    <section class="hero-section" id="heroSection" style="display:none"></section>
+    </nav>
 
     <!-- MAIN -->
     <main class="main" id="newsContainer">
-        <!-- Skeleton -->
-        <div class="skeleton-wrap" id="skeletonLoader">
-            <div class="skeleton-hero"></div>
-            <div class="skeleton-grid">
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
-            </div>
+        <div class="skeleton-grid" id="skeletonLoader">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
         </div>
     </main>
 
-    <!-- EMPTY -->
+    <!-- EMPTY STATE -->
     <div class="empty-state" id="emptyState">
-        <span class="empty-icon">◯</span>
+        <i class="fas fa-inbox"></i>
         <h3>Sin resultados</h3>
         <p>Ajusta los filtros o la búsqueda</p>
-        <button onclick="resetAllFilters()">Resetear</button>
+        <button class="btn-primary" onclick="resetAllFilters()">
+            <i class="fas fa-redo"></i>
+            Resetear
+        </button>
     </div>
 
     <!-- BRIEFING PANEL -->
-    <div class="panel-overlay" id="panelOverlay"></div>
+    <div class="panel-backdrop" id="panelBackdrop"></div>
     <aside class="briefing-panel" id="briefingPanel">
-        <div class="panel-header">
-            <span class="panel-title">Briefing</span>
+        <div class="panel-head">
+            <span class="panel-title">
+                <i class="fas fa-file-alt"></i>
+                Briefing ejecutivo
+            </span>
             <button class="panel-close" id="panelClose">
                 <i class="fas fa-xmark"></i>
             </button>
         </div>
         <div class="panel-body" id="briefingBody"></div>
-        <div class="panel-footer">
+        <div class="panel-foot">
             <button onclick="window.print()">
-                <i class="fas fa-print"></i> Imprimir
+                <i class="fas fa-print"></i>
+                Imprimir
             </button>
         </div>
     </aside>
 
+    <!-- TOAST -->
+    <div class="toasts" id="toastContainer"></div>
+
     <!-- BACK TO TOP -->
-    <button class="back-top" id="backTop">
+    <button class="fab" id="backToTop" title="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- FOOTER -->
     <footer class="footer">
         <span>© 2026 Global Exchange · Comunicación Corporativa</span>
-        <span>GMR v5.0</span>
+        <span>GMR v4.0</span>
     </footer>
-
-    <!-- TOAST -->
-    <div class="toasts" id="toasts"></div>
 
     <script src="api-handler-simple.js"></script>
     <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            if (typeof initGMR === 'function') initGMR();
+            if (typeof initializeGMR === 'function') initializeGMR();
         });
     </script>
 </body>
