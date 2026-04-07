@@ -19,11 +19,7 @@
           "El contrato pone fin a 39 años de presencia exclusiva de Travelex en el aeropuerto",
           "Con esta apertura, Global Exchange supera las 515 oficinas en 31 países y 90 aeropuertos internacionales"
         ],
-        "tags": [
-          "Heathrow",
-          "Expansión",
-          "Liderazgo"
-        ],
+        "tags": ["Heathrow", "Expansión", "Liderazgo"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Airport"
       },
       {
@@ -40,10 +36,7 @@
           "Digital-first approach with state-of-the-art technology highlighted in winning proposal",
           "Operations began January 2026, replacing Travelex after 39 years"
         ],
-        "tags": [
-          "Official",
-          "Partnership"
-        ],
+        "tags": ["Official", "Partnership"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Heathrow+Official"
       },
       {
@@ -61,11 +54,7 @@
           "Plantilla de 2.900 empleados, un 80% más que en 2020",
           "En 2026 la compañía celebra su 30 aniversario"
         ],
-        "tags": [
-          "Liderazgo",
-          "Expansión global",
-          "Asia-Pacífico"
-        ],
+        "tags": ["Liderazgo", "Expansión global", "Asia-Pacífico"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Global+Leadership"
       },
       {
@@ -83,10 +72,7 @@
           "Ingresos FY2024: £520,1 millones (-3% interanual)",
           "Nuevo CEO Philip Bowcock nombrado en julio 2025"
         ],
-        "tags": [
-          "Travelex",
-          "Competencia"
-        ],
+        "tags": ["Travelex", "Competencia"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Travelex"
       },
       {
@@ -105,11 +91,7 @@
           "Ingresos no transfronterizos ya representan el 41% del total",
           "Propuesta de dual listing en NYSE para Q2 2026"
         ],
-        "tags": [
-          "Wise",
-          "Fintech",
-          "Resultados"
-        ],
+        "tags": ["Wise", "Fintech", "Resultados"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Growth"
       },
       {
@@ -128,12 +110,7 @@
           "Plan de expansión a 200 cajeros en 2026 (Valencia, Málaga incluidas)",
           "ATMs permiten retiros sin comisión y dispensación instantánea de tarjetas"
         ],
-        "tags": [
-          "Revolut",
-          "Fintech",
-          "ATMs",
-          "Amenaza"
-        ],
+        "tags": ["Revolut", "Fintech", "ATMs", "Amenaza"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Revolut+Spain"
       },
       {
@@ -152,11 +129,7 @@
           "Alicante-Elche: 20,0M pasajeros (+8,5%)",
           "Madrid-Barajas: 68,2M pasajeros (+3,0%)"
         ],
-        "tags": [
-          "AENA",
-          "Aeropuertos",
-          "Tráfico"
-        ],
+        "tags": ["AENA", "Aeropuertos", "Tráfico"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=AENA+Record"
       },
       {
@@ -174,11 +147,7 @@
           "Reino Unido lidera como mercado emisor: 18,2 millones de turistas (+3,9%)",
           "Turismo estadounidense con fuerte crecimiento del gasto (+11,6%)"
         ],
-        "tags": [
-          "Turismo",
-          "España",
-          "Récord"
-        ],
+        "tags": ["Turismo", "España", "Récord"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Tourism+Record"
       },
       {
@@ -196,11 +165,7 @@
           "European Travel Commission proyecta +6,8% en llegadas internacionales a Europa",
           "Recuperación del turismo de larga distancia desde Asia-Pacífico"
         ],
-        "tags": [
-          "ACI",
-          "Previsiones",
-          "Global"
-        ],
+        "tags": ["ACI", "Previsiones", "Global"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ACI+Forecast"
       },
       {
@@ -218,11 +183,7 @@
           "Jóvenes de 18-27 años muestran mayor propensión a acumular efectivo como reserva",
           "Motivaciones: preocupaciones sobre ciberamenazas, privacidad y desconfianza en sistemas digitales"
         ],
-        "tags": [
-          "BCE",
-          "Efectivo",
-          "Eurozona"
-        ],
+        "tags": ["BCE", "Efectivo", "Eurozona"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ECB+Cash+Study"
       },
       {
@@ -240,11 +201,7 @@
           "España: límite de €1.000 para pagos en efectivo con empresarios (€10.000 para turistas no residentes)",
           "Operaciones de cambio de moneda en establecimientos autorizados están exentas del límite"
         ],
-        "tags": [
-          "Infraestructura",
-          "Crisis",
-          "Regulación"
-        ],
+        "tags": ["Infraestructura", "Crisis", "Regulación"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Critical+Infrastructure"
       },
       {
@@ -262,11 +219,7 @@
           "Jornada en el Congreso de los Diputados pidiendo reforzar el efectivo como infraestructura crítica",
           "Lanzamiento de Denaria Chile: primer capítulo en Latinoamérica"
         ],
-        "tags": [
-          "Denaria",
-          "Defensa efectivo",
-          "Congreso"
-        ],
+        "tags": ["Denaria", "Defensa efectivo", "Congreso"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Denaria+Platform"
       },
       {
@@ -277,13 +230,8 @@
         "url": "https://getd.es/",
         "medio": "Hugo (Comunicación)",
         "resumen": "Tikitaka tikitaka ti",
-        "highlights": [
-          "Taka tiki ti taka ti"
-        ],
-        "tags": [
-          "Molinos",
-          "Cosas"
-        ],
+        "highlights": ["Taka tiki ti taka ti"],
+        "tags": ["Molinos", "Cosas"],
         "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Prueba+Hugo"
       },
       {
@@ -294,9 +242,7 @@
         "url": "https://cadenaser.com/castillayleon/salamanca/",
         "medio": "Cadena SER",
         "resumen": "La primera edición de los Premios \"SER Únicos\" de Radio Salamanca congregó a autoridades y público en el Teatro Liceo, donde ocho distinguidos representantes de la excelencia salmantina fueron galardonados. El evento reconoció la labor de instituciones como el Centro de Investigación del Cáncer y personalidades destacadas como Vicente del Bosque.",
-        "highlights": [
-          "Global Exchange galardonada en categoría \"Empresa\""
-        ],
+        "highlights": ["Global Exchange galardonada en categoría \"Empresa\""],
         "tags": [],
         "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/Portada-10-scaled.jpg"
       },
@@ -308,9 +254,7 @@
         "url": "https://salamancartvaldia.es/",
         "medio": "SALAMANCArtv AL DÍA",
         "resumen": "Radio Salamanca celebró la primera edición de los premios 'SER Únicos' en el Teatro Liceo, reconociendo a figuras destacadas de la provincia en diversas categorías, incluyendo a Global Exchange como mejor empresa.",
-        "highlights": [
-          "Primera edición de premios 'SER Únicos' en Teatro Liceo"
-        ],
+        "highlights": ["Primera edición de premios 'SER Únicos' en Teatro Liceo"],
         "tags": [],
         "imagen": "https://www.caritasalamanca.org/wp-content/uploads/2025/12/04-7-1024x768.jpg"
       },
@@ -322,9 +266,7 @@
         "url": "https://www.fintechfutures.com/2025/12/wise-zengin-japan/",
         "medio": "Fintech Finance News",
         "resumen": "La conexión directa de Wise al sistema Zengin fortalece su infraestructura en Asia, reduciendo costos y tiempos de transferencia al mercado japonés, el tercero más grande del mundo.",
-        "highlights": [
-          "Primera fintech no bancaria conectada directamente al sistema de pagos doméstico japonés Zengin vía API"
-        ],
+        "highlights": ["Primera fintech no bancaria conectada directamente al sistema de pagos doméstico japonés Zengin vía API"],
         "tags": [],
         "imagen": "https://cdn.prod.website-files.com/64199d190fc7afa82666d89c/689128a0b1c9d15000f504ec_point-of-sale-payment-card-tap.webp"
       },
@@ -336,11 +278,9 @@
         "url": "https://wise.com/gb/blog/fee-review-december-2025",
         "medio": "Wise",
         "resumen": "Wise continúa presionando los márgenes de la industria con comisiones históricamente bajas, consolidando su propuesta de valor frente a la banca tradicional.",
-        "highlights": [
-          "Comisión promedio global bajó a 0,53% (la más baja en 5 años)"
-        ],
+        "highlights": ["Comisión promedio global bajó a 0,53% (la más baja en 5 años)"],
         "tags": [],
-        "imagen": "Clientes han movido £145.000 millones y ahorrado £2.000M vs bancos tradicionales"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Wise+Fees"
       },
       {
         "fecha": "2025-12-10",
@@ -350,11 +290,9 @@
         "url": "https://www.businessmole.com/eurochange-bronze-2025/",
         "medio": "BusinessMole",
         "resumen": "Eurochange mantiene su estatus en el mercado británico de cambio minorista, aunque se mantiene detrás de los líderes del sector.",
-        "highlights": [
-          "Tercer año consecutivo entre finalistas de British Travel Awards"
-        ],
+        "highlights": ["Tercer año consecutivo entre finalistas de British Travel Awards"],
         "tags": [],
-        "imagen": "Premio Bronce en categoría \"Best Retailer for Forex/Travel Money\""
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Eurochange+Bronze"
       },
       {
         "fecha": "2025-12-03",
@@ -364,11 +302,9 @@
         "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/turismo/",
         "medio": "INE / La Moncloa",
         "resumen": "España consolida su posición como segundo destino turístico mundial, con cifras que fundamentan la demanda continua de servicios de cambio de divisas.",
-        "highlights": [
-          "Turistas internacionales octubre: 9,2 millones (+3,2%)"
-        ],
+        "highlights": ["Turistas internacionales octubre: 9,2 millones (+3,2%)"],
         "tags": [],
-        "imagen": "Acumulado enero-octubre: 85,7 millones (+3,5%) - RÉCORD HISTÓRICO"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Turismo+Internacional"
       },
       {
         "fecha": "2025-12-12",
@@ -378,11 +314,9 @@
         "url": "https://www.aena.es/es/sala-de-prensa/aena-noviembre-2025.html",
         "medio": "Aena",
         "resumen": "Los récords continuos de AENA fundamentan la demanda de servicios cambiarios en aeropuertos españoles, con crecimientos especialmente fuertes en destinos turísticos como Málaga y Alicante.",
-        "highlights": [
-          "Red AENA España noviembre: 22.543.602 pasajeros (+4,6% interanual)"
-        ],
+        "highlights": ["Red AENA España noviembre: 22.543.602 pasajeros (+4,6% interanual)"],
         "tags": [],
-        "imagen": "Acumulado enero-noviembre España: 299.141.995 pasajeros (+4%)"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=AENA+Noviembre"
       },
       {
         "fecha": "2025-12-31",
@@ -392,11 +326,9 @@
         "url": "https://www.aviaciondigital.com/espana-liderazgo-aereo-2025/",
         "medio": "Aviación Digital",
         "resumen": "ENAIRE gestionó 2,5 millones de vuelos consolidando el liderazgo español. Las demoras cayeron un 7%, mientras el sector global enfrentó desafíos de seguridad significativos.",
-        "highlights": [
-          "ENAIRE gestionó 2,5 millones de vuelos (+14% vs. 2019)"
-        ],
+        "highlights": ["ENAIRE gestionó 2,5 millones de vuelos (+14% vs. 2019)"],
         "tags": [],
-        "imagen": "Demoras redujeron 7% respecto al año anterior"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ENAIRE+2025"
       },
       {
         "fecha": "2025-12-19",
@@ -406,11 +338,9 @@
         "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/cash-payments/",
         "medio": "Consilium (Europa)",
         "resumen": "La UE refuerza la protección del efectivo como medio legal de pago, asegurando su disponibilidad y aceptación ante la creciente digitalización de los pagos.",
-        "highlights": [
-          "Consejo UE adopta medidas para salvaguardar el efectivo como medio de pago"
-        ],
+        "highlights": ["Consejo UE adopta medidas para salvaguardar el efectivo como medio de pago"],
         "tags": [],
-        "imagen": "Prohibición de rechazo de pagos en efectivo por empresas (excepto ventas online)"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=EU+Cash+Council"
       },
       {
         "fecha": "2025-12-18",
@@ -420,9 +350,7 @@
         "url": "https://www.eleconomista.es/banca-finanzas/noticias/revolut-expansio-espana-2028.html",
         "medio": "El Economista",
         "resumen": "Revolut intensifica su apuesta por España como mercado estratégico, compitiendo directamente con la banca tradicional mediante inversiones masivas en infraestructura local y talento.",
-        "highlights": [
-          "800 nuevos empleados hasta 2028: 500 Madrid (Paseo Castellana), 300 Barcelona (Av. Diagonal)"
-        ],
+        "highlights": ["800 nuevos empleados hasta 2028: 500 Madrid (Paseo Castellana), 300 Barcelona (Av. Diagonal)"],
         "tags": [],
         "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/London_Revolut.jpg"
       },
@@ -434,9 +362,7 @@
         "url": "https://www.visa.com/newsroom/digital-wallets-europe-2025",
         "medio": "VISA",
         "resumen": "La apertura de iOS a carteras de terceros bajo la DMA acelera la competencia en pagos móviles europeos, con BBVA Pay liderando la innovación en España.",
-        "highlights": [
-          "Visa lanza 3 nuevas wallets en Europa: BBVA Pay, Klarna, Vipps MobilePay"
-        ],
+        "highlights": ["Visa lanza 3 nuevas wallets en Europa: BBVA Pay, Klarna, Vipps MobilePay"],
         "tags": [],
         "imagen": "https://www.bbva.com/wp-content/uploads/2025/10/bbva-pay-wallet-compatible-iphone.jpg"
       },
@@ -448,11 +374,9 @@
         "url": "https://www.coindesk.com/policy/2025/12/euro-stablecoin-mica/",
         "medio": "Coindesk",
         "resumen": "MiCA está remodelando el mercado de stablecoins en Europa, favoreciendo emisores conformes como Circle mientras Tether pierde terreno.",
-        "highlights": [
-          "Un año de MiCA: 102 CASPs autorizados y 30 emisores activos de stablecoins"
-        ],
+        "highlights": ["Un año de MiCA: 102 CASPs autorizados y 30 emisores activos de stablecoins"],
         "tags": [],
-        "imagen": "Capitalización de mercado de stablecoins en euros se duplicó"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=MiCA+Stablecoins"
       },
       {
         "fecha": "2025-12-19",
@@ -462,11 +386,9 @@
         "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/digital-euro/",
         "medio": "Consilium (Europa)",
         "resumen": "Hito regulatorio clave que marca el camino hacia la implementación del euro digital. Servicio gratuito para consumidores y límites de tenencia buscan equilibrar adopción con estabilidad financiera.",
-        "highlights": [
-          "Consejo UE acuerda posición sobre marco regulatorio del euro digital"
-        ],
+        "highlights": ["Consejo UE acuerda posición sobre marco regulatorio del euro digital"],
         "tags": [],
-        "imagen": "Servicio gratuito para consumidores finales"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Euro+Digital+Council"
       },
       {
         "fecha": "2025-12-19",
@@ -476,11 +398,9 @@
         "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251219.en.html",
         "medio": "ECB",
         "resumen": "El BCE ha completado la fase de preparación técnica e insta al legislador europeo a avanzar con el marco legal para el euro digital.",
-        "highlights": [
-          "BCE completa fase de preparación técnica del euro digital"
-        ],
+        "highlights": ["BCE completa fase de preparación técnica del euro digital"],
         "tags": [],
-        "imagen": "40% de consumidores han oído hablar del euro digital (vs 9% en 2021)"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=ECB+Digital+Euro"
       },
       {
         "fecha": "2025-12-01",
@@ -490,9 +410,7 @@
         "url": "https://www.fintechglobal.com/psd3-psr-analysis-2025/",
         "medio": "FinTech Global",
         "resumen": "PSD3/PSR representa la mayor reforma regulatoria del sector de pagos desde PSD2, enfatizando protección al consumidor y prevención de fraude.",
-        "highlights": [
-          "Mayor reforma del sector pagos desde PSD2"
-        ],
+        "highlights": ["Mayor reforma del sector pagos desde PSD2"],
         "tags": [],
         "imagen": "https://technoxander.com/wp-content/uploads/2024/06/Verification-of-Payee-Smart-Data.webp"
       },
@@ -504,11 +422,9 @@
         "url": "https://www.efe.com/denaria-limite-efectivo-3000-euros/",
         "medio": "EFE / Investing",
         "resumen": "La Plataforma Denaria intensifica sus esfuerzos de lobby para flexibilizar las restricciones al efectivo en España, argumentando inclusión financiera y libertad de elección.",
-        "highlights": [
-          "Firma de acuerdo marco entre Madrid Foro Empresarial y Plataforma Denaria"
-        ],
+        "highlights": ["Firma de acuerdo marco entre Madrid Foro Empresarial y Plataforma Denaria"],
         "tags": [],
-        "imagen": "Reclaman subir límite de pago en efectivo de €1.000 a €3.000"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Denaria+Limite"
       },
       {
         "fecha": "2025-12-16",
@@ -518,11 +434,9 @@
         "url": "https://www.elespanol.com/economia/bizum-control-fiscal-2026/",
         "medio": "El Español",
         "resumen": "Desde 1 enero 2026 Hacienda recibirá informes mensuales de todos los pagos digitales, eliminando el umbral de €3.000 anuales para reportar. Solo afecta a empresarios y autónomos.",
-        "highlights": [
-          "Desde 1 enero 2026: Hacienda recibirá informes mensuales de pagos digitales"
-        ],
+        "highlights": ["Desde 1 enero 2026: Hacienda recibirá informes mensuales de pagos digitales"],
         "tags": [],
-        "imagen": "Eliminación del umbral de €3.000 anuales para reportar"
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=Bizum+Fiscal"
       },
       {
         "fecha": "2026-02-24",
@@ -538,13 +452,7 @@
           "Tipo de cambio oficial se mantiene en 1 USD = 24 CUP (personas jurídicas) y 1 USD = 120 CUP (mercado cambiario estatal)",
           "El tipo de cambio 'flotante' introducido en diciembre sigue muy distante de la cotización informal"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "cuba",
-          "mercado-informal",
-          "dolar",
-          "euro"
-        ],
+        "tags": ["cambio-de-divisas", "cuba", "mercado-informal", "dolar", "euro"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -560,21 +468,14 @@
         "alcance": "Internacional",
         "url": "https://www.defenseworld.net/2026/02/24/western-union-q4-earnings-call-highlights.html",
         "medio": "Defense World",
-        "resumen": "Resumen de la conferencia de resultados del Q4 2025 de Western Union, donde los ejecutivos destacaron los Servicios al Consumidor como motor clave de crecimiento. En el cuarto trimestre, este segmento representó el 14% de los ingresos totales con un crecimiento ajustado del 26%, impulsado por el negocio de travel money (incluyendo eurochange) y pagos de facturas.",
+        "resumen": "Resumen de la conferencia de resultados del Q4 2025 de Western Union, donde los ejecutivos destacaron los Servicios al Consumidor como motor clave de crecimiento.",
         "highlights": [
           "Los ingresos ajustados de Consumer Services crecieron un 26% en Q4 y casi un 30% en el año completo, impulsados por eurochange",
           "El CEO McGranahan proyectó que el negocio de travel money se acercará a 150 millones de dólares en ingresos en 2026",
           "Western Union describió el mercado de travel money como fragmentado, con oportunidades de expansión geográfica",
           "La empresa espera cerrar la adquisición de Intermex en Q2 2026"
         ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "reino-unido",
-          "estados-unidos",
-          "resultados-financieros",
-          "travel-money"
-        ],
+        "tags": ["eurochange", "western-union", "reino-unido", "estados-unidos", "resultados-financieros", "travel-money"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -585,7 +486,7 @@
         "alcance": "Internacional",
         "url": "https://pressat.co.uk/releases/eurochange-wins-best-currency-travel-card-at-the-moneynet-awards-f9a45fe2bb30c1bb5cb7bef72dfdd937/",
         "medio": "Pressat",
-        "resumen": "eurochange, el proveedor especialista de cambio de divisas del Reino Unido, ganó el premio 'Best Currency Travel Card' en los Moneynet Awards 2026. El premio reconoce la tarjeta eurochange Travel Money Card, respaldada por Mastercard, por su facilidad de uso y adecuación para el viajero moderno.",
+        "resumen": "eurochange, el proveedor especialista de cambio de divisas del Reino Unido, ganó el premio 'Best Currency Travel Card' en los Moneynet Awards 2026.",
         "highlights": [
           "eurochange ganó el premio Moneynet Awards 2026 a la 'Mejor Tarjeta de Viaje de Divisas'",
           "La tarjeta es emitida por PrePay Technologies y funciona con licencia de Mastercard International",
@@ -593,14 +494,7 @@
           "eurochange cuenta con más de 240 sucursales en el Reino Unido",
           "El premio se suma a otros galardones: Good Business Pays Fast Payer 2025, Bronze en British Travel Awards 2025"
         ],
-        "tags": [
-          "eurochange",
-          "reino-unido",
-          "premios",
-          "tarjeta-viaje",
-          "moneynet-awards",
-          "mastercard"
-        ],
+        "tags": ["eurochange", "reino-unido", "premios", "tarjeta-viaje", "moneynet-awards", "mastercard"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -616,21 +510,14 @@
         "alcance": "Nacional",
         "url": "https://www.elconfidencialdigital.com/articulo/dinero/revolut-gana-peso-espana-estrategia-que-cambia-reglas/202602231313121005411.html",
         "medio": "El Confidencial Digital",
-        "resumen": "Revolut se ha consolidado como uno de los grandes actores de la banca digital en Europa y avanza en España con una estrategia cada vez más ambiciosa. Su crecimiento en clientes, productos y servicios anticipa un movimiento que puede alterar el equilibrio del sector financiero tradicional español.",
+        "resumen": "Revolut se ha consolidado como uno de los grandes actores de la banca digital en Europa y avanza en España con una estrategia cada vez más ambiciosa.",
         "highlights": [
           "Revolut opera bajo licencia bancaria europea y ofrece servicios financieros regulados en España",
           "La compañía ha reforzado sus sistemas de autenticación, verificación biométrica y control antifraude",
           "Revolut nació como alternativa al cambio de divisas tradicional con comisiones reducidas",
           "Permite pagos en diferentes divisas con tipo de cambio interbancario"
         ],
-        "tags": [
-          "revolut",
-          "cambio-de-divisas",
-          "espana",
-          "fintech",
-          "banca-digital",
-          "expansion"
-        ],
+        "tags": ["revolut", "cambio-de-divisas", "espana", "fintech", "banca-digital", "expansion"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -641,7 +528,7 @@
         "alcance": "Nacional",
         "url": "https://www.bbva.com/es/salud-financiera/pagar-con-tarjeta-o-cambiar-moneda-que-opcion-es-mas-rentable-si-viajas-al-extranjero/",
         "medio": "BBVA",
-        "resumen": "Guía actualizada de BBVA que compara las opciones de pago con tarjeta frente al cambio de moneda al viajar al extranjero. Advierte que cualquier cambio de moneda implica comisión y que el tipo de cambio es libre en España, donde los tipos oficiales son solo orientativos.",
+        "resumen": "Guía actualizada de BBVA que compara las opciones de pago con tarjeta frente al cambio de moneda al viajar al extranjero.",
         "highlights": [
           "Cualquier cambio de moneda implica una comisión; si al volver necesitas reconvertir, pagas de nuevo",
           "El tipo de cambio es libre en España; los tipos oficiales son solo orientativos",
@@ -649,14 +536,7 @@
           "Las comisiones bancarias por cambio de divisas oscilan entre un 3% y un 5%",
           "Aconseja evitar el DCC (Dynamic Currency Conversion) y elegir siempre pago en moneda local"
         ],
-        "tags": [
-          "cambio-de-moneda",
-          "cambio-de-divisas",
-          "espana",
-          "turismo",
-          "comisiones",
-          "tarjetas-viaje"
-        ],
+        "tags": ["cambio-de-moneda", "cambio-de-divisas", "espana", "turismo", "comisiones", "tarjetas-viaje"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -667,21 +547,14 @@
         "alcance": "Internacional",
         "url": "https://www.businesswire.com/news/home/20260220258915/en/Western-Union-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
         "medio": "Business Wire",
-        "resumen": "Western Union reportó resultados del Q4 y año completo 2025. Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la expansión del negocio Travel Money, que incluyó la adquisición de Eurochange Limited, y mayores ingresos de pagos de facturas.",
+        "resumen": "Western Union reportó resultados del Q4 y año completo 2025. Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la expansión del negocio Travel Money.",
         "highlights": [
           "Los ingresos del segmento Consumer Services crecieron un 15% reportado y un 26% ajustado en Q4, gracias a la adquisición de Eurochange Limited",
           "EPS ajustado de Q4 fue $0.45, superando el consenso de $0.43",
           "Guía 2026: crecimiento de ingresos GAAP del 5%-8% y EPS ajustado de $1.75-$1.85",
           "Dividendo de $0.235 por acción aprobado para Q1 2026"
         ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "resultados-financieros",
-          "adquisicion"
-        ],
+        "tags": ["eurochange", "western-union", "estados-unidos", "reino-unido", "resultados-financieros", "adquisicion"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -697,21 +570,14 @@
         "alcance": "Internacional",
         "url": "https://www.fool.com/earnings/call-transcripts/2026/02/20/western-union-wu-q4-2025-earnings-transcript/",
         "medio": "The Motley Fool",
-        "resumen": "Transcripción completa de la conferencia de resultados Q4 2025 de Western Union. El CEO Devin McGranahan destacó que los ingresos ajustados de Consumer Services subieron un 26% en el trimestre y un 30% en el año, impulsados por el crecimiento en travel money liderado por eurochange.",
+        "resumen": "Transcripción completa de la conferencia de resultados Q4 2025 de Western Union.",
         "highlights": [
           "McGranahan señaló: 'Consumer Services adjusted revenue was up 26% in the quarter and roughly 30% for the full year, driven by growth in travel money, led by Eurochange'",
           "El negocio de travel money se proyecta a alcanzar 150 millones de dólares en ingresos en 2026",
           "Western Union ve oportunidad en un mercado de travel money fragmentado donde grandes jugadores se retiraron desde el COVID",
           "La empresa espera cerrar la adquisición de Intermex en Q2 2026"
         ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "resultados-financieros",
-          "travel-money"
-        ],
+        "tags": ["eurochange", "western-union", "estados-unidos", "reino-unido", "resultados-financieros", "travel-money"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -739,7 +605,7 @@
         "alcance": "Internacional",
         "url": "https://247wallst.com/investing/2026/02/20/does-western-unions-earnings-beat-mean-its-transition-is-working/",
         "medio": "24/7 Wall St.",
-        "resumen": "Artículo de análisis sobre los resultados de Western Union Q4 2025. Destaca que Consumer Services fue el único punto brillante, con ingresos que subieron un 15% en Q4 a 136,9 millones de dólares, impulsados por la adquisición de Eurochange Limited expandiendo el negocio Travel Money de WU.",
+        "resumen": "Artículo de análisis sobre los resultados de Western Union Q4 2025.",
         "highlights": [
           "Consumer Services revenue creció un 15% en Q4 a 136,9 millones de dólares, impulsado por la adquisición de Eurochange Limited",
           "El negocio core de Consumer Money Transfer cayó un 7% interanual a 871,5 millones de dólares",
@@ -747,14 +613,7 @@
           "Consenso de analistas es 'Reduce' con 5 Sell, 10 Hold y solo 1 Buy",
           "El flujo de caja operativo cayó un 48% desde 2021"
         ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "analisis-financiero",
-          "adquisicion"
-        ],
+        "tags": ["eurochange", "western-union", "estados-unidos", "reino-unido", "analisis-financiero", "adquisicion"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -770,24 +629,16 @@
         "alcance": "Internacional",
         "url": "https://www.investing.com/news/earnings/western-union-falls-as-revenue-misses-analyst-estimates-4515973",
         "medio": "Investing.com",
-        "resumen": "Investing.com reportó que las acciones de Western Union cayeron tras no alcanzar las estimaciones de ingresos de los analistas. No obstante, el segmento Consumer Services creció un 26% ajustado, impulsado por la expansión del negocio Travel Money incluyendo la adquisición de Eurochange Limited.",
+        "resumen": "Investing.com reportó que las acciones de Western Union cayeron tras no alcanzar las estimaciones de ingresos de los analistas.",
         "highlights": [
           "Los ingresos del segmento Consumer Services crecieron un 26% ajustado, impulsados por la adquisición de Eurochange Limited",
           "Las transacciones de Branded Digital crecieron un 13%, representando el 30% de ingresos totales de Consumer Money Transfer",
           "Guía fiscal 2026: EPS ajustado de $1.75-$1.85 y crecimiento de ingresos del 6%-9% ajustado",
           "La caída del precio de la acción refleja la debilidad en el negocio core de remesas"
         ],
-        "tags": [
-          "eurochange",
-          "western-union",
-          "estados-unidos",
-          "reino-unido",
-          "resultados-financieros",
-          "bolsa"
-        ],
+        "tags": ["eurochange", "western-union", "estados-unidos", "reino-unido", "resultados-financieros", "bolsa"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'EUROCHANGE': Tras búsqueda exhaustiva en medios prioritarios españoles (expansion.com, eleconomista.es, elpais.com, elmundo.es, lavanguardia.com, cincodias.elpais.com), británicos (Daily Mail, Guardian, Mirror, Metro, The Sun, The Times, cityam.com, thisismoney.co.uk, travelweekly.co.uk, ttgmedia.com) e internacionales (Bloomberg, Reuters), se encontraron únicamente 6 historias verificadas que mencionan 'Eurochange' entre el 25 de enero y el 24 de febrero de 2026. No se alcanza el objetivo de 40 artículos. Las menciones se concentran en dos eventos: (1) Resultados Q4 2025 de Western Union (20 febrero), donde Eurochange Limited se cita como motor del crecimiento del 26% en Consumer Services; y (2) Premio Moneynet Awards 2026 a la 'Best Currency Travel Card' de eurochange (23 febrero). Eurochange no es una empresa cotizada por sí misma (fue adquirida por Western Union en abril 2025), lo que limita la cobertura mediática independiente. Ningún medio español ni británico nacional publicó artículos exclusivamente sobre eurochange en este período."
+        "otros_medios": []
       },
       {
         "fecha": "2026-02-20",
@@ -796,7 +647,7 @@
         "alcance": "Internacional",
         "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-20-febrero-2026-a-cuanto-cotiza-en-vivo-atm",
         "medio": "Milenio",
-        "resumen": "El peso mexicano avanzó 0,8% cerrando la semana a 17,11 pesos por dólar tras el fallo de la Corte Suprema de EE.UU. contra los aranceles generalizados de Trump. En respuesta, Trump anunció un arancel global del 10% para sustituir las tarifas anuladas. El artículo incluye información sobre casas de cambio de divisas.",
+        "resumen": "El peso mexicano avanzó 0,8% cerrando la semana a 17,11 pesos por dólar tras el fallo de la Corte Suprema de EE.UU. contra los aranceles generalizados de Trump.",
         "highlights": [
           "Peso mexicano cerró en 17,11 unidades por dólar, avanzando 0,8% en la semana",
           "Corte Suprema de EE.UU. falló contra aranceles generalizados de Trump",
@@ -804,14 +655,7 @@
           "Tipo de cambio FIX de Banxico: 17,1722 pesos por dólar",
           "Casas de cambio tienen límite de compra de 1.500 dólares"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "aranceles"
-        ],
+        "tags": ["cambio-de-divisas", "mexico", "tipo-de-cambio", "dolar", "peso-mexicano", "aranceles"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -822,20 +666,14 @@
         "alcance": "Internacional",
         "url": "https://www.ambito.com/economia/el-error-mas-grande-que-podes-cometer-la-hora-cambiar-dolares-n6248406",
         "medio": "Ámbito",
-        "resumen": "Artículo de Ámbito (Argentina) que advierte sobre el error de cambiar moneda en aeropuertos, donde las casas de cambio suelen ofrecer cotizaciones menos favorables. Recomienda planificar el cambio de moneda antes del viaje y comparar tasas online.",
+        "resumen": "Artículo de Ámbito (Argentina) que advierte sobre el error de cambiar moneda en aeropuertos.",
         "highlights": [
           "Casas de cambio en aeropuertos ofrecen cotizaciones menos favorables que en centros de ciudades",
           "Los locales aeroportuarios enfrentan alquileres elevados, seguridad y horarios extendidos que encarecen el tipo de cambio",
           "Recomendación: planificar el cambio de moneda antes del viaje y comparar tasas online",
           "Opción alternativa: retirar efectivo en cajeros automáticos del destino evaluando comisiones"
         ],
-        "tags": [
-          "cambio-de-moneda",
-          "argentina",
-          "aeropuerto",
-          "consejos-viaje",
-          "casas-de-cambio"
-        ],
+        "tags": ["cambio-de-moneda", "argentina", "aeropuerto", "consejos-viaje", "casas-de-cambio"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -846,7 +684,7 @@
         "alcance": "Internacional",
         "url": "https://criptotendencia.com/2026/02/19/china-y-rwa-el-gigante-asiatico-define-las-reglas-del-juego-para-los-activos-digitales/",
         "medio": "CriptoTendencia",
-        "resumen": "China publicó el 6 de febrero de 2026 un nuevo marco regulatorio para activos virtuales que clasifica las stablecoins como activos con funciones de curso legal. El intercambio de estas monedas por divisas tradicionales podría ser procesado como 'operaciones de cambio de divisas encubiertas', elevando drásticamente el riesgo para los mercados OTC.",
+        "resumen": "China publicó el 6 de febrero de 2026 un nuevo marco regulatorio para activos virtuales que clasifica las stablecoins como activos con funciones de curso legal.",
         "highlights": [
           "El PBOC y siete agencias emitieron nueva normativa sobre riesgos de monedas virtuales (Yin Fa [2026] No. 42)",
           "Stablecoins clasificadas formalmente como activos con funciones de curso legal",
@@ -854,13 +692,7 @@
           "La Administración Estatal de Divisas (SAFE) es una de las entidades supervisoras",
           "El nuevo Aviso anula oficialmente el restrictivo 'Aviso 924' de 2021"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "china",
-          "regulacion",
-          "criptomonedas",
-          "stablecoins"
-        ],
+        "tags": ["cambio-de-divisas", "china", "regulacion", "criptomonedas", "stablecoins"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -871,7 +703,7 @@
         "alcance": "Internacional",
         "url": "https://retailtimes.co.uk/travelex-plus-sees-over-150000-members-sign-up-within-first-10-months/",
         "medio": "Retail Times",
-        "resumen": "El programa de fidelización Travelex Plus ha superado los 150.000 miembros en menos de un año desde su lanzamiento en el Reino Unido. Los miembros acceden a tarifas exclusivas, descuentos, congelación de precios y alertas de tipos de cambio favorables, lo que ha impulsado significativamente el engagement del cliente.",
+        "resumen": "El programa de fidelización Travelex Plus ha superado los 150.000 miembros en menos de un año desde su lanzamiento en el Reino Unido.",
         "highlights": [
           "Más de 150.000 miembros captados en los primeros 10 meses del programa Travelex Plus en el Reino Unido",
           "Los miembros de Travelex Plus adquieren de media un 25% más de divisa que los no miembros",
@@ -879,13 +711,7 @@
           "Simon Jackson, Chief Customer Officer: 'Los clientes acceden a nuestras mejores tarifas en efectivo y tarjeta al unirse a Travelex Plus'",
           "El programa ofrece comisión 0%, descuentos en la primera compra y ventas exclusivas periódicas"
         ],
-        "tags": [
-          "travelex",
-          "travelex-plus",
-          "reino-unido",
-          "programa-fidelizacion",
-          "tipo-de-cambio"
-        ],
+        "tags": ["travelex", "travelex-plus", "reino-unido", "programa-fidelizacion", "tipo-de-cambio"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -905,7 +731,7 @@
         "alcance": "Internacional",
         "url": "https://www.directoriocubano.info/actualidad/mercado-informal-y-oficial-de-divisas-en-cuba-hoy-tasas-actualizadas/",
         "medio": "Directorio Cubano",
-        "resumen": "El dólar alcanza los 500 CUP en el mercado informal cubano, mientras que la tasa oficial se mantiene en 458 CUP. El euro cotiza a 560 CUP informalmente frente a los 542,41 CUP oficiales. La brecha creciente entre ambos tipos de cambio refleja la escasez de moneda extranjera y la alta demanda de divisas en la isla.",
+        "resumen": "El dólar alcanza los 500 CUP en el mercado informal cubano, mientras que la tasa oficial se mantiene en 458 CUP.",
         "highlights": [
           "Dólar en mercado informal: 500 CUP vs tasa oficial 458 CUP",
           "Euro informal: 560 CUP vs oficial 542,41 CUP",
@@ -913,13 +739,7 @@
           "Operaciones Zelle valoradas en 493,62 CUP",
           "Peso mexicano sube hasta 29,19 CUP en mercado informal"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "cuba",
-          "mercado-informal",
-          "dolar",
-          "euro"
-        ],
+        "tags": ["cambio-de-divisas", "cuba", "mercado-informal", "dolar", "euro"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -930,7 +750,7 @@
         "alcance": "Internacional",
         "url": "https://www.investing.com/news/company-news/wise-plc-appoints-computershare-as-new-share-registrar-93CH-4507606",
         "medio": "Investing.com",
-        "resumen": "Wise plc nombró a Computershare Investor Services PLC como nuevo registrador de acciones, sustituyendo a Equiniti Limited con efecto inmediato. Las acciones de Wise cayeron un 1,6% a 848 peniques ese día. Los inversores están atentos a la doble cotización prevista en EE.UU. para el primer semestre de 2026.",
+        "resumen": "Wise plc nombró a Computershare Investor Services PLC como nuevo registrador de acciones, sustituyendo a Equiniti Limited.",
         "highlights": [
           "Computershare reemplaza a Equiniti como registrador de acciones de Wise, efectivo 16 febrero 2026",
           "Acciones Wise Clase A cayeron 1,6% a 848 peniques en Londres",
@@ -938,14 +758,7 @@
           "Wise cuenta con aproximadamente 15,6 millones de clientes y gestiona 40 divisas",
           "La doble cotización en EE.UU. está prevista para H1 2026"
         ],
-        "tags": [
-          "wise",
-          "fintech",
-          "reino-unido",
-          "bolsa",
-          "cotizacion",
-          "corporativo"
-        ],
+        "tags": ["wise", "fintech", "reino-unido", "bolsa", "cotizacion", "corporativo"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -965,7 +778,7 @@
         "alcance": "Internacional",
         "url": "https://lopezdoriga.com/economia-y-finanzas/el-peso-toca-su-mejor-nivel-del-ano-y-cierra-en-17-14-por-dolar/",
         "medio": "López-Dóriga Digital",
-        "resumen": "El tipo de cambio cerró la séptima semana de 2026 con su menor nivel en lo que va del año, un registro no visto desde junio de 2024, cotizando 17,14 pesos por dólar. El avance semanal del peso fue del 0,67%, beneficiado por la debilidad del dólar ante datos económicos negativos en EE.UU.",
+        "resumen": "El tipo de cambio cerró la séptima semana de 2026 con su menor nivel en lo que va del año, cotizando 17,14 pesos por dólar.",
         "highlights": [
           "Peso mexicano cerró en 17,14 por dólar, mejor nivel del año 2026",
           "Nivel no visto desde junio de 2024",
@@ -973,13 +786,7 @@
           "Debilidad del dólar por datos económicos negativos en EE.UU. y contracción en ventas minoristas",
           "China pidió a instituciones financieras reducir exposición a bonos del Tesoro estadounidense"
         ],
-        "tags": [
-          "cambio-de-moneda",
-          "mexico",
-          "tipo-de-cambio",
-          "peso-dolar",
-          "mercado-cambiario"
-        ],
+        "tags": ["cambio-de-moneda", "mexico", "tipo-de-cambio", "peso-dolar", "mercado-cambiario"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -990,7 +797,7 @@
         "alcance": "Internacional",
         "url": "https://www.bloomberg.com/news/articles/2026-02-13/apollo-in-talks-to-offer-funds-to-revolut-customers-in-europe",
         "medio": "Bloomberg",
-        "resumen": "Apollo Global Management está en conversaciones preliminares con Revolut para ofrecer sus fondos de inversión a clientes minoristas en Europa a través de la plataforma fintech. Revolut también mantiene conversaciones exploratorias con Blackstone para ofrecer fondos a clientes de banca privada.",
+        "resumen": "Apollo Global Management está en conversaciones preliminares con Revolut para ofrecer sus fondos de inversión a clientes minoristas en Europa a través de la plataforma fintech.",
         "highlights": [
           "Apollo sería uno de los gestores de capital privado que ofrecerían vehículos a través de la oferta de mercados privados de Revolut",
           "Revolut planea lanzar su plataforma de mercados privados a lo largo de 2026",
@@ -998,15 +805,7 @@
           "Revolut también negocia con Blackstone para ofrecer fondos a clientes de banca privada",
           "Revolut está reclutando banqueros de inversión junior, gestores de activos y asesores de capital privado"
         ],
-        "tags": [
-          "revolut",
-          "fintech",
-          "europa",
-          "wealth-management",
-          "mercados-privados",
-          "apollo",
-          "blackstone"
-        ],
+        "tags": ["revolut", "fintech", "europa", "wealth-management", "mercados-privados", "apollo", "blackstone"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -1034,20 +833,14 @@
         "alcance": "Internacional",
         "url": "https://es-us.noticias.yahoo.com/falso-donald-trump-anunci%C3%B3-d%C3%B3lar-040614722.html",
         "medio": "Yahoo Noticias",
-        "resumen": "Verificación de hechos que desmiente la desinformación sobre un supuesto anuncio de Donald Trump de cambiar la moneda oficial de Venezuela al dólar. El artículo 318 de la Constitución venezolana establece el bolívar como la unidad monetaria y cualquier cambio de moneda requeriría reforma constitucional.",
+        "resumen": "Verificación de hechos que desmiente la desinformación sobre un supuesto anuncio de Donald Trump de cambiar la moneda oficial de Venezuela al dólar.",
         "highlights": [
           "Es falso que Trump anunció cambio de moneda en Venezuela; no existe decreto oficial",
           "Artículo 318 de la Constitución de Venezuela establece el bolívar como moneda nacional",
           "Un cambio de moneda requeriría reforma constitucional o enmienda",
           "El Banco Central de Venezuela tiene potestad exclusiva sobre decisiones monetarias"
         ],
-        "tags": [
-          "cambio-de-moneda",
-          "venezuela",
-          "desinformacion",
-          "dolar",
-          "bolivar"
-        ],
+        "tags": ["cambio-de-moneda", "venezuela", "desinformacion", "dolar", "bolivar"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -1058,22 +851,15 @@
         "alcance": "Internacional",
         "url": "https://www.unotv.com/negocios/antes-de-facturar-consulta-el-tipo-de-cambio-de-monedas-y-dolar-enero-2026/",
         "medio": "UnoTV",
-        "resumen": "El Banco de México (Banxico) publicó en el Diario Oficial de la Federación la equivalencia de las principales monedas del mundo frente al dólar correspondiente a enero de 2026. Este tipo de cambio es obligatorio para efectos fiscales, facturación electrónica e importaciones/exportaciones.",
+        "resumen": "El Banco de México (Banxico) publicó en el Diario Oficial de la Federación la equivalencia de las principales monedas del mundo frente al dólar correspondiente a enero de 2026.",
         "highlights": [
           "Banxico publicó las equivalencias oficiales de monedas frente al dólar para enero 2026",
           "Tipo de cambio obligatorio para efectos fiscales según artículo 20 del Código Fiscal de la Federación",
           "Indispensable para facturación electrónica en operaciones en moneda extranjera"
         ],
-        "tags": [
-          "cambio-de-moneda",
-          "mexico",
-          "tipo-de-cambio",
-          "banxico",
-          "fiscal"
-        ],
+        "tags": ["cambio-de-moneda", "mexico", "tipo-de-cambio", "banxico", "fiscal"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'CAMBIO DE MONEDA': Tras búsqueda exhaustiva con más de 14 consultas incluyendo búsquedas site-specific en los medios prioritarios españoles (El País, ABC, La Vanguardia, El Mundo, El Confidencial, Expansión, Cinco Días, El Economista, Europa Press, EFE, COPE, Cadena SER, RTVE), medios regionales de Castilla y León y Salamanca, la frase exacta 'cambio de moneda' aparece abrumadoramente en páginas comerciales/de servicios (Exact Change, Eurochange, Global Exchange, Cambiator) y no en artículos periodísticos. Los medios españoles prioritarios no produjeron resultados indexados con esta frase exacta en el período solicitado. La cobertura periodística de temas cambiarios en español utiliza predominantemente 'tipo de cambio', 'cambio de divisas' o 'mercado cambiario'. Se encontraron solo 5 artículos verificados. Objetivo: 40."
+        "otros_medios": []
       },
       {
         "fecha": "2026-01-30",
@@ -1082,21 +868,14 @@
         "alcance": "Internacional",
         "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-30-enero-2026-a-cuanto-cotiza-en-vivo-atm",
         "medio": "Milenio",
-        "resumen": "El peso mexicano se depreció 1,46% cerrando la semana a 17,46 unidades por dólar tras la nominación de Kevin Warsh para dirigir la Fed. México fue amenazado con aranceles por suministrar petróleo a Cuba. El peso cerró enero con rendimiento acumulado del 3%, su mejor desempeño desde junio 2025.",
+        "resumen": "El peso mexicano se depreció 1,46% cerrando la semana a 17,46 unidades por dólar tras la nominación de Kevin Warsh para dirigir la Fed.",
         "highlights": [
           "Peso cerró en 17,46 por dólar con depreciación de 1,46% en la jornada",
           "Kevin Warsh nominado para dirigir la Reserva Federal",
           "EE.UU. amenazó con aranceles a países que suministran petróleo a Cuba, incluido México",
           "Peso acumuló rendimiento de 3% en enero, mejor desempeño desde junio 2025"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "fed"
-        ],
+        "tags": ["cambio-de-divisas", "mexico", "tipo-de-cambio", "dolar", "peso-mexicano", "fed"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -1107,7 +886,7 @@
         "alcance": "Nacional",
         "url": "https://www.elespanol.com/invertia/empresas/banca/20260129/revolut-planea-alcanzar-millones-clientes-espana-mandos-equipo-audi-formula/1003744107692_0.html",
         "medio": "El Español / Invertia",
-        "resumen": "Revolut planea alcanzar los 8 millones de clientes en España en 2026, lo que supondría un crecimiento del 33% respecto al año anterior. El neobanco ha fichado a Santiago Pérez Olano como nuevo CEO en España y ha suscrito un acuerdo trianual con Audi para patrocinar su equipo en la Fórmula 1.",
+        "resumen": "Revolut planea alcanzar los 8 millones de clientes en España en 2026, lo que supondría un crecimiento del 33% respecto al año anterior.",
         "highlights": [
           "Revolut cerró 2025 con más de 6 millones de clientes en España",
           "Objetivo de 8 millones de clientes en España para cierre de 2026 (crecimiento del 33%)",
@@ -1115,14 +894,7 @@
           "Prevé reforzar oficinas con 800 nuevos empleos y desplegar 200 cajeros automáticos físicos en 2026",
           "Más de 1.000 empresas y comercios se adhieren cada semana a Revolut Business en España"
         ],
-        "tags": [
-          "revolut",
-          "espana",
-          "fintech",
-          "audi-f1",
-          "expansion",
-          "banca-digital"
-        ],
+        "tags": ["revolut", "espana", "fintech", "audi-f1", "expansion", "banca-digital"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -1133,21 +905,14 @@
         "alcance": "Internacional",
         "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-29-enero-2026-a-cuanto-cotiza-en-vivo-atm",
         "medio": "Milenio",
-        "resumen": "El peso mexicano se depreció 0,24% cerrando a 17,22 unidades por dólar. La sesión estuvo marcada por una llamada entre Trump y Sheinbaum sobre comercio y seguridad, mientras preparan la revisión del T-MEC. La Fed mantuvo tasas de interés sin cambios.",
+        "resumen": "El peso mexicano se depreció 0,24% cerrando a 17,22 unidades por dólar.",
         "highlights": [
           "Tipo de cambio cerró en 17,22 pesos por dólar",
           "Llamada telefónica Trump-Sheinbaum sobre comercio y seguridad",
           "Fed mantuvo tasas de interés sin cambios",
           "Tipo de cambio FIX de Banxico: 17,2532 pesos por dólar"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "t-mec"
-        ],
+        "tags": ["cambio-de-divisas", "mexico", "tipo-de-cambio", "dolar", "peso-mexicano", "t-mec"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": []
       },
@@ -1158,7 +923,7 @@
         "alcance": "Internacional",
         "url": "https://www.atmmarketplace.com/news/travelex-to-install-atms-in-europe/",
         "medio": "ATM Marketplace",
-        "resumen": "Travelex está expandiendo sus cajeros automáticos por Europa, con dispositivos adicionales instalados en la terminal de LeShuttle en Folkestone (Inglaterra) y en el Aeropuerto de Berlín Brandeburgo. Los cajeros ofrecen efectivo en hasta seis divisas diferentes, con 45 divisas disponibles mediante pedidos online.",
+        "resumen": "Travelex está expandiendo sus cajeros automáticos por Europa, con dispositivos adicionales instalados en la terminal de LeShuttle en Folkestone y en el Aeropuerto de Berlín Brandeburgo.",
         "highlights": [
           "Travelex cuenta con más de 600 cajeros automáticos en ocho países",
           "Los nuevos ATM ofrecen retiros de efectivo sin contacto (contactless)",
@@ -1166,22 +931,14 @@
           "Simon Jackson, Chief Customer Officer: 'Estamos orgullosos de ampliar nuestras alianzas con LeShuttle y el Aeropuerto de Berlín Brandeburgo'",
           "Total de 50 cajeros automáticos de Travelex en toda Alemania"
         ],
-        "tags": [
-          "travelex",
-          "reino-unido",
-          "alemania",
-          "cajeros-automaticos",
-          "aeropuertos",
-          "expansion"
-        ],
+        "tags": ["travelex", "reino-unido", "alemania", "cajeros-automaticos", "aeropuertos", "expansion"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
             "nombre": "Regional Gateway",
             "url": "https://www.regionalgateway.net/travelex-installs-three-atms-at-berlin-brandenburg-airport/"
           }
-        ],
-        "_nota": "TÉRMINO 'TRAVELEX': Tras búsqueda exhaustiva con más de 15 consultas en medios prioritarios españoles (20minutos.es, abc.es, elconfidencial.com, elmundo.es, elpais.com, lavanguardia.com, expansion.com, cincodias.elpais.com, eleconomista.es, europapress.es), británicos (dailymail.co.uk, theguardian.com, independent.co.uk, thetimes.co.uk, standard.co.uk, mirror.co.uk, metro.co.uk, thesun.co.uk, cityam.com, thisismoney.co.uk, moneyweek.com, travelweekly.co.uk, ttgmedia.com) e internacionales (bloomberg.com, reuters.com), se encontraron solo 2 historias verificadas (6 artículos incluyendo sindicaciones) sobre Travelex entre el 25 de enero y el 24 de febrero de 2026: (1) Expansión de cajeros ATM en Europa (Berlín y LeShuttle, 26-28 enero); (2) Hito de 150.000 miembros de Travelex Plus (17-18 febrero). Ninguno de los medios españoles prioritarios publicó artículos sobre Travelex en este período. Los medios nacionales británicos tampoco publicaron artículos dedicados. Bloomberg y Reuters no publicaron cobertura específica. Objetivo: 40. Encontrados: 2 historias únicas."
+        ]
       },
       {
         "fecha": "2026-01-28",
@@ -1190,7 +947,7 @@
         "alcance": "Internacional",
         "url": "https://www.bloomberg.com/news/articles/2026-01-28/revolut-launches-15-savings-rate-in-mexico-in-battle-with-banks",
         "medio": "Bloomberg",
-        "resumen": "Revolut lanzó operaciones bancarias completas en México ofreciendo una tasa de interés del 15% en depósitos de ahorro, buscando captar una parte significativa del mercado bancario del país. Revolut Bank S.A. IBM es el primer banco digital independiente en obtener licencia bancaria mexicana por solicitud directa.",
+        "resumen": "Revolut lanzó operaciones bancarias completas en México ofreciendo una tasa de interés del 15% en depósitos de ahorro.",
         "highlights": [
           "Revolut ofrece una tasa de ahorro del 15% en México para atraer clientes",
           "Primer banco de Revolut establecido fuera del continente europeo",
@@ -1198,15 +955,7 @@
           "La expansión extiende la presencia de Revolut a 40 países",
           "Nik Storonsky, CEO: 'Este lanzamiento es un modelo para la expansión a otros mercados de alto crecimiento'"
         ],
-        "tags": [
-          "revolut",
-          "mexico",
-          "fintech",
-          "banca-digital",
-          "licencia-bancaria",
-          "expansion-global",
-          "latinoamerica"
-        ],
+        "tags": ["revolut", "mexico", "fintech", "banca-digital", "licencia-bancaria", "expansion-global", "latinoamerica"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -1233,8 +982,7 @@
             "nombre": "Revolut (comunicado oficial)",
             "url": "https://www.revolut.com/en-MX/news/revolut_launches_full_banking_operations_in_mexico_accelerating_global_expansion/"
           }
-        ],
-        "_nota": "TÉRMINO 'REVOLUT': Tras búsqueda exhaustiva en medios nacionales (UK y España), internacionales (Bloomberg, Reuters), especializados en fintech (Sifted, FinTech Futures, PYMNTS) y fuentes oficiales, se identificaron 4 historias únicas verificadas (12 artículos incluyendo sindicaciones) entre el 25 de enero y el 24 de febrero de 2026: (1) Lanzamiento bancario en México, 27-28 enero; (2) Conversaciones con Apollo y Blackstone para partnerships en wealth management, 13 febrero; (3) Planes de expansión en España con objetivo de 8M clientes, 29 enero; (4) Posicionamiento estratégico de Revolut en España, 23 febrero. Muchos artículos adicionales sobre Revolut (IPO, valoración $75B, Audi F1, crypto, licencia Perú) fueron publicados fuera del rango temporal. Objetivo: 40. Encontrados: 4 historias únicas."
+        ]
       },
       {
         "fecha": "2026-01-28",
@@ -1243,7 +991,7 @@
         "alcance": "Internacional",
         "url": "https://thepaypers.com/payments/news/five-new-psp-members-join-payments-canada",
         "medio": "The Paypers",
-        "resumen": "Payments Canada anunció la admisión de cinco nuevos miembros proveedores de servicios de pago, incluyendo Wise, Float, KOHO, Paramount Commerce y Brim. Wise se convirtió en uno de los primeros proveedores de servicios de pago no bancarios en obtener membresía, lo que le permitirá acelerar tiempos de transferencia y reducir costos para clientes canadienses.",
+        "resumen": "Payments Canada anunció la admisión de cinco nuevos miembros proveedores de servicios de pago, incluyendo Wise.",
         "highlights": [
           "Wise es uno de los cinco nuevos PSP admitidos en Payments Canada y uno de los primeros no bancarios",
           "La membresía permite acceso a sistemas de pago nacionales canadienses incluyendo el futuro Real-Time Rail (RTR)",
@@ -1251,14 +999,7 @@
           "Costo promedio de transacción de Wise: solo 0,52% por operación",
           "74% de los pagos de Wise se procesan instantáneamente (en menos de 20 segundos)"
         ],
-        "tags": [
-          "wise",
-          "fintech",
-          "canada",
-          "pagos",
-          "infraestructura-pagos",
-          "expansion"
-        ],
+        "tags": ["wise", "fintech", "canada", "pagos", "infraestructura-pagos", "expansion"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
         "otros_medios": [
           {
@@ -1289,8 +1030,7 @@
             "nombre": "Yahoo Finance Canada",
             "url": "https://ca.finance.yahoo.com/news/wise-strengthens-canadian-market-investment-130000049.html"
           }
-        ],
-        "_nota": "TÉRMINO 'WISE': Tras búsqueda exhaustiva en más de 15 consultas incluyendo búsquedas en español (expansion.com, eleconomista.es, cincodias.elpais.com, elpais.com, elmundo.es) y en inglés (bloomberg.com, reuters.com, theguardian.com, dailymail.co.uk, cityam.com, thisismoney.co.uk, moneyweek.com), se encontraron solo 2 historias únicas verificadas (12 artículos incluyendo sindicaciones) dentro del período 25 enero - 24 febrero 2026: (1) Membresía en Payments Canada, 27-28 enero; (2) Cambio de registrador de acciones a Computershare, 16 febrero. Los resultados Q3 FY2026 de Wise se publicaron el 20 de enero (justo antes de la ventana) generando cobertura masiva fuera del período. La doble cotización en EE.UU. se espera para Q2 2026 (después). No se encontró cobertura en medios españoles generalistas. Objetivo: 40. Encontrados: 2 historias únicas."
+        ]
       },
       {
         "fecha": "2026-01-25",
@@ -1299,44 +1039,758 @@
         "alcance": "Internacional",
         "url": "https://laparadoja.com.mx/2026/01/precio-del-dolar-hoy-domingo-25-de-enero-2026-peso-se-mantiene-firme-ante-amenazas-de-trump-por-groenlandia",
         "medio": "La Paradoja",
-        "resumen": "El peso mexicano se mantuvo firme a 17,36 pesos por dólar el 25 de enero, beneficiado por el debilitamiento del dólar en mercados internacionales. Trump amenazó a ocho países europeos con aranceles si no le dejaban intervenir en Groenlandia, generando incertidumbre internacional.",
+        "resumen": "El peso mexicano se mantuvo firme a 17,36 pesos por dólar el 25 de enero, beneficiado por el debilitamiento del dólar en mercados internacionales.",
         "highlights": [
           "Tipo de cambio cotizó en 17,36 pesos por dólar",
           "Trump amenazó a 8 países europeos con aranceles por el caso Groenlandia",
           "El peso se mantuvo por debajo de la barrera de 18 pesos",
           "El debilitamiento del dólar benefició a la moneda mexicana"
         ],
-        "tags": [
-          "cambio-de-divisas",
-          "mexico",
-          "tipo-de-cambio",
-          "dolar",
-          "peso-mexicano",
-          "trump"
-        ],
+        "tags": ["cambio-de-divisas", "mexico", "tipo-de-cambio", "dolar", "peso-mexicano", "trump"],
         "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'CAMBIO DE DIVISAS': Tras búsqueda exhaustiva utilizando todas las queries especificadas (incluyendo búsquedas site-specific en 30+ medios prioritarios), se encontraron únicamente 9 artículos verificables que mencionan explícitamente 'cambio de divisas' en el periodo 25 enero - 24 febrero 2026. Los principales medios españoles (El País, El Mundo, ABC, La Vanguardia, El Periódico, La Razón, OkDiario, Cadena SER, COPE, RTVE, Cinco Días, Expansión, Europa Press, EFE) NO publicaron artículos con la frase exacta 'cambio de divisas' en este período según los resultados de búsqueda disponibles. Los medios regionales de Castilla y León y Salamanca tampoco arrojaron resultados. La mayoría de resultados provienen de medios mexicanos (reportes diarios de tipo de cambio), medios cubanos (tasas informales) y contenido fintech. Objetivo: 40. Encontrados: 9 artículos."
+        "otros_medios": []
       },
       {
-        "fecha": "2026-01-25",
-        "titulo": "Sin resultados para el término 'Exact Change'",
-        "categoria": "sector-cambiario",
-        "alcance": "Nacional",
-        "url": "https://placehold.co/no-results",
-        "medio": "N/A",
-        "resumen": "No se encontraron artículos de prensa verificables sobre la empresa Exact Change (Maccorp Exact Change) publicados entre el 25 de enero y el 24 de febrero de 2026.",
+        "fecha": "2026-03-31",
+        "titulo": "The Eurosystem's comprehensive payments strategy",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/pubbydate/2026/html/ecb.eurosystemcomprehensivepaymentsstrategy202603.en.html",
+        "medio": "BCE/ECB",
+        "resumen": "Documento estratégico del BCE sobre la estrategia integral de pagos del Eurosistema. Aborda la preservación del efectivo como pilar del sistema de pagos europeo junto al desarrollo del euro digital, cuyo lanzamiento se prevé para 2029 tras una posible decisión en 2026. Solo el 24% de los pagos en euros se realizan ya en efectivo.",
         "highlights": [
-          "Cero artículos de prensa encontrados para 'Exact Change' en el período analizado"
+          "El BCE decidirá en 2026 si lanza el euro digital, con emisión prevista para 2029",
+          "Solo el 24% de los pagos en euros se realizan en efectivo según datos recientes"
         ],
-        "tags": [
-          "exact-change",
-          "espana",
-          "sin-resultados"
+        "tags": ["BCE", "Euro digital", "Efectivo", "Regulación"],
+        "imagen": "https://placehold.co/400x300/122864/FFFFFF?text=BCE+Payments+Strategy",
+        "otros_medios": [
+          {
+            "nombre": "El Español",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-27",
+        "titulo": "Don't kill cash",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.omfif.org/2026/03/dont-kill-cash/",
+        "medio": "OMFIF",
+        "resumen": "Artículo de opinión del economista Biagio Bossone que defiende la preservación del efectivo como último recurso de resiliencia económica. Argumenta que ni las CBDC ni los pagos digitales pueden sustituir al efectivo en situaciones de crisis (apagones, ciberataques, desastres naturales), y destaca el apagón ibérico de abril 2025 como ejemplo de la vulnerabilidad de los pagos digitales.",
+        "highlights": [
+          "El efectivo es el único instrumento de pago que funciona sin electricidad, conectividad ni servidores de autenticación",
+          "El apagón ibérico de 2025 dejó regiones enteras sin acceso a pagos digitales"
         ],
-        "imagen": "https://placehold.co/400x300/3b82f6/FFFFFF?text=Placeholder",
-        "otros_medios": [],
-        "_nota": "TÉRMINO 'EXACT CHANGE': Tras búsqueda exhaustiva utilizando más de 14 consultas distintas en Google, incluyendo búsquedas generales ('Exact Change' cambio moneda 2026, 'Maccorp Exact Change' 2026 noticias, etc.), búsquedas específicas por medio (site:europapress.es, site:expansion.com, site:hosteltur.com, site:eleconomista.es, site:cincodias.elpais.com), búsquedas regionales (Salamanca, Valencia) y verificación del blog corporativo de exactchange.es, NO se encontraron artículos de prensa verificables sobre la empresa 'Exact Change' publicados en el período solicitado. Los resultados obtenidos fueron exclusivamente: páginas del sitio web corporativo, contenido de blogs de viajes afiliados (no periodístico), directorios empresariales, perfiles de redes sociales, y artículos de prensa antiguos (2013-2023). 'Exact Change' (Maccorp Exact Change) es una entidad de pago privada española que no genera cobertura mediática regular en prensa generalista. Se recomienda verificar con servicios de clipping especializados (Kantar, MyNews) o con el departamento de comunicación de Grupo Exact. Objetivo: 40. Encontrados: 0."
+        "tags": ["Efectivo", "Crisis", "CBDC"],
+        "imagen": "https://www.omfif.org/wp-content/uploads/2026/03/don-t-kill-cash-main-story.webp",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-20",
+        "titulo": "New York Requires Retailers to Accept Cash Payments",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.pymnts.com/cash/2026/new-york-requires-retailers-to-accept-cash-payments/",
+        "medio": "PYMNTS",
+        "resumen": "La fiscal general de Nueva York, Letitia James, emitió una alerta recordando que una nueva ley estatal obliga a las tiendas a aceptar pagos en efectivo a partir del 21 de marzo de 2026. La ley prohíbe a establecimientos minoristas y alimentarios exigir pagos con tarjeta o métodos cashless, y no permite cobrar más a quienes paguen en efectivo.",
+        "highlights": [
+          "La ley entró en vigor el 21 de marzo de 2026 tras ser firmada por la gobernadora Kathy Hochul en noviembre de 2025",
+          "NYC ya aplicó 23.850 USD en multas a 16 negocios por rechazar efectivo desde 2020"
+        ],
+        "tags": ["Regulación", "Efectivo", "Nueva York"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=NY+Cash+Law",
+        "otros_medios": [
+          {
+            "nombre": "Finextra",
+            "url": null
+          },
+          {
+            "nombre": "amNewYork",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-19",
+        "titulo": "A future without cash? Not so fast",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.finextra.com/the-long-read/1349/a-future-without-cash-not-so-fast",
+        "medio": "Finextra",
+        "resumen": "Análisis de Finextra sobre por qué el efectivo sigue siendo relevante a pesar del crecimiento de los pagos digitales. Examina cómo las transacciones en efectivo en Reino Unido cayeron al 12% en 2023 y destaca que el efectivo sigue siendo crítico para control de gastos y emergencias.",
+        "highlights": [
+          "Las transacciones en efectivo representaron solo el 12% en UK en 2023, bajando desde el 14% en 2022",
+          "El número de cajeros automáticos en UK se redujo un 37% en la última década"
+        ],
+        "tags": ["Efectivo", "Pagos digitales", "Reino Unido"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Future+of+Cash",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-17",
+        "titulo": "Así cambian las reglas del pago en efectivo en Europa desde 2027 y lo que supone para España",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.hoyaragon.es/mas-bolsillo/articulo/hacienda/asi-cambian-reglas-pago-efectivo-europa-2027-que-supone-espana/20260317071500001299.html",
+        "medio": "Hoy Aragón",
+        "resumen": "Artículo que explica el nuevo marco normativo europeo (Reglamento UE 2024/1624) que fijará un tope de 10.000 euros para pagos en efectivo en toda la UE a partir del 10 de julio de 2027. Para España, donde el límite ya es de 1.000 euros para operaciones con profesionales, el impacto práctico será limitado.",
+        "highlights": [
+          "Límite europeo unificado de 10.000 euros en efectivo desde julio 2027",
+          "Verificación obligatoria de identidad para pagos en efectivo entre 3.000 y 10.000 euros"
+        ],
+        "tags": ["Regulación", "Efectivo", "España", "UE"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Limite+Efectivo+EU",
+        "otros_medios": [
+          {
+            "nombre": "El Español",
+            "url": null
+          },
+          {
+            "nombre": "El Economista",
+            "url": null
+          },
+          {
+            "nombre": "Infobae España",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "2026 Business of Payments: Key Trends and Insights Ahead",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://businessofpayments.com/2026/03/09/business-of-payments-january-2026/",
+        "medio": "Business of Payments",
+        "resumen": "Newsletter especializada en pagos que analiza las tendencias del sector para 2026. Destaca que pese a la proliferación de opciones de pago digital, el efectivo sigue representando aproximadamente el 20% de las transacciones minoristas en Reino Unido.",
+        "highlights": [
+          "El efectivo representa alrededor del 20% de las transacciones minoristas en UK (10% en valor)",
+          "Visa y Mastercard procesaron el 47% del valor de pagos con tarjeta en la eurozona en 2025"
+        ],
+        "tags": ["Efectivo", "Pagos", "Tendencias"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Payments+Trends+2026",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-31",
+        "titulo": "Eurosystem sets out comprehensive strategy for future of European payments",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260331~04561d8476.en.html",
+        "medio": "BCE/ECB",
+        "resumen": "El BCE publicó su nueva estrategia integral de pagos que cubre pagos mayoristas, minoristas, entre empresas y transfronterizos. Reafirma el compromiso con que el efectivo en euros siga estando ampliamente disponible, accesible y aceptado, al tiempo que desarrolla nuevos billetes y apoya iniciativas legales para reforzar el curso legal del efectivo.",
+        "highlights": [
+          "El BCE apoya las iniciativas jurídicas para reforzar el curso legal del efectivo",
+          "Cuatro objetivos estratégicos: preservar el dinero de banco central, reforzar la autonomía del sistema de pagos europeo, promover pagos más integrados e innovadores, y apoyar el papel internacional del euro"
+        ],
+        "tags": ["BCE", "Efectivo", "Euro digital", "Estrategia"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=BCE+Strategy",
+        "otros_medios": [
+          {
+            "nombre": "EFE",
+            "url": null
+          },
+          {
+            "nombre": "Infobae",
+            "url": null
+          },
+          {
+            "nombre": "Swissinfo",
+            "url": null
+          },
+          {
+            "nombre": "Yahoo Finance",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-31",
+        "titulo": "El BCE quiere reducir la dependencia de servicios de pagos no europeos, como Visa o PayPal",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.infobae.com/america/agencias/2026/03/31/el-bce-quiere-reducir-la-dependencia-de-servicios-de-pagos-no-europeos-como-visa-o-paypal/",
+        "medio": "EFE",
+        "resumen": "Despacho de la agencia EFE sobre la nueva estrategia de pagos del BCE. El Banco Central Europeo busca reducir la excesiva dependencia europea de proveedores de pagos no europeos como Visa, Mastercard, PayPal, Apple Pay y Google Pay.",
+        "highlights": [
+          "La dependencia excesiva de la UE de proveedores no europeos ha expuesto vulnerabilidades geopolíticas",
+          "Macron abogó por reducir la dependencia de Visa y Mastercard y construir un modelo de pagos soberano"
+        ],
+        "tags": ["BCE", "Pagos digitales", "Soberanía", "Regulación"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=BCE+Soberania",
+        "otros_medios": [
+          {
+            "nombre": "Swissinfo",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-21",
+        "titulo": "Attorney General James Notifies New Yorkers About New State Law Requiring Stores to Accept Cash Payments",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-notifies-new-yorkers-about-new-state-law-requiring-stores",
+        "medio": "New York State Attorney General",
+        "resumen": "El estado de Nueva York puso en vigor el 21 de marzo de 2026 una nueva ley que obliga a comercios minoristas y establecimientos de alimentación a aceptar pagos en efectivo en transacciones presenciales.",
+        "highlights": [
+          "Nueva York se convierte en el quinto estado de EE.UU. con leyes de protección del pago en efectivo",
+          "Multas de hasta 1.000 dólares por primera infracción y 1.500 por sucesivas violaciones"
+        ],
+        "tags": ["Regulación", "Efectivo", "Nueva York"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=NY+AG+Cash+Law",
+        "otros_medios": [
+          {
+            "nombre": "PYMNTS",
+            "url": "https://www.pymnts.com/cash/2026/new-york-requires-retailers-to-accept-cash-payments/"
+          },
+          {
+            "nombre": "Retail Insight Network",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-15",
+        "titulo": "El dinero en efectivo bate otro récord en España en pleno impulso al proyecto del euro digital",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://theobjective.com/economia/banca/2026-03-15/dinero-efectivo-record-euro-digital/",
+        "medio": "The Objective",
+        "resumen": "El volumen de retirada de efectivo en cajeros automáticos alcanzó en 2025 un nuevo máximo histórico en España, con 129.300 millones de euros, un 1,37% más que el año anterior. El fenómeno se produce en paralelo al impulso del BCE para implantar el euro digital.",
+        "highlights": [
+          "Las retiradas de efectivo en cajeros alcanzaron 129.300 millones de euros en 2025, nuevo récord histórico",
+          "El apagón eléctrico de abril de 2025 en España impulsó la percepción de necesidad de metálico"
+        ],
+        "tags": ["Efectivo", "España", "Récord", "Euro digital"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Record+Efectivo+Espana",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-10",
+        "titulo": "Nuevo límite europeo a los pagos en efectivo: qué cambiará a partir de 2027",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://capgros.elnacional.cat/es/negocio/actualidad-empresa/nuevo-limite-europeo-pagos-en-efectivo-que-cambiara-partir-2027_817971_102.html",
+        "medio": "Capgros / El Nacional",
+        "resumen": "El artículo analiza el nuevo Reglamento UE 2024/1624 que establecerá un límite máximo de 10.000 euros para pagos en efectivo en operaciones comerciales en toda la UE a partir de 2027.",
+        "highlights": [
+          "La UE establecerá un tope de 10.000 euros para pagos en efectivo en operaciones comerciales a partir de 2027",
+          "El efectivo sigue siendo el medio de pago más utilizado en Europa según el BCE (52% de transacciones en punto de venta)"
+        ],
+        "tags": ["Regulación", "Efectivo", "UE", "España"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Limite+Efectivo+2027",
+        "otros_medios": [
+          {
+            "nombre": "El Español",
+            "url": null
+          },
+          {
+            "nombre": "El Confidencial Digital",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "Digital euro fees, cash legal tender addressed in new EU Parliament compromise",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.mlex.com/mlex/articles/2450532/digital-euro-fees-cash-legal-tender-addressed-in-new-eu-parliament-compromise",
+        "medio": "MLex",
+        "resumen": "El ponente del Parlamento Europeo, Fernando Navarrete Rojas, presentó nuevas enmiendas de compromiso sobre la regulación del euro digital y el curso legal del efectivo en euros.",
+        "highlights": [
+          "Se exige a los Estados miembros salvaguardar el acceso a billetes y monedas",
+          "Las negociaciones en el Parlamento Europeo sobre el euro digital avanzan con más de 1.600 enmiendas presentadas"
+        ],
+        "tags": ["Euro digital", "Efectivo", "UE", "Regulación"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=EU+Parliament+Euro+Digital",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-31",
+        "titulo": "Llegan a estas calles de Madrid los primeros cajeros físicos de Revolut del mundo",
+        "categoria": "medios-digital",
+        "alcance": "Nacional",
+        "url": "https://madridinforma.eldiario.es/llegan-a-estas-calles-de-madrid-los-primeros-cajeros-fisicos-de-revolut-del-mundo/",
+        "medio": "MadridInforma (El Diario)",
+        "resumen": "Revolut ha instalado sus primeros cajeros automáticos físicos a nivel mundial en Madrid y Barcelona. Los usuarios pueden localizar los terminales mediante un mapa interactivo en la app, retirar efectivo sin comisiones y obtener tarjetas físicas al instante.",
+        "highlights": [
+          "Revolut despliega los primeros cajeros propios del mundo en Madrid y Barcelona",
+          "4,8 millones de usuarios de Revolut en España; más de 55 millones en todo el mundo"
+        ],
+        "tags": ["Revolut", "ATMs", "España", "Fintech"],
+        "imagen": "https://placehold.co/400x300/f59e0b/FFFFFF?text=Revolut+ATMs+Madrid",
+        "otros_medios": [
+          {
+            "nombre": "Finextra",
+            "url": null
+          },
+          {
+            "nombre": "HelpMyCash",
+            "url": null
+          },
+          {
+            "nombre": "Europa Press",
+            "url": null
+          },
+          {
+            "nombre": "El Economista",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-30",
+        "titulo": "ATMIA 2026 Event Recap: Key Trends Shaping the Future of Self-Service Banking",
+        "categoria": "sector-aeroportuario",
+        "alcance": "Internacional",
+        "url": "https://www.atmmarketplace.com/blogs/atmia-2026-event-recap-key-trends-shaping-the-future-of-self-service-banking/",
+        "medio": "ATM Marketplace",
+        "resumen": "Resumen del evento ATMIA 2026 celebrado en Arlington, Texas. Las tendencias clave incluyen la externalización estratégica de operaciones de cajeros, la orquestación del ciclo de efectivo, el concepto de 'Super ATM' como hub multifuncional, la ciberseguridad y el papel crítico del efectivo durante crisis.",
+        "highlights": [
+          "El 'Super ATM' evoluciona de dispensador de efectivo a hub de servicios financieros multicanal",
+          "IA aplicada a mantenimiento predictivo y personalización en cajeros automáticos"
+        ],
+        "tags": ["ATM", "Tendencias", "Tecnología"],
+        "imagen": "https://nmgprod.s3.amazonaws.com/media/file/9b/38/981c3b45bd757ba15ce081268610/cover_image__isvkg8fw__NEW_ATM_marketplace_images__17.png.960x540_q85_crop_upscale.jpg",
+        "otros_medios": [
+          {
+            "nombre": "Paragon Application Systems",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-27",
+        "titulo": "Estafas en gasolineras y estaciones de servicio: cuidado con los cajeros automáticos",
+        "categoria": "otros-medios-pago",
+        "alcance": "Nacional",
+        "url": "https://www.eleconomista.es/tecnologia/noticias/13845582/03/26/estafas-en-gasolineras-y-estaciones-de-servicio-cuidado-con-los-cajeros-automaticos.html",
+        "medio": "El Economista",
+        "resumen": "Las autoridades han detectado el auge de una nueva forma de fraude en gasolineras y estaciones de servicio mediante skimmers o clonadores de tarjetas ocultos en cajeros automáticos y máquinas de pago.",
+        "highlights": [
+          "Auge de fraude con skimmers en cajeros automáticos de gasolineras en España",
+          "Alerta sobre 'hilo invisible' como nueva técnica de estafa en cajeros"
+        ],
+        "tags": ["Fraude", "ATM", "Seguridad", "España"],
+        "imagen": "https://placehold.co/400x300/6366f1/FFFFFF?text=Fraude+ATM",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-25",
+        "titulo": "Díaz Ayuso anuncia que los 61 municipios de menos de 5.000 habitantes sin sucursal bancaria de la región contarán con cajero automático",
+        "categoria": "otros-medios-pago",
+        "alcance": "Nacional",
+        "url": "https://www.comunidad.madrid/noticias/2026/03/25/diaz-ayuso-anuncia-61-municipios-menos-5000-habitantes-sucursal-bancaria-region-contaran-cajero-automatico",
+        "medio": "Comunidad de Madrid",
+        "resumen": "La presidenta Isabel Díaz Ayuso ha anunciado la instalación y mantenimiento de cajeros automáticos en los 61 municipios de menos de 5.000 habitantes de la Comunidad de Madrid que carecen de entidad bancaria física.",
+        "highlights": [
+          "4,6 millones de euros de dotación para cinco años",
+          "Madrid será la única comunidad autónoma con cajero automático en todos sus municipios"
+        ],
+        "tags": ["ATM", "Madrid", "Inclusión financiera", "Rural"],
+        "imagen": "https://placehold.co/400x300/6366f1/FFFFFF?text=Cajeros+Madrid+Rural",
+        "otros_medios": [
+          {
+            "nombre": "Europa Press",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-24",
+        "titulo": "ATM Networks During Global Uncertainty: Why They Matter",
+        "categoria": "otros-medios-pago",
+        "alcance": "Internacional",
+        "url": "https://www.atm-link.com/en/blog/atm-networks-during-global-uncertainty/",
+        "medio": "ATM Link",
+        "resumen": "Artículo de análisis que argumenta que, en un mundo financiero cada vez más digital, las crisis globales demuestran que el efectivo sigue siendo el método de pago más resiliente. Las redes de cajeros automáticos garantizan el acceso ininterrumpido al efectivo cuando fallan los sistemas digitales.",
+        "highlights": [
+          "El efectivo sigue siendo el método de pago más resiliente ante crisis según el BIS",
+          "Los operadores independientes (IAD) operan una proporción significativa de los cajeros mundiales"
+        ],
+        "tags": ["ATM", "Efectivo", "Crisis", "Resiliencia"],
+        "imagen": "https://placehold.co/400x300/6366f1/FFFFFF?text=ATM+Uncertainty",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-19",
+        "titulo": "Los bancos amplían por primera vez en cinco años la red de cajeros ante el auge del efectivo",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://theobjective.com/economia/banca/2026-03-19/bancos-amplian-red-cajeros-efectivo/",
+        "medio": "The Objective",
+        "resumen": "Los bancos en España ampliaron la red de cajeros automáticos por primera vez en cinco años, según datos del Banco de España. El parque creció en 138 unidades en 2025, situándose en 43.310 cajeros a cierre de diciembre.",
+        "highlights": [
+          "43.310 cajeros a cierre de 2025 frente a 43.172 un año antes: primera subida en 5 años",
+          "CaixaBank líder con 11.034 cajeros (25% del total)"
+        ],
+        "tags": ["ATM", "España", "Efectivo", "Banca"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Red+Cajeros+Espana",
+        "otros_medios": [
+          {
+            "nombre": "Banco de España (datos estadísticos)",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-18",
+        "titulo": "Cash in a Crisis: The Enduring Role of Physical Money in Times of Geopolitical Uncertainty",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.atmia.com/news/unlock-the-future-of-atms-exclusive-atmia-industry-report-now-available/22906/",
+        "medio": "ATMIA",
+        "resumen": "Newsletter de la ATM Industry Association (ATMIA) que incluye el informe 'Cash in a Crisis' sobre el papel perdurable del dinero físico en tiempos de incertidumbre geopolítica.",
+        "highlights": [
+          "Publicación de informe sobre el papel del efectivo en tiempos de crisis geopolítica",
+          "Lanzamiento de nuevo sistema de monitorización legislativa para la industria ATM"
+        ],
+        "tags": ["Efectivo", "Crisis", "ATM", "Geopolítica"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Cash+Crisis+ATMIA",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-01",
+        "titulo": "Global Crypto ATM Network: Net Removals of 597 Units Signal Compliance-Driven Contraction",
+        "categoria": "otros-medios-pago",
+        "alcance": "Internacional",
+        "url": "https://www.ainvest.com/news/global-crypto-atm-network-net-removals-597-units-signal-compliance-driven-contraction-2603/",
+        "medio": "AInvest",
+        "resumen": "La red mundial de cajeros de criptomonedas se contrae rápidamente con una reducción neta de 597 máquinas en 2026. Los reguladores de Connecticut suspendieron la licencia de Bitcoin Depot (23,8% del mercado).",
+        "highlights": [
+          "Reducción neta de 597 cajeros crypto a nivel global en 2026",
+          "Los 10 principales operadores controlan el 78,2% de las máquinas crypto, con 38.928 cajeros restantes a nivel global"
+        ],
+        "tags": ["Crypto ATM", "Regulación", "Criptomonedas"],
+        "imagen": "https://placehold.co/400x300/6366f1/FFFFFF?text=Crypto+ATM+Decline",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-15",
+        "titulo": "El dinero en efectivo bate otro récord en España en pleno impulso al proyecto del euro digital (Denaria)",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://theobjective.com/economia/banca/2026-03-15/dinero-efectivo-record-euro-digital/",
+        "medio": "The Objective",
+        "resumen": "Las retiradas de dinero en efectivo en cajeros automáticos alcanzaron un nuevo máximo histórico en España en 2025, llegando a 129.300 millones de euros. La plataforma Denaria señala que las retiradas de efectivo recuperaron niveles previos a la pandemia.",
+        "highlights": [
+          "Denaria confirma que las retiradas en cajeros recuperaron niveles previos a la pandemia",
+          "El BCE busca aprobación legislativa del euro digital en 2026 para posible emisión en 2029"
+        ],
+        "tags": ["Denaria", "Efectivo", "España", "Euro digital"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Denaria+Record+Efectivo",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-12",
+        "titulo": "Sánchez pide adelantar la entrada del euro digital mientras Suecia defiende el dinero efectivo en plena incertidumbre",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.libertaddigital.com/libremercado/2026-03-12/sanchez-pide-adelantar-la-entrada-del-euro-digital-mientras-suecia-defiende-el-dinero-efectivo-en-plena-incertidumbre-7372848/",
+        "medio": "Libertad Digital / Libre Mercado",
+        "resumen": "Pedro Sánchez solicitó por carta al presidente del Consejo Europeo adelantar a 2028 la implantación del euro digital. El presidente de Denaria, Javier Rupérez, expresó inquietud sobre el proyecto, defendiendo el efectivo 'por seguridad nacional' y por la privacidad del usuario.",
+        "highlights": [
+          "Sánchez pide adelantar la emisión del euro digital a 2028, un año antes de lo previsto por el BCE",
+          "Denaria defiende el efectivo 'por seguridad nacional' y privacidad"
+        ],
+        "tags": ["Denaria", "Euro digital", "España", "Efectivo"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Denaria+Euro+Digital",
+        "otros_medios": [
+          {
+            "nombre": "Europa Press",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-08",
+        "titulo": "Javier Rupérez: \"La inmensa mayoría del fraude es digital y por ello no se debería limitar el uso del efectivo\"",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.elconciso.es/coyuntura/javier-ruperez-presidente-denaria-defensa-uso-dinero-efectivo_0_2006087253.html",
+        "medio": "El Conciso",
+        "resumen": "Entrevista en profundidad con Javier Rupérez, presidente de la Plataforma Denaria, en la que defiende el uso del efectivo frente a la creciente digitalización de los pagos.",
+        "highlights": [
+          "Más del 60% de los españoles cree que el efectivo debe seguir existiendo",
+          "Denaria pide elevar el límite de pagos en efectivo de 1.000 a 10.000 euros"
+        ],
+        "tags": ["Denaria", "Efectivo", "Regulación", "España"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Denaria+Ruperez",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-22",
+        "titulo": "NY now requires stores to accept cash - what you need to know",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://abc7ny.com/post/consumer-alert-ny-state-law-requiring-stores-accept-cash-payments-takes-effect/18745658/",
+        "medio": "ABC7 New York (WABC)",
+        "resumen": "Nueva York aprueba una ley que obliga a todos los comercios y establecimientos de alimentación a aceptar pagos en efectivo para compras presenciales, vigente desde el 21 de marzo de 2026.",
+        "highlights": [
+          "Ley S4153A en vigor desde el 21 de marzo de 2026 en todo el estado de Nueva York",
+          "Exención: los comercios pueden usar 'reverse ATM' (conversión de efectivo a tarjeta prepago) como alternativa"
+        ],
+        "tags": ["Regulación", "Efectivo", "Nueva York"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=NY+Cash+Law+ABC7",
+        "otros_medios": [
+          {
+            "nombre": "NY Attorney General",
+            "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-notifies-new-yorkers-about-new-state-law-requiring-stores"
+          },
+          {
+            "nombre": "PYMNTS",
+            "url": "https://www.pymnts.com/cash/2026/new-york-requires-retailers-to-accept-cash-payments/"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-22",
+        "titulo": "New York requires retailers to accept cash payments",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.retail-insight-network.com/news/new-york-requires-retailers-to-accept-cash-payments/",
+        "medio": "Retail Insight Network",
+        "resumen": "Desde el 21 de marzo de 2026, los comercios minoristas de Nueva York deben aceptar pagos en efectivo por mandato legal. La regulación refleja una tendencia más amplia en EE.UU. y otros mercados.",
+        "highlights": [
+          "Penalizaciones civiles de hasta 1.500 dólares por infracción reincidente",
+          "La medida señala una recalibración, no una reversión de la tendencia a pagos digitales"
+        ],
+        "tags": ["Regulación", "Efectivo", "Nueva York"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=NY+Cash+Retailers",
+        "otros_medios": [
+          {
+            "nombre": "ABC7 New York",
+            "url": "https://abc7ny.com/post/consumer-alert-ny-state-law-requiring-stores-accept-cash-payments-takes-effect/18745658/"
+          },
+          {
+            "nombre": "NY Attorney General",
+            "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-notifies-new-yorkers-about-new-state-law-requiring-stores"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-11",
+        "titulo": "New York's New Cash Acceptance Law: What It Means for Businesses and Shoppers (S4153A)",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.mobilemoney.net/2026/03/11/new-yorks-new-cash-acceptance-law-what-it-means-for-businesses-and-shoppers-s4153a/",
+        "medio": "MobileMoney",
+        "resumen": "Análisis de la nueva ley S4153A de Nueva York sobre aceptación obligatoria de efectivo, vigente desde marzo de 2026.",
+        "highlights": [
+          "Los 'reverse ATM' permiten cumplir la ley sin aceptar efectivo directamente en caja",
+          "Los dispositivos deben cumplir requisitos específicos: depósito máximo de 1 dólar, sin comisiones, fondos sin caducidad"
+        ],
+        "tags": ["Regulación", "Efectivo", "Nueva York", "ATM"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=NY+Cash+Law+S4153A",
+        "otros_medios": [
+          {
+            "nombre": "NY Attorney General",
+            "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-notifies-new-yorkers-about-new-state-law-requiring-stores"
+          },
+          {
+            "nombre": "Holland & Knight",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-31",
+        "titulo": "Eurosystem sets out comprehensive strategy for future of European payments (Billetes y monedas)",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260331~04561d8476.en.html",
+        "medio": "BCE/ECB",
+        "resumen": "El Eurosistema publicó el 31 de marzo su estrategia integral de pagos. La estrategia complementa la estrategia de efectivo del Eurosistema y reafirma el compromiso del BCE con que el efectivo en euros siga estando ampliamente disponible, al tiempo que desarrolla los nuevos billetes.",
+        "highlights": [
+          "Se complementa con la estrategia de efectivo del Eurosistema y el proceso de rediseño de billetes en euros",
+          "El BCE apoya las iniciativas jurídicas para reforzar el curso legal del efectivo"
+        ],
+        "tags": ["BCE", "Billetes", "Efectivo", "Estrategia"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=BCE+Billetes",
+        "otros_medios": [
+          {
+            "nombre": "Banco de España (traducción)",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-27",
+        "titulo": "Don't kill cash (Billetes y monedas)",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.omfif.org/2026/03/dont-kill-cash/",
+        "medio": "OMFIF",
+        "resumen": "Artículo de opinión de Biagio Bossone que argumenta que el efectivo físico sigue siendo el medio de pago más resiliente del mundo.",
+        "highlights": [
+          "El BCE ha observado aumentos dramáticos en la circulación de billetes en periodos de crisis, motivados por precaución",
+          "Las CBDC offline tienen limitaciones: dependen de hardware seguro y reconexión periódica con el registro central"
+        ],
+        "tags": ["Efectivo", "Billetes", "CBDC", "Crisis"],
+        "imagen": "https://www.omfif.org/wp-content/uploads/2026/03/don-t-kill-cash-main-story.webp",
+        "otros_medios": []
+      },
+      {
+        "fecha": "2026-03-19",
+        "titulo": "Demanda récord de dinero efectivo: el importe retirado alcanza máximos históricos",
+        "categoria": "medios-efectivo",
+        "alcance": "Nacional",
+        "url": "https://www.libertaddigital.com/libremercado/2026-03-19/demanda-record-de-dinero-efectivo-el-importe-retirado-alcanza-maximos-historicos-7375246/",
+        "medio": "Libre Mercado (Libertad Digital)",
+        "resumen": "Según datos del Banco de España, el importe retirado de cajeros automáticos en España alcanzó los 129.230,70 millones de euros en 2025, un nuevo máximo histórico.",
+        "highlights": [
+          "Retiradas de efectivo en cajeros en 2025: 129.230,70 millones de euros (máximo histórico)",
+          "Los precios acumulan un incremento del 23,4% desde enero de 2020 según el INE"
+        ],
+        "tags": ["Efectivo", "España", "Récord", "Cajeros"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Record+Efectivo+2025",
+        "otros_medios": [
+          {
+            "nombre": "The Objective",
+            "url": "https://theobjective.com/economia/banca/2026-03-15/dinero-efectivo-record-euro-digital/"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-09",
+        "titulo": "Suecia pide a sus ciudadanos que guarden en casa 1.000 coronas en efectivo ante el riesgo de colapso digital",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.libertaddigital.com/libremercado/2026-03-09/suecia-pide-a-sus-ciudadanos-guardar-en-casa-1-000-coronas-en-efectivo-ante-el-riesgo-de-colapso-digital-7371439/",
+        "medio": "Libre Mercado (Libertad Digital)",
+        "resumen": "El Riksbank de Suecia recomendó a todos los hogares mantener al menos 1.000 coronas suecas (~93 euros) en efectivo por adulto para cubrir una semana de compras esenciales.",
+        "highlights": [
+          "El Riksbank recomienda 1.000 coronas suecas (~93 euros) en efectivo por adulto en cada hogar",
+          "A mediados de marzo 2026, el Gobierno sueco presentó un proyecto de ley para obligar a supermercados y farmacias a aceptar efectivo"
+        ],
+        "tags": ["Efectivo", "Suecia", "Crisis digital", "Regulación"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Suecia+Efectivo",
+        "otros_medios": [
+          {
+            "nombre": "El Español",
+            "url": null
+          },
+          {
+            "nombre": "Xataka",
+            "url": null
+          },
+          {
+            "nombre": "ADSLZone",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-30",
+        "titulo": "Swiss Find They Can't Pay With Cash as Much as They Used To",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.bloomberg.com/news/articles/2026-03-30/swiss-find-they-can-t-pay-with-cash-as-much-as-they-used-to",
+        "medio": "Bloomberg",
+        "resumen": "Una encuesta del Banco Nacional de Suiza (BNS) revela que el uso de aplicaciones de pago móvil se estancó en 2025, mientras que el efectivo se mantuvo estable en el 30% de las transacciones presenciales.",
+        "highlights": [
+          "Efectivo estable en 30% de transacciones presenciales en Suiza (mismo nivel que 2024)",
+          "Votación del 8 de marzo respaldó protección constitucional del franco físico con más del 73% de apoyo"
+        ],
+        "tags": ["Efectivo", "Suiza", "Pagos digitales"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Suiza+Cash+Survey",
+        "otros_medios": [
+          {
+            "nombre": "Reuters",
+            "url": null
+          },
+          {
+            "nombre": "SWI swissinfo.ch",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-30",
+        "titulo": "Swiss cling on to cash as survey shows payment app use stalling",
+        "categoria": "medios-efectivo",
+        "alcance": "Internacional",
+        "url": "https://www.marketscreener.com/news/swiss-cling-on-to-cash-as-survey-shows-payment-app-use-stalling-ce7e51d9d888ff21",
+        "medio": "Reuters",
+        "resumen": "Despacho de Reuters sobre la encuesta del Banco Nacional de Suiza que muestra el estancamiento de los pagos móviles y la persistencia del efectivo. El BNS presentó los diseños de sus nuevos billetes.",
+        "highlights": [
+          "BNS presentó diseños de nuevos billetes para la década de 2030",
+          "Investigador Marcel Stadelmann: 'El efectivo físico seguirá siendo importante en Suiza durante algún tiempo'"
+        ],
+        "tags": ["Efectivo", "Suiza", "Billetes"],
+        "imagen": "https://placehold.co/400x300/10b981/FFFFFF?text=Reuters+Suiza+Cash",
+        "otros_medios": [
+          {
+            "nombre": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-03-30/swiss-find-they-can-t-pay-with-cash-as-much-as-they-used-to"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-27",
+        "titulo": "Digital euro: an opportunity for banks",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260327~digital_euro_banks.en.html",
+        "medio": "BCE/ECB",
+        "resumen": "Piero Cipollone y Frank Elderson argumentan que el euro digital es una inversión estratégica en autonomía europea, soberanía monetaria y resiliencia financiera. Sostienen que complementará al efectivo y a los depósitos bancarios.",
+        "highlights": [
+          "El euro digital es concebido como complemento al efectivo, no como sustituto",
+          "Dos tercios de transacciones con tarjeta en la zona euro son procesadas por esquemas internacionales"
+        ],
+        "tags": ["Euro digital", "BCE", "Banca", "Estrategia"],
+        "imagen": "https://placehold.co/400x300/f59e0b/FFFFFF?text=Euro+Digital+Banks",
+        "otros_medios": [
+          {
+            "nombre": "Europesays.com",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-24",
+        "titulo": "The digital euro: preparing for a potential launch",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260324~66f71f7577.en.html",
+        "medio": "BCE/ECB",
+        "resumen": "Discurso de Piero Cipollone ante el Parlamento Europeo presentando el estado del proyecto del euro digital. Confirma la selección de proveedores de servicios de pago para el piloto en junio de 2026 y un posible lanzamiento del euro digital en 2029.",
+        "highlights": [
+          "Uso del efectivo cayó del 68% al 40% de transacciones diarias en la zona euro (2019-2025)",
+          "Posible primera emisión del euro digital en 2029, tras piloto de 12 meses desde segunda mitad de 2027"
+        ],
+        "tags": ["Euro digital", "BCE", "Regulación", "Tecnología"],
+        "imagen": "https://placehold.co/400x300/f59e0b/FFFFFF?text=Euro+Digital+Launch",
+        "otros_medios": [
+          {
+            "nombre": "Cointelegraph",
+            "url": null
+          },
+          {
+            "nombre": "Crowdfund Insider",
+            "url": null
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-12",
+        "titulo": "Una infraestructura para el futuro de las finanzas digitales de Europa",
+        "categoria": "medios-digital",
+        "alcance": "Internacional",
+        "url": "https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260312~5dfa697fdd.es.html",
+        "medio": "BCE/ECB",
+        "resumen": "Blog del BCE por Piero Cipollone sobre la necesidad de que el dinero de banco central evolucione ante la digitalización de pagos y mercados financieros. Presenta las iniciativas Pontes y la hoja de ruta Appia.",
+        "highlights": [
+          "Lanzamiento de Pontes en Q3 2026 para liquidación mayorista en dinero de banco central sobre DLT",
+          "El dinero de banco central debe evolucionar para satisfacer necesidades de sociedades cada vez más digitales"
+        ],
+        "tags": ["Euro digital", "BCE", "DLT", "Tokenización"],
+        "imagen": "https://placehold.co/400x300/f59e0b/FFFFFF?text=BCE+Infraestructura+Digital",
+        "otros_medios": []
       }
     ],
     "categorias": [

@@ -1,0 +1,31 @@
+name: Enrich GMR Images
+
+on:
+  push:
+    paths:
+      - 'data/gmr-data.json'
+  workflow_dispatch:
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install node-fetch cheerio
+
+      - name: Run image enricher
+        run: node scripts/enrich-images.js
+
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: '🖼️ Auto-enrich images'
+          file_pattern: 'data/gmr-data.json'
