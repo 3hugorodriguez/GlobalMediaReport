@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Media Report — Global Exchange</title>
 
-    <meta name="description" content="Global Media Report — Dashboard de medios corporativo de Global Exchange">
-    <meta property="og:title" content="Global Media Report — Global Exchange">
-    <meta name="theme-color" content="#122864">
+    <meta name="description"
+          content="Global Media Report — Dashboard de medios corporativo de Global Exchange">
+    <meta property="og:title"       content="Global Media Report — Global Exchange">
+    <meta property="og:description" content="Todas las noticias del Grupo Global Exchange y el sector">
+    <meta name="theme-color"        content="#122864">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -16,154 +18,179 @@
     <!-- Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800&display=swap"
+          rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Scroll progress -->
-    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-    <!-- HEADER -->
-    <header class="header" id="mainHeader">
+    <!-- ══ HEADER ══════════════════════════════════════ -->
+    <header class="header" id="mainHeader" role="banner">
         <div class="header-inner">
 
             <div class="header-brand">
                 <img class="header-logo"
                      src="https://assets-sharedcontent.global-exchange.com/1dced37c-b424-4190-a730-3c9ce29c6369.svg"
-                     alt="Global Exchange">
+                     alt="Global Exchange"
+                     width="140" height="28">
+                <div class="header-divider" aria-hidden="true"></div>
                 <div class="header-brand-text">
                     <span class="header-title">Global Media Report</span>
                     <span class="header-sub">
-                        <span class="status-dot"></span>
-                        <span id="statsInfo">Cargando...</span>
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span id="statsInfo">Cargando…</span>
                     </span>
                 </div>
             </div>
 
             <div class="header-actions">
-                <div class="search-wrap">
-                    <i class="fas fa-search"></i>
-                    <input type="text"
+                <div class="search-wrap" role="search">
+                    <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                    <input type="search"
                            id="searchInput"
-                           placeholder="Buscar... (⌘K)"
-                           autocomplete="off">
+                           placeholder="Buscar… (⌘K)"
+                           autocomplete="off"
+                           aria-label="Buscar noticias">
                 </div>
-                <button class="hbtn" id="viewToggle" title="Vista compacta">
-                    <i class="fas fa-grip-lines"></i>
+
+                <button class="hbtn" id="themeToggle" title="Cambiar tema"
+                        aria-label="Cambiar modo claro/oscuro">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
                 </button>
-                <button class="hbtn" id="themeToggle" title="Modo oscuro">
-                    <i class="fas fa-moon"></i>
+
+                <button class="hbtn" id="exportBtn" title="Imprimir"
+                        aria-label="Imprimir informe">
+                    <i class="fas fa-print" aria-hidden="true"></i>
                 </button>
-                <button class="hbtn" id="exportBtn" title="Imprimir">
-                    <i class="fas fa-download"></i>
-                </button>
-                <button class="hbtn" id="briefingBtn" title="Briefing ejecutivo">
-                    <i class="fas fa-file-alt"></i>
+
+                <button class="hbtn" id="briefingBtn" title="Briefing ejecutivo"
+                        aria-label="Abrir briefing ejecutivo"
+                        aria-expanded="false" aria-controls="briefingPanel">
+                    <i class="fas fa-file-lines" aria-hidden="true"></i>
                 </button>
             </div>
 
         </div>
     </header>
 
-    <!-- FILTERS -->
-    <nav class="filters" id="filtersBar">
+    <!-- ══ FILTERS ═════════════════════════════════════ -->
+    <nav class="filters" id="filtersBar" aria-label="Filtros de noticias">
         <div class="filters-inner">
 
             <div class="filter-group">
-                <span class="filter-label">
-                    <i class="fas fa-calendar-alt"></i>
+                <span class="filter-label" id="label-periodo">
+                    <i class="fas fa-calendar-days" aria-hidden="true"></i>
                     Periodo
                 </span>
-                <div class="chips" id="monthFilters">
-                    <button class="chip active" data-month="all">
+                <div class="chips" id="monthFilters" role="group" aria-labelledby="label-periodo">
+                    <button class="chip active" data-month="all" aria-pressed="true">
                         Todos <span class="chip-n">0</span>
                     </button>
                 </div>
             </div>
 
-            <div class="filter-sep"></div>
+            <div class="filter-sep" aria-hidden="true"></div>
 
             <div class="filter-group">
-                <span class="filter-label">
-                    <i class="fas fa-layer-group"></i>
-                    Categoría
+                <span class="filter-label" id="label-categoria">
+                    <i class="fas fa-layer-group" aria-hidden="true"></i>
+                    Temática
                 </span>
-                <div class="chips" id="categoryFilters">
-                    <button class="chip active" data-category="all">
+                <div class="chips" id="categoryFilters" role="group" aria-labelledby="label-categoria">
+                    <button class="chip active" data-category="all" aria-pressed="true">
                         Todas <span class="chip-n">0</span>
                     </button>
                 </div>
             </div>
 
-            <button class="filter-reset" id="resetFilters" title="Resetear">
-                <i class="fas fa-xmark"></i>
+            <button class="filter-reset" id="resetFilters"
+                    title="Restablecer filtros" aria-label="Restablecer todos los filtros">
+                <i class="fas fa-xmark" aria-hidden="true"></i>
             </button>
 
         </div>
     </nav>
 
-    <!-- MAIN -->
-    <main class="main" id="newsContainer">
-        <div class="skeleton-grid" id="skeletonLoader">
-            <div class="sk-card"></div>
-            <div class="sk-card"></div>
-            <div class="sk-card"></div>
-            <div class="sk-card"></div>
+    <!-- ══ HERO ════════════════════════════════════════ -->
+    <section id="heroSection" class="hero-section" aria-label="Noticia destacada">
+        <!-- Skeleton -->
+        <div class="skeleton-hero" id="heroSkeleton" aria-hidden="true"></div>
+    </section>
+
+    <!-- ══ NEWS ════════════════════════════════════════ -->
+    <main class="main" id="newsContainer" role="main" aria-label="Noticias">
+        <!-- Skeleton -->
+        <div class="skeleton-wrap" id="skeletonLoader" aria-hidden="true">
+            <div class="skeleton-grid">
+                <div class="sk-card"></div>
+                <div class="sk-card"></div>
+                <div class="sk-card"></div>
+                <div class="sk-card"></div>
+                <div class="sk-card"></div>
+                <div class="sk-card"></div>
+            </div>
         </div>
     </main>
 
-    <!-- EMPTY -->
-    <div class="empty-state" id="emptyState">
-        <i class="fas fa-inbox"></i>
+    <!-- ══ EMPTY STATE ═════════════════════════════════ -->
+    <div class="empty-state" id="emptyState" role="status" aria-live="polite">
+        <i class="fas fa-inbox" aria-hidden="true"></i>
         <h3>Sin resultados</h3>
-        <p>Ajusta los filtros o la búsqueda</p>
+        <p>Ajusta los filtros o el término de búsqueda</p>
         <button class="btn-primary" onclick="resetAllFilters()">
-            <i class="fas fa-redo"></i> Resetear
+            <i class="fas fa-rotate-right" aria-hidden="true"></i>
+            Restablecer
         </button>
     </div>
 
-    <!-- BRIEFING PANEL -->
-    <div class="panel-backdrop" id="panelBackdrop"></div>
-    <aside class="briefing-panel" id="briefingPanel">
+    <!-- ══ BRIEFING PANEL ══════════════════════════════ -->
+    <div class="panel-backdrop" id="panelBackdrop" aria-hidden="true"></div>
+
+    <aside class="briefing-panel" id="briefingPanel"
+           role="dialog" aria-modal="true"
+           aria-label="Briefing ejecutivo" aria-hidden="true">
         <div class="panel-head">
             <span class="panel-title">
-                <i class="fas fa-file-alt"></i>
+                <i class="fas fa-file-lines" aria-hidden="true"></i>
                 Briefing ejecutivo
             </span>
-            <button class="panel-close" id="panelClose">
-                <i class="fas fa-xmark"></i>
+            <button class="panel-close" id="panelClose" aria-label="Cerrar panel">
+                <i class="fas fa-xmark" aria-hidden="true"></i>
             </button>
         </div>
         <div class="panel-body" id="briefingBody"></div>
         <div class="panel-foot">
-            <button onclick="window.print()">
-                <i class="fas fa-print"></i> Imprimir
+            <button onclick="window.print()" aria-label="Imprimir briefing">
+                <i class="fas fa-print" aria-hidden="true"></i> Imprimir
             </button>
         </div>
     </aside>
 
-    <!-- TOAST -->
-    <div class="toasts" id="toastContainer"></div>
+    <!-- ══ TOAST CONTAINER ═════════════════════════════ -->
+    <div class="toasts" id="toastContainer" role="log" aria-live="polite" aria-atomic="false"></div>
 
-    <!-- BACK TO TOP -->
-    <button class="fab" id="backToTop" title="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
+    <!-- ══ BACK TO TOP ═════════════════════════════════ -->
+    <button class="fab" id="backToTop" title="Volver arriba" aria-label="Volver al principio">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <!-- ══ FOOTER ══════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
         <span>© 2026 Global Exchange · Comunicación Corporativa</span>
-        <span>GMR v4.0</span>
+        <span>GMR v5.0</span>
     </footer>
 
     <script src="api-handler-simple.js"></script>
     <script src="script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', function() {
             if (typeof initializeGMR === 'function') initializeGMR();
         });
     </script>
