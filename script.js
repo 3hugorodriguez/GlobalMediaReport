@@ -1,10 +1,8 @@
 /* ============================================================
-   GMR v5.0 — UI modules: Theme, Export, Keyboard, Network
+   GMR v5.0 — Theme · Export · Keyboard · Network
    ============================================================ */
 
-/* ─────────────────────────────────────
-   THEME
-───────────────────────────────────── */
+/* ── THEME ───────────────────────────────────────────── */
 function initializeTheme() {
     const btn = document.getElementById('themeToggle');
     if (!btn) return;
@@ -13,13 +11,12 @@ function initializeTheme() {
     applyTheme(saved);
 
     btn.addEventListener('click', function() {
-        const current  = document.documentElement.getAttribute('data-theme');
-        const next     = current === 'dark' ? 'light' : 'dark';
+        const current = document.documentElement.getAttribute('data-theme');
+        const next    = current === 'dark' ? 'light' : 'dark';
         applyTheme(next);
         localStorage.setItem('gmr-theme', next);
 
-        /* Micro-animation */
-        btn.style.transform = 'rotate(180deg) scale(1.15)';
+        btn.style.transform  = 'rotate(180deg) scale(1.15)';
         btn.style.transition = 'transform 0.35s cubic-bezier(0.34,1.56,0.64,1)';
         setTimeout(function() { btn.style.transform = ''; }, 380);
 
@@ -33,43 +30,36 @@ function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     const icon = document.querySelector('#themeToggle i');
     if (icon) icon.className = 'fas ' + (theme === 'dark' ? 'fa-sun' : 'fa-moon');
-    /* Update meta theme-color */
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = theme === 'dark' ? '#0b0e18' : '#122864';
 }
 
-/* ─────────────────────────────────────
-   EXPORT / PRINT
-───────────────────────────────────── */
+/* ── EXPORT ──────────────────────────────────────────── */
 function initializeExport() {
     const btn = document.getElementById('exportBtn');
     if (!btn) return;
-
     btn.addEventListener('click', function() {
         if (typeof showToast === 'function') showToast('Preparando documento…', 'info');
-        setTimeout(() => window.print(), 450);
+        setTimeout(function() { window.print(); }, 450);
     });
 }
 
-/* ─────────────────────────────────────
-   KEYBOARD SHORTCUTS
-───────────────────────────────────── */
+/* ── KEYBOARD SHORTCUTS ──────────────────────────────── */
 document.addEventListener('keydown', function(e) {
-    const tag = document.activeElement?.tagName?.toLowerCase();
+    const tag     = document.activeElement && document.activeElement.tagName.toLowerCase();
     const isInput = tag === 'input' || tag === 'textarea';
 
-    /* ⌘/Ctrl + K → Focus search */
+    /* ⌘/Ctrl + K — Buscar */
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
         const si = document.getElementById('searchInput');
-        si && si.focus() && si.select();
+        if (si) { si.focus(); si.select(); }
     }
 
-    /* Escape → Clear search / close panel */
+    /* Escape — Limpiar búsqueda */
     if (e.key === 'Escape') {
         const panel = document.getElementById('briefingPanel');
-        if (panel && panel.classList.contains('open')) return; /* handled elsewhere */
-
+        if (panel && panel.classList.contains('open')) return;
         const si = document.getElementById('searchInput');
         if (si && si.value) {
             si.value = '';
@@ -78,22 +68,21 @@ document.addEventListener('keydown', function(e) {
         }
     }
 
-    /* ⌘/Ctrl + D → Dark mode (when not in input) */
+    /* ⌘/Ctrl + D — Dark mode */
     if (!isInput && (e.ctrlKey || e.metaKey) && e.key === 'd') {
         e.preventDefault();
-        document.getElementById('themeToggle')?.click();
+        const t = document.getElementById('themeToggle');
+        if (t) t.click();
     }
 
-    /* ⌘/Ctrl + P → Print */
+    /* ⌘/Ctrl + P — Imprimir */
     if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
         e.preventDefault();
         window.print();
     }
 });
 
-/* ─────────────────────────────────────
-   NETWORK STATUS
-───────────────────────────────────── */
+/* ── NETWORK STATUS ──────────────────────────────────── */
 let wasOffline = false;
 
 window.addEventListener('online', function() {
@@ -105,14 +94,10 @@ window.addEventListener('online', function() {
 
 window.addEventListener('offline', function() {
     wasOffline = true;
-    if (typeof showToast === 'function') {
-        showToast('Sin conexión a Internet', 'error');
-    }
+    if (typeof showToast === 'function') showToast('Sin conexión a Internet', 'error');
 });
 
-/* ─────────────────────────────────────
-   PERFORMANCE LOG
-───────────────────────────────────── */
+/* ── PERFORMANCE LOG ─────────────────────────────────── */
 window.addEventListener('load', function() {
     if (performance && performance.timing) {
         const t = performance.timing;
@@ -122,12 +107,11 @@ window.addEventListener('load', function() {
     }
 });
 
-/* ─────────────────────────────────────
-   CONSOLE BRANDING
-───────────────────────────────────── */
+/* ── CONSOLE BRANDING ────────────────────────────────── */
 console.log(
     '%c GMR v5.0 ',
-    'font-size:14px;font-weight:700;color:#fff;background:linear-gradient(135deg,#122864,#006cb1);' +
+    'font-size:14px;font-weight:700;color:#fff;' +
+    'background:linear-gradient(135deg,#122864,#006cb1);' +
     'padding:6px 14px;border-radius:6px;letter-spacing:0.05em;'
 );
 console.log(
@@ -139,9 +123,7 @@ console.log(
     'color:#8896ab;font-size:11px;line-height:1.9;'
 );
 
-/* ─────────────────────────────────────
-   INIT
-───────────────────────────────────── */
+/* ── INIT ────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function() {
     initializeTheme();
     initializeExport();

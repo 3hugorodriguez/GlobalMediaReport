@@ -1,48 +1,65 @@
 /* ============================================================
    GMR v5.0 — Data Service + Renderer
+   SVG inline fallbacks — sin dependencias externas de imagen
    ============================================================ */
 
+/* ── SVG FALLBACKS por categoría ─────────────────────────
+   Data URIs puros — siempre cargan, sin red, sin bloqueos
+───────────────────────────────────────────────────────── */
+const FALLBACK_SVGS = {
+    'grupo-global': "3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23122864'/%3E%3Cstop offset='100%25' stop-color='%23006cb1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='500' fill='url(%23g)'/%3E%3Ccircle cx='450' cy='210' r='70' fill='rgba(255,255,255,0.06)'/%3E%3Ccircle cx='450' cy='210' r='45' fill='rgba(255,255,255,0.08)'/%3E%3Ctext x='450' y='225' font-family='Arial' font-size='36' fill='rgba(255,255,255,0.22)' text-anchor='middle'%3E%E2%9C%88%3C/text%3E%3Ctext x='450' y='320' font-family='Arial,sans-serif' font-size='20' font-weight='bold' fill='rgba(255,255,255,0.28)' text-anchor='middle'%3EGrupo Global Exchange%3C/text%3E%3Ctext x='450' y='348' font-family='Arial,sans-serif' font-size='13' fill='rgba(255,255,255,0.16)' text-anchor='middle'%3EComunicaci%C3%B3n Corporativa%3C/text%3E%3C/svg%3E",
+
+    'sector-cambiario': "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23006cb1'/%3E%3Cstop offset='100%25' stop-color='%2385aed9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='500' fill='url(%23g)'/%3E%3Ccircle cx='450' cy='210' r='70' fill='rgba(255,255,255,0.06)'/%3E%3Ccircle cx='450' cy='210' r='45' fill='rgba(255,255,255,0.08)'/%3E%3Ctext x='450' y='228' font-family='Arial' font-size='36' fill='rgba(255,255,255,0.22)' text-anchor='middle'%3E%F0%9F%92%B1%3C/text%3E%3Ctext x='450' y='320' font-family='Arial,sans-serif' font-size='20' font-weight='bold' fill='rgba(255,255,255,0.28)' text-anchor='middle'%3ESector Cambiario%3C/text%3E%3Ctext x='450' y='348' font-family='Arial,sans-serif' font-size='13' fill='rgba(255,255,255,0.16)' text-anchor='middle'%3EDivisas y Cambio de Moneda%3C/text%3E%3C/svg%3E",
+
+    'sector-aeroportuario': "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%237c3aed'/%3E%3Cstop offset='100%25' stop-color='%234f46e5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='500' fill='url(%23g)'/%3E%3Ccircle cx='450' cy='210' r='70' fill='rgba(255,255,255,0.06)'/%3E%3Ccircle cx='450' cy='210' r='45' fill='rgba(255,255,255,0.08)'/%3E%3Ctext x='450' y='228' font-family='Arial' font-size='36' fill='rgba(255,255,255,0.22)' text-anchor='middle'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3Ctext x='450' y='320' font-family='Arial,sans-serif' font-size='20' font-weight='bold' fill='rgba(255,255,255,0.28)' text-anchor='middle'%3EAeroportuario y Tur%C3%ADstico%3C/text%3E%3Ctext x='450' y='348' font-family='Arial,sans-serif' font-size='13' fill='rgba(255,255,255,0.16)' text-anchor='middle'%3EAeropuertos y Turismo%3C/text%3E%3C/svg%3E",
+
+    'medios-efectivo': "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23059669'/%3E%3Cstop offset='100%25' stop-color='%2310b981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='500' fill='url(%23g)'/%3E%3Ccircle cx='450' cy='210' r='70' fill='rgba(255,255,255,0.06)'/%3E%3Ccircle cx='450' cy='210' r='45' fill='rgba(255,255,255,0.08)'/%3E%3Ctext x='450' y='228' font-family='Arial' font-size='36' fill='rgba(255,255,255,0.22)' text-anchor='middle'%3E%F0%9F%92%B5%3C/text%3E%3Ctext x='450' y='320' font-family='Arial,sans-serif' font-size='20' font-weight='bold' fill='rgba(255,255,255,0.28)' text-anchor='middle'%3EMedios de Pago%3A Efectivo%3C/text%3E%3Ctext x='450' y='348' font-family='Arial,sans-serif' font-size='13' fill='rgba(255,255,255,0.16)' text-anchor='middle'%3ECash%2C ATM y Billetes%3C/text%3E%3C/svg%3E",
+
+    'medios-digital': "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232251c0'/%3E%3Cstop offset='100%25' stop-color='%2324acb5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='500' fill='url(%23g)'/%3E%3Ccircle cx='450' cy='210' r='70' fill='rgba(255,255,255,0.06)'/%3E%3Ccircle cx='450' cy='210' r='45' fill='rgba(255,255,255,0.08)'/%3E%3Ctext x='450' y='228' font-family='Arial' font-size='36' fill='rgba(255,255,255,0.22)' text-anchor='middle'%3E%F0%9F%92%B3%3C/text%3E%3Ctext x='450' y='320' font-family='Arial,sans-serif' font-size='20' font-weight='bold' fill='rgba(255,255,255,0.28)' text-anchor='middle'%3EMedios de Pago%3A Digital%3C/text%3E%3Ctext x='450' y='348' font-family='Arial,sans-serif' font-size='13' fill='rgba(255,255,255,0.16)' text-anchor='middle'%3EWallets%2C CBDC y Cripto%3C/text%3E%3C/svg%3E",
+
+    'otros-medios-pago': "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='500' fill='url(%23g)'/%3E%3Ccircle cx='450' cy='210' r='70' fill='rgba(255,255,255,0.06)'/%3E%3Ccircle cx='450' cy='210' r='45' fill='rgba(255,255,255,0.08)'/%3E%3Ctext x='450' y='228' font-family='Arial' font-size='36' fill='rgba(255,255,255,0.22)' text-anchor='middle'%3E%F0%9F%92%B3%3C/text%3E%3Ctext x='450' y='320' font-family='Arial,sans-serif' font-size='20' font-weight='bold' fill='rgba(255,255,255,0.28)' text-anchor='middle'%3EOtros Medios de Pago%3C/text%3E%3Ctext x='450' y='348' font-family='Arial,sans-serif' font-size='13' fill='rgba(255,255,255,0.16)' text-anchor='middle'%3EVisa%2C Mastercard%2C Bizum%3C/text%3E%3C/svg%3E"
+};
+
+const DEFAULT_FALLBACK = FALLBACK_SVGS['otros-medios-pago'];
+
+/* ── CONFIG ──────────────────────────────────────────── */
 const CONFIG = {
     dataPath: './data/gmr-data.json',
     newsDays: 7,
-
     months: {
         '01':'Enero',   '02':'Febrero', '03':'Marzo',
         '04':'Abril',   '05':'Mayo',    '06':'Junio',
         '07':'Julio',   '08':'Agosto',  '09':'Septiembre',
         '10':'Octubre', '11':'Noviembre','12':'Diciembre'
     },
-
     catColors: {
         'grupo-global':         '#122864',
-        'sector-cambiario':     '#2251c0',
+        'sector-cambiario':     '#006cb1',
         'sector-aeroportuario': '#7c3aed',
         'medios-efectivo':      '#059669',
-        'medios-digital':       '#d97706',
+        'medios-digital':       '#2251c0',
         'otros-medios-pago':    '#6366f1'
-    },
-
-    /* Unsplash fallbacks — one per category, always loads */
-    fallbacks: {
-        'grupo-global':         'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80',
-        'sector-cambiario':     'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=900&q=80',
-        'sector-aeroportuario': 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=900&q=80',
-        'medios-efectivo':      'https://images.unsplash.com/photo-1554768804-50c1e2b50a6e?w=900&q=80',
-        'medios-digital':       'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&q=80',
-        'otros-medios-pago':    'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80'
     }
 };
 
-/* ─────────────────────────────────────
-   HELPERS
-───────────────────────────────────── */
+/* ── HELPERS ─────────────────────────────────────────── */
 function validImg(url) {
     if (!url) return false;
     const s = String(url).trim();
-    return s.length > 0
+    return s !== ''
         && s !== 'null'
         && !s.includes('placehold.co')
-        && !s.includes('placeholder');
+        && !s.includes('placeholder')
+        && !s.includes('unsplash.com');
+}
+
+function getImgSrc(noticia) {
+    if (validImg(noticia.imagen)) return noticia.imagen;
+    return FALLBACK_SVGS[noticia.categoria] || DEFAULT_FALLBACK;
+}
+
+function getFallback(categoria) {
+    return FALLBACK_SVGS[categoria] || DEFAULT_FALLBACK;
 }
 
 function fmtDate(str) {
@@ -73,30 +90,18 @@ function catColor(slug) {
     return CONFIG.catColors[slug] || '#122864';
 }
 
-function imgSrc(noticia) {
-    return validImg(noticia.imagen)
-        ? noticia.imagen
-        : (CONFIG.fallbacks[noticia.categoria] || CONFIG.fallbacks['sector-cambiario']);
-}
-
-function fallbackImg(slug) {
-    return CONFIG.fallbacks[slug] || CONFIG.fallbacks['sector-cambiario'];
-}
-
-/* ─────────────────────────────────────
-   DATA LOADING
-───────────────────────────────────── */
+/* ── DATA ────────────────────────────────────────────── */
 async function loadData() {
     const res = await fetch(CONFIG.dataPath + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const json = await res.json();
-    if (!json.success || !json.data) throw new Error('Formato de datos inválido');
+    if (!json.success || !json.data) throw new Error('Datos inválidos');
 
     const data = json.data;
     const now  = new Date();
 
     data.noticias = data.noticias
-        .filter(n => !n.hidden)
+        .filter(n => n.titulo && n.fecha && !n.hidden)
         .map(n => {
             const diff = Math.floor((now - new Date(n.fecha)) / 86400000);
             n.isNew = diff >= 0 && diff <= CONFIG.newsDays;
@@ -108,67 +113,64 @@ async function loadData() {
     return data;
 }
 
-/* ─────────────────────────────────────
-   HERO SECTION
-───────────────────────────────────── */
+/* ── HERO ────────────────────────────────────────────── */
 function renderHero(data) {
-    /* Get most recent grupo-global article */
     const noticia = data.noticias.find(n => n.categoria === 'grupo-global');
     if (!noticia) return;
 
     const section = document.getElementById('heroSection');
     if (!section) return;
 
-    const img    = imgSrc(noticia);
-    const isInt  = noticia.alcance === 'Internacional';
-    const color  = catColor(noticia.categoria);
-    const cat    = data.categorias.find(c => c.Slug === noticia.categoria);
+    const heroSkel = document.getElementById('heroSkeleton');
+    if (heroSkel) heroSkel.remove();
+
+    const img = getImgSrc(noticia);
+    const fb  = getFallback(noticia.categoria);
+    const cat = data.categorias.find(c => c.Slug === noticia.categoria);
+    const isInt = noticia.alcance === 'Internacional';
 
     section.innerHTML =
-        '<div class="hero-card" id="heroCard" tabindex="0" role="article" ' +
-             'aria-label="Noticia destacada: ' + noticia.titulo + '">' +
+        '<div class="hero-card" id="heroCard" tabindex="0" role="article">' +
 
-            /* Image */
-            '<img class="hero-img" src="' + img + '" ' +
-                 'alt="' + noticia.titulo + '" ' +
-                 'loading="eager" ' +
-                 'onerror="this.src=\'' + fallbackImg(noticia.categoria) + '\'">' +
+            '<img class="hero-img"' +
+                 ' src="' + img + '"' +
+                 ' alt="' + escAttr(noticia.titulo) + '"' +
+                 ' loading="eager"' +
+                 ' onerror="this.onerror=null;this.src=\'' + fb + '\'">' +
 
-            /* Gradient overlay */
             '<div class="hero-overlay" aria-hidden="true"></div>' +
 
-            /* Glass badge */
             '<div class="hero-badge" aria-hidden="true">' +
                 '<span class="hero-badge-dot"></span>' +
                 '<span>' + (cat ? cat.Nombre : 'Global Exchange') + '</span>' +
             '</div>' +
 
-            /* New badge */
-            (noticia.isNew ? '<div class="hero-new-tag" aria-hidden="true">Nuevo</div>' : '') +
+            (noticia.isNew ? '<div class="hero-new-tag">Nuevo</div>' : '') +
 
-            /* Content */
             '<div class="hero-content">' +
                 '<div class="hero-meta">' +
                     '<span class="hero-scope">' +
                         '<i class="fas ' + (isInt ? 'fa-globe' : 'fa-map-marker-alt') + '"></i>' +
-                        noticia.alcance +
+                        esc(noticia.alcance) +
                     '</span>' +
                     '<span class="hero-date">' + fmtDate(noticia.fecha) + '</span>' +
                 '</div>' +
-                '<h1 class="hero-title">' + noticia.titulo + '</h1>' +
+                '<h1 class="hero-title">' + esc(noticia.titulo) + '</h1>' +
                 (noticia.resumen
                     ? '<p class="hero-excerpt">' +
-                        noticia.resumen.slice(0, 180) + (noticia.resumen.length > 180 ? '…' : '') +
+                        esc(noticia.resumen.slice(0, 180)) +
+                        (noticia.resumen.length > 180 ? '…' : '') +
                       '</p>'
                     : '') +
                 '<div class="hero-footer">' +
                     '<span class="hero-source">' +
                         '<i class="fas fa-newspaper"></i>' +
-                        noticia.medio +
+                        esc(noticia.medio) +
                     '</span>' +
-                    '<a href="' + noticia.url + '" target="_blank" ' +
-                       'class="hero-cta" ' +
-                       'onclick="event.stopPropagation()">' +
+                    '<a href="' + noticia.url + '"' +
+                       ' target="_blank" rel="noopener"' +
+                       ' class="hero-cta"' +
+                       ' onclick="event.stopPropagation()">' +
                         'Leer artículo <i class="fas fa-arrow-right"></i>' +
                     '</a>' +
                 '</div>' +
@@ -176,7 +178,6 @@ function renderHero(data) {
 
         '</div>';
 
-    /* Click on whole card (except CTA) */
     const card = document.getElementById('heroCard');
     if (card) {
         card.addEventListener('click', function(e) {
@@ -188,15 +189,12 @@ function renderHero(data) {
     }
 }
 
-/* ─────────────────────────────────────
-   HEADER STATS
-───────────────────────────────────── */
+/* ── HEADER ──────────────────────────────────────────── */
 function renderHeader(data) {
     const el = document.getElementById('statsInfo');
     if (!el) return;
     const cfg      = data.config || {};
     const newCount = data.noticias.filter(n => n.isNew).length;
-
     el.innerHTML =
         data.noticias.length + ' noticias' +
         (newCount > 0
@@ -205,9 +203,7 @@ function renderHeader(data) {
         ' · ' + (cfg.mes_actual || '');
 }
 
-/* ─────────────────────────────────────
-   FILTERS
-───────────────────────────────────── */
+/* ── FILTERS ─────────────────────────────────────────── */
 function renderFilters(data) {
     const catEl   = document.getElementById('categoryFilters');
     const monthEl = document.getElementById('monthFilters');
@@ -222,8 +218,10 @@ function renderFilters(data) {
         monthCounts[mk] = (monthCounts[mk] || 0) + 1;
     });
 
-    catEl.querySelector('[data-category="all"] .chip-n').textContent  = data.noticias.length;
-    monthEl.querySelector('[data-month="all"] .chip-n').textContent   = data.noticias.length;
+    const catAll = catEl.querySelector('[data-category="all"] .chip-n');
+    if (catAll) catAll.textContent = data.noticias.length;
+    const monAll = monthEl.querySelector('[data-month="all"] .chip-n');
+    if (monAll) monAll.textContent = data.noticias.length;
 
     data.categorias.forEach(cat => {
         const n = catCounts[cat.Slug] || 0;
@@ -231,7 +229,7 @@ function renderFilters(data) {
         const btn = document.createElement('button');
         btn.className = 'chip';
         btn.setAttribute('data-category', cat.Slug);
-        btn.innerHTML = cat.Nombre + ' <span class="chip-n">' + n + '</span>';
+        btn.innerHTML = esc(cat.Nombre) + ' <span class="chip-n">' + n + '</span>';
         catEl.appendChild(btn);
     });
 
@@ -246,14 +244,11 @@ function renderFilters(data) {
         });
 }
 
-/* ─────────────────────────────────────
-   NEWS RENDER
-───────────────────────────────────── */
+/* ── NEWS ────────────────────────────────────────────── */
 function renderNews(data) {
     const container = document.getElementById('newsContainer');
     if (!container) return;
 
-    /* Remove skeleton */
     const skel = document.getElementById('skeletonLoader');
     if (skel) {
         skel.style.opacity = '0';
@@ -274,7 +269,6 @@ function renderNews(data) {
     buildTimeline(data);
 }
 
-/* ─── Month block ──────────────────── */
 function buildMonthBlock(mk, noticias, categorias) {
     const block = document.createElement('section');
     block.className = 'month-block';
@@ -289,7 +283,6 @@ function buildMonthBlock(mk, noticias, categorias) {
 
     const byCat = groupBy(noticias, n => n.categoria);
 
-    /* Respect category order from config */
     categorias
         .filter(c => byCat[c.Slug] && byCat[c.Slug].length > 0)
         .forEach(cat => {
@@ -299,7 +292,6 @@ function buildMonthBlock(mk, noticias, categorias) {
     return block;
 }
 
-/* ─── Category block ───────────────── */
 function buildCatBlock(cat, noticias) {
     const color = catColor(cat.Slug);
 
@@ -313,7 +305,7 @@ function buildCatBlock(cat, noticias) {
             '<div class="cat-icon" style="background:' + color + '">' +
                 '<i class="fas ' + cat.Icono + '"></i>' +
             '</div>' +
-            '<span class="cat-name">' + cat.Nombre + '</span>' +
+            '<span class="cat-name">' + esc(cat.Nombre) + '</span>' +
             '<span class="cat-count">' + noticias.length + ' noticias</span>' +
         '</div>' +
         '<div class="news-grid"></div>';
@@ -324,69 +316,69 @@ function buildCatBlock(cat, noticias) {
     return block;
 }
 
-/* ─── Card ─────────────────────────── */
 function buildCard(noticia, cat, color) {
     const article = document.createElement('article');
     article.className = 'card-executive';
     article.setAttribute('data-url', noticia.url);
     article.setAttribute('data-category', noticia.categoria);
     article.setAttribute('tabindex', '0');
-    article.setAttribute('role', 'article');
     article.style.setProperty('--cat-color', color);
 
     const isInt  = noticia.alcance === 'Internacional';
-    const img    = imgSrc(noticia);
-    const fb     = fallbackImg(noticia.categoria);
-    const hlList = (noticia.highlights || []).slice(0, 3);
+    const imgUrl = getImgSrc(noticia);
+    const fb     = getFallback(noticia.categoria);
 
-    const highlightsHTML = hlList.length
+    const highlights = (noticia.highlights || []).slice(0, 3);
+
+    const highlightsHTML = highlights.length
         ? '<ul class="card-highlights">' +
-              hlList.map(h => '<li>' + h + '</li>').join('') +
+              highlights.map(h => '<li>' + esc(h) + '</li>').join('') +
           '</ul>'
         : '';
 
     const summaryHTML = noticia.resumen
-        ? '<button class="card-expand" onclick="toggleSummary(this,event)" ' +
-                 'aria-expanded="false">Ver resumen</button>' +
-          '<div class="card-summary" role="region">' + noticia.resumen + '</div>'
+        ? '<button class="card-expand"' +
+                 ' onclick="toggleSummary(this,event)"' +
+                 ' aria-expanded="false">Ver resumen</button>' +
+          '<div class="card-summary">' + esc(noticia.resumen) + '</div>'
         : '';
 
     article.innerHTML =
-        /* Image */
-        '<div class="card-img" aria-hidden="true">' +
-            '<img src="' + img + '" alt="' + noticia.titulo + '" ' +
-                 'loading="lazy" onerror="this.src=\'' + fb + '\'">' +
+        '<div class="card-img">' +
+            '<img src="' + imgUrl + '"' +
+                 ' alt="' + escAttr(noticia.titulo) + '"' +
+                 ' loading="lazy"' +
+                 ' onerror="this.onerror=null;this.src=\'' + fb + '\'">' +
             (noticia.isNew ? '<div class="card-new" title="Novedad"></div>' : '') +
         '</div>' +
 
-        /* Body */
         '<div class="card-body">' +
             '<div class="card-meta">' +
-                '<span class="scope-badge ' + (isInt ? 'int' : 'nat') + '">' +
+                '<span class="card-scope ' + (isInt ? 'int' : '') + '">' +
                     '<i class="fas ' + (isInt ? 'fa-globe' : 'fa-map-marker-alt') + '"></i>' +
-                    noticia.alcance +
+                    esc(noticia.alcance) +
                 '</span>' +
                 '<span class="card-date">' + fmtDate(noticia.fecha) + '</span>' +
             '</div>' +
-            '<h3 class="card-title">' + noticia.titulo + '</h3>' +
+            '<h3 class="card-title">' + esc(noticia.titulo) + '</h3>' +
             highlightsHTML +
             summaryHTML +
         '</div>' +
 
-        /* Footer */
         '<div class="card-foot">' +
             '<span class="card-source">' +
                 '<i class="fas fa-newspaper"></i>' +
-                noticia.medio +
+                esc(noticia.medio) +
             '</span>' +
-            '<a href="' + noticia.url + '" target="_blank" rel="noopener" ' +
-               'class="card-link" onclick="event.stopPropagation()" ' +
-               'aria-label="Leer en ' + noticia.medio + '">' +
+            '<a href="' + noticia.url + '"' +
+               ' target="_blank" rel="noopener"' +
+               ' class="card-link"' +
+               ' onclick="event.stopPropagation()"' +
+               ' aria-label="Leer en ' + escAttr(noticia.medio) + '">' +
                 'Leer <i class="fas fa-arrow-right"></i>' +
             '</a>' +
         '</div>';
 
-    /* Click anywhere except link/expand = open URL */
     article.addEventListener('click', function(e) {
         if (e.target.closest('.card-link') || e.target.closest('.card-expand')) return;
         window.open(noticia.url, '_blank');
@@ -399,15 +391,32 @@ function buildCard(noticia, cat, color) {
     return article;
 }
 
-/* ─────────────────────────────────────
-   TIMELINE
-───────────────────────────────────── */
-function buildTimeline(data) {
-    const byMonth = groupBy(data.noticias, n => monthKey(n.fecha));
-    const months  = Object.keys(byMonth).sort((a, b) => new Date(b) - new Date(a));
+/* ── ESCAPE HELPERS ──────────────────────────────────── */
+function esc(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
 
+function escAttr(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
+
+/* ── TIMELINE ────────────────────────────────────────── */
+function buildTimeline(data) {
     const existing = document.getElementById('timelineSidebar');
     if (existing) existing.remove();
+
+    const byMonth = groupBy(data.noticias, n => monthKey(n.fecha));
+    const months  = Object.keys(byMonth).sort((a, b) => new Date(b) - new Date(a));
 
     const sidebar = document.createElement('aside');
     sidebar.className = 'timeline-sidebar';
@@ -416,14 +425,16 @@ function buildTimeline(data) {
 
     sidebar.innerHTML =
         '<div class="timeline-label">' +
-            '<i class="fas fa-clock"></i> Archivo' +
+            '<i class="fas fa-clock" aria-hidden="true"></i> Archivo' +
         '</div>' +
-        '<ul class="timeline-list">' +
+        '<ul class="timeline-list" role="list">' +
             '<div class="timeline-track" aria-hidden="true"></div>' +
             months.map(mk =>
-                '<li class="timeline-item" data-tm="' + mk + '" ' +
-                    'tabindex="0" role="button" ' +
-                    'aria-label="Ir a ' + fmtMonth(mk) + '">' +
+                '<li class="timeline-item"' +
+                    ' data-tm="' + mk + '"' +
+                    ' tabindex="0"' +
+                    ' role="button"' +
+                    ' aria-label="Ir a ' + fmtMonth(mk) + '">' +
                     '<div class="timeline-node" aria-hidden="true"></div>' +
                     '<div class="timeline-row">' +
                         '<span class="timeline-month">' + fmtMonth(mk) + '</span>' +
@@ -434,14 +445,12 @@ function buildTimeline(data) {
         '</ul>';
 
     document.body.appendChild(sidebar);
-    requestAnimationFrame(() => {
-        setTimeout(() => sidebar.classList.add('visible'), 120);
+    requestAnimationFrame(function() {
+        setTimeout(function() { sidebar.classList.add('visible'); }, 120);
     });
 }
 
-/* ─────────────────────────────────────
-   BRIEFING
-───────────────────────────────────── */
+/* ── BRIEFING ────────────────────────────────────────── */
 function renderBriefing(data) {
     const body = document.getElementById('briefingBody');
     if (!body) return;
@@ -460,15 +469,15 @@ function renderBriefing(data) {
     const cfg = data.config || {};
 
     body.innerHTML =
-        '<div style="padding:0 0 1rem; border-bottom:1px solid var(--line); margin-bottom:.75rem;">' +
-            '<p style="font-size:0.625rem; font-weight:800; text-transform:uppercase; ' +
-                      'letter-spacing:0.09em; color:var(--ink-4); margin-bottom:2px;">' +
+        '<div style="padding:0 0 1rem;border-bottom:1px solid var(--line);margin-bottom:.75rem;">' +
+            '<p style="font-size:0.625rem;font-weight:800;text-transform:uppercase;' +
+                      'letter-spacing:0.09em;color:var(--ink-4);margin-bottom:2px;">' +
                 'Global Exchange · Comunicación Corporativa' +
             '</p>' +
-            '<p style="font-family:var(--font-head); font-size:1.0625rem; font-weight:700; color:var(--ink);">' +
-                (cfg.mes_actual || 'Informe mensual') +
+            '<p style="font-family:var(--font-head);font-size:1.0625rem;font-weight:700;color:var(--ink);">' +
+                esc(cfg.mes_actual || 'Informe mensual') +
             '</p>' +
-            '<p style="font-size:0.75rem; color:var(--ink-4); margin-top:2px;">' +
+            '<p style="font-size:0.75rem;color:var(--ink-4);margin-top:2px;">' +
                 noticias.length + ' noticias · últimos 30 días' +
             '</p>' +
         '</div>' +
@@ -478,15 +487,16 @@ function renderBriefing(data) {
             return '<div class="briefing-item">' +
                 '<div class="briefing-dot" style="background:' + color + '"></div>' +
                 '<div>' +
-                    '<div class="briefing-title">' + n.titulo + '</div>' +
+                    '<div class="briefing-title">' + esc(n.titulo) + '</div>' +
                     '<div class="briefing-meta">' +
-                        (cat ? cat.Nombre : n.categoria) +
-                        ' · ' + n.medio +
+                        esc(cat ? cat.Nombre : n.categoria) +
+                        ' · ' + esc(n.medio) +
                         ' · ' + fmtDate(n.fecha) +
                     '</div>' +
                     (n.resumen
                         ? '<div class="briefing-summary">' +
-                            n.resumen.slice(0, 200) + (n.resumen.length > 200 ? '…' : '') +
+                            esc(n.resumen.slice(0, 200)) +
+                            (n.resumen.length > 200 ? '…' : '') +
                           '</div>'
                         : '') +
                 '</div>' +
@@ -494,9 +504,7 @@ function renderBriefing(data) {
         }).join('');
 }
 
-/* ─────────────────────────────────────
-   GLOBALS
-───────────────────────────────────── */
+/* ── GLOBALS ─────────────────────────────────────────── */
 let allData;
 
 function toggleSummary(btn, e) {
@@ -534,25 +542,21 @@ function showToast(msg, type) {
     type = type || 'info';
     const wrap = document.getElementById('toastContainer');
     if (!wrap) return;
-
     const icons = { success: 'fa-check-circle', error: 'fa-exclamation-circle', info: 'fa-info-circle' };
     const el    = document.createElement('div');
     el.className = 'toast';
     el.setAttribute('role', 'status');
-    el.innerHTML = '<i class="fas ' + (icons[type] || 'fa-info-circle') + '"></i>' + msg;
+    el.innerHTML = '<i class="fas ' + (icons[type] || 'fa-info-circle') + '" aria-hidden="true"></i>' + esc(msg);
     wrap.appendChild(el);
-
     setTimeout(function() {
         el.style.opacity   = '0';
         el.style.transform = 'translateY(6px) scale(0.96)';
         el.style.transition = '0.28s ease';
-        setTimeout(() => el.remove(), 290);
+        setTimeout(function() { el.remove(); }, 290);
     }, 2800);
 }
 
-/* ─────────────────────────────────────
-   INIT
-───────────────────────────────────── */
+/* ── INIT ────────────────────────────────────────────── */
 async function initializeGMR() {
     try {
         allData = await loadData();
@@ -579,26 +583,23 @@ async function initializeGMR() {
                        'padding:4rem 2rem;text-align:center;color:var(--ink-3);">' +
                 '<i class="fas fa-triangle-exclamation" style="font-size:2.5rem;color:#ef4444;"></i>' +
                 '<h3 style="font-family:var(--font-head);font-size:1.125rem;">Error al cargar</h3>' +
-                '<p style="font-size:0.875rem;">' + err.message + '</p>' +
+                '<p style="font-size:0.875rem;">' + esc(err.message) + '</p>' +
                 '<button class="btn-primary" onclick="location.reload()">' +
                     '<i class="fas fa-rotate-right"></i> Reintentar' +
                 '</button>' +
             '</div>';
-
         showToast('Error al cargar los datos', 'error');
     }
 }
 
-/* ─────────────────────────────────────
-   FILTERS LOGIC
-───────────────────────────────────── */
+/* ── FILTERS LOGIC ───────────────────────────────────── */
 function initFilters() {
     let activeCat   = 'all';
     let activeMonth = 'all';
 
-    const catWrap   = document.getElementById('categoryFilters');
-    const monthWrap = document.getElementById('monthFilters');
-    const resetBtn  = document.getElementById('resetFilters');
+    const catWrap  = document.getElementById('categoryFilters');
+    const monWrap  = document.getElementById('monthFilters');
+    const resetBtn = document.getElementById('resetFilters');
 
     if (catWrap) {
         catWrap.addEventListener('click', function(e) {
@@ -611,11 +612,11 @@ function initFilters() {
         });
     }
 
-    if (monthWrap) {
-        monthWrap.addEventListener('click', function(e) {
+    if (monWrap) {
+        monWrap.addEventListener('click', function(e) {
             const chip = e.target.closest('.chip');
             if (!chip) return;
-            monthWrap.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+            monWrap.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
             chip.classList.add('active');
             activeMonth = chip.getAttribute('data-month');
             if (activeMonth !== 'all') {
@@ -653,13 +654,10 @@ function applyFilters(cat, month) {
     }
 }
 
-/* ─────────────────────────────────────
-   SEARCH
-───────────────────────────────────── */
+/* ── SEARCH ──────────────────────────────────────────── */
 function initSearch() {
     const input = document.getElementById('searchInput');
     if (!input) return;
-
     let timer;
     input.addEventListener('input', function() {
         clearTimeout(timer);
@@ -722,8 +720,8 @@ function hlText(el, term) {
         const frag  = document.createDocumentFragment();
         parts.forEach(function(p) {
             if (p.toLowerCase() === term) {
-                const mark       = document.createElement('mark');
-                mark.className   = 'search-hl';
+                const mark     = document.createElement('mark');
+                mark.className = 'search-hl';
                 mark.textContent = p;
                 frag.appendChild(mark);
             } else {
@@ -736,31 +734,27 @@ function hlText(el, term) {
 
 function clearHighlights() {
     document.querySelectorAll('.search-hl').forEach(function(m) {
-        if (m.parentNode) {
-            m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
-        }
+        if (m.parentNode) m.parentNode.replaceChild(
+            document.createTextNode(m.textContent), m
+        );
     });
     document.querySelectorAll('.card-title').forEach(el => el.normalize());
 }
 
-/* ─────────────────────────────────────
-   SCROLL
-───────────────────────────────────── */
+/* ── SCROLL ──────────────────────────────────────────── */
 function initScroll() {
     const header   = document.getElementById('mainHeader');
     const filters  = document.getElementById('filtersBar');
     const progress = document.getElementById('scrollProgress');
     const fab      = document.getElementById('backToTop');
-    let   lastY    = 0;
+    let lastY = 0;
 
     window.addEventListener('scroll', function() {
         const y   = window.scrollY;
         const max = document.documentElement.scrollHeight - window.innerHeight;
 
-        /* Progress bar */
         if (progress) progress.style.width = (max > 0 ? (y / max * 100) : 0) + '%';
 
-        /* Auto-hide header */
         if (y > 100) {
             if (y > lastY + 8) {
                 header  && header.classList.add('hidden');
@@ -774,7 +768,6 @@ function initScroll() {
             filters && filters.classList.remove('header-hidden');
         }
 
-        /* FAB */
         fab && fab.classList.toggle('visible', y > 500);
         lastY = y;
     }, { passive: true });
@@ -784,11 +777,8 @@ function initScroll() {
     });
 }
 
-/* ─────────────────────────────────────
-   TIMELINE INTERACTIONS
-───────────────────────────────────── */
+/* ── TIMELINE INTERACTIONS ───────────────────────────── */
 function initTimeline() {
-    /* Click */
     document.addEventListener('click', function(e) {
         const item = e.target.closest('.timeline-item');
         if (!item) return;
@@ -799,15 +789,12 @@ function initTimeline() {
         item.classList.add('active');
     });
 
-    /* Keyboard */
     document.addEventListener('keydown', function(e) {
         if (e.key !== 'Enter') return;
         const item = e.target.closest('.timeline-item');
-        if (!item) return;
-        item.click();
+        if (item) item.click();
     });
 
-    /* Scroll spy via IntersectionObserver */
     const obs = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
@@ -822,25 +809,25 @@ function initTimeline() {
     document.querySelectorAll('.month-block').forEach(mb => obs.observe(mb));
 }
 
-/* ─────────────────────────────────────
-   BRIEFING PANEL
-───────────────────────────────────── */
+/* ── BRIEFING PANEL ──────────────────────────────────── */
 function initBriefingPanel() {
     const btn      = document.getElementById('briefingBtn');
     const panel    = document.getElementById('briefingPanel');
     const backdrop = document.getElementById('panelBackdrop');
     const closeBtn = document.getElementById('panelClose');
 
-    function openPanel()  {
+    function openPanel() {
         panel    && panel.classList.add('open');
         backdrop && backdrop.classList.add('open');
         document.body.style.overflow = 'hidden';
+        btn && btn.setAttribute('aria-expanded', 'true');
     }
 
     function closePanel() {
         panel    && panel.classList.remove('open');
         backdrop && backdrop.classList.remove('open');
         document.body.style.overflow = '';
+        btn && btn.setAttribute('aria-expanded', 'false');
     }
 
     btn      && btn.addEventListener('click', openPanel);
